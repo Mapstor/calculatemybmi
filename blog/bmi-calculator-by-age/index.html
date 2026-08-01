@@ -88,58 +88,38 @@
       <div class="key-takeaways">
         <div class="key-takeaways-title">Key Takeaways</div>
         <ul>
-          <li><strong>The BMI formula is the same</strong> at every age, but interpretation changes significantly</li>
-          <li><strong>Children aged 2&ndash;19</strong> use percentile-based BMI charts, not the adult 18.5&ndash;24.9 range</li>
-          <li><strong>Older adults (65+)</strong> may benefit from a slightly higher BMI of 23&ndash;30 based on longevity research</li>
-          <li><strong>Body composition shifts</strong> with age &mdash; you lose muscle and gain fat, even if BMI stays constant</li>
-          <li><strong>Use our <a href="/">free BMI calculator</a></strong> with age-adjusted interpretation for instant results</li>
+          <li><strong>The BMI formula is the same at every age</strong>; interpretation changes because body composition changes.</li>
+          <li><strong>Children aged 2&ndash;19</strong> use CDC percentile-based BMI charts, not the adult 18.5&ndash;24.9 range.</li>
+          <li><strong>All adults (WHO):</strong> healthy BMI 18.5&ndash;24.9. WHO does not publish separate age-adjusted cut-offs.</li>
+          <li><strong>Adults 65+ (Winter 2014 meta-analysis, n=197,940):</strong> lowest all-cause mortality observed across BMI 23&ndash;33 &mdash; an observational plateau, not a treatment target.</li>
+          <li><strong>Body composition shifts</strong> with age &mdash; muscle mass declines and fat mass tends to rise even at constant BMI; waist circumference and grip strength add information BMI cannot.</li>
         </ul>
       </div>
 
-      <!-- CSS Chart: Optimal BMI Range by Age Decade -->
+      <!-- CSS Chart: WHO adult range + 65+ observational overlay -->
       <div class="chart-range">
-        <div class="range-title">Optimal BMI Range by Age (Research-Based)</div>
+        <div class="range-title">WHO adult BMI range, with observational overlay for adults 65+</div>
         <div class="range-row">
-          <span class="range-age">20-39</span>
+          <span class="range-age">18-64</span>
           <div class="range-bar">
-            <div class="range-segment optimal" style="left: 18.5%; width: 32%;">18.5-24.9</div>
+            <div class="range-segment optimal" style="left: 18.5%; width: 32%;">18.5-24.9 (WHO)</div>
           </div>
           <span class="range-values">18.5 - 24.9</span>
         </div>
         <div class="range-row">
-          <span class="range-age">40-54</span>
+          <span class="range-age">65+ (obs.)</span>
           <div class="range-bar">
-            <div class="range-segment optimal" style="left: 19%; width: 30%;">19-25</div>
+            <div class="range-segment optimal" style="left: 23%; width: 42%;">23-33 (Winter 2014)</div>
           </div>
-          <span class="range-values">19 - 25</span>
-        </div>
-        <div class="range-row">
-          <span class="range-age">55-64</span>
-          <div class="range-bar">
-            <div class="range-segment optimal" style="left: 22%; width: 25%;">22-27</div>
-          </div>
-          <span class="range-values">22 - 27</span>
-        </div>
-        <div class="range-row">
-          <span class="range-age">65-74</span>
-          <div class="range-bar">
-            <div class="range-segment optimal" style="left: 23%; width: 30%;">23-29</div>
-          </div>
-          <span class="range-values">23 - 29</span>
-        </div>
-        <div class="range-row">
-          <span class="range-age">75+</span>
-          <div class="range-bar">
-            <div class="range-segment optimal" style="left: 24%; width: 30%;">24-30</div>
-          </div>
-          <span class="range-values">24 - 30</span>
+          <span class="range-values">23 - 33</span>
         </div>
       </div>
+      <p style="font-size:0.8125rem;color:var(--gray-500);margin-top:0.75rem;">Row 2 is the low-mortality plateau observed in the <a href="https://pubmed.ncbi.nlm.nih.gov/24452240/" target="_blank" rel="noopener">Winter et al. 2014 meta-analysis</a> of 197,940 adults aged 65+ &mdash; an association from cohort data, not a WHO recommendation.</p>
 
       <h2>Does BMI Change with Age?</h2>
       <p>The BMI formula itself &mdash; weight (kg) &divide; height (m)&sup2; &mdash; does not change with age. It is the same calculation whether you are 20 or 80. What changes is how the result should be interpreted and what constitutes a &ldquo;healthy&rdquo; BMI at different ages.</p>
       <p>This distinction matters because the human body undergoes dramatic compositional changes over the lifespan. A 25-year-old and a 65-year-old with identical height and weight (and therefore identical BMI) can have very different amounts of muscle mass, bone density, and body fat. Since BMI does not distinguish between these tissues, the same number carries different health implications depending on your age. For women-specific considerations, see our <a href="/blog/bmi-for-women/">BMI for Women</a> guide, and for men, our <a href="/blog/bmi-for-men/">BMI for Men</a> guide.</p>
-      <p>Research consistently shows that the relationship between BMI and mortality is age-dependent. The BMI associated with the lowest mortality risk shifts upward as people age, which has led many experts to suggest that the <a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank" rel="noopener">standard WHO categories</a> (underweight below 18.5, normal 18.5&ndash;24.9, overweight 25&ndash;29.9) may be too rigid when applied uniformly across all age groups. Understanding your <a href="/blog/bmi-categories/">BMI category</a> is essential, but age context matters greatly.</p>
+      <p>Observational research has shown that the relationship between BMI and all-cause mortality is not identical across age groups. In pooled adult data (<a href="https://jamanetwork.com/journals/jama/fullarticle/1555137" target="_blank" rel="noopener">Flegal 2013, <em>JAMA</em></a>) the BMI 25&ndash;29.9 band showed a hazard ratio of 0.94 versus normal weight; in older-adult data (<a href="https://pubmed.ncbi.nlm.nih.gov/24452240/" target="_blank" rel="noopener">Winter 2014, <em>Am J Clin Nutr</em></a>) mortality was lowest across BMI 23&ndash;33 in adults aged 65+. These are associations from cohort studies, not revisions of the <a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank" rel="noopener">WHO adult BMI categories</a>, which remain 18.5&ndash;24.9 normal, 25&ndash;29.9 overweight, and 30+ obese.</p>
 
       <h2>BMI for Children and Teens (Ages 2&ndash;19)</h2>
       <p>Children and adolescents are assessed completely differently from adults. Instead of comparing a child&rsquo;s BMI to fixed cutoffs, their BMI is plotted on age- and sex-specific growth charts developed by the <a href="https://www.cdc.gov/growthcharts/clinical_charts.htm" target="_blank" rel="noopener">Centers for Disease Control and Prevention (CDC)</a>. The result is expressed as a percentile &mdash; showing where the child falls relative to other children of the same age and sex. You can use our <a href="/kids-bmi-calculator/">Kids BMI Calculator</a> for accurate pediatric measurements, or explore the <a href="/blog/bmi-percentile-calculator/">BMI Percentile Calculator</a> guide for detailed explanations.</p>
@@ -397,24 +377,24 @@
         <li style="margin-bottom: 0.5rem;">Increased all-cause mortality</li>
       </ul>
 
-      <h2>Healthy Weight Ranges by Age and Height</h2>
-      <p>This table combines standard and age-adjusted ranges to show approximate healthy weight ranges at different heights and ages:</p>
+      <h2>Healthy Weight Ranges by Height</h2>
+      <p>This table shows the weight range corresponding to the WHO adult healthy BMI band (18.5&ndash;24.9) at common heights. The right-hand column overlays the lower bound of the observational older-adult plateau from Winter 2014 (BMI 23), which mainly matters as a reminder that BMI below ~23 in adults 65+ was associated with elevated mortality in that cohort data &mdash; not as a weight-gain target.</p>
       <div class="table-responsive">
         <table class="data-table">
-          <thead><tr><th>Height</th><th>Ages 20&ndash;39 (BMI 18.5&ndash;25)</th><th>Ages 40&ndash;59 (BMI 19&ndash;27)</th><th>Ages 60+ (BMI 23&ndash;30)</th></tr></thead>
+          <thead><tr><th>Height</th><th>WHO adult healthy range (BMI 18.5&ndash;24.9)</th><th>BMI 23 threshold (Winter 2014, 65+)</th></tr></thead>
           <tbody>
-            <tr><td>5&prime;0&Prime; (152 cm)</td><td>94 &ndash; 128 lbs</td><td>98 &ndash; 140 lbs</td><td>118 &ndash; 153 lbs</td></tr>
-            <tr><td>5&prime;2&Prime; (157 cm)</td><td>101 &ndash; 137 lbs</td><td>106 &ndash; 149 lbs</td><td>128 &ndash; 164 lbs</td></tr>
-            <tr><td>5&prime;4&Prime; (163 cm)</td><td>108 &ndash; 146 lbs</td><td>113 &ndash; 159 lbs</td><td>137 &ndash; 175 lbs</td></tr>
-            <tr><td>5&prime;6&Prime; (168 cm)</td><td>115 &ndash; 155 lbs</td><td>121 &ndash; 169 lbs</td><td>146 &ndash; 186 lbs</td></tr>
-            <tr><td>5&prime;8&Prime; (173 cm)</td><td>122 &ndash; 164 lbs</td><td>129 &ndash; 179 lbs</td><td>155 &ndash; 197 lbs</td></tr>
-            <tr><td>5&prime;10&Prime; (178 cm)</td><td>129 &ndash; 174 lbs</td><td>136 &ndash; 189 lbs</td><td>164 &ndash; 209 lbs</td></tr>
-            <tr><td>6&prime;0&Prime; (183 cm)</td><td>137 &ndash; 184 lbs</td><td>143 &ndash; 199 lbs</td><td>173 &ndash; 221 lbs</td></tr>
-            <tr><td>6&prime;2&Prime; (188 cm)</td><td>144 &ndash; 194 lbs</td><td>151 &ndash; 210 lbs</td><td>183 &ndash; 234 lbs</td></tr>
+            <tr><td>5&prime;0&Prime; (152 cm)</td><td>94 &ndash; 128 lbs</td><td>118 lbs</td></tr>
+            <tr><td>5&prime;2&Prime; (157 cm)</td><td>101 &ndash; 137 lbs</td><td>126 lbs</td></tr>
+            <tr><td>5&prime;4&Prime; (163 cm)</td><td>108 &ndash; 146 lbs</td><td>134 lbs</td></tr>
+            <tr><td>5&prime;6&Prime; (168 cm)</td><td>115 &ndash; 155 lbs</td><td>143 lbs</td></tr>
+            <tr><td>5&prime;8&Prime; (173 cm)</td><td>122 &ndash; 164 lbs</td><td>151 lbs</td></tr>
+            <tr><td>5&prime;10&Prime; (178 cm)</td><td>129 &ndash; 174 lbs</td><td>161 lbs</td></tr>
+            <tr><td>6&prime;0&Prime; (183 cm)</td><td>137 &ndash; 184 lbs</td><td>170 lbs</td></tr>
+            <tr><td>6&prime;2&Prime; (188 cm)</td><td>144 &ndash; 194 lbs</td><td>179 lbs</td></tr>
           </tbody>
         </table>
       </div>
-      <p>Note that these age-adjusted ranges are research-informed suggestions, not official clinical guidelines. The WHO still uses 18.5&ndash;24.9 for all adults. However, an increasing number of geriatric specialists use higher thresholds in practice.</p>
+      <p>The WHO healthy range applies at every adult age. The 65+ column is an observational reference point (<a href="https://pubmed.ncbi.nlm.nih.gov/24452240/" target="_blank" rel="noopener">Winter 2014</a>), not a clinical target.</p>
 
       <h2>Beyond BMI: Age-Appropriate Health Assessments</h2>
       <p>Because BMI becomes less reliable with age, additional measurements provide valuable context at different life stages:</p>

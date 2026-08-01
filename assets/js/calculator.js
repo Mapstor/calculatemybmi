@@ -181,10 +181,8 @@ function calculateByAge() {
   const bmi = calculateBMI(weightLbs, heightInches);
   if (bmi <= 0) return;
   let adjustedRange;
-  if (age < 25) adjustedRange = '18.5 - 24.9 (Standard)';
-  else if (age < 45) adjustedRange = '18.5 - 24.9 (Standard)';
-  else if (age < 65) adjustedRange = '22 - 27 (Some research suggests)';
-  else adjustedRange = '23 - 28 (Older adults may benefit)';
+  if (age < 65) adjustedRange = '18.5 - 24.9 (WHO adult range)';
+  else adjustedRange = '18.5 - 24.9 (WHO) &middot; 23 - 33 lowest-mortality plateau in Winter 2014 meta-analysis';
   const category = getBMICategory(bmi);
   const healthyRange = getHealthyWeightRange(heightInches);
   displayBMIResults('age', bmi, category, healthyRange, heightInches, weightLbs, { adjustedRange, age });
@@ -416,7 +414,7 @@ function genSummary(bmi, category, weightLbs, healthyRange, extra) {
     text += ' <em>Note for men: if you carry significant muscle mass, your BMI may overestimate body fat. Consider waist circumference (risk increases above 40 inches / 102 cm) as an additional measure.</em>';
   }
   if (extra?.age && extra.age >= 65) {
-    text += ` <em>At age ${extra.age}, research suggests a slightly higher BMI (23-28) may be protective. Discuss your optimal weight range with your doctor.</em>`;
+    text += ` <em>Note for adults 65+: WHO cut-offs still apply, but an observational meta-analysis of ~200,000 older adults (Winter 2014, Am J Clin Nutr) found the lowest all-cause mortality across BMI 23-33 in this age group. Discuss what applies to you with your doctor.</em>`;
   }
   return `<div class="er-summary">${text}</div>`;
 }
@@ -510,7 +508,7 @@ function displayBMIResults(type, bmi, category, healthyRange, heightInches, weig
         <tr><td>Pregnancy</td><td>Pre-pregnancy BMI determines recommended weight gain (25-35 lbs for normal BMI)</td></tr>
         <tr><td>Postpartum</td><td>Allow 6-12 months for gradual return to pre-pregnancy weight</td></tr>
         <tr><td>Perimenopause (45-55)</td><td>Hormonal changes shift fat to abdomen; waist circumference becomes key metric</td></tr>
-        <tr><td>Post-Menopause (55+)</td><td>Slightly higher BMI (up to 27) may be protective for bone density</td></tr>
+        <tr><td>Post-Menopause (55+)</td><td>WHO cut-offs unchanged; resistance training and bone-density care are the actionable levers</td></tr>
       </tbody></table>
       <p style="font-size:0.8125rem;color:var(--gray-500);margin:0.75rem 0 0;">Waist circumference risk: &ge;35 inches (88 cm) indicates increased health risk for women. Menstrual cycle can cause 2-6 lb fluctuations &mdash; weigh at the same cycle point monthly.</p>
     </div>`;
@@ -543,23 +541,22 @@ function displayBMIResults(type, bmi, category, healthyRange, heightInches, weig
   // 8. Age-specific section
   if (extra.age) {
     const decades = [
-      { range: '20-29', rec: '18.5 - 24.9', note: 'Standard range applies; peak metabolic rate' },
-      { range: '30-39', rec: '18.5 - 24.9', note: 'Muscle mass begins declining ~3-8% per decade' },
-      { range: '40-49', rec: '18.5 - 24.9', note: 'Metabolism slows; same weight may mean higher fat %' },
-      { range: '50-59', rec: '22 - 27', note: 'Moderate BMI may be protective; focus on muscle' },
-      { range: '60-69', rec: '23 - 28', note: 'Higher BMI associated with better outcomes in studies' },
-      { range: '70-79', rec: '23 - 29', note: 'Unintentional weight loss is a bigger concern than mild overweight' },
-      { range: '80+', rec: '24 - 29', note: 'Maintaining weight and muscle mass is priority' },
+      { range: '20-29', rec: '18.5 - 24.9', note: 'WHO adult range; peak metabolic rate' },
+      { range: '30-39', rec: '18.5 - 24.9', note: 'WHO adult range; muscle mass declines gradually' },
+      { range: '40-49', rec: '18.5 - 24.9', note: 'WHO adult range; body composition shifts but cut-offs unchanged' },
+      { range: '50-59', rec: '18.5 - 24.9', note: 'WHO adult range; strength training helps preserve muscle' },
+      { range: '60-64', rec: '18.5 - 24.9', note: 'WHO adult range still applies' },
+      { range: '65+', rec: '18.5 - 24.9 (WHO)', note: 'Observational: Winter 2014 meta-analysis found lowest mortality across BMI 23-33 in adults 65+' },
     ];
-    let ageIdx = Math.min(6, Math.max(0, Math.floor((extra.age - 20) / 10)));
+    let bandIdx = extra.age < 30 ? 0 : extra.age < 40 ? 1 : extra.age < 50 ? 2 : extra.age < 60 ? 3 : extra.age < 65 ? 4 : 5;
     let rows = '';
     decades.forEach((d, i) => {
-      rows += `<tr${i === ageIdx ? ' class="er-active"' : ''}><td>${d.range}</td><td style="font-weight:600;">${d.rec}</td><td>${d.note}</td></tr>`;
+      rows += `<tr${i === bandIdx ? ' class="er-active"' : ''}><td>${d.range}</td><td style="font-weight:600;">${d.rec}</td><td>${d.note}</td></tr>`;
     });
     html += `<div class="er-section"><h3><span class="er-icon">&#128197;</span> BMI by Age Group</h3>
-      <p style="font-size:0.8125rem;color:var(--gray-500);margin:0 0 0.5rem;">Recommended BMI ranges may shift with age. Your age: <strong>${extra.age}</strong></p>
-      <table class="er-table"><thead><tr><th>Age Range</th><th>Suggested BMI</th><th>Notes</th></tr></thead><tbody>${rows}</tbody></table>
-      <p style="font-size:0.8125rem;color:var(--gray-500);margin:0.75rem 0 0;">Your age-adjusted recommendation: <strong>${extra.adjustedRange}</strong>. These are general guidelines &mdash; individual factors such as muscle mass, existing conditions, and fitness level matter more than BMI alone.</p>
+      <p style="font-size:0.8125rem;color:var(--gray-500);margin:0 0 0.5rem;">WHO does not publish age-adjusted BMI cut-offs. Your age: <strong>${extra.age}</strong></p>
+      <table class="er-table"><thead><tr><th>Age Range</th><th>WHO Adult Range</th><th>Notes</th></tr></thead><tbody>${rows}</tbody></table>
+      <p style="font-size:0.8125rem;color:var(--gray-500);margin:0.75rem 0 0;">Your range: <strong>${extra.adjustedRange}</strong>. Individual factors such as muscle mass, existing conditions, and fitness level matter more than BMI alone.</p>
     </div>`;
   }
 

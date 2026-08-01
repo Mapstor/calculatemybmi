@@ -11,21 +11,21 @@
     </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BMI Calculator by Age - Age-Adjusted BMI Calculator</title>
-  <meta name="description" content="Free age-adjusted BMI calculator. Get BMI recommendations tailored to your age group with personalized healthy weight ranges for adults 18-100.">
+  <title>BMI Calculator by Age &mdash; WHO Adult Range + Older-Adult Research</title>
+  <meta name="description" content="BMI calculator with age-specific context. Uses the WHO adult range 18.5-24.9 for all ages and reports observational research on adults 65+ (Winter 2014 meta-analysis).">
   <link rel="canonical" href="https://calculatemybmi.net/age-bmi-calculator/">
   <link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
-  <meta property="og:title" content="BMI Calculator by Age - Age-Adjusted BMI Calculator">
-  <meta property="og:description" content="Free age-adjusted BMI calculator with personalized healthy weight ranges for your age group.">
+  <meta property="og:title" content="BMI Calculator by Age &mdash; WHO Adult Range + Older-Adult Research">
+  <meta property="og:description" content="BMI calculator that uses the WHO adult range and reports observational research on adults 65+.">
   <meta property="og:image" content="https://calculatemybmi.net/assets/images/og-image.png">
   <meta property="og:url" content="https://calculatemybmi.net/age-bmi-calculator/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="BMI Calculator by Age">
-  <meta name="twitter:description" content="Free age-adjusted BMI calculator with personalized healthy weight ranges.">
+  <meta name="twitter:description" content="BMI calculator using the WHO adult range with observational research on adults 65+.">
   <meta name="twitter:image" content="https://calculatemybmi.net/assets/images/og-image.png">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <script type="application/ld+json">
@@ -55,25 +55,24 @@
 
   <main><div class="container">
     <h1>BMI Calculator by Age</h1>
-    <p class="intro-text">Calculate your BMI with age-adjusted recommendations. Research shows that optimal BMI ranges shift as you age, with slightly higher values being healthier for older adults. Unlike a <a href="/">standard BMI calculator</a> that applies the same range to everyone, this tool accounts for the fact that body composition, bone density, and metabolic needs change significantly across the lifespan. Whether you are looking at <a href="/blog/bmi-for-women/">BMI guidelines for women</a> or <a href="/blog/bmi-for-men/">BMI standards for men</a>, age is a crucial factor that standard calculators often overlook.</p>
+    <p class="intro-text">Calculate your BMI and see it against the standard adult range together with age-specific context. Neither the <a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank" rel="noopener">WHO</a> nor the <a href="https://www.cdc.gov/bmi/about/index.html" target="_blank" rel="noopener">CDC</a> publishes age-adjusted clinical cut-offs &mdash; this page uses the standard adult range and adds observational research relevant to older adults, in particular the <a href="https://pubmed.ncbi.nlm.nih.gov/24452240/" target="_blank" rel="noopener">Winter 2014 meta-analysis</a>. For sex-specific context see the <a href="/blog/bmi-for-women/">women&rsquo;s guide</a> and <a href="/blog/bmi-for-men/">men&rsquo;s guide</a>.</p>
 
     <div class="key-takeaways">
       <div class="key-takeaways-title">Key Takeaways</div>
       <ul>
-        <li><strong>Ages 18-44: BMI 18.5-24.9</strong> — standard healthy range applies</li>
-        <li><strong>Ages 45-64: BMI 22-27</strong> — slightly higher range may be optimal</li>
-        <li><strong>Ages 65+: BMI 23-28</strong> — moderate overweight may be protective</li>
-        <li><strong>The "obesity paradox"</strong> — older adults with slightly higher BMI often have better outcomes</li>
+        <li><strong>All adults (WHO):</strong> healthy BMI 18.5&ndash;24.9. WHO does not publish age-adjusted cut-offs.</li>
+        <li><strong>Adults 65+ (Winter 2014 meta-analysis, n=197,940):</strong> lowest all-cause mortality observed across BMI 23&ndash;33, elevated below BMI 23. This is an observational association, not a treatment target.</li>
+        <li><strong>Body composition</strong> (muscle mass, bone density, fat distribution) changes with age even when BMI does not &mdash; waist circumference and grip strength add information BMI cannot.</li>
       </ul>
     </div>
 
-    <!-- Age-Adjusted BMI Ranges Chart -->
+    <!-- WHO Adult Range + 65+ Observational Overlay -->
     <div style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:2rem;">
-      <h3 style="margin-top:0;font-size:1.125rem;margin-bottom:1rem;">Age-Adjusted BMI Ranges at a Glance</h3>
+      <h3 style="margin-top:0;font-size:1.125rem;margin-bottom:1rem;">WHO adult BMI range at a glance</h3>
       <div style="display:flex;flex-direction:column;gap:0.875rem;">
         <div class="chart-bar-h">
           <div style="display:flex;align-items:center;gap:0.75rem;">
-            <span style="min-width:80px;font-weight:600;font-size:0.875rem;">18-44 yrs</span>
+            <span style="min-width:110px;font-weight:600;font-size:0.875rem;">All adults (WHO)</span>
             <div class="chart-range" style="flex:1;height:28px;position:relative;">
               <div class="chart-range-track" style="background:linear-gradient(to right, #fecaca 0%, #fecaca 12.3%, #bbf7d0 12.3%, #bbf7d0 41.3%, #fef08a 41.3%, #fef08a 58%, #fed7aa 58%, #fed7aa 74.6%, #fecaca 74.6%, #fecaca 100%);height:100%;border-radius:4px;"></div>
               <div class="chart-range-marker" style="position:absolute;left:12.3%;top:0;bottom:0;width:2px;background:#16a34a;"></div>
@@ -84,34 +83,22 @@
         </div>
         <div class="chart-bar-h">
           <div style="display:flex;align-items:center;gap:0.75rem;">
-            <span style="min-width:80px;font-weight:600;font-size:0.875rem;">45-64 yrs</span>
+            <span style="min-width:110px;font-weight:600;font-size:0.875rem;">65+ (Winter 2014)</span>
             <div class="chart-range" style="flex:1;height:28px;position:relative;">
-              <div class="chart-range-track" style="background:linear-gradient(to right, #fecaca 0%, #fecaca 12.3%, #fef9c3 12.3%, #fef9c3 28%, #bbf7d0 28%, #bbf7d0 48%, #fef08a 48%, #fef08a 58%, #fed7aa 58%, #fed7aa 74.6%, #fecaca 74.6%, #fecaca 100%);height:100%;border-radius:4px;"></div>
-              <div class="chart-range-marker" style="position:absolute;left:28%;top:0;bottom:0;width:2px;background:#ca8a04;"></div>
-              <div class="chart-range-marker" style="position:absolute;left:48%;top:0;bottom:0;width:2px;background:#ca8a04;"></div>
-              <span style="position:absolute;left:38%;top:50%;transform:translate(-50%,-50%);font-size:0.75rem;font-weight:600;color:#a16207;">22-27</span>
-            </div>
-          </div>
-        </div>
-        <div class="chart-bar-h">
-          <div style="display:flex;align-items:center;gap:0.75rem;">
-            <span style="min-width:80px;font-weight:600;font-size:0.875rem;">65+ yrs</span>
-            <div class="chart-range" style="flex:1;height:28px;position:relative;">
-              <div class="chart-range-track" style="background:linear-gradient(to right, #fecaca 0%, #fecaca 12.3%, #fef9c3 12.3%, #fef9c3 32%, #bbf7d0 32%, #bbf7d0 52%, #fef08a 52%, #fef08a 58%, #fed7aa 58%, #fed7aa 74.6%, #fecaca 74.6%, #fecaca 100%);height:100%;border-radius:4px;"></div>
-              <div class="chart-range-marker" style="position:absolute;left:32%;top:0;bottom:0;width:2px;background:#ea580c;"></div>
-              <div class="chart-range-marker" style="position:absolute;left:52%;top:0;bottom:0;width:2px;background:#ea580c;"></div>
-              <span style="position:absolute;left:42%;top:50%;transform:translate(-50%,-50%);font-size:0.75rem;font-weight:600;color:#c2410c;">23-28</span>
+              <div class="chart-range-track" style="background:linear-gradient(to right, #fecaca 0%, #fecaca 32%, #fef9c3 32%, #fef9c3 74.6%, #fecaca 74.6%, #fecaca 100%);height:100%;border-radius:4px;"></div>
+              <div class="chart-range-marker" style="position:absolute;left:32%;top:0;bottom:0;width:2px;background:#ca8a04;"></div>
+              <div class="chart-range-marker" style="position:absolute;left:74.6%;top:0;bottom:0;width:2px;background:#ca8a04;"></div>
+              <span style="position:absolute;left:53%;top:50%;transform:translate(-50%,-50%);font-size:0.75rem;font-weight:600;color:#a16207;">23-33 (observed plateau)</span>
             </div>
           </div>
         </div>
       </div>
       <div style="display:flex;justify-content:center;gap:1rem;margin-top:1rem;flex-wrap:wrap;">
-        <span style="font-size:0.75rem;display:flex;align-items:center;gap:0.25rem;"><span style="width:12px;height:12px;background:#fecaca;border-radius:2px;"></span>Underweight/Obese</span>
-        <span style="font-size:0.75rem;display:flex;align-items:center;gap:0.25rem;"><span style="width:12px;height:12px;background:#bbf7d0;border-radius:2px;"></span>Optimal</span>
-        <span style="font-size:0.75rem;display:flex;align-items:center;gap:0.25rem;"><span style="width:12px;height:12px;background:#fef08a;border-radius:2px;"></span>Acceptable</span>
-        <span style="font-size:0.75rem;display:flex;align-items:center;gap:0.25rem;"><span style="width:12px;height:12px;background:#fed7aa;border-radius:2px;"></span>Caution</span>
+        <span style="font-size:0.75rem;display:flex;align-items:center;gap:0.25rem;"><span style="width:12px;height:12px;background:#fecaca;border-radius:2px;"></span>Elevated mortality (in the referenced source)</span>
+        <span style="font-size:0.75rem;display:flex;align-items:center;gap:0.25rem;"><span style="width:12px;height:12px;background:#bbf7d0;border-radius:2px;"></span>WHO healthy range</span>
+        <span style="font-size:0.75rem;display:flex;align-items:center;gap:0.25rem;"><span style="width:12px;height:12px;background:#fef9c3;border-radius:2px;"></span>Observed low-mortality plateau (65+)</span>
       </div>
-      <p style="font-size:0.75rem;color:var(--gray-500);margin-top:0.75rem;margin-bottom:0;text-align:center;">Note: Optimal ranges shift higher with age. See our complete guide on <a href="/blog/bmi-by-age/">BMI changes by age</a>.</p>
+      <p style="font-size:0.75rem;color:var(--gray-500);margin-top:0.75rem;margin-bottom:0;text-align:center;">Row 2 reflects <a href="https://pubmed.ncbi.nlm.nih.gov/24452240/" target="_blank" rel="noopener">Winter et al., <em>Am J Clin Nutr</em> 2014</a> observational data for adults aged 65+, not a WHO recommendation.</p>
     </div>
 
     <div class="calculator-card">
@@ -149,7 +136,7 @@
             <div class="bmi-scale-labels"><span>15</span><span>18.5</span><span>25</span><span>30</span><span>35</span><span>40</span></div>
           </div>
           <div class="weight-range-box">
-            <div class="weight-range-title">Age-Adjusted Recommendation</div>
+            <div class="weight-range-title">Adult BMI range</div>
             <p id="age-adjusted-range" style="margin:0;font-size:0.9375rem;">—</p>
           </div>
           <div class="results-grid">
@@ -166,60 +153,35 @@
       <p style="font-size:0.8125rem;color:var(--gray-600);margin:0;"><strong>Medical Disclaimer:</strong> This calculator provides estimates for informational purposes only. Age-adjusted BMI ranges are based on population studies and may not apply to every individual. Always consult a healthcare professional for medical advice.</p>
     </div>
 
-    <!-- Recommended BMI by Age Table -->
+    <!-- WHO Adult Range + 65+ Observational Overlay Table -->
     <section class="content-section">
-      <h2>Recommended BMI by Age Group</h2>
-      <p>The <a href="/blog/bmi-categories/">standard BMI categories</a> define 18.5-24.9 as the "normal" range for all adults. However, decades of research suggest that optimal BMI ranges shift upward as we age, challenging the one-size-fits-all approach detailed in our <a href="/blog/bmi-calculator-by-age/">BMI calculator by age guide</a>. The table below summarizes age-adjusted BMI recommendations based on large-scale epidemiological studies, including data from the National Health and Nutrition Examination Survey (NHANES) and meta-analyses published in peer-reviewed journals.</p>
+      <h2>Standard BMI range for adults</h2>
+      <p>The <a href="/blog/bmi-categories/">standard BMI categories</a> define 18.5&ndash;24.9 as the healthy range for all adults, and the <a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank" rel="noopener noreferrer">WHO fact sheet on obesity</a> does not carve out age-specific cut-offs. What <em>does</em> shift with age is body composition &mdash; muscle mass, bone density, and fat distribution &mdash; and, in observational data, the BMI band associated with the lowest all-cause mortality in older adults. The row for 65+ below summarises that observational finding; it is not a WHO recommendation.</p>
 
       <div style="overflow-x:auto;margin:1.5rem 0;">
         <table style="width:100%;border-collapse:collapse;font-size:0.9375rem;border:1px solid var(--gray-200);border-radius:var(--radius-lg);overflow:hidden;">
           <thead>
             <tr style="background:#1a56db;color:#fff;">
               <th style="padding:0.875rem 1rem;text-align:left;font-weight:600;">Age Group</th>
-              <th style="padding:0.875rem 1rem;text-align:center;font-weight:600;">Recommended BMI Range</th>
-              <th style="padding:0.875rem 1rem;text-align:left;font-weight:600;">Why This Range?</th>
+              <th style="padding:0.875rem 1rem;text-align:center;font-weight:600;">BMI Range</th>
+              <th style="padding:0.875rem 1rem;text-align:left;font-weight:600;">Basis</th>
             </tr>
           </thead>
           <tbody>
             <tr style="background:#f0fdf4;">
-              <td style="padding:0.75rem 1rem;border-bottom:1px solid var(--gray-200);font-weight:600;">18-24 years</td>
-              <td style="padding:0.75rem 1rem;border-bottom:1px solid var(--gray-200);text-align:center;"><span style="background:#16a34a;color:#fff;padding:0.25rem 0.75rem;border-radius:999px;font-weight:600;">18.5 - 24.9</span></td>
-              <td style="padding:0.75rem 1rem;border-bottom:1px solid var(--gray-200);">Standard WHO range applies. Peak muscle mass and bone density. Metabolic rate is at its highest. Lower BMI correlates strongly with reduced disease risk.</td>
-            </tr>
-            <tr style="background:#f0fdf4;">
-              <td style="padding:0.75rem 1rem;border-bottom:1px solid var(--gray-200);font-weight:600;">25-34 years</td>
-              <td style="padding:0.75rem 1rem;border-bottom:1px solid var(--gray-200);text-align:center;"><span style="background:#16a34a;color:#fff;padding:0.25rem 0.75rem;border-radius:999px;font-weight:600;">18.5 - 24.9</span></td>
-              <td style="padding:0.75rem 1rem;border-bottom:1px solid var(--gray-200);">Standard range still applies. Muscle mass begins declining slightly but remains high. Maintaining a healthy BMI now reduces long-term cardiovascular risk.</td>
-            </tr>
-            <tr style="background:#f0fdf4;">
-              <td style="padding:0.75rem 1rem;border-bottom:1px solid var(--gray-200);font-weight:600;">35-44 years</td>
-              <td style="padding:0.75rem 1rem;border-bottom:1px solid var(--gray-200);text-align:center;"><span style="background:#16a34a;color:#fff;padding:0.25rem 0.75rem;border-radius:999px;font-weight:600;">18.5 - 24.9</span></td>
-              <td style="padding:0.75rem 1rem;border-bottom:1px solid var(--gray-200);">Standard range still recommended. Sarcopenia accelerates modestly. Fat redistribution toward visceral area begins. Focus on <a href="/blog/muscle-mass-and-bmi/">maintaining muscle mass</a> is critical.</td>
+              <td style="padding:0.75rem 1rem;border-bottom:1px solid var(--gray-200);font-weight:600;">18&ndash;64 years</td>
+              <td style="padding:0.75rem 1rem;border-bottom:1px solid var(--gray-200);text-align:center;"><span style="background:#16a34a;color:#fff;padding:0.25rem 0.75rem;border-radius:999px;font-weight:600;">18.5 &ndash; 24.9</span></td>
+              <td style="padding:0.75rem 1rem;border-bottom:1px solid var(--gray-200);">WHO adult healthy range. Body composition, hormonal changes, and metabolic rate shift across these decades but the WHO cut-offs do not. See <a href="/blog/muscle-mass-and-bmi/">muscle mass and BMI</a> for context.</td>
             </tr>
             <tr style="background:#fefce8;">
-              <td style="padding:0.75rem 1rem;border-bottom:1px solid var(--gray-200);font-weight:600;">45-54 years</td>
-              <td style="padding:0.75rem 1rem;border-bottom:1px solid var(--gray-200);text-align:center;"><span style="background:#ca8a04;color:#fff;padding:0.25rem 0.75rem;border-radius:999px;font-weight:600;">22 - 27</span></td>
-              <td style="padding:0.75rem 1rem;border-bottom:1px solid var(--gray-200);">Research suggests a slightly higher range is optimal. Hormonal changes (perimenopause, testosterone decline) alter body composition. Studies show BMI 22-27 associated with lowest all-cause mortality in this age group.</td>
-            </tr>
-            <tr style="background:#fefce8;">
-              <td style="padding:0.75rem 1rem;border-bottom:1px solid var(--gray-200);font-weight:600;">55-64 years</td>
-              <td style="padding:0.75rem 1rem;border-bottom:1px solid var(--gray-200);text-align:center;"><span style="background:#ca8a04;color:#fff;padding:0.25rem 0.75rem;border-radius:999px;font-weight:600;">22 - 27</span></td>
-              <td style="padding:0.75rem 1rem;border-bottom:1px solid var(--gray-200);">Moderate weight provides protective reserves during illness or surgery. Bone density loss accelerates. A BMI below 22 may indicate <a href="/blog/underweight-bmi-risks/">underweight risks</a> including frailty.</td>
-            </tr>
-            <tr style="background:#fff7ed;">
-              <td style="padding:0.75rem 1rem;border-bottom:1px solid var(--gray-200);font-weight:600;">65-74 years</td>
-              <td style="padding:0.75rem 1rem;border-bottom:1px solid var(--gray-200);text-align:center;"><span style="background:#ea580c;color:#fff;padding:0.25rem 0.75rem;border-radius:999px;font-weight:600;">23 - 28</span></td>
-              <td style="padding:0.75rem 1rem;border-bottom:1px solid var(--gray-200);">The obesity paradox is most pronounced here. Extra weight protects against hip fractures, provides energy reserves during acute illness, and is associated with higher bone mineral density. Unintentional weight loss is a greater concern than being mildly overweight.</td>
-            </tr>
-            <tr style="background:#fff7ed;">
-              <td style="padding:0.75rem 1rem;font-weight:600;">75+ years</td>
-              <td style="padding:0.75rem 1rem;text-align:center;"><span style="background:#ea580c;color:#fff;padding:0.25rem 0.75rem;border-radius:999px;font-weight:600;">24 - 29</span></td>
-              <td style="padding:0.75rem 1rem;">Significant height loss inflates BMI artificially. Muscle wasting is common. Being slightly overweight is consistently linked to better survival rates. Weight maintenance and adequate nutrition take priority over weight loss unless BMI exceeds 30.</td>
+              <td style="padding:0.75rem 1rem;font-weight:600;">65+ years</td>
+              <td style="padding:0.75rem 1rem;text-align:center;"><span style="background:#ca8a04;color:#fff;padding:0.25rem 0.75rem;border-radius:999px;font-weight:600;">18.5 &ndash; 24.9 (WHO)</span></td>
+              <td style="padding:0.75rem 1rem;">WHO range still applies. An observational meta-analysis of 197,940 adults aged 65+ (<a href="https://pubmed.ncbi.nlm.nih.gov/24452240/" target="_blank" rel="noopener noreferrer">Winter et al., <em>Am J Clin Nutr</em> 2014</a>) reported the lowest all-cause mortality across BMI 23&ndash;33, with elevated mortality below BMI 23. This is an association from cohort data, not a treatment target.</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <p style="font-size:0.8125rem;color:var(--gray-500);">Sources: National Health and Nutrition Examination Survey (NHANES); Flegal et al., JAMA 2013; Winter et al., American Journal of Clinical Nutrition 2014. See also <a href="https://www.cdc.gov/bmi/about/index.html" target="_blank" rel="noopener noreferrer">CDC BMI guidelines</a> and the <a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank" rel="noopener noreferrer">WHO fact sheet on obesity</a>.</p>
+      <p style="font-size:0.8125rem;color:var(--gray-500);">WHO cut-offs: <a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank" rel="noopener noreferrer">WHO obesity fact sheet</a>. Older-adult observational data: <a href="https://pubmed.ncbi.nlm.nih.gov/24452240/" target="_blank" rel="noopener noreferrer">Winter JE et al., 2014</a>. Related epidemiology: <a href="https://jamanetwork.com/journals/jama/fullarticle/1555137" target="_blank" rel="noopener noreferrer">Flegal KM et al., <em>JAMA</em> 2013</a>.</p>
     </section>
 
     <!-- How Body Composition Changes with Age -->
@@ -273,22 +235,21 @@
     <!-- The Obesity Paradox Explained -->
     <section class="content-section">
       <h2>The Obesity Paradox Explained</h2>
-      <p>One of the most counterintuitive findings in modern medicine is the so-called "obesity paradox" -- the observation that older adults classified as overweight (BMI 25-29.9) often have <strong>better health outcomes and lower mortality rates</strong> than those in the standard "normal" BMI range. This challenges traditional thinking about the <a href="/blog/healthy-bmi-range/">healthy BMI range</a> and is essential for interpreting your age-adjusted BMI results from our calculator above. Understanding the <a href="/blog/bmi-limitations/">limitations of BMI</a> is especially important when considering age-related factors.</p>
+      <p>The "obesity paradox" is an observational finding: in some large cohort studies, older adults classified as overweight (BMI 25&ndash;29.9) have shown similar or slightly lower all-cause mortality than those in the WHO normal range. It is an <em>association</em> in cohort data &mdash; not a clinical recommendation to gain weight. The current WHO healthy adult range (18.5&ndash;24.9) has not changed on the basis of these findings. See also the <a href="/blog/bmi-limitations/">limitations of BMI</a>.</p>
 
       <div style="background:linear-gradient(135deg,#eff6ff,#f8fafc);border:1px solid #93c5fd;border-radius:12px;padding:1.75rem;margin:1.5rem 0;">
-        <h3 style="margin-top:0;color:#1d4ed8;">What the Research Shows</h3>
-        <p>A landmark 2013 meta-analysis published in the <em>Journal of the American Medical Association (JAMA)</em> by Katherine Flegal and colleagues analyzed data from nearly 3 million individuals across 97 studies. The findings were striking:</p>
+        <h3 style="margin-top:0;color:#1d4ed8;">What the meta-analysis actually reported</h3>
+        <p><a href="https://jamanetwork.com/journals/jama/fullarticle/1555137" target="_blank" rel="noopener">Flegal KM, Kit BK, Orpana H, Graubard BI. &ldquo;Association of all-cause mortality with overweight and obesity using standard body mass index categories.&rdquo; <em>JAMA</em> 2013;309(1):71&ndash;82</a> pooled 97 studies covering ~2.88 million individuals across all adult ages, and reported (relative to normal weight):</p>
         <ul style="margin-bottom:0;">
-          <li><strong>Overweight adults (BMI 25-29.9)</strong> had a <strong>6% lower risk of all-cause mortality</strong> compared to those with a "normal" BMI</li>
-          <li><strong>Grade 1 obesity (BMI 30-34.9)</strong> showed no significant increase in mortality risk</li>
-          <li><strong>Grade 2+ obesity (BMI 35+)</strong> was associated with a 29% higher mortality risk</li>
-          <li>The protective effect of being slightly overweight was most pronounced in adults aged 65 and older</li>
+          <li><strong>Overweight (BMI 25&ndash;29.9):</strong> hazard ratio 0.94 (95% CI 0.91&ndash;0.96) &mdash; ~6% lower all-cause mortality</li>
+          <li><strong>Grade 1 obesity (BMI 30&ndash;34.9):</strong> hazard ratio 0.95 (95% CI 0.88&ndash;1.01) &mdash; not statistically distinguishable from normal weight</li>
+          <li><strong>Grade 2+ obesity (BMI &ge;35):</strong> hazard ratio 1.29 (95% CI 1.18&ndash;1.41) &mdash; ~29% higher mortality</li>
         </ul>
       </div>
 
       <!-- Mortality Risk Distribution Chart -->
       <div style="background:#fff;border:1px solid var(--gray-200);border-radius:12px;padding:1.5rem;margin:1.5rem 0;">
-        <h4 style="margin-top:0;font-size:1rem;margin-bottom:1rem;text-align:center;">Relative Mortality Risk by BMI Category (Adults 65+)</h4>
+        <h4 style="margin-top:0;font-size:1rem;margin-bottom:1rem;text-align:center;">All-cause mortality by BMI category (pooled adults, Flegal 2013)</h4>
         <div class="chart-distribution" style="display:flex;align-items:flex-end;justify-content:center;gap:0.5rem;height:160px;padding:0 1rem;">
           <div style="display:flex;flex-direction:column;align-items:center;gap:0.25rem;">
             <div class="stat-highlight" style="width:48px;background:linear-gradient(to top,#fca5a5,#f87171);border-radius:4px 4px 0 0;height:120px;display:flex;align-items:flex-start;justify-content:center;padding-top:0.5rem;">
@@ -321,7 +282,7 @@
             <span style="font-size:0.6875rem;color:var(--gray-600);text-align:center;">35+<br>Obese II+</span>
           </div>
         </div>
-        <p style="font-size:0.75rem;color:var(--gray-500);margin-top:1rem;margin-bottom:0;text-align:center;">Data: Flegal et al., JAMA 2013. "Ref" = reference category. Negative values indicate lower mortality risk. Learn more about <a href="/blog/healthy-bmi-range/">what constitutes a healthy BMI range</a>.</p>
+        <p style="font-size:0.75rem;color:var(--gray-500);margin-top:1rem;margin-bottom:0;text-align:center;">Data: <a href="https://jamanetwork.com/journals/jama/fullarticle/1555137" target="_blank" rel="noopener">Flegal KM et al., <em>JAMA</em> 2013</a> (all adult ages pooled, 97 studies, ~2.88M individuals). Hazard ratios shown relative to normal weight (18.5&ndash;24.9) as reference. For older adults specifically, see <a href="https://pubmed.ncbi.nlm.nih.gov/24452240/" target="_blank" rel="noopener">Winter 2014</a>.</p>
       </div>
 
       <div style="background:linear-gradient(135deg,#f0fdf4,#f8fafc);border:1px solid #86efac;border-radius:12px;padding:1.75rem;margin:1.5rem 0;">
@@ -384,34 +345,34 @@
 
       <div style="border-left:4px solid #9333ea;background:#fdf4ff;padding:1.25rem 1.5rem;border-radius:0 12px 12px 0;margin:1.5rem 0;">
         <h3 style="margin-top:0;color:#9333ea;">Your 40s: The Hormonal Shift</h3>
-        <p style="margin-bottom:0.5rem;"><strong>Target BMI: 18.5-24.9 (trending toward 20-25)</strong></p>
+        <p style="margin-bottom:0.5rem;"><strong>WHO BMI range: 18.5&ndash;24.9</strong></p>
         <p>Your 40s bring significant hormonal changes for both men and women. Women may enter perimenopause, experiencing fluctuating estrogen levels that promote abdominal fat storage. Men experience gradual testosterone decline (about 1% per year after age 30), reducing muscle-building capacity. Metabolic rate drops more noticeably, and recovery from exercise takes longer.</p>
         <p><strong>Practical advice:</strong> Shift your exercise strategy to include <strong>high-intensity interval training (HIIT)</strong> alongside resistance training -- both are more effective at combating age-related metabolic changes than steady-state cardio alone. Women should discuss bone density screening with their doctor. Focus on <a href="/blog/bmi-and-metabolism/">understanding your changing metabolism</a> and adjusting caloric intake accordingly. Sleep quality becomes increasingly important for weight management.</p>
         <p style="margin-bottom:0;">Use our <a href="/ideal-weight/">ideal weight calculator</a> to set realistic targets that account for your frame size and body type.</p>
       </div>
 
       <div style="border-left:4px solid #ca8a04;background:#fffbeb;padding:1.25rem 1.5rem;border-radius:0 12px 12px 0;margin:1.5rem 0;">
-        <h3 style="margin-top:0;color:#ca8a04;">Your 50s: Embracing the New Normal</h3>
-        <p style="margin-bottom:0.5rem;"><strong>Target BMI: 22-27</strong></p>
-        <p>By your 50s, the age-adjusted BMI range begins to shift. Research consistently shows that adults in this age group with BMI values between 22 and 27 have the lowest rates of all-cause mortality. Women who have gone through menopause may notice an average weight gain of 5-8 pounds despite no changes in diet or exercise. Men continue to lose muscle mass and may develop central obesity.</p>
-        <p><strong>Practical advice:</strong> <strong>Do not panic</strong> if your BMI is 25-27 -- this may actually be your optimal range now. Focus on body composition rather than the scale. Strength training becomes even more critical: aim for 2-3 sessions per week targeting all major muscle groups. Get a <strong>DEXA scan</strong> to understand your true body composition, including bone density and fat distribution. Address any joint issues that might be limiting your physical activity.</p>
+        <h3 style="margin-top:0;color:#ca8a04;">Your 50s: Body composition matters more than the scale</h3>
+        <p style="margin-bottom:0.5rem;"><strong>WHO BMI range: 18.5&ndash;24.9</strong></p>
+        <p>By your 50s, muscle mass has been declining for a couple of decades and body composition can drift toward higher fat mass even at a stable weight. WHO cut-offs still apply. What changes is what to <em>look at alongside</em> BMI: waist circumference, grip strength, and how much of your weight is lean tissue.</p>
+        <p><strong>Practical advice:</strong> Prioritise resistance training (2&ndash;3 sessions per week targeting all major muscle groups). Track waist circumference and, if available, a DEXA scan for body composition. Address any joint issues that limit activity.</p>
         <p style="margin-bottom:0;">Compare different assessment approaches with our <a href="/blog/bmi-vs-body-composition/">BMI vs body composition analysis</a>.</p>
       </div>
 
       <div style="border-left:4px solid #ea580c;background:#fff7ed;padding:1.25rem 1.5rem;border-radius:0 12px 12px 0;margin:1.5rem 0;">
         <h3 style="margin-top:0;color:#ea580c;">Your 60s: Quality Over Quantity</h3>
-        <p style="margin-bottom:0.5rem;"><strong>Target BMI: 23-28</strong></p>
-        <p>In your 60s, the priorities shift dramatically. <strong>Unintentional weight loss becomes a greater health concern than being mildly overweight.</strong> Sarcopenia accelerates, and the risk of falls and fractures increases substantially. Many chronic diseases become more prevalent, and maintaining adequate nutrition and physical function takes priority.</p>
-        <p><strong>Practical advice:</strong> Ensure adequate <strong>protein intake (1.0-1.2 g per kg body weight)</strong> to combat accelerated muscle loss. Incorporate balance and flexibility exercises alongside strength training. Discuss any unintentional weight loss with your doctor immediately, as it can signal underlying health issues. Vitamin D supplementation is often recommended for bone health and fall prevention.</p>
-        <p style="margin-bottom:0;">The <a href="https://www.mayoclinic.org/healthy-lifestyle/healthy-aging/in-depth/aging/art-20046070" target="_blank" rel="noopener noreferrer">Mayo Clinic's healthy aging guide</a> provides excellent resources for this life stage.</p>
+        <p style="margin-bottom:0.5rem;"><strong>WHO BMI range: 18.5&ndash;24.9</strong> &middot; <strong>65+ observational plateau (Winter 2014):</strong> lowest mortality across BMI 23&ndash;33</p>
+        <p>In your 60s, unintentional weight loss becomes a bigger concern than being mildly overweight. Sarcopenia accelerates and the risk of falls and fractures rises. Maintaining adequate nutrition and physical function takes priority.</p>
+        <p><strong>Practical advice:</strong> Prioritise protein intake and resistance training to combat accelerated muscle loss. Add balance and flexibility work. Discuss any unintentional weight loss with your doctor. Vitamin D and bone health screening are worth discussing.</p>
+        <p style="margin-bottom:0;">The <a href="https://www.mayoclinic.org/healthy-lifestyle/healthy-aging/in-depth/aging/art-20046070" target="_blank" rel="noopener noreferrer">Mayo Clinic's healthy aging guide</a> covers this life stage in more depth.</p>
       </div>
 
       <div style="border-left:4px solid #dc2626;background:#fef2f2;padding:1.25rem 1.5rem;border-radius:0 12px 12px 0;margin:1.5rem 0;">
-        <h3 style="margin-top:0;color:#dc2626;">Your 70s and Beyond: Maintain and Protect</h3>
-        <p style="margin-bottom:0.5rem;"><strong>Target BMI: 24-29</strong></p>
-        <p>For adults aged 75 and older, the evidence is clear: <strong>a slightly higher BMI is protective</strong>. The obesity paradox is strongest in this age group. Height shrinkage of 2-3 inches is common, which artificially inflates BMI. Appetite often decreases, making adequate nutrition a challenge. Falls become the leading cause of injury-related death.</p>
-        <p><strong>Practical advice:</strong> Focus on <strong>preventing weight loss and muscle wasting</strong> rather than pursuing weight loss, unless BMI exceeds 30 and a doctor specifically recommends it. Eat nutrient-dense, protein-rich meals. Continue gentle strength training and balance exercises to prevent falls. Accept that your body composition has changed and use age-adjusted BMI ranges rather than comparing yourself to younger adults.</p>
-        <p style="margin-bottom:0;">Visit the <a href="https://www.nia.nih.gov/health/maintaining-healthy-weight" target="_blank" rel="noopener noreferrer">National Institute on Aging</a> for comprehensive guidance on weight management in later life. Also see the <a href="https://www.nhs.uk/live-well/healthy-weight/bmi-calculator/" target="_blank" rel="noopener noreferrer">NHS BMI calculator</a> for additional perspective on BMI interpretation.</p>
+        <h3 style="margin-top:0;color:#dc2626;">Your 70s and beyond: Maintain and protect</h3>
+        <p style="margin-bottom:0.5rem;"><strong>WHO BMI range: 18.5&ndash;24.9</strong> &middot; observational data on adults 65+ (Winter 2014) shows a low-mortality plateau across BMI 23&ndash;33</p>
+        <p>Height shrinkage of ~1&ndash;3 inches across older adulthood is common and inflates BMI even at stable weight. Appetite often decreases, so adequate protein and micronutrient intake becomes harder. Fall prevention becomes an outsized health lever.</p>
+        <p><strong>Practical advice:</strong> Focus on <strong>preventing unintentional weight loss and muscle wasting</strong> rather than pursuing weight loss, unless a doctor specifically recommends it. Eat nutrient-dense, protein-rich meals. Continue gentle strength training and balance exercises. Whatever BMI you carry, discuss what it means for you with your clinician.</p>
+        <p style="margin-bottom:0;">Visit the <a href="https://www.nia.nih.gov/health/maintaining-healthy-weight" target="_blank" rel="noopener noreferrer">National Institute on Aging</a> for guidance on weight management in later life.</p>
       </div>
     </section>
 
@@ -470,7 +431,7 @@
             <tr style="background:#fff;">
               <td style="padding:0.75rem 1rem;border-bottom:1px solid var(--gray-200);font-weight:600;">Sleep Apnea</td>
               <td style="padding:0.75rem 1rem;border-bottom:1px solid var(--gray-200);text-align:center;">40-70</td>
-              <td style="padding:0.75rem 1rem;border-bottom:1px solid var(--gray-200);">Strong relationship with BMI. A 10% weight gain increases odds of moderate-to-severe sleep apnea by 6-fold. Neck circumference and BMI are top predictors.</td>
+              <td style="padding:0.75rem 1rem;border-bottom:1px solid var(--gray-200);">Strong association with BMI. Neck circumference and BMI are the strongest predictors of obstructive sleep apnea in adult populations.</td>
               <td style="padding:0.75rem 1rem;border-bottom:1px solid var(--gray-200);">BMI > 30 (4x risk); BMI > 35 (very high risk)</td>
             </tr>
             <tr style="background:#f8fafc;">
@@ -524,7 +485,7 @@
           <ul style="margin-bottom:0;padding-left:1.25rem;">
             <li><strong>Exercise:</strong> 2-3 strength sessions weekly (non-negotiable); balance and flexibility work; moderate cardio</li>
             <li><strong>Nutrition:</strong> Protein needs increase to 1.0-1.2 g/kg body weight; vitamin D, B12, and calcium supplementation</li>
-            <li><strong>Habits:</strong> Focus on body composition rather than scale weight; accept a BMI of 22-27 as healthy</li>
+            <li><strong>Habits:</strong> Focus on body composition rather than scale weight alone; track waist circumference alongside BMI</li>
             <li><strong>Monitoring:</strong> DEXA scan for bone density and body composition; regular blood work for metabolic markers</li>
             <li><strong>Prevention:</strong> Screen for <a href="/blog/overweight-bmi-risks/">overweight-related health risks</a>; manage blood pressure and cholesterol proactively</li>
             <li><strong>Avoid:</strong> Extreme calorie restriction (leads to muscle and bone loss); comparing your body to your 30-year-old self</li>
@@ -538,7 +499,7 @@
             <li><strong>Exercise:</strong> Gentle strength training (bodyweight, resistance bands), balance exercises (tai chi), walking 30+ min/day</li>
             <li><strong>Nutrition:</strong> Protein at every meal (1.2 g/kg body weight); nutrient-dense foods; avoid skipping meals</li>
             <li><strong>Habits:</strong> Weigh weekly to catch unintentional weight loss early; maintain social eating to support appetite</li>
-            <li><strong>Monitoring:</strong> Report any unintentional weight loss of 5%+ to your doctor; a BMI of 23-29 may be appropriate</li>
+            <li><strong>Monitoring:</strong> Report any unintentional weight loss of 5%+ to your doctor. In observational data on adults 65+ (Winter 2014), all-cause mortality was lowest across BMI 23&ndash;33; discuss what applies to you with your clinician.</li>
             <li><strong>Hydration:</strong> Thirst sensation diminishes with age; aim for 6-8 glasses of fluid daily</li>
             <li><strong>Avoid:</strong> Intentional weight loss without medical supervision; excessive exercise that increases fall risk</li>
           </ul>
@@ -597,11 +558,11 @@
       <div class="faq-list">
         <div class="faq-item">
           <button class="faq-question">Why does the healthy BMI range change with age?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="faq-answer"><p>As people age, <strong>body composition changes naturally</strong> -- muscle mass decreases while fat mass increases, a process known as sarcopenia. Large-scale epidemiological studies consistently show that older adults with a slightly higher BMI (25-27) often have better survival rates than those in the "normal" range of 18.5-24.9. This is partly because extra weight provides energy reserves during illness, helps maintain bone density, and protects against the risks of frailty. The shift in optimal BMI begins around age 45-50, when hormonal changes, reduced metabolic rate, and body composition shifts make the standard BMI categories less applicable. By age 65+, research strongly supports a higher BMI range of 23-28 as healthiest.</p></div>
+          <div class="faq-answer"><p>Body composition changes with age &mdash; muscle mass declines and fat mass tends to increase (sarcopenia). The WHO adult healthy BMI range (18.5&ndash;24.9) does not change with age. However, an observational meta-analysis of 197,940 adults aged 65+ (<a href="https://pubmed.ncbi.nlm.nih.gov/24452240/" target="_blank" rel="noopener">Winter et al., <em>Am J Clin Nutr</em> 2014</a>) reported that all-cause mortality was lowest across BMI 23&ndash;33 in older adults, with elevated mortality below BMI 23. This is an association from cohort data, not a WHO-endorsed clinical target, and it does not distinguish women from men.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">What is the obesity paradox?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="faq-answer"><p>The obesity paradox refers to the well-documented finding that <strong>older adults who are slightly overweight (BMI 25-27) often have lower mortality rates</strong> than those with a "normal" BMI of 18.5-24.9. A major 2013 JAMA meta-analysis of nearly 3 million people found that overweight individuals had a 6% lower risk of death compared to normal-weight individuals. The protective mechanisms likely include energy reserves during illness, fall and fracture protection from additional padding, hormonal benefits from adipose tissue, and prevention of frailty. However, this paradox does <strong>not</strong> extend to obesity (BMI 30+), where health risks consistently increase. The paradox is also strongest in adults over 65 and may not apply to younger overweight adults, for whom the <a href="/">standard BMI ranges</a> remain more appropriate.</p></div>
+          <div class="faq-answer"><p>The "obesity paradox" is an observation from cohort studies that overweight adults have sometimes shown lower or similar all-cause mortality compared with those in the WHO normal range. A large meta-analysis by <a href="https://jamanetwork.com/journals/jama/fullarticle/1555137" target="_blank" rel="noopener">Flegal and colleagues (<em>JAMA</em> 2013)</a> analysed 97 studies covering ~2.88 million individuals and reported a hazard ratio of 0.94 for overweight (BMI 25&ndash;30) versus normal weight, with elevated mortality at higher obesity classes. Explanations debated in the literature include reverse causation (illness-related weight loss lowering BMI in the normal-weight group), residual confounding, and true biological reserves in older adults. The paradox is an association, not a target &mdash; the current WHO healthy adult range remains 18.5&ndash;24.9.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">Is BMI less accurate for older adults?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
@@ -617,11 +578,11 @@
         </div>
         <div class="faq-item">
           <button class="faq-question">Does height loss affect my BMI calculation?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="faq-answer"><p>Yes, height loss has a meaningful impact on BMI. Since <a href="/blog/bmi-formula/">the BMI formula</a> divides weight by height squared, even small decreases in height produce noticeable BMI increases. Most adults lose 1-3 inches (2.5-7.5 cm) between ages 30 and 80, primarily due to spinal disc compression, vertebral changes, and loss of muscle tone supporting the spine. As a practical example: a person weighing 165 lbs at 5'8" has a BMI of 25.1, but if they shrink to 5'6" while maintaining the same weight, their BMI jumps to 26.6 -- a change of 1.5 points purely from height loss. This is one reason why age-adjusted BMI ranges account for higher values in older adults. When using this calculator, always measure your <strong>current</strong> height rather than using a height from years ago.</p></div>
+          <div class="faq-answer"><p>Yes. Because <a href="/blog/bmi-formula/">the BMI formula</a> divides weight by height squared, small decreases in height produce noticeable BMI increases. Height loss across older adulthood is common, driven by spinal disc compression, vertebral changes, and loss of paraspinal muscle tone. As a worked example: a person weighing 165 lbs at 5&rsquo;8&Prime; has a BMI of 25.1; at 5&rsquo;6&Prime; with the same weight, their BMI is 26.6 &mdash; a 1.5-point change purely from height loss. This is one reason why the observational lowest-mortality band in older adults sits higher than the WHO normal range: some of the extra BMI reflects height shrinkage rather than fat gain. When using this calculator, use your <strong>current</strong> measured height.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">What BMI is healthiest for seniors (65+)?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="faq-answer"><p>For adults aged 65 and older, research consistently indicates that a <strong>BMI between 23 and 28</strong> is associated with the lowest mortality risk. This is notably higher than the standard WHO "normal" range of 18.5-24.9. For those aged 75+, the optimal range may be even higher, around 24-29. A large meta-analysis published in the <em>American Journal of Clinical Nutrition</em> found that the lowest mortality risk for older adults fell at a BMI of approximately 27 -- squarely in what would traditionally be classified as "overweight." Being underweight (BMI below 22) in old age is a significant health concern associated with increased risk of fractures, infections, slow wound healing, and overall frailty. The key takeaway for seniors is that <strong>maintaining weight is generally more important than losing it</strong>, and a BMI that seems "high" by standard charts may actually be ideal for longevity.</p></div>
+          <div class="faq-answer"><p>The WHO healthy adult range (18.5&ndash;24.9) does not change with age. Observational data suggest the picture in older adults is different from the WHO range in one specific way: in a meta-analysis of 32 cohort studies covering 197,940 adults aged 65+ (<a href="https://pubmed.ncbi.nlm.nih.gov/24452240/" target="_blank" rel="noopener">Winter et al., <em>Am J Clin Nutr</em> 2014</a>), all-cause mortality was elevated below BMI 23 and did not increase again until BMI exceeded ~33 &mdash; a wide low-mortality plateau. That is an observed association, not a clinical target. In practice, for adults 65+, avoiding unintentional weight loss and preserving muscle mass are more actionable than aiming for a specific BMI number.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">How does metabolism change with age and affect BMI?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
@@ -629,7 +590,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-question">Should I use my peak height or current height for BMI?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="faq-answer"><p>You should always use your <strong>current measured height</strong> when calculating BMI. While it may be tempting to use the height from your younger years (especially if you have lost an inch or more), BMI is designed to assess the relationship between your body weight and your <em>current</em> physical frame. Using an outdated, taller height would underestimate your BMI and could mask potential health concerns. That said, it is important to interpret your current-height BMI through an age-adjusted lens, which is exactly what this calculator does. The age-adjusted ranges already account for the fact that height shrinkage artificially inflates BMI in older adults. We recommend having your height measured annually by your healthcare provider after age 50, as many people are surprised to discover they are shorter than they think. For the most accurate at-home measurement, stand barefoot against a wall first thing in the morning, when spinal discs are most fully hydrated.</p></div>
+          <div class="faq-answer"><p>Use your <strong>current measured height</strong>. Because BMI divides weight by height squared, using an outdated (taller) height would underestimate your BMI. Have your height measured periodically by your healthcare provider after age 50 &mdash; many people are shorter than they think. For an at-home measurement, stand barefoot against a wall first thing in the morning when spinal discs are most fully hydrated. Height shrinkage is one plausible contributor to the wider low-mortality plateau seen in older-adult BMI cohort data (<a href="https://pubmed.ncbi.nlm.nih.gov/24452240/" target="_blank" rel="noopener">Winter 2014</a>) &mdash; part of the &ldquo;higher&rdquo; BMI reflects the same body at a shorter stature.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">How does BMI interact with age-related diseases like diabetes?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
