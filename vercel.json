@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/blog/bmi-and-life-insurance",
+      "destination": "/blog/bmi-limitations/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/bmi-and-life-insurance/",
+      "destination": "/blog/bmi-limitations/",
+      "statusCode": 308
+    }
+  ]
+}
