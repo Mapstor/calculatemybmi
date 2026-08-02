@@ -31,50 +31,62 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "AboutPage",
-    "name": "About CalculateMyBMI.net",
-    "description": "Learn about CalculateMyBMI.net, our mission, methodology, and commitment to providing free, evidence-based BMI and body composition calculators.",
-    "url": "https://calculatemybmi.net/about/",
-    "datePublished": "2024-01-15",
-    "dateModified": "2026-02-06",
-    "inLanguage": "en-US",
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "CalculateMyBMI.net",
-      "url": "https://calculatemybmi.net/"
-    },
-    "mainEntity": {
-      "@type": "Organization",
-      "name": "CalculateMyBMI.net",
-      "url": "https://calculatemybmi.net/",
-      "logo": "https://calculatemybmi.net/assets/images/og-image.png",
-      "description": "Free, evidence-based BMI and body composition calculators for adults and children.",
-      "foundingDate": "2024",
-      "sameAs": [],
-      "contactPoint": {
-        "@type": "ContactPoint",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://calculatemybmi.net/about/#author-bio",
+        "name": "Marko Visic",
+        "honorificSuffix": "MPharm",
+        "jobTitle": "Pharmacist",
+        "description": "Pharmacist (MPharm) with a BSc in Physics, both from the University of Ljubljana. Builds evidence-based BMI and body composition calculators.",
+        "url": "https://calculatemybmi.net/about/#author-bio",
+        "image": "https://calculatemybmi.net/assets/images/marko-visic.jpg",
+        "worksFor": {
+          "@type": "Organization",
+          "@id": "https://calculatemybmi.net/#organization"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Ljubljana"
+        },
+        "sameAs": []
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://calculatemybmi.net/#organization",
+        "name": "Moving Data Systems d.o.o.",
+        "legalName": "Moving Data Systems d.o.o.",
+        "url": "https://calculatemybmi.net/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://calculatemybmi.net/assets/images/logo.png",
+          "width": 512,
+          "height": 512
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Maribor",
+          "addressCountry": "SI"
+        },
         "email": "info@calculatemybmi.net",
-        "contactType": "customer support",
-        "availableLanguage": "English"
-      },
-      "areaServed": "Worldwide",
-      "knowsAbout": ["Body Mass Index", "BMI Calculator", "Body Composition", "Health Screening", "Ideal Weight", "Lean Body Mass"]
-    },
-    "about": {
-      "@type": "Thing",
-      "name": "Body Mass Index Calculators",
-      "description": "Online tools for calculating BMI and body composition metrics"
-    },
-    "mentions": [
-      {
-        "@type": "Organization",
-        "name": "World Health Organization",
-        "url": "https://www.who.int/"
+        "sameAs": []
       },
       {
-        "@type": "Organization",
-        "name": "Centers for Disease Control and Prevention",
-        "url": "https://www.cdc.gov/"
+        "@type": "AboutPage",
+        "name": "About CalculateMyBMI.net",
+        "description": "Marko Visic, MPharm, builds evidence-based BMI and body composition calculators. CalculateMyBMI.net is operated by Moving Data Systems d.o.o.",
+        "url": "https://calculatemybmi.net/about/",
+        "datePublished": "2026-01-15",
+        "dateModified": "2026-08-02",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "CalculateMyBMI.net",
+          "url": "https://calculatemybmi.net/"
+        },
+        "author": {"@id": "https://calculatemybmi.net/about/#author-bio"},
+        "publisher": {"@id": "https://calculatemybmi.net/#organization"},
+        "about": {"@id": "https://calculatemybmi.net/about/#author-bio"}
       }
     ]
   }
@@ -129,8 +141,23 @@
     <!-- Hero Section -->
     <div class="about-hero">
       <h1>About CalculateMyBMI.net</h1>
-      <p class="hero-subtitle">We provide free, evidence-based BMI and body composition calculators designed to help you understand your health metrics and have more informed conversations with your healthcare provider.</p>
+      <p class="hero-subtitle">Free, evidence-based BMI and body composition calculators. Built and maintained by Marko Visic, MPharm, and operated by Moving Data Systems d.o.o.</p>
     </div>
+
+    <!-- Author bio -->
+    <section id="author-bio" class="content-section" style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:1.75rem;margin-bottom:2rem;">
+      <div style="display:flex;gap:1.5rem;align-items:flex-start;flex-wrap:wrap;">
+        <picture style="flex-shrink:0;">
+          <source srcset="/assets/images/marko-visic.webp" type="image/webp">
+          <img src="/assets/images/marko-visic.jpg" alt="Portrait of Marko Visic" width="128" height="128" loading="lazy" style="width:128px;height:128px;border-radius:50%;object-fit:cover;border:2px solid var(--gray-200);">
+        </picture>
+        <div style="flex:1;min-width:250px;">
+          <h2 style="margin-top:0;margin-bottom:0.5rem;font-size:1.375rem;">Marko Visic, MPharm</h2>
+          <p style="margin:0;font-size:0.9375rem;line-height:1.65;color:var(--gray-700);">Marko is a pharmacist by training (Master of Pharmacy, MPharm) with a BSc in Physics, both from the University of Ljubljana, Slovenia. He builds evidence-based health calculators and writes the guides on this site. CalculateMyBMI.net is operated by <strong>Moving Data Systems d.o.o.</strong>, based in Maribor, Slovenia. Marko is not a physician; nothing on this site is personal medical advice.</p>
+          <p style="margin:0.75rem 0 0;font-size:0.8125rem;color:var(--gray-500);">Contact: <a href="mailto:info@calculatemybmi.net">info@calculatemybmi.net</a></p>
+        </div>
+      </div>
+    </section>
 
     <!-- Our Mission -->
     <section class="content-section">
@@ -354,7 +381,7 @@
         <div class="faq-item">
           <button class="faq-question">Who created these calculators?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
           <div class="faq-answer">
-            <p>The site is built and maintained by Marko Visic, MPharm (pharmacist by training, BSc Physics), and operated by Moving Data Systems d.o.o. The calculators implement well-established formulas from peer-reviewed literature (Devine, Robinson, Miller, Hamwi for ideal weight; Boer, James, Hume for lean body mass; the Quetelet formula for BMI; Trefethen 2013 for the height-corrected variant) and reference authoritative sources including WHO obesity guidelines, CDC growth charts, and NHLBI materials. No original methodology is introduced — the site presents established science.</p>
+            <p>The site is built and maintained by <a href="#author-bio">Marko Visic, MPharm</a>, and operated by Moving Data Systems d.o.o. The calculators implement well-established formulas from peer-reviewed literature (Devine, Robinson, Miller, Hamwi for ideal weight; Boer, James, Hume for lean body mass; the Quetelet formula for BMI; Trefethen 2013 for the height-corrected variant) and reference authoritative sources including WHO obesity guidelines, CDC growth charts, and NHLBI materials. No original methodology is introduced &mdash; the site presents established science.</p>
           </div>
         </div>
 
@@ -409,7 +436,7 @@
       <div class="footer-nav"><h4>Guides</h4><ul><li><a href="/blog/bmi-calculator-guide/">BMI Guide</a></li><li><a href="/blog/bmi-chart-women/">BMI Chart Women</a></li><li><a href="/blog/bmi-formula/">BMI Formula</a></li></ul></div>
       <div class="footer-nav"><h4>Legal</h4><ul><li><a href="/privacy/">Privacy</a></li><li><a href="/terms/">Terms</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul></div>
     </div>
-    <div class="footer-bottom"><p>&copy; 2025-2026 BMI Calculator. For informational purposes only. Not medical advice. Consult your healthcare provider.</p></div>
+    <div class="footer-bottom"><p>&copy; 2026 Moving Data Systems d.o.o. &middot; For informational purposes only. Not medical advice. Consult your healthcare provider. &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a></p></div>
   </div></footer>
   <script>document.querySelectorAll('.faq-question').forEach(b=>b.addEventListener('click',()=>b.parentElement.classList.toggle('open')));document.querySelector('.nav-toggle')?.addEventListener('click',()=>document.querySelector('.nav-mobile')?.classList.toggle('active'));</script>
 </body>
