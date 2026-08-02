@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="/assets/js/analytics.js"></script>
+    <script>
+  /* Consent Mode v2 defaults — must run before any other script. See /assets/js/consent-banner.js for the deferred GTM loader + banner. */
+  (function(){window.dataLayer=window.dataLayer||[];function g(){dataLayer.push(arguments);}window.gtag=g;var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch(e){}var inScope=/^Europe\//.test(tz)||tz===''||tz==='Atlantic/Reykjavik'||tz==='Atlantic/Faroe'||tz==='Atlantic/Azores'||tz==='Atlantic/Madeira'||tz==='Atlantic/Canary';window.__cmbmiInScope=inScope;var c=null;try{c=localStorage.getItem('cmbmi-consent');}catch(e){}window.__cmbmiChoice=c;g('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:inScope?'denied':'granted',wait_for_update:500});if(c==='accept')g('consent','update',{analytics_storage:'granted'});else if(c==='decline')g('consent','update',{analytics_storage:'denied'});})();
+  </script>
+  <script defer src="/assets/js/consent-banner.js"></script>
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BMI Calculator for Men - Free Male BMI Calculator</title>
@@ -115,7 +119,7 @@
     <!-- BMI Chart for Men by Age -->
     <section class="content-section">
       <h2>BMI Chart for Men by Age</h2>
-      <p>While the <a href="/blog/bmi-formula/">standard BMI formula</a> applies the same thresholds to all adults, research suggests that recommended BMI ranges may shift slightly as men age. As muscle mass naturally declines and bone density changes, older men may benefit from a marginally higher BMI. The table below summarizes the generally recommended BMI ranges for men at different life stages, based on data from the <a href="https://www.cdc.gov/bmi/" target="_blank" rel="noopener">CDC</a>, the <a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank" rel="noopener">World Health Organization</a>, and peer-reviewed longevity studies. For a comprehensive breakdown, see our <a href="/blog/bmi-for-men/">complete BMI guide for men</a>.</p>
+      <p>While the standard BMI formula applies the same thresholds to all adults, research suggests that recommended BMI ranges may shift slightly as men age. As muscle mass naturally declines and bone density changes, older men may benefit from a marginally higher BMI. The table below summarizes the generally recommended BMI ranges for men at different life stages, based on data from the <a href="https://www.cdc.gov/bmi/" target="_blank" rel="noopener">CDC</a>, the <a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank" rel="noopener">World Health Organization</a>, and peer-reviewed longevity studies. For a comprehensive breakdown, see our <a href="/blog/bmi-for-men/">complete BMI guide for men</a>.</p>
 
       <div style="overflow-x:auto;margin:1.5rem 0;">
         <table style="width:100%;border-collapse:collapse;border-radius:8px;overflow:hidden;font-size:0.9375rem;">
@@ -312,7 +316,7 @@
 
       <div style="background:#fefce8;border-left:4px solid #ca8a04;border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;margin:1.5rem 0;">
         <h3 style="margin:0 0 0.75rem 0;font-size:1.0625rem;color:#ca8a04;">2. Athletes and Bodybuilders Classified as "Overweight"</h3>
-        <p style="margin:0;font-size:0.9375rem;">Professional athletes, weightlifters, football players, and recreational bodybuilders frequently have BMIs between 25 and 30 while maintaining body fat percentages in the 8-15% range. BMI does not account for frame size, bone density, or muscle distribution. Read more about why this happens in our <a href="/blog/bmi-for-athletes/">BMI for athletes</a> guide, and consider using the <a href="/lean-body-mass/">Lean Body Mass Calculator</a> for a more complete picture. Our <a href="/blog/muscle-mass-and-bmi/">muscle mass and BMI</a> article provides additional context for strength-trained men.</p>
+        <p style="margin:0;font-size:0.9375rem;">Professional athletes, weightlifters, football players, and recreational bodybuilders frequently have BMIs between 25 and 30 while maintaining body fat percentages in the 8-15% range. BMI does not account for frame size, bone density, or muscle distribution. Read more about why this happens in our <a href="/blog/bmi-for-athletes/">BMI for athletes</a> guide, and consider using the Lean Body Mass Calculator for a more complete picture. Our muscle mass and BMI article provides additional context for strength-trained men.</p>
       </div>
 
       <div style="background:#fef2f2;border-left:4px solid #dc2626;border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;margin:1.5rem 0;">
@@ -375,7 +379,7 @@
         </table>
       </div>
 
-      <p>Body fat percentage can be measured through methods like DEXA scans, hydrostatic weighing, bioelectrical impedance, or skinfold calipers. While these are more accurate than BMI alone, they are also less accessible. The <a href="https://www.mayoclinic.org/" target="_blank" rel="noopener">Mayo Clinic</a> recommends combining BMI with waist circumference for a practical balance of accuracy and convenience. Estimate your fat-free mass with the <a href="/lean-body-mass/">Lean Body Mass Calculator</a>.</p>
+      <p>Body fat percentage can be measured through methods like DEXA scans, hydrostatic weighing, bioelectrical impedance, or skinfold calipers. While these are more accurate than BMI alone, they are also less accessible. The <a href="https://www.mayoclinic.org/" target="_blank" rel="noopener">Mayo Clinic</a> recommends combining BMI with waist circumference for a practical balance of accuracy and convenience. Estimate your fat-free mass with the Lean Body Mass Calculator.</p>
 
       <!-- Key BMI vs Body Fat Stats -->
       <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:1.25rem;margin:1.5rem 0;">
@@ -433,7 +437,7 @@
     <!-- Health Risks for Men by BMI -->
     <section class="content-section">
       <h2>Health Risks for Men by BMI Category</h2>
-      <p>BMI provides a general framework for understanding weight-related health risks. While it is not a diagnostic tool, research consistently shows correlations between BMI category and the likelihood of developing certain conditions, according to the <a href="https://www.nhlbi.nih.gov/health/overweight-and-obesity" target="_blank" rel="noopener">NIH National Heart, Lung, and Blood Institute</a>. Men face some gender-specific risks that are worth understanding. For a comprehensive overview, see our <a href="/blog/bmi-and-health-risks/">BMI and health risks</a> guide.</p>
+      <p>BMI provides a general framework for understanding weight-related health risks. While it is not a diagnostic tool, research consistently shows correlations between BMI category and the likelihood of developing certain conditions, according to the <a href="https://www.nhlbi.nih.gov/health/overweight-and-obesity" target="_blank" rel="noopener">NIH National Heart, Lung, and Blood Institute</a>. Men face some gender-specific risks that are worth understanding. For a comprehensive overview, see our BMI and health risks guide.</p>
 
       <div style="background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:1.5rem;margin:1.5rem 0;">
         <h3 style="margin:0 0 0.75rem 0;font-size:1.0625rem;">Cardiovascular Disease</h3>
@@ -466,7 +470,7 @@
     <!-- BMI and Muscle Mass -->
     <section class="content-section">
       <h2>BMI and Muscle Mass: Guidance for Athletic Men</h2>
-      <p>If you are an athletic or muscular man, your BMI result may not accurately reflect your health status. This is one of the most commonly cited <a href="/blog/bmi-accuracy/">BMI accuracy</a> concerns, widely discussed in sports medicine literature. Here is what you should know and what supplementary metrics to use. Our detailed <a href="/blog/bmi-for-athletes/">BMI for athletes</a> guide explores this topic further.</p>
+      <p>If you are an athletic or muscular man, your BMI result may not accurately reflect your health status. This is one of the most commonly cited <a href="/blog/bmi-accuracy/">BMI accuracy</a> concerns, widely discussed in sports medicine literature. Here is what you should know and what supplementary metrics to use. Our detailed BMI for athletes guide explores this topic further.</p>
 
       <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:1.25rem;margin:1.5rem 0;">
         <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:1.25rem;">
@@ -495,13 +499,13 @@
       <p>If your BMI seems inflated due to muscle mass, consider these additional measurements for a more accurate health assessment:</p>
       <ul style="font-size:0.9375rem;line-height:1.8;">
         <li><strong>Waist circumference:</strong> Should remain under 40 inches (102 cm) regardless of BMI or muscle mass.</li>
-        <li><strong>Waist-to-height ratio:</strong> Should ideally be below 0.5. See our <a href="/blog/waist-to-height-ratio/">waist-to-height ratio guide</a>.</li>
+        <li><strong>Waist-to-height ratio:</strong> Should ideally be below 0.5. See our waist-to-height ratio guide.</li>
         <li><strong>Body fat percentage:</strong> Measured via DEXA scan, hydrostatic weighing, or quality bioimpedance scales.</li>
-        <li><strong>Lean body mass:</strong> Calculate using our <a href="/lean-body-mass/">Lean Body Mass Calculator</a>.</li>
+        <li><strong>Lean body mass:</strong> Calculate using our Lean Body Mass Calculator.</li>
         <li><strong>Blood markers:</strong> Fasting glucose, HbA1c, lipid panel, blood pressure, and testosterone levels tell you what BMI cannot.</li>
-        <li><strong>Ideal weight formulas:</strong> The <a href="/ideal-weight/">Ideal Weight Calculator</a> uses multiple clinical formulas that can provide an alternative perspective.</li>
+        <li><strong>Ideal weight formulas:</strong> The Ideal Weight Calculator uses multiple clinical formulas that can provide an alternative perspective.</li>
       </ul>
-      <p>The bottom line is that BMI remains a useful first-pass screening tool, but muscular men should never rely on it alone. For a deeper dive, read our <a href="/blog/bmi-for-athletes/">BMI for athletes</a>, <a href="/blog/muscle-mass-and-bmi/">muscle mass and BMI</a>, and <a href="/blog/body-fat-vs-bmi/">body fat vs. BMI</a> articles.</p>
+      <p>The bottom line is that BMI remains a useful first-pass screening tool, but muscular men should never rely on it alone. For a deeper dive, read our BMI for athletes, muscle mass and BMI, and body fat vs. BMI articles.</p>
     </section>
 
     <!-- When to See a Doctor -->
@@ -525,7 +529,7 @@
         </ul>
       </div>
 
-      <p>Your doctor can order blood tests, measure body composition more precisely, assess cardiovascular health, and check hormone levels -- all things a BMI calculator cannot do. BMI is a starting point, not a conclusion. For evidence-based guidance on <a href="/blog/how-to-lower-bmi/">how to lower your BMI</a> or <a href="/blog/improving-your-bmi/">improve your BMI</a>, explore our guides. The <a href="https://www.mayoclinic.org/" target="_blank" rel="noopener">Mayo Clinic</a> and <a href="https://www.heart.org/en/healthy-living/" target="_blank" rel="noopener">American Heart Association</a> also provide excellent men's health resources. Learn more about your <a href="/blog/healthy-bmi-range/">healthy BMI range</a> and what it means for long-term wellness.</p>
+      <p>Your doctor can order blood tests, measure body composition more precisely, assess cardiovascular health, and check hormone levels -- all things a BMI calculator cannot do. BMI is a starting point, not a conclusion. For evidence-based guidance on <a href="/blog/how-to-lower-bmi/">how to lower your BMI</a> or <a href="/blog/improving-your-bmi/">improve your BMI</a>, explore our guides. The <a href="https://www.mayoclinic.org/" target="_blank" rel="noopener">Mayo Clinic</a> and <a href="https://www.heart.org/en/healthy-living/" target="_blank" rel="noopener">American Heart Association</a> also provide excellent men's health resources. Learn more about your healthy BMI range and what it means for long-term wellness.</p>
     </section>
 
     <!-- FAQ -->
@@ -534,19 +538,19 @@
       <div class="faq-list">
         <div class="faq-item">
           <button class="faq-question">Is BMI accurate for muscular men?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="faq-answer"><p>BMI can be <strong>misleading for muscular men</strong>. Since muscle is denser than fat, men with significant muscle mass may have a high BMI despite having low body fat. Studies have found that BMI misclassifies up to 25% of men as overweight or obese when their body fat percentage is actually in the healthy range. If you are muscular, consider supplementing BMI with waist circumference, body fat percentage (measured via DEXA or calipers), or the <a href="/lean-body-mass/">Lean Body Mass Calculator</a>. Read our full guide on <a href="/blog/bmi-for-athletes/">BMI for athletes</a> for detailed recommendations.</p></div>
+          <div class="faq-answer"><p>BMI can be <strong>misleading for muscular men</strong>. Since muscle is denser than fat, men with significant muscle mass may have a high BMI despite having low body fat. Studies have found that BMI misclassifies up to 25% of men as overweight or obese when their body fat percentage is actually in the healthy range. If you are muscular, consider supplementing BMI with waist circumference, body fat percentage (measured via DEXA or calipers), or the Lean Body Mass Calculator. Read our full guide on BMI for athletes for detailed recommendations.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">What is a healthy BMI for men?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="faq-answer"><p>The healthy BMI range for men is <strong>18.5 to 24.9</strong>, per the <a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank" rel="noopener">World Health Organization</a>. WHO does not publish separate age-adjusted cut-offs. For adults 65+, an observational meta-analysis (<a href="https://pubmed.ncbi.nlm.nih.gov/24452240/" target="_blank" rel="noopener">Winter et al. 2014, <em>Am J Clin Nutr</em></a>, 197,940 participants) found the lowest all-cause mortality across BMI 23&ndash;33 &mdash; an association from cohort data, not a treatment target, and not sex-stratified. See the <a href="/blog/healthy-bmi-range/">healthy BMI range</a> guide for the full breakdown.</p></div>
+          <div class="faq-answer"><p>The healthy BMI range for men is <strong>18.5 to 24.9</strong>, per the <a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank" rel="noopener">World Health Organization</a>. WHO does not publish separate age-adjusted cut-offs. For adults 65+, an observational meta-analysis (<a href="https://pubmed.ncbi.nlm.nih.gov/24452240/" target="_blank" rel="noopener">Winter et al. 2014, <em>Am J Clin Nutr</em></a>, 197,940 participants) found the lowest all-cause mortality across BMI 23&ndash;33 &mdash; an association from cohort data, not a treatment target, and not sex-stratified. See the healthy BMI range guide for the full breakdown.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">Why is waist circumference important for men?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="faq-answer"><p>Men tend to store fat around the abdomen (visceral fat), which is more strongly linked to heart disease, type 2 diabetes, and metabolic syndrome than subcutaneous fat stored in other areas. A <strong>waist circumference over 40 inches (102 cm)</strong> indicates elevated health risk, regardless of BMI. The NHLBI recommends measuring waist circumference as a standard part of health assessments for men. Even men with a "normal" BMI can be at elevated risk if their waist measurement is too high. See our <a href="/blog/waist-to-height-ratio/">waist-to-height ratio</a> guide for additional metrics.</p></div>
+          <div class="faq-answer"><p>Men tend to store fat around the abdomen (visceral fat), which is more strongly linked to heart disease, type 2 diabetes, and metabolic syndrome than subcutaneous fat stored in other areas. A <strong>waist circumference over 40 inches (102 cm)</strong> indicates elevated health risk, regardless of BMI. The NHLBI recommends measuring waist circumference as a standard part of health assessments for men. Even men with a "normal" BMI can be at elevated risk if their waist measurement is too high. See our waist-to-height ratio guide for additional metrics.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">Does BMI change with age for men?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="faq-answer"><p>The BMI formula does not change with age, but body composition does &mdash; men tend to lose muscle mass (sarcopenia) and gain fat over the decades, so a BMI in the WHO normal range at 60 may reflect more body fat than the same BMI at 25. The WHO adult healthy range (18.5&ndash;24.9) still applies. Observational research on adults 65+ (<a href="https://pubmed.ncbi.nlm.nih.gov/24452240/" target="_blank" rel="noopener">Winter 2014 meta-analysis</a>) found the lowest all-cause mortality across BMI 23&ndash;33 in this age band &mdash; a cohort association, not a target. Resistance training to preserve muscle mass is the more actionable lever with age. See our <a href="/blog/bmi-by-age/">BMI by age</a> article for more.</p></div>
+          <div class="faq-answer"><p>The BMI formula does not change with age, but body composition does &mdash; men tend to lose muscle mass (sarcopenia) and gain fat over the decades, so a BMI in the WHO normal range at 60 may reflect more body fat than the same BMI at 25. The WHO adult healthy range (18.5&ndash;24.9) still applies. Observational research on adults 65+ (<a href="https://pubmed.ncbi.nlm.nih.gov/24452240/" target="_blank" rel="noopener">Winter 2014 meta-analysis</a>) found the lowest all-cause mortality across BMI 23&ndash;33 in this age band &mdash; a cohort association, not a target. Resistance training to preserve muscle mass is the more actionable lever with age. See our BMI by age article for more.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">What BMI level increases heart disease risk in men?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
@@ -558,7 +562,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-question">Should men focus on BMI or body fat percentage?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="faq-answer"><p><strong>Ideally, both.</strong> BMI is free, simple, and universally understood -- making it excellent for initial screening and long-term tracking. Body fat percentage is more accurate but requires special equipment (DEXA scan, hydrostatic weighing, or quality bioimpedance scales). For most men, tracking BMI alongside waist circumference provides a practical, low-cost approach. If you strength train regularly and your BMI seems high due to muscle mass, body fat percentage becomes more important. Our <a href="/blog/body-fat-vs-bmi/">body fat vs. BMI</a> comparison breaks down the pros and cons of each approach, and the <a href="/lean-body-mass/">Lean Body Mass Calculator</a> can help estimate your fat-free mass.</p></div>
+          <div class="faq-answer"><p><strong>Ideally, both.</strong> BMI is free, simple, and universally understood -- making it excellent for initial screening and long-term tracking. Body fat percentage is more accurate but requires special equipment (DEXA scan, hydrostatic weighing, or quality bioimpedance scales). For most men, tracking BMI alongside waist circumference provides a practical, low-cost approach. If you strength train regularly and your BMI seems high due to muscle mass, body fat percentage becomes more important. Our body fat vs. BMI comparison breaks down the pros and cons of each approach, and the Lean Body Mass Calculator can help estimate your fat-free mass.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">What is the average BMI for American men?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>

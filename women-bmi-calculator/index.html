@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="/assets/js/analytics.js"></script>
+    <script>
+  /* Consent Mode v2 defaults — must run before any other script. See /assets/js/consent-banner.js for the deferred GTM loader + banner. */
+  (function(){window.dataLayer=window.dataLayer||[];function g(){dataLayer.push(arguments);}window.gtag=g;var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch(e){}var inScope=/^Europe\//.test(tz)||tz===''||tz==='Atlantic/Reykjavik'||tz==='Atlantic/Faroe'||tz==='Atlantic/Azores'||tz==='Atlantic/Madeira'||tz==='Atlantic/Canary';window.__cmbmiInScope=inScope;var c=null;try{c=localStorage.getItem('cmbmi-consent');}catch(e){}window.__cmbmiChoice=c;g('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:inScope?'denied':'granted',wait_for_update:500});if(c==='accept')g('consent','update',{analytics_storage:'granted'});else if(c==='decline')g('consent','update',{analytics_storage:'denied'});})();
+  </script>
+  <script defer src="/assets/js/consent-banner.js"></script>
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BMI Calculator for Women - Free Female BMI Calculator</title>
@@ -515,7 +519,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-question">What is a healthy BMI for women?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="faq-answer"><p>The standard healthy BMI range is <strong>18.5 to 24.9</strong> for women, per the <a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank" rel="noopener">WHO</a>. WHO does not publish separate age-adjusted ranges. For adults aged 65 and older, an observational meta-analysis (<a href="https://pubmed.ncbi.nlm.nih.gov/24452240/" target="_blank" rel="noopener">Winter et al. 2014, <em>Am J Clin Nutr</em></a>, 197,940 participants) found the lowest all-cause mortality across BMI 23&ndash;33 &mdash; this is an association from cohort data, not a WHO recommendation. See our <a href="/blog/healthy-bmi-range/">healthy BMI range guide</a> for more.</p></div>
+          <div class="faq-answer"><p>The standard healthy BMI range is <strong>18.5 to 24.9</strong> for women, per the <a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank" rel="noopener">WHO</a>. WHO does not publish separate age-adjusted ranges. For adults aged 65 and older, an observational meta-analysis (<a href="https://pubmed.ncbi.nlm.nih.gov/24452240/" target="_blank" rel="noopener">Winter et al. 2014, <em>Am J Clin Nutr</em></a>, 197,940 participants) found the lowest all-cause mortality across BMI 23&ndash;33 &mdash; this is an association from cohort data, not a WHO recommendation. See our healthy BMI range guide for more.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">Does BMI change during menopause?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
@@ -527,7 +531,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-question">Why do women have higher body fat than men?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="faq-answer"><p>Women require <strong>higher essential body fat (10-13%)</strong> compared to men (2-5%) for critical biological functions including hormone regulation, reproductive health, and fetal development. Estrogen directs fat storage to the breasts, hips, and thighs. This is not unhealthy; it is a fundamental aspect of female biology. A healthy body fat percentage for women is 21-31%, while for men it is 14-24%. Dropping below the essential fat threshold can lead to hormonal disruption, loss of menstrual periods (amenorrhea), and bone density loss. Learn more about body composition with our <a href="/lean-body-mass/">lean body mass calculator</a>.</p></div>
+          <div class="faq-answer"><p>Women require <strong>higher essential body fat (10-13%)</strong> compared to men (2-5%) for critical biological functions including hormone regulation, reproductive health, and fetal development. Estrogen directs fat storage to the breasts, hips, and thighs. This is not unhealthy; it is a fundamental aspect of female biology. A healthy body fat percentage for women is 21-31%, while for men it is 14-24%. Dropping below the essential fat threshold can lead to hormonal disruption, loss of menstrual periods (amenorrhea), and bone density loss. Learn more about body composition with our lean body mass calculator.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">What BMI is considered underweight for women?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
@@ -561,7 +565,7 @@
     <section class="content-section">
       <h2>Related Guides</h2>
       <div class="blog-grid">
-        <article class="blog-card"><div class="blog-card-content"><p class="blog-card-meta">Women • 246K searches</p><h3><a href="/blog/bmi-chart-women/">BMI Chart for Women</a></h3><p>Complete guide to women's healthy BMI ranges by age and height.</p></div></article>
+        <article class="blog-card"><div class="blog-card-content"><p class="blog-card-meta">Women </p><h3><a href="/blog/bmi-chart-women/">BMI Chart for Women</a></h3><p>Complete guide to women's healthy BMI ranges by age and height.</p></div></article>
         <article class="blog-card"><div class="blog-card-content"><p class="blog-card-meta">Guide</p><h3><a href="/blog/bmi-calculator-guide/">BMI Calculator Guide</a></h3><p>Everything you need to know about BMI: formula, limitations, and when to use it.</p></div></article>
       </div>
     </section>

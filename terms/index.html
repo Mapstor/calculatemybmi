@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="/assets/js/analytics.js"></script>
+    <script>
+  /* Consent Mode v2 defaults — must run before any other script. See /assets/js/consent-banner.js for the deferred GTM loader + banner. */
+  (function(){window.dataLayer=window.dataLayer||[];function g(){dataLayer.push(arguments);}window.gtag=g;var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch(e){}var inScope=/^Europe\//.test(tz)||tz===''||tz==='Atlantic/Reykjavik'||tz==='Atlantic/Faroe'||tz==='Atlantic/Azores'||tz==='Atlantic/Madeira'||tz==='Atlantic/Canary';window.__cmbmiInScope=inScope;var c=null;try{c=localStorage.getItem('cmbmi-consent');}catch(e){}window.__cmbmiChoice=c;g('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:inScope?'denied':'granted',wait_for_update:500});if(c==='accept')g('consent','update',{analytics_storage:'granted'});else if(c==='decline')g('consent','update',{analytics_storage:'denied'});})();
+  </script>
+  <script defer src="/assets/js/consent-banner.js"></script>
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Terms of Service - BMI Calculator | Usage Terms & Conditions</title>
@@ -181,7 +185,7 @@
     <!-- 8. Third-party services -->
     <section class="content-section">
       <h2>8. Third-party services</h2>
-      <p>The site currently uses <strong>Google Analytics 4</strong>, provided by Google LLC, for aggregate page-view statistics. Details of what GA4 processes, how consent is handled, and how to opt out are in the <a href="/privacy/">Privacy Policy</a>.</p>
+      <p>The site currently uses <strong>Google Analytics 4</strong>, provided by Google LLC, for aggregate page-view statistics. Details of what GA4 processes, how consent is handled, and how to opt out are in the Privacy Policy.</p>
       <p>The site does not currently serve advertisements. If advertising is added in the future, this section and the Privacy Policy will be updated before advertising code is deployed.</p>
     </section>
 
@@ -258,7 +262,7 @@
     <!-- 15. Entire Agreement -->
     <section class="content-section">
       <h2>15. Entire Agreement</h2>
-      <p>These Terms of Service, together with our <a href="/privacy/">Privacy Policy</a> and any other legal notices or policies published by us on the Site, constitute the entire agreement between you and CalculateMyBMI.net regarding your use of the Site. These Terms supersede all prior and contemporaneous understandings, agreements, representations, and warranties, both written and oral, regarding the Site.</p>
+      <p>These Terms of Service, together with our Privacy Policy and any other legal notices or policies published by us on the Site, constitute the entire agreement between you and CalculateMyBMI.net regarding your use of the Site. These Terms supersede all prior and contemporaneous understandings, agreements, representations, and warranties, both written and oral, regarding the Site.</p>
       <p>No waiver of any term or condition set forth in these Terms shall be deemed a further or continuing waiver of such term or condition or a waiver of any other term or condition. Any failure by CalculateMyBMI.net to assert a right or provision under these Terms shall not constitute a waiver of such right or provision.</p>
     </section>
 

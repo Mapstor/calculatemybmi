@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="/assets/js/analytics.js"></script>
+    <script>
+  /* Consent Mode v2 defaults — must run before any other script. See /assets/js/consent-banner.js for the deferred GTM loader + banner. */
+  (function(){window.dataLayer=window.dataLayer||[];function g(){dataLayer.push(arguments);}window.gtag=g;var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch(e){}var inScope=/^Europe\//.test(tz)||tz===''||tz==='Atlantic/Reykjavik'||tz==='Atlantic/Faroe'||tz==='Atlantic/Azores'||tz==='Atlantic/Madeira'||tz==='Atlantic/Canary';window.__cmbmiInScope=inScope;var c=null;try{c=localStorage.getItem('cmbmi-consent');}catch(e){}window.__cmbmiChoice=c;g('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:inScope?'denied':'granted',wait_for_update:500});if(c==='accept')g('consent','update',{analytics_storage:'granted'});else if(c==='decline')g('consent','update',{analytics_storage:'denied'});})();
+  </script>
+  <script defer src="/assets/js/consent-banner.js"></script>
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BMI Categories: All Weight Classifications Explained (2026)</title>
@@ -156,7 +160,7 @@
           </tbody>
         </table>
       </div>
-      <p>As the table shows, the difference between low normal and high normal is about 33&ndash;50 lbs depending on height. Both ends of this range are considered healthy. For more on target ranges, see our <a href="/blog/healthy-bmi-range/">Healthy BMI Range</a> guide.</p>
+      <p>As the table shows, the difference between low normal and high normal is about 33&ndash;50 lbs depending on height. Both ends of this range are considered healthy. For more on target ranges, see our Healthy BMI Range guide.</p>
 
       <h3>Optimal BMI Within Normal Range</h3>
       <p>While the entire 18.5&ndash;24.9 range is classified as normal, research suggests the lowest mortality risk occurs around BMI 22&ndash;23 for younger adults. Some studies suggest slightly different optimal ranges for men (20&ndash;25) and women (19&ndash;24). For detailed sex-specific analysis, see our guides for <a href="/blog/bmi-chart-women/">BMI for Women</a> and <a href="/blog/bmi-chart-men/">BMI for Men</a>.</p>
@@ -185,7 +189,7 @@
         <p style="margin:0;font-size:0.9375rem;color:#78350f;"><strong>The obesity-class sections below describe published clinical-guideline framing.</strong> They are not personalised medical advice, and do not recommend any specific medication or procedure for any individual. This site is written by a pharmacist (MPharm), not a physician. Talk to a qualified clinician about your own situation.</p>
       </div>
 
-      <p>Class I obesity is the entry point into clinical obesity. At this level, the health risks associated with excess weight become substantially more significant and consistent across populations. The <a href="https://www.health.harvard.edu/topics/obesity" target="_blank" rel="noopener">Harvard Health</a> obesity topic page provides extensive background. For the umbrella health-risks discussion see our <a href="/blog/bmi-and-health-risks/">BMI and health risks</a> guide.</p>
+      <p>Class I obesity is the entry point into clinical obesity. At this level, the health risks associated with excess weight become substantially more significant and consistent across populations. The <a href="https://www.health.harvard.edu/topics/obesity" target="_blank" rel="noopener">Harvard Health</a> obesity topic page provides extensive background. For the umbrella health-risks discussion see our BMI and health risks guide.</p>
 
       <h3>Health Risks</h3>
       <ul style="margin: 1rem 0; padding-left: 1.5rem;">
@@ -196,7 +200,7 @@
         <li style="margin-bottom: 0.5rem;"><strong>Non-alcoholic fatty liver disease:</strong> prevalent in adults with obesity (see the <a href="https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash" target="_blank" rel="noopener">NIDDK NAFLD/NASH overview</a>)</li>
         <li style="margin-bottom: 0.5rem;"><strong>Sleep apnea:</strong> common; prevalence higher than in normal-weight adults</li>
         <li style="margin-bottom: 0.5rem;"><strong>Osteoarthritis:</strong> accelerated joint degeneration, especially in knees and hips</li>
-        <li style="margin-bottom: 0.5rem;"><strong>Cancer:</strong> increased risk of at least 13 types of cancer (see the IARC-identified list summarised on our <a href="/blog/bmi-and-health-risks/">BMI and health risks</a> page)</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Cancer:</strong> increased risk of at least 13 types of cancer (see the IARC-identified list summarised on our BMI and health risks page)</li>
         <li style="margin-bottom: 0.5rem;"><strong>Depression and anxiety:</strong> both more prevalent at elevated BMI</li>
       </ul>
       <p>Lifestyle change (diet, physical activity, behavioural support) is the recommended first-line treatment across obesity classes according to <a href="https://www.nhlbi.nih.gov/health/overweight-and-obesity" target="_blank" rel="noopener">NHLBI clinical guidelines</a>. Modest weight loss of 5&ndash;10% of body weight is the standard clinical target that guideline bodies describe as producing meaningful improvements in blood pressure, blood glucose, lipid profile, and joint symptoms.</p>
@@ -426,7 +430,7 @@
           <div class="tip-icon">4</div>
           <div class="tip-content">
             <h4>Account for Age and Sex</h4>
-            <p>The health implications of your BMI category change with age. What is concerning at 25 may be perfectly fine at 65. See our <a href="/blog/bmi-calculator-by-age/">BMI Calculator by Age</a> guide for age-adjusted information.</p>
+            <p>The health implications of your BMI category change with age. What is concerning at 25 may be perfectly fine at 65. See our BMI Calculator by Age guide for age-adjusted information.</p>
           </div>
         </div>
         <div class="tip-item">
@@ -465,7 +469,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-question">Should children use adult BMI categories?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="faq-answer"><p>No. Children and teens (ages 2&ndash;19) should never be assessed using adult BMI categories. A 6-year-old with a BMI of 15.5 is perfectly normal, but adult categories would classify them as severely underweight. Children use age- and sex-specific percentile charts instead. See our <a href="/blog/pediatric-bmi-calculator/">Pediatric BMI Calculator</a> guide for the complete pediatric classification system.</p></div>
+          <div class="faq-answer"><p>No. Children and teens (ages 2&ndash;19) should never be assessed using adult BMI categories. A 6-year-old with a BMI of 15.5 is perfectly normal, but adult categories would classify them as severely underweight. Children use age- and sex-specific percentile charts instead. See our Pediatric BMI Calculator guide for the complete pediatric classification system.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">How do I move to a healthier BMI category?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
@@ -477,7 +481,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-question">How accurate is BMI as a health indicator?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="faq-answer"><p>BMI is a useful population-level screening tool but has real limitations at the individual level: it cannot distinguish muscle from fat, does not account for fat distribution, and can misclassify athletes, older adults, and some ethnic groups. For a complete assessment, combine BMI with waist circumference, body-composition measurement (DEXA, skinfolds, or bioimpedance), and metabolic markers (blood pressure, lipids, glucose). See our <a href="/blog/bmi-limitations/">BMI limitations</a> guide for a full analysis.</p></div>
+          <div class="faq-answer"><p>BMI is a useful population-level screening tool but has real limitations at the individual level: it cannot distinguish muscle from fat, does not account for fat distribution, and can misclassify athletes, older adults, and some ethnic groups. For a complete assessment, combine BMI with waist circumference, body-composition measurement (DEXA, skinfolds, or bioimpedance), and metabolic markers (blood pressure, lipids, glucose). See our BMI limitations guide for a full analysis.</p></div>
         </div>
       </div>
 

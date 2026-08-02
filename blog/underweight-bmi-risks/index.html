@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="/assets/js/analytics.js"></script>
+    <script>
+  /* Consent Mode v2 defaults — must run before any other script. See /assets/js/consent-banner.js for the deferred GTM loader + banner. */
+  (function(){window.dataLayer=window.dataLayer||[];function g(){dataLayer.push(arguments);}window.gtag=g;var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch(e){}var inScope=/^Europe\//.test(tz)||tz===''||tz==='Atlantic/Reykjavik'||tz==='Atlantic/Faroe'||tz==='Atlantic/Azores'||tz==='Atlantic/Madeira'||tz==='Atlantic/Canary';window.__cmbmiInScope=inScope;var c=null;try{c=localStorage.getItem('cmbmi-consent');}catch(e){}window.__cmbmiChoice=c;g('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:inScope?'denied':'granted',wait_for_update:500});if(c==='accept')g('consent','update',{analytics_storage:'granted'});else if(c==='decline')g('consent','update',{analytics_storage:'denied'});})();
+  </script>
+  <script defer src="/assets/js/consent-banner.js"></script>
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Underweight BMI Risks: Health Concerns, Causes & Solutions | BMI Calculator</title>
@@ -614,7 +618,7 @@
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="faq-answer">
-            <p>A BMI below 18.5 kg/m<sup>2</sup> is classified as underweight according to the World Health Organization and CDC. This is further divided into mild underweight (17.0-18.49), moderate underweight (16.0-16.99), and severe underweight (below 16.0). Use our <a href="/">BMI calculator</a> to check your current BMI.</p>
+            <p>A BMI below 18.5 kg/m<sup>2</sup> is classified as underweight according to the World Health Organization and CDC. This is further divided into mild underweight (17.0-18.49), moderate underweight (16.0-16.99), and severe underweight (below 16.0). Use our BMI calculator to check your current BMI.</p>
           </div>
         </div>
 

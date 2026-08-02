@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="/assets/js/analytics.js"></script>
+    <script>
+  /* Consent Mode v2 defaults — must run before any other script. See /assets/js/consent-banner.js for the deferred GTM loader + banner. */
+  (function(){window.dataLayer=window.dataLayer||[];function g(){dataLayer.push(arguments);}window.gtag=g;var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch(e){}var inScope=/^Europe\//.test(tz)||tz===''||tz==='Atlantic/Reykjavik'||tz==='Atlantic/Faroe'||tz==='Atlantic/Azores'||tz==='Atlantic/Madeira'||tz==='Atlantic/Canary';window.__cmbmiInScope=inScope;var c=null;try{c=localStorage.getItem('cmbmi-consent');}catch(e){}window.__cmbmiChoice=c;g('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:inScope?'denied':'granted',wait_for_update:500});if(c==='accept')g('consent','update',{analytics_storage:'granted'});else if(c==='decline')g('consent','update',{analytics_storage:'denied'});})();
+  </script>
+  <script defer src="/assets/js/consent-banner.js"></script>
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BMI Percentile Calculator: Complete Guide to Child Growth Charts (2026)</title>
@@ -463,7 +467,7 @@
         <li><strong>International settings:</strong> WHO standards may be preferred for global comparisons</li>
       </ul>
 
-      <p>Our <a href="/kids-bmi-calculator/">pediatric BMI calculator</a> uses CDC growth chart data for children ages 2-20, following US clinical guidelines.</p>
+      <p>Our pediatric BMI calculator uses CDC growth chart data for children ages 2-20, following US clinical guidelines.</p>
 
       <!-- Section 7: Calculating Percentile -->
       <h2 id="calculating-percentile">How to Calculate BMI Percentile</h2>

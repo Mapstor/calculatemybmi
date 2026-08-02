@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="/assets/js/analytics.js"></script>
+    <script>
+  /* Consent Mode v2 defaults — must run before any other script. See /assets/js/consent-banner.js for the deferred GTM loader + banner. */
+  (function(){window.dataLayer=window.dataLayer||[];function g(){dataLayer.push(arguments);}window.gtag=g;var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch(e){}var inScope=/^Europe\//.test(tz)||tz===''||tz==='Atlantic/Reykjavik'||tz==='Atlantic/Faroe'||tz==='Atlantic/Azores'||tz==='Atlantic/Madeira'||tz==='Atlantic/Canary';window.__cmbmiInScope=inScope;var c=null;try{c=localStorage.getItem('cmbmi-consent');}catch(e){}window.__cmbmiChoice=c;g('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:inScope?'denied':'granted',wait_for_update:500});if(c==='accept')g('consent','update',{analytics_storage:'granted'});else if(c==='decline')g('consent','update',{analytics_storage:'denied'});})();
+  </script>
+  <script defer src="/assets/js/consent-banner.js"></script>
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lean Body Mass Calculator - Calculate Your Lean Mass & Body Fat</title>
@@ -321,7 +325,7 @@
           </tbody>
         </table>
       </div>
-      <p style="font-size:0.8125rem;color:var(--gray-500);">Values are approximate ranges based on normal BMI weight ranges (18.5-24.9) applied to the Boer formula. Trained individuals may exceed the high values significantly. Use our <a href="/ideal-weight/">ideal weight calculator</a> to determine your target weight range.</p>
+      <p style="font-size:0.8125rem;color:var(--gray-500);">Values are approximate ranges based on normal BMI weight ranges (18.5-24.9) applied to the Boer formula. Trained individuals may exceed the high values significantly. Use our ideal weight calculator to determine your target weight range.</p>
     </section>
 
     <!-- The Boer Formula Explained -->
@@ -585,7 +589,7 @@
       </ul>
 
       <h3 style="margin-top:1.25rem;">5. Avoiding Extreme Calorie Deficits</h3>
-      <p>While a calorie deficit is necessary for fat loss, extreme deficits (more than 500-750 calories below maintenance) cause significant lean mass loss alongside fat loss. Research shows that aggressive dieting can result in 20-30% of weight lost coming from lean tissue rather than fat, which is counterproductive for body composition. A moderate deficit of 300-500 calories per day, combined with resistance training and adequate protein, ensures that the majority of weight lost is fat while lean mass is preserved or even increased. Use our <a href="/">BMI calculator</a> alongside this LBM calculator to track your progress with a complete picture. For additional strategies, explore our guides on <a href="/blog/body-fat-vs-bmi/">body fat vs BMI</a> and calculate your <a href="/ideal-weight/">ideal weight</a> as a target reference.</p>
+      <p>While a calorie deficit is necessary for fat loss, extreme deficits (more than 500-750 calories below maintenance) cause significant lean mass loss alongside fat loss. Research shows that aggressive dieting can result in 20-30% of weight lost coming from lean tissue rather than fat, which is counterproductive for body composition. A moderate deficit of 300-500 calories per day, combined with resistance training and adequate protein, ensures that the majority of weight lost is fat while lean mass is preserved or even increased. Use our BMI calculator alongside this LBM calculator to track your progress with a complete picture. For additional strategies, explore our guides on <a href="/blog/body-fat-vs-bmi/">body fat vs BMI</a> and calculate your <a href="/ideal-weight/">ideal weight</a> as a target reference.</p>
     </section>
 
     <!-- FAQ -->
@@ -606,7 +610,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-question">Why is lean body mass more useful than BMI?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="faq-answer"><p>Lean body mass gives you <strong>more information about your body composition</strong> than <a href="/blog/what-is-bmi/">BMI</a> alone. Two people can have the same BMI but very different body compositions -- one might be muscular with low body fat, while the other has high body fat and low muscle mass. BMI classifies both identically, which can be misleading. LBM helps distinguish between these cases, which is why it is increasingly used in clinical settings alongside or instead of BMI. That said, BMI is still useful as a quick population-level screening tool. Ideally, use both metrics together: our <a href="/">standard BMI calculator</a> for a quick check, and this LBM calculator for a deeper look at composition.</p></div>
+          <div class="faq-answer"><p>Lean body mass gives you <strong>more information about your body composition</strong> than BMI alone. Two people can have the same BMI but very different body compositions -- one might be muscular with low body fat, while the other has high body fat and low muscle mass. BMI classifies both identically, which can be misleading. LBM helps distinguish between these cases, which is why it is increasingly used in clinical settings alongside or instead of BMI. That said, BMI is still useful as a quick population-level screening tool. Ideally, use both metrics together: our <a href="/">standard BMI calculator</a> for a quick check, and this LBM calculator for a deeper look at composition.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">How can I increase my lean body mass?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>

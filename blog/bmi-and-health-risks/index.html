@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="/assets/js/analytics.js"></script>
+    <script>
+  /* Consent Mode v2 defaults — must run before any other script. See /assets/js/consent-banner.js for the deferred GTM loader + banner. */
+  (function(){window.dataLayer=window.dataLayer||[];function g(){dataLayer.push(arguments);}window.gtag=g;var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch(e){}var inScope=/^Europe\//.test(tz)||tz===''||tz==='Atlantic/Reykjavik'||tz==='Atlantic/Faroe'||tz==='Atlantic/Azores'||tz==='Atlantic/Madeira'||tz==='Atlantic/Canary';window.__cmbmiInScope=inScope;var c=null;try{c=localStorage.getItem('cmbmi-consent');}catch(e){}window.__cmbmiChoice=c;g('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:inScope?'denied':'granted',wait_for_update:500});if(c==='accept')g('consent','update',{analytics_storage:'granted'});else if(c==='decline')g('consent','update',{analytics_storage:'denied'});})();
+  </script>
+  <script defer src="/assets/js/consent-banner.js"></script>
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BMI and Health Risks: Complete Guide to Weight-Related Conditions | BMI Calculator</title>
@@ -517,7 +521,7 @@
       <p style="font-size:0.8125rem;color:var(--gray-500);">Table describes mechanism only. Weight-loss magnitudes, complication rates, and comparative outcomes vary between studies and populations &mdash; this page does not publish them. Refer to the <a href="https://asmbs.org/" target="_blank" rel="noopener">ASMBS</a> and <a href="https://www.niddk.nih.gov/health-information/weight-management/bariatric-surgery" target="_blank" rel="noopener">NIDDK</a> for authoritative summaries, and to a bariatric surgical team for personal counselling. See also our <a href="/blog/bmi-for-surgery/">BMI requirements for surgery</a> guide for pre-surgical considerations.</p>
 
       <h2>BMI Risk Zones</h2>
-      <p>The following visualization shows the health risk zones across the BMI spectrum. Use our <a href="/">BMI calculator</a> to determine where you fall on this scale.</p>
+      <p>The following visualization shows the health risk zones across the BMI spectrum. Use our BMI calculator to determine where you fall on this scale.</p>
 
       <div class="chart-range">
         <div class="chart-range-track">
@@ -562,7 +566,7 @@
         <div class="faq-item">
           <button class="faq-question">Can you be healthy with a high BMI?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
           <div class="faq-answer">
-            <p>While some individuals with elevated BMI may have normal metabolic markers (blood pressure, blood sugar, cholesterol) - a concept sometimes called "metabolically healthy obesity" - long-term studies suggest they still face increased health risks over time compared to those with normal BMI. Research indicates that "metabolically healthy obesity" may be a transitional state, with many individuals eventually developing metabolic abnormalities. Additionally, obesity increases risks for conditions not captured by standard metabolic tests, including certain cancers, osteoarthritis, and sleep apnea. Athletes with high BMI due to muscle mass are a notable exception, as <a href="/blog/bmi-limitations/">BMI limitations</a> don't distinguish between muscle and fat.</p>
+            <p>While some individuals with elevated BMI may have normal metabolic markers (blood pressure, blood sugar, cholesterol) - a concept sometimes called "metabolically healthy obesity" - long-term studies suggest they still face increased health risks over time compared to those with normal BMI. Research indicates that "metabolically healthy obesity" may be a transitional state, with many individuals eventually developing metabolic abnormalities. Additionally, obesity increases risks for conditions not captured by standard metabolic tests, including certain cancers, osteoarthritis, and sleep apnea. Athletes with high BMI due to muscle mass are a notable exception, as BMI limitations don't distinguish between muscle and fat.</p>
           </div>
         </div>
         <div class="faq-item">
@@ -604,13 +608,13 @@
         <div class="faq-item">
           <button class="faq-question">What BMI does ASMBS list for bariatric surgery candidacy?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
           <div class="faq-answer">
-            <p>The <a href="https://asmbs.org/" target="_blank" rel="noopener">ASMBS</a> and <a href="https://www.niddk.nih.gov/health-information/weight-management/bariatric-surgery" target="_blank" rel="noopener">NIDDK</a> are the standard published sources. The publicly summarised criteria have historically been BMI &ge; 40, or BMI 35&ndash;39.9 with at least one obesity-related comorbidity (type 2 diabetes, obstructive sleep apnea, cardiovascular disease); the 2022 ASMBS/IFSO consensus statement broadened this to include BMI 30&ndash;34.9 with metabolic disease that has not responded to non-surgical therapy. Actual eligibility for a specific person is determined by a bariatric surgical team. See our <a href="/blog/bmi-for-surgery/">BMI requirements for surgery</a> guide.</p>
+            <p>The <a href="https://asmbs.org/" target="_blank" rel="noopener">ASMBS</a> and <a href="https://www.niddk.nih.gov/health-information/weight-management/bariatric-surgery" target="_blank" rel="noopener">NIDDK</a> are the standard published sources. The publicly summarised criteria have historically been BMI &ge; 40, or BMI 35&ndash;39.9 with at least one obesity-related comorbidity (type 2 diabetes, obstructive sleep apnea, cardiovascular disease); the 2022 ASMBS/IFSO consensus statement broadened this to include BMI 30&ndash;34.9 with metabolic disease that has not responded to non-surgical therapy. Actual eligibility for a specific person is determined by a bariatric surgical team. See our BMI requirements for surgery guide.</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-question">Is BMI accurate for people with a lot of muscle?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
           <div class="faq-answer">
-            <p>BMI cannot distinguish muscle mass from fat mass, so muscular individuals often have elevated BMI despite low body-fat percentage. A strength athlete with 10% body fat may be classified as &ldquo;overweight&rdquo; or even &ldquo;obese&rdquo; on BMI alone. If you have substantial muscle mass, complementary measurements &mdash; waist circumference, body-fat percentage from DEXA or skinfolds, waist-to-hip ratio &mdash; provide a much better health picture than BMI in isolation. See our <a href="/blog/bmi-limitations/">BMI limitations</a> and <a href="/blog/bmi-for-athletes/">BMI for athletes</a> guides.</p>
+            <p>BMI cannot distinguish muscle mass from fat mass, so muscular individuals often have elevated BMI despite low body-fat percentage. A strength athlete with 10% body fat may be classified as &ldquo;overweight&rdquo; or even &ldquo;obese&rdquo; on BMI alone. If you have substantial muscle mass, complementary measurements &mdash; waist circumference, body-fat percentage from DEXA or skinfolds, waist-to-hip ratio &mdash; provide a much better health picture than BMI in isolation. See our BMI limitations and BMI for athletes guides.</p>
           </div>
         </div>
         <div class="faq-item">

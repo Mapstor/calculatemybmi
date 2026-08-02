@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="/assets/js/analytics.js"></script>
+    <script>
+  /* Consent Mode v2 defaults — must run before any other script. See /assets/js/consent-banner.js for the deferred GTM loader + banner. */
+  (function(){window.dataLayer=window.dataLayer||[];function g(){dataLayer.push(arguments);}window.gtag=g;var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch(e){}var inScope=/^Europe\//.test(tz)||tz===''||tz==='Atlantic/Reykjavik'||tz==='Atlantic/Faroe'||tz==='Atlantic/Azores'||tz==='Atlantic/Madeira'||tz==='Atlantic/Canary';window.__cmbmiInScope=inScope;var c=null;try{c=localStorage.getItem('cmbmi-consent');}catch(e){}window.__cmbmiChoice=c;g('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:inScope?'denied':'granted',wait_for_update:500});if(c==='accept')g('consent','update',{analytics_storage:'granted'});else if(c==='decline')g('consent','update',{analytics_storage:'denied'});})();
+  </script>
+  <script defer src="/assets/js/consent-banner.js"></script>
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BMI Calculator by Age &mdash; WHO Adult Range + Older-Adult Research</title>
@@ -335,7 +339,7 @@
         <p style="margin-bottom:0.5rem;"><strong>Target BMI: 18.5-24.9</strong></p>
         <p>In your 30s, you will notice the first signs of age-related metabolic slowdown. Muscle mass begins its gradual decline (about 3-5% per decade), and many adults experience their first noticeable weight gain, particularly around the midsection. Career stress, sleep deprivation from young children, and reduced physical activity all contribute.</p>
         <p><strong>Practical advice:</strong> Prioritize <strong>protein intake</strong> (0.8-1.0 g per pound of lean body mass) to combat early sarcopenia. Maintain or intensify strength training. Monitor your waist circumference in addition to BMI. Begin annual health screenings for blood pressure, cholesterol, and blood glucose. If you notice a trend of 1-2 pounds gained per year, take action now rather than waiting.</p>
-        <p style="margin-bottom:0;">Calculate your <a href="/lean-body-mass/">lean body mass</a> to understand how much of your weight is muscle versus fat.</p>
+        <p style="margin-bottom:0;">Calculate your lean body mass to understand how much of your weight is muscle versus fat.</p>
       </div>
 
       <div style="border-left:4px solid #9333ea;background:#fdf4ff;padding:1.25rem 1.5rem;border-radius:0 12px 12px 0;margin:1.5rem 0;">
@@ -392,7 +396,7 @@
             <li><strong>Exercise:</strong> 150+ minutes moderate cardio per week, plus 2-3 strength sessions</li>
             <li><strong>Nutrition:</strong> Focus on whole foods, adequate protein (0.8 g/lb lean mass), calcium-rich foods for bone health</li>
             <li><strong>Habits:</strong> Establish regular meal timing, limit alcohol, develop cooking skills</li>
-            <li><strong>Monitoring:</strong> Annual BMI check; use our <a href="/">standard BMI calculator</a></li>
+            <li><strong>Monitoring:</strong> Annual BMI check; use our standard BMI calculator</li>
             <li><strong>Sleep:</strong> 7-9 hours; poor sleep in young adults correlates with future obesity</li>
             <li><strong>Avoid:</strong> Crash diets, excessive restriction, and over-reliance on cardio without strength training</li>
           </ul>
@@ -518,7 +522,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-question">How does metabolism change with age and affect BMI?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="faq-answer"><p>Metabolism slows gradually throughout adulthood, driven primarily by the loss of metabolically active muscle tissue. Your basal metabolic rate (BMR) -- the calories your body burns at rest -- declines by approximately <strong>1-2% per decade</strong> after age 20. A landmark 2021 study published in <em>Science</em> revealed that metabolism remains relatively stable from age 20 to 60, with the most dramatic decline occurring after age 60. However, the practical effect is cumulative: by age 60, you may need 200-400 fewer daily calories than you did at age 25 to maintain the same weight. This is why many adults experience gradual weight gain even without changing their eating habits. To counteract this, the most effective strategies are <strong>resistance training</strong> (which preserves and builds metabolically active muscle), adequate protein intake, and modest caloric adjustments. For a deeper exploration of this topic, read our article on <a href="/blog/bmi-and-metabolism/">BMI and metabolism</a>.</p></div>
+          <div class="faq-answer"><p>Metabolism slows gradually throughout adulthood, driven primarily by the loss of metabolically active muscle tissue. Your basal metabolic rate (BMR) -- the calories your body burns at rest -- declines by approximately <strong>1-2% per decade</strong> after age 20. A landmark 2021 study published in <em>Science</em> revealed that metabolism remains relatively stable from age 20 to 60, with the most dramatic decline occurring after age 60. However, the practical effect is cumulative: by age 60, you may need 200-400 fewer daily calories than you did at age 25 to maintain the same weight. This is why many adults experience gradual weight gain even without changing their eating habits. To counteract this, the most effective strategies are <strong>resistance training</strong> (which preserves and builds metabolically active muscle), adequate protein intake, and modest caloric adjustments. For a deeper exploration of this topic, read our article on BMI and metabolism.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">Should I use my peak height or current height for BMI?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>

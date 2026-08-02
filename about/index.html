@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="/assets/js/analytics.js"></script>
+    <script>
+  /* Consent Mode v2 defaults — must run before any other script. See /assets/js/consent-banner.js for the deferred GTM loader + banner. */
+  (function(){window.dataLayer=window.dataLayer||[];function g(){dataLayer.push(arguments);}window.gtag=g;var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch(e){}var inScope=/^Europe\//.test(tz)||tz===''||tz==='Atlantic/Reykjavik'||tz==='Atlantic/Faroe'||tz==='Atlantic/Azores'||tz==='Atlantic/Madeira'||tz==='Atlantic/Canary';window.__cmbmiInScope=inScope;var c=null;try{c=localStorage.getItem('cmbmi-consent');}catch(e){}window.__cmbmiChoice=c;g('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:inScope?'denied':'granted',wait_for_update:500});if(c==='accept')g('consent','update',{analytics_storage:'granted'});else if(c==='decline')g('consent','update',{analytics_storage:'denied'});})();
+  </script>
+  <script defer src="/assets/js/consent-banner.js"></script>
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About CalculateMyBMI.net - Free BMI & Body Composition Calculators</title>
@@ -256,7 +260,7 @@
         <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener" class="source-ref">PubMed / NIH</a>
         <a href="https://www.nih.gov/" target="_blank" rel="noopener" class="source-ref">National Institutes of Health</a>
       </div>
-      <p>Content is regularly reviewed to ensure it reflects the most current medical literature and clinical guidelines. When standards or recommendations change, we update our tools and educational content accordingly. For a deeper understanding of BMI methodology, see our <a href="/blog/bmi-calculator-guide/">complete BMI calculator guide</a> and <a href="/blog/bmi-categories/">BMI categories explained</a>.</p>
+      <p>Content is regularly reviewed to ensure it reflects the most current medical literature and clinical guidelines. When standards or recommendations change, we update our tools and educational content accordingly. For a deeper understanding of BMI methodology, see our complete BMI calculator guide and <a href="/blog/bmi-categories/">BMI categories explained</a>.</p>
     </section>
 
     <!-- How Our Calculators Work -->
@@ -265,7 +269,7 @@
       <p>We have designed our calculators with simplicity, speed, and privacy as core principles. Here is how they work from a technical perspective:</p>
 
       <h3>Client-Side Processing</h3>
-      <p>All calculations are performed entirely in your web browser using client-side JavaScript. When you enter your height, weight, age, or sex, that information is processed locally on your device &mdash; those specific inputs are not transmitted to our servers or to any third party. What the site <em>does</em> collect (Google Analytics 4 cookies, standard HTTP server logs) is described in the <a href="/privacy/">privacy policy</a>.</p>
+      <p>All calculations are performed entirely in your web browser using client-side JavaScript. When you enter your height, weight, age, or sex, that information is processed locally on your device &mdash; those specific inputs are not transmitted to our servers or to any third party. What the site <em>does</em> collect (Google Analytics 4 cookies, standard HTTP server logs) is described in the privacy policy.</p>
 
       <h3>Instant Results</h3>
       <p>Because all processing happens locally, results appear instantly after you click "Calculate." There is no loading time, no server request, and no waiting. You can run as many calculations as you like, adjust your inputs, and compare results across multiple calculators without any delays.</p>
@@ -339,16 +343,16 @@
         <div class="privacy-item">
           <div class="privacy-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
           <h3>GDPR &amp; CCPA rights honoured</h3>
-          <p>We follow GDPR and CCPA / CPRA. Rights and how to exercise them are in the <a href="/privacy/">privacy policy</a>.</p>
+          <p>We follow GDPR and CCPA / CPRA. Rights and how to exercise them are in the privacy policy.</p>
         </div>
         <div class="privacy-item">
           <div class="privacy-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
           <h3>What we do collect</h3>
-          <p>Google Analytics 4 cookies (with consent for EEA/UK/CH visitors) and standard HTTP server logs. Full detail: <a href="/privacy/">privacy policy</a>.</p>
+          <p>Google Analytics 4 cookies (with consent for EEA/UK/CH visitors) and standard HTTP server logs. Full detail: privacy policy.</p>
         </div>
       </div>
 
-      <p>Two things happen to data on this site: calculator inputs are processed in your browser and are not transmitted from your device, and standard analytics/server-log processing runs as described in the <a href="/privacy/">privacy policy</a>. This site does not currently serve advertisements.</p>
+      <p>Two things happen to data on this site: calculator inputs are processed in your browser and are not transmitted from your device, and standard analytics/server-log processing runs as described in the privacy policy. This site does not currently serve advertisements.</p>
     </section>
 
     <!-- FAQ Section -->
@@ -367,7 +371,7 @@
         <div class="faq-item">
           <button class="faq-question">Is my personal data stored or shared?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
           <div class="faq-answer">
-            <p>Calculator inputs (height, weight, age, sex) are processed entirely in your browser and are not transmitted from your device to us or to any third party. There is no database of your inputs, and no cookie records what you typed into a calculator. Separately, the site does set Google Analytics 4 cookies (page-view counting) and produces standard HTTP server logs &mdash; see the <a href="/privacy/">privacy policy</a> for the full picture.</p>
+            <p>Calculator inputs (height, weight, age, sex) are processed entirely in your browser and are not transmitted from your device to us or to any third party. There is no database of your inputs, and no cookie records what you typed into a calculator. Separately, the site does set Google Analytics 4 cookies (page-view counting) and produces standard HTTP server logs &mdash; see the privacy policy for the full picture.</p>
           </div>
         </div>
 
@@ -402,7 +406,7 @@
         <div class="faq-item">
           <button class="faq-question">What makes your calculators different from others online?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
           <div class="faq-answer">
-            <p>We offer a comprehensive suite of eight specialized calculators rather than a single generic tool. Each calculator provides context-specific interpretation, supports both imperial and metric units, runs entirely in your browser for privacy, and is backed by referenced medical sources. We also provide extensive educational content through our <a href="/blog/">guides section</a> that explains the science behind every formula we use, the limitations of BMI, and how to interpret your results alongside other health metrics.</p>
+            <p>We offer a comprehensive suite of eight specialized calculators rather than a single generic tool. Each calculator provides context-specific interpretation, supports both imperial and metric units, runs entirely in your browser for privacy, and is backed by referenced medical sources. We also provide extensive educational content through our guides section that explains the science behind every formula we use, the limitations of BMI, and how to interpret your results alongside other health metrics.</p>
           </div>
         </div>
       </div>

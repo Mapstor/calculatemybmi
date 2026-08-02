@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="/assets/js/analytics.js"></script>
+    <script>
+  /* Consent Mode v2 defaults — must run before any other script. See /assets/js/consent-banner.js for the deferred GTM loader + banner. */
+  (function(){window.dataLayer=window.dataLayer||[];function g(){dataLayer.push(arguments);}window.gtag=g;var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch(e){}var inScope=/^Europe\//.test(tz)||tz===''||tz==='Atlantic/Reykjavik'||tz==='Atlantic/Faroe'||tz==='Atlantic/Azores'||tz==='Atlantic/Madeira'||tz==='Atlantic/Canary';window.__cmbmiInScope=inScope;var c=null;try{c=localStorage.getItem('cmbmi-consent');}catch(e){}window.__cmbmiChoice=c;g('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:inScope?'denied':'granted',wait_for_update:500});if(c==='accept')g('consent','update',{analytics_storage:'granted'});else if(c==='decline')g('consent','update',{analytics_storage:'denied'});})();
+  </script>
+  <script defer src="/assets/js/consent-banner.js"></script>
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BMI Calculator Guide: How to Calculate & Understand Your BMI (2026)</title>
@@ -362,7 +366,7 @@
           </tbody>
         </table>
       </div>
-      <p>Enter your exact height in our <a href="/">calculator</a> for a precise healthy weight range tailored to you.</p>
+      <p>Enter your exact height in our calculator for a precise healthy weight range tailored to you.</p>
 
       <h2>When to See a Doctor About Your BMI</h2>
       <p>While our calculator can help you identify your BMI category, certain situations warrant professional medical advice:</p>
@@ -392,7 +396,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-question">What is the difference between BMI and body fat percentage?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="faq-answer"><p>BMI is a ratio of weight to height and does not directly measure fat. Body fat percentage tells you exactly how much of your weight is fat tissue. A person with 15% body fat and a person with 30% body fat could have identical BMIs if they weigh the same and are the same height. Body fat percentage is more accurate but harder to measure, typically requiring calipers, bioelectrical impedance, or a DEXA scan. Read more in our <a href="/blog/body-fat-vs-bmi/">Body Fat vs. BMI</a> guide.</p></div>
+          <div class="faq-answer"><p>BMI is a ratio of weight to height and does not directly measure fat. Body fat percentage tells you exactly how much of your weight is fat tissue. A person with 15% body fat and a person with 30% body fat could have identical BMIs if they weigh the same and are the same height. Body fat percentage is more accurate but harder to measure, typically requiring calipers, bioelectrical impedance, or a DEXA scan. Read more in our Body Fat vs. BMI guide.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">Can BMI be used during pregnancy?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>

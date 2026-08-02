@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="/assets/js/analytics.js"></script>
+    <script>
+  /* Consent Mode v2 defaults — must run before any other script. See /assets/js/consent-banner.js for the deferred GTM loader + banner. */
+  (function(){window.dataLayer=window.dataLayer||[];function g(){dataLayer.push(arguments);}window.gtag=g;var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch(e){}var inScope=/^Europe\//.test(tz)||tz===''||tz==='Atlantic/Reykjavik'||tz==='Atlantic/Faroe'||tz==='Atlantic/Azores'||tz==='Atlantic/Madeira'||tz==='Atlantic/Canary';window.__cmbmiInScope=inScope;var c=null;try{c=localStorage.getItem('cmbmi-consent');}catch(e){}window.__cmbmiChoice=c;g('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:inScope?'denied':'granted',wait_for_update:500});if(c==='accept')g('consent','update',{analytics_storage:'granted'});else if(c==='decline')g('consent','update',{analytics_storage:'denied'});})();
+  </script>
+  <script defer src="/assets/js/consent-banner.js"></script>
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Complete History of BMI: From Quetelet to Modern Medicine (1832-2026)</title>
@@ -665,7 +669,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-question">What is Trefethen's "New BMI" and is it better?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="faq-answer"><p>In 2013, Oxford mathematician Nick Trefethen proposed a modified formula: New BMI = 1.3 &times; weight (kg) / height (m)^2.5. This formula addresses the height bias in standard BMI, which tends to underestimate fatness in short people and overestimate it in tall people. While mathematically more accurate, the New BMI has not been widely adopted because the practical differences are small for most people, and it would require recalibrating all existing research and clinical guidelines. Try our <a href="/new-bmi-calculator/">New BMI calculator</a> to see how your results compare.</p></div>
+          <div class="faq-answer"><p>In 2013, Oxford mathematician Nick Trefethen proposed a modified formula: New BMI = 1.3 &times; weight (kg) / height (m)^2.5. This formula addresses the height bias in standard BMI, which tends to underestimate fatness in short people and overestimate it in tall people. While mathematically more accurate, the New BMI has not been widely adopted because the practical differences are small for most people, and it would require recalibrating all existing research and clinical guidelines. Try our New BMI calculator to see how your results compare.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">Did Quetelet know his formula would be used for health assessment?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>

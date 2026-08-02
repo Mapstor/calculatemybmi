@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="/assets/js/analytics.js"></script>
+    <script>
+  /* Consent Mode v2 defaults — must run before any other script. See /assets/js/consent-banner.js for the deferred GTM loader + banner. */
+  (function(){window.dataLayer=window.dataLayer||[];function g(){dataLayer.push(arguments);}window.gtag=g;var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch(e){}var inScope=/^Europe\//.test(tz)||tz===''||tz==='Atlantic/Reykjavik'||tz==='Atlantic/Faroe'||tz==='Atlantic/Azores'||tz==='Atlantic/Madeira'||tz==='Atlantic/Canary';window.__cmbmiInScope=inScope;var c=null;try{c=localStorage.getItem('cmbmi-consent');}catch(e){}window.__cmbmiChoice=c;g('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:inScope?'denied':'granted',wait_for_update:500});if(c==='accept')g('consent','update',{analytics_storage:'granted'});else if(c==='decline')g('consent','update',{analytics_storage:'denied'});})();
+  </script>
+  <script defer src="/assets/js/consent-banner.js"></script>
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Body Fat vs BMI: Complete Guide to Understanding Both Metrics | BMI Calculator</title>
@@ -758,7 +762,7 @@
       <p>For the most complete assessment, also consider:</p>
       <ul>
         <li><strong>Waist circumference:</strong> Men should aim for &lt; 40 inches; women &lt; 35 inches</li>
-        <li><strong><a href="/blog/waist-to-height-ratio/">Waist-to-height ratio</a>:</strong> Should be &lt; 0.5 for optimal health</li>
+        <li><strong>Waist-to-height ratio:</strong> Should be &lt; 0.5 for optimal health</li>
         <li><strong>Blood pressure, cholesterol, and blood glucose:</strong> Key metabolic health indicators</li>
         <li><strong>Physical fitness level:</strong> Cardiorespiratory and muscular fitness</li>
       </ul>
@@ -943,7 +947,7 @@
       </div>
 
       <!-- CTA -->
-      <p style="text-align: center; margin: 2rem 0;"><a href="/" style="display: inline-block; padding: 1rem 2rem; background: var(--primary); color: white; border-radius: var(--radius-md); font-weight: 600; text-decoration: none;">Calculate My BMI Now</a></p>
+      <p style="text-align: center; margin: 2rem 0;">Calculate My BMI Now</p>
 
     </article>
   </div></main>

@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="/assets/js/analytics.js"></script>
+    <script>
+  /* Consent Mode v2 defaults — must run before any other script. See /assets/js/consent-banner.js for the deferred GTM loader + banner. */
+  (function(){window.dataLayer=window.dataLayer||[];function g(){dataLayer.push(arguments);}window.gtag=g;var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch(e){}var inScope=/^Europe\//.test(tz)||tz===''||tz==='Atlantic/Reykjavik'||tz==='Atlantic/Faroe'||tz==='Atlantic/Azores'||tz==='Atlantic/Madeira'||tz==='Atlantic/Canary';window.__cmbmiInScope=inScope;var c=null;try{c=localStorage.getItem('cmbmi-consent');}catch(e){}window.__cmbmiChoice=c;g('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:inScope?'denied':'granted',wait_for_update:500});if(c==='accept')g('consent','update',{analytics_storage:'granted'});else if(c==='decline')g('consent','update',{analytics_storage:'denied'});})();
+  </script>
+  <script defer src="/assets/js/consent-banner.js"></script>
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Waist-to-Height Ratio Calculator & Guide: A Better Alternative to BMI | BMI Calculator</title>
@@ -285,7 +289,7 @@
 
       <!-- Section 4: Why Better Than BMI -->
       <h2 id="why-better-than-bmi">Why WHtR Is Better Than BMI</h2>
-      <p>While <a href="/">BMI</a> remains the most commonly used health screening metric, research increasingly shows that WHtR is superior for predicting actual health outcomes. Here's why:</p>
+      <p>While BMI remains the most commonly used health screening metric, research increasingly shows that WHtR is superior for predicting actual health outcomes. Here's why:</p>
 
       <div class="pros-cons">
         <div class="pros-list">
@@ -480,7 +484,7 @@
         <li><strong>Not useful during pregnancy:</strong> Like BMI, WHtR should not be used to assess pregnant women.</li>
       </ul>
 
-      <p>For the most comprehensive health assessment, combine WHtR with your <a href="/">BMI</a>, blood pressure, blood lipids, and blood glucose measurements. No single metric tells the whole story.</p>
+      <p>For the most comprehensive health assessment, combine WHtR with your BMI, blood pressure, blood lipids, and blood glucose measurements. No single metric tells the whole story.</p>
 
       <!-- CTA Button -->
       <p style="text-align: center; margin: 2rem 0;"><a href="/" style="display: inline-block; padding: 1rem 2rem; background: var(--primary); color: white; border-radius: var(--radius-md); font-weight: 600; text-decoration: none;">Calculate Your BMI</a></p>
@@ -503,7 +507,7 @@
         <div class="faq-item">
           <button class="faq-question">Is waist-to-height ratio better than BMI?<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
           <div class="faq-answer">
-            <p>Research consistently shows that waist-to-height ratio is a better predictor of cardiovascular disease, type 2 diabetes, and mortality risk than <a href="/">BMI</a>. Unlike BMI, WHtR measures abdominal fat distribution, which is the most metabolically dangerous type of fat. That said, both metrics are useful for different purposes.</p>
+            <p>Research consistently shows that waist-to-height ratio is a better predictor of cardiovascular disease, type 2 diabetes, and mortality risk than BMI. Unlike BMI, WHtR measures abdominal fat distribution, which is the most metabolically dangerous type of fat. That said, both metrics are useful for different purposes.</p>
           </div>
         </div>
         <div class="faq-item">

@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="/assets/js/analytics.js"></script>
+    <script>
+  /* Consent Mode v2 defaults — must run before any other script. See /assets/js/consent-banner.js for the deferred GTM loader + banner. */
+  (function(){window.dataLayer=window.dataLayer||[];function g(){dataLayer.push(arguments);}window.gtag=g;var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch(e){}var inScope=/^Europe\//.test(tz)||tz===''||tz==='Atlantic/Reykjavik'||tz==='Atlantic/Faroe'||tz==='Atlantic/Azores'||tz==='Atlantic/Madeira'||tz==='Atlantic/Canary';window.__cmbmiInScope=inScope;var c=null;try{c=localStorage.getItem('cmbmi-consent');}catch(e){}window.__cmbmiChoice=c;g('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:inScope?'denied':'granted',wait_for_update:500});if(c==='accept')g('consent','update',{analytics_storage:'granted'});else if(c==='decline')g('consent','update',{analytics_storage:'denied'});})();
+  </script>
+  <script defer src="/assets/js/consent-banner.js"></script>
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pediatric BMI Calculator: BMI Charts for Kids &amp; Teens by Age (2026)</title>
@@ -455,7 +459,7 @@
       <div class="faq-list">
         <div class="faq-item">
           <button class="faq-question">What BMI is normal for a 10-year-old?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="faq-answer"><p>For a 10-year-old, there is no single &ldquo;normal&rdquo; BMI number because it depends on sex. For boys, a healthy BMI at age 10 ranges from about 14.0 (5th percentile) to 19.4 (84th percentile), with the median at 16.6. For girls, the range is approximately 14.0 to 19.9, with the median at 16.9. Any BMI within these ranges is considered healthy weight. Use our <a href="/">BMI calculator</a> for a precise percentile assessment.</p></div>
+          <div class="faq-answer"><p>For a 10-year-old, there is no single &ldquo;normal&rdquo; BMI number because it depends on sex. For boys, a healthy BMI at age 10 ranges from about 14.0 (5th percentile) to 19.4 (84th percentile), with the median at 16.6. For girls, the range is approximately 14.0 to 19.9, with the median at 16.9. Any BMI within these ranges is considered healthy weight. Use our BMI calculator for a precise percentile assessment.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">Is BMI accurate for children?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
@@ -467,11 +471,11 @@
         </div>
         <div class="faq-item">
           <button class="faq-question">Can I use adult BMI categories for my teenager?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="faq-answer"><p>No. Pediatric BMI percentile charts should be used for all individuals under age 20, including teenagers. Even for an 18 or 19-year-old, the adult cutoffs of 25 (overweight) and 30 (obese) may not accurately reflect their weight status because many teens are still growing. The CDC growth charts cover ages 2 through 19 and are the appropriate reference. After age 20, adults should transition to the standard <a href="/blog/bmi-categories/">BMI categories</a>.</p></div>
+          <div class="faq-answer"><p>No. Pediatric BMI percentile charts should be used for all individuals under age 20, including teenagers. Even for an 18 or 19-year-old, the adult cutoffs of 25 (overweight) and 30 (obese) may not accurately reflect their weight status because many teens are still growing. The CDC growth charts cover ages 2 through 19 and are the appropriate reference. After age 20, adults should transition to the standard BMI categories.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">How often should I check my child&rsquo;s BMI?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="faq-answer"><p>The American Academy of Pediatrics recommends BMI screening at every well-child visit starting at age 2, which typically occurs annually. More frequent monitoring may be recommended if your child&rsquo;s BMI is above the 85th percentile, below the 5th percentile, or if the trajectory is changing rapidly. Between pediatrician visits, you can use our <a href="/">BMI calculator</a> to check, but avoid making it a frequent event that could create anxiety about weight.</p></div>
+          <div class="faq-answer"><p>The American Academy of Pediatrics recommends BMI screening at every well-child visit starting at age 2, which typically occurs annually. More frequent monitoring may be recommended if your child&rsquo;s BMI is above the 85th percentile, below the 5th percentile, or if the trajectory is changing rapidly. Between pediatrician visits, you can use our BMI calculator to check, but avoid making it a frequent event that could create anxiety about weight.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">My child&rsquo;s BMI seems too low. Should I try to fatten them up?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>

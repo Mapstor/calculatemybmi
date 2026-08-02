@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="/assets/js/analytics.js"></script>
+    <script>
+  /* Consent Mode v2 defaults — must run before any other script. See /assets/js/consent-banner.js for the deferred GTM loader + banner. */
+  (function(){window.dataLayer=window.dataLayer||[];function g(){dataLayer.push(arguments);}window.gtag=g;var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch(e){}var inScope=/^Europe\//.test(tz)||tz===''||tz==='Atlantic/Reykjavik'||tz==='Atlantic/Faroe'||tz==='Atlantic/Azores'||tz==='Atlantic/Madeira'||tz==='Atlantic/Canary';window.__cmbmiInScope=inScope;var c=null;try{c=localStorage.getItem('cmbmi-consent');}catch(e){}window.__cmbmiChoice=c;g('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:inScope?'denied':'granted',wait_for_update:500});if(c==='accept')g('consent','update',{analytics_storage:'granted'});else if(c==='decline')g('consent','update',{analytics_storage:'denied'});})();
+  </script>
+  <script defer src="/assets/js/consent-banner.js"></script>
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BMI Chart Explained: How to Read and Interpret BMI Charts (2026 Guide)</title>
@@ -1045,7 +1049,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-question">What BMI range is highlighted as healthy on the chart?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="faq-answer"><p>The green or healthy zone on standard BMI charts covers BMI 18.5 to 24.9. This range is associated with the lowest risk of weight-related health problems for most adults. However, individual factors like muscle mass, age, ethnicity, and fat distribution affect what is truly optimal for each person. See our <a href="/blog/healthy-bmi-range/">Healthy BMI Range</a> guide for more detail.</p></div>
+          <div class="faq-answer"><p>The green or healthy zone on standard BMI charts covers BMI 18.5 to 24.9. This range is associated with the lowest risk of weight-related health problems for most adults. However, individual factors like muscle mass, age, ethnicity, and fat distribution affect what is truly optimal for each person. See our Healthy BMI Range guide for more detail.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">Do BMI charts work for children?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>

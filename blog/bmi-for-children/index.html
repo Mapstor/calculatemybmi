@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="/assets/js/analytics.js"></script>
+    <script>
+  /* Consent Mode v2 defaults — must run before any other script. See /assets/js/consent-banner.js for the deferred GTM loader + banner. */
+  (function(){window.dataLayer=window.dataLayer||[];function g(){dataLayer.push(arguments);}window.gtag=g;var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch(e){}var inScope=/^Europe\//.test(tz)||tz===''||tz==='Atlantic/Reykjavik'||tz==='Atlantic/Faroe'||tz==='Atlantic/Azores'||tz==='Atlantic/Madeira'||tz==='Atlantic/Canary';window.__cmbmiInScope=inScope;var c=null;try{c=localStorage.getItem('cmbmi-consent');}catch(e){}window.__cmbmiChoice=c;g('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:inScope?'denied':'granted',wait_for_update:500});if(c==='accept')g('consent','update',{analytics_storage:'granted'});else if(c==='decline')g('consent','update',{analytics_storage:'denied'});})();
+  </script>
+  <script defer src="/assets/js/consent-banner.js"></script>
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BMI for Children: Complete Guide to Pediatric BMI Percentiles | BMI Calculator</title>
@@ -229,7 +233,7 @@
         <div class="numbered-step">
           <div class="numbered-step-content">
             <h4>Calculate and Plot BMI on the Y-Axis</h4>
-            <p>Calculate BMI using weight (kg) / height (m)², then find this value on the vertical axis. Use our <a href="/kids-bmi-calculator/">pediatric BMI calculator</a> for automatic calculation.</p>
+            <p>Calculate BMI using weight (kg) / height (m)², then find this value on the vertical axis. Use our pediatric BMI calculator for automatic calculation.</p>
           </div>
         </div>
         <div class="numbered-step">
@@ -695,7 +699,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="faq-answer">
-            <p>The AAP recommends measuring BMI at least annually at well-child visits. Your pediatrician will plot measurements on growth charts to track trends over time. At home, you don't need to calculate BMI frequently - monitoring eating and activity habits is more valuable day-to-day. If you have concerns, use our <a href="/kids-bmi-calculator/">pediatric BMI calculator</a> and bring the results to discuss with your child's doctor.</p>
+            <p>The AAP recommends measuring BMI at least annually at well-child visits. Your pediatrician will plot measurements on growth charts to track trends over time. At home, you don't need to calculate BMI frequently - monitoring eating and activity habits is more valuable day-to-day. If you have concerns, use our pediatric BMI calculator and bring the results to discuss with your child's doctor.</p>
           </div>
         </div>
 
