@@ -9,6 +9,36 @@
       "source": "/blog/bmi-and-life-insurance/",
       "destination": "/blog/bmi-limitations/",
       "statusCode": 308
+    },
+    {
+      "source": "/blog/bmi-categories-explained",
+      "destination": "/blog/bmi-categories/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/bmi-categories-explained/",
+      "destination": "/blog/bmi-categories/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/overweight-bmi-risks",
+      "destination": "/blog/bmi-and-health-risks/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/overweight-bmi-risks/",
+      "destination": "/blog/bmi-and-health-risks/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/obese-bmi-category",
+      "destination": "/blog/bmi-and-health-risks/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/obese-bmi-category/",
+      "destination": "/blog/bmi-and-health-risks/",
+      "statusCode": 308
     }
   ]
 }

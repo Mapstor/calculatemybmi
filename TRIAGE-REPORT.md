@@ -113,23 +113,87 @@ Applied sitewide via one scripted transform (details in Tier A table above). Zer
 
 Removed. The entire "Let's Move! Initiative" resource card on `kids-bmi-calculator/index.html` was deleted (the initiative and its site were archived when the White House administration changed).
 
-## Consolidation cluster &mdash; STOP for approval
+## Consolidation cluster &mdash; Alt B applied (6 &rarr; 3)
 
-The Phase 4 consolidation decision has been pulled forward. Six pages
-(`bmi-and-health-risks`, `underweight-bmi-risks`, `overweight-bmi-risks`,
-`obese-bmi-category`, `bmi-categories`, `bmi-categories-explained`) analysed in
-`CONSOLIDATION.md`. Recommended primary approach: **6 &rarr; 4 (redirect
-`bmi-categories-explained` and `overweight-bmi-risks`)**. Two alternatives (5 or 3)
-also documented.
+**Approved mapping:**
 
-**Nothing on cluster pages has been touched in Phase 1b Tier B/C.** After you
-approve a consolidation approach, Phase 1b will:
+| Route | Action | Destination |
+|---|---|---|
+| `/blog/bmi-categories/` | **KEEP** | &mdash; (canonical classification page) |
+| `/blog/bmi-and-health-risks/` | **KEEP** | &mdash; (umbrella for excess-weight risks) |
+| `/blog/underweight-bmi-risks/` | **KEEP** | &mdash; (undernutrition-mechanism deep dive) |
+| `/blog/bmi-categories-explained/` | **308** | `/blog/bmi-categories/` |
+| `/blog/overweight-bmi-risks/` | **308** | `/blog/bmi-and-health-risks/` |
+| `/blog/obese-bmi-category/` | **308** | `/blog/bmi-and-health-risks/` |
 
-1. Add 308 redirects to `/workspace/vercel.json`.
-2. Remove redirected pages from `/workspace/sitemap.xml`.
-3. Sweep internal links.
-4. Delete redirected page directories.
-5. Apply Tier B/C citation edits to surviving cluster pages.
+### Content absorbed from `bmi-categories-explained` &rarr; `bmi-categories`
+
+- **Added "Grade 3 / Grade 2 / Grade 1" underweight labels** to Category 1&ndash;3 H2s.
+- **New "Common Causes of Underweight" list** (7 items: eating disorders, hyperthyroidism, GI malabsorption, chronic infection/illness, cancer treatment, depression, genetic lean phenotype).
+- **New "When to seek help" alert box** for underweight (5% unintentional loss in 6&ndash;12 months trigger).
+- **Class II obesity treatment paragraph**: added GLP-1 receptor agonist mention (semaglutide, tirzepatide).
+- **Class III obesity treatment paragraph**: added biliopancreatic diversion with duodenal switch; multidisciplinary care framing.
+- **History section**: added Nurses' Health Study and Health Professionals Follow-up Study validation.
+- **New "Category Borderlines and What They Mean" section** (BMI 18&ndash;19, 24&ndash;26, 29&ndash;31 sub-sections).
+- **Two new FAQs**: "What is the healthiest BMI to have?" and "How accurate is BMI as a health indicator?"
+- **New "Sources" section** at the bottom (7 primary citations: WHO, CDC, NHLBI, Mayo, Cleveland Clinic, Winter 2014, Flegal 2013).
+
+**Dropped as duplicate:** the 8-category classification table (subset of `bmi-categories`'s own table), Underweight/Normal/Overweight/Obese I/II/III per-category prose sections (superset already in `bmi-categories`), the Asian-Adjusted table (subset of `bmi-categories`'s "Ethnic Variations" table which covers 6 groups), the stat-grid widget, the visualisation chart (functional duplicate of `bmi-categories`'s BMI-scale chart), the population-distribution chart (functional duplicate).
+
+### Content absorbed from `overweight-bmi-risks` &rarr; `bmi-and-health-risks`
+
+- **New "Obesity Classes I, II, and III (BMI &ge; 30) &mdash; WHO cutoffs, risks, and treatment"** section per user mandate.
+- **New "Metabolic Syndrome" section** with 5-criteria diagnostic table (waist circumference, triglycerides, HDL, blood pressure, fasting glucose).
+- **New "When BMI may overstate or understate risk" section** (muscular individuals, older adults with Winter 2014 attribution, fat distribution, metabolically-healthy overweight).
+- **New "Practical steps from an elevated BMI to a healthier range"** ordered list (6 steps: baseline/target, deficit, activity, tracking, behavioural, maintenance).
+- **New "Obesity paradox" FAQ** with Flegal 2013 attribution.
+- **New "Is BMI accurate for muscular people?" FAQ.**
+
+**Dropped as duplicate:** the introductory BMI-range chart (already in the umbrella page), the standard categories table (already in the umbrella page), the cardiovascular disease sections (already covered in umbrella's CVD H2), the joint problems / sleep apnea / cancer sections (already in umbrella under those H2s), the specific-number bar charts (Tier B strip anyway).
+
+### Content absorbed from `obese-bmi-category` &rarr; `bmi-and-health-risks`
+
+- **Class I / II / III breakdown, WHO cut-offs, and treatment-intensity table** now in the new Obesity Classes section (see above).
+- **New "Bariatric Surgery: When is it appropriate?" section** with eligibility criteria (BMI 40, BMI 35 + comorbidity, BMI 30&ndash;34.9 + poorly controlled diabetes per newer guidelines), procedure comparison table (RYGB, sleeve, adjustable band, biliopancreatic diversion with duodenal switch).
+- **New "What BMI qualifies for bariatric surgery?" FAQ.**
+
+**Dropped as duplicate:** the intro BMI-classification table (already in the umbrella), the diabetes bar chart (already covered qualitatively in umbrella's T2D H2), the mental-health sections (already in umbrella's "Mental Health Connections" H2), the individual-condition mechanism discussions (already in the umbrella).
+
+### Tier B/C on survivors after merge
+
+Applied to bmi-and-health-risks post-merge:
+- Mortality-risk table: stripped all "x.xx higher" specific relative risk numbers; kept qualitative "risk factors" descriptions; added Flegal 2013 hazard ratios only in the anchoring context paragraph (as they are the actual Flegal 2013 primary citation) and cross-referenced Winter 2014 for older adults.
+- Cardiovascular-risk table: stripped condition-specific x.x multipliers; replaced with qualitative "trend with rising BMI" descriptions and pointer to NHLBI overview.
+- Diabetes section: stripped 3x/7x/12x bar chart entirely; kept qualitative "risk rises steeply" framing and DPP trial reference.
+- Cancer table: stripped all "N-x higher" numbers; kept cancer types and mechanisms.
+- Underweight risks table: stripped "60% higher fracture risk"; kept qualitative "elevated fracture risk".
+- 5&ndash;10% weight loss benefits list: stripped "58% reduction", "5&ndash;10 mmHg", "50% reduction"; kept qualitative benefit descriptions with DPP as the primary evidence base.
+- Hypertension, sleep apnea, asthma, OHS, NAFLD, depression, anxiety paragraphs: stripped all bare-institutional-URL cited percentages ("approximately 45%", "approximately 70%", "approximately 50%", "approximately 25%", "approximately 55%", "approximately 58%").
+- Cancer intro: stripped "approximately 8% of all cancers" (no primary source cited).
+- FAQ JSON-LD: updated to remove "58%", "55%", "13 types" specifics that had been stripped from the body.
+
+Underweight-bmi-risks and bmi-categories passed post-merge Tier B verification with zero remaining specific-figure hits.
+
+### Files touched during consolidation
+
+**Deleted directories (3):** `/blog/bmi-categories-explained/`, `/blog/overweight-bmi-risks/`, `/blog/obese-bmi-category/`.
+
+**Redirects added (6 rules in vercel.json):** each redirected route gets both trailing-slash and non-trailing-slash 308 redirects.
+
+**Sitemap entries removed (3):** `bmi-categories-explained`, `overweight-bmi-risks`, `obese-bmi-category`. `bmi-categories` and `bmi-and-health-risks` `lastmod` bumped to 2026-08-02.
+
+**Sitewide href sweep (28 replacements across 12 files):**
+- 7x `/blog/bmi-categories-explained/` &rarr; `/blog/bmi-categories/`
+- 12x `/blog/overweight-bmi-risks/` &rarr; `/blog/bmi-and-health-risks/`
+- 9x `/blog/obese-bmi-category/` &rarr; `/blog/bmi-and-health-risks/`
+
+Verified zero remaining HTML/sitemap/schema references to the redirected slugs.
+
+**Blog hub `/blog/` regenerated:** was listing only 15 of the (post-consolidation) 33 surviving articles; now lists every one, organised into 8 topical sections (Start here, Foundations, Charts and interpretation, Sex-/age-/situation-specific, Health risks, Beyond BMI, Weight management, Related calculators & guides). CollectionPage schema numberOfItems updated to 33 with full itemListElement. The "30+ Resources" copy has been retired in favour of the true count (33).
+
+### Post-merge duplicate-check on survivors
+
+Automated near-identical-paragraph diff between the three survivors: **zero substantive duplicate paragraphs.** The only matches were shared nav/header boilerplate, which is expected. H2-level overlap between `bmi-and-health-risks` and `bmi-categories` on obesity classes is intentional per the user mandate: umbrella organises by health condition and treatment, categories organises by classification. `underweight-bmi-risks` H2s (severity levels, causes, healthy weight gain, mental-health-in-underweight) do not overlap with either survivor.
 
 ## Counts summary
 
