@@ -45,7 +45,7 @@
 </head>
 <body>
   <header class="header"><div class="container"><div class="header-inner">
-    <a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.24 12.24a6 6 0 00-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg><span>BMI Calculator</span></a>
+    <a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.24 12.24a6 6 0 00-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg><span>CalculateMyBMI</span></a>
     <nav class="nav-desktop"><div class="nav-dropdown"><a href="/calculators/" class="nav-dropdown-toggle">Calculators <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px;vertical-align:middle;"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><div class="nav-dropdown-menu"><a href="/">Standard BMI</a><a href="/women-bmi-calculator/">BMI for Women</a><a href="/men-bmi-calculator/">BMI for Men</a><a href="/age-bmi-calculator/">BMI by Age</a><a href="/kids-bmi-calculator/">Pediatric BMI</a><div class="nav-dropdown-divider"></div><a href="/new-bmi-calculator/">New BMI (Trefethen)</a><a href="/ideal-weight/">Ideal Weight</a><a href="/lean-body-mass/">Lean Body Mass</a><div class="nav-dropdown-divider"></div><a href="/calculators/">All Calculators</a></div></div><a href="/blog/">Guides</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav>
     <button class="nav-toggle" aria-label="Menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
   </div><nav class="nav-mobile"><div class="nav-mobile-section">Calculators</div><a href="/">Standard BMI</a><a href="/women-bmi-calculator/">BMI for Women</a><a href="/men-bmi-calculator/">BMI for Men</a><a href="/age-bmi-calculator/">BMI by Age</a><a href="/kids-bmi-calculator/">Pediatric BMI</a><a href="/new-bmi-calculator/">New BMI (Trefethen)</a><a href="/ideal-weight/">Ideal Weight</a><a href="/lean-body-mass/">Lean Body Mass</a><a href="/calculators/">All Calculators</a><div class="nav-mobile-section">More</div><a href="/blog/">Guides</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div></header>
@@ -149,7 +149,7 @@
       <p>For children and teens aged 2 through 19, BMI is not interpreted using the same fixed cutoffs that apply to adults. Instead, a child's BMI is plotted on age-specific and sex-specific growth charts developed by the <a href="https://www.cdc.gov/growthcharts/" target="_blank" rel="noopener noreferrer">Centers for Disease Control and Prevention (CDC)</a>. The resulting percentile indicates how a child's BMI compares to other children of the same age and sex in the reference population. Below is a detailed breakdown of each weight status category.</p>
 
       <div style="overflow-x:auto;margin:1.5rem 0;">
-        <table style="width:100%;border-collapse:collapse;font-size:0.9375rem;border:1px solid var(--gray-200);border-radius:var(--radius-lg);overflow:hidden;">
+        <div class="table-responsive"><table style="width:100%;border-collapse:collapse;font-size:0.9375rem;border:1px solid var(--gray-200);border-radius:var(--radius-lg);overflow:hidden;">
           <thead>
             <tr style="background:var(--gray-100);">
               <th style="padding:0.75rem 1rem;text-align:left;border-bottom:2px solid var(--gray-300);font-weight:600;">Weight Status Category</th>
@@ -184,7 +184,7 @@
               <td style="padding:0.75rem 1rem;">This is the most serious weight status category for children. A child classified as severely obese has a BMI that is at least 120% of the 95th percentile value for their age and sex, or an absolute BMI of 35 or greater, whichever is lower. These children face substantially elevated health risks and often require comprehensive medical intervention. Severe obesity in childhood is strongly associated with persistence into adulthood and long-term health complications.</td>
             </tr>
           </tbody>
-        </table>
+        </table></div>
       </div>
       <p>It is important to understand that these categories serve as screening tools, not diagnostic criteria. A pediatrician considers the full clinical picture, including the child's growth trajectory over time, family history, physical maturity, diet, activity level, and overall health before drawing conclusions about a child's weight status. For a deeper understanding of how percentiles work, see our <a href="/kids-bmi-calculator/">BMI percentile calculator guide</a>.</p>
 
@@ -239,7 +239,7 @@
       <p>The table below shows the approximate 50th percentile BMI values for boys and girls at each age from 2 through 19, based on <a href="https://www.cdc.gov/growthcharts/" target="_blank" rel="noopener noreferrer">CDC growth chart data</a>. The 50th percentile represents the median: half of children that age and sex have a BMI below this value, and half have a BMI above it. Notice how average BMI changes substantially across childhood and adolescence, which is precisely why fixed adult BMI cutoffs cannot be used for children.</p>
 
       <div style="overflow-x:auto;margin:1.5rem 0;">
-        <table style="width:100%;border-collapse:collapse;font-size:0.9375rem;border:1px solid var(--gray-200);border-radius:var(--radius-lg);overflow:hidden;">
+        <div class="table-responsive"><table style="width:100%;border-collapse:collapse;font-size:0.9375rem;border:1px solid var(--gray-200);border-radius:var(--radius-lg);overflow:hidden;">
           <thead>
             <tr style="background:var(--gray-100);">
               <th style="padding:0.625rem 1rem;text-align:center;border-bottom:2px solid var(--gray-300);font-weight:600;">Age</th>
@@ -267,7 +267,7 @@
             <tr><td style="padding:0.5rem 1rem;text-align:center;border-bottom:1px solid var(--gray-200);font-weight:500;">18</td><td style="padding:0.5rem 1rem;text-align:center;border-bottom:1px solid var(--gray-200);">22.2</td><td style="padding:0.5rem 1rem;text-align:center;border-bottom:1px solid var(--gray-200);">21.3</td></tr>
             <tr style="background:var(--gray-50);"><td style="padding:0.5rem 1rem;font-weight:500;text-align:center;">19</td><td style="padding:0.5rem 1rem;text-align:center;">22.7</td><td style="padding:0.5rem 1rem;text-align:center;">21.5</td></tr>
           </tbody>
-        </table>
+        </table></div>
       </div>
       <p style="font-size:0.8125rem;color:var(--gray-500);">Source: Approximate values derived from CDC Clinical Growth Charts, 2000 (revised). These are median (50th percentile) values and represent population averages. Individual healthy BMI can vary significantly. For the full data tables, see the <a href="https://www.cdc.gov/growthcharts/" target="_blank" rel="noopener noreferrer">CDC growth charts</a>.</p>
       <p>Several important patterns emerge from this data. First, BMI naturally decreases from age 2 to around ages 4-6, a phenomenon called <strong>adiposity rebound</strong>. This is normal and reflects the fact that toddlers naturally shed baby fat during early childhood. After the adiposity rebound, BMI gradually increases through the rest of childhood and adolescence. Second, boys and girls track similarly until around age 14, after which boys tend to have slightly higher median BMI values than girls. This divergence reflects differences in puberty timing and body composition changes. To learn more about how age factors into BMI interpretation for all ages, visit our <a href="/age-bmi-calculator/">BMI calculator by age</a> and read our guide on <a href="/age-bmi-calculator/">BMI by age</a>.</p>
@@ -584,7 +584,7 @@
 
   <footer class="footer"><div class="container">
     <div class="footer-grid">
-      <div class="footer-brand"><a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.24 12.24a6 6 0 00-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg><span>BMI Calculator</span></a><p>Free BMI calculator for adults and children.</p></div>
+      <div class="footer-brand"><a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.24 12.24a6 6 0 00-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg><span>CalculateMyBMI</span></a><p>Free BMI calculator for adults and children.</p></div>
       <div class="footer-nav"><h4>Calculators</h4><ul><li><a href="/">Standard BMI</a></li><li><a href="/women-bmi-calculator/">BMI for Women</a></li><li><a href="/men-bmi-calculator/">BMI for Men</a></li><li><a href="/ideal-weight/">Ideal Weight</a></li></ul></div>
       <div class="footer-nav"><h4>Guides</h4><ul><li><a href="/blog/what-is-bmi/">BMI Guide</a></li><li><a href="/women-bmi-calculator/">BMI Chart Women</a></li><li><a href="/blog/bmi-formula/">BMI Formula</a></li></ul></div>
       <div class="footer-nav"><h4>Legal</h4><ul><li><a href="/privacy/">Privacy</a></li><li><a href="/terms/">Terms</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="#" onclick="if(typeof reopenConsentSettings===&quot;function&quot;){reopenConsentSettings();return false;}">Cookie settings</a></li></ul></div>

@@ -82,12 +82,12 @@
       '</p>' +
       '<div style="display:flex;gap:0.75rem;flex-wrap:wrap;">' +
       '<button type="button" id="cmbmi-consent-accept" ' +
-      'style="flex:1;min-width:120px;background:#06b6d4;color:#164e63;' +
-      'border:0;padding:0.625rem 1rem;border-radius:6px;font-weight:600;' +
+      'style="flex:1;min-width:120px;min-height:44px;background:#06b6d4;color:#164e63;' +
+      'border:0;padding:0.75rem 1rem;border-radius:6px;font-weight:600;' +
       'cursor:pointer;font-size:0.9375rem;">Accept</button>' +
       '<button type="button" id="cmbmi-consent-decline" ' +
-      'style="flex:1;min-width:120px;background:transparent;color:#fff;' +
-      'border:1px solid #a5f3fc;padding:0.625rem 1rem;border-radius:6px;' +
+      'style="flex:1;min-width:120px;min-height:44px;background:transparent;color:#fff;' +
+      'border:1px solid #a5f3fc;padding:0.75rem 1rem;border-radius:6px;' +
       'font-weight:600;cursor:pointer;font-size:0.9375rem;">Decline</button>' +
       '</div>';
 

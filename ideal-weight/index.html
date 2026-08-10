@@ -45,7 +45,7 @@
 </head>
 <body>
   <header class="header"><div class="container"><div class="header-inner">
-    <a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.24 12.24a6 6 0 00-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg><span>BMI Calculator</span></a>
+    <a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.24 12.24a6 6 0 00-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg><span>CalculateMyBMI</span></a>
     <nav class="nav-desktop"><div class="nav-dropdown"><a href="/calculators/" class="nav-dropdown-toggle">Calculators <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px;vertical-align:middle;"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><div class="nav-dropdown-menu"><a href="/">Standard BMI</a><a href="/women-bmi-calculator/">BMI for Women</a><a href="/men-bmi-calculator/">BMI for Men</a><a href="/age-bmi-calculator/">BMI by Age</a><a href="/kids-bmi-calculator/">Pediatric BMI</a><div class="nav-dropdown-divider"></div><a href="/new-bmi-calculator/">New BMI (Trefethen)</a><a href="/ideal-weight/">Ideal Weight</a><a href="/lean-body-mass/">Lean Body Mass</a><div class="nav-dropdown-divider"></div><a href="/calculators/">All Calculators</a></div></div><a href="/blog/">Guides</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav>
     <button class="nav-toggle" aria-label="Menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
   </div><nav class="nav-mobile"><div class="nav-mobile-section">Calculators</div><a href="/">Standard BMI</a><a href="/women-bmi-calculator/">BMI for Women</a><a href="/men-bmi-calculator/">BMI for Men</a><a href="/age-bmi-calculator/">BMI by Age</a><a href="/kids-bmi-calculator/">Pediatric BMI</a><a href="/new-bmi-calculator/">New BMI (Trefethen)</a><a href="/ideal-weight/">Ideal Weight</a><a href="/lean-body-mass/">Lean Body Mass</a><a href="/calculators/">All Calculators</a><div class="nav-mobile-section">More</div><a href="/blog/">Guides</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div></header>
@@ -115,7 +115,7 @@
 
       <h3 style="margin-top:1.5rem;">Women's Ideal Weight by Height</h3>
       <div style="overflow-x:auto;margin-bottom:1.5rem;">
-        <table style="width:100%;border-collapse:collapse;font-size:0.875rem;min-width:500px;">
+        <div class="table-responsive"><table style="width:100%;border-collapse:collapse;font-size:0.875rem;min-width:500px;">
           <thead>
             <tr style="background:#e8f4f8;">
               <th style="padding:0.625rem 0.75rem;text-align:left;border-bottom:2px solid #b8d4e3;font-weight:600;">Height</th>
@@ -216,12 +216,12 @@
               <td style="padding:0.5rem 0.75rem;text-align:center;background:#fffbf0;">152 - 167 lbs</td>
             </tr>
           </tbody>
-        </table>
+        </table></div>
       </div>
 
       <h3 style="margin-top:1.5rem;">Men's Ideal Weight by Height</h3>
       <div style="overflow-x:auto;margin-bottom:1.5rem;">
-        <table style="width:100%;border-collapse:collapse;font-size:0.875rem;min-width:500px;">
+        <div class="table-responsive"><table style="width:100%;border-collapse:collapse;font-size:0.875rem;min-width:500px;">
           <thead>
             <tr style="background:#e8f4f8;">
               <th style="padding:0.625rem 0.75rem;text-align:left;border-bottom:2px solid #b8d4e3;font-weight:600;">Height</th>
@@ -322,7 +322,7 @@
               <td style="padding:0.5rem 0.75rem;text-align:center;background:#fffbf0;">192 - 211 lbs</td>
             </tr>
           </tbody>
-        </table>
+        </table></div>
       </div>
       <p style="font-size:0.8125rem;color:var(--gray-600);">Note: These ranges are approximations derived from averaged formula outputs adjusted for frame size. For personalized results, use the calculator above. You can also check your result against our <a href="/">BMI calculator</a> or <a href="/women-bmi-calculator/">BMI chart for women</a> / <a href="/men-bmi-calculator/">BMI chart for men</a>.</p>
     </section>
@@ -477,7 +477,7 @@
       <p>This is the simplest method. Measure the circumference of your wrist at the narrowest point (just below the wrist bone) with a flexible tape measure. Compare your measurement to the tables below.</p>
 
       <div style="overflow-x:auto;margin:1rem 0 1.5rem;">
-        <table style="width:100%;border-collapse:collapse;font-size:0.875rem;min-width:420px;">
+        <div class="table-responsive"><table style="width:100%;border-collapse:collapse;font-size:0.875rem;min-width:420px;">
           <thead>
             <tr style="background:#e8f4f8;">
               <th style="padding:0.625rem 0.75rem;text-align:left;border-bottom:2px solid #b8d4e3;font-weight:600;" colspan="2">Women's Frame Size by Wrist Circumference</th>
@@ -497,11 +497,11 @@
               <td style="padding:0.5rem 0.75rem;">Small: &lt; 6.25" | Medium: 6.25" - 6.5" | Large: &gt; 6.5"</td>
             </tr>
           </tbody>
-        </table>
+        </table></div>
       </div>
 
       <div style="overflow-x:auto;margin:1rem 0 1.5rem;">
-        <table style="width:100%;border-collapse:collapse;font-size:0.875rem;min-width:420px;">
+        <div class="table-responsive"><table style="width:100%;border-collapse:collapse;font-size:0.875rem;min-width:420px;">
           <thead>
             <tr style="background:#e8f4f8;">
               <th style="padding:0.625rem 0.75rem;text-align:left;border-bottom:2px solid #b8d4e3;font-weight:600;" colspan="2">Men's Frame Size by Wrist Circumference</th>
@@ -513,7 +513,7 @@
               <td style="padding:0.5rem 0.75rem;">Small: 5.5" - 6.5" | Medium: 6.5" - 7.5" | Large: &gt; 7.5"</td>
             </tr>
           </tbody>
-        </table>
+        </table></div>
       </div>
 
       <h3 style="margin-top:1.5rem;">Method 2: Elbow Breadth</h3>
@@ -757,7 +757,7 @@
 
   <footer class="footer"><div class="container">
     <div class="footer-grid">
-      <div class="footer-brand"><a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.24 12.24a6 6 0 00-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg><span>BMI Calculator</span></a><p>Free BMI calculator for adults and children.</p></div>
+      <div class="footer-brand"><a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.24 12.24a6 6 0 00-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg><span>CalculateMyBMI</span></a><p>Free BMI calculator for adults and children.</p></div>
       <div class="footer-nav"><h4>Calculators</h4><ul><li><a href="/">Standard BMI</a></li><li><a href="/women-bmi-calculator/">BMI for Women</a></li><li><a href="/men-bmi-calculator/">BMI for Men</a></li><li><a href="/ideal-weight/">Ideal Weight</a></li></ul></div>
       <div class="footer-nav"><h4>Guides</h4><ul><li><a href="/blog/what-is-bmi/">BMI Guide</a></li><li><a href="/women-bmi-calculator/">BMI Chart Women</a></li><li><a href="/blog/bmi-formula/">BMI Formula</a></li></ul></div>
       <div class="footer-nav"><h4>Legal</h4><ul><li><a href="/privacy/">Privacy</a></li><li><a href="/terms/">Terms</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="#" onclick="if(typeof reopenConsentSettings===&quot;function&quot;){reopenConsentSettings();return false;}">Cookie settings</a></li></ul></div>

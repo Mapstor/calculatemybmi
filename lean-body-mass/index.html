@@ -50,7 +50,7 @@
 </head>
 <body>
   <header class="header"><div class="container"><div class="header-inner">
-    <a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.24 12.24a6 6 0 00-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg><span>BMI Calculator</span></a>
+    <a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.24 12.24a6 6 0 00-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg><span>CalculateMyBMI</span></a>
     <nav class="nav-desktop"><div class="nav-dropdown"><a href="/calculators/" class="nav-dropdown-toggle">Calculators <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px;vertical-align:middle;"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><div class="nav-dropdown-menu"><a href="/">Standard BMI</a><a href="/women-bmi-calculator/">BMI for Women</a><a href="/men-bmi-calculator/">BMI for Men</a><a href="/age-bmi-calculator/">BMI by Age</a><a href="/kids-bmi-calculator/">Pediatric BMI</a><div class="nav-dropdown-divider"></div><a href="/new-bmi-calculator/">New BMI (Trefethen)</a><a href="/ideal-weight/">Ideal Weight</a><a href="/lean-body-mass/">Lean Body Mass</a><div class="nav-dropdown-divider"></div><a href="/calculators/">All Calculators</a></div></div><a href="/blog/">Guides</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav>
     <button class="nav-toggle" aria-label="Menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
   </div><nav class="nav-mobile"><div class="nav-mobile-section">Calculators</div><a href="/">Standard BMI</a><a href="/women-bmi-calculator/">BMI for Women</a><a href="/men-bmi-calculator/">BMI for Men</a><a href="/age-bmi-calculator/">BMI by Age</a><a href="/kids-bmi-calculator/">Pediatric BMI</a><a href="/new-bmi-calculator/">New BMI (Trefethen)</a><a href="/ideal-weight/">Ideal Weight</a><a href="/lean-body-mass/">Lean Body Mass</a><a href="/calculators/">All Calculators</a><div class="nav-mobile-section">More</div><a href="/blog/">Guides</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div></header>
@@ -162,7 +162,7 @@
 
       <h3 style="margin-top:1.5rem;">Women's Body Fat Categories</h3>
       <div style="overflow-x:auto;margin-bottom:1.5rem;">
-        <table style="width:100%;border-collapse:collapse;font-size:0.9375rem;">
+        <div class="table-responsive"><table style="width:100%;border-collapse:collapse;font-size:0.9375rem;">
           <thead>
             <tr style="background:#f8f9fa;">
               <th style="padding:0.75rem 1rem;text-align:left;border-bottom:2px solid #dee2e6;font-weight:600;">Category</th>
@@ -197,12 +197,12 @@
               <td style="padding:0.75rem 1rem;border-bottom:1px solid #dee2e6;">Excess body fat associated with increased risk of cardiovascular disease, type 2 diabetes, and other health complications. See our <a href="/blog/bmi-and-health-risks/">guide to the obese category</a>.</td>
             </tr>
           </tbody>
-        </table>
+        </table></div>
       </div>
 
       <h3>Men's Body Fat Categories</h3>
       <div style="overflow-x:auto;margin-bottom:1.5rem;">
-        <table style="width:100%;border-collapse:collapse;font-size:0.9375rem;">
+        <div class="table-responsive"><table style="width:100%;border-collapse:collapse;font-size:0.9375rem;">
           <thead>
             <tr style="background:#f8f9fa;">
               <th style="padding:0.75rem 1rem;text-align:left;border-bottom:2px solid #dee2e6;font-weight:600;">Category</th>
@@ -237,7 +237,7 @@
               <td style="padding:0.75rem 1rem;border-bottom:1px solid #dee2e6;">Excess body fat with significantly elevated risk of metabolic syndrome, heart disease, and type 2 diabetes. Weight management is strongly recommended.</td>
             </tr>
           </tbody>
-        </table>
+        </table></div>
       </div>
       <p>These ranges are general guidelines from the ACE and may vary slightly by source. Individual factors like age, ethnicity, and fitness history all play a role. For a more personalized assessment, use this calculator alongside our <a href="/">BMI calculator</a> and <a href="/ideal-weight/">ideal weight calculator</a> to build a complete picture of your health metrics.</p>
     </section>
@@ -248,7 +248,7 @@
       <p>The table below shows typical lean body mass ranges for adults at various heights. These are population averages derived from the Boer formula at normal body weight ranges. Your actual LBM may differ based on your training history, muscle development, and overall body composition. Athletes and regular weight trainers will typically have LBM values at or above the high end of these ranges, while sedentary individuals may fall closer to the low end.</p>
 
       <div style="overflow-x:auto;margin-bottom:1.5rem;">
-        <table style="width:100%;border-collapse:collapse;font-size:0.9375rem;">
+        <div class="table-responsive"><table style="width:100%;border-collapse:collapse;font-size:0.9375rem;">
           <thead>
             <tr style="background:#f8f9fa;">
               <th style="padding:0.75rem 1rem;text-align:left;border-bottom:2px solid #dee2e6;font-weight:600;">Height</th>
@@ -323,7 +323,7 @@
               <td style="padding:0.625rem 1rem;border-bottom:1px solid #dee2e6;text-align:center;">157 lbs (71 kg)</td>
             </tr>
           </tbody>
-        </table>
+        </table></div>
       </div>
       <p style="font-size:0.8125rem;color:var(--gray-500);">Values are approximate ranges based on normal BMI weight ranges (18.5-24.9) applied to the Boer formula. Trained individuals may exceed the high values significantly. Use our ideal weight calculator to determine your target weight range.</p>
     </section>
@@ -404,7 +404,7 @@
       <h3 style="margin-top:1.5rem;">Formula Comparison Table</h3>
       <p>The following table compares the LBM estimates from different formulas for several example individuals. Note how results can vary by several kilograms depending on which formula is used.</p>
       <div style="overflow-x:auto;margin-bottom:1.5rem;">
-        <table style="width:100%;border-collapse:collapse;font-size:0.9375rem;">
+        <div class="table-responsive"><table style="width:100%;border-collapse:collapse;font-size:0.9375rem;">
           <thead>
             <tr style="background:#f8f9fa;">
               <th style="padding:0.75rem 1rem;text-align:left;border-bottom:2px solid #dee2e6;font-weight:600;">Person</th>
@@ -451,7 +451,7 @@
               <td style="padding:0.625rem 1rem;border-bottom:1px solid #dee2e6;text-align:center;">3.2 kg</td>
             </tr>
           </tbody>
-        </table>
+        </table></div>
       </div>
       <p>As the table shows, the formulas tend to agree most closely for individuals of average height and weight, but diverge more for heavier or more extreme body types. The James formula in particular tends to produce higher LBM estimates for heavier individuals, which may overestimate lean mass in those who are carrying excess fat. The Boer formula tends to produce the most moderate, middle-ground estimates, which is why it is widely preferred in clinical settings.</p>
 
@@ -494,7 +494,7 @@
       <p>While formula-based calculators like this one provide convenient estimates, several clinical and consumer methods exist for measuring body composition with varying degrees of accuracy. The <a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/body-fat/faq-20058497" target="_blank" rel="noopener">Mayo Clinic</a> recommends professional methods for anyone who needs precise body fat data for medical or athletic purposes.</p>
 
       <div style="overflow-x:auto;margin-bottom:1.5rem;">
-        <table style="width:100%;border-collapse:collapse;font-size:0.9375rem;">
+        <div class="table-responsive"><table style="width:100%;border-collapse:collapse;font-size:0.9375rem;">
           <thead>
             <tr style="background:#f8f9fa;">
               <th style="padding:0.75rem 1rem;text-align:left;border-bottom:2px solid #dee2e6;font-weight:600;">Method</th>
@@ -548,7 +548,7 @@
               <td style="padding:0.75rem 1rem;border-bottom:1px solid #dee2e6;">This calculator. Uses the Boer formula with just height, weight, and sex. Great for quick estimates and general guidance. Best suited for individuals of average body composition. Less accurate at extremes.</td>
             </tr>
           </tbody>
-        </table>
+        </table></div>
       </div>
       <p>For most people, a formula-based estimate is sufficient for general health awareness. If you are making medical decisions, training for competition, or tracking body composition changes precisely, consider getting a DEXA scan as a baseline, then use less expensive methods (BIA or calipers) to track changes over time. Consistency in method and testing conditions matters more than the absolute accuracy of any single measurement. Learn more about how different metrics compare in our <a href="/blog/body-fat-vs-bmi/">BMI vs. body composition guide</a>.</p>
     </section>
@@ -677,7 +677,7 @@
 
   <footer class="footer"><div class="container">
     <div class="footer-grid">
-      <div class="footer-brand"><a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.24 12.24a6 6 0 00-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg><span>BMI Calculator</span></a><p>Free BMI calculator for adults and children.</p></div>
+      <div class="footer-brand"><a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.24 12.24a6 6 0 00-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg><span>CalculateMyBMI</span></a><p>Free BMI calculator for adults and children.</p></div>
       <div class="footer-nav"><h4>Calculators</h4><ul><li><a href="/">Standard BMI</a></li><li><a href="/women-bmi-calculator/">BMI for Women</a></li><li><a href="/men-bmi-calculator/">BMI for Men</a></li><li><a href="/ideal-weight/">Ideal Weight</a></li></ul></div>
       <div class="footer-nav"><h4>Guides</h4><ul><li><a href="/blog/what-is-bmi/">BMI Guide</a></li><li><a href="/women-bmi-calculator/">BMI Chart Women</a></li><li><a href="/blog/bmi-formula/">BMI Formula</a></li></ul></div>
       <div class="footer-nav"><h4>Legal</h4><ul><li><a href="/privacy/">Privacy</a></li><li><a href="/terms/">Terms</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="#" onclick="if(typeof reopenConsentSettings===&quot;function&quot;){reopenConsentSettings();return false;}">Cookie settings</a></li></ul></div>

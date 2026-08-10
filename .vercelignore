@@ -1,0 +1,28 @@
+# Files that should never ship to Vercel, even on a manual `vercel --prod` upload
+# from the working tree.
+
+.git/
+.gitignore
+.claude/
+.devcontainer/
+.vercel/
+node_modules/
+
+# Development/audit artifacts — kept in the repo for the paper trail, not needed live
+ABSORBED-AUDIT.md
+BACKLOG.md
+CITATIONS.md
+CONSENT-REPORT.md
+CONSOLIDATION-2.md
+CONSOLIDATION.md
+DEPLOY-CHECKLIST.md
+FINAL-SUMMARY.md
+FINDINGS.md
+TRIAGE-REPORT.md
+UNSOURCED.md
+CLAUDE_CODE_INSTRUCTIONS.md
+
+# Stray files that must never ship
+1516504244887.jpeg
+*.log
+.DS_Store

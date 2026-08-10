@@ -45,7 +45,7 @@
 </head>
 <body>
   <header class="header"><div class="container"><div class="header-inner">
-    <a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.24 12.24a6 6 0 00-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg><span>BMI Calculator</span></a>
+    <a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.24 12.24a6 6 0 00-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg><span>CalculateMyBMI</span></a>
     <nav class="nav-desktop"><div class="nav-dropdown"><a href="/calculators/" class="nav-dropdown-toggle">Calculators <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px;vertical-align:middle;"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><div class="nav-dropdown-menu"><a href="/">Standard BMI</a><a href="/women-bmi-calculator/">BMI for Women</a><a href="/men-bmi-calculator/">BMI for Men</a><a href="/age-bmi-calculator/">BMI by Age</a><a href="/kids-bmi-calculator/">Pediatric BMI</a><div class="nav-dropdown-divider"></div><a href="/new-bmi-calculator/">New BMI (Trefethen)</a><a href="/ideal-weight/">Ideal Weight</a><a href="/lean-body-mass/">Lean Body Mass</a><div class="nav-dropdown-divider"></div><a href="/calculators/">All Calculators</a></div></div><a href="/blog/">Guides</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav>
     <button class="nav-toggle" aria-label="Menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
   </div><nav class="nav-mobile"><div class="nav-mobile-section">Calculators</div><a href="/">Standard BMI</a><a href="/women-bmi-calculator/">BMI for Women</a><a href="/men-bmi-calculator/">BMI for Men</a><a href="/age-bmi-calculator/">BMI by Age</a><a href="/kids-bmi-calculator/">Pediatric BMI</a><a href="/new-bmi-calculator/">New BMI (Trefethen)</a><a href="/ideal-weight/">Ideal Weight</a><a href="/lean-body-mass/">Lean Body Mass</a><a href="/calculators/">All Calculators</a><div class="nav-mobile-section">More</div><a href="/blog/">Guides</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div></header>
@@ -122,7 +122,7 @@
       <p>While the standard BMI formula applies the same thresholds to all adults, research suggests that recommended BMI ranges may shift slightly as men age. As muscle mass naturally declines and bone density changes, older men may benefit from a marginally higher BMI. The table below summarizes the generally recommended BMI ranges for men at different life stages, based on data from the <a href="https://www.cdc.gov/bmi/" target="_blank" rel="noopener">CDC</a>, the <a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank" rel="noopener">World Health Organization</a>, and peer-reviewed longevity studies. For a comprehensive breakdown, see our <a href="/men-bmi-calculator/">complete BMI guide for men</a>.</p>
 
       <div style="overflow-x:auto;margin:1.5rem 0;">
-        <table style="width:100%;border-collapse:collapse;border-radius:8px;overflow:hidden;font-size:0.9375rem;">
+        <div class="table-responsive"><table style="width:100%;border-collapse:collapse;border-radius:8px;overflow:hidden;font-size:0.9375rem;">
           <thead>
             <tr style="background:#1a56db;color:#fff;">
               <th style="padding:12px 16px;text-align:left;font-weight:600;">Age Group</th>
@@ -163,7 +163,7 @@
               <td style="padding:10px 16px;border-bottom:1px solid #e5e7eb;">WHO range applies. In <a href="https://pubmed.ncbi.nlm.nih.gov/24452240/" target="_blank" rel="noopener">Winter 2014</a> (65+, n=197,940), lowest all-cause mortality was observed across BMI 23&ndash;33 &mdash; an association, not a target.</td>
             </tr>
           </tbody>
-        </table>
+        </table></div>
       </div>
       <p style="font-size:0.875rem;color:var(--gray-600);">For further context on age and BMI see our <a href="/age-bmi-calculator/">BMI Calculator by Age</a> or the <a href="/age-bmi-calculator/">BMI by age</a> guide.</p>
 
@@ -210,7 +210,7 @@
       <p>The table below shows the healthy weight range for men at common heights, based on a BMI between 18.5 and 24.9. Use this as a quick reference alongside the calculator above. For a more personalized result, try our <a href="/ideal-weight/">Ideal Weight Calculator</a> which uses multiple clinical formulas including the Devine, Robinson, Miller, and Hamwi methods.</p>
 
       <div style="overflow-x:auto;margin:1.5rem 0;">
-        <table style="width:100%;border-collapse:collapse;border-radius:8px;overflow:hidden;font-size:0.9375rem;">
+        <div class="table-responsive"><table style="width:100%;border-collapse:collapse;border-radius:8px;overflow:hidden;font-size:0.9375rem;">
           <thead>
             <tr style="background:#1a56db;color:#fff;">
               <th style="padding:12px 16px;text-align:left;font-weight:600;">Height</th>
@@ -299,7 +299,7 @@
               <td style="padding:10px 16px;text-align:center;">210 lbs (95 kg)</td>
             </tr>
           </tbody>
-        </table>
+        </table></div>
       </div>
       <p style="font-size:0.875rem;color:var(--gray-600);">These ranges are calculated using the <a href="/blog/bmi-formula/">BMI formula</a>: weight (kg) / height (m)<sup>2</sup>. For a deeper analysis, check the <a href="/men-bmi-calculator/">complete BMI chart for men</a> or use our <a href="/lean-body-mass/">Lean Body Mass Calculator</a> to estimate your fat-free mass.</p>
     </section>
@@ -341,7 +341,7 @@
       <p>While BMI estimates whether your overall weight is in a healthy range, <strong>body fat percentage</strong> measures the actual proportion of your body that is fat tissue. For men, this distinction is especially important because of the higher baseline muscle mass, as noted by <a href="https://www.health.harvard.edu/" target="_blank" rel="noopener">Harvard Health</a>. The American Council on Exercise (ACE) defines the following body fat percentage categories for men. For a deeper comparison, read our <a href="/blog/body-fat-vs-bmi/">body fat vs. BMI</a> guide:</p>
 
       <div style="overflow-x:auto;margin:1.5rem 0;">
-        <table style="width:100%;border-collapse:collapse;border-radius:8px;overflow:hidden;font-size:0.9375rem;">
+        <div class="table-responsive"><table style="width:100%;border-collapse:collapse;border-radius:8px;overflow:hidden;font-size:0.9375rem;">
           <thead>
             <tr style="background:#1a56db;color:#fff;">
               <th style="padding:12px 16px;text-align:left;font-weight:600;">Category</th>
@@ -376,7 +376,7 @@
               <td style="padding:10px 16px;">Significantly elevated risk for cardiovascular disease, type 2 diabetes, and metabolic syndrome.</td>
             </tr>
           </tbody>
-        </table>
+        </table></div>
       </div>
 
       <p>Body fat percentage can be measured through methods like DEXA scans, hydrostatic weighing, bioelectrical impedance, or skinfold calipers. While these are more accurate than BMI alone, they are also less accessible. The <a href="https://www.mayoclinic.org/" target="_blank" rel="noopener">Mayo Clinic</a> recommends combining BMI with waist circumference for a practical balance of accuracy and convenience. Estimate your fat-free mass with the Lean Body Mass Calculator.</p>
@@ -602,6 +602,7 @@
         <article class="blog-card"><div class="blog-card-content"><p class="blog-card-meta">Muscle Mass</p><h3><a href="/blog/bmi-for-athletes/">Muscle Mass and BMI</a></h3><p>How muscle mass affects your BMI reading and what to do about it.</p></div></article>
         <article class="blog-card"><div class="blog-card-content"><p class="blog-card-meta">Health Risks</p><h3><a href="/blog/bmi-and-health-risks/">BMI and Health Risks</a></h3><p>What the research says about BMI and disease risk.</p></div></article>
         <article class="blog-card"><div class="blog-card-content"><p class="blog-card-meta">Weight Tips</p><h3><a href="/blog/how-to-lower-bmi/">Healthy Weight Tips</a></h3><p>Evidence-based strategies for reaching and maintaining a healthy weight.</p></div></article>
+        <article class="blog-card"><div class="blog-card-content"><p class="blog-card-meta">Charts</p><h3><a href="/blog/bmi-chart-explained/">BMI Chart Explained</a></h3><p>How to read a BMI chart and interpret the coloured bands.</p></div></article>
       </div>
     </section>
 
@@ -609,7 +610,7 @@
 
   <footer class="footer"><div class="container">
     <div class="footer-grid">
-      <div class="footer-brand"><a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.24 12.24a6 6 0 00-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg><span>BMI Calculator</span></a><p>Free BMI calculator for adults and children.</p></div>
+      <div class="footer-brand"><a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.24 12.24a6 6 0 00-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg><span>CalculateMyBMI</span></a><p>Free BMI calculator for adults and children.</p></div>
       <div class="footer-nav"><h4>Calculators</h4><ul><li><a href="/">Standard BMI</a></li><li><a href="/women-bmi-calculator/">BMI for Women</a></li><li><a href="/men-bmi-calculator/">BMI for Men</a></li><li><a href="/ideal-weight/">Ideal Weight</a></li></ul></div>
       <div class="footer-nav"><h4>Guides</h4><ul><li><a href="/blog/what-is-bmi/">BMI Guide</a></li><li><a href="/women-bmi-calculator/">BMI Chart Women</a></li><li><a href="/blog/bmi-formula/">BMI Formula</a></li></ul></div>
       <div class="footer-nav"><h4>Legal</h4><ul><li><a href="/privacy/">Privacy</a></li><li><a href="/terms/">Terms</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="#" onclick="if(typeof reopenConsentSettings===&quot;function&quot;){reopenConsentSettings();return false;}">Cookie settings</a></li></ul></div>
