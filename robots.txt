@@ -1,4 +1,39 @@
+# CalculateMyBMI.net — robots.txt
+# Everything is allowed. Explicit AI-crawler allow blocks are listed so that
+# nothing is silently blocked by a UA-list default upstream.
+
 User-agent: *
+Allow: /
+
+# Search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# OpenAI
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+# Anthropic
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
 Allow: /
 
 Sitemap: https://calculatemybmi.net/sitemap.xml
