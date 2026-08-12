@@ -23,6 +23,6 @@ UNSOURCED.md
 CLAUDE_CODE_INSTRUCTIONS.md
 
 # Stray files that must never ship
-1516504244887.jpeg
+151650*.jpeg
 *.log
 .DS_Store

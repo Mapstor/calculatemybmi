@@ -20,8 +20,9 @@
   'use strict';
 
   // -------------------------------------------------------------------------
-  // TODO(Marko): replace with the real GTM container ID from tagmanager.google.com
-  // Format: 'GTM-XXXXXXX'. Until this is a real ID, GTM will 404 and no tags fire.
+  // REPLACE BEFORE DEPLOY: put the real GTM container ID from
+  // tagmanager.google.com here. Format: 'GTM-XXXXXXX'. Until then, GTM will
+  // 404 and no tags fire. See DEPLOY-CHECKLIST.md section 1a.
   // -------------------------------------------------------------------------
   var GTM_ID = 'GTM-PLACEHOLDER';
 
