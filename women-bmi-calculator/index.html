@@ -52,7 +52,7 @@
 
   <main><div class="container">
     <h1>BMI Calculator for Women</h1>
-      <p class="byline" style="font-size:0.875rem;color:#475569;margin:0.5rem 0 1.25rem;padding:0.75rem 1rem;background:#f1f5f9;border-left:3px solid #06b6d4;border-radius:0 6px 6px 0;">Written by <a href="/about/#author-bio" style="color:#164e63;font-weight:600;text-decoration:none;">Marko Visic, MPharm</a> &middot; Last reviewed 2 August 2026 &middot; Not medical advice.</p>
+      <p class="byline" style="font-size:0.875rem;color:#475569;margin:0.5rem 0 1.25rem;padding:0.75rem 1rem;background:#f1f5f9;border-left:3px solid #06b6d4;border-radius:0 6px 6px 0;">Written by <a href="/about/#author-bio" style="color:#164e63;font-weight:600;text-decoration:none;">Marko Visic, MPharm</a> &middot; Last reviewed 12 August 2026 &middot; Not medical advice.</p>
 
     <p class="intro-text">Calculate your BMI with healthy weight ranges tailored for women. While standard BMI cutoffs are the same for both sexes, women naturally carry more body fat than men, so context matters when interpreting your results. According to <a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank" rel="noopener">WHO global health data</a>, understanding your <a href="/women-bmi-calculator/">BMI as a woman</a> requires considering factors like hormonal fluctuations and life stage. Use our <a href="/">standard BMI calculator</a> for a quick general check, or read on for women-specific guidance on body composition, life stages, and when BMI may not tell the full story.</p>
 
@@ -353,6 +353,41 @@
           <li><strong>Overweight (BMI 25-29.9):</strong> gain 15-25 lbs</li>
           <li><strong>Obese (BMI 30+):</strong> gain 11-20 lbs</li>
         </ul>
+
+        <figure style="margin:0 0 1.5rem;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" style="width:100%;height:auto;display:block;font-family:inherit;" role="img" aria-labelledby="svg-acog-title svg-acog-desc">
+            <title id="svg-acog-title">ACOG recommended pregnancy weight-gain ranges by pre-pregnancy BMI category</title>
+            <desc id="svg-acog-desc">Four horizontal range bars, one per pre-pregnancy BMI category. Underweight (BMI under 18.5) recommends 28 to 40 pounds; normal weight (BMI 18.5 to 24.9) recommends 25 to 35 pounds; overweight (BMI 25 to 29.9) recommends 15 to 25 pounds; obese (BMI 30 plus) recommends 11 to 20 pounds. Higher pre-pregnancy BMI, lower recommended gain.</desc>
+            <g stroke="currentColor" stroke-opacity="0.15" stroke-width="1" fill="none">
+              <line x1="140" y1="30" x2="140" y2="200"/><line x1="140" y1="200" x2="440" y2="200"/>
+            </g>
+            <g font-family="inherit" font-size="11" fill="currentColor" fill-opacity="0.75">
+              <text x="140" y="216">0</text><text x="215" y="216">10</text><text x="290" y="216">20</text><text x="365" y="216">30</text><text x="440" y="216" text-anchor="end">40 lb</text>
+            </g>
+            <!-- Bar geometry: each pound = (440-140)/40 = 7.5 px -->
+            <!-- Row 1 y=45: BMI < 18.5 → 28-40 lb → x1=140+28*7.5=350, x2=140+40*7.5=440 -->
+            <rect x="350" y="35" width="90" height="22" fill="#93c5fd" rx="3"/>
+            <text x="130" y="50" text-anchor="end" font-size="11" font-weight="600">BMI &lt; 18.5</text>
+            <text x="130" y="62" text-anchor="end" font-size="10" fill-opacity="0.7">underweight</text>
+            <text x="395" y="50" text-anchor="middle" font-size="10" fill="white" font-weight="600">28–40 lb</text>
+            <!-- Row 2 y=80: normal → 25-35 lb → x1=140+25*7.5=327.5, x2=140+35*7.5=402.5 -->
+            <rect x="327.5" y="75" width="75" height="22" fill="#86efac" rx="3"/>
+            <text x="130" y="90" text-anchor="end" font-size="11" font-weight="600">BMI 18.5–24.9</text>
+            <text x="130" y="102" text-anchor="end" font-size="10" fill-opacity="0.7">normal weight</text>
+            <text x="365" y="90" text-anchor="middle" font-size="10" fill="white" font-weight="600">25–35 lb</text>
+            <!-- Row 3 y=120: overweight → 15-25 lb → x1=252.5, x2=327.5 -->
+            <rect x="252.5" y="115" width="75" height="22" fill="#fcd34d" rx="3"/>
+            <text x="130" y="130" text-anchor="end" font-size="11" font-weight="600">BMI 25–29.9</text>
+            <text x="130" y="142" text-anchor="end" font-size="10" fill-opacity="0.7">overweight</text>
+            <text x="290" y="130" text-anchor="middle" font-size="10" fill="#78350f" font-weight="600">15–25 lb</text>
+            <!-- Row 4 y=160: obese → 11-20 lb → x1=222.5, x2=290 -->
+            <rect x="222.5" y="155" width="67.5" height="22" fill="#fca5a5" rx="3"/>
+            <text x="130" y="170" text-anchor="end" font-size="11" font-weight="600">BMI ≥ 30</text>
+            <text x="130" y="182" text-anchor="end" font-size="10" fill-opacity="0.7">obese</text>
+            <text x="256" y="170" text-anchor="middle" font-size="10" fill="#7f1d1d" font-weight="600">11–20 lb</text>
+          </svg>
+          <figcaption style="font-size:0.75rem;color:var(--gray-500);text-align:center;margin-top:0.375rem;">Source: <a href="https://www.acog.org/womens-health/faqs/obesity-and-pregnancy" target="_blank" rel="noopener">ACOG obesity and pregnancy</a>. Higher pre-pregnancy BMI, lower recommended gain. Talk to your OB-GYN.</figcaption>
+        </figure>
 
         <h3 style="font-size:1.0625rem;color:#553c9a;margin:0 0 0.375rem;">Postpartum (0-12 months after birth)</h3>
         <p style="font-size:0.9375rem;color:#4a5568;margin:0 0 1.25rem;">Most women retain 5-15 lbs one year after delivery. Breastfeeding can help with gradual weight loss, burning approximately 300-500 extra calories per day. It is generally recommended to wait at least 6 weeks postpartum before actively trying to lose weight, and to aim for gradual loss of 1-2 lbs per week rather than rapid dieting.</p>

@@ -52,7 +52,7 @@
 
   <main><div class="container">
     <h1>BMI Calculator for Men</h1>
-      <p class="byline" style="font-size:0.875rem;color:#475569;margin:0.5rem 0 1.25rem;padding:0.75rem 1rem;background:#f1f5f9;border-left:3px solid #06b6d4;border-radius:0 6px 6px 0;">Written by <a href="/about/#author-bio" style="color:#164e63;font-weight:600;text-decoration:none;">Marko Visic, MPharm</a> &middot; Last reviewed 2 August 2026 &middot; Not medical advice.</p>
+      <p class="byline" style="font-size:0.875rem;color:#475569;margin:0.5rem 0 1.25rem;padding:0.75rem 1rem;background:#f1f5f9;border-left:3px solid #06b6d4;border-radius:0 6px 6px 0;">Written by <a href="/about/#author-bio" style="color:#164e63;font-weight:600;text-decoration:none;">Marko Visic, MPharm</a> &middot; Last reviewed 12 August 2026 &middot; Not medical advice.</p>
 
     <p class="intro-text">Calculate your BMI with healthy weight ranges tailored for men. Men typically carry more muscle mass than women, which can affect how BMI should be interpreted. This calculator uses the <a href="/blog/bmi-formula/">standard BMI formula</a> and provides men-specific guidance on what your result means for your health.</p>
 
@@ -406,6 +406,34 @@
     <section class="content-section">
       <h2>Waist Circumference Guidelines for Men</h2>
       <p>According to the <a href="https://www.nhlbi.nih.gov/health/overweight-and-obesity" target="_blank" rel="noopener">National Heart, Lung, and Blood Institute (NHLBI)</a> and the <a href="https://www.cdc.gov/bmi/" target="_blank" rel="noopener">CDC</a>, waist circumference is one of the most important complementary measurements to BMI for assessing health risk in men. The <a href="https://www.heart.org/en/healthy-living/" target="_blank" rel="noopener">American Heart Association</a> also emphasizes this metric in their cardiovascular health guidelines.</p>
+
+      <figure style="margin:1.25rem 0;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 160" style="width:100%;height:auto;display:block;font-family:inherit;" role="img" aria-labelledby="svg-waist-title svg-waist-desc">
+          <title id="svg-waist-title">NHLBI waist-circumference scale for men with the 40-inch (102 cm) elevated-risk threshold marked</title>
+          <desc id="svg-waist-desc">A horizontal ruler-style scale from 30 to 50 inches, with a bold vertical marker at 40 inches (also labelled 102 cm). To the left of the marker, the band is coloured green (below the elevated-risk threshold); to the right, the band is coloured red (elevated cardiometabolic risk per NHLBI).</desc>
+          <g font-family="inherit" font-size="11" fill="currentColor">
+            <!-- Scale: 30..50 inches → x 40..440, so each inch = 20px -->
+            <rect x="40" y="55" width="200" height="35" fill="#86efac" rx="4"/>
+            <rect x="240" y="55" width="200" height="35" fill="#fca5a5" rx="4"/>
+            <!-- Tick marks -->
+            <g stroke="currentColor" stroke-opacity="0.55" stroke-width="1">
+              <line x1="40" y1="90" x2="40" y2="98"/><line x1="140" y1="90" x2="140" y2="98"/><line x1="240" y1="90" x2="240" y2="102"/><line x1="340" y1="90" x2="340" y2="98"/><line x1="440" y1="90" x2="440" y2="98"/>
+            </g>
+            <text x="40" y="115" text-anchor="middle" fill-opacity="0.75">30 in</text>
+            <text x="140" y="115" text-anchor="middle" fill-opacity="0.75">35 in</text>
+            <text x="240" y="115" text-anchor="middle" font-weight="700">40 in / 102 cm</text>
+            <text x="340" y="115" text-anchor="middle" fill-opacity="0.75">45 in</text>
+            <text x="440" y="115" text-anchor="middle" fill-opacity="0.75">50 in</text>
+            <line x1="240" y1="40" x2="240" y2="105" stroke="#7f1d1d" stroke-width="2"/>
+            <text x="240" y="35" text-anchor="middle" font-weight="700" fill="#7f1d1d">NHLBI threshold</text>
+            <text x="130" y="140" text-anchor="middle" font-weight="600" fill="#14532d">below threshold</text>
+            <text x="350" y="140" text-anchor="middle" font-weight="600" fill="#7f1d1d">elevated cardiometabolic risk</text>
+            <text x="130" y="78" text-anchor="middle" font-size="10" fill="#14532d" fill-opacity="0.85">standard risk band</text>
+            <text x="350" y="78" text-anchor="middle" font-size="10" fill="#7f1d1d" fill-opacity="0.85">above the marker: elevated risk</text>
+          </g>
+        </svg>
+        <figcaption style="font-size:0.75rem;color:var(--gray-500);text-align:center;margin-top:0.375rem;">40 inches (102 cm) is the NHLBI-defined waist-circumference threshold for men associated with elevated cardiometabolic risk.</figcaption>
+      </figure>
 
       <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:1.25rem;margin:1.5rem 0;">
         <div style="background:#fef2f2;border:1px solid #fecaca;border-radius:12px;padding:1.5rem;text-align:center;">

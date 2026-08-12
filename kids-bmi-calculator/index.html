@@ -52,7 +52,7 @@
 
   <main><div class="container">
     <h1>Pediatric BMI Calculator</h1>
-      <p class="byline" style="font-size:0.875rem;color:#475569;margin:0.5rem 0 1.25rem;padding:0.75rem 1rem;background:#f1f5f9;border-left:3px solid #06b6d4;border-radius:0 6px 6px 0;">Written by <a href="/about/#author-bio" style="color:#164e63;font-weight:600;text-decoration:none;">Marko Visic, MPharm</a> &middot; Last reviewed 2 August 2026 &middot; Not medical advice.</p>
+      <p class="byline" style="font-size:0.875rem;color:#475569;margin:0.5rem 0 1.25rem;padding:0.75rem 1rem;background:#f1f5f9;border-left:3px solid #06b6d4;border-radius:0 6px 6px 0;">Written by <a href="/about/#author-bio" style="color:#164e63;font-weight:600;text-decoration:none;">Marko Visic, MPharm</a> &middot; Last reviewed 12 August 2026 &middot; Not medical advice.</p>
 
     <p class="intro-text">Calculate BMI for children and teens ages 2-19. Unlike adults, children's BMI is interpreted using age and sex-specific percentiles based on CDC growth charts. This calculator uses the same methodology pediatricians rely on to assess whether a child's weight is appropriate for their height, age, and sex. For comprehensive guidance on pediatric BMI interpretation, see our <a href="/kids-bmi-calculator/">complete guide to BMI for children</a>. Simply enter your child's measurements below to get an instant BMI percentile result.</p>
 
@@ -270,6 +270,61 @@
         </table></div>
       </div>
       <p style="font-size:0.8125rem;color:var(--gray-500);">Source: Approximate values derived from CDC Clinical Growth Charts, 2000 (revised). These are median (50th percentile) values and represent population averages. Individual healthy BMI can vary significantly. For the full data tables, see the <a href="https://www.cdc.gov/growthcharts/" target="_blank" rel="noopener noreferrer">CDC growth charts</a>.</p>
+
+      <figure style="margin:1.75rem 0 0.5rem;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" style="width:100%;height:auto;display:block;font-family:inherit;" role="img" aria-labelledby="svg-boys-title svg-boys-desc">
+          <title id="svg-boys-title">Boys 50th-percentile BMI-for-age, CDC growth charts (ages 2 to 19)</title>
+          <desc id="svg-boys-desc">A line curve rising from BMI ~16.6 at age 2, dipping to about 15.5 by ages 5-6 (the adiposity rebound), then climbing steadily to about 22.7 by age 19. Boys median from CDC Clinical Growth Charts 2000.</desc>
+          <g stroke="currentColor" stroke-opacity="0.15" stroke-width="1" fill="none">
+            <line x1="60" y1="30" x2="60" y2="220"/><line x1="60" y1="220" x2="460" y2="220"/>
+            <line x1="60" y1="220" x2="460" y2="220"/><line x1="60" y1="182" x2="460" y2="182"/>
+            <line x1="60" y1="144" x2="460" y2="144"/><line x1="60" y1="106" x2="460" y2="106"/>
+            <line x1="60" y1="68" x2="460" y2="68"/><line x1="60" y1="30" x2="460" y2="30"/>
+          </g>
+          <g font-size="11" fill="currentColor" fill-opacity="0.7">
+            <text x="52" y="223" text-anchor="end">14</text><text x="52" y="185" text-anchor="end">16</text>
+            <text x="52" y="147" text-anchor="end">18</text><text x="52" y="109" text-anchor="end">20</text>
+            <text x="52" y="71" text-anchor="end">22</text><text x="52" y="33" text-anchor="end">24</text>
+            <text x="60" y="240">2</text><text x="130.6" y="240">5</text><text x="248.2" y="240">10</text>
+            <text x="365.9" y="240">15</text><text x="460" y="240" text-anchor="end">19</text>
+            <text x="18" y="125" transform="rotate(-90 18 125)" text-anchor="middle" font-weight="500">BMI</text>
+            <text x="260" y="256" text-anchor="middle" font-weight="500">Age (years)</text>
+          </g>
+          <polyline points="60.0,170.6 83.5,182.0 107.1,189.6 130.6,191.5 154.1,191.5 177.6,187.7 201.2,182.0 224.7,172.5 248.2,163.0 271.8,149.7 295.3,136.4 318.8,123.1 342.4,109.8 365.9,96.5 389.4,85.1 412.9,73.7 436.5,64.2 460.0,54.7" fill="none" stroke="#1976d2" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+          <g font-size="11" fill="#1976d2" font-weight="600">
+            <text x="150" y="205">adiposity rebound ~ages 5-6</text>
+            <text x="460" y="48" text-anchor="end">boys 50th %ile</text>
+          </g>
+        </svg>
+        <figcaption style="font-size:0.75rem;color:var(--gray-500);text-align:center;margin-top:0.375rem;">Boys median BMI across ages 2&ndash;19, plotted from the table above (CDC Clinical Growth Charts 2000).</figcaption>
+      </figure>
+
+      <figure style="margin:1.25rem 0 0.5rem;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" style="width:100%;height:auto;display:block;font-family:inherit;" role="img" aria-labelledby="svg-girls-title svg-girls-desc">
+          <title id="svg-girls-title">Girls 50th-percentile BMI-for-age, CDC growth charts (ages 2 to 19)</title>
+          <desc id="svg-girls-desc">A line curve rising from BMI ~16.4 at age 2, dipping to about 15.3 by age 5 (adiposity rebound), then climbing steadily to about 21.5 by age 19 &mdash; slightly flatter than the boys curve. Girls median from CDC Clinical Growth Charts 2000.</desc>
+          <g stroke="currentColor" stroke-opacity="0.15" stroke-width="1" fill="none">
+            <line x1="60" y1="30" x2="60" y2="220"/><line x1="60" y1="220" x2="460" y2="220"/>
+            <line x1="60" y1="182" x2="460" y2="182"/><line x1="60" y1="144" x2="460" y2="144"/>
+            <line x1="60" y1="106" x2="460" y2="106"/><line x1="60" y1="68" x2="460" y2="68"/>
+            <line x1="60" y1="30" x2="460" y2="30"/>
+          </g>
+          <g font-size="11" fill="currentColor" fill-opacity="0.7">
+            <text x="52" y="223" text-anchor="end">14</text><text x="52" y="185" text-anchor="end">16</text>
+            <text x="52" y="147" text-anchor="end">18</text><text x="52" y="109" text-anchor="end">20</text>
+            <text x="52" y="71" text-anchor="end">22</text><text x="52" y="33" text-anchor="end">24</text>
+            <text x="60" y="240">2</text><text x="130.6" y="240">5</text><text x="248.2" y="240">10</text>
+            <text x="365.9" y="240">15</text><text x="460" y="240" text-anchor="end">19</text>
+            <text x="18" y="125" transform="rotate(-90 18 125)" text-anchor="middle" font-weight="500">BMI</text>
+            <text x="260" y="256" text-anchor="middle" font-weight="500">Age (years)</text>
+          </g>
+          <polyline points="60.0,174.4 83.5,185.8 107.1,193.4 130.6,195.3 154.1,193.4 177.6,189.6 201.2,182.0 224.7,172.5 248.2,163.0 271.8,149.7 295.3,136.4 318.8,123.1 342.4,111.7 365.9,102.2 389.4,94.6 412.9,87.0 436.5,81.3 460.0,77.5" fill="none" stroke="#d81b60" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+          <g font-size="11" fill="#d81b60" font-weight="600">
+            <text x="460" y="70" text-anchor="end">girls 50th %ile</text>
+          </g>
+        </svg>
+        <figcaption style="font-size:0.75rem;color:var(--gray-500);text-align:center;margin-top:0.375rem;">Girls median BMI across ages 2&ndash;19 &mdash; note the flatter late-adolescent rise vs boys. Same source table as above.</figcaption>
+      </figure>
       <p>Several important patterns emerge from this data. First, BMI naturally decreases from age 2 to around ages 4-6, a phenomenon called <strong>adiposity rebound</strong>. This is normal and reflects the fact that toddlers naturally shed baby fat during early childhood. After the adiposity rebound, BMI gradually increases through the rest of childhood and adolescence. Second, boys and girls track similarly until around age 14, after which boys tend to have slightly higher median BMI values than girls. This divergence reflects differences in puberty timing and body composition changes. To learn more about how age factors into BMI interpretation for all ages, visit our <a href="/age-bmi-calculator/">BMI calculator by age</a> and read our guide on <a href="/age-bmi-calculator/">BMI by age</a>.</p>
     </section>
 
@@ -288,6 +343,39 @@
       <p>Children do not grow at a steady, uniform rate. Instead, they experience growth spurts during which they may gain height rapidly, gain weight rapidly, or both, often not simultaneously. A child who is about to have a height growth spurt may temporarily appear "overweight" because they have gained weight in preparation for growing taller. Conversely, a child in the middle of a height spurt may appear lean because they have stretched upward without gaining proportional weight. Percentile charts smooth out these fluctuations when a child's BMI is tracked over time, allowing pediatricians to identify genuine trends rather than reacting to temporary changes.</p>
 
       <h3>What Is Normal at Age 5 Is Very Different from Age 15</h3>
+
+      <figure style="margin:1rem 0 1.25rem;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" style="width:100%;height:auto;display:block;font-family:inherit;" role="img" aria-labelledby="svg-same-title svg-same-desc">
+          <title id="svg-same-title">The same BMI value maps to very different percentile positions at different ages</title>
+          <desc id="svg-same-desc">A horizontal reference line at BMI 20 crosses the boys 50th-percentile curve. At age 5, the median boys BMI is about 15.5, so 20 sits well above the median. At age 15, the median is about 20.5, so 20 sits close to the median. The same BMI value is a very different percentile position at each age.</desc>
+          <g stroke="currentColor" stroke-opacity="0.15" stroke-width="1" fill="none">
+            <line x1="60" y1="30" x2="60" y2="170"/><line x1="60" y1="170" x2="460" y2="170"/>
+          </g>
+          <g font-size="11" fill="currentColor" fill-opacity="0.7">
+            <text x="52" y="173" text-anchor="end">14</text>
+            <text x="52" y="115" text-anchor="end">20</text>
+            <text x="52" y="43" text-anchor="end">26</text>
+            <text x="60" y="188">2</text><text x="130.6" y="188">5</text><text x="248.2" y="188">10</text><text x="365.9" y="188">15</text><text x="460" y="188" text-anchor="end">19</text>
+          </g>
+          <line x1="60" y1="115" x2="460" y2="115" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <text x="66" y="110" font-size="11" fill="#ef4444" font-weight="600">BMI 20 reference line</text>
+          <polyline points="60,142 83.5,151.4 107.1,157.7 130.6,159.3 154.1,159.3 177.6,156.2 201.2,151.4 224.7,143.5 248.2,135.6 271.8,124.6 295.3,113.6 318.8,102.6 342.4,91.5 365.9,80.5 389.4,71.1 412.9,61.6 436.5,53.7 460,45.8" fill="none" stroke="#1976d2" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+          <text x="460" y="42" text-anchor="end" font-size="11" fill="#1976d2" font-weight="600">boys 50th %ile</text>
+          <g>
+            <circle cx="130.6" cy="159.3" r="4" fill="#1976d2"/>
+            <line x1="130.6" y1="159.3" x2="130.6" y2="115" stroke="#ef4444" stroke-width="1"/>
+            <text x="136" y="140" font-size="11" fill="currentColor">age 5: median ≈ 15.5,</text>
+            <text x="136" y="152" font-size="11" fill="currentColor">so BMI 20 is well above.</text>
+          </g>
+          <g>
+            <circle cx="365.9" cy="80.5" r="4" fill="#1976d2"/>
+            <line x1="365.9" y1="80.5" x2="365.9" y2="115" stroke="#ef4444" stroke-width="1"/>
+            <text x="360" y="70" text-anchor="end" font-size="11" fill="currentColor">age 15: median ≈ 20.5,</text>
+            <text x="360" y="58" text-anchor="end" font-size="11" fill="currentColor">so BMI 20 is right at the median.</text>
+          </g>
+        </svg>
+        <figcaption style="font-size:0.75rem;color:var(--gray-500);text-align:center;margin-top:0.375rem;">Same BMI, different developmental context. Median values from the CDC table above.</figcaption>
+      </figure>
       <p>Consider this: the 50th percentile BMI for a 5-year-old boy is approximately 15.5. For a 15-year-old boy, the 50th percentile BMI is approximately 20.5. If you applied the adult BMI scale to the 5-year-old, a BMI of 15.5 would classify that child as severely underweight. And if you used a child's standard for the teenager, a BMI of 20.5 might look high. The percentile system resolves this problem by always comparing a child to the appropriate reference group, ensuring that the interpretation is age-appropriate.</p>
 
       <p>The CDC developed its growth charts using data from national health surveys conducted between 1963 and 1994. These charts represent the growth patterns of a large, representative sample of American children before obesity rates rose sharply. You can access and download the full charts directly from the <a href="https://www.cdc.gov/growthcharts/" target="_blank" rel="noopener noreferrer">CDC growth charts page</a>.</p>

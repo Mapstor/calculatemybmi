@@ -52,7 +52,7 @@
 
   <main><div class="container">
     <h1>BMI Calculator by Age</h1>
-      <p class="byline" style="font-size:0.875rem;color:#475569;margin:0.5rem 0 1.25rem;padding:0.75rem 1rem;background:#f1f5f9;border-left:3px solid #06b6d4;border-radius:0 6px 6px 0;">Written by <a href="/about/#author-bio" style="color:#164e63;font-weight:600;text-decoration:none;">Marko Visic, MPharm</a> &middot; Last reviewed 2 August 2026 &middot; Not medical advice.</p>
+      <p class="byline" style="font-size:0.875rem;color:#475569;margin:0.5rem 0 1.25rem;padding:0.75rem 1rem;background:#f1f5f9;border-left:3px solid #06b6d4;border-radius:0 6px 6px 0;">Written by <a href="/about/#author-bio" style="color:#164e63;font-weight:600;text-decoration:none;">Marko Visic, MPharm</a> &middot; Last reviewed 12 August 2026 &middot; Not medical advice.</p>
 
     <p class="intro-text">Calculate your BMI and see it against the standard adult range together with age-specific context. Neither the <a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank" rel="noopener">WHO</a> nor the <a href="https://www.cdc.gov/bmi/about/index.html" target="_blank" rel="noopener">CDC</a> publishes age-adjusted clinical cut-offs &mdash; this page uses the standard adult range and adds observational research relevant to older adults, in particular the <a href="https://pubmed.ncbi.nlm.nih.gov/24452240/" target="_blank" rel="noopener">Winter 2014 meta-analysis</a>. For sex-specific context see the <a href="/women-bmi-calculator/">women&rsquo;s guide</a> and <a href="/men-bmi-calculator/">men&rsquo;s guide</a>.</p>
 
@@ -235,6 +235,30 @@
     <section class="content-section">
       <h2>The Obesity Paradox Explained</h2>
       <p>The "obesity paradox" is an observational finding: in some large cohort studies, older adults classified as overweight (BMI 25&ndash;29.9) have shown similar or slightly lower all-cause mortality than those in the WHO normal range. It is an <em>association</em> in cohort data &mdash; not a clinical recommendation to gain weight. The current WHO healthy adult range (18.5&ndash;24.9) has not changed on the basis of these findings. See also the <a href="/blog/bmi-limitations/">limitations of BMI</a>.</p>
+
+      <figure style="margin:1.25rem 0;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" style="width:100%;height:auto;display:block;font-family:inherit;" role="img" aria-labelledby="svg-ucurve-title svg-ucurve-desc">
+          <title id="svg-ucurve-title">Qualitative U-shaped BMI-mortality curve for older adults (65+) with the Winter 2014 low-mortality plateau shaded across BMI 23-33</title>
+          <desc id="svg-ucurve-desc">A U-shaped curve on axes labelled BMI (horizontal, 15 to 40) and relative all-cause mortality (vertical, qualitative). The curve rises steeply below BMI 23 and rises again above BMI 33. Between these values, a shaded band highlights the observed low-mortality plateau reported by the Winter et al. 2014 meta-analysis of adults aged 65 and older. No numeric mortality scale is shown.</desc>
+          <g stroke="currentColor" stroke-opacity="0.15" stroke-width="1" fill="none">
+            <line x1="50" y1="30" x2="50" y2="210"/><line x1="50" y1="210" x2="460" y2="210"/>
+          </g>
+          <g font-family="inherit" font-size="11" fill="currentColor" fill-opacity="0.75">
+            <text x="50" y="228">15</text><text x="180" y="228">23</text><text x="230" y="228">25</text><text x="290" y="228">30</text><text x="341" y="228">33</text><text x="460" y="228" text-anchor="end">40</text>
+            <text x="255" y="248" text-anchor="middle" font-weight="500">BMI</text>
+            <text x="14" y="120" transform="rotate(-90 14 120)" text-anchor="middle" font-weight="500">All-cause mortality (relative)</text>
+            <text x="55" y="205" text-anchor="start" font-size="10">low</text>
+            <text x="55" y="45" text-anchor="start" font-size="10">high</text>
+          </g>
+          <rect x="180" y="30" width="161" height="180" fill="#fef08a" fill-opacity="0.35"/>
+          <text x="260" y="45" text-anchor="middle" font-size="10" font-weight="600" fill="#78350f">observed low-mortality plateau (65+)</text>
+          <text x="260" y="58" text-anchor="middle" font-size="10" fill="#78350f">Winter et al. 2014 meta-analysis</text>
+          <path d="M 50 55 Q 90 130 180 180 L 341 180 Q 400 125 460 60" fill="none" stroke="#0891b2" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="180" y1="30" x2="180" y2="215" stroke="currentColor" stroke-dasharray="3 2" stroke-opacity="0.5"/>
+          <line x1="341" y1="30" x2="341" y2="215" stroke="currentColor" stroke-dasharray="3 2" stroke-opacity="0.5"/>
+        </svg>
+        <figcaption style="font-size:0.75rem;color:var(--gray-500);text-align:center;margin-top:0.375rem;">Qualitative &mdash; no numeric mortality scale shown. Plateau band reflects the Winter 2014 finding cited in prose above.</figcaption>
+      </figure>
 
       <div style="background:linear-gradient(135deg,#eff6ff,#f8fafc);border:1px solid #93c5fd;border-radius:12px;padding:1.75rem;margin:1.5rem 0;">
         <h3 style="margin-top:0;color:#1d4ed8;">What the meta-analysis actually reported</h3>

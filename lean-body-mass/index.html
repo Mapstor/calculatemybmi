@@ -57,11 +57,37 @@
 
   <main><div class="container">
     <h1>Lean Body Mass Calculator</h1>
-      <p class="byline" style="font-size:0.875rem;color:#475569;margin:0.5rem 0 1.25rem;padding:0.75rem 1rem;background:#f1f5f9;border-left:3px solid #06b6d4;border-radius:0 6px 6px 0;">Written by <a href="/about/#author-bio" style="color:#164e63;font-weight:600;text-decoration:none;">Marko Visic, MPharm</a> &middot; Last reviewed 2 August 2026 &middot; Not medical advice.</p>
+      <p class="byline" style="font-size:0.875rem;color:#475569;margin:0.5rem 0 1.25rem;padding:0.75rem 1rem;background:#f1f5f9;border-left:3px solid #06b6d4;border-radius:0 6px 6px 0;">Written by <a href="/about/#author-bio" style="color:#164e63;font-weight:600;text-decoration:none;">Marko Visic, MPharm</a> &middot; Last reviewed 12 August 2026 &middot; Not medical advice.</p>
 
     <p class="intro-text">Estimate your lean body mass (everything except fat -- muscles, bones, organs, water) and body fat percentage using the Boer formula. Lean body mass is a better indicator of fitness than weight alone, and understanding your body composition is the foundation of effective training, nutrition, and health management.</p>
 
     <p>Unlike <a href="/">standard BMI</a>, which only considers height and weight, lean body mass separates your weight into two meaningful components: fat mass and everything else. This distinction is critical because two people can weigh the same yet have vastly different health profiles. A <a href="/blog/bmi-for-athletes/">muscular athlete</a> and a sedentary individual may share the same <a href="/blog/what-is-bmi/">BMI score</a>, but their lean body mass and body fat percentages tell completely different stories. The <a href="https://www.acsm.org/" target="_blank" rel="noopener">American College of Sports Medicine (ACSM)</a> recognizes body composition as a key component of health-related fitness, alongside cardiovascular endurance, muscular strength, and flexibility.</p>
+
+    <figure style="margin:1.25rem 0 0.5rem;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 190" style="width:100%;height:auto;display:block;font-family:inherit;" role="img" aria-labelledby="svg-lbm-split-title svg-lbm-split-desc">
+        <title id="svg-lbm-split-title">Same total body weight, two different lean-vs-fat compositions</title>
+        <desc id="svg-lbm-split-desc">Two horizontal stacked bars of identical length representing two people at the same total body weight. The left ("athletic composition") is mostly lean mass with a small fat segment; the right ("average composition") has proportionally more fat and less lean mass. Illustrative &mdash; specific percentages depend on the individual and the reference body-fat categories on this page.</desc>
+        <g font-family="inherit" font-size="12" fill="currentColor">
+          <text x="10" y="30" font-weight="600">Person A &mdash; athletic composition</text>
+          <text x="470" y="30" text-anchor="end" font-size="11" fill-opacity="0.65">same total weight</text>
+          <g>
+            <rect x="10" y="42" width="360" height="30" fill="#0d9488" rx="3"/>
+            <rect x="370" y="42" width="100" height="30" fill="#f97316" rx="3"/>
+            <text x="190" y="61" text-anchor="middle" fill="white" font-weight="600">lean mass (muscle, bone, organs, water)</text>
+            <text x="420" y="61" text-anchor="middle" fill="white" font-weight="600">fat</text>
+          </g>
+          <text x="10" y="110" font-weight="600">Person B &mdash; average composition</text>
+          <g>
+            <rect x="10" y="122" width="240" height="30" fill="#0d9488" rx="3"/>
+            <rect x="250" y="122" width="220" height="30" fill="#f97316" rx="3"/>
+            <text x="130" y="141" text-anchor="middle" fill="white" font-weight="600">lean mass</text>
+            <text x="360" y="141" text-anchor="middle" fill="white" font-weight="600">fat mass</text>
+          </g>
+          <text x="240" y="180" text-anchor="middle" font-size="11" fill-opacity="0.75">Identical BMI, different body composition &mdash; the reason LBM adds information beyond weight and height.</text>
+        </g>
+      </svg>
+      <figcaption style="font-size:0.75rem;color:var(--gray-500);text-align:center;margin-top:0.375rem;">Schematic. See the men's / women's body-fat category tables below for the ACE-sourced ranges that would apply to each split.</figcaption>
+    </figure>
 
     <div class="key-takeaways">
       <div class="key-takeaways-title">Key Takeaways</div>
@@ -454,6 +480,66 @@
         </table></div>
       </div>
       <p>As the table shows, the formulas tend to agree most closely for individuals of average height and weight, but diverge more for heavier or more extreme body types. The James formula in particular tends to produce higher LBM estimates for heavier individuals, which may overestimate lean mass in those who are carrying excess fat. The Boer formula tends to produce the most moderate, middle-ground estimates, which is why it is widely preferred in clinical settings.</p>
+
+      <figure style="margin:1.5rem 0;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" style="width:100%;height:auto;display:block;font-family:inherit;" role="img" aria-labelledby="svg-lbm-formulas-title svg-lbm-formulas-desc">
+          <title id="svg-lbm-formulas-title">Boer, James and Hume LBM formula outputs across four example bodies, showing per-person spread</title>
+          <desc id="svg-lbm-formulas-desc">For each of four reference people from the table above, three dots (Boer, James, Hume) with a connecting range whisker. Spread is small for average bodies (1.6 and 2.5 kg) and larger for heavier or shorter bodies (8.4 and 3.2 kg).</desc>
+          <g stroke="currentColor" stroke-opacity="0.15" stroke-width="1" fill="none">
+            <line x1="45" y1="30" x2="45" y2="220"/><line x1="45" y1="220" x2="470" y2="220"/>
+            <line x1="45" y1="176" x2="470" y2="176"/><line x1="45" y1="132" x2="470" y2="132"/>
+            <line x1="45" y1="88" x2="470" y2="88"/><line x1="45" y1="44" x2="470" y2="44"/>
+          </g>
+          <g font-size="11" fill="currentColor" fill-opacity="0.7">
+            <text x="40" y="223" text-anchor="end">35</text><text x="40" y="179" text-anchor="end">45</text>
+            <text x="40" y="135" text-anchor="end">55</text><text x="40" y="91" text-anchor="end">65</text>
+            <text x="40" y="47" text-anchor="end">75</text>
+            <text x="10" y="125" transform="rotate(-90 10 125)" text-anchor="middle" font-weight="500">LBM (kg)</text>
+          </g>
+          <!-- Person 1: Male, 175cm, 75kg: Boer 58.1, James 59.0, Hume 59.7 -->
+          <g>
+            <line x1="105" y1="115.8" x2="105" y2="108.7" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.5"/>
+            <circle cx="105" cy="115.8" r="5" fill="#0891b2"/>
+            <circle cx="105" cy="112.8" r="5" fill="#7c3aed"/>
+            <circle cx="105" cy="108.7" r="5" fill="#65a30d"/>
+            <text x="105" y="240" text-anchor="middle" font-size="10" fill="currentColor">Male, 175/75</text>
+            <text x="105" y="252" text-anchor="middle" font-size="10" fill-opacity="0.6">spread 1.6 kg</text>
+          </g>
+          <!-- Person 2: Male, 183cm, 95kg: Boer 68.5, James 72.1, Hume 63.7 -->
+          <g>
+            <line x1="205" y1="132.5" x2="205" y2="95.5" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.5"/>
+            <circle cx="205" cy="86.4" r="5" fill="#7c3aed"/>
+            <circle cx="205" cy="118.2" r="5" fill="#0891b2"/>
+            <circle cx="205" cy="132.5" r="5" fill="#65a30d"/>
+            <text x="205" y="240" text-anchor="middle" font-size="10" fill="currentColor">Male, 183/95</text>
+            <text x="205" y="252" text-anchor="middle" font-size="10" fill-opacity="0.6" font-weight="600">spread 8.4 kg</text>
+          </g>
+          <!-- Person 3: Female, 163cm, 58kg: Boer 40.8, James 43.3, Hume 42.0 -->
+          <g>
+            <line x1="305" y1="192.4" x2="305" y2="181.4" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.5"/>
+            <circle cx="305" cy="192.4" r="5" fill="#0891b2"/>
+            <circle cx="305" cy="185.8" r="5" fill="#65a30d"/>
+            <circle cx="305" cy="181.4" r="5" fill="#7c3aed"/>
+            <text x="305" y="240" text-anchor="middle" font-size="10" fill="currentColor">Female, 163/58</text>
+            <text x="305" y="252" text-anchor="middle" font-size="10" fill-opacity="0.6">spread 2.5 kg</text>
+          </g>
+          <!-- Person 4: Female, 170cm, 80kg: Boer 52.1, James 56.4, Hume 51.7 -->
+          <g>
+            <line x1="405" y1="142.1" x2="405" y2="123.2" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.5"/>
+            <circle cx="405" cy="123.2" r="5" fill="#7c3aed"/>
+            <circle cx="405" cy="139.5" r="5" fill="#0891b2"/>
+            <circle cx="405" cy="142.1" r="5" fill="#65a30d"/>
+            <text x="405" y="240" text-anchor="middle" font-size="10" fill="currentColor">Female, 170/80</text>
+            <text x="405" y="252" text-anchor="middle" font-size="10" fill-opacity="0.6">spread 4.7 kg</text>
+          </g>
+          <g font-size="10" font-weight="600">
+            <circle cx="380" cy="20" r="4" fill="#0891b2"/><text x="388" y="24" fill="#0891b2">Boer</text>
+            <circle cx="415" cy="20" r="4" fill="#7c3aed"/><text x="423" y="24" fill="#7c3aed">James</text>
+            <circle cx="452" cy="20" r="4" fill="#65a30d"/><text x="460" y="24" fill="#65a30d">Hume</text>
+          </g>
+        </svg>
+        <figcaption style="font-size:0.75rem;color:var(--gray-500);text-align:center;margin-top:0.375rem;">Formula-to-formula agreement is tight for typical bodies and looser for heavier or shorter ones &mdash; visualising what the table above tabulates. Data as shown in the table.</figcaption>
+      </figure>
 
       <!-- References for the three LBM formulas -->
       <div style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:1.25rem 1.5rem;margin:1.5rem 0;">

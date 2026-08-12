@@ -22,7 +22,7 @@
   <meta property="og:site_name" content="CalculateMyBMI">
   <meta property="og:image" content="https://calculatemybmi.net/assets/images/og-image.png">
   <meta property="article:published_time" content="2026-01-15">
-  <meta property="article:modified_time" content="2026-08-02T00:00:00Z">
+  <meta property="article:modified_time" content="2026-08-12T00:00:00Z">
 
   <!-- Twitter Card Tags -->
   <meta name="twitter:card" content="summary_large_image">
@@ -39,7 +39,7 @@
     "author": {"@type": "Person", "@id": "https://calculatemybmi.net/about/#author-bio"},
     "publisher": {"@type": "Organization", "@id": "https://calculatemybmi.net/#organization"},
     "datePublished": "2026-01-15",
-    "dateModified": "2026-08-02",
+    "dateModified": "2026-08-12",
     "mainEntityOfPage": {"@type": "WebPage", "@id": "https://calculatemybmi.net/blog/bmi-formula/"},
     "image": "https://calculatemybmi.net/assets/images/og-image.png",
     "keywords": ["BMI formula", "body mass index calculation", "metric BMI", "imperial BMI", "BMI equation", "calculate BMI"],
@@ -58,7 +58,7 @@
     <article>
       <p style="font-size: 0.8125rem; color: var(--gray-500);">Updated February 2026 &bull; 13 min read</p>
       <h1>BMI Formula: How to Calculate Body Mass Index Step by Step</h1>
-      <p class="byline" style="font-size:0.875rem;color:#475569;margin:0.5rem 0 1.25rem;padding:0.75rem 1rem;background:#f1f5f9;border-left:3px solid #06b6d4;border-radius:0 6px 6px 0;">Written by <a href="/about/#author-bio" style="color:#164e63;font-weight:600;text-decoration:none;">Marko Visic, MPharm</a> &middot; Last reviewed 2 August 2026 &middot; Not medical advice.</p>
+      <p class="byline" style="font-size:0.875rem;color:#475569;margin:0.5rem 0 1.25rem;padding:0.75rem 1rem;background:#f1f5f9;border-left:3px solid #06b6d4;border-radius:0 6px 6px 0;">Written by <a href="/about/#author-bio" style="color:#164e63;font-weight:600;text-decoration:none;">Marko Visic, MPharm</a> &middot; Last reviewed 12 August 2026 &middot; Not medical advice.</p>
 
       <p class="intro-text">The BMI formula is one of the simplest and most widely used health calculations in the world. Whether you prefer metric or imperial units, this guide walks you through every step of the BMI calculation, explains where the formula came from, and shows you how to use it correctly with worked examples.</p>
 
@@ -211,6 +211,31 @@
       </div>
       <p>The precise conversion factor is 703.0696, which is rounded to 703 for practical use. This rounding introduces a negligible error of less than 0.01 BMI points, which has no clinical significance.</p>
 
+      <figure style="margin:1.5rem 0;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" style="width:100%;height:auto;display:block;font-family:inherit;" role="img" aria-labelledby="svg-703-title svg-703-desc">
+          <title id="svg-703-title">Derivation of the 703 factor as unit conversion between imperial and metric BMI</title>
+          <desc id="svg-703-desc">Starting from kilograms divided by metres squared, substituting the pounds-to-kilograms and inches-to-metres conversion factors, then collecting constants yields 39.3701 squared divided by 2.20462 equals 703.07, so BMI equals pounds over inches squared times 703.</desc>
+          <g font-size="13" fill="currentColor" font-family="inherit">
+            <rect x="10" y="15" width="140" height="40" rx="4" fill="none" stroke="currentColor" stroke-opacity="0.35"/>
+            <text x="80" y="35" text-anchor="middle" font-weight="600">kg / m²</text>
+            <text x="80" y="49" text-anchor="middle" font-size="10" fill-opacity="0.6">metric BMI</text>
+            <text x="160" y="38" font-size="12">→ substitute:</text>
+            <text x="160" y="54" font-size="11" fill-opacity="0.75">kg = lbs / 2.20462, m = in / 39.3701</text>
+            <text x="10" y="90" font-size="12" fill-opacity="0.85">(lbs ÷ 2.20462) ÷ (in ÷ 39.3701)²</text>
+            <text x="335" y="90" font-size="12">→ rearrange</text>
+            <text x="10" y="118" font-size="12" fill-opacity="0.85">= (lbs ÷ in²) × (39.3701² ÷ 2.20462)</text>
+            <text x="335" y="118" font-size="12">→ collect</text>
+            <rect x="10" y="140" width="240" height="42" rx="4" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+            <text x="130" y="163" text-anchor="middle" font-weight="700" fill="#1e3a8a">39.3701² ÷ 2.20462 = 703.07</text>
+            <text x="130" y="176" text-anchor="middle" font-size="10" fill="#1e3a8a" fill-opacity="0.8">(rounded to 703 in practice)</text>
+            <rect x="270" y="140" width="200" height="42" rx="4" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5"/>
+            <text x="370" y="167" text-anchor="middle" font-weight="700" fill="#14532d">(lbs ÷ in²) × 703</text>
+            <text x="370" y="178" text-anchor="middle" font-size="10" fill="#14532d" fill-opacity="0.8">imperial BMI</text>
+          </g>
+        </svg>
+        <figcaption style="font-size:0.75rem;color:var(--gray-500);text-align:center;margin-top:0.375rem;">The 703 factor is what remains when you convert kg to lbs and m to inches and collect the constants.</figcaption>
+      </figure>
+
       <h2>History of the BMI Formula</h2>
       <p>The formula that we now call BMI has a rich historical background spanning nearly two centuries:</p>
 
@@ -270,6 +295,39 @@
         <p style="font-size: 1.125rem; font-weight: 700; color: var(--gray-700); margin: 0;">New BMI = 1.3 &times; weight (kg) &divide; height (m)<sup>2.5</sup></p>
       </div>
       <p>Proposed by Oxford mathematician Nick Trefethen in 2013, this formula uses an exponent of 2.5 instead of 2, which he argued better accounts for the relationship between height and weight, particularly for very tall and very short people. Under the standard formula, short people may be told they are thinner than they really are, while tall people may be told they are fatter. The New BMI aims to correct this bias. Try our <a href="/new-bmi-calculator/">New BMI calculator</a> to see how your results compare.</p>
+
+      <figure style="margin:1.5rem 0;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" style="width:100%;height:auto;display:block;font-family:inherit;" role="img" aria-labelledby="svg-tref-title svg-tref-desc">
+          <title id="svg-tref-title">Standard BMI (kg/m²) and Trefethen New BMI (1.3 × kg/m^2.5) plotted against height at fixed 70 kg</title>
+          <desc id="svg-tref-desc">Two curves against height from 1.4 to 2.05 metres, both showing BMI declining with height at fixed weight. At short heights the Trefethen curve sits above the standard curve; the two cross near 1.69 metres; at tall heights the Trefethen curve sits below the standard curve.</desc>
+          <g stroke="currentColor" stroke-opacity="0.15" stroke-width="1" fill="none">
+            <line x1="55" y1="30" x2="55" y2="220"/><line x1="55" y1="220" x2="460" y2="220"/>
+            <line x1="55" y1="220" x2="460" y2="220"/><line x1="55" y1="184" x2="460" y2="184"/>
+            <line x1="55" y1="147" x2="460" y2="147"/><line x1="55" y1="110" x2="460" y2="110"/>
+            <line x1="55" y1="74" x2="460" y2="74"/><line x1="55" y1="38" x2="460" y2="38"/>
+          </g>
+          <g font-size="11" fill="currentColor" fill-opacity="0.7">
+            <text x="48" y="223" text-anchor="end">15</text><text x="48" y="187" text-anchor="end">20</text>
+            <text x="48" y="150" text-anchor="end">25</text><text x="48" y="113" text-anchor="end">30</text>
+            <text x="48" y="77" text-anchor="end">35</text><text x="48" y="41" text-anchor="end">40</text>
+            <text x="55" y="240">1.4</text><text x="180" y="240">1.6</text>
+            <text x="305" y="240">1.8</text><text x="430" y="240">2.0 m</text>
+            <text x="14" y="125" transform="rotate(-90 14 125)" text-anchor="middle" font-weight="500">BMI</text>
+            <text x="258" y="256" text-anchor="middle" font-weight="500">Height (m), fixed weight 70 kg</text>
+          </g>
+          <polyline points="55.0,61.3 67.5,68.6 79.9,75.6 92.4,82.3 104.8,88.8 117.3,95.0 129.8,100.9 142.2,106.6 154.7,112.1 167.2,117.4 179.6,122.5 192.1,127.4 204.5,132.1 217.0,136.7 229.5,141.1 241.9,145.3 254.4,149.4 266.8,153.3 279.3,157.2 291.8,160.9 304.2,164.4 316.7,167.9 329.2,171.2 341.6,174.4 354.1,177.6 366.5,180.6 379.0,183.5 391.5,186.4 403.9,189.2 416.4,191.8 428.8,194.4 441.3,196.9 453.8,199.4 466.2,201.8" fill="none" stroke="currentColor" stroke-opacity="0.75" stroke-width="2" stroke-dasharray="5 3" stroke-linecap="round"/>
+          <polyline points="55.0,35.6 67.5,45.5 79.9,55.1 92.4,64.1 104.8,72.8 117.3,81.0 129.8,88.8 142.2,96.4 154.7,103.5 167.2,110.4 179.6,116.9 192.1,123.2 204.5,129.2 217.0,135.0 229.5,140.5 241.9,145.8 254.4,150.9 266.8,155.8 279.3,160.5 291.8,165.0 304.2,169.3 316.7,173.5 329.2,177.5 341.6,181.4 354.1,185.1 366.5,188.7 379.0,192.1 391.5,195.4 403.9,198.7 416.4,201.8 428.8,204.8 441.3,207.6 453.8,210.4 466.2,213.1" fill="none" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round"/>
+          <g font-size="11" font-weight="600">
+            <text x="464" y="204" text-anchor="end" fill="currentColor">standard (h²)</text>
+            <text x="464" y="220" text-anchor="end" fill="#7c3aed">Trefethen (h^2.5)</text>
+          </g>
+          <g>
+            <circle cx="167.2" cy="117.4" r="4" fill="none" stroke="#ef4444" stroke-width="1.5"/>
+            <text x="175" y="103" font-size="10" fill="#ef4444" font-weight="600">curves cross ≈ 1.69 m</text>
+          </g>
+        </svg>
+        <figcaption style="font-size:0.75rem;color:var(--gray-500);text-align:center;margin-top:0.375rem;">Both formulas evaluated at 70 kg. Trefethen sits above standard for short heights and below for tall heights &mdash; the direction of the "short read too thin, tall read too fat" correction described above.</figcaption>
+      </figure>
 
       <h3>SBMI (Smart BMI)</h3>
       <p>Smart BMI incorporates age and sex into the calculation, producing a result on a 0&ndash;70 scale where 30 represents the statistical median for the population. It was designed to address the fact that the same BMI value has different health implications at different ages and between sexes. While theoretically more accurate, it has not replaced standard BMI in clinical practice.</p>

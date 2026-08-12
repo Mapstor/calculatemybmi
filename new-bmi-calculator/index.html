@@ -52,7 +52,7 @@
 
   <main><div class="container">
     <h1>New BMI Calculator (Trefethen Formula)</h1>
-      <p class="byline" style="font-size:0.875rem;color:#475569;margin:0.5rem 0 1.25rem;padding:0.75rem 1rem;background:#f1f5f9;border-left:3px solid #06b6d4;border-radius:0 6px 6px 0;">Written by <a href="/about/#author-bio" style="color:#164e63;font-weight:600;text-decoration:none;">Marko Visic, MPharm</a> &middot; Last reviewed 2 August 2026 &middot; Not medical advice.</p>
+      <p class="byline" style="font-size:0.875rem;color:#475569;margin:0.5rem 0 1.25rem;padding:0.75rem 1rem;background:#f1f5f9;border-left:3px solid #06b6d4;border-radius:0 6px 6px 0;">Written by <a href="/about/#author-bio" style="color:#164e63;font-weight:600;text-decoration:none;">Marko Visic, MPharm</a> &middot; Last reviewed 12 August 2026 &middot; Not medical advice.</p>
 
     <p class="intro-text">Calculate your BMI using the updated formula proposed by Oxford University mathematician <strong>Nick Trefethen</strong> in 2013. The New BMI formula (<code>1.3 &times; weight / height<sup>2.5</sup></code>) corrects a known height bias in the traditional BMI calculation, giving slightly higher values for shorter people and slightly lower values for taller people. Use our <a href="/">standard BMI calculator</a> for the traditional formula, or read on to understand the differences and why this alternative was proposed. For background on how BMI was developed, see our <a href="/blog/bmi-history/">history of BMI</a> guide.</p>
 
@@ -204,6 +204,36 @@
     <section class="content-section">
       <h2>Traditional vs New BMI Formula</h2>
       <p>The Body Mass Index was first devised by Belgian mathematician Adolphe Quetelet in the 1830s. For nearly two centuries, the formula has remained unchanged: divide weight by the square of height. In 2013, Oxford University mathematician <a href="https://people.maths.ox.ac.uk/trefethen/bmi.html" target="_blank" rel="noopener">Nick Trefethen</a> proposed an updated version that he argued better accounts for the relationship between height and body volume. This proposal addressed one of the key <a href="/blog/bmi-limitations/">limitations of BMI</a> that researchers have long recognized. Here is how the two formulas compare:</p>
+
+      <figure style="margin:1.25rem 0;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" style="width:100%;height:auto;display:block;font-family:inherit;" role="img" aria-labelledby="svg-delta-title svg-delta-desc">
+          <title id="svg-delta-title">Height-correction delta: Trefethen BMI minus standard BMI at fixed weight 70 kg</title>
+          <desc id="svg-delta-desc">A single line showing the difference between Trefethen and standard BMI at 70 kg across heights 1.4 to 2.0 metres. Above the zero line, Trefethen reads higher than standard (short people were underestimated). Below zero, Trefethen reads lower (tall people were overestimated). Zero crossing near 1.69 metres.</desc>
+          <g stroke="currentColor" stroke-opacity="0.15" stroke-width="1" fill="none">
+            <line x1="40" y1="30" x2="40" y2="200"/><line x1="40" y1="130" x2="460" y2="130"/>
+          </g>
+          <g font-family="inherit" font-size="11" fill="currentColor" fill-opacity="0.75">
+            <text x="35" y="55" text-anchor="end">+4</text>
+            <text x="35" y="90" text-anchor="end">+2</text>
+            <text x="35" y="134" text-anchor="end">0</text>
+            <text x="35" y="170" text-anchor="end">−2</text>
+            <text x="40" y="215">1.4</text><text x="145" y="215">1.55</text><text x="250" y="215">1.7</text><text x="355" y="215">1.85</text><text x="460" y="215" text-anchor="end">2.0 m</text>
+            <text x="14" y="110" transform="rotate(-90 14 110)" text-anchor="middle" font-weight="500">ΔBMI</text>
+            <text x="250" y="235" text-anchor="middle" font-weight="500" font-size="11">Height (m), fixed weight 70 kg</text>
+          </g>
+          <!-- Shaded region above/below zero -->
+          <path d="M 40 59.5 L 61 70.4 L 82 80.2 L 103 89 L 124 97 L 145 104.3 L 166 110.8 L 187 116.7 L 208 122.1 L 229 127 L 250 131.4 L 250 130 L 40 130 Z" fill="#22c55e" fill-opacity="0.15"/>
+          <path d="M 250 131.4 L 271 135.4 L 292 139.1 L 313 142.4 L 334 145.4 L 355 148.1 L 376 150.5 L 397 152.8 L 418 154.8 L 439 156.6 L 460 158.3 L 460 130 L 250 130 Z" fill="#ef4444" fill-opacity="0.15"/>
+          <polyline points="40,59.5 61,70.4 82,80.2 103,89 124,97 145,104.3 166,110.8 187,116.7 208,122.1 229,127 250,131.4 271,135.4 292,139.1 313,142.4 334,145.4 355,148.1 376,150.5 397,152.8 418,154.8 439,156.6 460,158.3" fill="none" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round"/>
+          <g font-size="10" font-weight="600">
+            <text x="120" y="45" fill="#14532d">Trefethen &gt; standard (short = underestimated)</text>
+            <text x="380" y="195" text-anchor="end" fill="#7f1d1d">Trefethen &lt; standard (tall = overestimated)</text>
+          </g>
+          <line x1="250" y1="30" x2="250" y2="200" stroke="currentColor" stroke-dasharray="3 2" stroke-opacity="0.4"/>
+          <text x="252" y="45" font-size="10" fill="currentColor" fill-opacity="0.75">crossover ≈ 1.69 m</text>
+        </svg>
+        <figcaption style="font-size:0.75rem;color:var(--gray-500);text-align:center;margin-top:0.375rem;">Only the <em>difference</em> between the two formulas is plotted, showing where and how much the height-correction changes the reading.</figcaption>
+      </figure>
 
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.25rem;margin:1.5rem 0;">
         <div style="background:linear-gradient(135deg,#fff5f5,#fed7d7);border:2px solid #fc8181;border-radius:12px;padding:1.5rem;">

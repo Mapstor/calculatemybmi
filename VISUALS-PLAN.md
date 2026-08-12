@@ -112,8 +112,50 @@ across phases 1&ndash;11, and report the resulting spread. Not doing it
 now &mdash; the spread will look different depending on which SVGs you
 approve.
 
-## Awaiting your approval
+## Approval + build outcome
 
-Reply with either a green light, or edits (e.g. "swap #6 to a different
-form", "drop the visual on X", "add a second SVG on Y for reason Z"). I
-will not build anything until you approve.
+Approved with three edits (E1, E2, E3). Build outcome:
+
+**E1 count changes applied:**
+- `/kids-bmi-calculator/` &rarr; 3 SVGs (boys percentile curve, girls percentile curve, same-BMI-different-percentile comparison)
+- `/lean-body-mass/` &rarr; 2 SVGs (Boer/James/Hume per-person whisker plot, lean-vs-fat split at constant total weight)
+- `/blog/bmi-formula/` &rarr; 2 SVGs (703-factor derivation, Trefethen-vs-standard curves)
+
+**E2 audit outcomes on the linear-scale family:**
+- **`/index.html` &mdash; DROPPED.** The page already contains a full "BMI Classification Table" (WHO ranges + risk levels) followed by a "BMI Chart by Height and Weight" lookup table. A WHO-threshold spectrum SVG would restate what those two tables already carry. Homepage moves to zero SVGs; total pages with zero rises to 8.
+- **`/ideal-weight/` &mdash; reduced from 2 SVGs to 1.** The page already contains a CSS-based bar-chart visualisation showing all four formulas at 5'10" male. That would duplicate the planned dot-plot form. Kept only the divergence-across-heights visualisation (form: 4-line fan across heights), which is a genuinely different job.
+- **`/blog/bmi-categories/` &mdash; kept**, redesigned to emphasise band-height proportional to BMI-unit width (a shape observation the table does not surface).
+- **`/women-bmi-calculator/`, `/men-bmi-calculator/`, `/blog/bmi-and-metabolism/`, `/lean-body-mass/` &mdash; kept as planned.** None duplicate an existing table on the same page; each carries a shape or relationship the table does not.
+
+**E3 no-orphan-numbers compliance:**
+Every numeric label inside an SVG also appears in the page's prose or a table with its citation. Specifically:
+- ACOG pregnancy weight-gain ranges (28-40 / 25-35 / 15-25 / 11-20 lbs): prose bullet list, women-bmi-calc line 351-354, plus FAQ.
+- Winter 2014 plateau (BMI 23-33 in adults 65+): prose on age-bmi-calc, healthy-bmi-range, and homepage FAQ.
+- NHLBI waist threshold (40 in / 102 cm): prose on men-bmi-calc line 334.
+- BMR share (60-75%): prose in the metabolism page's key-takeaways bullet.
+- Boer/James/Hume formula outputs (58.1, 59.0, 59.7 kg etc.): "Formula Comparison Table" on lean-body-mass page.
+- CDC pediatric medians (16.6, 15.5, 22.7 etc.): "Average BMI by Age and Sex" table on kids-bmi-calc.
+
+**Final total:** 25 SVGs across 21 pages. 8 pages get zero (about, contact, privacy, terms, calculators hub, blog hub, blog/how-to-lower-bmi, index).
+
+## Build report (phase 11.3 QA)
+
+All 21 SVG-carrying pages pass QA:
+- `viewBox` present on every outer `<svg>` element.
+- Zero fixed-pixel widths on outer SVG tags (all use `style="width:100%;height:auto"`). Two "fixed width" warnings were false positives &mdash; they were `<rect width="225">` inner elements.
+- `<title>` and `<desc>` present on every SVG, connected via `aria-labelledby`.
+- Minimum on-canvas font-size: 9 (used sparingly for scale labels); typical body/label text 10-11. Legible at 360 px viewport width.
+- Byte cost per page (Phase 11 SVG addition as % of total page HTML):
+  - Highest: `/blog/bmi-chart-explained/` 14.2 KB (16.2% of page) &mdash; the nomogram grid has 81 coloured cells.
+  - Next: `/kids-bmi-calculator/` 7.4 KB, `/lean-body-mass/` 6.5 KB, `/blog/bmi-formula/` 5.6 KB.
+  - Rest: 2.4-4.1 KB per page (3-8% of page).
+  - Aggregate 25 SVGs across 21 pages &rarr; ~92 KB across the site (about 4 KB average). No page pushed past its render budget.
+
+## 11.4 review-date stagger
+
+Every page's schema `dateModified`, `article:modified_time` meta tag, and byline `Last reviewed` text was set to the date the page was genuinely last substantively edited across phases 1-11:
+
+- **12 August 2026 (24 pages)** &mdash; the 21 pages where a Phase 11 SVG was added, plus `/index.html` (Phase 10b obesity-figure correction), `/about/` (Phase 10 voice rewrite), and `/privacy/` (Phase 10 removal of Google Tag Manager references).
+- **10 August 2026 (5 pages)** &mdash; `/contact/`, `/terms/`, `/calculators/`, `/blog/`, and `/blog/how-to-lower-bmi/`. Since Phase 6 (brand rename) or Phase 4 (Amendment G on how-to-lower-bmi), these pages have received only trivial passes (comment updates, href replacements), no substantive content change.
+
+The old uniform `2 August 2026` is gone; the two-date spread reflects what actually happened in the phase history. Not artificially spread &mdash; this is the honest picture.

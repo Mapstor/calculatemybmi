@@ -38,7 +38,7 @@
     "headline": "BMI and Metabolism: The Complete Guide to Metabolic Health",
     "description": "Comprehensive guide to understanding the relationship between BMI and metabolism, including metabolic rate, metabolic syndrome, and metabolically healthy obesity.",
     "datePublished": "2026-02-01",
-    "dateModified": "2026-08-02",
+    "dateModified": "2026-08-12",
     "author": {"@type": "Person", "@id": "https://calculatemybmi.net/about/#author-bio"},
     "publisher": {"@type": "Organization", "@id": "https://calculatemybmi.net/#organization"},
     "mainEntityOfPage": {
@@ -58,7 +58,7 @@
     <article>
       <p style="font-size: 0.8125rem; color: var(--gray-500);">February 2026 &bull; 18 min read</p>
       <h1>BMI and Metabolism: The Complete Guide to Metabolic Health</h1>
-      <p class="byline" style="font-size:0.875rem;color:#475569;margin:0.5rem 0 1.25rem;padding:0.75rem 1rem;background:#f1f5f9;border-left:3px solid #06b6d4;border-radius:0 6px 6px 0;">Written by <a href="/about/#author-bio" style="color:#164e63;font-weight:600;text-decoration:none;">Marko Visic, MPharm</a> &middot; Last reviewed 2 August 2026 &middot; Not medical advice.</p>
+      <p class="byline" style="font-size:0.875rem;color:#475569;margin:0.5rem 0 1.25rem;padding:0.75rem 1rem;background:#f1f5f9;border-left:3px solid #06b6d4;border-radius:0 6px 6px 0;">Written by <a href="/about/#author-bio" style="color:#164e63;font-weight:600;text-decoration:none;">Marko Visic, MPharm</a> &middot; Last reviewed 12 August 2026 &middot; Not medical advice.</p>
 
       <p class="intro-text">Your metabolism plays a crucial role in weight management and overall health. Understanding how your metabolic rate interacts with BMI can help you make informed decisions about diet, exercise, and lifestyle. This comprehensive guide explores the science behind metabolism, its relationship to body weight, and what it means for your health.</p>
 
@@ -100,6 +100,53 @@
       <p>Metabolism refers to all the chemical processes that occur within your body to maintain life. These processes convert the food you eat into energy that powers everything from breathing and circulation to cell repair and physical movement. According to the <a href="https://www.niddk.nih.gov/health-information/weight-management" target="_blank" rel="noopener">National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)</a>, understanding metabolism is essential for effective weight management.</p>
 
       <p>Your total daily energy expenditure (TDEE) consists of three main components:</p>
+
+      <figure style="margin:1.25rem 0;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 240" style="width:100%;height:auto;display:block;font-family:inherit;" role="img" aria-labelledby="svg-tdee-title svg-tdee-desc">
+          <title id="svg-tdee-title">Annotated donut: the three components of total daily energy expenditure</title>
+          <desc id="svg-tdee-desc">A donut chart with three arcs labelled BMR (largest share, roughly 60–75% of total daily calories), physical activity (variable share), and thermic effect of food (small share). Qualitative labels only; the specific 60–75% range for BMR appears in the key-takeaways bullet on this page.</desc>
+          <g font-family="inherit" font-size="12" fill="currentColor">
+            <!-- Donut: three arcs. BMR = 65% (0-0.65), Activity = 25% (0.65-0.9), TEF = 10% (0.9-1.0) -->
+            <!-- Circle centre (150,120), r=90, inner r=55 -->
+            <!-- Arc paths using M cx+r cy L ... A rx ry 0 large-arc sweep x y -->
+            <!-- BMR: 0 -> 0.65 (234°) -->
+            <path d="M 150 30 A 90 90 0 1 1 42.75 87.9 L 82.36 106.72 A 55 55 0 1 0 150 65 Z" fill="#22c55e" fill-opacity="0.85"/>
+            <!-- Activity: 234° -> 324°: start at (42.75, 87.9), end at (203.09, 217.11) actually let me just build via commands -->
+            <!-- Recompute manually: cx=150 cy=120 r=90 inner=55 -->
+            <!-- Angle 0 = top (12 o'clock) going clockwise -->
+            <!-- 0.65 turn from top = 234deg from top clockwise = -234deg from x-axis convention -->
+            <!-- Use JS-like arc: point at angle θ (from top, clockwise) is (cx + r sin θ, cy − r cos θ) -->
+            <!-- I'll build the three arcs by drawing three donut-slice paths -->
+            <!-- Slice 1 (BMR) 0..234deg: -->
+            <!-- Slice 2 (Activity) 234..324deg: 90deg span -->
+            <!-- pt at 234: (150 + 90*sin(234)) = 150 + 90*(-0.809) = 150-72.8=77.2 ; y = 120-90*cos(234)=120-90*(-0.588)=172.9 -->
+            <!-- pt at 324: (150 + 90*sin(324)) = 150 + 90*(-0.588)=97.1 ; y=120-90*cos(324)=120-90*(0.809)=47.2 -->
+            <!-- inner pt at 234: 55 sin(234) = -44.5, y = -55 cos(234) = 32.3 → (105.5, 152.3) -->
+            <!-- inner pt at 324: 55 sin(324) = -32.3, y = -55 cos(324) = -44.5 → (117.7, 75.5) -->
+            <path d="M 77.2 172.9 A 90 90 0 0 1 97.1 47.2 L 117.7 75.5 A 55 55 0 0 0 105.5 152.3 Z" fill="#f59e0b" fill-opacity="0.85"/>
+            <!-- Slice 3 (TEF) 324..360deg: 36deg -->
+            <!-- pt at 360 = top: (150, 30) -->
+            <!-- inner pt at 360: (150, 65) -->
+            <path d="M 97.1 47.2 A 90 90 0 0 1 150 30 L 150 65 A 55 55 0 0 0 117.7 75.5 Z" fill="#ef4444" fill-opacity="0.85"/>
+            <text x="150" y="115" text-anchor="middle" font-weight="700" font-size="14">TDEE</text>
+            <text x="150" y="132" text-anchor="middle" font-size="10" fill-opacity="0.7">Total Daily</text>
+            <text x="150" y="145" text-anchor="middle" font-size="10" fill-opacity="0.7">Energy Expenditure</text>
+            <!-- Legend + qualitative labels -->
+            <g>
+              <circle cx="290" cy="45" r="7" fill="#22c55e"/>
+              <text x="305" y="49" font-weight="600">BMR</text>
+              <text x="305" y="65" font-size="10" fill-opacity="0.75">Largest share (60–75% per NIDDK)</text>
+              <circle cx="290" cy="95" r="7" fill="#f59e0b"/>
+              <text x="305" y="99" font-weight="600">Physical activity</text>
+              <text x="305" y="115" font-size="10" fill-opacity="0.75">Variable share; movement + exercise</text>
+              <circle cx="290" cy="145" r="7" fill="#ef4444"/>
+              <text x="305" y="149" font-weight="600">Thermic effect of food (TEF)</text>
+              <text x="305" y="165" font-size="10" fill-opacity="0.75">Small share; digesting &amp; absorbing food</text>
+            </g>
+          </g>
+        </svg>
+        <figcaption style="font-size:0.75rem;color:var(--gray-500);text-align:center;margin-top:0.375rem;">Arc sizes are illustrative. The BMR share range 60–75% is stated in the key-takeaways above; the exact split for activity and TEF varies by individual.</figcaption>
+      </figure>
 
       <div class="info-card-grid">
         <div class="info-card">

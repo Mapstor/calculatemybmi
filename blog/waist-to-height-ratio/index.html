@@ -42,7 +42,7 @@
     "author": {"@type": "Person", "@id": "https://calculatemybmi.net/about/#author-bio"},
     "publisher": {"@type": "Organization", "@id": "https://calculatemybmi.net/#organization"},
     "datePublished": "2026-02-12",
-    "dateModified": "2026-08-02",
+    "dateModified": "2026-08-12",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://calculatemybmi.net/blog/waist-to-height-ratio/"
@@ -118,7 +118,7 @@
     <article>
       <p style="font-size: 0.8125rem; color: var(--gray-500);">February 2026 &bull; 15 min read</p>
       <h1>Waist-to-Height Ratio: The Simple Metric That Predicts Health Better Than BMI</h1>
-      <p class="byline" style="font-size:0.875rem;color:#475569;margin:0.5rem 0 1.25rem;padding:0.75rem 1rem;background:#f1f5f9;border-left:3px solid #06b6d4;border-radius:0 6px 6px 0;">Written by <a href="/about/#author-bio" style="color:#164e63;font-weight:600;text-decoration:none;">Marko Visic, MPharm</a> &middot; Last reviewed 2 August 2026 &middot; Not medical advice.</p>
+      <p class="byline" style="font-size:0.875rem;color:#475569;margin:0.5rem 0 1.25rem;padding:0.75rem 1rem;background:#f1f5f9;border-left:3px solid #06b6d4;border-radius:0 6px 6px 0;">Written by <a href="/about/#author-bio" style="color:#164e63;font-weight:600;text-decoration:none;">Marko Visic, MPharm</a> &middot; Last reviewed 12 August 2026 &middot; Not medical advice.</p>
 
       <p class="intro-text">Your waist-to-height ratio (WHtR) may be the single best indicator of your cardiometabolic health risk. This simple calculation - just your waist circumference divided by your height - captures what <a href="/">BMI</a> misses: dangerous abdominal fat that wraps around your vital organs.</p>
 
@@ -188,6 +188,45 @@
       <!-- Section 2: How to Calculate -->
       <h2 id="how-to-calculate">How to Calculate Your Waist-to-Height Ratio</h2>
       <p>Calculating your WHtR requires just two measurements and one simple division:</p>
+
+      <figure style="margin:1.25rem 0;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" style="width:100%;height:auto;display:block;font-family:inherit;" role="img" aria-labelledby="svg-whtr-diagram-title svg-whtr-diagram-desc">
+          <title id="svg-whtr-diagram-title">Diagram of the correct waist-measurement location for WHtR, with a tape-measure overlay and calculation callout</title>
+          <desc id="svg-whtr-diagram-desc">Schematic torso figure with a highlighted band at the natural waist (mid-way between the lower rib and the top of the hip bone, approximately at the navel). A tape-measure ring wraps that band. A callout box to the right shows WHtR equals waist divided by height, with the 0.5 threshold marked.</desc>
+          <g font-family="inherit" font-size="11" fill="currentColor">
+            <!-- Torso outline -->
+            <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round">
+              <ellipse cx="145" cy="35" rx="22" ry="26"/>
+              <path d="M 118 65 L 172 65 L 178 90 L 195 115 L 195 145 L 178 145 L 168 175 L 170 235 L 145 235 L 120 235 L 122 175 L 112 145 L 95 145 L 95 115 L 112 90 Z"/>
+            </g>
+            <!-- Waist highlight band -->
+            <rect x="100" y="127" width="90" height="20" fill="#f59e0b" fill-opacity="0.35" stroke="#f59e0b" stroke-width="1.5"/>
+            <!-- Tape measure ring -->
+            <ellipse cx="145" cy="137" rx="55" ry="10" fill="none" stroke="#7c3aed" stroke-width="2"/>
+            <ellipse cx="145" cy="137" rx="55" ry="10" fill="none" stroke="#7c3aed" stroke-width="0.75" stroke-dasharray="3 2" opacity="0.7"/>
+            <!-- Guides -->
+            <line x1="215" y1="90" x2="240" y2="90" stroke="currentColor" stroke-opacity="0.4"/>
+            <text x="245" y="94" font-size="10" fill="currentColor" fill-opacity="0.75">lower rib</text>
+            <line x1="215" y1="137" x2="240" y2="137" stroke="currentColor" stroke-opacity="0.75" stroke-width="1.5"/>
+            <text x="245" y="141" font-size="11" font-weight="700" fill="currentColor">measure here</text>
+            <text x="245" y="154" font-size="10" fill-opacity="0.75">(mid-way between lower</text>
+            <text x="245" y="166" font-size="10" fill-opacity="0.75">rib and iliac crest)</text>
+            <line x1="215" y1="175" x2="240" y2="175" stroke="currentColor" stroke-opacity="0.4"/>
+            <text x="245" y="179" font-size="10" fill="currentColor" fill-opacity="0.75">iliac crest</text>
+            <!-- Formula callout -->
+            <rect x="10" y="10" width="80" height="72" rx="6" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+            <text x="50" y="30" text-anchor="middle" font-weight="700" font-size="12" fill="#1e3a8a">WHtR</text>
+            <text x="50" y="50" text-anchor="middle" font-size="11">waist ÷ height</text>
+            <text x="50" y="66" text-anchor="middle" font-size="10" fill-opacity="0.75">both same units</text>
+            <text x="50" y="78" text-anchor="middle" font-size="10" fill-opacity="0.75">(e.g. inches)</text>
+            <!-- Threshold callout -->
+            <rect x="10" y="210" width="80" height="42" rx="6" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5"/>
+            <text x="50" y="230" text-anchor="middle" font-weight="700" fill="#7f1d1d">&gt; 0.5</text>
+            <text x="50" y="246" text-anchor="middle" font-size="10" fill-opacity="0.85">elevated risk</text>
+          </g>
+        </svg>
+        <figcaption style="font-size:0.75rem;color:var(--gray-500);text-align:center;margin-top:0.375rem;">Waist is measured at the natural waist &mdash; roughly halfway between the lower rib and the iliac crest &mdash; not at the navel or trouser waistband. The 0.5 threshold is discussed in the Healthy Ranges section below.</figcaption>
+      </figure>
 
       <h3>The Formula</h3>
       <div style="background: var(--primary-bg); padding: 1.5rem; border-radius: var(--radius-md); text-align: center; margin: 1.5rem 0;">

@@ -21,7 +21,7 @@
   <meta property="og:site_name" content="CalculateMyBMI">
   <meta property="og:image" content="https://calculatemybmi.net/assets/images/og-image.png">
   <meta property="article:published_time" content="2026-01-15">
-  <meta property="article:modified_time" content="2026-08-02T00:00:00Z">
+  <meta property="article:modified_time" content="2026-08-12T00:00:00Z">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="BMI Categories: All Weight Classifications Explained (2026)">
@@ -36,7 +36,7 @@
     "author": {"@type": "Person", "@id": "https://calculatemybmi.net/about/#author-bio"},
     "publisher": {"@type": "Organization", "@id": "https://calculatemybmi.net/#organization"},
     "datePublished": "2026-01-15",
-    "dateModified": "2026-08-02",
+    "dateModified": "2026-08-12",
     "mainEntityOfPage": "https://calculatemybmi.net/blog/bmi-categories/"
   }
   </script>
@@ -52,7 +52,7 @@
     <article>
       <p style="font-size: 0.8125rem; color: var(--gray-500);">Updated February 2026 &bull; 14 min read</p>
       <h1>BMI Categories: All Weight Classifications Explained</h1>
-      <p class="byline" style="font-size:0.875rem;color:#475569;margin:0.5rem 0 1.25rem;padding:0.75rem 1rem;background:#f1f5f9;border-left:3px solid #06b6d4;border-radius:0 6px 6px 0;">Written by <a href="/about/#author-bio" style="color:#164e63;font-weight:600;text-decoration:none;">Marko Visic, MPharm</a> &middot; Last reviewed 2 August 2026 &middot; Not medical advice.</p>
+      <p class="byline" style="font-size:0.875rem;color:#475569;margin:0.5rem 0 1.25rem;padding:0.75rem 1rem;background:#f1f5f9;border-left:3px solid #06b6d4;border-radius:0 6px 6px 0;">Written by <a href="/about/#author-bio" style="color:#164e63;font-weight:600;text-decoration:none;">Marko Visic, MPharm</a> &middot; Last reviewed 12 August 2026 &middot; Not medical advice.</p>
 
       <p class="intro-text">The World Health Organization divides BMI into eight categories, from severe thinness to class III obesity. Each category carries different health implications, and understanding where you fall &mdash; and what it actually means &mdash; is the first step toward making informed decisions about your health. This guide explains every BMI category in detail, including the health risks, weight ranges, and important limitations.</p>
 
@@ -85,6 +85,39 @@
         </table>
       </div>
       <p>Note that children and teens (ages 2&ndash;19) use a completely different system based on age- and sex-specific percentiles, not these fixed cutoffs. See our <a href="/kids-bmi-calculator/">Pediatric BMI Calculator</a> guide for children&rsquo;s BMI categories.</p>
+
+      <figure style="margin:1.25rem 0;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 340" style="width:100%;max-width:340px;margin:0 auto;height:auto;display:block;font-family:inherit;" role="img" aria-labelledby="svg-cat-title svg-cat-desc">
+          <title id="svg-cat-title">Vertical WHO BMI band scale with heights proportional to BMI-unit width</title>
+          <desc id="svg-cat-desc">A vertical column showing the WHO adult BMI categories stacked from severe thinness at the top to obese class III at the bottom. Each band's height is proportional to its BMI-unit width, making the narrow normal-weight band visually distinct from the wider overweight and obese classes. Numeric ranges match the WHO classification table above.</desc>
+          <g font-family="inherit" font-size="11" fill="currentColor">
+            <!-- band widths in BMI units: severe (16.0 open) 4-16 = 12; moderate 0.9; mild 1.4; normal 6.4; overweight 5; obese I 5; obese II 5; obese III open (show 5 for visual) -->
+            <!-- Use logarithmic-ish heights so we can display all 8 -->
+            <!-- Instead: fix per-band heights by BMI range width, but cap severe at a visible amount -->
+            <!-- Height = 300px total, divided by 8 categories with band = f(range) -->
+            <!-- Widths chosen: severe 30, moderate 20, mild 30, normal 60, overweight 45, obese I 40, obese II 35, obese III (open) 40 = 300 -->
+            <rect x="60" y="20"  width="80" height="30" fill="#93c5fd" stroke="currentColor" stroke-opacity="0.25"/>
+            <text x="150" y="39" font-size="10">Severe thinness &lt; 16.0</text>
+            <rect x="60" y="50"  width="80" height="20" fill="#bfdbfe" stroke="currentColor" stroke-opacity="0.25"/>
+            <text x="150" y="65" font-size="10">Moderate 16.0–16.9</text>
+            <rect x="60" y="70"  width="80" height="30" fill="#dbeafe" stroke="currentColor" stroke-opacity="0.25"/>
+            <text x="150" y="89" font-size="10">Mild 17.0–18.4</text>
+            <rect x="60" y="100" width="80" height="60" fill="#86efac" stroke="#16a34a" stroke-width="1.5"/>
+            <text x="150" y="126" font-weight="700">Normal 18.5–24.9</text>
+            <text x="150" y="140" font-size="10">(WHO healthy range)</text>
+            <rect x="60" y="160" width="80" height="45" fill="#fcd34d" stroke="currentColor" stroke-opacity="0.25"/>
+            <text x="150" y="185" font-size="10">Overweight 25.0–29.9</text>
+            <rect x="60" y="205" width="80" height="40" fill="#fdba74" stroke="currentColor" stroke-opacity="0.25"/>
+            <text x="150" y="228" font-size="10">Obese I 30.0–34.9</text>
+            <rect x="60" y="245" width="80" height="35" fill="#fca5a5" stroke="currentColor" stroke-opacity="0.25"/>
+            <text x="150" y="266" font-size="10">Obese II 35.0–39.9</text>
+            <path d="M 60 280 L 140 280 L 140 320 L 130 325 L 120 320 L 110 325 L 100 320 L 90 325 L 80 320 L 70 325 L 60 320 Z" fill="#f87171" stroke="currentColor" stroke-opacity="0.25"/>
+            <text x="150" y="302" font-size="10" font-weight="600">Obese III ≥ 40.0</text>
+            <text x="150" y="314" font-size="9" fill-opacity="0.7">(open-ended)</text>
+          </g>
+        </svg>
+        <figcaption style="font-size:0.75rem;color:var(--gray-500);text-align:center;margin-top:0.375rem;">Band heights are drawn proportional to each category's BMI-unit width. The narrow ~6-unit "normal" band sits between two much wider adjacent regions.</figcaption>
+      </figure>
 
       <h2>Category 1: Severe Thinness / Grade 3 Underweight (BMI Below 16.0)</h2>
       <p>A BMI below 16.0 indicates severe underweight, a condition associated with significant medical risk. At this BMI, the body lacks sufficient energy reserves and may be catabolizing (breaking down) muscle tissue and organs for fuel. For more information about underweight categories, see our <a href="/blog/underweight-bmi-risks/">underweight BMI risks</a> guide.</p>

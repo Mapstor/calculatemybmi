@@ -52,7 +52,7 @@
 
   <main><div class="container">
     <h1>Ideal Weight Calculator</h1>
-      <p class="byline" style="font-size:0.875rem;color:#475569;margin:0.5rem 0 1.25rem;padding:0.75rem 1rem;background:#f1f5f9;border-left:3px solid #06b6d4;border-radius:0 6px 6px 0;">Written by <a href="/about/#author-bio" style="color:#164e63;font-weight:600;text-decoration:none;">Marko Visic, MPharm</a> &middot; Last reviewed 2 August 2026 &middot; Not medical advice.</p>
+      <p class="byline" style="font-size:0.875rem;color:#475569;margin:0.5rem 0 1.25rem;padding:0.75rem 1rem;background:#f1f5f9;border-left:3px solid #06b6d4;border-radius:0 6px 6px 0;">Written by <a href="/about/#author-bio" style="color:#164e63;font-weight:600;text-decoration:none;">Marko Visic, MPharm</a> &middot; Last reviewed 12 August 2026 &middot; Not medical advice.</p>
 
     <p class="intro-text">Calculate your ideal body weight using four established clinical formulas. Each formula provides a slightly different estimate, so we average them for a more balanced result. Ideal weight calculators are among the most popular health tools alongside <a href="/">BMI calculators</a> and <a href="/lean-body-mass/">body composition tools</a>, because they translate your height into a concrete weight target rather than an abstract index number. For a comprehensive guide, see our article on <a href="/ideal-weight/">how ideal weight calculators work</a>.</p>
 
@@ -412,6 +412,43 @@
           <span class="chart-bar-h-value">70.3 kg</span>
         </div>
       </div>
+
+      <figure style="margin:1.5rem 0;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" style="width:100%;height:auto;display:block;font-family:inherit;" role="img" aria-labelledby="svg-ideal-title svg-ideal-desc">
+          <title id="svg-ideal-title">Devine, Robinson, Miller and Hamwi ideal-weight formulas plotted across adult male heights</title>
+          <desc id="svg-ideal-desc">Four lines showing ideal-weight output for adult men across heights 5 foot to 6 foot 4. All four cross at 5'8" where they agree to within a few pounds. The lines fan outward at very short and very tall heights, with Hamwi giving the highest at tall heights and Miller giving the lowest.</desc>
+          <g stroke="currentColor" stroke-opacity="0.15" stroke-width="1" fill="none">
+            <line x1="55" y1="30" x2="55" y2="220"/><line x1="55" y1="220" x2="460" y2="220"/>
+            <line x1="55" y1="220" x2="460" y2="220"/><line x1="55" y1="172" x2="460" y2="172"/>
+            <line x1="55" y1="125" x2="460" y2="125"/><line x1="55" y1="77" x2="460" y2="77"/>
+            <line x1="55" y1="30" x2="460" y2="30"/>
+          </g>
+          <g font-size="11" fill="currentColor" fill-opacity="0.7">
+            <text x="48" y="223" text-anchor="end">100</text>
+            <text x="48" y="175" text-anchor="end">130</text>
+            <text x="48" y="128" text-anchor="end">160</text>
+            <text x="48" y="80" text-anchor="end">190</text>
+            <text x="48" y="33" text-anchor="end">220 lb</text>
+            <text x="55" y="240">5'0"</text><text x="181.6" y="240">5'6"</text>
+            <text x="308.1" y="240">6'0"</text><text x="460" y="240" text-anchor="end">6'4"</text>
+            <text x="14" y="125" transform="rotate(-90 14 125)" text-anchor="middle" font-weight="500">Weight (lb)</text>
+            <text x="258" y="256" text-anchor="middle" font-weight="500">Height (male; formulas apply to men)</text>
+          </g>
+          <polyline points="55.0,210.8 80.3,201.4 105.6,191.9 130.9,182.5 156.2,173.1 181.6,163.7 206.9,154.2 232.2,144.8 257.5,135.4 282.8,126.0 308.1,116.5 333.4,107.1 358.8,97.7 384.1,88.3 409.4,78.8 434.7,69.4 460.0,60.0" fill="none" stroke="#7c3aed" stroke-width="1.75" stroke-linecap="round"/>
+          <polyline points="55.0,203.8 80.3,195.8 105.6,187.7 130.9,179.7 156.2,171.7 181.6,163.7 206.9,155.6 232.2,147.6 257.5,139.6 282.8,131.5 308.1,123.5 333.4,115.5 358.8,107.5 384.1,99.4 409.4,91.4 434.7,83.4 460.0,75.3" fill="none" stroke="#0891b2" stroke-width="1.75" stroke-linecap="round"/>
+          <polyline points="55.0,196.8 80.3,190.2 105.6,183.6 130.9,176.9 156.2,170.3 181.6,163.7 206.9,157.0 232.2,150.4 257.5,143.8 282.8,137.1 308.1,130.5 333.4,123.9 358.8,117.2 384.1,110.6 409.4,104.0 434.7,97.3 460.0,90.7" fill="none" stroke="#0d9488" stroke-width="1.75" stroke-linecap="round"/>
+          <polyline points="55.0,182.2 80.3,177.2 105.6,172.3 130.9,167.4 156.2,162.5 181.6,157.5 206.9,152.6 232.2,147.7 257.5,142.8 282.8,137.9 308.1,132.9 333.4,128.0 358.8,123.1 384.1,118.2 409.4,113.3 434.7,108.3 460.0,103.4" fill="none" stroke="#65a30d" stroke-width="1.75" stroke-linecap="round"/>
+          <circle cx="181.6" cy="163.7" r="4" fill="none" stroke="#ef4444" stroke-width="1.5"/>
+          <g font-size="10" font-weight="600">
+            <text x="470" y="60" text-anchor="end" fill="#7c3aed">Hamwi</text>
+            <text x="470" y="76" text-anchor="end" fill="#0891b2">Devine</text>
+            <text x="470" y="92" text-anchor="end" fill="#0d9488">Robinson</text>
+            <text x="470" y="105" text-anchor="end" fill="#65a30d">Miller</text>
+            <text x="181.6" y="147" text-anchor="middle" font-size="10" fill="#ef4444">agreement point ≈ 5'6"</text>
+          </g>
+        </svg>
+        <figcaption style="font-size:0.75rem;color:var(--gray-500);text-align:center;margin-top:0.375rem;">Four formulas agree tightly around 5'6"&ndash;5'8" (male) and fan outward at extreme heights. This is why averaging across formulas is more robust than picking one.</figcaption>
+      </figure>
 
       <div class="stat-grid" style="margin-top:1.5rem;">
         <div class="stat-highlight">
