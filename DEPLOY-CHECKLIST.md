@@ -29,26 +29,38 @@ Nothing has been pushed. Push happens from Mac, at your discretion.
 
 ## 1. THINGS I MUST DO BY HAND BEFORE DEPLOY
 
-### 1a. Replace GTM container ID  [BLOCKER]
+### 1a. Analytics is direct GA4 gtag — no pre-deploy replacement needed
 
-File: **`/assets/js/consent-banner.js`**, line 26
+**Status: RESOLVED.** Phase 9 removed the GTM placeholder. Analytics now
+loads GA4 directly via the async gtag.js loader with property ID
+**`G-QKNBZGZTW1`**, from **`/assets/js/consent-banner.js`**
+(look for `var GA4_ID = ...` at the top of the file).
 
-```js
-var GTM_ID = 'GTM-PLACEHOLDER';   // <-- replace this
-```
+Behaviour unchanged from Phase 3: the loader is deferred and gated by
+Google Consent Mode v2 defaults set in the inline `<head>` snippet on
+every page. In-scope visitors (Europe timezones + Atlantic offshore
+EEA) start with `analytics_storage: 'denied'` until they choose Accept
+in the banner. Everyone else starts granted. Footer "Cookie settings"
+link reopens the banner.
 
-Replace `'GTM-PLACEHOLDER'` with the real GTM container ID (format
-`GTM-XXXXXXX`). Until this is a real ID, GTM will 404 and **no analytics,
-Raptive tags, or conversion pixels will ever fire.** Deploying without
-replacing it means zero analytics on production.
+**Deploying now results in real GA4 traffic against
+property G-QKNBZGZTW1** &mdash; no additional action required.
 
-Where the ID gets used: consent-banner.js loads `https://www.googletagmanager.com/gtm.js?id=<GTM_ID>`
-after consent, deferred and geo-gated. That single ID drives every
-GTM-orchestrated tag (GA4, Raptive, whatever else you add later).
+**Future migration to a tag manager (required at Raptive integration).**
+Raptive typically loads via a tag manager (their own or GTM). When we
+onboard, replace the direct `gtag.js` loader block in
+`/assets/js/consent-banner.js` (the block starting `s.async = true;
+s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_ID;`) with
+the tag-manager container snippet Raptive provides, and drop the
+`gtag('js', ...)` and `gtag('config', GA4_ID)` calls (the tag manager
+takes over that role). Keep the inline consent-defaults snippet in
+every `<head>` exactly as it is &mdash; Consent Mode v2 defaults must
+still fire before any tag-manager container loads, so consent state is
+propagated correctly.
 
 Note: search-console verification file `google12f8c2f9c03913a3.html` is
 already in place; Bing site-auth file `BingSiteAuth.xml` is also in place.
-No handling needed at deploy — they just need to exist at the apex.
+No handling needed at deploy &mdash; they just need to exist at the apex.
 
 ### 1b. Confirm brand treatment before deploy [DECISION NEEDED]
 

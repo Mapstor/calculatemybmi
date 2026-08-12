@@ -1,4 +1,4 @@
-/* CalculateMyBMI.net — deferred: GTM loader + consent banner.
+/* CalculateMyBMI.net — deferred: GA4 gtag loader + consent banner.
  * -----------------------------------------------------------------------------
  * This file loads AFTER HTML parse (via `defer` on the include). It runs only
  * after the inline head snippet has already:
@@ -10,7 +10,8 @@
  * Ordering guarantee: the inline snippet is a synchronous <script> at the top
  * of <head>, so it executes before HTML parsing continues; this deferred
  * script executes only after HTML parsing completes. Consent defaults are
- * therefore set well before GTM is invoked below.
+ * therefore set well before gtag.js is invoked below, and GA4 honours those
+ * defaults on every event it queues.
  *
  * Everything here is UI + late-firing. Nothing here blocks first paint.
  * The banner is position:fixed so it does not reflow the page — zero CLS.
@@ -19,26 +20,20 @@
 (function () {
   'use strict';
 
-  // -------------------------------------------------------------------------
-  // REPLACE BEFORE DEPLOY: put the real GTM container ID from
-  // tagmanager.google.com here. Format: 'GTM-XXXXXXX'. Until then, GTM will
-  // 404 and no tags fire. See DEPLOY-CHECKLIST.md section 1a.
-  // -------------------------------------------------------------------------
-  var GTM_ID = 'GTM-PLACEHOLDER';
+  var GA4_ID = 'G-QKNBZGZTW1';
 
-  // 1. Load GTM (defaults already set by the inline snippet)
+  // 1. Load GA4 gtag.js (defaults already set by the inline snippet).
+  //    Direct gtag is the pre-Raptive setup; at Raptive integration this will
+  //    move behind a tag manager (GTM or Raptive's equivalent). See
+  //    DEPLOY-CHECKLIST.md section 1a.
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_ID;
+  var first = document.getElementsByTagName('script')[0];
+  if (first && first.parentNode) first.parentNode.insertBefore(s, first);
+  else (document.head || document.documentElement).appendChild(s);
   gtag('js', new Date());
-  (function (w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-    var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l !== 'dataLayer' ? '&l=' + l : '';
-    j.async = true;
-    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-    if (f && f.parentNode) f.parentNode.insertBefore(j, f);
-    else (d.head || d.documentElement).appendChild(j);
-  })(window, document, 'script', 'dataLayer', GTM_ID);
+  gtag('config', GA4_ID);
 
   // 2. Reopen handler for footer "Cookie settings" link
   window.reopenConsentSettings = function () { showBanner(); };

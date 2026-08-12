@@ -1,7 +1,7 @@
 /* CalculateMyBMI.net — analytics.js
  * -----------------------------------------------------------------------------
- * NOTE: this file is now empty because Phase 4 split the analytics pipeline into
- * two pieces to remove render blocking:
+ * NOTE: this file is now empty. The analytics pipeline is split into two
+ * pieces to keep render blocking to zero:
  *
  *   1) An INLINE snippet in every page's <head> (baked into each HTML file):
  *      - dataLayer + gtag stub
@@ -10,14 +10,14 @@
  *      - applies any stored choice
  *
  *   2) /assets/js/consent-banner.js (loaded with `defer`):
- *      - GTM container loader
+ *      - GA4 gtag.js loader (async)
  *      - banner DOM + Accept/Decline handlers
  *      - localStorage persistence + reopenConsentSettings export
  *
  * Ordering guarantee: the inline snippet is a synchronous <script> at the top
  * of <head>, so it executes before HTML parsing continues. The deferred file
  * executes only after HTML parsing completes. Consent defaults are therefore
- * set well before GTM is invoked.
+ * set well before gtag.js is invoked.
  *
  * This stub is kept only to keep any accidental old `<script src="/assets/js/
  * analytics.js"></script>` references from 404-ing on a stale cache.

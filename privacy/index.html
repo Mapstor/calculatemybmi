@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <script>
-  /* Consent Mode v2 defaults — must run before any other script. See /assets/js/consent-banner.js for the deferred GTM loader + banner. */
+  /* Consent Mode v2 defaults — must run before any other script. See /assets/js/consent-banner.js for the deferred GA4 gtag loader + banner. */
   (function(){window.dataLayer=window.dataLayer||[];function g(){dataLayer.push(arguments);}window.gtag=g;var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch(e){}var inScope=/^Europe\//.test(tz)||tz===''||tz==='Atlantic/Reykjavik'||tz==='Atlantic/Faroe'||tz==='Atlantic/Azores'||tz==='Atlantic/Madeira'||tz==='Atlantic/Canary';window.__cmbmiInScope=inScope;var c=null;try{c=localStorage.getItem('cmbmi-consent');}catch(e){}window.__cmbmiChoice=c;g('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:inScope?'denied':'granted',wait_for_update:500});if(c==='accept')g('consent','update',{analytics_storage:'granted'});else if(c==='decline')g('consent','update',{analytics_storage:'denied'});})();
   </script>
   <script defer src="/assets/js/consent-banner.js"></script>
@@ -126,7 +126,7 @@
     <!-- 5. Consent -->
     <section class="content-section" style="margin-bottom:2rem;">
       <h2 style="margin-bottom:1rem;">5. Consent handling</h2>
-      <p style="color:var(--gray-600);line-height:1.75;">This site uses Google Consent Mode&nbsp;v2, with the following defaults set before Google Tag Manager loads:</p>
+      <p style="color:var(--gray-600);line-height:1.75;">This site uses Google Consent Mode&nbsp;v2, with the following defaults set before Google Analytics loads:</p>
       <ul style="color:var(--gray-600);line-height:1.75;padding-left:1.5rem;">
         <li><strong>Visitors detected as being in the EEA, UK, or Switzerland</strong> (heuristically, via the timezone reported by your browser): <em>analytics_storage denied by default</em>, until you choose Accept in the consent banner. Ad-related signals (ad_storage, ad_user_data, ad_personalization) are also denied by default.</li>
         <li><strong>Visitors elsewhere</strong>: analytics_storage granted by default (matching common practice for outside-EEA visitors). Ad-related signals denied &mdash; there is no advertising code to grant them to.</li>
@@ -178,7 +178,7 @@
     <!-- 9. Third parties -->
     <section class="content-section" style="margin-bottom:2rem;">
       <h2 style="margin-bottom:1rem;">9. Third parties</h2>
-      <p style="color:var(--gray-600);line-height:1.75;">The only third-party processor that receives data from this site is <strong>Google LLC</strong>, in its role as the operator of Google Analytics 4 and Google Tag Manager. Google's privacy notice: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>.</p>
+      <p style="color:var(--gray-600);line-height:1.75;">The only third-party processor that receives data from this site is <strong>Google LLC</strong>, as operator of Google Analytics 4. Google's privacy notice: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>.</p>
       <p style="color:var(--gray-600);line-height:1.75;">Our hosting provider processes standard HTTP request logs on our behalf.</p>
     </section>
 
