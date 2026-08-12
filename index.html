@@ -769,22 +769,22 @@
       <!-- BMI Category Distribution Charts -->
       <h3 style="margin-top:2rem;margin-bottom:1rem;">BMI Category Distribution in the U.S. Adult Population</h3>
 
-      <p style="color:var(--gray-600);">Roughly two thirds of U.S. adults have a BMI in the overweight or obese range. The distribution is illustrated below; for the current authoritative breakdown, see <a href="https://www.cdc.gov/obesity/adult-obesity-facts/index.html" rel="noopener" target="_blank">CDC Adult Obesity Facts</a>.</p>
-      <div class="chart-stack" style="margin-bottom:2rem;">
-        <div class="chart-bar-h" style="display:flex;height:40px;border-radius:var(--radius-md);overflow:hidden;margin-bottom:0.5rem;" aria-hidden="true">
-          <div style="width:1.6%;background:#3b82f6;" title="Underweight"></div>
-          <div style="width:26.9%;background:#22c55e;" title="Normal Weight"></div>
-          <div style="width:29.6%;background:#f59e0b;" title="Overweight"></div>
-          <div style="width:41.9%;background:#ef4444;" title="Obese"></div>
+      <p style="color:var(--gray-600);">Current US adult prevalence (adults 20+), from NHANES August 2021&ndash;August 2023:</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin:1rem 0 0.75rem;">
+        <div style="padding:1rem 1.25rem;background:#fff5f5;border:1px solid #fecaca;border-radius:var(--radius-md);">
+          <div style="font-size:1.5rem;font-weight:700;color:#991b1b;">40.3%</div>
+          <div style="font-size:0.8125rem;color:var(--gray-600);">Obesity (age-adjusted)</div>
         </div>
-        <div style="display:flex;gap:1rem;flex-wrap:wrap;font-size:0.8125rem;color:var(--gray-600);">
-          <span><span style="display:inline-block;width:12px;height:12px;background:#3b82f6;border-radius:2px;margin-right:4px;vertical-align:middle;"></span>Underweight</span>
-          <span><span style="display:inline-block;width:12px;height:12px;background:#22c55e;border-radius:2px;margin-right:4px;vertical-align:middle;"></span>Normal</span>
-          <span><span style="display:inline-block;width:12px;height:12px;background:#f59e0b;border-radius:2px;margin-right:4px;vertical-align:middle;"></span>Overweight</span>
-          <span><span style="display:inline-block;width:12px;height:12px;background:#ef4444;border-radius:2px;margin-right:4px;vertical-align:middle;"></span>Obese (41.9%)</span>
+        <div style="padding:1rem 1.25rem;background:#fef3c7;border:1px solid #fde68a;border-radius:var(--radius-md);">
+          <div style="font-size:1.5rem;font-weight:700;color:#92400e;">31.7%</div>
+          <div style="font-size:0.8125rem;color:var(--gray-600);">Overweight</div>
         </div>
-        <p style="font-size:0.75rem;color:var(--gray-500);margin-top:0.5rem;">Distribution illustrated from CDC NHANES 2017&ndash;March 2020 pre-pandemic cycles; U.S. adult obesity prevalence <strong>41.9%</strong> per <a href="https://www.cdc.gov/nchs/products/databriefs/db442.htm" rel="noopener" target="_blank">NCHS Data Brief No. 442 (Stierman et&nbsp;al., 2021)</a>. See <a href="https://www.cdc.gov/obesity/adult-obesity-facts/index.html" rel="noopener" target="_blank">CDC Adult Obesity Facts</a> for the current dataset.</p>
+        <div style="padding:1rem 1.25rem;background:#fee2e2;border:1px solid #fca5a5;border-radius:var(--radius-md);">
+          <div style="font-size:1.5rem;font-weight:700;color:#7f1d1d;">9.7%</div>
+          <div style="font-size:0.8125rem;color:var(--gray-600);">Severe obesity</div>
+        </div>
       </div>
+      <p style="font-size:0.75rem;color:var(--gray-500);margin-top:0.25rem;">Obesity and severe obesity: <a href="https://www.cdc.gov/nchs/products/databriefs/db508.htm" rel="noopener" target="_blank">Emmerich SD et al., NCHS Data Brief No. 508 (September 2024)</a>, NHANES August 2021&ndash;August 2023, adults 20+. Overweight: <a href="https://www.cdc.gov/nchs/products/databriefs/db508.htm" rel="noopener" target="_blank">Fryar CD et al., NCHS Health E-Stat</a>, same cycle.</p>
 
       <h3 style="margin-top:2rem;margin-bottom:1rem;">BMI Range Scale</h3>
       <div class="chart-range" style="margin-bottom:2rem;">
@@ -818,9 +818,9 @@
       <!-- Statistics Highlights -->
       <div class="info-card-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin:1.5rem 0;">
         <div class="stat-highlight" style="background:var(--primary-bg);border:1px solid var(--primary-light);border-radius:var(--radius-lg);padding:1.25rem;text-align:center;">
-          <div style="font-size:2rem;font-weight:700;color:var(--secondary);">41.9%</div>
-          <div style="font-size:0.875rem;color:var(--gray-600);">U.S. adult obesity prevalence</div>
-          <div style="font-size:0.75rem;color:var(--gray-500);margin-top:0.25rem;">CDC NHANES 2017&ndash;March 2020 <br>(<a href="https://www.cdc.gov/nchs/products/databriefs/db442.htm" rel="noopener" target="_blank">NCHS Data Brief 442</a>)</div>
+          <div style="font-size:2rem;font-weight:700;color:var(--secondary);">40.3%</div>
+          <div style="font-size:0.875rem;color:var(--gray-600);">U.S. adult obesity (20+)</div>
+          <div style="font-size:0.75rem;color:var(--gray-500);margin-top:0.25rem;">CDC NHANES August 2021&ndash;August 2023 <br>(<a href="https://www.cdc.gov/nchs/products/databriefs/db508.htm" rel="noopener" target="_blank">NCHS Data Brief 508</a>)</div>
         </div>
         <div class="stat-highlight" style="background:var(--primary-bg);border:1px solid var(--primary-light);border-radius:var(--radius-lg);padding:1.25rem;text-align:center;">
           <div style="font-size:2rem;font-weight:700;color:var(--secondary);">18.5-24.9</div>
@@ -831,11 +831,6 @@
           <div style="font-size:2rem;font-weight:700;color:var(--secondary);">5-10%</div>
           <div style="font-size:0.875rem;color:var(--gray-600);">Weight loss for health benefits</div>
           <div style="font-size:0.75rem;color:var(--gray-500);margin-top:0.25rem;">Source: NHLBI</div>
-        </div>
-        <div class="stat-highlight" style="background:var(--primary-bg);border:1px solid var(--primary-light);border-radius:var(--radius-lg);padding:1.25rem;text-align:center;">
-          <div style="font-size:2rem;font-weight:700;color:var(--secondary);">1B+</div>
-          <div style="font-size:0.875rem;color:var(--gray-600);">People with obesity worldwide</div>
-          <div style="font-size:0.75rem;color:var(--gray-500);margin-top:0.25rem;">Source: WHO (2022)</div>
         </div>
       </div>
     </section>

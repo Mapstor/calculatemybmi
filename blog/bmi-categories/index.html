@@ -232,78 +232,27 @@
         <li style="margin-bottom: 0.5rem;"><strong>Disability:</strong> Significantly increased risk of functional disability and inability to work</li>
       </ul>
 
-      <h2>BMI Category Distribution (U.S. Adults)</h2>
-      <p>The following table shows how American adults are distributed across BMI categories, based on NHANES data:</p>
-      <div class="table-responsive">
-        <table class="data-table">
-          <thead><tr><th>Category</th><th>Percentage of U.S. Adults</th></tr></thead>
-          <tbody>
-            <tr><td>Underweight (&lt; 18.5)</td><td>1.6%</td></tr>
-            <tr><td>Normal (18.5&ndash;24.9)</td><td>27.0%</td></tr>
-            <tr><td>Overweight (25.0&ndash;29.9)</td><td>30.7%</td></tr>
-            <tr><td>Obese I (30.0&ndash;34.9)</td><td>20.2%</td></tr>
-            <tr><td>Obese II (35.0&ndash;39.9)</td><td>10.5%</td></tr>
-            <tr><td>Obese III (&ge; 40.0)</td><td>10.0%</td></tr>
-          </tbody>
-        </table>
+      <h2>BMI Category Prevalence (U.S. Adults 20+)</h2>
+      <p>Headline prevalence figures for U.S. adults from CDC NHANES <strong>August 2021&ndash;August 2023</strong>. Only these three figures are shown because they trace to a specific NCHS publication; the class-by-class breakdown is not reported in the same brief.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin:1rem 0 0.75rem;">
+        <div style="padding:1rem 1.25rem;background:#fff5f5;border:1px solid #fecaca;border-radius:var(--radius-md);">
+          <div style="font-size:1.5rem;font-weight:700;color:#991b1b;">40.3%</div>
+          <div style="font-size:0.8125rem;color:var(--gray-600);">Obesity, age-adjusted (BMI &ge; 30)</div>
+        </div>
+        <div style="padding:1rem 1.25rem;background:#fef3c7;border:1px solid #fde68a;border-radius:var(--radius-md);">
+          <div style="font-size:1.5rem;font-weight:700;color:#92400e;">31.7%</div>
+          <div style="font-size:0.8125rem;color:var(--gray-600);">Overweight (BMI 25&ndash;29.9)</div>
+        </div>
+        <div style="padding:1rem 1.25rem;background:#fee2e2;border:1px solid #fca5a5;border-radius:var(--radius-md);">
+          <div style="font-size:1.5rem;font-weight:700;color:#7f1d1d;">9.7%</div>
+          <div style="font-size:0.8125rem;color:var(--gray-600);">Severe obesity (BMI &ge; 40)</div>
+        </div>
       </div>
-      <p>The distribution above is drawn from <a href="https://www.cdc.gov/obesity/php/data-research/adult-obesity-facts.html" target="_blank" rel="noopener">CDC NHANES obesity statistics</a>. Adults with obesity (BMI &ge; 30) together with those in the overweight range account for the majority of the US adult population. Prevalence has risen substantially across recent decades.</p>
+      <p style="font-size:0.8125rem;color:var(--gray-500);margin-top:0.5rem;">Obesity and severe obesity: <a href="https://www.cdc.gov/nchs/products/databriefs/db508.htm" target="_blank" rel="noopener">Emmerich SD, Fryar CD, Stierman B, Ogden CL. NCHS Data Brief No. 508, September 2024</a>, NHANES August 2021&ndash;August 2023. Overweight: <a href="https://www.cdc.gov/nchs/products/databriefs/db508.htm" target="_blank" rel="noopener">Fryar CD et al., NCHS Health E-Stat</a>, same cycle. See <a href="https://www.cdc.gov/obesity/adult-obesity-facts/index.html" target="_blank" rel="noopener">CDC Adult Obesity Facts</a> for the current dataset.</p>
+
+      <p>Adults with obesity (BMI &ge; 30) together with those in the overweight range account for the majority of the U.S. adult population. Prevalence has risen substantially across recent decades.</p>
 
       <p style="font-size: 0.9375rem; color: var(--gray-600);">If you would like the underlying chart-reading skill separately, see our guide to <a href="/blog/bmi-chart-explained/">how to read a BMI chart</a>.</p>
-
-      <!-- BMI Category Distribution Chart -->
-      <h3>Visual: U.S. Adult BMI Distribution</h3>
-      <div class="chart-stack">
-        <div class="chart-stack-bar">
-          <div class="chart-stack-segment underweight" style="flex: 1.6;">1.6%</div>
-          <div class="chart-stack-segment normal" style="flex: 27;">27%</div>
-          <div class="chart-stack-segment overweight" style="flex: 30.7;">30.7%</div>
-          <div class="chart-stack-segment obese" style="flex: 20.2;">20.2%</div>
-          <div class="chart-stack-segment obese-severe" style="flex: 20.5;">20.5%</div>
-        </div>
-      </div>
-      <div class="chart-legend">
-        <div class="chart-legend-item"><span class="chart-legend-dot underweight"></span>Underweight</div>
-        <div class="chart-legend-item"><span class="chart-legend-dot normal"></span>Normal</div>
-        <div class="chart-legend-item"><span class="chart-legend-dot overweight"></span>Overweight</div>
-        <div class="chart-legend-item"><span class="chart-legend-dot obese"></span>Obese I</div>
-        <div class="chart-legend-item"><span class="chart-legend-dot obese-severe"></span>Obese II-III</div>
-      </div>
-
-      <!-- Horizontal Bar Chart for Category Distribution -->
-      <h3>Category Breakdown</h3>
-      <div class="chart-bar-h">
-        <div class="chart-bar-h-item">
-          <span class="chart-bar-h-label">Underweight</span>
-          <div class="chart-bar-h-track"><div class="chart-bar-h-fill underweight" style="width: 5.3%;">1.6%</div></div>
-          <span class="chart-bar-h-value">1.6%</span>
-        </div>
-        <div class="chart-bar-h-item">
-          <span class="chart-bar-h-label">Normal</span>
-          <div class="chart-bar-h-track"><div class="chart-bar-h-fill normal" style="width: 88%;">27%</div></div>
-          <span class="chart-bar-h-value">27.0%</span>
-        </div>
-        <div class="chart-bar-h-item">
-          <span class="chart-bar-h-label">Overweight</span>
-          <div class="chart-bar-h-track"><div class="chart-bar-h-fill overweight" style="width: 100%;">30.7%</div></div>
-          <span class="chart-bar-h-value">30.7%</span>
-        </div>
-        <div class="chart-bar-h-item">
-          <span class="chart-bar-h-label">Obese I</span>
-          <div class="chart-bar-h-track"><div class="chart-bar-h-fill obese" style="width: 66%;">20.2%</div></div>
-          <span class="chart-bar-h-value">20.2%</span>
-        </div>
-        <div class="chart-bar-h-item">
-          <span class="chart-bar-h-label">Obese II</span>
-          <div class="chart-bar-h-track"><div class="chart-bar-h-fill obese" style="width: 34%;">10.5%</div></div>
-          <span class="chart-bar-h-value">10.5%</span>
-        </div>
-        <div class="chart-bar-h-item">
-          <span class="chart-bar-h-label">Obese III</span>
-          <div class="chart-bar-h-track"><div class="chart-bar-h-fill obese" style="width: 33%;">10.0%</div></div>
-          <span class="chart-bar-h-value">10.0%</span>
-        </div>
-      </div>
 
       <!-- BMI Category Range Visualization -->
       <h3>BMI Scale with Category Boundaries</h3>
