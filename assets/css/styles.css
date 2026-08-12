@@ -257,6 +257,8 @@ main { flex: 1; padding: 2rem 0 3rem; }
 .footer-nav li { margin-bottom: 0.5rem; }
 .footer-nav a { font-size: 0.875rem; color: var(--gray-400); }
 .footer-nav a:hover { color: white; text-decoration: none; }
+.footer-cookie-btn { background: none; border: 0; padding: 0; margin: 0; font: inherit; font-size: 0.875rem; color: var(--gray-400); cursor: pointer; text-decoration: underline; }
+.footer-cookie-btn:hover { color: white; text-decoration: none; }
 .footer-bottom { padding-top: 1.5rem; border-top: 1px solid var(--gray-800); font-size: 0.8125rem; text-align: center; }
 
 /* ============================================
