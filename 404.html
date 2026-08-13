@@ -19,7 +19,8 @@
   <header class="header"><div class="container"><div class="header-inner">
     <a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span>CalculateMyBMI</span></a>
     <nav class="nav-desktop"><div class="nav-dropdown"><a href="/calculators/" class="nav-dropdown-toggle">Calculators <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px;vertical-align:middle;"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><div class="nav-dropdown-menu"><a href="/">Standard BMI</a><a href="/women-bmi-calculator/">BMI for Women</a><a href="/men-bmi-calculator/">BMI for Men</a><a href="/age-bmi-calculator/">BMI by Age</a><a href="/kids-bmi-calculator/">Pediatric BMI</a><div class="nav-dropdown-divider"></div><a href="/new-bmi-calculator/">New BMI (Trefethen)</a><a href="/ideal-weight/">Ideal Weight</a><a href="/lean-body-mass/">Lean Body Mass</a><div class="nav-dropdown-divider"></div><a href="/calculators/">All Calculators</a></div></div><a href="/blog/">Guides</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav>
-  </div></div></header>
+    <button class="nav-toggle" aria-label="Menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  </div><nav class="nav-mobile"><div class="nav-mobile-section">Calculators</div><a href="/">Standard BMI</a><a href="/women-bmi-calculator/">BMI for Women</a><a href="/men-bmi-calculator/">BMI for Men</a><a href="/age-bmi-calculator/">BMI by Age</a><a href="/kids-bmi-calculator/">Pediatric BMI</a><a href="/new-bmi-calculator/">New BMI (Trefethen)</a><a href="/ideal-weight/">Ideal Weight</a><a href="/lean-body-mass/">Lean Body Mass</a><a href="/calculators/">All Calculators</a><div class="nav-mobile-section">More</div><a href="/blog/">Guides</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div></header>
 
   <main><div class="container" style="max-width: 720px; text-align: center; padding: 4rem 1.5rem;">
     <p style="font-size: 5rem; font-weight: 800; color: var(--primary); margin: 0; line-height: 1;">404</p>
@@ -44,5 +45,6 @@
   </div></main>
 
   <footer class="footer"><div class="container"><div class="footer-bottom"><p>&copy; 2026 Moving Data Systems d.o.o. &middot; For informational purposes only. Not medical advice. Consult your healthcare provider. &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a> &middot; <button type="button" class="footer-cookie-btn" onclick="if(typeof reopenConsentSettings===&quot;function&quot;)reopenConsentSettings();">Cookie settings</button></p></div></div></footer>
+  <script>document.querySelector('.nav-toggle')?.addEventListener('click',()=>document.querySelector('.nav-mobile')?.classList.toggle('active'));</script>
 </body>
 </html>
