@@ -1,7 +1,7 @@
-# External Links Inventory (post-Phase-14)
-Every distinct external URL sitewide, with the pages using it. No network in this box — human verification needed.
+# External Links Inventory (post-Phase-15)
+Every distinct external URL sitewide, with the pages using it. No network in this box - human verification needed.
 
-**Total distinct external URLs:** 60
+**Total distinct external URLs:** 61
 
 ---
 
@@ -54,6 +54,10 @@ Used on 1 page(s):
 ### https://pubmed.ncbi.nlm.nih.gov/21872751/
 Used on 1 page(s):
 - `/blog/how-to-lower-bmi/`
+
+### https://pubmed.ncbi.nlm.nih.gov/22106927/
+Used on 1 page(s):
+- `/blog/waist-to-height-ratio/`
 
 ### https://pubmed.ncbi.nlm.nih.gov/24452240/
 Used on 9 page(s):
@@ -152,9 +156,8 @@ Used on 1 page(s):
 - `/about/`
 
 ### https://www.health.harvard.edu/
-Used on 3 page(s):
+Used on 2 page(s):
 - `/blog/bmi-and-metabolism/`
-- `/blog/body-fat-vs-bmi/`
 - `/ideal-weight/`
 
 ### https://www.health.harvard.edu/blog/how-useful-is-the-body-mass-index-bmi-201603309339
@@ -197,10 +200,9 @@ Used on 1 page(s):
 - `/about/`
 
 ### https://www.mayoclinic.org/
-Used on 4 page(s):
+Used on 3 page(s):
 - `/age-bmi-calculator/`
 - `/blog/bmi-and-metabolism/`
-- `/blog/body-fat-vs-bmi/`
 - `/ideal-weight/`
 
 ### https://www.mayoclinic.org/diseases-conditions/childhood-obesity/symptoms-causes/syc-20354827
@@ -235,8 +237,7 @@ Used on 1 page(s):
 - `/age-bmi-calculator/`
 
 ### https://www.nhlbi.nih.gov/
-Used on 2 page(s):
-- `/blog/body-fat-vs-bmi/`
+Used on 1 page(s):
 - `/lean-body-mass/`
 
 ### https://www.nhlbi.nih.gov/calculate-your-bmi
@@ -343,3 +344,4 @@ Used on 17 page(s):
 ### https://www.who.int/tools/child-growth-standards
 Used on 1 page(s):
 - `/kids-bmi-calculator/`
+

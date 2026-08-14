@@ -287,3 +287,44 @@ Applied fixes (approved):
   - `href="/#panel-ideal"` → `href="/ideal-weight/"`
 
 Sitewide verification: **145 internal `#fragment` links checked, 0 missing anchor targets.**
+
+
+---
+
+## Phase 15 disposition (2026-08)
+
+### 15.2 sourcing repair — split
+For the ~30 unique surviving org-name attributions after Phase 14, classification (a) generic vs (b) specific:
+
+**(a) GENERIC — kept without deep link (widely-accepted institutional framing / historical fact):**
+- `about/`: WHO/CDC/NHLBI as first-line-screening recommenders
+- `blog/bmi-history/`: NIH 1985 adoption, 140-year gap facts
+- `blog/bmi-limitations/`: WHO lower BMI cutoffs for Asian populations (Western Pacific Region)
+- `blog/healthy-bmi-range/`: passing reference to WHO clinical guidance
+- `blog/underweight-bmi-risks/`: WHO/CDC BMI < 18.5 classification
+- `index.html`: WHO Western Pacific Region cutoffs
+- `kids-bmi-calculator/`: AAP parent-guidance framing (role, not specific claim)
+- `kids-bmi-calculator/`: CDC 60 min activity for ages 6-17
+- `lean-body-mass/`: ACSM recognition of body composition as fitness component
+
+**(b) SPECIFIC — attribution stripped, claim softened, or claim deleted:**
+- `blog/bmi-and-health-risks/`: "IARC + American Cancer Society identify..." attribution softened; "at least 13 cancers" specificity relaxed
+- `blog/bmi-and-metabolism/`: "AHA identifies... most significant challenges" DELETED
+- `blog/bmi-for-athletes/`: NSCA+ACSM emphasis, Cleveland Clinic recommendation, Mayo Clinic recommendation, ACSM limitation, Harvard Health research — all attributions removed; claims reworded generically or deleted
+- `blog/body-fat-vs-bmi/`: 3 resource-list items pointing to bare domains DELETED; ACSM "18% denser" attribution stripped
+- `blog/how-to-lower-bmi/`: AHA "150 min moderate / 75 min vigorous" attribution generalized to "public-health guidelines"
+- `blog/underweight-bmi-risks/`: Mayo Clinic recommendation reworded without attribution
+- `blog/waist-to-height-ratio/`: BMJ "another study" claim DELETED; "A 2017 study of over 15,000 adults" claim DELETED; "Research in Diabetes Care" claim DELETED; "A large prospective study" mortality claim DELETED
+- `blog/healthy-bmi-range/`: Lancet 2016 10.6M participants specificity generalized to "large pooled analyses"
+- `calculators/`: CDC "42% of adults" attribution stripped
+- `index.html`: NIH 40/35-inch waist attribution stripped
+- `kids-bmi-calculator/`: AAP fruit-juice specific numbers + AAP screen-time recommendations reworded to "common pediatric guidance"
+- `lean-body-mass/`: NSCA "2-3× per week" attribution reworded
+- `men-bmi-calculator/`: Mayo Clinic combining recommendation DELETED; Mayo/AHA resources pointer DELETED; AHA emphasis DELETED; "as noted by Harvard Health" DELETED; "See Harvard Health" pointer DELETED; 3× "The NHLBI recommends" attributions reworded
+- `women-bmi-calculator/`: Mayo Clinic recommendation reworded; CDC's Office on Women's Health attribution stripped; ACOG 5-10% attribution stripped
+
+### 15.3 WHtR restoration on `/blog/waist-to-height-ratio/`
+- Corrected the "landmark 2012 meta-analysis published in PLOS ONE" misattribution: replaced with Ashwell M, Gunn P, Gibson S (Obesity Reviews 2012;13(3):275-286) with deep link https://pubmed.ncbi.nlm.nih.gov/22106927/. Attributed findings: pooled ~300,000 adults across multiple populations; WHtR discriminated diabetes, hypertension, and cardiovascular risk factors better than BMI or waist circumference in both sexes.
+- Added Browning LM, Hsieh SD, Ashwell M (Nutrition Research Reviews 2010) attribution: mean AUROC 0.704 for WHtR, 0.693 for waist circumference, 0.671 for BMI; boundary value 0.5 for both men and women across 14 countries.
+- Framed both as "findings from those reviews, not clinical guidance."
+- Removed 3 unattributed prose claims in "Key Research Findings" block (2017 15k-adult CHD study, Diabetes Care WHtR-vs-BMI, "large prospective" mortality study). Kept the citation table which still lists Savva 2013, Petursson 2011, Lee 2008 by author/journal/year.
