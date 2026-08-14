@@ -1,7 +1,7 @@
-# External Links Inventory
-Every distinct external URL referenced sitewide, with the pages using it. This box has no network — human verification needed.
+# External Links Inventory (post-Phase-14)
+Every distinct external URL sitewide, with the pages using it. No network in this box — human verification needed.
 
-**Total distinct external URLs:** 76
+**Total distinct external URLs:** 60
 
 ---
 
@@ -9,25 +9,13 @@ Every distinct external URL referenced sitewide, with the pages using it. This b
 Used on 1 page(s):
 - `/blog/underweight-bmi-risks/`
 
-### https://diabetes.org/
-Used on 1 page(s):
-- `/blog/bmi-and-health-risks/`
-
 ### https://en.wikipedia.org/wiki/Adolphe_Quetelet
 Used on 1 page(s):
 - `/blog/bmi-history/`
 
-### https://journals.plos.org/plosone/
-Used on 1 page(s):
-- `/blog/waist-to-height-ratio/`
-
 ### https://my.clevelandclinic.org/
-Used on 5 page(s):
+Used on 1 page(s):
 - `/blog/bmi-and-metabolism/`
-- `/blog/bmi-for-athletes/`
-- `/blog/bmi-limitations/`
-- `/blog/bmi-tracking-guide/`
-- `/blog/underweight-bmi-risks/`
 
 ### https://my.clevelandclinic.org/health/articles/9464-body-mass-index-bmi
 Used on 4 page(s):
@@ -50,6 +38,10 @@ Used on 4 page(s):
 - `/age-bmi-calculator/`
 - `/blog/bmi-and-health-risks/`
 - `/blog/bmi-categories/`
+
+### https://pmc.ncbi.nlm.nih.gov/articles/PMC4890841/
+Used on 1 page(s):
+- `/ideal-weight/`
 
 ### https://policies.google.com/privacy
 Used on 1 page(s):
@@ -79,14 +71,9 @@ Used on 9 page(s):
 Used on 1 page(s):
 - `/privacy/`
 
-### https://www.aap.org/
-Used on 1 page(s):
-- `/kids-bmi-calculator/`
-
 ### https://www.acefitness.org/
-Used on 2 page(s):
+Used on 1 page(s):
 - `/blog/body-fat-vs-bmi/`
-- `/lean-body-mass/`
 
 ### https://www.acefitness.org/resources/everyone/tools-calculators/percent-body-fat-calculator/
 Used on 3 page(s):
@@ -94,45 +81,24 @@ Used on 3 page(s):
 - `/new-bmi-calculator/`
 - `/women-bmi-calculator/`
 
-### https://www.acog.org/
-Used on 1 page(s):
-- `/women-bmi-calculator/`
-
 ### https://www.acog.org/womens-health/faqs/obesity-and-pregnancy
 Used on 1 page(s):
 - `/women-bmi-calculator/`
 
 ### https://www.acsm.org/
-Used on 4 page(s):
-- `/blog/bmi-for-athletes/`
+Used on 3 page(s):
 - `/blog/body-fat-vs-bmi/`
 - `/ideal-weight/`
 - `/lean-body-mass/`
-
-### https://www.ahajournals.org/
-Used on 1 page(s):
-- `/blog/waist-to-height-ratio/`
-
-### https://www.cancer.org/
-Used on 1 page(s):
-- `/blog/bmi-and-health-risks/`
 
 ### https://www.cdc.gov/bmi/
-Used on 15 page(s):
-- `/about/`
+Used on 7 page(s):
 - `/age-bmi-calculator/`
-- `/blog/bmi-and-health-risks/`
 - `/blog/bmi-and-metabolism/`
-- `/blog/bmi-chart-explained/`
-- `/blog/bmi-for-athletes/`
 - `/blog/bmi-history/`
-- `/blog/bmi-limitations/`
-- `/blog/bmi-tracking-guide/`
 - `/blog/body-fat-vs-bmi/`
-- `/blog/underweight-bmi-risks/`
 - `/ideal-weight/`
 - `/lean-body-mass/`
-- `/men-bmi-calculator/`
 - `/new-bmi-calculator/`
 
 ### https://www.cdc.gov/bmi/about/index.html
@@ -154,7 +120,7 @@ Used on 2 page(s):
 - `/about/`
 - `/kids-bmi-calculator/`
 
-### https://www.cdc.gov/healthyweight/
+### https://www.cdc.gov/healthy-weight-growth/about/index.html
 Used on 1 page(s):
 - `/blog/how-to-lower-bmi/`
 
@@ -168,10 +134,6 @@ Used on 3 page(s):
 Used on 1 page(s):
 - `/blog/bmi-categories/`
 
-### https://www.cdc.gov/obesity/data/adult.html
-Used on 1 page(s):
-- `/calculators/`
-
 ### https://www.cdc.gov/obesity/php/about/childhood-obesity-facts.html
 Used on 1 page(s):
 - `/kids-bmi-calculator/`
@@ -180,14 +142,6 @@ Used on 1 page(s):
 Used on 2 page(s):
 - `/age-bmi-calculator/`
 - `/blog/bmi-categories/`
-
-### https://www.cdc.gov/women/index.htm
-Used on 1 page(s):
-- `/women-bmi-calculator/`
-
-### https://www.eatright.org/
-Used on 1 page(s):
-- `/blog/how-to-lower-bmi/`
 
 ### https://www.economist.com/letters/2013/01/05/body-mass-index
 Used on 1 page(s):
@@ -198,15 +152,10 @@ Used on 1 page(s):
 - `/about/`
 
 ### https://www.health.harvard.edu/
-Used on 8 page(s):
+Used on 3 page(s):
 - `/blog/bmi-and-metabolism/`
-- `/blog/bmi-for-athletes/`
-- `/blog/bmi-tracking-guide/`
 - `/blog/body-fat-vs-bmi/`
-- `/blog/how-to-lower-bmi/`
 - `/ideal-weight/`
-- `/kids-bmi-calculator/`
-- `/men-bmi-calculator/`
 
 ### https://www.health.harvard.edu/blog/how-useful-is-the-body-mass-index-bmi-201603309339
 Used on 11 page(s):
@@ -235,16 +184,9 @@ Used on 2 page(s):
 Used on 1 page(s):
 - `/blog/bmi-categories/`
 
-### https://www.healthychildren.org/
-Used on 1 page(s):
-- `/kids-bmi-calculator/`
-
 ### https://www.heart.org/en/healthy-living/
-Used on 4 page(s):
-- `/blog/bmi-and-health-risks/`
+Used on 1 page(s):
 - `/blog/bmi-and-metabolism/`
-- `/blog/how-to-lower-bmi/`
-- `/men-bmi-calculator/`
 
 ### https://www.heart.org/en/healthy-living/healthy-eating/losing-weight/bmi-in-adults
 Used on 1 page(s):
@@ -255,31 +197,15 @@ Used on 1 page(s):
 - `/about/`
 
 ### https://www.mayoclinic.org/
-Used on 11 page(s):
+Used on 4 page(s):
 - `/age-bmi-calculator/`
-- `/blog/bmi-and-health-risks/`
 - `/blog/bmi-and-metabolism/`
-- `/blog/bmi-for-athletes/`
-- `/blog/bmi-limitations/`
-- `/blog/bmi-tracking-guide/`
 - `/blog/body-fat-vs-bmi/`
-- `/blog/how-to-lower-bmi/`
-- `/blog/underweight-bmi-risks/`
 - `/ideal-weight/`
-- `/men-bmi-calculator/`
 
 ### https://www.mayoclinic.org/diseases-conditions/childhood-obesity/symptoms-causes/syc-20354827
 Used on 1 page(s):
 - `/kids-bmi-calculator/`
-
-### https://www.mayoclinic.org/diseases-conditions/obesity/
-Used on 2 page(s):
-- `/blog/bmi-chart-explained/`
-- `/women-bmi-calculator/`
-
-### https://www.mayoclinic.org/diseases-conditions/obesity/in-depth/bmi-calculator/itt-20084938
-Used on 1 page(s):
-- `/blog/bmi-formula/`
 
 ### https://www.mayoclinic.org/diseases-conditions/obesity/symptoms-causes/syc-20375742
 Used on 8 page(s):
@@ -308,23 +234,10 @@ Used on 1 page(s):
 Used on 1 page(s):
 - `/age-bmi-calculator/`
 
-### https://www.ncbi.nlm.nih.gov/
-Used on 3 page(s):
-- `/blog/bmi-history/`
-- `/blog/bmi-limitations/`
-- `/blog/waist-to-height-ratio/`
-
-### https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4890841/
-Used on 1 page(s):
-- `/ideal-weight/`
-
 ### https://www.nhlbi.nih.gov/
-Used on 5 page(s):
-- `/blog/bmi-and-health-risks/`
+Used on 2 page(s):
 - `/blog/body-fat-vs-bmi/`
-- `/blog/underweight-bmi-risks/`
 - `/lean-body-mass/`
-- `/men-bmi-calculator/`
 
 ### https://www.nhlbi.nih.gov/calculate-your-bmi
 Used on 5 page(s):
@@ -377,10 +290,6 @@ Used on 1 page(s):
 Used on 1 page(s):
 - `/age-bmi-calculator/`
 
-### https://www.niddk.nih.gov/bwp
-Used on 1 page(s):
-- `/blog/how-to-lower-bmi/`
-
 ### https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash
 Used on 2 page(s):
 - `/blog/bmi-and-health-risks/`
@@ -408,17 +317,8 @@ Used on 1 page(s):
 - `/blog/underweight-bmi-risks/`
 
 ### https://www.nsca.com/
-Used on 2 page(s):
-- `/blog/bmi-for-athletes/`
+Used on 1 page(s):
 - `/lean-body-mass/`
-
-### https://www.who.int/europe/news-room/fact-sheets/item/a-healthy-lifestyle---who-recommendations
-Used on 1 page(s):
-- `/blog/bmi-formula/`
-
-### https://www.who.int/health-topics/obesity
-Used on 1 page(s):
-- `/about/`
 
 ### https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight
 Used on 17 page(s):
