@@ -138,6 +138,92 @@
     .contact-box a.contact-btn { display: inline-block; background: var(--primary); color: white; padding: 0.625rem 1.5rem; border-radius: var(--radius-lg); text-decoration: none; font-weight: 500; font-size: 0.9375rem; }
     .contact-box a.contact-btn:hover { opacity: 0.9; }
   </style>
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://calculatemybmi.net/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "About",
+      "item": "https://calculatemybmi.net/about/"
+    }
+  ]
+}
+  </script>
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is this BMI calculator accurate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The calculators implement the same formulas used in clinical practice: the standard BMI formula (weight in kilograms divided by height in metres squared), the CDC growth-chart percentile method for children, the Trefethen height-corrected variant, the Devine/Robinson/Miller/Hamwi ideal-weight equations, and the Boer/James/Hume lean-body-mass equations. BMI is a screening tool with known limitations — it does not distinguish muscle from fat mass, and results should be interpreted alongside guidance from a healthcare professional."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my personal data stored or shared?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Calculator inputs (height, weight, age, sex) are processed in your browser and are not transmitted to the server or to any third party. There is no database of your inputs, and no cookie records what you typed into a calculator. Separately, the site does set Google Analytics 4 cookies (page-view counting) and produces standard HTTP server logs — see the privacy policy for the full picture."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who created these calculators?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The site is built and maintained by Marko Visic, MPharm, and operated by Moving Data Systems d.o.o. The calculators implement formulas from peer-reviewed literature (Devine, Robinson, Miller, Hamwi for ideal weight; Boer, James, Hume for lean body mass; the Quetelet formula for BMI; Trefethen 2013 for the height-corrected variant) and reference institutional guidance from WHO, CDC, NHLBI, and other bodies. No original methodology is introduced — the site presents established science."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use these results for medical decisions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The calculators are informational and educational. They use the same formulas that appear in clinical practice, but the results are not a substitute for professional medical evaluation. BMI is one of many things a healthcare provider considers when assessing health. Take your result to a doctor, nutritionist, or other qualified professional who can interpret it against your full medical history and any relevant labs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often is the content updated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pages are updated when authoritative bodies revise their guidance (for example, a WHO or CDC classification change) and when individual pages are revisited. Each guide's byline carries a \"Last reviewed\" date so it is clear when the page was last touched."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to create an account to use the calculators?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. All calculators are free to use with no registration. No email address, no username, no sign-up. Load a page and start using it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes your calculators different from others online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Eight calculators covering different population and use cases (women, men, age-adjusted, pediatric, Trefethen height-corrected, ideal weight, lean body mass), rather than one generic tool. Each carries context-specific interpretation, supports both imperial and metric units, runs entirely in your browser, and links to the institutional guidance behind the numbers. The guides section explains the underlying science, the limitations of BMI, and how to read your result alongside other health metrics."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body>
   <header class="header"><div class="container"><div class="header-inner">

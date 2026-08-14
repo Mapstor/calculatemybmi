@@ -261,7 +261,7 @@
         <!-- 1. Standard BMI -->
         <div class="calc-card" style="border-left:5px solid var(--primary);">
           <h2 style="font-size:1.125rem;margin:0 0 0.625rem;color:var(--gray-900);">Standard BMI Calculator</h2>
-          <p style="font-size:0.875rem;color:var(--gray-600);margin:0 0 0.75rem;">The classic Body Mass Index calculator for all adults. Enter your height and weight to get an instant BMI result with category classification, healthy weight range, and personalized guidance. This is the most widely used BMI tool worldwide.</p>
+          <p style="font-size:0.875rem;color:var(--gray-600);margin:0 0 0.75rem;">The classic Body Mass Index calculator for adults 18+. Input in metric or imperial; output is the number, the WHO category, and your healthy weight span at your height.</p>
           <p style="font-size:0.8125rem;color:var(--gray-500);margin:0 0 0.5rem;"><strong style="color:var(--gray-700);">Best for:</strong> Quick BMI screening for any adult</p>
           <div style="background:var(--gray-50);border-radius:var(--radius-md);padding:0.75rem;margin:0.75rem 0;font-size:0.8125rem;color:var(--gray-600);">
             <strong style="color:var(--gray-700);">Example:</strong> A person who is 5'7" and weighs 160 lbs has a BMI of <strong style="color:var(--overweight);">25.1 &mdash; Overweight</strong>. Their healthy weight range at this height is 118&ndash;159 lbs.
@@ -275,7 +275,7 @@
         <!-- 2. BMI for Women -->
         <div class="calc-card" style="border-left:5px solid #ec4899;">
           <h2 style="font-size:1.125rem;margin:0 0 0.625rem;color:var(--gray-900);">BMI Calculator for Women</h2>
-          <p style="font-size:0.875rem;color:var(--gray-600);margin:0 0 0.75rem;">A BMI calculator with women-specific healthy weight interpretation and recommendations. Accounts for the fact that women naturally carry a higher body fat percentage than men, and provides tailored guidance including waist circumference thresholds and life-stage considerations.</p>
+          <p style="font-size:0.875rem;color:var(--gray-600);margin:0 0 0.75rem;">Adds life-stage context to the BMI number. Includes ACOG pregnancy weight-gain ranges by pre-pregnancy BMI and menopausal body-composition notes.</p>
           <p style="font-size:0.8125rem;color:var(--gray-500);margin:0 0 0.5rem;"><strong style="color:var(--gray-700);">Best for:</strong> Women seeking gender-specific BMI guidance</p>
           <div style="background:var(--gray-50);border-radius:var(--radius-md);padding:0.75rem;margin:0.75rem 0;font-size:0.8125rem;color:var(--gray-600);">
             <strong style="color:var(--gray-700);">Example:</strong> A woman who is 5'4" and weighs 140 lbs has a BMI of <strong style="color:#22c55e;">24.0 &mdash; Normal</strong>. She is within the healthy range (108&ndash;145 lbs for her height).
@@ -289,7 +289,7 @@
         <!-- 3. BMI for Men -->
         <div class="calc-card" style="border-left:5px solid #3b82f6;">
           <h2 style="font-size:1.125rem;margin:0 0 0.625rem;color:var(--gray-900);">BMI Calculator for Men</h2>
-          <p style="font-size:0.875rem;color:var(--gray-600);margin:0 0 0.75rem;">A BMI calculator tailored for men with male-specific interpretation and health guidance. Addresses the tendency to store fat abdominally and provides waist circumference guidelines, muscle mass context, and cardiovascular risk factors specific to men.</p>
+          <p style="font-size:0.875rem;color:var(--gray-600);margin:0 0 0.75rem;">Male-specific interpretation with the NHLBI 40-inch (102&nbsp;cm) waist-circumference elevated-risk threshold marked on the tool page.</p>
           <p style="font-size:0.8125rem;color:var(--gray-500);margin:0 0 0.5rem;"><strong style="color:var(--gray-700);">Best for:</strong> Men, especially those with higher muscle mass</p>
           <div style="background:var(--gray-50);border-radius:var(--radius-md);padding:0.75rem;margin:0.75rem 0;font-size:0.8125rem;color:var(--gray-600);">
             <strong style="color:var(--gray-700);">Example:</strong> A man who is 5'10" and weighs 180 lbs has a BMI of <strong style="color:var(--overweight);">25.8 &mdash; Overweight</strong>. However, if he exercises regularly and has a waist under 40", his actual risk may be lower.
@@ -303,10 +303,10 @@
         <!-- 4. BMI by Age -->
         <div class="calc-card" style="border-left:5px solid #8b5cf6;">
           <h2 style="font-size:1.125rem;margin:0 0 0.625rem;color:var(--gray-900);">BMI Calculator by Age</h2>
-          <p style="font-size:0.875rem;color:var(--gray-600);margin:0 0 0.75rem;">An age-adjusted BMI calculator that provides different healthy range recommendations based on your age group. Recognizes that body composition changes as we age &mdash; older adults may benefit from a slightly higher BMI, while younger adults can reference standard ranges.</p>
+          <p style="font-size:0.875rem;color:var(--gray-600);margin:0 0 0.75rem;">Uses the WHO adult 18.5&ndash;24.9 range for all adults, then adds the Winter 2014 observational finding: the BMI band with the lowest observed mortality in adults 65+ is 23&ndash;33.</p>
           <p style="font-size:0.8125rem;color:var(--gray-500);margin:0 0 0.5rem;"><strong style="color:var(--gray-700);">Best for:</strong> Adults over 45 and seniors seeking age-specific guidance</p>
           <div style="background:var(--gray-50);border-radius:var(--radius-md);padding:0.75rem;margin:0.75rem 0;font-size:0.8125rem;color:var(--gray-600);">
-            <strong style="color:var(--gray-700);">Example:</strong> A 65-year-old who is 5'6" and weighs 155 lbs has a standard BMI of <strong>25.0</strong>. With age adjustment, this falls within the <strong style="color:#22c55e;">recommended range for seniors (23&ndash;28)</strong>, where a slightly higher BMI is protective.
+            <strong style="color:var(--gray-700);">Example:</strong> A 65-year-old who is 5'6" and weighs 155 lbs has a standard BMI of <strong>25.0</strong>. With age adjustment, this falls within the <strong style="color:#22c55e;">observed lower-mortality band for adults 65+ (23&ndash;33 in Winter 2014)</strong>, per the Winter 2014 meta-analysis.
           </div>
           <div style="display:flex;align-items:center;gap:0.75rem;margin-top:1rem;">
             <a href="/age-bmi-calculator/" style="display:inline-block;padding:0.5rem 1.25rem;background:#8b5cf6;color:white;border-radius:var(--radius-md);font-size:0.875rem;font-weight:600;text-decoration:none;">Try Calculator &rarr;</a>
@@ -317,7 +317,7 @@
         <!-- 5. Pediatric BMI -->
         <div class="calc-card" style="border-left:5px solid #f59e0b;">
           <h2 style="font-size:1.125rem;margin:0 0 0.625rem;color:var(--gray-900);">Pediatric BMI Calculator</h2>
-          <p style="font-size:0.875rem;color:var(--gray-600);margin:0 0 0.75rem;">A CDC percentile-based BMI calculator designed specifically for children and teens ages 2&ndash;19. Unlike adult BMI, pediatric BMI compares your child to age- and sex-matched peers using growth chart percentiles, providing a developmentally appropriate assessment.</p>
+          <p style="font-size:0.875rem;color:var(--gray-600);margin:0 0 0.75rem;">Percentile-based, ages 2&ndash;19, sex-specific. Adult fixed cutoffs do not apply below 20 &mdash; a child&rsquo;s BMI is read against the CDC growth-chart distribution for their age and sex.</p>
           <p style="font-size:0.8125rem;color:var(--gray-500);margin:0 0 0.5rem;"><strong style="color:var(--gray-700);">Best for:</strong> Parents of children ages 2&ndash;19</p>
           <div style="background:var(--gray-50);border-radius:var(--radius-md);padding:0.75rem;margin:0.75rem 0;font-size:0.8125rem;color:var(--gray-600);">
             <strong style="color:var(--gray-700);">Example:</strong> A 10-year-old boy who is 4'6" and weighs 70 lbs has a BMI of <strong>16.8</strong>, placing him at approximately the <strong style="color:#22c55e;">50th percentile &mdash; Healthy Weight</strong> for his age and sex.
@@ -330,7 +330,7 @@
         <!-- 6. New BMI (Trefethen) -->
         <div class="calc-card" style="border-left:5px solid #06b6d4;">
           <h2 style="font-size:1.125rem;margin:0 0 0.625rem;color:var(--gray-900);">New BMI Calculator (Trefethen)</h2>
-          <p style="font-size:0.875rem;color:var(--gray-600);margin:0 0 0.75rem;">Calculate your BMI using the updated 2013 Trefethen formula that corrects the traditional formula's well-known height bias. The standard formula uses height squared, which tends to underestimate BMI for shorter people and overestimate for taller people. Trefethen's formula uses height to the power of 2.5 to correct this.</p>
+          <p style="font-size:0.875rem;color:var(--gray-600);margin:0 0 0.75rem;">Uses the 2013 Trefethen variant: 1.3 &times; weight (kg) &divide; height (m)^2.5. Applied at fixed weight, the two formulas cross near 1.69&nbsp;m; short readers get a higher value under Trefethen, tall readers get a lower one.</p>
           <p style="font-size:0.8125rem;color:var(--gray-500);margin:0 0 0.5rem;"><strong style="color:var(--gray-700);">Best for:</strong> Very short or tall individuals curious about height bias correction</p>
           <div style="background:var(--gray-50);border-radius:var(--radius-md);padding:0.75rem;margin:0.75rem 0;font-size:0.8125rem;color:var(--gray-600);">
             <strong style="color:var(--gray-700);">Example:</strong> A 6'2" person weighing 195 lbs has a <strong>traditional BMI of 25.0</strong> but a <strong>New BMI of 24.3</strong> &mdash; the traditional formula slightly overestimates BMI for taller individuals. The difference narrows for average-height people.
@@ -344,7 +344,7 @@
         <!-- 7. Ideal Weight -->
         <div class="calc-card" style="border-left:5px solid #22c55e;">
           <h2 style="font-size:1.125rem;margin:0 0 0.625rem;color:var(--gray-900);">Ideal Weight Calculator</h2>
-          <p style="font-size:0.875rem;color:var(--gray-600);margin:0 0 0.75rem;">Calculate your ideal body weight using multiple clinical formulas including Devine, Robinson, Miller, and Hamwi. Instead of giving you a single number, this tool compares results across all four formulas and accounts for frame size to provide a realistic, well-rounded target weight range.</p>
+          <p style="font-size:0.875rem;color:var(--gray-600);margin:0 0 0.75rem;">Four formulas at once: Devine 1974, Robinson 1983, Miller 1983, Hamwi 1964. All agree closely around 5&prime;6&Prime;&ndash;5&prime;8&Prime; and fan outward at extreme heights.</p>
           <p style="font-size:0.8125rem;color:var(--gray-500);margin:0 0 0.5rem;"><strong style="color:var(--gray-700);">Best for:</strong> Anyone seeking a clinically-backed target weight range</p>
           <div style="background:var(--gray-50);border-radius:var(--radius-md);padding:0.75rem;margin:0.75rem 0;font-size:0.8125rem;color:var(--gray-600);">
             <strong style="color:var(--gray-700);">Example:</strong> A 5'6" woman with a medium frame has an ideal weight range of approximately <strong style="color:#22c55e;">120&ndash;144 lbs</strong> across the four clinical formulas (Devine: 130 lbs, Robinson: 136 lbs, Miller: 126 lbs, Hamwi: 130 lbs).
@@ -357,7 +357,7 @@
         <!-- 8. Lean Body Mass -->
         <div class="calc-card" style="border-left:5px solid #f97316;">
           <h2 style="font-size:1.125rem;margin:0 0 0.625rem;color:var(--gray-900);">Lean Body Mass Calculator</h2>
-          <p style="font-size:0.875rem;color:var(--gray-600);margin:0 0 0.75rem;">Estimate your lean body mass (muscle, bone, organs, water) and body fat percentage using the Boer, James, and Hume formulas. Unlike BMI, this tool separates your weight into lean mass and fat mass, giving athletes and fitness enthusiasts a much clearer picture of body composition.</p>
+          <p style="font-size:0.875rem;color:var(--gray-600);margin:0 0 0.75rem;">Splits total body weight into lean mass and fat mass. Boer (1984) is the primary formula; James (1976) and Hume (1966) provide the comparison &mdash; typical spread is under 2&nbsp;kg for average bodies, wider for heavier individuals.</p>
           <p style="font-size:0.8125rem;color:var(--gray-500);margin:0 0 0.5rem;"><strong style="color:var(--gray-700);">Best for:</strong> Athletes, fitness enthusiasts, and anyone tracking body composition</p>
           <div style="background:var(--gray-50);border-radius:var(--radius-md);padding:0.75rem;margin:0.75rem 0;font-size:0.8125rem;color:var(--gray-600);">
             <strong style="color:var(--gray-700);">Example:</strong> A 5'8" male weighing 170 lbs has an estimated lean body mass of approximately <strong style="color:#f97316;">141 lbs</strong> (Boer formula), meaning about 29 lbs (~17%) of his weight is fat &mdash; within the healthy range for men.

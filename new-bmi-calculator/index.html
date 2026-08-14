@@ -17,13 +17,15 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
   <meta property="og:title" content="New BMI Calculator (Trefethen) - Updated Body Mass Index Formula">
   <meta property="og:description" content="Calculate your New BMI using the Trefethen formula. Compare the updated BMI formula with traditional BMI and see how height bias affects your results.">
-  <meta property="og:image" content="https://calculatemybmi.net/assets/images/og-image.png">
+  <meta property="og:image" content="https://calculatemybmi.net/assets/images/og/new-bmi-height-delta.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:url" content="https://calculatemybmi.net/new-bmi-calculator/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="New BMI Calculator (Trefethen Formula)">
   <meta name="twitter:description" content="Calculate your New BMI using the updated Trefethen formula. Compare with traditional BMI and see how height bias affects your results.">
-  <meta name="twitter:image" content="https://calculatemybmi.net/assets/images/og-image.png">
+  <meta name="twitter:image" content="https://calculatemybmi.net/assets/images/og/new-bmi-height-delta.png">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <script type="application/ld+json">
   {
@@ -41,6 +43,106 @@
       "priceCurrency": "USD"
     }
   }
+  </script>
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://calculatemybmi.net/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Calculators",
+      "item": "https://calculatemybmi.net/calculators/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "New BMI Calculator (Trefethen)",
+      "item": "https://calculatemybmi.net/new-bmi-calculator/"
+    }
+  ]
+}
+  </script>
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the new BMI formula?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The New BMI formula is BMI = 1.3 × weight(kg) / height(m)2.5. It was proposed in 2013 by Oxford University mathematician Nick Trefethen as an improvement to the traditional formula (weight/height2). The key changes are raising the height exponent from 2 to 2.5 and adding a 1.3 scaling factor to keep the output in the same familiar range. You can read Trefethen's original explanation at his Oxford University page. To compare both calculations side by side, use the calculator at the top of this page or try our standard BMI calculator."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who created the new BMI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The New BMI was created by Nick Trefethen, a professor of numerical analysis at the Mathematical Institute of the University of Oxford. He proposed the formula in a letter to The Economist published in January 2013. Trefethen is a Fellow of the Royal Society and has made significant contributions to applied mathematics. His BMI proposal was not a formal academic paper but rather a public observation about a mathematical error in a widely-used health metric. Despite this informal origin, the proposal received significant media coverage and sparked widespread debate about the accuracy of the traditional BMI formula."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is the new BMI different from traditional BMI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The difference comes down to how height is accounted for. The traditional BMI divides weight by height squared (exponent of 2), while the New BMI divides by height raised to 2.5. Since human bodies are three-dimensional objects, their mass scales closer to height cubed than height squared. The exponent of 2 was a convenient simplification when Quetelet devised the formula in the 1830s, but it causes systematic errors: short people get artificially low BMI values and tall people get artificially high values. The 2.5 exponent is a better approximation of how mass actually scales with height in humans. See the comparison table above for specific examples, or check our BMI formula guide for the complete mathematical derivation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the new BMI more accurate than traditional BMI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on what you mean by \"accurate.\" Mathematically, the New BMI is more accurate in the sense that it better accounts for the relationship between height and body mass. It reduces the systematic height bias that causes the traditional formula to overestimate BMI for tall people and underestimate it for short people. However, clinically, the traditional BMI has a much stronger evidence base. Decades of medical research have linked specific traditional BMI values to health outcomes like heart disease, diabetes, and mortality. This body of evidence has not been replicated using the New BMI. So the New BMI is mathematically better but clinically unproven. For a complete health assessment, consider supplementing any BMI reading with body composition analysis and waist circumference measurement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I use new BMI or traditional BMI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For medical and clinical purposes, use the traditional BMI. This is what your doctor uses, what health organizations recommend, and what clinical research is based on. The New BMI is best used as a supplementary perspective, especially if you are significantly shorter or taller than average. If you are 5'0\" and your traditional BMI says you are at the top of the normal range, it is worth noting that the New BMI would put you slightly into overweight territory. Similarly, if you are 6'4\" and classified as overweight by traditional BMI, the New BMI may suggest you are actually in the normal range. Use both numbers to get a more complete picture, but defer to the traditional BMI for official health assessments. Compare your results using our standard BMI calculator."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the new BMI change my category?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on your height and where your BMI falls relative to category boundaries. If you are of average height (5'5\" to 5'10\"), the difference is usually less than half a point, which is unlikely to change your category. If you are short (under 5'4\"), the New BMI will be higher by 0.5 to 2+ points, which could push you from normal to overweight or from overweight to obese. If you are tall (over 6'0\"), the New BMI will be lower by 0.5 to 2+ points, which could drop you from overweight to normal or from obese to overweight. Category changes are most likely for people whose traditional BMI is close to a threshold (18.5, 25, or 30) and who are significantly above or below average height. Use the calculator above to check your personal results and see the age-adjusted BMI calculator for additional context."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why hasn't the new BMI been adopted by health organizations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There are several practical reasons. First, the BMI category thresholds (18.5, 25, 30) were validated using the traditional formula. These numbers were not chosen arbitrarily; they are based on large epidemiological studies that linked specific traditional BMI values to disease risk and mortality. Re-validating these thresholds with a new formula would require extensive new research. Second, decades of clinical guidelines from organizations like the WHO and CDC reference the traditional formula. Changing would require updating thousands of clinical protocols and retraining healthcare providers worldwide. Third, many experts argue that the effort is better spent moving beyond BMI entirely toward metrics that directly measure body composition, such as body fat percentage or metabolic health markers. The height bias, while real, is considered a relatively minor issue compared to BMI's fundamental inability to distinguish between muscle and fat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does height really affect BMI accuracy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, height does affect the accuracy of the traditional BMI formula. This is not controversial — it is a known mathematical property of the formula. Dividing by height squared when mass scales closer to height to the 2.5 power creates a systematic bias that becomes more pronounced at the extremes of height. Research published in the International Journal of Obesity has confirmed that tall people tend to have their body fatness overestimated by traditional BMI, while short people tend to have it underestimated. However, the magnitude of this effect is relatively small for most people — typically 1-2 BMI points for people who are 6 inches above or below average height. At average height, the bias is negligible. For most clinical purposes, this level of error is acceptable, which is why the traditional formula continues to be used. For a more detailed analysis, see Harvard Health's analysis of BMI usefulness and our BMI formula guide."
+      }
+    }
+  ]
+}
   </script>
 </head>
 <body>
