@@ -1,7 +1,7 @@
-# External Links Inventory (post-Phase-15)
+# External Links Inventory (post-Phase-17)
 Every distinct external URL sitewide, with the pages using it. No network in this box - human verification needed.
 
-**Total distinct external URLs:** 61
+**Total distinct external URLs:** 59
 
 ---
 
@@ -12,10 +12,6 @@ Used on 1 page(s):
 ### https://en.wikipedia.org/wiki/Adolphe_Quetelet
 Used on 1 page(s):
 - `/blog/bmi-history/`
-
-### https://my.clevelandclinic.org/
-Used on 1 page(s):
-- `/blog/bmi-and-metabolism/`
 
 ### https://my.clevelandclinic.org/health/articles/9464-body-mass-index-bmi
 Used on 4 page(s):
@@ -75,10 +71,6 @@ Used on 9 page(s):
 Used on 1 page(s):
 - `/privacy/`
 
-### https://www.acefitness.org/
-Used on 1 page(s):
-- `/blog/body-fat-vs-bmi/`
-
 ### https://www.acefitness.org/resources/everyone/tools-calculators/percent-body-fat-calculator/
 Used on 3 page(s):
 - `/lean-body-mass/`
@@ -90,8 +82,7 @@ Used on 1 page(s):
 - `/women-bmi-calculator/`
 
 ### https://www.acsm.org/
-Used on 3 page(s):
-- `/blog/body-fat-vs-bmi/`
+Used on 2 page(s):
 - `/ideal-weight/`
 - `/lean-body-mass/`
 
@@ -156,8 +147,7 @@ Used on 1 page(s):
 - `/about/`
 
 ### https://www.health.harvard.edu/
-Used on 2 page(s):
-- `/blog/bmi-and-metabolism/`
+Used on 1 page(s):
 - `/ideal-weight/`
 
 ### https://www.health.harvard.edu/blog/how-useful-is-the-body-mass-index-bmi-201603309339
@@ -200,9 +190,8 @@ Used on 1 page(s):
 - `/about/`
 
 ### https://www.mayoclinic.org/
-Used on 3 page(s):
+Used on 2 page(s):
 - `/age-bmi-calculator/`
-- `/blog/bmi-and-metabolism/`
 - `/ideal-weight/`
 
 ### https://www.mayoclinic.org/diseases-conditions/childhood-obesity/symptoms-causes/syc-20354827
