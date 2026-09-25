@@ -45,6 +45,8 @@
     { "source": "/blog/bmi-for-women",              "destination": "/women-bmi-calculator/",     "statusCode": 308 },
     { "source": "/blog/bmi-for-women/",             "destination": "/women-bmi-calculator/",     "statusCode": 308 },
     { "source": "/blog/bmi-for-men",                "destination": "/men-bmi-calculator/",       "statusCode": 308 },
-    { "source": "/blog/bmi-for-men/",               "destination": "/men-bmi-calculator/",       "statusCode": 308 }
+    { "source": "/blog/bmi-for-men/",               "destination": "/men-bmi-calculator/",       "statusCode": 308 },
+
+    { "source": "/ads.txt",                         "destination": "https://ads.adthrive.com/sites/6a95b860bc83ba1e391d0ed9/ads.txt", "statusCode": 301 }
   ]
 }
