@@ -11,8 +11,8 @@
  *
  *   2) /assets/js/consent-banner.js (loaded with `defer`):
  *      - GA4 gtag.js loader (async)
- *      - banner DOM + Accept/Decline handlers
- *      - localStorage persistence + reopenConsentSettings export
+ *      Consent is now managed by Raptive's CMP, which sends gtag consent
+ *      updates directly; no on-site banner or reopen handler is used.
  *
  * Ordering guarantee: the inline snippet is a synchronous <script> at the top
  * of <head>, so it executes before HTML parsing continues. The deferred file
