@@ -20,7 +20,13 @@ FINAL-SUMMARY.md
 FINDINGS.md
 TRIAGE-REPORT.md
 UNSOURCED.md
+UNSOURCED-NUMBERS.md
+SOURCES-TODO.md
+PRE-DEPLOY-REPORT.md
 CLAUDE_CODE_INSTRUCTIONS.md
+
+# Phase-B build helpers — not needed on the CDN
+scripts/
 
 # Stray files that must never ship
 151650*.jpeg

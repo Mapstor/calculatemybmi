@@ -1,52 +1,199 @@
 {
   "redirects": [
-    { "source": "/blog/bmi-and-life-insurance",     "destination": "/blog/bmi-limitations/",     "statusCode": 308 },
-    { "source": "/blog/bmi-and-life-insurance/",    "destination": "/blog/bmi-limitations/",     "statusCode": 308 },
-    { "source": "/blog/bmi-categories-explained",   "destination": "/blog/bmi-categories/",      "statusCode": 308 },
-    { "source": "/blog/bmi-categories-explained/",  "destination": "/blog/bmi-categories/",      "statusCode": 308 },
-    { "source": "/blog/overweight-bmi-risks",       "destination": "/blog/bmi-and-health-risks/","statusCode": 308 },
-    { "source": "/blog/overweight-bmi-risks/",      "destination": "/blog/bmi-and-health-risks/","statusCode": 308 },
-    { "source": "/blog/obese-bmi-category",         "destination": "/blog/bmi-and-health-risks/","statusCode": 308 },
-    { "source": "/blog/obese-bmi-category/",        "destination": "/blog/bmi-and-health-risks/","statusCode": 308 },
-
-    { "source": "/blog/bmi-accuracy",               "destination": "/blog/bmi-limitations/",     "statusCode": 308 },
-    { "source": "/blog/bmi-accuracy/",              "destination": "/blog/bmi-limitations/",     "statusCode": 308 },
-    { "source": "/blog/bmi-calculator-guide",       "destination": "/blog/what-is-bmi/",         "statusCode": 308 },
-    { "source": "/blog/bmi-calculator-guide/",      "destination": "/blog/what-is-bmi/",         "statusCode": 308 },
-    { "source": "/blog/bmi-vs-body-composition",    "destination": "/blog/body-fat-vs-bmi/",     "statusCode": 308 },
-    { "source": "/blog/bmi-vs-body-composition/",   "destination": "/blog/body-fat-vs-bmi/",     "statusCode": 308 },
-    { "source": "/blog/muscle-mass-and-bmi",        "destination": "/blog/bmi-for-athletes/",    "statusCode": 308 },
-    { "source": "/blog/muscle-mass-and-bmi/",       "destination": "/blog/bmi-for-athletes/",    "statusCode": 308 },
-    { "source": "/blog/healthy-weight-tips",        "destination": "/blog/how-to-lower-bmi/",    "statusCode": 308 },
-    { "source": "/blog/healthy-weight-tips/",       "destination": "/blog/how-to-lower-bmi/",    "statusCode": 308 },
-    { "source": "/blog/improving-your-bmi",         "destination": "/blog/how-to-lower-bmi/",    "statusCode": 308 },
-    { "source": "/blog/improving-your-bmi/",        "destination": "/blog/how-to-lower-bmi/",    "statusCode": 308 },
-    { "source": "/blog/bmi-for-surgery",            "destination": "/blog/bmi-categories/",      "statusCode": 308 },
-    { "source": "/blog/bmi-for-surgery/",           "destination": "/blog/bmi-categories/",      "statusCode": 308 },
-
-    { "source": "/blog/ideal-weight-calculator",    "destination": "/ideal-weight/",             "statusCode": 308 },
-    { "source": "/blog/ideal-weight-calculator/",   "destination": "/ideal-weight/",             "statusCode": 308 },
-    { "source": "/blog/lean-body-mass-calculator",  "destination": "/lean-body-mass/",           "statusCode": 308 },
-    { "source": "/blog/lean-body-mass-calculator/", "destination": "/lean-body-mass/",           "statusCode": 308 },
-    { "source": "/blog/pediatric-bmi-calculator",   "destination": "/kids-bmi-calculator/",      "statusCode": 308 },
-    { "source": "/blog/pediatric-bmi-calculator/",  "destination": "/kids-bmi-calculator/",      "statusCode": 308 },
-    { "source": "/blog/bmi-percentile-calculator",  "destination": "/kids-bmi-calculator/",      "statusCode": 308 },
-    { "source": "/blog/bmi-percentile-calculator/", "destination": "/kids-bmi-calculator/",      "statusCode": 308 },
-    { "source": "/blog/bmi-for-children",           "destination": "/kids-bmi-calculator/",      "statusCode": 308 },
-    { "source": "/blog/bmi-for-children/",          "destination": "/kids-bmi-calculator/",      "statusCode": 308 },
-    { "source": "/blog/bmi-calculator-by-age",      "destination": "/age-bmi-calculator/",       "statusCode": 308 },
-    { "source": "/blog/bmi-calculator-by-age/",     "destination": "/age-bmi-calculator/",       "statusCode": 308 },
-    { "source": "/blog/bmi-by-age",                 "destination": "/age-bmi-calculator/",       "statusCode": 308 },
-    { "source": "/blog/bmi-by-age/",                "destination": "/age-bmi-calculator/",       "statusCode": 308 },
-    { "source": "/blog/bmi-chart-women",            "destination": "/women-bmi-calculator/",     "statusCode": 308 },
-    { "source": "/blog/bmi-chart-women/",           "destination": "/women-bmi-calculator/",     "statusCode": 308 },
-    { "source": "/blog/bmi-chart-men",              "destination": "/men-bmi-calculator/",       "statusCode": 308 },
-    { "source": "/blog/bmi-chart-men/",             "destination": "/men-bmi-calculator/",       "statusCode": 308 },
-    { "source": "/blog/bmi-for-women",              "destination": "/women-bmi-calculator/",     "statusCode": 308 },
-    { "source": "/blog/bmi-for-women/",             "destination": "/women-bmi-calculator/",     "statusCode": 308 },
-    { "source": "/blog/bmi-for-men",                "destination": "/men-bmi-calculator/",       "statusCode": 308 },
-    { "source": "/blog/bmi-for-men/",               "destination": "/men-bmi-calculator/",       "statusCode": 308 },
-
-    { "source": "/ads.txt",                         "destination": "https://ads.adthrive.com/sites/6a95b860bc83ba1e391d0ed9/ads.txt", "statusCode": 301 }
+    {
+      "source": "/blog/bmi-and-life-insurance",
+      "destination": "/blog/bmi-limitations/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/bmi-and-life-insurance/",
+      "destination": "/blog/bmi-limitations/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/bmi-categories-explained",
+      "destination": "/blog/bmi-categories/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/bmi-categories-explained/",
+      "destination": "/blog/bmi-categories/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/overweight-bmi-risks",
+      "destination": "/blog/bmi-and-health-risks/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/overweight-bmi-risks/",
+      "destination": "/blog/bmi-and-health-risks/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/obese-bmi-category",
+      "destination": "/blog/bmi-and-health-risks/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/obese-bmi-category/",
+      "destination": "/blog/bmi-and-health-risks/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/bmi-accuracy",
+      "destination": "/blog/bmi-limitations/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/bmi-accuracy/",
+      "destination": "/blog/bmi-limitations/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/bmi-calculator-guide",
+      "destination": "/blog/what-is-bmi/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/bmi-calculator-guide/",
+      "destination": "/blog/what-is-bmi/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/bmi-vs-body-composition",
+      "destination": "/blog/body-fat-vs-bmi/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/bmi-vs-body-composition/",
+      "destination": "/blog/body-fat-vs-bmi/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/muscle-mass-and-bmi",
+      "destination": "/blog/bmi-for-athletes/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/muscle-mass-and-bmi/",
+      "destination": "/blog/bmi-for-athletes/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/healthy-weight-tips",
+      "destination": "/blog/how-to-lower-bmi/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/healthy-weight-tips/",
+      "destination": "/blog/how-to-lower-bmi/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/improving-your-bmi",
+      "destination": "/blog/how-to-lower-bmi/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/improving-your-bmi/",
+      "destination": "/blog/how-to-lower-bmi/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/bmi-for-surgery",
+      "destination": "/blog/bmi-categories/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/bmi-for-surgery/",
+      "destination": "/blog/bmi-categories/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/ideal-weight-calculator",
+      "destination": "/ideal-weight/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/ideal-weight-calculator/",
+      "destination": "/ideal-weight/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/lean-body-mass-calculator",
+      "destination": "/lean-body-mass/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/lean-body-mass-calculator/",
+      "destination": "/lean-body-mass/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/pediatric-bmi-calculator",
+      "destination": "/kids-bmi-calculator/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/pediatric-bmi-calculator/",
+      "destination": "/kids-bmi-calculator/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/bmi-percentile-calculator",
+      "destination": "/kids-bmi-calculator/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/bmi-percentile-calculator/",
+      "destination": "/kids-bmi-calculator/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/bmi-for-children",
+      "destination": "/kids-bmi-calculator/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/bmi-for-children/",
+      "destination": "/kids-bmi-calculator/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/bmi-calculator-by-age",
+      "destination": "/age-bmi-calculator/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/bmi-calculator-by-age/",
+      "destination": "/age-bmi-calculator/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/bmi-for-women",
+      "destination": "/women-bmi-calculator/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/bmi-for-women/",
+      "destination": "/women-bmi-calculator/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/bmi-for-men",
+      "destination": "/men-bmi-calculator/",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog/bmi-for-men/",
+      "destination": "/men-bmi-calculator/",
+      "statusCode": 308
+    },
+    {
+      "source": "/ads.txt",
+      "destination": "https://ads.adthrive.com/sites/6a95b860bc83ba1e391d0ed9/ads.txt",
+      "statusCode": 301
+    }
   ]
 }
