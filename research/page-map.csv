@@ -1,0 +1,47 @@
+slug,hub,archetype,intent,wedge,data_source,tier,status,notes
+home,root,tool,tool,Result places your BMI among US adults of your sex and age (NHANES percentiles) + explained results panel,"Quetelet formula; CDC adult BMI categories; NHANES Aug 2021-Aug 2023 (CDC/NCHS) weighted percentiles - planned, data-sourcing pending",T1,live,Tool-first refactor in P0 (B6)
+calculators,root,hub,tool,Index of all tools,structural hub,T1,live,
+women-bmi-calculator,calculators,tool,tool,Sex-specific NHANES percentile of the result (planned),"Quetelet formula; CDC adult BMI categories; NCHS DB 508 / Health E-Stat 111; NHANES Aug 2021-Aug 2023 (CDC/NCHS) weighted percentiles - planned, data-sourcing pending",T1,live,Chart queries moved to blog/bmi-chart-women (B3)
+men-bmi-calculator,calculators,tool,tool,Sex-specific NHANES percentile of the result (planned),"Quetelet formula; CDC adult BMI categories; NCHS DB 508 / Health E-Stat 111; NHANES Aug 2021-Aug 2023 (CDC/NCHS) weighted percentiles - planned, data-sourcing pending",T1,live,Chart queries moved to blog/bmi-chart-men (B3)
+age-bmi-calculator,calculators,tool,tool,"BMI distribution by age band (NHANES, planned) + Winter 2014 65+ context","Quetelet formula; CDC categories; Winter 2014 Am J Clin Nutr; NHANES Aug 2021-Aug 2023 (CDC/NCHS) weighted percentiles - planned, data-sourcing pending",T1,live,
+kids-bmi-calculator,calculators,tool,tool,Exact CDC LMS percentiles incl. extended >95th handling,CDC 2000 BMI-for-age growth charts (LMS tables),T1,live,"Audit: confirm the tool uses CDC LMS tables, not approximations"
+new-bmi-calculator,calculators,tool,tool,Side-by-side standard vs Trefethen by height,Trefethen 2013 (Oxford) formula,T2,live,
+ideal-weight,calculators,tool,tool,Four published equations compared + BMI 18.5-24.9 band,Devine 1974; Robinson 1983; Miller 1983; Hamwi 1964 (primary citations to verify),T1,live,
+lean-body-mass,calculators,tool,tool,Three equations compared,Boer 1984; James 1976; Hume 1966 (primary citations to verify),T2,live,
+bmi-chart,root,data,informational,"Full adult height x weight chart generated from the formula, printable one-page version, US share of adults per band",Quetelet formula; CDC adult BMI categories; NCHS Health E-Stat 111,T1,proposed,"Owns the 201k ""bmi chart"" group. Merge blog/bmi-chart-explained into it (308) only after Domain-property data confirms it has no Google traffic"
+blog/bmi-chart-women,bmi-chart,data,informational,Height-row chart with category weight bands (lb/kg) + NCHS women splits by age,Quetelet formula; CDC adult categories; NCHS DB 508; NCHS Health E-Stat 111,T1,specd,"Restored URL (P0 B2); 7,166 Bing clicks before the Aug 308"
+blog/bmi-chart-men,bmi-chart,data,informational,Height-row chart with category weight bands (lb/kg) + NCHS men splits by age,Quetelet formula; CDC adult categories; NCHS DB 508; NCHS Health E-Stat 111,T1,specd,Restored URL (P0 B2)
+blog/bmi-by-age,bmi-chart,data,informational,"NCHS prevalence by age group + 65+ observational plateau, honest that adult cutoffs do not change","NCHS DB 508; Winter 2014; NHANES Aug 2021-Aug 2023 (CDC/NCHS) weighted percentiles - planned, data-sourcing pending",T1,specd,Restored URL (P0 B2)
+body-fat-calculator,calculators,tool,tool,"Navy tape + skinfold (Jackson-Pollock) + BMI-based estimates side by side with method error, result placed on NHANES DXA percentiles",DoD circumference equations; Jackson-Pollock 1978/1980 + Siri 1961; NHANES DXA reference - data-sourcing pending,T1,proposed,Google already cites /blog/body-fat-vs-bmi for body-fat queries (AI features)
+body-fat-percentage-chart,root,data,informational,US body-fat percentiles by age and sex from NHANES DXA instead of unsourced fitness tiers,NHANES DXA body composition (CDC/NCHS) - data-sourcing pending,T1,proposed,SERP queue: one page vs women/men split
+blog/how-to-measure-body-fat,blog,article,informational,Every method scored against DXA using published validation studies,Peer-reviewed method-validation studies - data-sourcing pending,T1,proposed,
+us-obesity-statistics,root,data,informational,60-year NHANES trend + sex/age splits in one embeddable chart (link magnet),NCHS Health E-Stat 111 (1960-2023); NCHS DB 508,T1,proposed,Dataset schema; embed snippet with attribution link
+obesity-rate-by-state,us-obesity-statistics,data,informational,Interactive state map + ranked table + year slider,CDC BRFSS Adult Obesity Prevalence Maps (self-reported) - data-sourcing pending,T2,proposed,Map UX = portfolio strength
+average-weight,root,data,informational,"NHANES-computed average weight by sex, age and height band",NHANES 2021-2023 examination data (weighted) / NCHS Anthropometric Reference Data - data-sourcing pending,T2,proposed,One page with height/age tables and anchors - never one page per height (doorway rule). SERP queue: women/men split
+average-height,average-weight,data,informational,NHANES average height by sex and age,NHANES examination data - data-sourcing pending,T3,proposed,110k head terms but likely answer-box/zero-click; off-core - backlog
+army-body-fat-calculator,calculators,tool,tool,Official Army one-site tape equation + pass/fail vs the published standard,Army body-fat standard (AR 600-9 / 2023 directive) - verify primary before build,T2,proposed,Includes army height/weight screening (12.1k)
+navy-body-fat-calculator,calculators,tool,tool,Official DoD/Navy circumference equations + standards,DoD circumference method / Navy body composition instruction - verify primary before build,T2,proposed,
+ffmi-calculator,calculators,tool,tool,FFMI with normalized FFMI and population context,Kouri et al. 1995 FFMI equation - verify primary,T2,proposed,
+growth-chart-calculator,calculators,tool,tool,Height/weight-for-age percentiles from CDC LMS (2-20) and WHO standards (0-2),CDC 2000 growth charts LMS; WHO Child Growth Standards - data-sourcing pending,T2,proposed,Shares LMS machinery with kids-bmi-calculator
+weight-loss-percentage-calculator,calculators,tool,tool,Percent-of-body-weight change with BMI-category crossing shown,Arithmetic only (no external data),T3,proposed,
+blog,root,hub,informational,Guide index,structural hub,T1,live,
+blog/what-is-bmi,blog,article,informational,,WHO/CDC definitions,T2,live,
+blog/healthy-bmi-range,blog,article,informational,,CDC adult categories; WHO; Winter 2014,T1,live,"Owns 22.2k + 18.1k ""normal bmi"" groups as secondaries"
+blog/bmi-formula,blog,article,informational,,Quetelet formula; Trefethen 2013,T2,live,
+blog/bmi-history,blog,article,informational,,Primary historical sources (Quetelet 1835; Keys 1972),T3,live,
+blog/bmi-categories,blog,article,informational,,CDC adult categories; WHO classification,T2,live,
+blog/bmi-chart-explained,blog,article,informational,,Quetelet formula,T3,live,Candidate to merge into bmi-chart (data-gated)
+blog/bmi-and-health-risks,blog,article,informational,,Flegal 2013 JAMA; WHO; NIDDK (verify each),T2,live,
+blog/underweight-bmi-risks,blog,article,informational,,WHO; Flegal 2013 (verify),T3,live,
+blog/bmi-limitations,blog,article,informational,,Okorodudu 2010 Int J Obes and other primaries (to verify),T2,live,
+blog/bmi-and-metabolism,blog,article,informational,,Mifflin-St Jeor 1990; Harris-Benedict (primary citations),T3,live,
+blog/body-fat-vs-bmi,blog,article,informational,,Primary validation studies (to verify),T1,live,"Only page with Google visibility (AI-feature citations, zero clicks)"
+blog/bmi-for-athletes,blog,article,informational,,Primary studies (to verify),T3,live,
+blog/waist-to-height-ratio,blog,article,informational,,NICE 2022 WHtR guidance; primary meta-analyses (verify),T2,live,Waist-to-height calculator mode candidate
+blog/how-to-lower-bmi,blog,article,informational,,CDC healthy weight guidance (verify),T3,live,Owns body-fat reduction queries as tertiaries (non-prescriptive scope)
+blog/bmi-tracking-guide,blog,article,informational,,Primary sources (verify),T3,live,
+blog/visceral-fat,blog,article,informational,,GAP,T3,proposed,GAP: smart-scale visceral ratings are proprietary; treatment = transparent-gap or cut
+about,root,structural,navigational,,structural,T1,live,
+contact,root,structural,navigational,,structural,T1,live,
+privacy,root,structural,navigational,,structural,T1,live,Raptive disclosure required now that ads are live
+terms,root,structural,navigational,,structural,T1,live,

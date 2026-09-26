@@ -1,0 +1,48 @@
+# calculatemybmi.net — sitemap (GENERATED from research/*.csv — do not hand-edit)
+
+- **/** — tool, T1, live — primary: "bmi calculation table" (2,240,000/mo) — cluster 2,351,420/mo, 170 kws
+- **/bmi-chart/** — data, T1, proposed — primary: "bmi index chart" (201,000/mo) — cluster 305,070/mo, 471 kws
+  - **/blog/bmi-chart-women/** — data, T1, specd — primary: "bmi chart female" (74,000/mo) — cluster 390,030/mo, 603 kws
+  - **/blog/bmi-chart-men/** — data, T1, specd — primary: "bmi chart for men" (40,500/mo) — cluster 167,820/mo, 264 kws
+  - **/blog/bmi-by-age/** — data, T1, specd — primary: "bmi by age" (1,600/mo) — cluster 27,150/mo, 220 kws
+- **/body-fat-percentage-chart/** — data, T1, proposed — primary: "body fat percentage chart" (14,800/mo) — cluster 283,690/mo, 501 kws
+- **/average-weight/** — data, T2, proposed — primary: "average weight for men" (9,900/mo) — cluster 161,260/mo, 187 kws
+  - **/average-height/** — data, T3, proposed — primary: "average height for women" (110,000/mo) — cluster 283,120/mo, 7 kws
+- **/us-obesity-statistics/** — data, T1, proposed — primary: "obesity rate in us" (14,800/mo) — cluster 33,910/mo, 151 kws
+  - **/obesity-rate-by-state/** — data, T2, proposed — primary: "obesity by us state" (5,400/mo) — cluster 13,790/mo, 9 kws
+- **/calculators/** — hub, T1, live — primary: "bmi calculators" (n/a/mo) — cluster 0/mo, 1 kws
+  - **/women-bmi-calculator/** — tool, T1, live — primary: "bmi calculator women" (201,000/mo) — cluster 279,290/mo, 33 kws
+  - **/body-fat-calculator/** — tool, T1, proposed — primary: "body fat calculator" (74,000/mo) — cluster 147,710/mo, 329 kws
+  - **/men-bmi-calculator/** — tool, T1, live — primary: "bmi calculator men" (110,000/mo) — cluster 110,610/mo, 13 kws
+  - **/army-body-fat-calculator/** — tool, T2, proposed — primary: "body fat calculator army" (18,100/mo) — cluster 42,120/mo, 60 kws
+  - **/ideal-weight/** — tool, T1, live — primary: "body weight ideal calculator" (22,200/mo) — cluster 35,960/mo, 134 kws
+  - **/growth-chart-calculator/** — tool, T2, proposed — primary: "childs growth chart" (5,400/mo) — cluster 30,690/mo, 19 kws
+  - **/age-bmi-calculator/** — tool, T1, live — primary: "bmi calculator by age" (5,400/mo) — cluster 23,490/mo, 59 kws
+  - **/kids-bmi-calculator/** — tool, T1, live — primary: "bmi calculator teenage" (12,100/mo) — cluster 17,610/mo, 24 kws
+  - **/ffmi-calculator/** — tool, T2, proposed — primary: "ffmi calculator" (14,800/mo) — cluster 16,510/mo, 11 kws
+  - **/weight-loss-percentage-calculator/** — tool, T3, proposed — primary: "weight loss percentage calculator" (12,100/mo) — cluster 15,780/mo, 16 kws
+  - **/navy-body-fat-calculator/** — tool, T2, proposed — primary: "navy body fat calculator" (6,600/mo) — cluster 13,960/mo, 37 kws
+  - **/lean-body-mass/** — tool, T2, live — primary: "lean body fat calculator" (6,600/mo) — cluster 9,710/mo, 49 kws
+  - **/new-bmi-calculator/** — tool, T2, live — primary: "new bmi calculator" (n/a/mo) — cluster 0/mo, 1 kws
+- **/blog/** — hub, T1, live — primary: "bmi guides" (n/a/mo) — cluster 0/mo, 1 kws
+  - **/blog/how-to-measure-body-fat/** — article, T1, proposed — primary: "how to calculate body fat percentage" (18,100/mo) — cluster 114,170/mo, 913 kws
+  - **/blog/healthy-bmi-range/** — article, T1, live — primary: "healthy bmi range" (8,100/mo) — cluster 58,340/mo, 29 kws
+  - **/blog/waist-to-height-ratio/** — article, T2, live — primary: "healthy waist to height ratio" (14,800/mo) — cluster 18,530/mo, 64 kws
+  - **/blog/how-to-lower-bmi/** — article, T3, live — primary: "how to reduce body mass index" (590/mo) — cluster 15,060/mo, 106 kws
+  - **/blog/visceral-fat/** — article, T3, proposed — primary: "visceral fat range" (5,400/mo) — cluster 13,240/mo, 53 kws
+  - **/blog/bmi-categories/** — article, T2, live — primary: "obese scale" (1,900/mo) — cluster 10,950/mo, 65 kws
+  - **/blog/bmi-formula/** — article, T2, live — primary: "how to measure body mass index" (4,400/mo) — cluster 10,160/mo, 33 kws
+  - **/blog/bmi-tracking-guide/** — article, T3, live — primary: "measure body for weight loss" (720/mo) — cluster 2,270/mo, 34 kws
+  - **/blog/body-fat-vs-bmi/** — article, T1, live — primary: "bmi and body fat percentage" (390/mo) — cluster 2,000/mo, 17 kws
+  - **/blog/bmi-and-metabolism/** — article, T3, live — primary: "calorie calculator body weight" (260/mo) — cluster 1,510/mo, 43 kws
+  - **/blog/bmi-limitations/** — article, T2, live — primary: "how accurate is a bmi" (590/mo) — cluster 1,390/mo, 11 kws
+  - **/blog/bmi-for-athletes/** — article, T3, live — primary: "bmi calculator muscle" (480/mo) — cluster 1,370/mo, 19 kws
+  - **/blog/underweight-bmi-risks/** — article, T3, live — primary: "underweight bmi risks" (n/a/mo) — cluster 0/mo, 1 kws
+  - **/blog/what-is-bmi/** — article, T2, live — primary: "what is bmi" (n/a/mo) — cluster 0/mo, 1 kws
+  - **/blog/bmi-and-health-risks/** — article, T2, live — primary: "bmi health risks" (n/a/mo) — cluster 0/mo, 1 kws
+  - **/blog/bmi-chart-explained/** — article, T3, live — primary: "how to read a bmi chart" (n/a/mo) — cluster 0/mo, 1 kws
+  - **/blog/bmi-history/** — article, T3, live — primary: "bmi history" (n/a/mo) — cluster 0/mo, 1 kws
+- **/about/** — structural, T1, live
+- **/contact/** — structural, T1, live
+- **/privacy/** — structural, T1, live
+- **/terms/** — structural, T1, live

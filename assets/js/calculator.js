@@ -189,20 +189,106 @@ function calculateByAge() {
 }
 
 function calculateKids() {
-  const panel = document.getElementById('panel-kids');
-  const heightInches = getHeightInches(panel);
-  const weightLbs = getWeightPounds(panel);
-  const age = parseInt(panel.querySelector('.age-input')?.value) || 10;
-  const sex = panel.querySelector('.sex-select')?.value || 'female';
-  const bmi = calculateBMI(weightLbs, heightInches);
+  var panel = document.getElementById('panel-kids');
+  if (!panel) return;
+  var heightInches = getHeightInches(panel);
+  var weightLbs = getWeightPounds(panel);
+  var years = parseInt(panel.querySelector('.age-input')?.value, 10);
+  var months = parseInt(panel.querySelector('.months-input')?.value, 10);
+  if (isNaN(years)) years = 10;
+  if (isNaN(months)) months = 0;
+  var agemos = years * 12 + months;
+  var sex = panel.querySelector('.sex-select')?.value || 'female';
+  // Domain check: CDC extended BMI-for-age covers 24 to <240 months.
+  if (agemos < 24 || agemos >= 240) {
+    var err = document.getElementById('kids-percentile-note');
+    if (err) err.textContent = 'This calculator uses CDC BMI-for-age percentiles for ages 2 to 19 years, 11 months (24 to 239 months). Please enter an age in that range.';
+    var section = document.getElementById('kids-results');
+    if (section) section.classList.add('visible');
+    return;
+  }
+  var bmi = calculateBMI(weightLbs, heightInches);
   if (bmi <= 0) return;
-  let percentileCategory;
-  if (bmi < 14) percentileCategory = { category: 'Underweight', class: 'underweight', note: 'Below 5th percentile' };
-  else if (bmi < 22) percentileCategory = { category: 'Healthy Weight', class: 'normal', note: '5th - 84th percentile' };
-  else if (bmi < 27) percentileCategory = { category: 'Overweight', class: 'overweight', note: '85th - 94th percentile' };
-  else percentileCategory = { category: 'Obese', class: 'obese', note: '95th percentile or higher' };
-  displayKidsResults('kids', bmi, percentileCategory, age, sex, heightInches, weightLbs);
+  var result = computeKidsPercentile(bmi, agemos, sex);
+  var percentileCategory = categorizeChildBMI(bmi, result.percentile, result.pctP95);
+  displayKidsResults('kids', bmi, percentileCategory, years, months, sex, heightInches, weightLbs, result);
 }
+
+function getLMSRow(sex, agemos) {
+  // Half-month labels: for agemos m in [24, 240), the CDC row is at floor(m) + 0.5,
+  // except the 24.0 boundary row is used exactly for agemos = 24.
+  var data = (sex === 'male' || sex === 'boys' || sex === 'boy') ? window.CDC_BMI_LMS.boys : window.CDC_BMI_LMS.girls;
+  var target = (agemos === 24) ? 24 : Math.floor(agemos) + 0.5;
+  var idx = data.agemos.indexOf(target);
+  if (idx === -1) {
+    // Nearest fallback
+    var best = 0, bestDist = Infinity;
+    for (var i = 0; i < data.agemos.length; i++) {
+      var d = Math.abs(data.agemos[i] - target);
+      if (d < bestDist) { bestDist = d; best = i; }
+    }
+    idx = best;
+  }
+  return { L: data.L[idx], M: data.M[idx], S: data.S[idx], sigma: data.sigma[idx], P95: data.P95[idx] };
+}
+
+function stdNormalCdf(z) {
+  // Abramowitz & Stegun 26.2.17 approximation, |error| < 7.5e-8
+  var b1 = 0.319381530, b2 = -0.356563782, b3 = 1.781477937, b4 = -1.821255978, b5 = 1.330274429, p = 0.2316419;
+  var absZ = Math.abs(z);
+  var t = 1 / (1 + p * absZ);
+  var pdf = Math.exp(-absZ * absZ / 2) / Math.sqrt(2 * Math.PI);
+  var val = 1 - pdf * (b1*t + b2*t*t + b3*t*t*t + b4*Math.pow(t,4) + b5*Math.pow(t,5));
+  return z < 0 ? 1 - val : val;
+}
+
+function stdNormalInv(p) {
+  // Beasley-Springer-Moro approximation for the inverse normal CDF
+  if (p <= 0 || p >= 1) return NaN;
+  var a=[-39.6968302866538,220.946098424521,-275.928510446969,138.357751867269,-30.6647980661472,2.50662827745924];
+  var b=[-54.4760987982241,161.585836858041,-155.698979859887,66.8013118877197,-13.2806815528857];
+  var c=[-0.00778489400243029,-0.322396458041136,-2.40075827716184,-2.54973253934373,4.37466414146497,2.93816398269878];
+  var d=[0.00778469570904146,0.32246712907004,2.445134137143,3.75440866190742];
+  var pLow = 0.02425, pHigh = 1 - pLow;
+  var q, r, x;
+  if (p < pLow) {
+    q = Math.sqrt(-2*Math.log(p));
+    x = (((((c[0]*q+c[1])*q+c[2])*q+c[3])*q+c[4])*q+c[5]) / ((((d[0]*q+d[1])*q+d[2])*q+d[3])*q+1);
+  } else if (p <= pHigh) {
+    q = p - 0.5;
+    r = q*q;
+    x = (((((a[0]*r+a[1])*r+a[2])*r+a[3])*r+a[4])*r+a[5])*q / (((((b[0]*r+b[1])*r+b[2])*r+b[3])*r+b[4])*r+1);
+  } else {
+    q = Math.sqrt(-2*Math.log(1-p));
+    x = -(((((c[0]*q+c[1])*q+c[2])*q+c[3])*q+c[4])*q+c[5]) / ((((d[0]*q+d[1])*q+d[2])*q+d[3])*q+1);
+  }
+  return x;
+}
+
+function computeKidsPercentile(bmi, agemos, sex) {
+  var row = getLMSRow(sex, agemos);
+  var z, percentile;
+  if (bmi <= row.P95) {
+    z = (Math.pow(bmi / row.M, row.L) - 1) / (row.L * row.S);
+    percentile = stdNormalCdf(z) * 100;
+  } else {
+    percentile = 90 + 10 * stdNormalCdf((bmi - row.P95) / row.sigma);
+    if (percentile >= 100) percentile = 99.99;
+    z = stdNormalInv(percentile / 100);
+  }
+  var pctP95 = 100 * bmi / row.P95;
+  return { percentile: percentile, z: z, pctP95: pctP95, row: row };
+}
+
+function categorizeChildBMI(bmi, percentile, pctP95) {
+  // CDC child-teen categories: <5 under; 5–<85 healthy; 85–<95 overweight; ≥95 obese; severe: ≥120% P95 or BMI ≥35
+  if (pctP95 >= 120 || bmi >= 35) return { category: 'Severe obesity', class: 'obese', note: 'At or above 120% of the 95th percentile' };
+  if (percentile >= 95) return { category: 'Obesity', class: 'obese', note: '95th percentile or above' };
+  if (percentile >= 85) return { category: 'Overweight', class: 'overweight', note: '85th to below 95th percentile' };
+  if (percentile >= 5)  return { category: 'Healthy weight', class: 'normal', note: '5th to below 85th percentile' };
+  return { category: 'Underweight', class: 'underweight', note: 'Below the 5th percentile' };
+}
+
 
 function calculateIdealWeight() {
   const panel = document.getElementById('panel-ideal');
@@ -568,7 +654,9 @@ function displayBMIResults(type, bmi, category, healthyRange, heightInches, weig
 
 /* ===== DISPLAY: KIDS RESULTS ===== */
 
-function displayKidsResults(type, bmi, category, age, sex, heightInches, weightLbs) {
+function displayKidsResults(type, bmi, category, years, months, sex, heightInches, weightLbs, result) {
+  var age = years; // backward-compat for embedded snippets below
+  if (typeof months !== "number") months = 0;
   const section = document.getElementById(type + '-results');
   if (!section) return;
 
@@ -597,11 +685,11 @@ function displayKidsResults(type, bmi, category, age, sex, heightInches, weightL
   html += `<div class="er-section"><h3><span class="er-icon">&#128202;</span> Key Metrics</h3>
     <div class="er-metrics">
       <div class="er-metric"><div class="er-metric-label">BMI</div><div class="er-metric-value" style="color:${catColor(category.class)};">${bmi.toFixed(1)}</div></div>
-      <div class="er-metric"><div class="er-metric-label">Age</div><div class="er-metric-value">${age} years</div><div class="er-metric-sub">${sexLabel}</div></div>
+      <div class="er-metric"><div class="er-metric-label">Age</div><div class="er-metric-value">${years} y ${months} m</div><div class="er-metric-sub">${sexLabel}</div></div>
       <div class="er-metric"><div class="er-metric-label">Weight</div><div class="er-metric-value">${Math.round(weightLbs)} lbs</div><div class="er-metric-sub">${weightKg.toFixed(1)} kg</div></div>
       <div class="er-metric"><div class="er-metric-label">Height</div><div class="er-metric-value">${heightToFtIn(heightInches)}</div><div class="er-metric-sub">${Math.round(heightCm)} cm</div></div>
       <div class="er-metric"><div class="er-metric-label">Category</div><div class="er-metric-value">${category.category}</div><div class="er-metric-sub">${category.note}</div></div>
-      <div class="er-metric"><div class="er-metric-label">Assessment</div><div class="er-metric-value">Percentile</div><div class="er-metric-sub">Based, not adult BMI</div></div>
+      <div class="er-metric"><div class="er-metric-label">Percentile</div><div class="er-metric-value">${result ? result.percentile.toFixed(1) : "&mdash;"}</div><div class="er-metric-sub">${result ? "z = " + result.z.toFixed(2) : ""}</div></div><div class="er-metric"><div class="er-metric-label">% of 95th percentile</div><div class="er-metric-value">${result ? result.pctP95.toFixed(1) + "%" : "&mdash;"}</div><div class="er-metric-sub">${result && result.percentile >= 95 ? "Shown for children at or above the 95th percentile" : ""}</div></div>
     </div></div>`;
 
   // Percentile categories

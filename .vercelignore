@@ -9,23 +9,12 @@
 node_modules/
 
 # Development/audit artifacts — kept in the repo for the paper trail, not needed live
-ABSORBED-AUDIT.md
-BACKLOG.md
-CITATIONS.md
-CONSENT-REPORT.md
-CONSOLIDATION-2.md
-CONSOLIDATION.md
-DEPLOY-CHECKLIST.md
-FINAL-SUMMARY.md
-FINDINGS.md
-TRIAGE-REPORT.md
-UNSOURCED.md
-UNSOURCED-NUMBERS.md
-SOURCES-TODO.md
-PRE-DEPLOY-REPORT.md
-CLAUDE_CODE_INSTRUCTIONS.md
+*.md
+research/
+data/
+audit/
 
-# Phase-B build helpers — not needed on the CDN
+# Build helpers
 scripts/
 
 # Stray files that must never ship
