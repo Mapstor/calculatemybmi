@@ -51,6 +51,28 @@ def check_file(page, path):
     if '<footer' not in src: problems.append('no footer')
     rap_count = src.count('Raptive Head Tag Manual')
     if rap_count != 1: problems.append(f'Raptive tag count != 1 ({rap_count})')
+
+    # Content gates: zero secondary-source mentions in body text or as links.
+    secondary_hosts = ['health.harvard.edu','mayoclinic.org','my.clevelandclinic.org','clevelandclinic.org',
+                        'nhs.uk','heart.org','americanheart.org','acefitness.org','acsm.org','nsca.com','wikipedia.org']
+    secondary_brands = ['Harvard Health','Mayo Clinic','Cleveland Clinic',
+                         'American Heart Association','American Council on Exercise',
+                         'American College of Sports Medicine','ACSM','NSCA','Wikipedia']
+    # Links to secondary domains
+    for host in secondary_hosts:
+        n = len(re.findall(r'href="https?://(?:www\.)?' + re.escape(host), src))
+        if n:
+            problems.append(f'link to secondary domain {host} ({n})')
+    # Body-text brand mentions (strip tags, scripts, styles first)
+    src_notag = re.sub(r'<script[\s\S]*?</script>', '', src)
+    src_notag = re.sub(r'<style[\s\S]*?</style>', '', src_notag)
+    src_notag = re.sub(r'<[^>]+>', ' ', src_notag)
+    import html
+    src_notag = html.unescape(src_notag)
+    for brand in secondary_brands:
+        n = src_notag.count(brand)
+        if n:
+            problems.append(f'body-text brand mention "{brand}" ({n})')
     # Basic parse check: try libxml if available; otherwise heuristic
     try:
         import xml.etree.ElementTree as ET
