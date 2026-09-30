@@ -55,7 +55,8 @@ def check_file(page, path):
     # Content gates: zero secondary-source mentions in body text or as links.
     secondary_hosts = ['health.harvard.edu','mayoclinic.org','my.clevelandclinic.org','clevelandclinic.org',
                         'nhs.uk','heart.org','americanheart.org','acefitness.org','acsm.org','nsca.com','wikipedia.org']
-    secondary_brands = ['Harvard Health','Mayo Clinic','Cleveland Clinic',
+    secondary_brands = ['Harvard','Mayo Clinic','Cleveland Clinic',
+                         'NHS','National Health Service',
                          'American Heart Association','American Council on Exercise',
                          'American College of Sports Medicine','ACSM','NSCA','Wikipedia']
     # Links to secondary domains
