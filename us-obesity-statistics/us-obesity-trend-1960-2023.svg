@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" width="640" height="440" role="img" aria-labelledby="trend-embed-title trend-embed-desc">
+<title id="trend-embed-title">US adult obesity, overweight and severe obesity, 1960–2023</title>
+<desc id="trend-embed-desc">Age-adjusted percent of US adults ages 20 to 74, measured by NHANES. Obesity rose from 13.4% in 1960–1962 to 40.8% in August 2021–August 2023. Severe obesity rose from 0.9% to 10.2%. Overweight stayed near 31% (31.5% to 31.3%). Source: CDC NCHS Health E-Stat 111.</desc>
+<style>.cmbv-ink{fill:#1F2937}.cmbv-mut{fill:#6B7280}.cmbv-ow{stroke:#E0A526}.cmbv-ob{stroke:#E0612D}.cmbv-sev{stroke:#9E1B1B}.cmbv-owf{fill:#E0A526}.cmbv-obf{fill:#E0612D}.cmbv-sevf{fill:#9E1B1B}.cmbv-owt{fill:#8A5A00}.cmbv-obt{fill:#B3431A}.cmbv-sevt{fill:#8E1B1B}text{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}</style>
+<rect width="640" height="440" fill="#FFFFFF"/>
+<text x="16" y="34" class="cmbv-ink" font-size="24" font-weight="700">US obesity tripled in 60 years</text>
+<text x="16" y="60" class="cmbv-mut" font-size="16">Adults ages 20–74, age-adjusted percent, measured (NHANES)</text>
+<line x1="44" y1="356.0" x2="530" y2="356.0" stroke="#E5E7EB" stroke-width="1"/>
+<text x="36" y="360.0" text-anchor="end" class="cmbv-mut" font-size="14">0%</text>
+<line x1="44" y1="303.2" x2="530" y2="303.2" stroke="#E5E7EB" stroke-width="1"/>
+<text x="36" y="307.2" text-anchor="end" class="cmbv-mut" font-size="14">10%</text>
+<line x1="44" y1="250.4" x2="530" y2="250.4" stroke="#E5E7EB" stroke-width="1"/>
+<text x="36" y="254.4" text-anchor="end" class="cmbv-mut" font-size="14">20%</text>
+<line x1="44" y1="197.6" x2="530" y2="197.6" stroke="#E5E7EB" stroke-width="1"/>
+<text x="36" y="201.6" text-anchor="end" class="cmbv-mut" font-size="14">30%</text>
+<line x1="44" y1="144.8" x2="530" y2="144.8" stroke="#E5E7EB" stroke-width="1"/>
+<text x="36" y="148.8" text-anchor="end" class="cmbv-mut" font-size="14">40%</text>
+<line x1="44" y1="92.0" x2="530" y2="92.0" stroke="#E5E7EB" stroke-width="1"/>
+<text x="36" y="96.0" text-anchor="end" class="cmbv-mut" font-size="14">50%</text>
+<line x1="58.5" y1="356" x2="58.5" y2="361" stroke="#6B7280"/>
+<text x="58.5" y="376" text-anchor="middle" class="cmbv-mut" font-size="14">1960</text>
+<line x1="131.0" y1="356" x2="131.0" y2="361" stroke="#6B7280"/>
+<text x="131.0" y="376" text-anchor="middle" class="cmbv-mut" font-size="14">1970</text>
+<line x1="203.6" y1="356" x2="203.6" y2="361" stroke="#6B7280"/>
+<text x="203.6" y="376" text-anchor="middle" class="cmbv-mut" font-size="14">1980</text>
+<line x1="276.1" y1="356" x2="276.1" y2="361" stroke="#6B7280"/>
+<text x="276.1" y="376" text-anchor="middle" class="cmbv-mut" font-size="14">1990</text>
+<line x1="348.7" y1="356" x2="348.7" y2="361" stroke="#6B7280"/>
+<text x="348.7" y="376" text-anchor="middle" class="cmbv-mut" font-size="14">2000</text>
+<line x1="421.2" y1="356" x2="421.2" y2="361" stroke="#6B7280"/>
+<text x="421.2" y="376" text-anchor="middle" class="cmbv-mut" font-size="14">2010</text>
+<line x1="493.7" y1="356" x2="493.7" y2="361" stroke="#6B7280"/>
+<text x="493.7" y="376" text-anchor="middle" class="cmbv-mut" font-size="14">2020</text>
+<polyline points="69.4,189.7 152.8,183.3 192.7,186.5 287.0,183.9 348.7,178.6 363.2,174.4 377.7,179.6 392.2,186.0 406.7,178.6 421.2,183.3 435.7,180.2 450.2,187.6 464.7,192.3 479.2,196.0 512.6,190.7" fill="none" class="cmbv-ow" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="69.4" cy="189.7" r="3" class="cmbv-owf"/>
+<circle cx="152.8" cy="183.3" r="3" class="cmbv-owf"/>
+<circle cx="192.7" cy="186.5" r="3" class="cmbv-owf"/>
+<circle cx="287.0" cy="183.9" r="3" class="cmbv-owf"/>
+<circle cx="348.7" cy="178.6" r="3" class="cmbv-owf"/>
+<circle cx="363.2" cy="174.4" r="3" class="cmbv-owf"/>
+<circle cx="377.7" cy="179.6" r="3" class="cmbv-owf"/>
+<circle cx="392.2" cy="186.0" r="3" class="cmbv-owf"/>
+<circle cx="406.7" cy="178.6" r="3" class="cmbv-owf"/>
+<circle cx="421.2" cy="183.3" r="3" class="cmbv-owf"/>
+<circle cx="435.7" cy="180.2" r="3" class="cmbv-owf"/>
+<circle cx="450.2" cy="187.6" r="3" class="cmbv-owf"/>
+<circle cx="464.7" cy="192.3" r="3" class="cmbv-owf"/>
+<circle cx="479.2" cy="196.0" r="3" class="cmbv-owf"/>
+<circle cx="512.6" cy="190.7" r="3" class="cmbv-owf"/>
+<polyline points="69.4,285.2 152.8,279.4 192.7,276.8 287.0,233.5 348.7,192.8 363.2,191.3 377.7,182.3 392.2,170.7 406.7,174.9 421.2,165.4 435.7,169.6 450.2,154.3 464.7,144.8 479.2,130.0 512.6,140.6" fill="none" class="cmbv-ob" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="69.4" cy="285.2" r="3" class="cmbv-obf"/>
+<circle cx="152.8" cy="279.4" r="3" class="cmbv-obf"/>
+<circle cx="192.7" cy="276.8" r="3" class="cmbv-obf"/>
+<circle cx="287.0" cy="233.5" r="3" class="cmbv-obf"/>
+<circle cx="348.7" cy="192.8" r="3" class="cmbv-obf"/>
+<circle cx="363.2" cy="191.3" r="3" class="cmbv-obf"/>
+<circle cx="377.7" cy="182.3" r="3" class="cmbv-obf"/>
+<circle cx="392.2" cy="170.7" r="3" class="cmbv-obf"/>
+<circle cx="406.7" cy="174.9" r="3" class="cmbv-obf"/>
+<circle cx="421.2" cy="165.4" r="3" class="cmbv-obf"/>
+<circle cx="435.7" cy="169.6" r="3" class="cmbv-obf"/>
+<circle cx="450.2" cy="154.3" r="3" class="cmbv-obf"/>
+<circle cx="464.7" cy="144.8" r="3" class="cmbv-obf"/>
+<circle cx="479.2" cy="130.0" r="3" class="cmbv-obf"/>
+<circle cx="512.6" cy="140.6" r="3" class="cmbv-obf"/>
+<polyline points="69.4,351.2 152.8,349.1 192.7,348.6 287.0,340.2 348.7,329.6 363.2,327.5 377.7,329.1 392.2,323.3 406.7,324.3 421.2,321.2 435.7,321.2 450.2,313.2 464.7,313.8 479.2,305.3 512.6,302.1" fill="none" class="cmbv-sev" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="69.4" cy="351.2" r="3" class="cmbv-sevf"/>
+<circle cx="152.8" cy="349.1" r="3" class="cmbv-sevf"/>
+<circle cx="192.7" cy="348.6" r="3" class="cmbv-sevf"/>
+<circle cx="287.0" cy="340.2" r="3" class="cmbv-sevf"/>
+<circle cx="348.7" cy="329.6" r="3" class="cmbv-sevf"/>
+<circle cx="363.2" cy="327.5" r="3" class="cmbv-sevf"/>
+<circle cx="377.7" cy="329.1" r="3" class="cmbv-sevf"/>
+<circle cx="392.2" cy="323.3" r="3" class="cmbv-sevf"/>
+<circle cx="406.7" cy="324.3" r="3" class="cmbv-sevf"/>
+<circle cx="421.2" cy="321.2" r="3" class="cmbv-sevf"/>
+<circle cx="435.7" cy="321.2" r="3" class="cmbv-sevf"/>
+<circle cx="450.2" cy="313.2" r="3" class="cmbv-sevf"/>
+<circle cx="464.7" cy="313.8" r="3" class="cmbv-sevf"/>
+<circle cx="479.2" cy="305.3" r="3" class="cmbv-sevf"/>
+<circle cx="512.6" cy="302.1" r="3" class="cmbv-sevf"/>
+<text x="540" y="141.6" class="cmbv-ink" font-size="16" font-weight="700">40.8%</text>
+<text x="540" y="158.6" class="cmbv-obt" font-size="14" font-weight="700">obesity</text>
+<text x="540" y="191.7" class="cmbv-ink" font-size="16" font-weight="700">31.3%</text>
+<text x="540" y="208.7" class="cmbv-owt" font-size="14" font-weight="700">overweight</text>
+<text x="540" y="303.1" class="cmbv-ink" font-size="16" font-weight="700">10.2%</text>
+<text x="540" y="320.1" class="cmbv-sevt" font-size="14" font-weight="700">severe</text>
+<text x="73.4" y="275.2" class="cmbv-obt" font-size="14" font-weight="700">13.4%</text>
+<text x="73.4" y="179.7" class="cmbv-owt" font-size="14" font-weight="700">31.5%</text>
+<text x="73.4" y="342.2" class="cmbv-sevt" font-size="14" font-weight="700">0.9%</text>
+<text x="16" y="414" class="cmbv-mut" font-size="14">Source: CDC National Center for Health Statistics, Health E-Stat 111 (Feb 2026).</text>
+<text x="16" y="431" class="cmbv-mut" font-size="14">Chart: CalculateMyBMI (calculatemybmi.net) · CC BY 4.0</text>
+</svg>

@@ -15,7 +15,7 @@ blog/bmi-by-age,bmi-chart,data,informational,"NCHS prevalence by age group + 65+
 body-fat-calculator,calculators,tool,tool,"Navy tape + skinfold (Jackson-Pollock) + BMI-based estimates side by side with method error, result placed on NHANES DXA percentiles",DoD circumference equations; Jackson-Pollock 1978/1980 + Siri 1961; NHANES DXA reference - data-sourcing pending,T1,proposed,Google already cites /blog/body-fat-vs-bmi for body-fat queries (AI features)
 body-fat-percentage-chart,root,data,informational,US body-fat percentiles by age and sex from NHANES DXA instead of unsourced fitness tiers,NHANES DXA body composition (CDC/NCHS) - data-sourcing pending,T1,proposed,SERP queue: one page vs women/men split
 blog/how-to-measure-body-fat,blog,article,informational,Every method scored against DXA using published validation studies,Peer-reviewed method-validation studies - data-sourcing pending,T1,proposed,
-us-obesity-statistics,root,data,informational,60-year NHANES trend + sex/age splits in one embeddable chart (link magnet),NCHS Health E-Stat 111 (1960-2023); NCHS DB 508,T1,proposed,Dataset schema; embed snippet with attribution link
+us-obesity-statistics,root,data,informational,60-year NHANES trend + sex/age splits in one embeddable chart (link magnet),nhanes-adult-weight-trends,T1,built,Dataset schema; embed snippet with attribution link
 obesity-rate-by-state,us-obesity-statistics,data,informational,Interactive state map + ranked table + year slider,CDC BRFSS Adult Obesity Prevalence Maps (self-reported) - data-sourcing pending,T2,proposed,Map UX = portfolio strength
 average-weight,root,data,informational,"NHANES-computed average weight by sex, age and height band",NHANES 2021-2023 examination data (weighted) / NCHS Anthropometric Reference Data - data-sourcing pending,T2,proposed,One page with height/age tables and anchors - never one page per height (doorway rule). SERP queue: women/men split
 average-height,average-weight,data,informational,NHANES average height by sex and age,NHANES examination data - data-sourcing pending,T3,proposed,110k head terms but likely answer-box/zero-click; off-core - backlog
@@ -45,3 +45,4 @@ about,root,structural,navigational,,structural,T1,live,
 contact,root,structural,navigational,,structural,T1,live,
 privacy,root,structural,navigational,,structural,T1,live,Raptive disclosure required now that ads are live
 terms,root,structural,navigational,,structural,T1,live,
+childhood-obesity-statistics,us-obesity-statistics,data,informational,Measured kids 2-19 trends since 1963-65 by age/sex/race with CDC percentile definitions explained; links to the kids BMI calculator,nhanes-child-weight-trends,T2,proposed,Split from us-obesity-statistics Tier-2: ~4.8k/mo across 51 groups.

@@ -5075,3 +5075,519 @@ bmi history,,,,,existing-page,informational,blog/bmi-history,primary,,na,"Live p
 bmi health risks,,,,,existing-page,informational,blog/bmi-and-health-risks,primary,,na,"Live page target; not covered by KWP rounds B1-B3 - volume missing (seed in round 2), never estimated"
 underweight bmi risks,,,,,existing-page,informational,blog/underweight-bmi-risks,primary,,na,"Live page target; not covered by KWP rounds B1-B3 - volume missing (seed in round 2), never estimated"
 how to read a bmi chart,,,,,existing-page,informational,blog/bmi-chart-explained,primary,,na,"Live page target; not covered by KWP rounds B1-B3 - volume missing (seed in round 2), never estimated"
+us obesity rate,14800,0%,-18%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,secondary,,verified-merge,"KWP-grouped (identical series): obesity rate usa; obesity rate of us; obesity rate of usa; obesity us percentage; obesity rate in america; obesity rating in america; north america obesity rate; united states obesity rate | SERP 30 Sep 2026 (Marko paste): 'what percentage of americans are obese' vs 'obesity rate in america' share CDC DB508, NIDDK, CDC maps, ASMBS, Harvard Gazette = 5/10, same type -> merge | demoted on merge: page already had a primary"
+what percentage of americans are obese,14800,0%,-45%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,verified-merge,"KWP-grouped (identical series): what percentage of us is overweight; what percent of the us is overweight; what percentage of americans are fat; what percentage of americans are overweight; what is the percentage of overweight in america | SERP 30 Sep 2026 (Marko paste): 'what percentage of americans are obese' vs 'obesity rate in america' share CDC DB508, NIDDK, CDC maps, ASMBS, Harvard Gazette = 5/10, same type -> merge | demoted on merge: page already had 5 secondaries"
+obesity in america,5400,0%,-33%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,queued,"KWP-grouped (identical series): obesity in the us; states by obesity; obesity by us state; north america obesity; obese state in america; united states and obesity; obesity in the united states | mixed-intent group: US=5, STATE=3 | KWP folds state-intent variants into this group; SERP-check 'obesity in america' vs 'states by obesity rate' at state-page build | demoted on merge: page already had 5 secondaries"
+obesity stats by country,5400,-19%,-33%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+most obese state in america,3600,0%,-18%,Low,T2-B1-head-modifiers,informational,obesity-rate-by-state,tertiary,,auto,KWP-grouped (identical series): most obese state in usa; most obese state in the us; most obese states in the us
+percentage of obese americans,3600,0%,-46%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): obese percentage usa; obese percentage in us; obese percentage in usa; number of obese americans; obesity in usa percentage; percent of us that is obese; obesity in the us percentage
+the most obese countries in the world,3600,0%,52%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+how many people are obese in america,2900,0%,-34%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): how many fat people are in america; how many people are overweight in america | demoted on merge: page already had 5 secondaries
+states by obesity rate,2900,0%,-34%,Low,T2-B1-head-modifiers,informational,obesity-rate-by-state,secondary,,auto,PRIMARY ONLY IF obesity-rate-by-state has no primary yet; else tertiary | demoted on merge: page already had a primary
+percentage of overweight americans,2400,0%,-47%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): america overweight rate; percentage overweight us; percentage of us overweight; percentage of overweight in usa | demoted on merge: page already had 5 secondaries
+how many americans are obese,1900,-19%,-46%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): how many obese in the us; how many in america are obese; how many of americans are obese
+america average bmi,1600,0%,-16%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+what percentage of the us are obese,1600,0%,-16%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): what the percentage of obese in america; what is the percentage of obesity in the united states
+childhood obesity in america,1300,22%,-32%,Low,T2-B1-head-modifiers,informational,childhood-obesity-statistics,primary,,auto,KWP-grouped (identical series): childhood obesity usa; childhood obesity in usa; childhood obesity in the united states | split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+childhood obesity rate,1300,-18%,-55%,Low,T2-B1-head-modifiers,informational,childhood-obesity-statistics,secondary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+what is america's obesity rate,1300,0%,0%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+what percent of people in the us are obese,1300,30%,0%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): what percent of the us population is obese; what is the percentage of fat people in america; what is the percentage of obese people in america
+how many americans are overweight,880,0%,-28%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): how many overweight in america; how many are overweight in america
+obese stats,880,-19%,-34%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+what percentage of americans are obese or overweight,880,0%,22%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): what percentage of america is overweight or obese
+what is the percentage of childhood obesity in america,590,23%,-19%,Low,T2-B2-questions,informational,childhood-obesity-statistics,secondary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+what percent of us adults are obese,590,0%,-45%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): what percent of adults in the us are obese; what percent of adults in america are obese; what percentage of adults are obese in the us; what is the percent of obese adults in america
+what percentage of us population is overweight,590,23%,-18%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): what is the percentage of overweight people in america
+obesity epidemic in america,480,-19%,-33%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): overweight epidemic in america; united states obesity epidemic; epidemic obesity in the united states
+percent us population obese,480,0%,-19%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): percent of us population obese; percent of obese people in the us; percentage of obese people in america
+us obesity rate over time,480,-18%,-64%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): obesity rates in the us over time
+america fat,390,-18%,-18%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+how much obesity in america,390,22%,0%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+obesity rate global,390,0%,-46%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"KWP-grouped (identical series): global obesity statistics | PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+obesity rate worldwide,390,-19%,-33%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"KWP-grouped (identical series): obesity rate of the world | PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+us obesity rate by state,390,-19%,-34%,Low,T2-B3-demographics-entities,informational,obesity-rate-by-state,tertiary,,auto,KWP-grouped (identical series): obesity rate in america by state
+what is the us obesity rate,390,22%,22%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+fat women in america,320,0%,-33%,Low,T2-B3-demographics-entities,informational,,discard,offtopic,na,
+obesity chart usa,320,-19%,-47%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): obesity graph us; america obesity chart; obesity chart united states
+obesity rate by race,320,-19%,-19%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): obesity statistics by race
+world obesity stats,320,-34%,-46%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+america overweight,260,-19%,-46%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): american overweight; overweight in the us; overweight in the usa; united states overweight
+cdc obesity statistics,260,0%,-35%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+obese people in the us,260,0%,-34%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): obese people in america
+obesity death statistics,260,-35%,-47%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,site scope (Aug 2 2026): no health-outcome/mortality/cost claims
+obesity issues in america,260,0%,-33%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+what percent of us adults are overweight,260,0%,-19%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): what is the percent of overweight adults in america; what percentage of adults in america are overweight; what is the percentage of overweight adults in america
+how many people obese in america,210,27%,-33%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): how many people have obesity in america; how many obese people are there in america
+how many americans are obese or overweight,170,-36%,-36%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+how many us adults are obese,170,27%,-33%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): how many adults are obese in the us; how many adults in the us are obese; how many adults in america are obese
+obese us population,170,27%,-33%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): american obese population; american population obese; obese population in america; population of obese in america
+obesity in america video,170,-19%,50%,Low,T2-B3-demographics-entities,navigational,,discard,navigational,na,
+percentage of fat people in usa,170,21%,-19%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): percent of fat people in america
+us obesity rate by race,170,0%,24%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): obesity rates by race in us; obesity rate in america by race
+what percent of people in america are overweight,170,-19%,0%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+what percentage of americans are morbidly obese,170,-19%,0%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+america and obesity facts,140,0%,-29%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+bmi data,140,0%,-21%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+cdc obesity maps,140,57%,0%,Low,T2-B1-head-modifiers,informational,obesity-rate-by-state,tertiary,,auto,
+how many percent of america is obese,140,27%,-18%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+what percentage of americans are considered obese,140,21%,0%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+america fat people,110,22%,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): fat people in the usa
+current obesity rate in the us,110,0%,-59%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): current obesity rate in america; current obesity rate in the united states
+of overweight americans,110,0%,-47%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+teenage obesity rate,110,-29%,-44%,Low,T2-B3-demographics-entities,informational,childhood-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): percentage of obese teens | split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+how many americans are fat,90,22%,22%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+obesity in america articles,90,-25%,-57%,Low,T2-B1-head-modifiers,navigational,,discard,navigational,na,KWP-grouped (identical series): articles on obesity in the united states
+obesity rate around the world,90,-29%,-44%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+obesity rate by year,90,0%,-50%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): obesity statistics by year
+obesity trends,90,25%,-29%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+overweight percentage usa,90,29%,-18%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+american population overweight,70,0%,-36%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+cost of obesity in the united states,70,-25%,-40%,Low,T2-B3-demographics-entities,informational,,discard,offtopic,na,site scope (Aug 2 2026): no health-outcome/mortality/cost claims
+fast food obesity in america,70,0%,-33%,Low,T2-B3-demographics-entities,informational,,discard,below-floor-backlog,na,KWP-grouped (identical series): fast food and obesity in america; fast food causing obesity in america; fast food and obesity in the united states | causes/income split: no verified NCHS 2021-23 source; never answer causes without a primary
+global obesity prevalence,70,25%,-29%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+how many people in america are fat,70,75%,40%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+how many us adults are overweight,70,0%,-44%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): how many overweight adults in america
+increase in obesity in america,70,-33%,-71%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+is childhood obesity increasing,70,75%,0%,Low,T2-B2-questions,informational,childhood-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): is childhood obesity on the rise | split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+is obesity increasing,70,25%,-29%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): is obesity on the rise
+most obese race in america,70,0%,-22%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+obese american woman,70,-29%,-44%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+obesity data,70,50%,-25%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+obesity rate by race and gender,70,0%,-18%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): obesity rates by race and gender
+obesity rate chart,70,-25%,-57%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+percentage of overweight people,70,75%,-50%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+prevalence of childhood obesity,70,-33%,-60%,Low,T2-B1-head-modifiers,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+the fattest state in america,70,-22%,0%,Low,T2-B3-demographics-entities,informational,obesity-rate-by-state,tertiary,,auto,
+us obesity by race,70,-29%,-44%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): obesity by race in america; obesity in america by race
+why is obesity increasing,70,-25%,-67%,Low,T2-B2-questions,informational,,discard,below-floor-backlog,na,KWP-grouped (identical series): why is obesity on the rise | causes/income split: no verified NCHS 2021-23 source; never answer causes without a primary
+american obesity compared to other countries,50,67%,0%,Low,T2-B3-demographics-entities,informational,,discard,offtopic,na,"KWP-grouped (identical series): obesity in america compared to other countries | PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+average body fat in america,50,0%,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+history of obesity in the united states,50,0%,-60%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+how many americans are considered obese,50,25%,25%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+how many americans are morbidly obese,50,40%,40%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+obesity rate by age,50,0%,-55%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): obesity statistics by age
+obesity rate by gender,50,-20%,-43%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): obesity gender statistics
+percentage of american women overweight,50,25%,-29%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): percentage of overweight women in america
+what percent of us adults are overweight or obese,50,-25%,-57%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+what percentage of adult americans are obese,50,100%,-43%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+what percentage of us citizens are obese,50,0%,0%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+bmi statistics,40,-20%,-43%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+cdc obesity data,40,0%,-33%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+obesity death in america,40,0%,-33%,Low,T2-B3-demographics-entities,informational,,discard,offtopic,na,KWP-grouped (identical series): obesity cause of death in america | site scope (Aug 2 2026): no health-outcome/mortality/cost claims
+obesity in teenage america,40,0%,-33%,Low,T2-B3-demographics-entities,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+overweight people usa,40,-33%,-71%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): overweight people in america
+percent of american adults overweight,40,0%,-57%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): percent of overweight adults in america
+percent overweight,40,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+percentage of obese women in america,40,0%,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+what percent of america is morbidly obese,40,67%,0%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+why is childhood obesity on the rise,40,33%,100%,Low,T2-B2-questions,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+adult overweight,30,133%,133%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+americans are so fat,30,-33%,-50%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+average american overweight,30,0%,-33%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): average overweight in america
+average obesity in america,30,50%,50%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+cdc childhood obesity statistics,30,100%,100%,Low,T2-B3-demographics-entities,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+cdc obesity facts,30,-50%,-50%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+cdc obesity trends,30,0%,-50%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+how many adults are overweight in the us,30,-33%,-50%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+how many americans have obesity,30,-33%,-33%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+how many percent of americans are overweight,30,-25%,0%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+how many women are obese in america,30,50%,-25%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+how many women are overweight in america,30,100%,-50%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+https www cdc gov obesity data adult html,30,-50%,-50%,Low,T2-B1-head-modifiers,navigational,,discard,navigational,na,
+https www cdc gov obesity data childhood html,30,-100%,-100%,Unknown,T2-B1-head-modifiers,navigational,,discard,navigational,na,
+is my bmi high,30,80%,800%,Low,T2-B2-questions,tool,,discard,offtopic,na,tool intent -> BMI calculator (home); re-assign if owner exists
+is obesity going down,30,0%,0%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+obesity data set,30,0%,-50%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+obesity numbers in the us,30,-50%,-75%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): obesity numbers in america
+obesity overweight statistics,30,0%,-50%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): obesity and overweight statistics
+obesity statistics in the world,30,-33%,-50%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+overweight rates by country,30,0%,-40%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+percent of morbidly obese in america,30,50%,-40%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+percent of overweight and obese in america,30,-50%,-60%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): percentage of overweight and obese in america
+percent of population obese,30,0%,-50%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+prevalence of childhood obesity in the us,30,100%,0%,Low,T2-B3-demographics-entities,informational,childhood-obesity-statistics,tertiary,,auto,KWP-grouped (identical series): prevalence of childhood obesity in the united states | split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+solutions to obesity in america,30,0%,0%,Low,T2-B3-demographics-entities,informational,,discard,offtopic,na,site scope: no treatment/drug/prescriptive content
+america getting fatter,20,0%,-50%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+amount of obese people in america,20,0%,-50%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+are women more obese than men,20,-33%,100%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+average obesity rate in the world,20,0%,0%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+cdc obesity rates by state,20,0%,0%,Low,T2-B3-demographics-entities,informational,obesity-rate-by-state,tertiary,,auto,
+childhood obesity data,20,0%,-50%,Low,T2-B1-head-modifiers,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+childhood obesity rates by year,20,0%,-80%,Low,T2-B1-head-modifiers,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+childhood obesity statistics by year,20,0%,-80%,Low,T2-B1-head-modifiers,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+data on obesity in america,20,0%,100%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+demographics of obesity in the united states,20,0%,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+how many americans die from obesity,20,0%,-33%,Low,T2-B2-questions,informational,,discard,offtopic,na,site scope (Aug 2 2026): no health-outcome/mortality/cost claims
+how many americans suffer from obesity,20,0%,0%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+how many people suffer from obesity in america,20,0%,0%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+how many us citizens are obese,20,0%,0%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+most americans are overweight,20,-50%,-67%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+national average obesity rate,20,-50%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+nhanes obesity,20,100%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+obesity by state usa,20,50%,0%,Low,T2-B3-demographics-entities,informational,obesity-rate-by-state,tertiary,,auto,
+obesity data usa,20,0%,100%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+obesity in america reddit,20,0%,-60%,Low,T2-B3-demographics-entities,navigational,,discard,navigational,na,
+obesity on the rise in america,20,0%,-50%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+obesity rates by age group,20,0%,-67%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+of obese people in america,20,100%,-33%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+overweight and obesity in the united states,20,0%,-50%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+overweight and obesity in the us,20,0%,-50%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+overweight percentage by country,20,-50%,-67%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+overweight rate usa,20,0%,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+overweight statistics,20,100%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+overweight stats,20,100%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+percent of adults overweight,20,100%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+percent of america overweight,20,-33%,-33%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+percent of population overweight,20,100%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+percentage of adults that are obese,20,100%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+percentage of obese adults,20,100%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+percentage of overweight people in the world,20,250%,250%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+percentage of overweight women,20,100%,-33%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+percentage of people obese,20,0%,-50%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+prevalence of overweight and obesity in the united states,20,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+race with highest obesity rate,20,100%,100%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+scholarly articles on obesity in america,20,0%,0%,Low,T2-B3-demographics-entities,navigational,,discard,navigational,na,
+socioeconomic status and obesity in the united states,20,100%,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+the obesity epidemic in america,20,0%,-50%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+us obesity by year,20,-50%,-50%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+what is a high body mass index,20,0%,0%,Low,T2-B2-questions,tool,,discard,offtopic,na,tool intent -> BMI calculator (home); re-assign if owner exists
+what is the percentage of teenage obesity in america,20,-50%,-50%,Low,T2-B2-questions,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+what percent of america is over weight,20,-50%,0%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+what percent of us citizens are overweight,20,100%,0%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+what percentage of the us is morbidly obese,20,-50%,-50%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+why are women more obese than men,20,0%,100%,Low,T2-B2-questions,informational,,discard,below-floor-backlog,na,causes/income split: no verified NCHS 2021-23 source; never answer causes without a primary
+about what percentage of american adults are overweight,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+america obese population,10,0%,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+america obesity rate 2020,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+america obesity rate by year,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+america overweight rate 2022,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+american adults overweight,10,0%,-50%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+american culture and obesity,10,0%,0%,Low,T2-B3-demographics-entities,informational,,discard,below-floor-backlog,na,causes/income split: no verified NCHS 2021-23 source; never answer causes without a primary
+american food culture and obesity,10,0%,-100%,Unknown,T2-B3-demographics-entities,informational,,discard,below-floor-backlog,na,causes/income split: no verified NCHS 2021-23 source; never answer causes without a primary
+american obesity treatment association,10,0%,0%,Unknown,T2-B3-demographics-entities,navigational,,discard,navigational,na,
+american overweight and obesity statistics,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+americans so fat,10,0%,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+annual medical cost of obesity in the united states,10,∞,0%,Low,T2-B3-demographics-entities,informational,,discard,offtopic,na,site scope (Aug 2 2026): no health-outcome/mortality/cost claims
+articles on childhood obesity in america,10,0%,0%,Low,T2-B3-demographics-entities,navigational,,discard,navigational,na,
+behavioral risk factor surveillance system obesity,10,∞,0%,Low,T2-B1-head-modifiers,informational,obesity-rate-by-state,tertiary,,auto,
+big as life obesity in america,10,0%,0%,Low,T2-B3-demographics-entities,navigational,,discard,navigational,na,
+bmi trends in america,10,∞,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+california obesity rate 2021,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,obesity-rate-by-state,tertiary,,auto,
+california obesity rate 2022,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,obesity-rate-by-state,tertiary,,auto,
+case study on obesity in america,10,0%,0%,Unknown,T2-B3-demographics-entities,navigational,,discard,navigational,na,
+causes of childhood obesity in america,10,0%,0%,Low,T2-B3-demographics-entities,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+cdc obesity rates 2020,10,0%,-100%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+cdc obesity statistics 2020,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+cdc overweight and obesity statistics,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+cdc overweight statistics,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+census obesity data,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+childhood obesity costs in america,10,-100%,-100%,Unknown,T2-B1-head-modifiers,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+childhood obesity demographics,10,∞,0%,Low,T2-B1-head-modifiers,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+childhood obesity epidemic in america,10,0%,0%,Low,T2-B3-demographics-entities,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+childhood obesity in america compared to other countries,10,0%,0%,Low,T2-B3-demographics-entities,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+childhood obesity in the united states articles,10,0%,0%,Low,T2-B3-demographics-entities,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+childhood obesity rates by race,10,0%,0%,Low,T2-B3-demographics-entities,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+childhood obesity rates in america by year,10,-100%,-100%,Unknown,T2-B1-head-modifiers,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+childhood obesity statistics by race,10,0%,0%,Low,T2-B3-demographics-entities,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+childhood obesity statistics over the last 10 years,10,0%,-100%,Unknown,T2-B1-head-modifiers,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+childhood obesity trends in the us,10,∞,0%,Low,T2-B1-head-modifiers,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+childhood overweight statistics,10,0%,0%,Low,T2-B1-head-modifiers,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+combating obesity in america,10,∞,0%,Low,T2-B3-demographics-entities,informational,,discard,offtopic,na,site scope: no treatment/drug/prescriptive content
+cost of childhood obesity in the us,10,-100%,-100%,Unknown,T2-B1-head-modifiers,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+county level obesity data,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+current rates of obesity in america,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+current statistics on childhood obesity in america,10,-100%,-100%,Unknown,T2-B1-head-modifiers,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+data bmi,10,0%,-100%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+detroit obesity rate,10,0%,0%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,city/sub-state: no verified city-level source
+education and obesity in america,10,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+effects of obesity in america,10,∞,0%,Low,T2-B3-demographics-entities,informational,,discard,offtopic,na,site scope (Aug 2 2026): no health-outcome/mortality/cost claims
+effects of obesity in the united states,10,∞,0%,Low,T2-B3-demographics-entities,informational,,discard,offtopic,na,site scope (Aug 2 2026): no health-outcome/mortality/cost claims
+fast food and childhood obesity in america,10,0%,-100%,Unknown,T2-B3-demographics-entities,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+fast food fat profits obesity in america,10,-100%,-100%,Unknown,T2-B1-head-modifiers,informational,,discard,below-floor-backlog,na,causes/income split: no verified NCHS 2021-23 source; never answer causes without a primary
+fattest city in america 2022,10,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+fattest state in america 2022,10,0%,-100%,Unknown,T2-B3-demographics-entities,informational,obesity-rate-by-state,tertiary,,auto,
+fattest states in america 2022,10,0%,-100%,Unknown,T2-B3-demographics-entities,informational,obesity-rate-by-state,tertiary,,auto,
+female obesity rate in america,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+fighting obesity in america,10,-100%,-100%,Unknown,T2-B3-demographics-entities,informational,,discard,offtopic,na,site scope: no treatment/drug/prescriptive content
+florida obesity rate 2021,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,obesity-rate-by-state,tertiary,,auto,
+foods that cause obesity in america,10,0%,-100%,Unknown,T2-B3-demographics-entities,informational,,discard,below-floor-backlog,na,causes/income split: no verified NCHS 2021-23 source; never answer causes without a primary
+global obesity data,10,0%,0%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+global obesity epidemic statistics,10,-100%,-100%,Unknown,T2-B3-demographics-entities,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+global overweight statistics,10,∞,0%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+graph of obesity in america over time,10,0%,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+growing obesity rates in america,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+high obesity rates in america,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+history of childhood obesity in america,10,0%,0%,Low,T2-B3-demographics-entities,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+how many adults are obese in america,10,0%,0%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+how many americans are obese 2022,10,0%,0%,Unknown,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+how many deaths are caused by obesity in america,10,0%,0%,Low,T2-B2-questions,informational,,discard,offtopic,na,site scope (Aug 2 2026): no health-outcome/mortality/cost claims
+how many morbidly obese in us,10,0%,0%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+how many percent of america is overweight,10,0%,-100%,Unknown,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+how many students are obese in america,10,-100%,-100%,Unknown,T2-B2-questions,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+how many us citizens are overweight,10,0%,0%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+https www cdc gov obesity data prevalence maps html,10,0%,0%,Low,T2-B1-head-modifiers,navigational,,discard,navigational,na,
+hunger and obesity are the same problem in the us,10,0%,0%,Unknown,T2-B3-demographics-entities,informational,,discard,below-floor-backlog,na,causes/income split: no verified NCHS 2021-23 source; never answer causes without a primary
+hunger and obesity in america,10,0%,-100%,Unknown,T2-B3-demographics-entities,informational,,discard,below-floor-backlog,na,causes/income split: no verified NCHS 2021-23 source; never answer causes without a primary
+incidence rate of obesity in the us,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+information on obesity in america,10,-100%,-100%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+interesting facts about obesity in america,10,0%,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+is obesity rate increasing,10,0%,0%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+is the obesity rate increasing,10,0%,0%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+is the rate of obesity increasing,10,-50%,0%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+kentucky obesity rates by county,10,0%,0%,Low,T2-B1-head-modifiers,informational,obesity-rate-by-state,tertiary,,auto,
+massachusetts obesity rates by town,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,,discard,offtopic,na,city/sub-state: no verified city-level source
+medical cost of obesity in the united states,10,0%,0%,Low,T2-B3-demographics-entities,informational,,discard,offtopic,na,site scope (Aug 2 2026): no health-outcome/mortality/cost claims
+morbidly obese percentage usa,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+most obese race in the united states,10,0%,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+most obese state in america 2021,10,0%,0%,Unknown,T2-B3-demographics-entities,informational,obesity-rate-by-state,tertiary,,auto,
+most obese state in america 2022,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,obesity-rate-by-state,tertiary,,auto,
+national center for health statistics childhood obesity,10,0%,∞,Low,T2-B1-head-modifiers,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+national center for health statistics obesity,10,300%,300%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+national health and nutrition examination survey childhood obesity,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+national health and nutrition examination survey obesity,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+new york times obesity in america,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,obesity-rate-by-state,tertiary,,auto,
+nhanes childhood obesity,10,0%,0%,Low,T2-B1-head-modifiers,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+obese people america,10,0%,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+obese population in the us,10,0%,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+obese population in the world,10,0%,0%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+obesity among african american,10,0%,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+obesity and diabetes rates in the us,10,0%,0%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,site scope (Aug 2 2026): no health-outcome/mortality/cost claims
+obesity and disease statistics,10,∞,∞,Medium,T2-B1-head-modifiers,informational,,discard,offtopic,na,site scope (Aug 2 2026): no health-outcome/mortality/cost claims
+obesity and health care costs in america,10,0%,0%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,site scope (Aug 2 2026): no health-outcome/mortality/cost claims
+obesity and low income statistics,10,0%,-50%,Low,T2-B1-head-modifiers,informational,,discard,below-floor-backlog,na,causes/income split: no verified NCHS 2021-23 source; never answer causes without a primary
+obesity and overweight statistics in america,10,0%,-50%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+obesity and physical activity statistics,10,0%,-100%,Unknown,T2-B1-head-modifiers,informational,,discard,below-floor-backlog,na,causes/income split: no verified NCHS 2021-23 source; never answer causes without a primary
+obesity and race in the united states,10,0%,-100%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+obesity as a social problem in the united states,10,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+obesity association of america,10,0%,∞,Medium,T2-B3-demographics-entities,navigational,,discard,navigational,na,
+obesity by race united states,10,0%,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+obesity by race usa,10,0%,-50%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+obesity cases in america,10,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+obesity cause of death statistics,10,0%,0%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,site scope (Aug 2 2026): no health-outcome/mortality/cost claims
+obesity data by country,10,0%,0%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+obesity data by county,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+obesity data by state,10,-100%,-100%,Unknown,T2-B1-head-modifiers,informational,obesity-rate-by-state,tertiary,,auto,
+obesity data worldwide,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+obesity dataset csv,10,∞,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+obesity demographics in the us,10,-100%,-100%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+obesity epidemic statistics,10,0%,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+obesity facts in the world,10,0%,-100%,Unknown,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+obesity gis data,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,,discard,offtopic,na,city/sub-state: no verified city-level source
+obesity in adults in the united states,10,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+obesity in america 2019,10,-100%,-100%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity in america 2021,10,0%,-100%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity in america 2022,10,∞,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity in america 2030,10,0%,-100%,Unknown,T2-B3-demographics-entities,informational,,discard,below-floor-backlog,na,projections: no verified primary on this site
+obesity in america by age,10,0%,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+obesity in america by year,10,100%,-33%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+obesity in america chart over the years,10,-100%,-100%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+obesity in america due to fast food,10,-100%,0%,Unknown,T2-B3-demographics-entities,informational,,discard,below-floor-backlog,na,causes/income split: no verified NCHS 2021-23 source; never answer causes without a primary
+obesity in america essay,10,∞,0%,Low,T2-B3-demographics-entities,navigational,,discard,navigational,na,
+obesity in america gov,10,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+obesity in america journal articles,10,0%,0%,Unknown,T2-B3-demographics-entities,navigational,,discard,navigational,na,
+obesity in america news,10,0%,0%,Low,T2-B3-demographics-entities,navigational,,discard,navigational,na,
+obesity in america news articles,10,0%,0%,Low,T2-B3-demographics-entities,navigational,,discard,navigational,na,
+obesity in america paper,10,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+obesity in america pdf,10,-100%,0%,Unknown,T2-B3-demographics-entities,navigational,,discard,navigational,na,
+obesity in america research,10,-100%,0%,Unknown,T2-B3-demographics-entities,navigational,,discard,navigational,na,
+obesity in america research paper,10,-100%,-100%,Unknown,T2-B3-demographics-entities,navigational,,discard,navigational,na,
+obesity in america statistics 2020,10,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity in america statistics 2021,10,-100%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity in america today,10,0%,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+obesity in america wikipedia,10,0%,∞,Low,T2-B3-demographics-entities,navigational,,discard,navigational,na,
+obesity in america youtube,10,0%,0%,Low,T2-B3-demographics-entities,navigational,,discard,navigational,na,
+obesity in rural america,10,0%,0%,Low,T2-B3-demographics-entities,informational,,discard,below-floor-backlog,na,causes/income split: no verified NCHS 2021-23 source; never answer causes without a primary
+obesity in the workplace statistics,10,-100%,0%,Unknown,T2-B1-head-modifiers,informational,,discard,offtopic,na,
+obesity map 2021,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,obesity-rate-by-state,tertiary,,auto,
+obesity morbidity and mortality statistics,10,-100%,-100%,Unknown,T2-B1-head-modifiers,informational,,discard,offtopic,na,site scope (Aug 2 2026): no health-outcome/mortality/cost claims
+obesity mortality rate us,10,0%,0%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,site scope (Aug 2 2026): no health-outcome/mortality/cost claims
+obesity organizations in america,10,0%,0%,Low,T2-B3-demographics-entities,navigational,,discard,navigational,na,
+obesity our world in data,10,0%,0%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+obesity percentage in america 2021,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity percentage in america 2022,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity prevalence in the us 2020,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity prevalence in the world,10,0%,0%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+obesity rate 2021,10,0%,-100%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity rate by state 2022,10,0%,-100%,Unknown,T2-B1-head-modifiers,informational,obesity-rate-by-state,tertiary,,auto,
+obesity rate by zip code,10,0%,0%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,city/sub-state: no verified city-level source
+obesity rate in america 1980,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity rate in america 1990,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity rate in america 2010,10,0%,-50%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity rate in america 2019,10,-100%,-100%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity rate in america 2020,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity rate in america 2022 cdc,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity rate in america by race and gender,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+obesity rate in america over the past 10 years,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+obesity rate in california 2021,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,obesity-rate-by-state,tertiary,,auto,
+obesity rate in the us 2021,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity rate in united states 2021,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity rate in united states 2022,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity rate in us 2021,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity rate us 2022,10,0%,-100%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity rates by age and gender,10,0%,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+obesity rates by city in us,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+obesity rates by decade,10,0%,-50%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+obesity rates by demographic,10,0%,-50%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+obesity rates by state 2022,10,0%,-100%,Unknown,T2-B1-head-modifiers,informational,obesity-rate-by-state,tertiary,,auto,
+obesity rates in america 2022,10,-100%,-100%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity rates in america by decade,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+obesity rates in america last 10 years,10,0%,-50%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+obesity rates in nyc by neighborhood,10,0%,0%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,city/sub-state: no verified city-level source
+obesity rates in us 2022,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity ratio in the world,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+obesity solutions in america,10,-100%,0%,Unknown,T2-B3-demographics-entities,informational,,discard,offtopic,na,site scope: no treatment/drug/prescriptive content
+obesity statistics around the world,10,0%,0%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+obesity statistics in america 2020 cdc,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity statistics in america 2022,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity stats in america 2022,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+objective data for obesity,10,∞,∞,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,
+of fat people in america,10,0%,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+oklahoma obesity rate 2021,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,obesity-rate-by-state,tertiary,,auto,
+our world in data obesity,10,0%,-50%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+over weight americans,10,-100%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+over weight in america,10,∞,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+overall obesity rate in america,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+overweight and obesity rates,10,-100%,-100%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+overweight and obesity rates by country,10,0%,0%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+overweight and obesity statistics 2021,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+overweight and obesity statistics usa,10,∞,∞,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+overweight demographics,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+overweight in america 2021,10,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+overweight rate in america 2022,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+overweight statistics by country,10,0%,0%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+overweight statistics in america 2022,10,0%,-100%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+overweight to normal weight,10,0%,0%,Low,T2-B1-head-modifiers,tool,,discard,offtopic,na,tool intent -> BMI calculator (home); re-assign if owner exists
+peer reviewed articles on obesity in america,10,0%,0%,Low,T2-B3-demographics-entities,navigational,,discard,navigational,na,
+percent obese in usa,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+percent of adults obese in america,10,0%,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+percent of obesity in the world,10,0%,0%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+percentage of adults obese in us,10,0%,-50%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+percentage of obese adults in the us,10,0%,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+percentage of obese americans 2021,10,0%,-100%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+percentage of obese americans 2022,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+percentage of obesity in america 2022,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+percentage of overweight by country,10,∞,0%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+percentage of overweight teens,10,0%,0%,Low,T2-B1-head-modifiers,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+percentage of teenage obesity in america,10,0%,0%,Low,T2-B3-demographics-entities,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+percentage of the world that is obese,10,0%,0%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+pet obesity facts,10,-100%,-100%,Unknown,T2-B1-head-modifiers,informational,,discard,offtopic,na,
+prevalence of obesity among adults and youth united states,10,0%,∞,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+prevalence of overweight,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+projected obesity rates in america,10,0%,0%,Low,T2-B1-head-modifiers,informational,,discard,below-floor-backlog,na,projections: no verified primary on this site
+quantitative data on childhood obesity,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+ratio of obese adults in america,10,∞,∞,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+raw data about obesity,10,0%,-100%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+rising obesity in the united states,10,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+scholarly articles obesity in america,10,0%,-100%,Unknown,T2-B3-demographics-entities,navigational,,discard,navigational,na,
+solving obesity in america,10,-100%,-100%,Unknown,T2-B3-demographics-entities,informational,,discard,offtopic,na,site scope: no treatment/drug/prescriptive content
+statistics on overweight and obesity in america,10,0%,-50%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+studies on obesity in america,10,-100%,-100%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+subjective and objective data for obesity,10,0%,-100%,Unknown,T2-B1-head-modifiers,informational,,discard,offtopic,na,
+subjective data for obesity,10,0%,0%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,
+the history of obesity in america,10,0%,∞,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+the increase of obesity in america,10,-100%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+the issue of obesity in america,10,0%,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+the true weight of childhood obesity in america,10,0%,-100%,Unknown,T2-B3-demographics-entities,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+united states obesity rate 2021,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+united states obesity rate 2022,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+united states overweight percentage,10,∞,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+united states overweight statistics,10,-100%,-100%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+us obese population percentage,10,-100%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+us obesity 2022,10,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+us obesity and overweight rate 2020,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+us obesity demographics,10,0%,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+us obesity rate 2020,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+us obesity rate 2022,10,0%,0%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+us obesity trends 1985 to 2001,10,0%,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+us overweight and obesity statistics,10,0%,-50%,Low,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,
+us overweight population,10,0%,-50%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+us population that is obese,10,0%,0%,Low,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+us state obesity ranking,10,0%,0%,Low,T2-B1-head-modifiers,informational,obesity-rate-by-state,tertiary,,auto,
+virginia obesity rates by county,10,∞,0%,Low,T2-B1-head-modifiers,informational,obesity-rate-by-state,tertiary,,auto,
+ways to reduce obesity in america,10,0%,-100%,Unknown,T2-B3-demographics-entities,informational,,discard,offtopic,na,site scope: no treatment/drug/prescriptive content
+west virginia obesity rate 2021,10,0%,0%,Unknown,T2-B1-head-modifiers,informational,obesity-rate-by-state,tertiary,,auto,
+what is america's obesity rate 2020,10,0%,-100%,Unknown,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+what is the percentage of obesity in america 2022,10,0%,0%,Unknown,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+what percentage of america is obese 2022,10,0%,0%,Unknown,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+what percentage of americans are obese 2022,10,∞,∞,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+what percentage of americans suffer from obesity,10,0%,0%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+what percentage of the us is obese 2021,10,0%,0%,Unknown,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+what percentage of the us is obese 2022,10,0%,0%,Unknown,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+what percentage of us are obese,10,0%,0%,Low,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+what percentage of us is obese 2022,10,0%,0%,Unknown,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+why is obesity higher in rural areas,10,0%,0%,Low,T2-B2-questions,informational,,discard,below-floor-backlog,na,causes/income split: no verified NCHS 2021-23 source; never answer causes without a primary
+why is obesity increasing around the world,10,-100%,0%,Unknown,T2-B2-questions,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+why is the rate of obesity increasing,10,0%,0%,Unknown,T2-B2-questions,informational,,discard,below-floor-backlog,na,causes/income split: no verified NCHS 2021-23 source; never answer causes without a primary
+why is there an increase in childhood obesity,10,0%,-100%,Unknown,T2-B2-questions,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+why is there an increase in obesity,10,∞,∞,Low,T2-B2-questions,informational,,discard,below-floor-backlog,na,causes/income split: no verified NCHS 2021-23 source; never answer causes without a primary
+why obesity is on the rise,10,-100%,-100%,Unknown,T2-B2-questions,informational,,discard,below-floor-backlog,na,causes/income split: no verified NCHS 2021-23 source; never answer causes without a primary
+world bmi statistics,10,0%,0%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+world obesity data,10,0%,0%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+world overweight statistics,10,0%,0%,Low,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+youth obesity in the us,10,0%,0%,Low,T2-B3-demographics-entities,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+2021 obesity rate in america,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+2021 us obesity rate,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+2022 obesity statistics us,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+america obesity percentage 2022,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+america's obesity rate 2021,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+american obesity 2021,0,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+american obesity statistics 2022,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+american overweight rate 2021,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+annual medical cost of obesity in the united states 2019,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,,discard,offtopic,na,site scope (Aug 2 2026): no health-outcome/mortality/cost claims
+cdc obesity rates 2021,0,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+cdc obesity statistics 2022,0,0%,-100%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+childhood obesity in america 2021,0,0%,0%,Unknown,T2-B3-demographics-entities,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+childhood obesity in america essay,0,0%,0%,Unknown,T2-B3-demographics-entities,navigational,,discard,navigational,na,
+childhood obesity rate in america 2021,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+childhood obesity rates by state 2020,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+childhood obesity statistics 2021 cdc,0,0%,0%,Unknown,T2-B3-demographics-entities,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+childhood obesity statistics 2021 usa,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+childhood obesity statistics in america 2019,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,childhood-obesity-statistics,tertiary,,auto,split signal: childhood cluster ~4k/mo independent volume -> own page; us-obesity-statistics carries a summary section + link
+current obesity rate in america 2021,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+current obesity rate in america 2022,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+massachusetts obesity rate 2021,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,obesity-rate-by-state,tertiary,,auto,
+new york obesity rate 2022,0,0%,-100%,Unknown,T2-B1-head-modifiers,informational,obesity-rate-by-state,tertiary,,auto,
+obesity and overweight in america 2020,0,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity crisis in america 2021,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity data 2022,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity epidemic in america 2020,0,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity epidemic in america 2021,0,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity epidemic in america 2022,0,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity in america 2021 articles,0,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity in america 2021 cdc,0,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity in america compared to other countries 2020,0,0%,0%,Unknown,T2-B3-demographics-entities,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+obesity in america essay conclusion,0,0%,0%,Unknown,T2-B3-demographics-entities,navigational,,discard,navigational,na,
+obesity in the united states 2022,0,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity in the us 2021,0,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity in the us 2022,0,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity in united states 2021,0,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity in united states 2022,0,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity in usa 2021,0,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity in usa 2022,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity is caused by an increase in,0,0%,0%,Unknown,T2-B2-questions,informational,,discard,below-floor-backlog,na,causes/income split: no verified NCHS 2021-23 source; never answer causes without a primary
+obesity is on the rise in the modern world,0,0%,0%,Unknown,T2-B2-questions,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+obesity rate america 2021,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity rate by education,0, --, --,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+obesity rate in america 2022 by state,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,obesity-rate-by-state,tertiary,,auto,
+obesity rate in mexico 2022,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+obesity rate us 2021,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity rates in canada by province 2020,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+obesity rates in the us 2022,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity statistics america 2021,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity statistics us 2020,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity statistics us 2021,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity statistics us 2022,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+obesity usa 2021,0,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+overweight and obesity statistics 2022,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+overweight in america 2022,0,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+overweight statistics in america 2021,0,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+overweight usa 2021,0, --, --,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+percent of overweight in america 2021,0,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+percentage of obese population in world,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,,discard,offtopic,na,"PARKED: global cluster (~10k/mo) = proposed /obesity-rate-by-country/; WHO GHO (NCD-RisC) is the candidate primary - verify, then re-assign"
+rate of obesity in america 2022,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+the rate of obesity among preschoolers has,0,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,
+us obesity 2021,0,0%,0%,Unknown,T2-B3-demographics-entities,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+us overweight rate 2021,0,0%,0%,Unknown,T2-B1-head-modifiers,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+what percent of americans are a healthy weight,0, --, --,Unknown,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
+what percentage of the us is overweight 2022,0,0%,0%,Unknown,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,year variant -> auto-merged tertiary
+when did obesity start rising,0, --, --,Unknown,T2-B2-questions,informational,us-obesity-statistics,tertiary,,auto,
