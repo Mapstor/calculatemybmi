@@ -192,7 +192,11 @@
 .cmb-fig svg{display:block;width:100%;height:auto}
 .cmb-fig figcaption{font-size:.85em;color:#4B5563;margin-top:8px}
 .cmb-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:16px 0}
-.cmb-table-wrap table{border-collapse:collapse;width:100%;min-width:420px}
+.cmb-table-wrap table{border-collapse:collapse;width:100%}
+.cmb-fit-row[hidden]{display:none}
+.cmb-sources{padding-left:1.6em;margin:0 0 1.5em}
+.cmb-sources li{margin:4px 0}
+@media (max-width:480px){.cmb-table-wrap th,.cmb-table-wrap td{padding:6px 6px;font-size:.9375em}}
 .cmb-table-wrap caption{text-align:left;font-weight:700;margin-bottom:6px}
 .cmb-table-wrap th,.cmb-table-wrap td{padding:8px 10px;border-bottom:1px solid #E5E7EB;text-align:left;vertical-align:top}
 .cmb-table-wrap td{font-variant-numeric:tabular-nums}
@@ -214,8 +218,7 @@
 .cmb-dl dt{font-weight:700;margin-top:10px}
 .cmb-dl dd{margin:2px 0 0}
 </style></head>
-<body> <header class="header"><div class="container"><div class="header-inner"> <a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span>CalculateMyBMI</span></a> <nav class="nav-desktop"><div class="nav-dropdown"><a href="/calculators/" class="nav-dropdown-toggle">Calculators <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px;vertical-align:middle;"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><div class="nav-dropdown-menu"><a href="/">Standard BMI</a><a href="/women-bmi-calculator/">BMI for Women</a><a href="/men-bmi-calculator/">BMI for Men</a><a href="/age-bmi-calculator/">BMI by Age</a><a href="/kids-bmi-calculator/">Pediatric BMI</a><div class="nav-dropdown-divider"></div><a href="/new-bmi-calculator/">New BMI (Trefethen)</a><a href="/ideal-weight/">Ideal Weight</a><a href="/lean-body-mass/">Lean Body Mass</a><div class="nav-dropdown-divider"></div><a href="/calculators/">All Calculators</a></div></div><a href="/blog/" class="active">Guides</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav> <button class="nav-toggle" aria-label="Menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button> </div><nav class="nav-mobile"><div class="nav-mobile-section">Calculators</div><a href="/">Standard BMI</a><a href="/women-bmi-calculator/">BMI for Women</a><a href="/men-bmi-calculator/">BMI for Men</a><a href="/age-bmi-calculator/">BMI by Age</a><a href="/kids-bmi-calculator/">Pediatric BMI</a><a href="/new-bmi-calculator/">New BMI (Trefethen)</a><a href="/ideal-weight/">Ideal Weight</a><a href="/lean-body-mass/">Lean Body Mass</a><a href="/calculators/">All Calculators</a><div class="nav-mobile-section">More</div><a href="/bmi-chart/">BMI Chart</a><a href="/bmi-chart/">BMI Chart</a><a href="/blog/">Guides</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div></header> <main><div class="container" style="max-width:1000px;margin:0 auto;padding:2rem 1rem 3rem;"><!-- ===== /us-obesity-statistics/ main content — insert inside the site <main> wrapper cloned from /bmi-chart/ ===== -->
-<!-- BREADCRUMB: use the site breadcrumb component from /bmi-chart/: Home > US Obesity Statistics -->
+<body> <header class="header"><div class="container"><div class="header-inner"> <a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span>CalculateMyBMI</span></a> <nav class="nav-desktop"><div class="nav-dropdown"><a href="/calculators/" class="nav-dropdown-toggle">Calculators <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px;vertical-align:middle;"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><div class="nav-dropdown-menu"><a href="/">Standard BMI</a><a href="/women-bmi-calculator/">BMI for Women</a><a href="/men-bmi-calculator/">BMI for Men</a><a href="/age-bmi-calculator/">BMI by Age</a><a href="/kids-bmi-calculator/">Pediatric BMI</a><div class="nav-dropdown-divider"></div><a href="/new-bmi-calculator/">New BMI (Trefethen)</a><a href="/ideal-weight/">Ideal Weight</a><a href="/lean-body-mass/">Lean Body Mass</a><div class="nav-dropdown-divider"></div><a href="/calculators/">All Calculators</a></div></div><a href="/bmi-chart/">BMI Chart</a><a href="/blog/">Guides</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav> <button class="nav-toggle" aria-label="Menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button> </div><nav class="nav-mobile"><div class="nav-mobile-section">Calculators</div><a href="/">Standard BMI</a><a href="/women-bmi-calculator/">BMI for Women</a><a href="/men-bmi-calculator/">BMI for Men</a><a href="/age-bmi-calculator/">BMI by Age</a><a href="/kids-bmi-calculator/">Pediatric BMI</a><a href="/new-bmi-calculator/">New BMI (Trefethen)</a><a href="/ideal-weight/">Ideal Weight</a><a href="/lean-body-mass/">Lean Body Mass</a><a href="/calculators/">All Calculators</a><div class="nav-mobile-section">More</div><a href="/bmi-chart/">BMI Chart</a><a href="/us-obesity-statistics/" class="active" aria-current="page">Obesity Statistics</a><a href="/blog/">Guides</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div></header> <main><div class="container" style="max-width:1000px;margin:0 auto;padding:2rem 1rem 3rem;"><nav aria-label="Breadcrumb" style="font-size:0.875rem;color:var(--gray-500);margin:0 0 1rem;"><a href="/" style="color:inherit;">Home</a> &rsaquo; <span>US Obesity Statistics</span></nav>
 <article class="cmb-stats">
 <h1>US Obesity Rate and Statistics</h1>
 <p class="byline" style="color:var(--gray-500);font-size:0.9375rem;margin:0 0 1.25rem;">Written by Marko Visic, MPharm &middot; Not medical advice</p>
@@ -315,7 +318,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-labelledby="trend-inline-title trend-inline-desc">
 <title id="trend-inline-title">US adult obesity, overweight and severe obesity, 1960–2023</title>
 <desc id="trend-inline-desc">Age-adjusted percent of US adults ages 20 to 74, measured by NHANES. Obesity rose from 13.4% in 1960–1962 to 40.8% in August 2021–August 2023. Severe obesity rose from 0.9% to 10.2%. Overweight stayed near 31% (31.5% to 31.3%). Source: CDC NCHS Health E-Stat 111.</desc>
-<style>.cmbv-ink{fill:#1F2937}.cmbv-mut{fill:#6B7280}.cmbv-ow{stroke:#E0A526}.cmbv-ob{stroke:#E0612D}.cmbv-sev{stroke:#9E1B1B}.cmbv-owf{fill:#E0A526}.cmbv-obf{fill:#E0612D}.cmbv-sevf{fill:#9E1B1B}.cmbv-owt{fill:#8A5A00}.cmbv-obt{fill:#B3431A}.cmbv-sevt{fill:#8E1B1B}text{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}</style>
+<style>.cmbv-ink{fill:#1F2937}.cmbv-mut{fill:#6B7280}.cmbv-tow{stroke:#E0A526}.cmbv-tob{stroke:#E0612D}.cmbv-tsev{stroke:#9E1B1B}.cmbv-owf{fill:#E0A526}.cmbv-obf{fill:#E0612D}.cmbv-sevf{fill:#9E1B1B}.cmbv-owt{fill:#8A5A00}.cmbv-obt{fill:#B3431A}.cmbv-sevt{fill:#8E1B1B}text{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}</style>
 <line x1="44" y1="266.0" x2="308" y2="266.0" stroke="#E5E7EB" stroke-width="1"/>
 <text x="36" y="270.0" text-anchor="end" class="cmbv-mut" font-size="12">0%</text>
 <line x1="44" y1="216.4" x2="308" y2="216.4" stroke="#E5E7EB" stroke-width="1"/>
@@ -342,7 +345,7 @@
 <text x="248.9" y="286" text-anchor="middle" class="cmbv-mut" font-size="12">2010</text>
 <line x1="288.3" y1="266" x2="288.3" y2="271" stroke="#6B7280"/>
 <text x="288.3" y="286" text-anchor="middle" class="cmbv-mut" font-size="12">2020</text>
-<polyline points="57.8,109.8 103.1,103.8 124.8,106.8 176.0,104.3 209.5,99.3 217.4,95.4 225.3,100.3 233.1,106.3 241.0,99.3 248.9,103.8 256.8,100.8 264.7,107.8 272.5,112.2 280.4,115.7 298.5,110.8" fill="none" class="cmbv-ow" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="57.8,109.8 103.1,103.8 124.8,106.8 176.0,104.3 209.5,99.3 217.4,95.4 225.3,100.3 233.1,106.3 241.0,99.3 248.9,103.8 256.8,100.8 264.7,107.8 272.5,112.2 280.4,115.7 298.5,110.8" fill="none" class="cmbv-tow" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
 <circle cx="57.8" cy="109.8" r="2.6" class="cmbv-owf"/>
 <circle cx="103.1" cy="103.8" r="2.6" class="cmbv-owf"/>
 <circle cx="124.8" cy="106.8" r="2.6" class="cmbv-owf"/>
@@ -358,7 +361,7 @@
 <circle cx="272.5" cy="112.2" r="2.6" class="cmbv-owf"/>
 <circle cx="280.4" cy="115.7" r="2.6" class="cmbv-owf"/>
 <circle cx="298.5" cy="110.8" r="2.6" class="cmbv-owf"/>
-<polyline points="57.8,199.5 103.1,194.1 124.8,191.6 176.0,150.9 209.5,112.7 217.4,111.2 225.3,102.8 233.1,91.9 241.0,95.9 248.9,86.9 256.8,90.9 264.7,76.5 272.5,67.6 280.4,53.7 298.5,63.6" fill="none" class="cmbv-ob" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="57.8,199.5 103.1,194.1 124.8,191.6 176.0,150.9 209.5,112.7 217.4,111.2 225.3,102.8 233.1,91.9 241.0,95.9 248.9,86.9 256.8,90.9 264.7,76.5 272.5,67.6 280.4,53.7 298.5,63.6" fill="none" class="cmbv-tob" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
 <circle cx="57.8" cy="199.5" r="2.6" class="cmbv-obf"/>
 <circle cx="103.1" cy="194.1" r="2.6" class="cmbv-obf"/>
 <circle cx="124.8" cy="191.6" r="2.6" class="cmbv-obf"/>
@@ -374,7 +377,7 @@
 <circle cx="272.5" cy="67.6" r="2.6" class="cmbv-obf"/>
 <circle cx="280.4" cy="53.7" r="2.6" class="cmbv-obf"/>
 <circle cx="298.5" cy="63.6" r="2.6" class="cmbv-obf"/>
-<polyline points="57.8,261.5 103.1,259.6 124.8,259.1 176.0,251.1 209.5,241.2 217.4,239.2 225.3,240.7 233.1,235.2 241.0,236.2 248.9,233.3 256.8,233.3 264.7,225.8 272.5,226.3 280.4,218.4 298.5,215.4" fill="none" class="cmbv-sev" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="57.8,261.5 103.1,259.6 124.8,259.1 176.0,251.1 209.5,241.2 217.4,239.2 225.3,240.7 233.1,235.2 241.0,236.2 248.9,233.3 256.8,233.3 264.7,225.8 272.5,226.3 280.4,218.4 298.5,215.4" fill="none" class="cmbv-tsev" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
 <circle cx="57.8" cy="261.5" r="2.6" class="cmbv-sevf"/>
 <circle cx="103.1" cy="259.6" r="2.6" class="cmbv-sevf"/>
 <circle cx="124.8" cy="259.1" r="2.6" class="cmbv-sevf"/>
