@@ -2,16 +2,22 @@
  * -----------------------------------------------------------------------------
  * The site's own consent banner has been removed. Consent is now managed by
  * Raptive's CMP, which sends Google Consent Mode signals via gtag('consent',
- * 'update', …). The inline <head> snippet on every page still sets the
- * Consent Mode v2 defaults (ad_storage / analytics_storage denied for EEA
- * visitors) before this script loads gtag.js, so GA4 honours those defaults
- * until Raptive's CMP updates them.
+ * 'update', …). Every page's <head> carries Raptive's "Standard GA delay
+ * script" (help.raptive.com/hc/en-us/articles/47199949578651), which sets
+ * Consent Mode v2 defaults to denied for European visitors before this script
+ * loads gtag.js; Raptive's CMP updates them after the visitor chooses.
  * ---------------------------------------------------------------------------*/
 
 (function () {
   'use strict';
 
   var GA4_ID = 'G-QKNBZGZTW1';
+  // Raptive's delay script only defines gtag for European visitors; define it here for everyone else.
+  window.dataLayer = window.dataLayer || [];
+  if (typeof window.gtag !== 'function') {
+    window.gtag = function () { window.dataLayer.push(arguments); };
+  }
+  var gtag = window.gtag;
 
   var s = document.createElement('script');
   s.async = true;
