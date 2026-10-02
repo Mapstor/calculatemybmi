@@ -1,0 +1,40 @@
+{
+ "new_files": [
+  {
+   "path": "research/state-obesity/gen_page2.py",
+   "sha256": "3d0138276d73496ccdbed9ea8a4bbe59d8152a210cfa55f01172b88c9292b738"
+  },
+  {
+   "path": "research/state-obesity/viz2.py",
+   "sha256": "172e34b1f140b700208f088671c7aa68003fc27bcd6823dc4c453c75fb2ffda1"
+  },
+  {
+   "path": "research/state-obesity/states_paths.json",
+   "sha256": "aac24b72523694672e232a6f8ab96969bf6c5d21b69a76653a0302e63a2323f3"
+  },
+  {
+   "path": "research/state-obesity/facts2.json",
+   "sha256": "ec7e885f53fcc6f502c28ac2eeb102ea143de90ab4cbc1fd93e56dc40046c750"
+  },
+  {
+   "path": "research/state-obesity/widget_test_v2_jsdom.js",
+   "sha256": "12ddd52be953ece5dc4b16d7d5cafe58ef7bf40ec09510c28872bc60c294221f"
+  }
+ ],
+ "replace": [
+  {
+   "path": "obesity-rate-by-state/index.html",
+   "expect_sha256": "26618e984c18fe91fd579175e970387e59a506e155e93105e3ef7b127a0633ca",
+   "sha256": "83613ae1755128b7f22e5c7dfef905692012086583cb75d02a8530cf553c085a"
+  }
+ ],
+ "edits": [
+  {
+   "file": "research/HANDOFF.md",
+   "old": "Refresh when CDC publishes 2026 maps (~Sep 2027).",
+   "new": "Refresh when CDC publishes 2026 maps (~Sep 2027). Redesigned the same day (batch S2): real US choropleth from US Census Bureau boundaries (us-atlas, simplified, Albers USA), play button + year slider, hover tooltips, and a state panel comparing each state with the median state, the extremes, its land neighbours (from shared borders), the previous year (95% CI overlap) and 2011, plus trend with CI band and 2025 age bars. Generator: research/state-obesity/gen_page2.py + viz2.py.",
+   "count": 1,
+   "label": "handoff S2 note"
+  }
+ ]
+}
