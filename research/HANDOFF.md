@@ -1,68 +1,57 @@
-# calculatemybmi.net — HANDOFF (30 Sep 2026)
+# calculatemybmi.net — HANDOFF (updated 1 Oct 2026)
 
-Paste this into a new chat to continue. Keep it in the repo at research/HANDOFF.md.
+Paste this into a new chat to continue. Lives in the repo at research/HANDOFF.md.
 
 ## Setup
-- Live host: https://calculatemybmi.net/ (non-www canonical; www 308s to it since Aug 1). Static HTML on Vercel, Git repo Mapstor/calculatemybmi — push to main deploys production.
-- Claude Code box: Mac 2, port 3013, repo mounted at /workspace, no network inside the box.
-- Raptive ads live (script on all 33 pages; ads.txt is a 301 redirect in vercel.json).
-- IndexNow: scripts/indexnow.sh (bash-3.2 safe; no args = all sitemap URLs). Key file at the site root.
-- Gate: scripts/check_structure.py must pass 33/33 before every commit (structure + banned-source content gate).
+- Live host: https://calculatemybmi.net/ (non-www canonical; www 308s to it). Static HTML on Vercel; repo Mapstor/calculatemybmi; push to main deploys production.
+- Claude Code box: Mac 2, port 3013, repo at /workspace, no network inside the box.
+- Raptive ads live on every page; ads.txt is a 301 in vercel.json.
+- Consent: Raptive's CMP only (decision 1 Oct 2026). Every <head> carries Raptive's "Standard GA delay script" verbatim (help.raptive.com article 47199949578651); /assets/js/consent-banner.js loads GA4 and defines gtag itself. No other consent tool and no footer "Cookie settings" link.
+- IndexNow: bash scripts/indexnow.sh (no args = every sitemap URL; --dry-run available). Key file at the site root.
+- Gate: python3 scripts/check_structure.py must pass 34/34 before every commit.
+- Fix workflow: chat prepares a package (FIX.md + apply_fixes.py + edits.json + verify.py) of exact old->new edits with expected counts; Claude Code applies it, runs the gates and commits; Marko pushes. Packages stay under research/<batch>/ (excluded from deploy).
 
 ## Goal and reality
 - Goal: 10,000 visitors/month from Google.
-- Google so far: www property, Feb 11 – Sep 2026 — 29 clicks, 22,800 impressions lifetime (peak April 8,679; then down). Only real visibility: /blog/body-fat-vs-bmi/ cited in AI features for body-fat queries (position ~1, zero clicks). Non-www property added Sep 28 — no data yet. Google site: search (Sep 30) shows about 3 pages of results, all on the non-www host: the site IS indexed; the problem is ranking, not indexing.
-- Bing: 10,872 clicks Mar–Sep; ~70/day in July, 145–172/day early August; crashed to ~12/day after the August 308s of the chart pages (81.5% of clicks came from removed URLs). Chart pages restored Sep 26. Early recovery: between the Sep 25 and Sep 30 Bing exports, /blog/bmi-chart-women/ gained +1,546 impressions and +43 clicks; sitewide about 25–30 clicks/day vs ~12/day mid-September.
+- Google (www property, Feb-Sep 2026): 29 clicks, 22,800 impressions. The site is indexed on the non-www host (site: search, 30 Sep): the problem is ranking, not indexing. Non-www GSC property added 28 Sep.
+- Bing: 10,872 clicks Mar-Sep; crashed after the August 308s of the chart pages (restored 26 Sep); recovering (~25-30 clicks/day at 30 Sep).
 
-## Shipped (commits)
-- 7866479 P0: chart pages restored at old URLs (women, men, by-age), CDC rounding rule, residue fixes, tool-first calculators.
-- e30ddf0 P1: kids calculator on CDC LMS/extended method (unit tests pass), SVG and mobile fixes, .vercelignore (*.md, research/, data/, audit/, scripts/).
-- a83d1f7, ae2ff9b: claim-level primary-source passes (batch 1 core pages, batch 2 guides).
-- 8b68674: /bmi-chart/ built (201k "bmi chart" group), homepage and chart-explained de-cannibalized.
-- 28e031a: shared nav with "BMI Chart", indexnow fix. 38d3cdd: repair of 7 pages a regex had broken. 47c44f6: claims content restored + content gates. 3a99491: exact-list removal of 35 unsourced tables/columns, WHO TRS 854 citation. 1826fe2: last accuracy figures + prescriptive column removed — cleanup complete, pushed.
+## Shipped
+- Aug-Sep: 7866479 P0 (chart pages restored), e30ddf0 P1 (kids calculator, CDC LMS), a83d1f7 / ae2ff9b claim passes, 8b68674 /bmi-chart/, 28e031a shared nav, 38d3cdd, 47c44f6, 3a99491, 1826fe2 cleanup.
+- 30 Sep: 1f16af7 /us-obesity-statistics/ (NHANES 1960-2023, CSV, embeddable chart, Dataset schema). 07bbd93 render fixes, nav (desktop BMI Chart, mobile Obesity Statistics, Guides no longer active everywhere), 9 inbound links, stale prevalence figures updated to 2021-2023. 3d2b73e PRE-DEPLOY-REPORT.md removed.
+- 1 Oct: e61c9e0 Raptive-only consent + rebuilt the truncated reference lists (women, new-bmi). 661d60c C2a: fabricated quote removed, sentences broken by the old link stripping repaired, ACE remnants, dead TOC links, FAQ schema parity. 121c65c C2b-1 and 8d61f91 C2b-2: unsourced numbers removed or sourced (metabolism, sarcopenia, sleep, 1998 history, body-fat ranges, men/women claims, lean FAQs). C2b-3 (see git log): last unsourced numbers sourced or removed (WHO child figures, frame-size convention, sarcopenia, athletes NFL study), first prescriptive targets removed, this handoff rewritten.
 
 ## Standards (non-negotiable)
-- Verified-or-omitted: every number or specific claim cites an R1 source or is removed. Nothing prescriptive (no calorie, protein, sleep or exercise targets).
-- Never cite: Harvard (any), Mayo Clinic, Cleveland Clinic, NHS / National Health Service, American Heart Association / heart.org, ACE, ACSM, NSCA, Wikipedia.
-- BMI bands: BMI = lb × 703 ÷ in² (or kg ÷ m²), rounded to 0.1 half-up, then CDC ranges; a band = lowest to highest whole pound/kg in that category. Tests: 5'9" → ≤124 / 125–168 / 169–202 / 203–236 / 237–270 / ≥271; 170 cm healthy 54–72 kg.
-- Before any 308 or deletion: pull that URL's GSC and Bing clicks first.
-- Every Claude Code batch: gate 33/33, then git archive → chat render check (360 px + desktop, SVG collisions) before building the next thing.
-- Give Claude Code exact lists, not judgment rules — rule-based passes failed twice.
+- Verified-or-omitted: every number or specific claim cites a primary (R1) source or is removed.
+- Nothing prescriptive: no calorie, protein, sleep or exercise targets.
+- Never cite: Harvard (any), Mayo Clinic, Cleveland Clinic, NHS, American Heart Association / heart.org, ACE, ACSM, NSCA, Wikipedia (an entity sameAs in schema is fine).
+- No quotes attributed to named people unless the source is verified and linked.
+- Structured data must match visible content (every FAQPage question visible on the page).
+- BMI bands: lb x 703 / in^2 (or kg / m^2), rounded to 0.1 half-up, then CDC ranges. Tests: 5'9" -> <=124 / 125-168 / 169-202 / 203-236 / 237-270 / >=271; 170 cm healthy 54-72 kg.
+- Before any redirect or deletion: pull that URL's GSC and Bing clicks first.
+- After each batch: gate 34/34; periodically git archive -> chat render check (360 px + desktop).
+- Give Claude Code exact-edit packages, never judgment rules.
+- Portfolio: never republish this site's pages, datasets or shared prose on other health sites; embed/licence links use the brand anchor only, nofollow allowed.
 
-## Verified sources (R1)
-- CDC Adult BMI Categories — https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html — underweight <18.5; healthy 18.5 to <25; overweight 25 to <30; obesity ≥30 (class 1 30 to <35, class 2 35 to <40, class 3 ≥40).
-- CDC Child and Teen BMI Categories — https://www.cdc.gov/bmi/child-teen-calculator/bmi-categories.html — <5th; 5th to <85th; 85th to <95th; ≥95th; severe ≥120% of 95th or BMI ≥35.
-- CDC extended BMI-for-age method — https://www.cdc.gov/growthcharts/extended-bmi-data-files.htm — LMS up to P95; above: pct = 90 + 10·Φ((BMI−P95)/sigma). Tests: girl 114.5 mo BMI 21.2 → 92.2nd (overweight); boy 50.5 mo BMI 22.6 → 99.77th, 126.8% of P95.
-- NCHS Data Brief 508 — https://www.cdc.gov/nchs/products/databriefs/db508.htm — Aug 2021–Aug 2023, adults 20+: obesity 40.3% (men 39.2, women 41.3); by age 20–39 / 40–59 / 60+: 35.5 / 46.4 / 38.9 (women 36.8 / 47.4 / 39.6; men 34.3 / 45.4 / 38.0); severe obesity 9.4% (age-adj. 9.7), men 6.7, women 12.1.
-- NCHS Health E-Stat 111 (Fryar, Afful, Saif, Feb 2026) — https://www.cdc.gov/nchs/data/hestat/hestat111.htm — age-adjusted overweight 31.7% (unadjusted 32.1), obesity 40.3%, severe 9.7%. Trend series NOT yet verified.
-- Winter 2014 — https://pubmed.ncbi.nlm.nih.gov/24452240/ — meta-analysis of 32 cohort studies, 197,940 adults 65+: risk higher below BMI 23, rising above 33.
-- Keys 1972 — https://doi.org/10.1016/0021-9681(72)90027-6 (reprint https://pubmed.ncbi.nlm.nih.gov/24691951/) — 7,424 men, 12 cohorts, 5 countries; weight/height² named body mass index. Commentary: https://pmc.ncbi.nlm.nih.gov/articles/PMC4052141/
-- Quetelet 1832 memoir and 1842 English Treatise (text references).
-- Ashwell 2012 Obes Rev 13:275–286 (31 studies, >300,000 adults; WHtR +4–5% vs BMI). Browning 2010 Nutr Res Rev 23:247–269 (0.5 boundary).
-- WHO TRS 854 (1995) for thinness grades (text reference).
+## Verified sources (R1) — details in research/data-sources.csv
+- CDC/NCHS: Adult BMI categories; Child & Teen BMI categories; extended BMI-for-age method; Data Brief 508; Health E-Stats 111 (trend series verified), 112, 119; Vital and Health Statistics Series 3 No. 50; NHANES population totals.
+- Studies and reports: Winter 2014 (PMID 24452240); Keys 1972; Quetelet 1832/1842; Ashwell 2012; Browning 2010; WHO TRS 854; WHO expert consultation, Lancet 2004 (PMID 14726171); NHLBI 1998 Clinical Guidelines (NBK2003, NBK2005); Wing et al., Diabetes Care 2011 (PMC3120182); Pontzer et al., Science 2021 (PMID 34385400); Hirode & Wong, JAMA 2020 (PMC7312413); Alberti et al., Circulation 2009 (PMID 19805654); Volpi et al. 2004 (PMC2804956); Cappuccio et al., Sleep 2008 (PMID 18517032); Caspersen et al. 1985 (PMC1424733); Gallagher et al., AJCN 2000 (PMID 10966886); Pai & Paloucek 2000 (PMID 10981254); Provencher et al., J Strength Cond Res 2018 (doi 10.1519/JSC.0000000000002449); WHO obesity and overweight fact sheet; Gallup 28 Oct 2025 (self-reported; its 2026 update excluded).
 
 ## Research files (repo research/)
-keyword-ledger.csv (US KWP: 9,462 keywords, 5,068 groups), page-map.csv, sitemap.md.
+keyword-ledger.csv, page-map.csv, data-sources.csv (created 30 Sep; older pages still lack registry rows), sitemap.md, us-obesity-build/ and one folder per fix batch.
 
-## Next builds, in order
-1. /us-obesity-statistics/ — link magnet (HE-Stat 111 trend series + DB 508 splits, embeddable chart, Dataset schema). Verify the trend table first.
-2. /obesity-rate-by-state/ — CDC BRFSS state map (verify data first).
-3. Body-fat trio: /body-fat-calculator/ (74k group), /body-fat-percentage-chart/, /blog/how-to-measure-body-fat/ — data-sourcing first (DoD/Navy circumference equations, NHANES DXA reference percentiles, method-validation studies).
-4. Then /average-weight/ (NHANES), army/navy calculators, growth-chart calculator, FFMI.
+## Next
+1. C2b-4: remove the remaining calorie, protein, sleep and exercise targets (how-to-lower-bmi, healthy-bmi-range, bmi-categories, age-bmi-calculator, bmi-and-metabolism incl. its 6-vs-2 kcal FAQ, underweight-bmi-risks, lean-body-mass, women postpartum) in visible text and FAQ JSON-LD.
+2. Final check: fresh git archive -> chat sitewide scan + render check, then one IndexNow run (all URLs).
+3. /obesity-rate-by-state/ — verify CDC BRFSS state data first (maps page updated ~24 Sep 2026).
+4. /childhood-obesity-statistics/ (proposed; Health E-Stat 112 verified).
+5. Body-fat trio: /body-fat-calculator/ (74k group), /body-fat-percentage-chart/, /blog/how-to-measure-body-fat/ — data-sourcing first.
+6. /average-weight/ (Series 3 No. 50 data ready), army/navy calculators, growth-chart calculator, FFMI.
+7. Possible /obesity-rate-by-country/ (WHO GHO is the candidate source; verify first).
 
 ## Open items
-- Bing Webmaster: add https://calculatemybmi.net/ (Import from GSC) and submit its sitemap — Bing still reports everything under www URLs.
-- GSC non-www property: Performance (16 months) + Pages exports once data appears; URL Inspection results for /, /bmi-chart/, /blog/bmi-chart-women/.
+- Bing Webmaster: add https://calculatemybmi.net/ (import from GSC) and submit its sitemap.
+- GSC non-www: Performance + Pages exports once data appears.
+- /blog/bmi-for-athletes/ is still short (~700 words): candidate for a sourced expansion.
+- Registry debt: data-sources.csv rows for the older pages.
 - SERP checks queued: body-fat chart one page vs women/men split; average weight split; "bmi for women" chart vs calculator intent.
-
-## 2026-09-30 · /us-obesity-statistics/ built (see git log)
-- Page: US obesity rate and statistics — NHANES Aug 2021–Aug 2023 snapshot + 1960–2023 trend (ages 20–74, age-adjusted), age/sex/education/race, children summary, measured-vs-self-reported section (Gallup), "Where do you fit?" widget, embeddable chart (CC BY 4.0; brand-anchor link only; nofollow allowed) and CSV (585 rows) served from /us-obesity-statistics/.
-- Sources verified 30 Sep 2026 (research/data-sources.csv): NCHS Health E-Stats 111, 112, 119; NCHS Data Brief 508; NCHS Series 3 No. 50 (mean/median BMI and weight percentiles — ready for /average-weight/); NHANES population totals; Gallup 28 Oct 2025. Gallup's 2026 update is excluded (text and table disagree).
-- Tier-2 KWP (3 batches, 789 keywords → 635 ledger rows): primary "us obesity rate" (14,800/mo). Childhood cluster (~4.8k/mo) → proposed /childhood-obesity-statistics/. State cluster (~13k/mo) → /obesity-rate-by-state/ — its BRFSS source is still a candidate; CDC's adult obesity maps page was updated ~24 Sep 2026, verify before building. Global (~10k/mo) parked; WHO GHO is the candidate source for a possible /obesity-rate-by-country/.
-- 30 Sep 2026 follow-up: the 31.7% overweight figures already credit Health E-Stat 111 on every page (the earlier "misattributed" note was wrong); 9.7% severe obesity is in Data Brief 508 (age-adjusted trend). Fixed in the follow-up batch: stale prevalence on /men-bmi-calculator/ (chart 2/24/31/43%, FAQ avg BMI 29.1, 43%/31%), /kids-bmi-calculator/ (19.7%, 22.2/20.7/12.7%, 6.7% → Health E-Stat 112), /blog/bmi-chart-explained/ (approximate sex chart → Health E-Stat 111; orphan footnote removed), /calculators/ (42% → 40.3%). Nav: desktop now links BMI Chart, mobile duplicate replaced by Obesity Statistics, "Guides" no longer marked active on non-blog pages.
-- 1 Oct 2026 batch C2b-2: body-fat-vs-bmi age-group chart (exact values not verifiable) replaced by Gallagher et al. AJCN 2000 = PMID 10966886 statement; women's '6-11% / 25% vs 18%' made qualitative (CDC NCHS); men's unsourced testosterone card + FAQ (visible + JSON-LD) and '25% misclassified' removed; bmi-history + bmi-categories 29-million and 40%->55% claims + before/after chart removed, 55% now NHANES III via NHLBI 1998 Evidence Report = NBK2005 (32.6% + 22.3%); lean-body-mass prescriptive FAQ removed and Boer-accuracy FAQ de-numbered (visible + JSON-LD); athletes wrong volume chart and empty LeBron heading removed. Open: athletes page is thin (~700 words) and its 'NFL players BMI 30+ under 15% body fat' line is unsourced -> rebuild as C2b-3.
-- 1 Oct 2026 batch C2b-1: /blog/bmi-and-metabolism/ (removed invented by-decade and BMR-by-BMI charts, unsourced BMR/energy shares and 6-vs-2 kcal claim, 80% box, prescriptive training frequency; age claim now Pontzer et al. Science 2021 = PMID 34385400; metabolic syndrome 1 in 3 = Hirode & Wong JAMA 2020 = PMC7312413; 5x diabetes / 2x CVD = Alberti et al. Circulation 2009 = PMID 19805654), sarcopenia 3-8%/decade = Volpi et al. 2004 = PMC2804956 (metabolism, bmi-limitations, ideal-weight incl. FAQ JSON-LD), how-to-lower-bmi (plate-size claim and unsourced sleep boxes removed; 55% = Cappuccio et al. Sleep 2008 = PMID 18517032), bmi-chart-explained 5-10% line = Wing 2011, homepage weight-loss threshold made qualitative. Next: C2b-2.
-- 1 Oct 2026 batch C2a: removed a fabricated quote credited to Dr. Timothy Church (/blog/bmi-limitations/); repaired sentences left broken by the old never-cite link stripping (home, men, healthy-bmi-range, bmi-chart-explained, bmi-history, lean-body-mass, women) with verified sources (Wing et al. Diabetes Care 2011 = PMC3120182; NCHS Data Brief 508; WHO expert consultation Lancet 2004 = PMID 14726171; Caspersen 1985 = PMC1424733); removed ACE body-fat ranges and their empty tables/notes sitewide, an invented body-composition donut chart, the men's 14-17% box credited to NHLBI, two FAQ entries carrying ACE numbers (lean visible+JSON-LD; athletes JSON-LD-only) and the athletes TOC link to a missing section; rebuilt the lean-body-mass Trusted Resources list; removed TOC links to deleted sections; aligned FAQPage JSON-LD with the FAQs actually shown (Google structured-data rule). Next: C2b = remaining unsourced numbers.
-- 1 Oct 2026 consent decision: Raptive's CMP only, no other consent tool. Done in batch C1: Raptive "Standard GA delay script" (verbatim, help.raptive.com article 47199949578651) replaced the home-made Consent Mode defaults in every <head>; /assets/js/consent-banner.js now defines gtag itself (Raptive's script defines it only for European visitors); dead footer "Cookie settings" text removed (Raptive injects its own US opt-out link and EU pop-up); privacy policy section 6 rewritten; the truncated reference lists on /women-bmi-calculator/ and /new-bmi-calculator/ (old footer remnant spliced in, Mayo-title remnant, unclosed tags) rebuilt.
-- Portfolio rules: never republish this page, the dataset or shared prose on other health sites (Google scaled-content policy names multiple sites hiding scaled content). Embed/licence links: brand anchor only, never keyword anchors, nofollow always allowed (Google link-spam policy, widget clause).
-- Next builds: /obesity-rate-by-state/ → /childhood-obesity-statistics/ → /average-weight/.
