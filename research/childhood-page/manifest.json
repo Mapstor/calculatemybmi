@@ -1,0 +1,66 @@
+{
+ "new_files": [
+  {
+   "path": "childhood-obesity-statistics/index.html",
+   "sha256": "c0254386d68c46aa044cf23a7259d1be83f1da81a0c207c00bba246831dbf47d"
+  },
+  {
+   "path": "childhood-obesity-statistics/og-childhood-obesity-statistics.png",
+   "sha256": "49aa36722f381748d04a0d598a59c42a0cbc964b53e02695158b326c8c33924c"
+  },
+  {
+   "path": "childhood-obesity-statistics/childhood-obesity-nhanes-1963-2023.csv",
+   "sha256": "4ff775bf81e6955eaf2c5a85f36817e988922e6b5b89e143ee735345b99a75ed"
+  },
+  {
+   "path": "research/childhood/gen_child.py",
+   "sha256": "ffc635eb17b6a96bf9c36551f00704f4a7858ee8574da008088a8b830839ddd5"
+  },
+  {
+   "path": "research/childhood/chart_test_jsdom.js",
+   "sha256": "cf1a9e5774a4665186136dba07e7bd377bef4d436ffba3e2769b60269477814a"
+  }
+ ],
+ "replace": [
+  {
+   "path": "research/page-map.csv",
+   "expect_sha256": "707d98d2540a68c624329c51576c7a1115a8441babea34ac25da3636aa6ee737",
+   "sha256": "b69b8ff670c744039bbedb09df92526a2450cf2e9de0d21f9397f905222a5eee"
+  },
+  {
+   "path": "research/data-sources.csv",
+   "expect_sha256": "ee6e39cee869107ff2823fd2894a3d3e78404a2972e10ed857373d28f7f90e06",
+   "sha256": "5d61ffc0b9138a0ac8a6b666910c0986d120f5ec0c308c3890c24d9b9b47f2a8"
+  }
+ ],
+ "edits": [
+  {
+   "file": "us-obesity-statistics/index.html",
+   "old": "hestat/hestat112.htm\" rel=\"noopener\">Health E-Stat 112</a>; <a href=\"https://wwwn.cdc.gov/nchs/data/ResponseRates/ACS-Population-Totals-For-August-2021-August-2023.pdf\" rel=\"noopener\">NHANES population totals</a> — retrieved Sep 2026.</p>\n<",
+   "new": "hestat/hestat112.htm\" rel=\"noopener\">Health E-Stat 112</a>; <a href=\"https://wwwn.cdc.gov/nchs/data/ResponseRates/ACS-Population-Totals-For-August-2021-August-2023.pdf\" rel=\"noopener\">NHANES population totals</a> — retrieved Sep 2026.</p>\n<p>Full trend over time, by age, sex and race: <a href=\"/childhood-obesity-statistics/\">childhood obesity in America</a>.</p>\n<",
+   "count": 1,
+   "label": "edit us-obesity-statistics/index.html"
+  },
+  {
+   "file": "kids-bmi-calculator/index.html",
+   "old": "ore childhood figures by sex and age, with the trend since the 1970s: <a href=\"/us-obesity-statistics/#children",
+   "new": "ore childhood figures by sex and age, with the trend since the 1970s: <a href=\"/childhood-obesity-statistics/",
+   "count": 1,
+   "label": "edit kids-bmi-calculator/index.html"
+  },
+  {
+   "file": "sitemap.xml",
+   "old": "rate-by-state/</loc><lastmod>2026-10-02</lastmod><priority>0.8</priority></url>\n",
+   "new": "rate-by-state/</loc><lastmod>2026-10-02</lastmod><priority>0.8</priority></url>\n  <url><loc>https://calculatemybmi.net/childhood-obesity-statistics/</loc><lastmod>2026-10-02</lastmod><priority>0.8</priority></url>\n",
+   "count": 1,
+   "label": "edit sitemap.xml"
+  },
+  {
+   "file": "research/HANDOFF.md",
+   "old": "and 2025 age bars. Generator: research/state-obesity/gen_page2.py + viz2.py.\n4. /childhood-obesity-statistics/ (proposed; Health E-Stat 112 verified)",
+   "new": "and 2025 age bars. Generator: research/state-obesity/gen_page2.py + viz2.py.\n4. Built 2 Oct 2026: /childhood-obesity-statistics/ — NCHS Health E-Stat 112 Tables 1-3 (1963-2023, by age, sex, race with CDC reliability flags; flagged cells not shown), Health E-Stat 119 underweight, NHANES population totals for counts; interactive trend chart with series chips, 100-kid pictogram, age/sex bars. State-level child data (NSCH) not verified -> disclosed gap. Inbound links: /us-obesity-statistics/ childhood section, /kids-bmi-calculator/",
+   "count": 1,
+   "label": "edit research/HANDOFF.md"
+  }
+ ]
+}
