@@ -43,7 +43,7 @@ keyword-ledger.csv, page-map.csv, data-sources.csv (created 30 Sep; older pages 
 ## Next
 1. Done in C2b-4 (see git log): remaining calorie, protein, sleep and exercise targets removed or replaced by attributed official guidelines (Physical Activity Guidelines for Americans; AASM/SRS via CDC); 6-vs-2 kcal now Wang et al. AJCN 2010 (PMC2980962); FAQ items with empty visible answers removed sitewide (visible + JSON-LD); lean-body-mass how-to rewritten.
 2. Final check done 2 Oct 2026 on the live commit (batch F1): empty section headings removed, long words wrap on phones, sitemap lastmod updated for content-changed pages. Then one IndexNow run (all URLs).
-3. /obesity-rate-by-state/ — verify CDC BRFSS state data first (maps page updated ~24 Sep 2026).
+3. Built 2 Oct 2026: /obesity-rate-by-state/ — CDC BRFSS 2011-2025 state tables + 2025 by age (verified: 2025 PDF = CDC CSV 54/54; CDC band counts reproduced). Hub only: per-state demand 4,680/mo over 38 states (8 >= 150/mo), so no per-state pages (doorway risk); state rows are anchored on the hub. Refresh when CDC publishes 2026 maps (~Sep 2027).
 4. /childhood-obesity-statistics/ (proposed; Health E-Stat 112 verified).
 5. Body-fat trio: /body-fat-calculator/ (74k group), /body-fat-percentage-chart/, /blog/how-to-measure-body-fat/ — data-sourcing first.
 6. /average-weight/ (Series 3 No. 50 data ready), army/navy calculators, growth-chart calculator, FFMI.

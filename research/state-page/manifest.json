@@ -1,0 +1,92 @@
+{
+ "new_files": [
+  {
+   "path": "obesity-rate-by-state/index.html",
+   "sha256": "26618e984c18fe91fd579175e970387e59a506e155e93105e3ef7b127a0633ca"
+  },
+  {
+   "path": "obesity-rate-by-state/og-obesity-rate-by-state.png",
+   "sha256": "5ec0a10a17e44631c18784e46241f675b0466c08fda14b7082bec5e47c5b0415"
+  },
+  {
+   "path": "obesity-rate-by-state/obesity-by-state-cdc-brfss-2011-2025.csv",
+   "sha256": "4f292afba474613caa05e5d781caec2cdf6f2aa2cf365ef339635e6e4a5b63de"
+  },
+  {
+   "path": "obesity-rate-by-state/obesity-by-state-and-age-cdc-brfss-2025.csv",
+   "sha256": "368c29df627e37b83d213d80ccbf12fa6b994d94caedcbc260eaf09bb0bc8561"
+  },
+  {
+   "path": "research/state-obesity/raw/2_2025-Obesity-by-state.csv",
+   "sha256": "845dd0ee0c3553f801ba7fe8ec45f74ebf373ea4c4b6bfe3ffc7d362334c241e"
+  },
+  {
+   "path": "research/state-obesity/raw/3_2025-obesity-by-state-and-aged-18-39.csv",
+   "sha256": "01f9d1375fdefda844636941b2496808ec1c02129b75a872dd6fc502c5c2a97d"
+  },
+  {
+   "path": "research/state-obesity/raw/4_2025-obesity-aged-40-59.csv",
+   "sha256": "1a943ccffa7a73e9cc9275cc95d62645ff0fffb593ca7ca9dc49f0214118fd30"
+  },
+  {
+   "path": "research/state-obesity/raw/5_2025-obesity-aged-60.csv",
+   "sha256": "b2b5fe388c96bb194ba4ac1e3bd1045c000241d22d44543f722e014e98de1a6d"
+  },
+  {
+   "path": "research/state-obesity/cdc-brfss-adult-obesity-by-state-2011-2025.csv",
+   "sha256": "9108a0c12d19ae61856fec435f27213bf5f54a1a977a436621f0342747169939"
+  },
+  {
+   "path": "research/state-obesity/cdc-brfss-adult-obesity-by-state-and-age-2025.csv",
+   "sha256": "3d51d566333117b3235b0c18090ccbe1ffe22a95a9a47c13f711eeb867d27818"
+  },
+  {
+   "path": "research/state-obesity/gen_page.py",
+   "sha256": "e6ca55e35bef90622b6bcdc3e4e34db0828b3c5ecb2e6d0b942212c53960a175"
+  },
+  {
+   "path": "research/state-obesity/facts.json",
+   "sha256": "ec7e885f53fcc6f502c28ac2eeb102ea143de90ab4cbc1fd93e56dc40046c750"
+  }
+ ],
+ "replace": [
+  {
+   "path": "research/keyword-ledger.csv",
+   "expect_sha256": "34b32bf7d4a845eec18119c0d1a813328af5975f0e70df1d1b17de8e45238139",
+   "sha256": "bb2ed4f31832dceec89f3c61f32e3a2da4ff4be3192e56eda86628c8745b669f"
+  },
+  {
+   "path": "research/page-map.csv",
+   "expect_sha256": "a23c730e25f4e6cdd5edc94e20e0d31194b7147df1befe6d9be92bd071d55eef",
+   "sha256": "707d98d2540a68c624329c51576c7a1115a8441babea34ac25da3636aa6ee737"
+  },
+  {
+   "path": "research/data-sources.csv",
+   "expect_sha256": "dda1f90de715d1de1f8e34267fff00099ef231d7b038fe5ae68b9931b2350a77",
+   "sha256": "ee6e39cee869107ff2823fd2894a3d3e78404a2972e10ed857373d28f7f90e06"
+  }
+ ],
+ "edits": [
+  {
+   "file": "us-obesity-statistics/index.html",
+   "old": "er measured obesity is falling won’t be known until NCHS publishes results from its next NHANES cycle (2025–2027).</p>\n<",
+   "new": "er measured obesity is falling won’t be known until NCHS publishes results from its next NHANES cycle (2025–2027).</p>\n<p>State-level rates come from a third CDC survey, the self-reported Behavioral Risk Factor Surveillance System. See <a href=\"/obesity-rate-by-state/\">obesity rate by state</a> for every state from 2011 to 2025.</p>\n<",
+   "count": 1,
+   "label": "edit us-obesity-statistics/index.html"
+  },
+  {
+   "file": "sitemap.xml",
+   "old": "<loc>https://calculatemybmi.net/us-obesity-statistics/</loc><lastmod>2026-09-30</lastmod><priority>0.9</priority></url>\n",
+   "new": "<loc>https://calculatemybmi.net/us-obesity-statistics/</loc><lastmod>2026-09-30</lastmod><priority>0.9</priority></url>\n  <url><loc>https://calculatemybmi.net/obesity-rate-by-state/</loc><lastmod>2026-10-02</lastmod><priority>0.8</priority></url>\n",
+   "count": 1,
+   "label": "edit sitemap.xml"
+  },
+  {
+   "file": "research/HANDOFF.md",
+   "old": "ved, long words wrap on phones, sitemap lastmod updated for content-changed pages. Then one IndexNow run (all URLs).\n3. /obesity-rate-by-state/ — verify CDC BRFSS state data first (maps page updated ~24 Sep 2026",
+   "new": "ved, long words wrap on phones, sitemap lastmod updated for content-changed pages. Then one IndexNow run (all URLs).\n3. Built 2 Oct 2026: /obesity-rate-by-state/ — CDC BRFSS 2011-2025 state tables + 2025 by age (verified: 2025 PDF = CDC CSV 54/54; CDC band counts reproduced). Hub only: per-state demand 4,680/mo over 38 states (8 >= 150/mo), so no per-state pages (doorway risk); state rows are anchored on the hub. Refresh when CDC publishes 2026 maps (~Sep 2027",
+   "count": 1,
+   "label": "edit research/HANDOFF.md"
+  }
+ ]
+}

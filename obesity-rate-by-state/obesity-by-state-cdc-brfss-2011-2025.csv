@@ -1,0 +1,803 @@
+"# Adult obesity prevalence (BMI >= 30, self-reported) by US state and territory, 2011-2025. Source: CDC, Adult Obesity Prevalence Maps (BRFSS), https://www.cdc.gov/obesity/data-and-statistics/adult-obesity-prevalence-maps.html (retrieved Oct 2026). Compiled by calculatemybmi.net; CC BY 4.0 for this compilation. Not comparable with estimates before 2011."
+year,state,abbr,prevalence_pct,ci95_low,ci95_high,status
+2011,Alabama,AL,32.0,30.5,33.5,ok
+2011,Alaska,AK,27.4,25.3,29.7,ok
+2011,Arizona,AZ,25.1,23.0,27.3,ok
+2011,Arkansas,AR,30.9,28.8,33.1,ok
+2011,California,CA,23.8,22.9,24.7,ok
+2011,Colorado,CO,20.7,19.7,21.8,ok
+2011,Connecticut,CT,24.5,23.0,26.0,ok
+2011,Delaware,DE,28.8,26.9,30.7,ok
+2011,District of Columbia,DC,23.7,21.9,25.7,ok
+2011,Florida,FL,26.6,25.4,27.9,ok
+2011,Georgia,GA,28.0,26.6,29.4,ok
+2011,Guam,GU,27.4,24.8,30.2,ok
+2011,Hawaii,HI,21.8,20.4,23.4,ok
+2011,Idaho,ID,27.0,25.3,28.9,ok
+2011,Illinois,IL,27.1,25.4,28.9,ok
+2011,Indiana,IN,30.8,29.5,32.3,ok
+2011,Iowa,IA,29.0,27.6,30.3,ok
+2011,Kansas,KS,29.6,28.7,30.4,ok
+2011,Kentucky,KY,30.4,28.9,31.9,ok
+2011,Louisiana,LA,33.4,32.0,34.9,ok
+2011,Maine,ME,27.8,26.8,28.9,ok
+2011,Maryland,MD,28.3,26.9,29.7,ok
+2011,Massachusetts,MA,22.7,21.8,23.7,ok
+2011,Michigan,MI,31.3,30.0,32.6,ok
+2011,Minnesota,MN,25.7,24.6,26.8,ok
+2011,Mississippi,MS,34.9,33.5,36.3,ok
+2011,Missouri,MO,30.3,28.6,32.0,ok
+2011,Montana,MT,24.6,23.3,26.0,ok
+2011,Nebraska,NE,28.4,27.6,29.2,ok
+2011,Nevada,NV,24.5,22.5,26.6,ok
+2011,New Hampshire,NH,26.2,24.7,27.7,ok
+2011,New Jersey,NJ,23.7,22.7,24.8,ok
+2011,New Mexico,NM,26.3,25.1,27.6,ok
+2011,New York,NY,24.5,23.2,25.9,ok
+2011,North Carolina,NC,29.1,27.7,30.6,ok
+2011,North Dakota,ND,27.8,26.3,29.4,ok
+2011,Ohio,OH,29.6,28.3,31.0,ok
+2011,Oklahoma,OK,31.1,29.7,32.5,ok
+2011,Oregon,OR,26.7,25.2,28.3,ok
+2011,Pennsylvania,PA,28.6,27.3,29.8,ok
+2011,Puerto Rico,PR,26.3,25.0,27.7,ok
+2011,Rhode Island,RI,25.4,23.9,27.0,ok
+2011,South Carolina,SC,30.8,29.6,32.1,ok
+2011,South Dakota,SD,28.1,26.3,30.1,ok
+2011,Tennessee,TN,29.2,26.8,31.7,ok
+2011,Texas,TX,30.4,29.1,31.8,ok
+2011,Utah,UT,24.4,23.4,25.5,ok
+2011,Vermont,VT,25.4,24.1,26.8,ok
+2011,Virginia,VA,29.2,27.5,30.9,ok
+2011,Washington,WA,26.5,25.3,27.7,ok
+2011,West Virginia,WV,32.4,30.9,34.0,ok
+2011,Wisconsin,WI,27.7,25.8,29.7,ok
+2011,Wyoming,WY,25.0,23.5,26.6,ok
+2012,Alabama,AL,33.0,31.5,34.4,ok
+2012,Alaska,AK,25.7,23.9,27.5,ok
+2012,Arizona,AZ,26.0,24.3,27.8,ok
+2012,Arkansas,AR,34.5,32.7,36.4,ok
+2012,California,CA,25.0,23.9,26.0,ok
+2012,Colorado,CO,20.5,19.5,21.4,ok
+2012,Connecticut,CT,25.6,24.3,26.9,ok
+2012,Delaware,DE,26.9,25.2,28.6,ok
+2012,District of Columbia,DC,21.9,19.8,24.0,ok
+2012,Florida,FL,25.2,23.6,26.7,ok
+2012,Georgia,GA,29.1,27.4,30.8,ok
+2012,Guam,GU,29.1,26.3,31.9,ok
+2012,Hawaii,HI,23.6,22.0,25.1,ok
+2012,Idaho,ID,26.8,24.8,28.8,ok
+2012,Illinois,IL,28.1,26.4,29.9,ok
+2012,Indiana,IN,31.4,30.1,32.7,ok
+2012,Iowa,IA,30.4,29.1,31.8,ok
+2012,Kansas,KS,29.9,28.7,31.0,ok
+2012,Kentucky,KY,31.3,29.9,32.6,ok
+2012,Louisiana,LA,34.7,33.1,36.4,ok
+2012,Maine,ME,28.4,27.2,29.5,ok
+2012,Maryland,MD,27.6,26.3,28.9,ok
+2012,Massachusetts,MA,22.9,22.0,23.8,ok
+2012,Michigan,MI,31.1,29.8,32.3,ok
+2012,Minnesota,MN,25.7,24.7,26.8,ok
+2012,Mississippi,MS,34.6,33.0,36.2,ok
+2012,Missouri,MO,29.6,28.0,31.2,ok
+2012,Montana,MT,24.3,23.1,25.5,ok
+2012,Nebraska,NE,28.6,27.7,29.6,ok
+2012,Nevada,NV,26.2,24.3,28.1,ok
+2012,New Hampshire,NH,27.3,25.8,28.8,ok
+2012,New Jersey,NJ,24.6,23.6,25.6,ok
+2012,New Mexico,NM,27.1,25.9,28.3,ok
+2012,New York,NY,23.6,22.0,25.1,ok
+2012,North Carolina,NC,29.6,28.5,30.7,ok
+2012,North Dakota,ND,29.7,27.9,31.4,ok
+2012,Ohio,OH,30.1,29.0,31.2,ok
+2012,Oklahoma,OK,32.2,30.8,33.6,ok
+2012,Oregon,OR,27.3,25.7,29.0,ok
+2012,Pennsylvania,PA,29.1,28.1,30.1,ok
+2012,Puerto Rico,PR,28.4,27.0,29.7,ok
+2012,Rhode Island,RI,25.7,24.1,27.4,ok
+2012,South Carolina,SC,31.6,30.4,32.8,ok
+2012,South Dakota,SD,28.1,26.5,29.8,ok
+2012,Tennessee,TN,31.1,29.6,32.7,ok
+2012,Texas,TX,29.2,27.8,30.5,ok
+2012,Utah,UT,24.3,23.3,25.3,ok
+2012,Vermont,VT,23.7,22.3,25.1,ok
+2012,Virginia,VA,27.4,26.0,28.7,ok
+2012,Washington,WA,26.8,25.8,27.8,ok
+2012,West Virginia,WV,33.8,32.2,35.4,ok
+2012,Wisconsin,WI,29.7,27.8,31.6,ok
+2012,Wyoming,WY,24.6,22.8,26.4,ok
+2013,Alabama,AL,32.4,30.8,34.1,ok
+2013,Alaska,AK,28.4,26.5,30.4,ok
+2013,Arizona,AZ,26.8,24.3,29.4,ok
+2013,Arkansas,AR,34.6,32.7,36.6,ok
+2013,California,CA,24.1,23.0,25.3,ok
+2013,Colorado,CO,21.3,20.4,22.2,ok
+2013,Connecticut,CT,25.0,23.5,26.4,ok
+2013,Delaware,DE,31.1,29.3,32.8,ok
+2013,District of Columbia,DC,22.9,21.0,24.8,ok
+2013,Florida,FL,26.4,25.3,27.4,ok
+2013,Georgia,GA,30.3,28.9,31.8,ok
+2013,Guam,GU,27.0,24.4,29.8,ok
+2013,Hawaii,HI,21.8,20.4,23.2,ok
+2013,Idaho,ID,29.6,27.8,31.4,ok
+2013,Illinois,IL,29.4,27.7,31.2,ok
+2013,Indiana,IN,31.8,30.6,33.1,ok
+2013,Iowa,IA,31.3,29.9,32.7,ok
+2013,Kansas,KS,30.0,29.2,30.7,ok
+2013,Kentucky,KY,33.2,31.8,34.6,ok
+2013,Louisiana,LA,33.1,31.1,35.2,ok
+2013,Maine,ME,28.9,27.5,30.2,ok
+2013,Maryland,MD,28.3,27.0,29.5,ok
+2013,Massachusetts,MA,23.6,22.5,24.8,ok
+2013,Michigan,MI,31.5,30.4,32.6,ok
+2013,Minnesota,MN,25.5,24.1,26.8,ok
+2013,Mississippi,MS,35.1,33.5,36.8,ok
+2013,Missouri,MO,30.4,28.8,32.1,ok
+2013,Montana,MT,24.6,23.4,25.8,ok
+2013,Nebraska,NE,29.6,28.4,30.7,ok
+2013,Nevada,NV,26.2,24.0,28.6,ok
+2013,New Hampshire,NH,26.7,25.3,28.3,ok
+2013,New Jersey,NJ,26.3,25.1,27.5,ok
+2013,New Mexico,NM,26.4,25.1,27.7,ok
+2013,New York,NY,25.4,24.2,26.6,ok
+2013,North Carolina,NC,29.4,28.1,30.7,ok
+2013,North Dakota,ND,31.0,29.5,32.5,ok
+2013,Ohio,OH,30.4,29.2,31.6,ok
+2013,Oklahoma,OK,32.5,31.2,33.9,ok
+2013,Oregon,OR,26.5,24.9,28.1,ok
+2013,Pennsylvania,PA,30.0,28.9,31.2,ok
+2013,Puerto Rico,PR,27.9,26.4,29.5,ok
+2013,Rhode Island,RI,27.3,25.8,28.8,ok
+2013,South Carolina,SC,31.7,30.5,33.1,ok
+2013,South Dakota,SD,29.9,28.0,31.8,ok
+2013,Tennessee,TN,33.7,31.9,35.5,ok
+2013,Texas,TX,30.9,29.5,32.3,ok
+2013,Utah,UT,24.1,23.2,25.1,ok
+2013,Vermont,VT,24.7,23.4,26.1,ok
+2013,Virginia,VA,27.2,25.9,28.5,ok
+2013,Washington,WA,27.2,26.0,28.3,ok
+2013,West Virginia,WV,35.1,33.6,36.6,ok
+2013,Wisconsin,WI,29.8,28.0,31.6,ok
+2013,Wyoming,WY,27.8,26.2,29.5,ok
+2014,Alabama,AL,33.5,32.1,35.0,ok
+2014,Alaska,AK,29.7,27.8,31.7,ok
+2014,Arizona,AZ,28.9,27.7,30.2,ok
+2014,Arkansas,AR,35.9,33.8,38.0,ok
+2014,California,CA,24.7,23.5,25.9,ok
+2014,Colorado,CO,21.3,20.4,22.2,ok
+2014,Connecticut,CT,26.3,24.9,27.7,ok
+2014,Delaware,DE,30.7,28.6,32.8,ok
+2014,District of Columbia,DC,21.7,19.5,24.0,ok
+2014,Florida,FL,26.2,25.0,27.5,ok
+2014,Georgia,GA,30.5,28.9,32.1,ok
+2014,Guam,GU,28.0,25.6,30.5,ok
+2014,Hawaii,HI,22.1,20.7,23.5,ok
+2014,Idaho,ID,28.9,27.1,30.8,ok
+2014,Illinois,IL,29.3,27.6,31.1,ok
+2014,Indiana,IN,32.7,31.6,34.0,ok
+2014,Iowa,IA,30.9,29.6,32.3,ok
+2014,Kansas,KS,31.3,30.3,32.2,ok
+2014,Kentucky,KY,31.6,30.2,33.1,ok
+2014,Louisiana,LA,34.9,33.4,36.4,ok
+2014,Maine,ME,28.2,26.9,29.5,ok
+2014,Maryland,MD,29.6,28.1,31.1,ok
+2014,Massachusetts,MA,23.3,22.3,24.4,ok
+2014,Michigan,MI,30.7,29.4,32.0,ok
+2014,Minnesota,MN,27.6,26.8,28.5,ok
+2014,Mississippi,MS,35.5,33.4,37.6,ok
+2014,Missouri,MO,30.2,28.6,31.9,ok
+2014,Montana,MT,26.4,24.9,27.9,ok
+2014,Nebraska,NE,30.2,29.2,31.3,ok
+2014,Nevada,NV,27.7,25.4,30.1,ok
+2014,New Hampshire,NH,27.4,25.8,29.1,ok
+2014,New Jersey,NJ,26.9,25.7,28.1,ok
+2014,New Mexico,NM,28.4,27.0,30.0,ok
+2014,New York,NY,27.0,25.6,28.5,ok
+2014,North Carolina,NC,29.7,28.4,31.0,ok
+2014,North Dakota,ND,32.2,30.5,34.0,ok
+2014,Ohio,OH,32.6,31.2,34.1,ok
+2014,Oklahoma,OK,33.0,31.7,34.3,ok
+2014,Oregon,OR,27.9,26.3,29.6,ok
+2014,Pennsylvania,PA,30.2,28.9,31.4,ok
+2014,Puerto Rico,PR,28.3,26.8,29.8,ok
+2014,Rhode Island,RI,27.0,25.4,28.6,ok
+2014,South Carolina,SC,32.1,30.9,33.3,ok
+2014,South Dakota,SD,29.8,27.9,31.8,ok
+2014,Tennessee,TN,31.2,29.3,33.2,ok
+2014,Texas,TX,31.9,30.6,33.3,ok
+2014,Utah,UT,25.7,24.9,26.6,ok
+2014,Vermont,VT,24.8,23.5,26.1,ok
+2014,Virginia,VA,28.5,27.2,29.7,ok
+2014,Washington,WA,27.3,26.0,28.5,ok
+2014,West Virginia,WV,35.7,34.2,37.2,ok
+2014,Wisconsin,WI,31.2,29.6,32.8,ok
+2014,Wyoming,WY,29.5,27.5,31.5,ok
+2015,Alabama,AL,35.6,34.1,37.2,ok
+2015,Alaska,AK,29.8,27.5,32.3,ok
+2015,Arizona,AZ,28.4,26.9,30.0,ok
+2015,Arkansas,AR,34.5,32.2,36.9,ok
+2015,California,CA,24.2,23.2,25.2,ok
+2015,Colorado,CO,20.2,19.1,21.3,ok
+2015,Connecticut,CT,25.3,24.1,26.4,ok
+2015,Delaware,DE,29.7,27.6,31.8,ok
+2015,District of Columbia,DC,22.1,19.7,24.8,ok
+2015,Florida,FL,26.8,25.5,28.1,ok
+2015,Georgia,GA,30.7,28.8,32.6,ok
+2015,Guam,GU,31.6,28.2,35.1,ok
+2015,Hawaii,HI,22.7,21.3,24.1,ok
+2015,Idaho,ID,28.6,26.9,30.4,ok
+2015,Illinois,IL,30.8,29.2,32.4,ok
+2015,Indiana,IN,31.3,29.5,33.1,ok
+2015,Iowa,IA,32.1,30.5,33.8,ok
+2015,Kansas,KS,34.2,33.4,35.0,ok
+2015,Kentucky,KY,34.6,32.9,36.3,ok
+2015,Louisiana,LA,36.2,34.3,38.1,ok
+2015,Maine,ME,30.0,28.6,31.4,ok
+2015,Maryland,MD,28.9,27.2,30.7,ok
+2015,Massachusetts,MA,24.3,23.0,25.6,ok
+2015,Michigan,MI,31.2,29.9,32.4,ok
+2015,Minnesota,MN,26.1,25.3,27.0,ok
+2015,Mississippi,MS,35.6,33.8,37.5,ok
+2015,Missouri,MO,32.4,30.8,34.0,ok
+2015,Montana,MT,23.6,22.1,25.2,ok
+2015,Nebraska,NE,31.4,30.3,32.5,ok
+2015,Nevada,NV,26.7,24.1,29.5,ok
+2015,New Hampshire,NH,26.3,24.8,27.9,ok
+2015,New Jersey,NJ,25.6,24.3,26.9,ok
+2015,New Mexico,NM,28.8,27.1,30.6,ok
+2015,New York,NY,25.0,24.0,26.1,ok
+2015,North Carolina,NC,30.1,28.7,31.5,ok
+2015,North Dakota,ND,31.0,29.3,32.8,ok
+2015,Ohio,OH,29.8,28.4,31.2,ok
+2015,Oklahoma,OK,33.9,32.2,35.6,ok
+2015,Oregon,OR,30.1,28.4,31.8,ok
+2015,Pennsylvania,PA,30.0,28.4,31.6,ok
+2015,Puerto Rico,PR,29.5,28.0,31.1,ok
+2015,Rhode Island,RI,26.0,24.3,27.7,ok
+2015,South Carolina,SC,31.7,30.5,33.0,ok
+2015,South Dakota,SD,30.4,28.5,32.3,ok
+2015,Tennessee,TN,33.8,31.9,35.7,ok
+2015,Texas,TX,32.4,30.9,33.9,ok
+2015,Utah,UT,24.5,23.5,25.5,ok
+2015,Vermont,VT,25.1,23.8,26.6,ok
+2015,Virginia,VA,29.2,27.9,30.6,ok
+2015,Washington,WA,26.4,25.5,27.4,ok
+2015,West Virginia,WV,35.6,34.1,37.1,ok
+2015,Wisconsin,WI,30.7,29.0,32.4,ok
+2015,Wyoming,WY,29.0,27.0,31.1,ok
+2016,Alabama,AL,35.7,34.2,37.3,ok
+2016,Alaska,AK,31.4,28.5,34.4,ok
+2016,Arizona,AZ,29.0,27.5,30.6,ok
+2016,Arkansas,AR,35.7,33.3,38.1,ok
+2016,California,CA,25.0,23.9,26.1,ok
+2016,Colorado,CO,22.3,21.4,23.2,ok
+2016,Connecticut,CT,26.0,24.8,27.2,ok
+2016,Delaware,DE,30.7,28.7,32.8,ok
+2016,District of Columbia,DC,22.6,20.9,24.3,ok
+2016,Florida,FL,27.4,26.4,28.5,ok
+2016,Georgia,GA,31.4,29.7,33.2,ok
+2016,Guam,GU,28.3,25.1,31.7,ok
+2016,Hawaii,HI,23.8,22.5,25.2,ok
+2016,Idaho,ID,27.4,25.6,29.3,ok
+2016,Illinois,IL,31.6,29.9,33.3,ok
+2016,Indiana,IN,32.5,31.2,33.8,ok
+2016,Iowa,IA,32.0,30.5,33.4,ok
+2016,Kansas,KS,31.2,30.1,32.3,ok
+2016,Kentucky,KY,34.2,32.7,35.6,ok
+2016,Louisiana,LA,35.5,33.4,37.7,ok
+2016,Maine,ME,29.9,28.5,31.3,ok
+2016,Maryland,MD,29.9,28.9,31.0,ok
+2016,Massachusetts,MA,23.6,22.3,24.9,ok
+2016,Michigan,MI,32.5,31.4,33.6,ok
+2016,Minnesota,MN,27.8,26.9,28.6,ok
+2016,Mississippi,MS,37.3,35.4,39.1,ok
+2016,Missouri,MO,31.7,30.0,33.4,ok
+2016,Montana,MT,25.5,23.9,27.2,ok
+2016,Nebraska,NE,32.0,30.8,33.2,ok
+2016,Nevada,NV,25.8,23.9,27.8,ok
+2016,New Hampshire,NH,26.6,25.0,28.2,ok
+2016,New Jersey,NJ,27.4,25.7,29.1,ok
+2016,New Mexico,NM,28.3,26.6,30.1,ok
+2016,New York,NY,25.5,24.6,26.5,ok
+2016,North Carolina,NC,31.8,30.4,33.3,ok
+2016,North Dakota,ND,31.9,30.3,33.6,ok
+2016,Ohio,OH,31.5,30.2,32.8,ok
+2016,Oklahoma,OK,32.8,31.2,34.3,ok
+2016,Oregon,OR,28.7,27.3,30.3,ok
+2016,Pennsylvania,PA,30.3,28.8,31.8,ok
+2016,Puerto Rico,PR,30.7,29.0,32.5,ok
+2016,Rhode Island,RI,26.6,24.9,28.4,ok
+2016,South Carolina,SC,32.3,31.0,33.6,ok
+2016,South Dakota,SD,29.6,27.6,31.7,ok
+2016,Tennessee,TN,34.8,33.0,36.7,ok
+2016,Texas,TX,33.7,31.9,35.4,ok
+2016,Utah,UT,25.4,24.2,26.5,ok
+2016,Vermont,VT,27.1,25.5,28.7,ok
+2016,Virgin Islands,VI,32.5,28.6,36.6,ok
+2016,Virginia,VA,29.0,27.7,30.3,ok
+2016,Washington,WA,28.6,27.6,29.6,ok
+2016,West Virginia,WV,37.7,36.3,39.0,ok
+2016,Wisconsin,WI,30.7,29.0,32.5,ok
+2016,Wyoming,WY,27.7,25.7,29.8,ok
+2017,Alabama,AL,36.3,34.7,38.0,ok
+2017,Alaska,AK,34.2,31.4,37.1,ok
+2017,Arizona,AZ,29.5,28.5,30.5,ok
+2017,Arkansas,AR,35.0,32.6,37.5,ok
+2017,California,CA,25.1,23.8,26.4,ok
+2017,Colorado,CO,22.6,21.6,23.7,ok
+2017,Connecticut,CT,26.9,25.6,28.1,ok
+2017,Delaware,DE,31.8,29.7,34.0,ok
+2017,District of Columbia,DC,22.9,21.1,24.7,ok
+2017,Florida,FL,28.4,27.0,29.9,ok
+2017,Georgia,GA,31.6,30.0,33.3,ok
+2017,Guam,GU,34.3,31.2,37.6,ok
+2017,Hawaii,HI,23.8,22.4,25.2,ok
+2017,Idaho,ID,29.3,27.5,31.2,ok
+2017,Illinois,IL,31.1,29.5,32.7,ok
+2017,Indiana,IN,33.6,32.5,34.7,ok
+2017,Iowa,IA,36.4,35.1,37.7,ok
+2017,Kansas,KS,32.4,31.5,33.2,ok
+2017,Kentucky,KY,34.3,32.6,36.0,ok
+2017,Louisiana,LA,36.2,34.4,38.1,ok
+2017,Maine,ME,29.1,27.7,30.6,ok
+2017,Maryland,MD,31.3,30.0,32.6,ok
+2017,Massachusetts,MA,25.9,24.1,27.7,ok
+2017,Michigan,MI,32.3,31.1,33.4,ok
+2017,Minnesota,MN,28.4,27.5,29.4,ok
+2017,Mississippi,MS,37.3,35.3,39.3,ok
+2017,Missouri,MO,32.5,30.9,34.0,ok
+2017,Montana,MT,25.3,23.8,26.9,ok
+2017,Nebraska,NE,32.8,31.6,34.0,ok
+2017,Nevada,NV,26.7,24.5,29.0,ok
+2017,New Hampshire,NH,28.1,26.3,29.9,ok
+2017,New Jersey,NJ,27.3,25.8,28.7,ok
+2017,New Mexico,NM,28.4,26.8,30.0,ok
+2017,New York,NY,25.7,24.6,26.9,ok
+2017,North Carolina,NC,32.1,30.4,34.0,ok
+2017,North Dakota,ND,33.2,31.6,34.7,ok
+2017,Ohio,OH,33.8,32.5,35.1,ok
+2017,Oklahoma,OK,36.5,34.9,38.1,ok
+2017,Oregon,OR,29.4,27.9,30.9,ok
+2017,Pennsylvania,PA,31.6,30.0,33.2,ok
+2017,Puerto Rico,PR,32.9,31.0,34.9,ok
+2017,Rhode Island,RI,30.0,28.1,31.9,ok
+2017,South Carolina,SC,34.1,32.8,35.4,ok
+2017,South Dakota,SD,31.9,29.8,34.1,ok
+2017,Tennessee,TN,32.8,31.1,34.6,ok
+2017,Texas,TX,33.0,31.2,34.9,ok
+2017,Utah,UT,25.3,24.2,26.4,ok
+2017,Vermont,VT,27.6,26.0,29.2,ok
+2017,Virginia,VA,30.1,28.7,31.4,ok
+2017,Washington,WA,27.7,26.6,28.7,ok
+2017,West Virginia,WV,38.1,36.4,39.7,ok
+2017,Wisconsin,WI,32.0,30.3,33.8,ok
+2017,Wyoming,WY,28.8,27.1,30.6,ok
+2018,Alabama,AL,36.2,34.6,37.9,ok
+2018,Alaska,AK,29.5,27.0,32.2,ok
+2018,Arizona,AZ,29.5,27.8,31.3,ok
+2018,Arkansas,AR,37.1,35.1,39.1,ok
+2018,California,CA,25.8,24.8,26.9,ok
+2018,Colorado,CO,23.0,21.9,24.0,ok
+2018,Connecticut,CT,27.4,26.2,28.7,ok
+2018,Delaware,DE,33.5,31.7,35.4,ok
+2018,District of Columbia,DC,24.7,22.9,26.5,ok
+2018,Florida,FL,30.7,29.1,32.3,ok
+2018,Georgia,GA,32.5,31.2,33.8,ok
+2018,Guam,GU,29.8,26.6,33.3,ok
+2018,Hawaii,HI,24.9,23.6,26.3,ok
+2018,Idaho,ID,28.4,26.3,30.5,ok
+2018,Illinois,IL,31.8,30.2,33.4,ok
+2018,Indiana,IN,34.1,32.6,35.6,ok
+2018,Iowa,IA,35.3,34.2,36.5,ok
+2018,Kansas,KS,34.4,33.2,35.6,ok
+2018,Kentucky,KY,36.6,34.9,38.4,ok
+2018,Louisiana,LA,36.8,34.9,38.7,ok
+2018,Maine,ME,30.4,28.9,31.9,ok
+2018,Maryland,MD,30.9,29.8,32.1,ok
+2018,Massachusetts,MA,25.7,24.3,27.2,ok
+2018,Michigan,MI,33.0,31.8,34.2,ok
+2018,Minnesota,MN,30.1,29.2,30.9,ok
+2018,Mississippi,MS,39.5,37.8,41.2,ok
+2018,Missouri,MO,35.0,33.3,36.8,ok
+2018,Montana,MT,26.9,25.2,28.5,ok
+2018,Nebraska,NE,34.1,32.9,35.3,ok
+2018,Nevada,NV,29.5,27.1,32.0,ok
+2018,New Hampshire,NH,29.6,27.9,31.4,ok
+2018,New Jersey,NJ,25.7,23.3,28.2,ok
+2018,New Mexico,NM,32.3,30.7,34.0,ok
+2018,New York,NY,27.6,26.7,28.6,ok
+2018,North Carolina,NC,33.0,31.2,34.8,ok
+2018,North Dakota,ND,35.1,33.3,37.0,ok
+2018,Ohio,OH,34.0,32.7,35.3,ok
+2018,Oklahoma,OK,34.8,33.1,36.6,ok
+2018,Oregon,OR,29.9,28.4,31.4,ok
+2018,Pennsylvania,PA,30.9,29.4,32.5,ok
+2018,Puerto Rico,PR,32.9,31.2,34.7,ok
+2018,Rhode Island,RI,27.7,26.0,29.5,ok
+2018,South Carolina,SC,34.3,33.0,35.6,ok
+2018,South Dakota,SD,30.1,28.1,32.1,ok
+2018,Tennessee,TN,34.4,32.5,36.3,ok
+2018,Texas,TX,34.8,32.8,36.8,ok
+2018,Utah,UT,27.8,26.7,28.9,ok
+2018,Vermont,VT,27.5,25.9,29.2,ok
+2018,Virginia,VA,30.4,29.1,31.6,ok
+2018,Washington,WA,28.7,27.6,29.8,ok
+2018,West Virginia,WV,39.5,37.8,41.3,ok
+2018,Wisconsin,WI,32.0,30.2,33.8,ok
+2018,Wyoming,WY,29.0,27.3,30.8,ok
+2019,Alabama,AL,36.1,34.6,37.7,ok
+2019,Alaska,AK,30.5,27.8,33.4,ok
+2019,Arizona,AZ,31.4,29.7,33.2,ok
+2019,Arkansas,AR,37.4,35.5,39.4,ok
+2019,California,CA,26.2,25.1,27.2,ok
+2019,Colorado,CO,23.8,22.7,24.9,ok
+2019,Connecticut,CT,29.1,27.8,30.5,ok
+2019,Delaware,DE,34.4,32.1,36.6,ok
+2019,District of Columbia,DC,23.8,21.7,25.9,ok
+2019,Florida,FL,27.0,25.6,28.5,ok
+2019,Georgia,GA,33.1,31.3,35.0,ok
+2019,Guam,GU,33.6,30.5,37.0,ok
+2019,Hawaii,HI,25.0,23.7,26.3,ok
+2019,Idaho,ID,29.5,27.6,31.4,ok
+2019,Illinois,IL,31.6,30.1,33.1,ok
+2019,Indiana,IN,35.3,34.0,36.7,ok
+2019,Iowa,IA,33.9,32.8,35.1,ok
+2019,Kansas,KS,35.2,34.1,36.4,ok
+2019,Kentucky,KY,36.5,34.7,38.2,ok
+2019,Louisiana,LA,35.9,34.1,37.7,ok
+2019,Maine,ME,31.7,30.3,33.1,ok
+2019,Maryland,MD,32.3,31.1,33.4,ok
+2019,Massachusetts,MA,25.2,23.9,26.5,ok
+2019,Michigan,MI,36.0,34.7,37.3,ok
+2019,Minnesota,MN,30.1,29.2,31.1,ok
+2019,Mississippi,MS,40.8,39.0,42.7,ok
+2019,Missouri,MO,34.8,33.2,36.4,ok
+2019,Montana,MT,28.3,27.0,29.7,ok
+2019,Nebraska,NE,34.1,33.0,35.2,ok
+2019,Nevada,NV,30.6,28.2,33.1,ok
+2019,New Hampshire,NH,31.8,30.0,33.6,ok
+2019,New Jersey,NJ,,,,insufficient data
+2019,New Mexico,NM,31.7,30.0,33.5,ok
+2019,New York,NY,27.1,26.0,28.2,ok
+2019,North Carolina,NC,34.0,32.2,35.8,ok
+2019,North Dakota,ND,34.8,33.0,36.7,ok
+2019,Ohio,OH,34.8,33.5,36.1,ok
+2019,Oklahoma,OK,36.8,35.2,38.4,ok
+2019,Oregon,OR,29.0,27.5,30.4,ok
+2019,Pennsylvania,PA,33.2,31.7,34.7,ok
+2019,Puerto Rico,PR,32.5,31.0,34.0,ok
+2019,Rhode Island,RI,30.0,28.2,31.9,ok
+2019,South Carolina,SC,35.4,33.8,36.9,ok
+2019,South Dakota,SD,33.0,30.6,35.5,ok
+2019,Tennessee,TN,36.5,34.8,38.3,ok
+2019,Texas,TX,34.0,32.2,35.7,ok
+2019,Utah,UT,29.2,28.2,30.3,ok
+2019,Vermont,VT,26.6,25.0,28.3,ok
+2019,Virginia,VA,31.9,30.6,33.2,ok
+2019,Washington,WA,28.3,27.3,29.4,ok
+2019,West Virginia,WV,39.7,38.0,41.5,ok
+2019,Wisconsin,WI,34.2,32.4,36.1,ok
+2019,Wyoming,WY,29.7,27.7,31.7,ok
+2020,Alabama,AL,39.0,37.3,40.8,ok
+2020,Alaska,AK,31.9,29.4,34.4,ok
+2020,Arizona,AZ,30.9,29.5,32.3,ok
+2020,Arkansas,AR,36.4,34.5,38.4,ok
+2020,California,CA,30.3,28.3,32.2,ok
+2020,Colorado,CO,24.2,23.1,25.2,ok
+2020,Connecticut,CT,29.2,27.7,30.8,ok
+2020,Delaware,DE,36.5,34.3,38.8,ok
+2020,District of Columbia,DC,24.3,22.3,26.4,ok
+2020,Florida,FL,28.4,26.7,30.2,ok
+2020,Georgia,GA,34.3,32.5,36.0,ok
+2020,Guam,GU,34.4,30.8,38.2,ok
+2020,Hawaii,HI,24.5,23.2,25.9,ok
+2020,Idaho,ID,31.1,29.4,32.9,ok
+2020,Illinois,IL,32.4,30.2,34.6,ok
+2020,Indiana,IN,36.8,35.4,38.1,ok
+2020,Iowa,IA,36.5,35.3,37.7,ok
+2020,Kansas,KS,35.3,34.0,36.5,ok
+2020,Kentucky,KY,36.6,34.6,38.6,ok
+2020,Louisiana,LA,38.1,36.2,40.1,ok
+2020,Maine,ME,31.0,29.6,32.5,ok
+2020,Maryland,MD,31.0,29.8,32.2,ok
+2020,Massachusetts,MA,24.4,23.0,25.9,ok
+2020,Michigan,MI,35.2,33.7,36.7,ok
+2020,Minnesota,MN,30.7,29.8,31.7,ok
+2020,Mississippi,MS,39.7,38.1,41.3,ok
+2020,Missouri,MO,34.0,32.7,35.4,ok
+2020,Montana,MT,28.5,27.1,30.0,ok
+2020,Nebraska,NE,34.0,32.8,35.2,ok
+2020,Nevada,NV,28.7,26.2,31.3,ok
+2020,New Hampshire,NH,29.9,28.2,31.6,ok
+2020,New Jersey,NJ,27.7,26.5,28.9,ok
+2020,New Mexico,NM,30.9,29.0,32.8,ok
+2020,New York,NY,26.3,25.3,27.4,ok
+2020,North Carolina,NC,33.6,32.0,35.2,ok
+2020,North Dakota,ND,33.1,31.1,35.1,ok
+2020,Ohio,OH,35.5,34.3,36.7,ok
+2020,Oklahoma,OK,36.4,34.7,38.2,ok
+2020,Oregon,OR,28.1,26.6,29.6,ok
+2020,Pennsylvania,PA,31.5,29.8,33.2,ok
+2020,Puerto Rico,PR,31.4,29.5,33.3,ok
+2020,Rhode Island,RI,30.1,28.2,32.1,ok
+2020,South Carolina,SC,36.2,34.2,38.3,ok
+2020,South Dakota,SD,33.2,30.7,35.8,ok
+2020,Tennessee,TN,35.6,33.6,37.6,ok
+2020,Texas,TX,35.8,33.9,37.7,ok
+2020,Utah,UT,28.6,27.4,29.7,ok
+2020,Vermont,VT,26.3,24.6,27.9,ok
+2020,Virginia,VA,32.2,30.8,33.6,ok
+2020,Washington,WA,28.0,27.0,29.1,ok
+2020,West Virginia,WV,39.1,37.5,40.7,ok
+2020,Wisconsin,WI,32.3,30.4,34.2,ok
+2020,Wyoming,WY,30.7,28.7,32.7,ok
+2021,Alabama,AL,39.9,37.9,41.8,ok
+2021,Alaska,AK,33.5,31.5,35.5,ok
+2021,Arizona,AZ,31.3,30.0,32.6,ok
+2021,Arkansas,AR,38.7,36.6,40.8,ok
+2021,California,CA,27.6,26.1,29.1,ok
+2021,Colorado,CO,25.1,24.1,26.2,ok
+2021,Connecticut,CT,30.4,28.9,31.9,ok
+2021,Delaware,DE,33.9,31.8,36.1,ok
+2021,District of Columbia,DC,24.7,22.6,26.9,ok
+2021,Florida,FL,,,,insufficient data
+2021,Georgia,GA,33.9,32.2,35.6,ok
+2021,Guam,GU,33.5,29.2,38.1,ok
+2021,Hawaii,HI,25.0,23.6,26.4,ok
+2021,Idaho,ID,31.6,30.2,33.0,ok
+2021,Illinois,IL,34.2,31.8,36.6,ok
+2021,Indiana,IN,36.3,35.1,37.5,ok
+2021,Iowa,IA,36.4,35.1,37.7,ok
+2021,Kansas,KS,36.0,35.1,37.0,ok
+2021,Kentucky,KY,40.3,38.5,42.2,ok
+2021,Louisiana,LA,38.6,36.7,40.6,ok
+2021,Maine,ME,31.9,30.6,33.2,ok
+2021,Maryland,MD,34.3,33.2,35.5,ok
+2021,Massachusetts,MA,27.4,25.9,28.8,ok
+2021,Michigan,MI,34.4,33.1,35.7,ok
+2021,Minnesota,MN,32.4,31.5,33.3,ok
+2021,Mississippi,MS,39.1,37.1,41.1,ok
+2021,Missouri,MO,37.3,35.9,38.7,ok
+2021,Montana,MT,31.8,30.3,33.3,ok
+2021,Nebraska,NE,35.9,34.8,37.1,ok
+2021,Nevada,NV,31.3,28.7,34.1,ok
+2021,New Hampshire,NH,30.6,29.0,32.3,ok
+2021,New Jersey,NJ,28.2,26.8,29.6,ok
+2021,New Mexico,NM,34.6,32.9,36.3,ok
+2021,New York,NY,29.1,28.3,30.0,ok
+2021,North Carolina,NC,36.0,34.2,37.9,ok
+2021,North Dakota,ND,35.2,33.6,36.9,ok
+2021,Ohio,OH,37.8,36.6,39.0,ok
+2021,Oklahoma,OK,39.4,37.7,41.2,ok
+2021,Oregon,OR,30.4,28.9,31.9,ok
+2021,Pennsylvania,PA,33.3,31.7,34.9,ok
+2021,Puerto Rico,PR,36.0,33.9,38.1,ok
+2021,Rhode Island,RI,30.1,28.4,31.8,ok
+2021,South Carolina,SC,36.1,34.6,37.5,ok
+2021,South Dakota,SD,38.4,35.6,41.4,ok
+2021,Tennessee,TN,35.0,33.1,36.8,ok
+2021,Texas,TX,36.1,34.4,37.8,ok
+2021,Utah,UT,30.9,29.8,32.1,ok
+2021,Vermont,VT,29.0,27.4,30.7,ok
+2021,Virgin Islands,VI,35.6,28.7,43.2,ok
+2021,Virginia,VA,34.2,32.9,35.6,ok
+2021,Washington,WA,28.8,27.7,29.9,ok
+2021,West Virginia,WV,40.6,39.1,42.1,ok
+2021,Wisconsin,WI,33.9,32.1,35.7,ok
+2021,Wyoming,WY,32.0,29.9,34.1,ok
+2022,Alabama,AL,38.3,36.3,40.3,ok
+2022,Alaska,AK,32.1,30.4,33.9,ok
+2022,Arizona,AZ,33.2,31.6,34.9,ok
+2022,Arkansas,AR,37.4,35.6,39.2,ok
+2022,California,CA,28.1,26.8,29.4,ok
+2022,Colorado,CO,25.0,23.9,26.2,ok
+2022,Connecticut,CT,30.6,29.1,32.1,ok
+2022,Delaware,DE,37.9,35.6,40.2,ok
+2022,District of Columbia,DC,24.3,22.2,26.5,ok
+2022,Florida,FL,31.6,29.9,33.4,ok
+2022,Georgia,GA,37.0,35.4,38.7,ok
+2022,Guam,GU,32.7,28.8,36.8,ok
+2022,Hawaii,HI,25.9,24.4,27.4,ok
+2022,Idaho,ID,33.2,31.7,34.7,ok
+2022,Illinois,IL,33.4,31.5,35.3,ok
+2022,Indiana,IN,37.7,36.4,38.9,ok
+2022,Iowa,IA,37.4,36.0,38.8,ok
+2022,Kansas,KS,35.7,34.4,37.0,ok
+2022,Kentucky,KY,37.7,35.6,39.9,ok
+2022,Louisiana,LA,40.1,38.3,41.9,ok
+2022,Maine,ME,33.1,31.8,34.5,ok
+2022,Maryland,MD,33.2,31.9,34.4,ok
+2022,Massachusetts,MA,27.2,26.0,28.5,ok
+2022,Michigan,MI,34.5,33.2,35.8,ok
+2022,Minnesota,MN,33.6,32.6,34.7,ok
+2022,Mississippi,MS,39.5,37.5,41.4,ok
+2022,Missouri,MO,36.4,34.9,38.0,ok
+2022,Montana,MT,30.5,29.1,32.0,ok
+2022,Nebraska,NE,35.3,33.7,36.9,ok
+2022,Nevada,NV,33.5,31.0,36.2,ok
+2022,New Hampshire,NH,30.2,28.6,32.0,ok
+2022,New Jersey,NJ,29.1,27.6,30.7,ok
+2022,New Mexico,NM,32.4,30.5,34.4,ok
+2022,New York,NY,30.1,29.1,31.2,ok
+2022,North Carolina,NC,34.1,32.1,36.1,ok
+2022,North Dakota,ND,35.4,33.6,37.3,ok
+2022,Ohio,OH,38.1,37.0,39.3,ok
+2022,Oklahoma,OK,40.0,38.4,41.6,ok
+2022,Oregon,OR,30.9,29.4,32.4,ok
+2022,Pennsylvania,PA,33.4,31.2,35.5,ok
+2022,Puerto Rico,PR,34.1,32.3,35.9,ok
+2022,Rhode Island,RI,30.8,29.1,32.7,ok
+2022,South Carolina,SC,35.0,33.6,36.4,ok
+2022,South Dakota,SD,36.8,33.5,40.1,ok
+2022,Tennessee,TN,38.9,37.1,40.8,ok
+2022,Texas,TX,35.5,34.0,37.1,ok
+2022,Utah,UT,31.1,29.9,32.4,ok
+2022,Vermont,VT,26.8,25.4,28.3,ok
+2022,Virgin Islands,VI,32.1,25.4,39.6,ok
+2022,Virginia,VA,35.2,33.8,36.6,ok
+2022,Washington,WA,31.7,30.9,32.5,ok
+2022,West Virginia,WV,41.0,39.3,42.8,ok
+2022,Wisconsin,WI,37.7,36.4,39.0,ok
+2022,Wyoming,WY,34.3,32.3,36.2,ok
+2023,Alabama,AL,39.2,37.3,41.3,ok
+2023,Alaska,AK,35.2,33.3,37.0,ok
+2023,Arizona,AZ,31.9,30.5,33.3,ok
+2023,Arkansas,AR,40.0,38.2,41.9,ok
+2023,California,CA,27.7,26.4,29.0,ok
+2023,Colorado,CO,24.9,23.7,26.1,ok
+2023,Connecticut,CT,29.4,27.9,30.9,ok
+2023,Delaware,DE,35.7,33.5,38.0,ok
+2023,District of Columbia,DC,23.5,21.4,25.8,ok
+2023,Florida,FL,30.1,28.4,31.8,ok
+2023,Georgia,GA,35.0,33.4,36.7,ok
+2023,Guam,GU,35.4,31.4,39.6,ok
+2023,Hawaii,HI,26.1,24.6,27.7,ok
+2023,Idaho,ID,31.0,29.4,32.5,ok
+2023,Illinois,IL,36.0,34.1,37.9,ok
+2023,Indiana,IN,37.8,36.6,39.1,ok
+2023,Iowa,IA,37.8,36.4,39.2,ok
+2023,Kansas,KS,35.9,34.6,37.3,ok
+2023,Kentucky,KY,,,,insufficient data
+2023,Louisiana,LA,39.9,38.1,41.7,ok
+2023,Maine,ME,32.6,31.4,33.9,ok
+2023,Maryland,MD,34.1,32.8,35.3,ok
+2023,Massachusetts,MA,27.4,26.0,28.8,ok
+2023,Michigan,MI,35.4,34.0,36.8,ok
+2023,Minnesota,MN,33.3,32.1,34.4,ok
+2023,Mississippi,MS,40.1,37.9,42.2,ok
+2023,Missouri,MO,35.3,33.7,36.9,ok
+2023,Montana,MT,30.5,29.0,31.9,ok
+2023,Nebraska,NE,36.6,35.4,37.8,ok
+2023,Nevada,NV,30.8,27.9,33.8,ok
+2023,New Hampshire,NH,32.8,31.0,34.6,ok
+2023,New Jersey,NJ,28.9,27.5,30.3,ok
+2023,New Mexico,NM,35.3,32.7,38.0,ok
+2023,New York,NY,28.0,27.0,29.1,ok
+2023,North Carolina,NC,34.0,31.9,36.2,ok
+2023,North Dakota,ND,35.6,33.9,37.3,ok
+2023,Ohio,OH,36.4,35.2,37.7,ok
+2023,Oklahoma,OK,38.7,37.2,40.2,ok
+2023,Oregon,OR,33.6,32.0,35.3,ok
+2023,Pennsylvania,PA,,,,insufficient data
+2023,Puerto Rico,PR,36.0,34.0,38.0,ok
+2023,Rhode Island,RI,31.6,29.7,33.5,ok
+2023,South Carolina,SC,36.0,34.5,37.4,ok
+2023,South Dakota,SD,36.0,33.0,39.2,ok
+2023,Tennessee,TN,37.6,35.8,39.4,ok
+2023,Texas,TX,34.4,32.7,36.2,ok
+2023,Utah,UT,30.2,29.0,31.4,ok
+2023,Vermont,VT,28.8,27.2,30.4,ok
+2023,Virgin Islands,VI,32.1,28.6,35.8,ok
+2023,Virginia,VA,34.3,32.6,36.0,ok
+2023,Washington,WA,30.6,29.8,31.4,ok
+2023,West Virginia,WV,41.2,39.3,43.0,ok
+2023,Wisconsin,WI,35.9,34.7,37.2,ok
+2023,Wyoming,WY,33.3,31.5,35.2,ok
+2024,Alabama,AL,38.9,37.1,40.7,ok
+2024,Alaska,AK,34.0,32.0,36.0,ok
+2024,Arizona,AZ,33.3,31.4,35.3,ok
+2024,Arkansas,AR,38.9,37.2,40.7,ok
+2024,California,CA,29.1,27.6,30.5,ok
+2024,Colorado,CO,25.0,24.0,26.0,ok
+2024,Connecticut,CT,32.0,30.4,33.6,ok
+2024,Delaware,DE,36.6,34.5,38.9,ok
+2024,District of Columbia,DC,25.5,23.5,27.5,ok
+2024,Florida,FL,29.6,28.1,31.3,ok
+2024,Georgia,GA,35.4,33.7,37.1,ok
+2024,Guam,GU,40.2,32.9,47.9,ok
+2024,Hawaii,HI,27.0,25.4,28.6,ok
+2024,Idaho,ID,32.7,30.8,34.7,ok
+2024,Illinois,IL,34.2,33.1,35.3,ok
+2024,Indiana,IN,38.4,37.3,39.5,ok
+2024,Iowa,IA,36.6,35.3,38.0,ok
+2024,Kansas,KS,37.6,36.3,38.8,ok
+2024,Kentucky,KY,37.2,35.5,38.9,ok
+2024,Louisiana,LA,39.2,37.4,41.1,ok
+2024,Maine,ME,33.2,32.1,34.4,ok
+2024,Maryland,MD,32.7,31.5,33.8,ok
+2024,Massachusetts,MA,27.0,25.8,28.2,ok
+2024,Michigan,MI,36.1,34.8,37.5,ok
+2024,Minnesota,MN,32.3,31.4,33.3,ok
+2024,Mississippi,MS,40.4,38.1,42.7,ok
+2024,Missouri,MO,34.6,33.1,36.2,ok
+2024,Montana,MT,31.0,29.5,32.4,ok
+2024,Nebraska,NE,37.6,36.4,38.9,ok
+2024,Nevada,NV,34.2,31.3,37.3,ok
+2024,New Hampshire,NH,31.1,29.3,32.9,ok
+2024,New Jersey,NJ,27.7,26.3,29.0,ok
+2024,New Mexico,NM,34.5,32.1,37.1,ok
+2024,New York,NY,29.5,28.8,30.2,ok
+2024,North Carolina,NC,34.5,32.7,36.3,ok
+2024,North Dakota,ND,36.8,35.2,38.5,ok
+2024,Ohio,OH,36.9,35.5,38.4,ok
+2024,Oklahoma,OK,36.8,35.4,38.2,ok
+2024,Oregon,OR,33.5,32.1,35.0,ok
+2024,Pennsylvania,PA,34.2,32.0,36.5,ok
+2024,Puerto Rico,PR,36.2,33.9,38.4,ok
+2024,Rhode Island,RI,31.1,29.3,32.9,ok
+2024,South Carolina,SC,34.6,32.9,36.4,ok
+2024,South Dakota,SD,37.0,33.8,40.3,ok
+2024,Tennessee,TN,,,,insufficient data
+2024,Texas,TX,35.6,34.0,37.3,ok
+2024,Utah,UT,31.0,29.9,32.1,ok
+2024,Vermont,VT,29.0,27.5,30.5,ok
+2024,Virgin Islands,VI,37.7,30.7,45.3,ok
+2024,Virginia,VA,32.3,30.7,34.0,ok
+2024,Washington,WA,31.5,30.7,32.2,ok
+2024,West Virginia,WV,41.4,39.8,43.0,ok
+2024,Wisconsin,WI,37.4,36.1,38.7,ok
+2024,Wyoming,WY,32.5,30.7,34.3,ok
+2025,Alabama,AL,39.7,37.7,41.7,ok
+2025,Alaska,AK,33.0,31.2,35.0,ok
+2025,Arizona,AZ,32.3,30.1,34.5,ok
+2025,Arkansas,AR,36.7,34.9,38.6,ok
+2025,California,CA,,,,insufficient data
+2025,Colorado,CO,25.7,24.6,26.7,ok
+2025,Connecticut,CT,30.4,28.9,31.9,ok
+2025,Delaware,DE,36.3,34.1,38.5,ok
+2025,District of Columbia,DC,24.2,21.9,26.5,ok
+2025,Florida,FL,30.0,28.4,31.6,ok
+2025,Georgia,GA,35.9,34.2,37.7,ok
+2025,Guam,GU,39.6,31.0,48.9,ok
+2025,Hawaii,HI,26.4,25.0,27.8,ok
+2025,Idaho,ID,32.6,30.5,34.7,ok
+2025,Illinois,IL,33.7,32.5,34.8,ok
+2025,Indiana,IN,37.5,35.7,39.3,ok
+2025,Iowa,IA,36.9,35.7,38.2,ok
+2025,Kansas,KS,37.3,36.0,38.6,ok
+2025,Kentucky,KY,38.8,37.1,40.6,ok
+2025,Louisiana,LA,35.6,33.9,37.4,ok
+2025,Maine,ME,33.0,31.8,34.2,ok
+2025,Maryland,MD,33.1,31.9,34.3,ok
+2025,Massachusetts,MA,27.0,25.8,28.3,ok
+2025,Michigan,MI,35.1,33.8,36.4,ok
+2025,Minnesota,MN,33.1,32.0,34.1,ok
+2025,Mississippi,MS,,,,insufficient data
+2025,Missouri,MO,36.6,34.9,38.4,ok
+2025,Montana,MT,30.3,28.8,31.8,ok
+2025,Nebraska,NE,36.0,34.3,37.6,ok
+2025,Nevada,NV,,,,insufficient data
+2025,New Hampshire,NH,31.6,29.6,33.6,ok
+2025,New Jersey,NJ,27.0,25.4,28.7,ok
+2025,New Mexico,NM,35.3,32.9,37.7,ok
+2025,New York,NY,28.5,27.6,29.6,ok
+2025,North Carolina,NC,33.5,31.5,35.5,ok
+2025,North Dakota,ND,39.1,37.3,40.8,ok
+2025,Ohio,OH,36.0,34.5,37.6,ok
+2025,Oklahoma,OK,38.1,36.3,39.9,ok
+2025,Oregon,OR,32.7,31.1,34.4,ok
+2025,Pennsylvania,PA,33.5,31.1,36.0,ok
+2025,Puerto Rico,PR,35.9,33.3,38.7,ok
+2025,Rhode Island,RI,31.3,29.6,33.0,ok
+2025,South Carolina,SC,36.5,33.6,39.5,ok
+2025,South Dakota,SD,34.3,31.8,37.0,ok
+2025,Tennessee,TN,37.9,36.1,39.7,ok
+2025,Texas,TX,36.1,34.3,38.0,ok
+2025,Utah,UT,29.8,28.6,30.9,ok
+2025,Vermont,VT,29.1,27.6,30.6,ok
+2025,Virgin Islands,VI,,,,insufficient data
+2025,Virginia,VA,34.2,32.2,36.3,ok
+2025,Washington,WA,31.0,30.2,31.9,ok
+2025,West Virginia,WV,37.4,35.6,39.3,ok
+2025,Wisconsin,WI,36.6,35.3,37.9,ok
+2025,Wyoming,WY,32.6,30.8,34.5,ok
