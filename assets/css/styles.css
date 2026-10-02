@@ -387,6 +387,7 @@ blockquote cite::before, .blockquote cite::before { content: '— '; }
 .citation-box-title { font-weight: 600; color: var(--gray-700); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
 .citation-box-title::before { content: '📚'; }
 .citation-box a { color: var(--primary-dark); word-break: break-all; }
+main { overflow-wrap: break-word; }
 
 /* External Link Styling */
 a[target="_blank"]::after, .external-link::after { content: ' ↗'; font-size: 0.75em; opacity: 0.7; }
