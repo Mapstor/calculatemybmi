@@ -23,7 +23,7 @@ Paste this into a new chat to continue. Lives in the repo at research/HANDOFF.md
 
 ## Standards (non-negotiable)
 - Verified-or-omitted: every number or specific claim cites a primary (R1) source or is removed.
-- Nothing prescriptive: no calorie, protein, sleep or exercise targets.
+- Nothing prescriptive: no calorie, protein, sleep or exercise targets of our own. Official guidelines may be quoted only when attributed and linked (Physical Activity Guidelines for Americans; AASM/SRS sleep recommendation via CDC) — decision 1 Oct 2026 (option B).
 - Never cite: Harvard (any), Mayo Clinic, Cleveland Clinic, NHS, American Heart Association / heart.org, ACE, ACSM, NSCA, Wikipedia (an entity sameAs in schema is fine).
 - No quotes attributed to named people unless the source is verified and linked.
 - Structured data must match visible content (every FAQPage question visible on the page).
@@ -41,7 +41,7 @@ Paste this into a new chat to continue. Lives in the repo at research/HANDOFF.md
 keyword-ledger.csv, page-map.csv, data-sources.csv (created 30 Sep; older pages still lack registry rows), sitemap.md, us-obesity-build/ and one folder per fix batch.
 
 ## Next
-1. C2b-4: remove the remaining calorie, protein, sleep and exercise targets (how-to-lower-bmi, healthy-bmi-range, bmi-categories, age-bmi-calculator, bmi-and-metabolism incl. its 6-vs-2 kcal FAQ, underweight-bmi-risks, lean-body-mass, women postpartum) in visible text and FAQ JSON-LD.
+1. Done in C2b-4 (see git log): remaining calorie, protein, sleep and exercise targets removed or replaced by attributed official guidelines (Physical Activity Guidelines for Americans; AASM/SRS via CDC); 6-vs-2 kcal now Wang et al. AJCN 2010 (PMC2980962); FAQ items with empty visible answers removed sitewide (visible + JSON-LD); lean-body-mass how-to rewritten.
 2. Final check: fresh git archive -> chat sitewide scan + render check, then one IndexNow run (all URLs).
 3. /obesity-rate-by-state/ — verify CDC BRFSS state data first (maps page updated ~24 Sep 2026).
 4. /childhood-obesity-statistics/ (proposed; Health E-Stat 112 verified).
