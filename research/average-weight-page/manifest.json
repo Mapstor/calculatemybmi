@@ -1,0 +1,89 @@
+{
+ "new_files": [
+  {
+   "path": "average-weight/index.html",
+   "sha256": "011e023d59ea559e77313ca180a41263b6ddaac998725d8813bc1b37c9f9e3ee"
+  },
+  {
+   "path": "average-weight/og-average-weight.png",
+   "sha256": "8b3a943c1d806b97930ace342554d17bd9168546eff50e6a4e5a4f6fa8a19f7f"
+  },
+  {
+   "path": "average-weight/average-weight-nhanes-2021-2023.csv",
+   "sha256": "25cf5ad7190aa8c94fd36fc9546b30a9beec46e9ec26ee22b261a0564f4a4201"
+  },
+  {
+   "path": "research/average-weight/compute.py",
+   "sha256": "9f341d4fc5f22bf2ac4f6ec262724d7e57d398dc925ba5ea5b06eb3e9f643a9d"
+  },
+  {
+   "path": "research/average-weight/gen_avgw.py",
+   "sha256": "1a7e8d70d5f2dd4fdf9f01073b3c831e1c5b88084793344f1d6a177fc2df7f57"
+  },
+  {
+   "path": "research/average-weight/avgw_results.json",
+   "sha256": "2be6c6d84192ee926876db2def271d87fb14e916819393ef258dab872602598f"
+  },
+  {
+   "path": "research/average-weight/tool_test_jsdom.js",
+   "sha256": "6b480f5df9fa16e009857298bd430f862027f67a7b69a0b5f3ae555e3293b7b5"
+  },
+  {
+   "path": "research/average-weight/raw/DEMO_L.xpt",
+   "sha256": "ca4374a158b493b8b0163e1388da21d57a18d1b9cecff2aa4e2fa2bec494fe23"
+  },
+  {
+   "path": "research/average-weight/raw/BMX_L.xpt",
+   "sha256": "44440c416d9ad709e8b1708a5975378ab4d5b18edc39eb5015c2ae7186500170"
+  }
+ ],
+ "replace": [
+  {
+   "path": "research/page-map.csv",
+   "expect_sha256": "b69b8ff670c744039bbedb09df92526a2450cf2e9de0d21f9397f905222a5eee",
+   "sha256": "5246c258ea9517dbce225156db6598a75b4cbbc6cf7535126cfc8759bb45453d"
+  },
+  {
+   "path": "research/data-sources.csv",
+   "expect_sha256": "5d61ffc0b9138a0ac8a6b666910c0986d120f5ec0c308c3890c24d9b9b47f2a8",
+   "sha256": "f842884ad6a71a49780bb2dea1278dd90caac5d3fc0d8ddaa918f5db1282abb9"
+  }
+ ],
+ "edits": [
+  {
+   "file": "bmi-chart/index.html",
+   "old": "Category cut-offs are from the CDC.\"}}",
+   "new": "Category cut-offs are from the CDC. To see what US adults actually weigh at each height, see our average weight by height tables.\"}}",
+   "count": 1,
+   "label": "bmi-chart FAQ JSON-LD"
+  },
+  {
+   "file": "bmi-chart/index.html",
+   "old": "Category cut-offs are from the CDC.</p></div></div>",
+   "new": "Category cut-offs are from the CDC. To see what US adults actually weigh at each height, see our <a href=\"/average-weight/\">average weight by height</a> tables.</p></div></div>",
+   "count": 1,
+   "label": "bmi-chart FAQ visible link"
+  },
+  {
+   "file": "ideal-weight/index.html",
+   "old": "The table below shows ideal weight ranges for both men and women at various heights. The ranges account for body frame size (small, medium, and large) and represent the averaged output of the Devine, Robinson, Miller, and Hamwi formulas. These numbers serve as general guidelines -- your personal healthy weight may differ based on <a href=\"/lean-body-mass/\">muscle mass</a>, bone density, and overall <a href=\"/blog/body-fat-vs-bmi/\">body composition</a>.</p>",
+   "new": "The table below shows ideal weight ranges for both men and women at various heights. The ranges account for body frame size (small, medium, and large) and represent the averaged output of the Devine, Robinson, Miller, and Hamwi formulas. These numbers serve as general guidelines -- your personal healthy weight may differ based on <a href=\"/lean-body-mass/\">muscle mass</a>, bone density, and overall <a href=\"/blog/body-fat-vs-bmi/\">body composition</a>. For comparison, our <a href=\"/average-weight/\">average weight for men and women</a> page shows what US adults actually weigh at each height.</p>",
+   "count": 1,
+   "label": "ideal-weight link"
+  },
+  {
+   "file": "sitemap.xml",
+   "old": "  <url><loc>https://calculatemybmi.net/childhood-obesity-statistics/</loc><lastmod>2026-10-02</lastmod><priority>0.8</priority></url>",
+   "new": "  <url><loc>https://calculatemybmi.net/childhood-obesity-statistics/</loc><lastmod>2026-10-02</lastmod><priority>0.8</priority></url>\n  <url><loc>https://calculatemybmi.net/average-weight/</loc><lastmod>2026-10-03</lastmod><priority>0.9</priority></url>",
+   "count": 1,
+   "label": "sitemap"
+  },
+  {
+   "file": "research/HANDOFF.md",
+   "old": "\n6. /average-weight/ (Series 3 No. 50 data ready), army/navy calculators, growth-chart calculator, FFMI.",
+   "new": "\n6. Built 3 Oct 2026: /average-weight/ — our weighted calculation from NHANES Aug 2021-Aug 2023 DEMO_L + BMX_L (adults 20+, non-pregnant, MEC weights, Taylor-linearised SEs, cells n<30 suppressed), verified by reproducing NCHS Series 3 No. 50 (199.0 / 171.8 lb, 68.9 / 63.5 in, BMI 29.4 / 30.0). Height tables with row anchors, age table, comparison tool (percentile within +-1 inch), healthy range per height (site rule). Still open from this item: army/navy calculators, growth-chart calculator, FFMI.",
+   "count": 1,
+   "label": "handoff"
+  }
+ ]
+}
