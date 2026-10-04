@@ -1,0 +1,45 @@
+{
+ "new_files": [
+  {
+   "path": "research/average-weight/gen_avgw2.py",
+   "sha256": "7ed85d6ebfc12b8c77ed1e05be0bc19b402ef52186ff66cea3930c334832eb0d"
+  },
+  {
+   "path": "research/average-weight/tool_test_v2_jsdom.js",
+   "sha256": "4f9966520ba1399815efbb2e72800af42658d5212abdabaee7c61c019e4a1db0"
+  }
+ ],
+ "replace": [
+  {
+   "path": "average-weight/index.html",
+   "expect_sha256": "011e023d59ea559e77313ca180a41263b6ddaac998725d8813bc1b37c9f9e3ee",
+   "sha256": "d94832ee4d52a07b09a14720e937f7916482ac7470e05b75fb379e0dbd867974"
+  },
+  {
+   "path": "research/average-weight/compute.py",
+   "expect_sha256": "9f341d4fc5f22bf2ac4f6ec262724d7e57d398dc925ba5ea5b06eb3e9f643a9d",
+   "sha256": "548346eaca201df4251fef65843f5593678191259dedbda8b24e868e87343757"
+  },
+  {
+   "path": "research/average-weight/avgw_results.json",
+   "expect_sha256": "2be6c6d84192ee926876db2def271d87fb14e916819393ef258dab872602598f",
+   "sha256": "576951edf9026e1d4f31d56aedef938a4d48ebc04f715ed6ecf8192c9565765a"
+  }
+ ],
+ "edits": [
+  {
+   "file": "sitemap.xml",
+   "old": "<loc>https://calculatemybmi.net/average-weight/</loc><lastmod>2026-10-03</lastmod>",
+   "new": "<loc>https://calculatemybmi.net/average-weight/</loc><lastmod>2026-10-04</lastmod>",
+   "count": 1,
+   "label": "sitemap lastmod"
+  },
+  {
+   "file": "research/HANDOFF.md",
+   "old": "\n6. Built 3 Oct 2026: /average-weight/ — our weighted calculation from NHANES Aug 2021-Aug 2023 DEMO_L + BMX_L (adults 20+, non-pregnant, MEC weights, Taylor-linearised SEs, cells n<30 suppressed), verified by reproducing NCHS Series 3 No. 50 (199.0 / 171.8 lb, 68.9 / 63.5 in, BMI 29.4 / 30.0). Height tables with row anchors, age table, comparison tool (percentile within +-1 inch), healthy range per height (site rule). Still open from this item: army/navy calculators, growth-chart calculator, FFMI.",
+   "new": "\n6. Built 3 Oct 2026: /average-weight/ — our weighted calculation from NHANES Aug 2021-Aug 2023 DEMO_L + BMX_L (adults 20+, non-pregnant, MEC weights, Taylor-linearised SEs, cells n<30 suppressed), verified by reproducing NCHS Series 3 No. 50 (199.0 / 171.8 lb, 68.9 / 63.5 in, BMI 29.4 / 30.0). Height tables with row anchors, age table, comparison tool (percentile within +-1 inch), healthy range per height (site rule). Still open from this item: army/navy calculators, growth-chart calculator, FFMI. Redesigned 4 Oct 2026 (batch A2): new form (pill toggles, height slider with big readout and steppers, unit-suffixed weight, age select), rich result (tiles incl. height rank, smoothed weight distribution with collision-free labels, side-by-side bars, BMI gauge, notes), page chart split into women/men small multiples. Generator: research/average-weight/gen_avgw2.py.",
+   "count": 1,
+   "label": "handoff A2 note"
+  }
+ ]
+}
