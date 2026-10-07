@@ -1,0 +1,82 @@
+{
+ "new_files": [
+  {
+   "path": "body-fat-percentage-chart/index.html",
+   "sha256": "4eed4de6170656d91004fd5c4cbaad084b44c12891356c45f0c5f021f67baaf1"
+  },
+  {
+   "path": "body-fat-percentage-chart/og-body-fat-percentage-chart.png",
+   "sha256": "31e872ecb45e0d8e17aacb781c5172a9c46b475697499701629de2eb01cc3d7c"
+  },
+  {
+   "path": "body-fat-percentage-chart/body-fat-percentiles-nhanes-2011-2018.csv",
+   "sha256": "050a947d0f672522356654bc9b3ff3b4dbdb32851e1bc2f67f6594b25b4ba9f0"
+  },
+  {
+   "path": "research/body-fat/load.py",
+   "sha256": "d1984f4563940196cfeedb594c59003ecebf0fb7e06b210a2936deebeb78369a"
+  },
+  {
+   "path": "research/body-fat/compute_bf.py",
+   "sha256": "3cec394272220b637158e14f02718dbe4b7e2c2e28d7a81b37852f6274156ed1"
+  },
+  {
+   "path": "research/body-fat/gen_bf.py",
+   "sha256": "df46c1d31a01158585b013b4d937b8773daaa3421175f364881e5a475a7a94e0"
+  },
+  {
+   "path": "research/body-fat/bf_results.json",
+   "sha256": "4afc7ef5d700afc6c1129e010fd5e1072fb4f8d592ec0970c191fa0485c55f44"
+  },
+  {
+   "path": "research/body-fat/aw_css.txt",
+   "sha256": "e87de24ca1863e957537a908349eb30480efbcf0812d8d1094145fb467024c24"
+  },
+  {
+   "path": "research/body-fat/tool_test_jsdom.js",
+   "sha256": "98220f3f91961fd93ade9fd095ac54b045c7cb72244f86a0642496b9c4f16374"
+  }
+ ],
+ "replace": [
+  {
+   "path": "research/page-map.csv",
+   "expect_sha256": "5246c258ea9517dbce225156db6598a75b4cbbc6cf7535126cfc8759bb45453d",
+   "sha256": "29078c315c788fb82254836d146f5342ffe4f6a4b83ccbe7b30241a3f65b85f8"
+  },
+  {
+   "path": "research/data-sources.csv",
+   "expect_sha256": "f842884ad6a71a49780bb2dea1278dd90caac5d3fc0d8ddaa918f5db1282abb9",
+   "sha256": "078acedd2cf9580ff20cdf3f97de12268ab6c9dc11a31bf8f9302955f422c6cd"
+  }
+ ],
+ "edits": [
+  {
+   "file": "blog/body-fat-vs-bmi/index.html",
+   "old": "it directly measures one of the key components that actually impacts health: adipose (fat) tissue.</p>",
+   "new": "it directly measures one of the key components that actually impacts health: adipose (fat) tissue. To see typical values by age and sex, see our <a href=\"/body-fat-percentage-chart/\">body fat percentage chart</a>, built from CDC body scans.</p>",
+   "count": 1,
+   "label": "body-fat-vs-bmi link"
+  },
+  {
+   "file": "lean-body-mass/index.html",
+   "old": "Why body fat percentage tells a more complete story than BMI alone.</p>",
+   "new": "Why body fat percentage tells a more complete story than BMI alone. Compare yours with US adults on our <a href=\"/body-fat-percentage-chart/\">body fat percentage chart</a>.</p>",
+   "count": 1,
+   "label": "lean-body-mass link"
+  },
+  {
+   "file": "sitemap.xml",
+   "old": "  <url><loc>https://calculatemybmi.net/average-weight/</loc><lastmod>2026-10-04</lastmod><priority>0.9</priority></url>",
+   "new": "  <url><loc>https://calculatemybmi.net/average-weight/</loc><lastmod>2026-10-04</lastmod><priority>0.9</priority></url>\n  <url><loc>https://calculatemybmi.net/body-fat-percentage-chart/</loc><lastmod>2026-10-04</lastmod><priority>0.9</priority></url>",
+   "count": 1,
+   "label": "sitemap"
+  },
+  {
+   "file": "research/HANDOFF.md",
+   "old": "\n5. Body-fat trio: /body-fat-calculator/ (74k group), /body-fat-percentage-chart/, /blog/how-to-measure-body-fat/ — data-sourcing first.",
+   "new": "\n5. Built 4 Oct 2026: /body-fat-percentage-chart/ — our calculation from NHANES 2011-2018 whole-body DXA (DXX_G-J + DEMO + BMX, pooled weights /4, pregnant excluded), verified by reproducing Liu et al. BMJ 2021 Table 3 (32.6/33.1/32.9/33.0%, identical n=10,864). Rank tool (sex, age 8-79, body fat %), percentile chart + tables, X%-rank tables, Gallagher 2000 provisional ranges (as tabulated in PMC5349253), body fat by BMI category. No scan data 60+ (disclosed). Still open from this item: /body-fat-calculator/ (Navy tape + skinfold, results placed on these percentiles) and /blog/how-to-measure-body-fat/.",
+   "count": 1,
+   "label": "handoff"
+  }
+ ]
+}
