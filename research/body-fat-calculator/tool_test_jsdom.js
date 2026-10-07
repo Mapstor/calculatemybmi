@@ -13,7 +13,7 @@ radio('bc-sx-m');t('hip hidden for men',$('bc-hip-f').hidden===true);H(69);clear
 // metric: same man in cm must give the same 38.6
 radio('bc-u-met');t('height converted to cm',Math.abs(+$('bc-h').value-175)<=1);t('neck converted',Math.abs(parseFloat($('bc-neck').value)-40.6)<0.2);$('bc-go').click();
 t('metric man ~38.6',/38\.[4-8]%/.test(O()));radio('bc-u-imp');t('back to inches',+$('bc-h').value===69);
-// skinfold man sum 37 age 28 -> 15.9
+// skinfold man sum 53 age 40 -> 17.1 (published worked density 1.0597633)
 radio('bc-m-skin');t('pane switch',$('bc-p-skin').hidden===false&&$('bc-p-tape').hidden===true);clear();$('bc-age').value='40';$('bc-s1').value='18';$('bc-s2').value='20';$('bc-s3').value='15';$('bc-go').click();t('JP3 man sum 53 age 40 -> 17.1',/17\.1%/.test(O()));
 // BMI method: man 5'9", 170 lb, age 40 -> BMI 25.1 -> 1.2*25.1+0.23*40-16.2 = 23.1
 radio('bc-m-bmi');clear();$('bc-age').value='40';$('bc-w').value='170';$('bc-go').click();const bmi=(170*0.45359237)/Math.pow(69*0.0254,2),exp=(1.2*bmi+0.23*40-16.2).toFixed(1);t('Deurenberg '+exp,O().includes(exp+'%'));

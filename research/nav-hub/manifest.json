@@ -1,0 +1,657 @@
+{
+ "new_files": [],
+ "replace": [],
+ "edits": [
+  {
+   "file": "about/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 1 about/index.html"
+  },
+  {
+   "file": "about/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 2 about/index.html"
+  },
+  {
+   "file": "age-bmi-calculator/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 3 age-bmi-calculator/index.html"
+  },
+  {
+   "file": "age-bmi-calculator/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 4 age-bmi-calculator/index.html"
+  },
+  {
+   "file": "average-weight/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 5 average-weight/index.html"
+  },
+  {
+   "file": "average-weight/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 6 average-weight/index.html"
+  },
+  {
+   "file": "blog/bmi-and-health-risks/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 7 blog/bmi-and-health-risks/index.html"
+  },
+  {
+   "file": "blog/bmi-and-health-risks/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 8 blog/bmi-and-health-risks/index.html"
+  },
+  {
+   "file": "blog/bmi-and-metabolism/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 9 blog/bmi-and-metabolism/index.html"
+  },
+  {
+   "file": "blog/bmi-and-metabolism/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 10 blog/bmi-and-metabolism/index.html"
+  },
+  {
+   "file": "blog/bmi-by-age/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 11 blog/bmi-by-age/index.html"
+  },
+  {
+   "file": "blog/bmi-by-age/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 12 blog/bmi-by-age/index.html"
+  },
+  {
+   "file": "blog/bmi-categories/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 13 blog/bmi-categories/index.html"
+  },
+  {
+   "file": "blog/bmi-categories/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 14 blog/bmi-categories/index.html"
+  },
+  {
+   "file": "blog/bmi-chart-explained/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 15 blog/bmi-chart-explained/index.html"
+  },
+  {
+   "file": "blog/bmi-chart-explained/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 16 blog/bmi-chart-explained/index.html"
+  },
+  {
+   "file": "blog/bmi-chart-men/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 17 blog/bmi-chart-men/index.html"
+  },
+  {
+   "file": "blog/bmi-chart-men/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 18 blog/bmi-chart-men/index.html"
+  },
+  {
+   "file": "blog/bmi-chart-women/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 19 blog/bmi-chart-women/index.html"
+  },
+  {
+   "file": "blog/bmi-chart-women/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 20 blog/bmi-chart-women/index.html"
+  },
+  {
+   "file": "blog/bmi-for-athletes/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 21 blog/bmi-for-athletes/index.html"
+  },
+  {
+   "file": "blog/bmi-for-athletes/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 22 blog/bmi-for-athletes/index.html"
+  },
+  {
+   "file": "blog/bmi-formula/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 23 blog/bmi-formula/index.html"
+  },
+  {
+   "file": "blog/bmi-formula/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 24 blog/bmi-formula/index.html"
+  },
+  {
+   "file": "blog/bmi-history/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 25 blog/bmi-history/index.html"
+  },
+  {
+   "file": "blog/bmi-history/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 26 blog/bmi-history/index.html"
+  },
+  {
+   "file": "blog/bmi-limitations/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 27 blog/bmi-limitations/index.html"
+  },
+  {
+   "file": "blog/bmi-limitations/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 28 blog/bmi-limitations/index.html"
+  },
+  {
+   "file": "blog/bmi-tracking-guide/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 29 blog/bmi-tracking-guide/index.html"
+  },
+  {
+   "file": "blog/bmi-tracking-guide/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 30 blog/bmi-tracking-guide/index.html"
+  },
+  {
+   "file": "blog/body-fat-vs-bmi/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 31 blog/body-fat-vs-bmi/index.html"
+  },
+  {
+   "file": "blog/body-fat-vs-bmi/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 32 blog/body-fat-vs-bmi/index.html"
+  },
+  {
+   "file": "blog/healthy-bmi-range/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 33 blog/healthy-bmi-range/index.html"
+  },
+  {
+   "file": "blog/healthy-bmi-range/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 34 blog/healthy-bmi-range/index.html"
+  },
+  {
+   "file": "blog/how-to-lower-bmi/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 35 blog/how-to-lower-bmi/index.html"
+  },
+  {
+   "file": "blog/how-to-lower-bmi/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 36 blog/how-to-lower-bmi/index.html"
+  },
+  {
+   "file": "blog/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 37 blog/index.html"
+  },
+  {
+   "file": "blog/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 38 blog/index.html"
+  },
+  {
+   "file": "blog/underweight-bmi-risks/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 39 blog/underweight-bmi-risks/index.html"
+  },
+  {
+   "file": "blog/underweight-bmi-risks/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 40 blog/underweight-bmi-risks/index.html"
+  },
+  {
+   "file": "blog/waist-to-height-ratio/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 41 blog/waist-to-height-ratio/index.html"
+  },
+  {
+   "file": "blog/waist-to-height-ratio/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 42 blog/waist-to-height-ratio/index.html"
+  },
+  {
+   "file": "blog/what-is-bmi/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 43 blog/what-is-bmi/index.html"
+  },
+  {
+   "file": "blog/what-is-bmi/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 44 blog/what-is-bmi/index.html"
+  },
+  {
+   "file": "bmi-chart/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 45 bmi-chart/index.html"
+  },
+  {
+   "file": "bmi-chart/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 46 bmi-chart/index.html"
+  },
+  {
+   "file": "body-fat-calculator/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 47 body-fat-calculator/index.html"
+  },
+  {
+   "file": "body-fat-calculator/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 48 body-fat-calculator/index.html"
+  },
+  {
+   "file": "body-fat-percentage-chart/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 49 body-fat-percentage-chart/index.html"
+  },
+  {
+   "file": "body-fat-percentage-chart/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 50 body-fat-percentage-chart/index.html"
+  },
+  {
+   "file": "calculators/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 51 calculators/index.html"
+  },
+  {
+   "file": "calculators/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 52 calculators/index.html"
+  },
+  {
+   "file": "childhood-obesity-statistics/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 53 childhood-obesity-statistics/index.html"
+  },
+  {
+   "file": "childhood-obesity-statistics/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 54 childhood-obesity-statistics/index.html"
+  },
+  {
+   "file": "contact/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 55 contact/index.html"
+  },
+  {
+   "file": "contact/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 56 contact/index.html"
+  },
+  {
+   "file": "ideal-weight/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 57 ideal-weight/index.html"
+  },
+  {
+   "file": "ideal-weight/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 58 ideal-weight/index.html"
+  },
+  {
+   "file": "index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 59 index.html"
+  },
+  {
+   "file": "index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 60 index.html"
+  },
+  {
+   "file": "kids-bmi-calculator/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 61 kids-bmi-calculator/index.html"
+  },
+  {
+   "file": "kids-bmi-calculator/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 62 kids-bmi-calculator/index.html"
+  },
+  {
+   "file": "lean-body-mass/index.html",
+   "old": "<a href=\"/lean-body-mass/\" class=\"active\" aria-current=\"page\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\" class=\"active\" aria-current=\"page\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 63 lean-body-mass/index.html"
+  },
+  {
+   "file": "lean-body-mass/index.html",
+   "old": "<a href=\"/lean-body-mass/\" class=\"active\" aria-current=\"page\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\" class=\"active\" aria-current=\"page\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 64 lean-body-mass/index.html"
+  },
+  {
+   "file": "men-bmi-calculator/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 65 men-bmi-calculator/index.html"
+  },
+  {
+   "file": "men-bmi-calculator/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 66 men-bmi-calculator/index.html"
+  },
+  {
+   "file": "new-bmi-calculator/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 67 new-bmi-calculator/index.html"
+  },
+  {
+   "file": "new-bmi-calculator/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 68 new-bmi-calculator/index.html"
+  },
+  {
+   "file": "obesity-rate-by-state/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 69 obesity-rate-by-state/index.html"
+  },
+  {
+   "file": "obesity-rate-by-state/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 70 obesity-rate-by-state/index.html"
+  },
+  {
+   "file": "privacy/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 71 privacy/index.html"
+  },
+  {
+   "file": "privacy/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 72 privacy/index.html"
+  },
+  {
+   "file": "terms/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 73 terms/index.html"
+  },
+  {
+   "file": "terms/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 74 terms/index.html"
+  },
+  {
+   "file": "us-obesity-statistics/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 75 us-obesity-statistics/index.html"
+  },
+  {
+   "file": "us-obesity-statistics/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 76 us-obesity-statistics/index.html"
+  },
+  {
+   "file": "women-bmi-calculator/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><div class=\"nav-dropdown-divider\"></div><a href=\"/calculators/\">All Calculators</a>",
+   "count": 1,
+   "label": "edit 77 women-bmi-calculator/index.html"
+  },
+  {
+   "file": "women-bmi-calculator/index.html",
+   "old": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "new": "<a href=\"/lean-body-mass/\">Lean Body Mass</a><a href=\"/body-fat-calculator/\">Body Fat</a><a href=\"/calculators/\">All Calculators</a><div class=\"nav-mobile-section\">",
+   "count": 1,
+   "label": "edit 78 women-bmi-calculator/index.html"
+  },
+  {
+   "file": "calculators/index.html",
+   "old": "<!-- 8. Lean Body Mass --> <div class=\"calc-card\" style=\"border-left:5px solid #f97316;\"> <h2 style=\"font-size:1.125rem;margin:0 0 0.625rem;color:var(--gray-900);\">Lean Body Mass Calculator</h2> <p style=\"font-size:0.875rem;color:var(--gray-600);margin:0 0 0.75rem;\">Splits total body weight into lean mass and fat mass. Boer (1984) is the primary formula; James (1976) and Hume (1966) provide the comparison &mdash; typical spread is under 2&nbsp;kg for average bodies, wider for heavier individuals.</p> <p style=\"font-size:0.8125rem;color:var(--gray-500);margin:0 0 0.5rem;\"><strong style=\"color:var(--gray-700);\">Best for:</strong> Athletes, fitness enthusiasts, and anyone tracking body composition</p> <div style=\"background:var(--gray-50);border-radius:var(--radius-md);padding:0.75rem;margin:0.75rem 0;font-size:0.8125rem;color:var(--gray-600);\"> <strong style=\"color:var(--gray-700);\">Example:</strong> A 5'8\" male weighing 170 lbs has an estimated lean body mass of approximately <strong style=\"color:#f97316;\">141 lbs</strong> (Boer formula), meaning about 29 lbs (~17%) of his weight is fat &mdash; within the healthy range for men. </div> <div style=\"display:flex;align-items:center;gap:0.75rem;margin-top:1rem;\"> <a href=\"/lean-body-mass/\" style=\"display:inline-block;padding:0.5rem 1.25rem;background:#f97316;color:white;border-radius:var(--radius-md);font-size:0.875rem;font-weight:600;text-decoration:none;\">Try Calculator &rarr;</a> </div> </div> </div> </section>",
+   "new": "<!-- 8. Lean Body Mass --> <div class=\"calc-card\" style=\"border-left:5px solid #f97316;\"> <h2 style=\"font-size:1.125rem;margin:0 0 0.625rem;color:var(--gray-900);\">Lean Body Mass Calculator</h2> <p style=\"font-size:0.875rem;color:var(--gray-600);margin:0 0 0.75rem;\">Splits total body weight into lean mass and fat mass. Boer (1984) is the primary formula; James (1976) and Hume (1966) provide the comparison &mdash; typical spread is under 2&nbsp;kg for average bodies, wider for heavier individuals.</p> <p style=\"font-size:0.8125rem;color:var(--gray-500);margin:0 0 0.5rem;\"><strong style=\"color:var(--gray-700);\">Best for:</strong> Athletes, fitness enthusiasts, and anyone tracking body composition</p> <div style=\"background:var(--gray-50);border-radius:var(--radius-md);padding:0.75rem;margin:0.75rem 0;font-size:0.8125rem;color:var(--gray-600);\"> <strong style=\"color:var(--gray-700);\">Example:</strong> A 5'8\" male weighing 170 lbs has an estimated lean body mass of approximately <strong style=\"color:#f97316;\">141 lbs</strong> (Boer formula), meaning about 29 lbs (~17%) of his weight is fat &mdash; within the healthy range for men. </div> <div style=\"display:flex;align-items:center;gap:0.75rem;margin-top:1rem;\"> <a href=\"/lean-body-mass/\" style=\"display:inline-block;padding:0.5rem 1.25rem;background:#f97316;color:white;border-radius:var(--radius-md);font-size:0.875rem;font-weight:600;text-decoration:none;\">Try Calculator &rarr;</a> </div> </div> <!-- 9. Body Fat --> <div class=\"calc-card\" style=\"border-left:5px solid #6366f1;\"> <h2 style=\"font-size:1.125rem;margin:0 0 0.625rem;color:var(--gray-900);\">Body Fat Calculator</h2> <p style=\"font-size:0.875rem;color:var(--gray-600);margin:0 0 0.75rem;\">Estimates body fat percentage three ways &mdash; tape measure (Navy method), skinfold calipers (Jackson&ndash;Pollock) or height and weight (Deurenberg) &mdash; shows how far apart the methods land, and ranks your result against CDC body scans of US adults.</p> <p style=\"font-size:0.8125rem;color:var(--gray-500);margin:0 0 0.5rem;\"><strong style=\"color:var(--gray-700);\">Best for:</strong> Estimating body fat at home, or sanity-checking a smart-scale or caliper reading</p> <div style=\"background:var(--gray-50);border-radius:var(--radius-md);padding:0.75rem;margin:0.75rem 0;font-size:0.8125rem;color:var(--gray-600);\"> <strong style=\"color:var(--gray-700);\">Example:</strong> A 35-year-old man, 5'10\", with a 15.5-inch neck and a 35-inch waist comes out at <strong style=\"color:#6366f1;\">18.5%</strong> by the tape method &mdash; 94% of US men aged 30&ndash;39 have more body fat on CDC scans. See every age group on the <a href=\"/body-fat-percentage-chart/\">body fat percentage chart</a>. </div> <div style=\"display:flex;align-items:center;gap:0.75rem;margin-top:1rem;\"> <a href=\"/body-fat-calculator/\" style=\"display:inline-block;padding:0.5rem 1.25rem;background:#6366f1;color:white;border-radius:var(--radius-md);font-size:0.875rem;font-weight:600;text-decoration:none;\">Try Calculator &rarr;</a> </div> </div> </div> </section>",
+   "count": 1,
+   "label": "edit 79 calculators/index.html"
+  },
+  {
+   "file": "calculators/index.html",
+   "old": "<tr style=\"background:var(--gray-50);\"> <td style=\"padding:0.625rem;border:1px solid var(--gray-200);font-weight:600;color:var(--gray-800);\"><a href=\"/lean-body-mass/\" style=\"color:#f97316;text-decoration:none;\">Lean Body Mass</a></td> <td style=\"padding:0.625rem;border:1px solid var(--gray-200);color:var(--gray-600);\">Boer, James, Hume</td> <td style=\"padding:0.625rem;border:1px solid var(--gray-200);color:var(--gray-600);\">Adults 18+</td> <td style=\"padding:0.625rem;border:1px solid var(--gray-200);color:var(--gray-600);\">Separates lean mass from fat mass</td> </tr>",
+   "new": "<tr style=\"background:var(--gray-50);\"> <td style=\"padding:0.625rem;border:1px solid var(--gray-200);font-weight:600;color:var(--gray-800);\"><a href=\"/lean-body-mass/\" style=\"color:#f97316;text-decoration:none;\">Lean Body Mass</a></td> <td style=\"padding:0.625rem;border:1px solid var(--gray-200);color:var(--gray-600);\">Boer, James, Hume</td> <td style=\"padding:0.625rem;border:1px solid var(--gray-200);color:var(--gray-600);\">Adults 18+</td> <td style=\"padding:0.625rem;border:1px solid var(--gray-200);color:var(--gray-600);\">Separates lean mass from fat mass</td> </tr> <tr> <td style=\"padding:0.625rem;border:1px solid var(--gray-200);font-weight:600;color:var(--gray-800);\"><a href=\"/body-fat-calculator/\" style=\"color:#6366f1;text-decoration:none;\">Body Fat</a></td> <td style=\"padding:0.625rem;border:1px solid var(--gray-200);color:var(--gray-600);\">Navy tape (Hodgdon &amp; Beckett), Jackson&ndash;Pollock + Siri, Deurenberg</td> <td style=\"padding:0.625rem;border:1px solid var(--gray-200);color:var(--gray-600);\">Adults 18&ndash;79</td> <td style=\"padding:0.625rem;border:1px solid var(--gray-200);color:var(--gray-600);\">Three methods side by side, ranked against CDC body scans</td> </tr>",
+   "count": 1,
+   "label": "edit 80 calculators/index.html"
+  },
+  {
+   "file": "calculators/index.html",
+   "old": "8 free calculators",
+   "new": "9 free calculators",
+   "count": 1,
+   "label": "edit 81 calculators/index.html"
+  },
+  {
+   "file": "calculators/index.html",
+   "old": "Browse all eight calculators below",
+   "new": "Browse all nine calculators below",
+   "count": 1,
+   "label": "edit 82 calculators/index.html"
+  },
+  {
+   "file": "calculators/index.html",
+   "old": "summarizes the key differences between all eight calculators",
+   "new": "summarizes the key differences between all nine calculators",
+   "count": 1,
+   "label": "edit 83 calculators/index.html"
+  },
+  {
+   "file": "calculators/index.html",
+   "old": "<!-- ===== 8 CALCULATOR CARDS ===== -->",
+   "new": "<!-- ===== 9 CALCULATOR CARDS ===== -->",
+   "count": 1,
+   "label": "edit 84 calculators/index.html"
+  },
+  {
+   "file": "calculators/index.html",
+   "old": "pair the <a href=\"/\">Standard BMI</a> with the <a href=\"/lean-body-mass/\">Lean Body Mass</a> calculator and your <a href=\"/ideal-weight/\">Ideal Weight</a> range.",
+   "new": "pair the <a href=\"/\">Standard BMI</a> with the <a href=\"/lean-body-mass/\">Lean Body Mass</a> calculator and your <a href=\"/ideal-weight/\">Ideal Weight</a> range, or estimate your body fat with the <a href=\"/body-fat-calculator/\">Body Fat Calculator</a>.",
+   "count": 1,
+   "label": "edit 85 calculators/index.html"
+  },
+  {
+   "file": "calculators/index.html",
+   "old": "<meta property=\"og:image:alt\" content=\"BMI Calculator collection featuring 8 free health tools\">",
+   "new": "<meta property=\"og:image:alt\" content=\"BMI Calculator collection featuring 9 free health tools\">",
+   "count": 1,
+   "label": "edit 86 calculators/index.html"
+  },
+  {
+   "file": "calculators/index.html",
+   "old": "<meta name=\"twitter:image:alt\" content=\"BMI Calculator collection featuring 8 free health tools\">",
+   "new": "<meta name=\"twitter:image:alt\" content=\"BMI Calculator collection featuring 9 free health tools\">",
+   "count": 1,
+   "label": "edit 87 calculators/index.html"
+  },
+  {
+   "file": "calculators/index.html",
+   "old": "{\"@type\": \"ListItem\", \"position\": 8, \"name\": \"Lean Body Mass Calculator\", \"description\": \"Body composition calculator estimating lean mass and body fat percentage using Boer, James, and Hume formulas for athletes and fitness tracking.\", \"url\": \"https://calculatemybmi.net/lean-body-mass/\"}",
+   "new": "{\"@type\": \"ListItem\", \"position\": 8, \"name\": \"Lean Body Mass Calculator\", \"description\": \"Body composition calculator estimating lean mass and body fat percentage using Boer, James, and Hume formulas for athletes and fitness tracking.\", \"url\": \"https://calculatemybmi.net/lean-body-mass/\"}, {\"@type\": \"ListItem\", \"position\": 9, \"name\": \"Body Fat Calculator\", \"description\": \"Body fat percentage by tape measure, skinfolds or height and weight, ranked against CDC body scans\", \"url\": \"https://calculatemybmi.net/body-fat-calculator/\"}",
+   "count": 1,
+   "label": "edit 88 calculators/index.html"
+  },
+  {
+   "file": "calculators/index.html",
+   "old": "\"numberOfItems\": 8",
+   "new": "\"numberOfItems\": 9",
+   "count": 1,
+   "label": "edit 89 calculators/index.html"
+  },
+  {
+   "file": "calculators/index.html",
+   "old": "\"dateModified\": \"2026-08-10\"",
+   "new": "\"dateModified\": \"2026-10-07\"",
+   "count": 1,
+   "label": "edit 90 calculators/index.html"
+  },
+  {
+   "file": "sitemap.xml",
+   "old": "<loc>https://calculatemybmi.net/calculators/</loc><lastmod>2026-10-02</lastmod>",
+   "new": "<loc>https://calculatemybmi.net/calculators/</loc><lastmod>2026-10-07</lastmod>",
+   "count": 1,
+   "label": "edit 91 sitemap.xml"
+  },
+  {
+   "file": "research/body-fat-calculator/tool_test_jsdom.js",
+   "old": "// skinfold man sum 37 age 28 -> 15.9",
+   "new": "// skinfold man sum 53 age 40 -> 17.1 (published worked density 1.0597633)",
+   "count": 1,
+   "label": "edit 92 research/body-fat-calculator/tool_test_jsdom.js"
+  },
+  {
+   "file": "research/HANDOFF.md",
+   "old": "Still open: /blog/how-to-measure-body-fat/; calculators hub card (hub copy says 8 calculators + comparison table) and header nav entry for the body fat calculator.",
+   "new": "Calculators hub card, comparison-table row, counts (now 9) and header nav entry (all pages) added 7 Oct 2026 (batch N1). Still open: /blog/how-to-measure-body-fat/.",
+   "count": 1,
+   "label": "edit 93 research/HANDOFF.md"
+  }
+ ]
+}
