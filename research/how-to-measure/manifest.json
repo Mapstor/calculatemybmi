@@ -1,0 +1,70 @@
+{
+ "new_files": [
+  {
+   "path": "blog/how-to-measure-body-fat/index.html",
+   "sha256": "a8f712147d3253d14c957a3e9c584336422cf3d5a631904ab906d869a59f9564"
+  },
+  {
+   "path": "blog/how-to-measure-body-fat/og-how-to-measure-body-fat.png",
+   "sha256": "f0809dec56ca7256524fdf4c927c58a00c5235cc430b3cbc69089c2766515e72"
+  },
+  {
+   "path": "research/how-to-measure-body-fat/gen_htm.py",
+   "sha256": "03ad314cc7d66a9e870904f4a110f05d89c1c99e0d7095a5a971cceab24e5e8c"
+  }
+ ],
+ "replace": [
+  {
+   "path": "research/page-map.csv",
+   "expect_sha256": "a644e9fbfcbbc4e6bddc26f945682b4abf34014016ac8fbe140b045e6ac18184",
+   "sha256": "5c0c72aef6c0e6d7b145210238627f3eb2aa68bd1fca409bdb746d5a579dfc94"
+  },
+  {
+   "path": "research/data-sources.csv",
+   "expect_sha256": "ec4d0c2c0b8ac0605f122b7174dd7d1dacab5b0f86eff77678444c27a4af5539",
+   "sha256": "a7a78a7f4e4f015af39c3f5242e5f7fd56979d0b8e6dc34e2765a5952d321cdc"
+  },
+  {
+   "path": "research/body-fat-calculator/gen_bfc.py",
+   "expect_sha256": "cf8c3cf069560c4769c3d0fb31ed7648d4e5fbc3ac5838eeda63fec49007c84b",
+   "sha256": "2ede0feef7a726cea2fc479773b9617da5a7332bfa0aa43ecc9ad2e06f964421"
+  }
+ ],
+ "edits": [
+  {
+   "file": "body-fat-calculator/index.html",
+   "old": " several points. Track one method over time rather than comparing across methods",
+   "new": " several points. Track one method over time rather than comparing across methods; our guide to <a href=\"/blog/how-to-measure-body-fat/\">how to measure body fat</a> compares each method with DXA scans",
+   "count": 1,
+   "label": "edit body-fat-calculator/index.html"
+  },
+  {
+   "file": "blog/body-fat-vs-bmi/index.html",
+   "old": "centage Accuracy</h3><p>DEXA is commonly used as a reference method in research.",
+   "new": "centage Accuracy</h3><p>DEXA is commonly used as a reference method in research. For accuracy figures from a study that tested seven methods against DXA, see <a href=\"/blog/how-to-measure-body-fat/\">how to calculate body fat percentage</a>.",
+   "count": 1,
+   "label": "edit blog/body-fat-vs-bmi/index.html"
+  },
+  {
+   "file": "blog/index.html",
+   "old": "ment methods (DEXA, hydrostatic, BIA, calipers) follows.</p></a> <a href=\"/blog/",
+   "new": "ment methods (DEXA, hydrostatic, BIA, calipers) follows.</p></a> <a href=\"/blog/how-to-measure-body-fat/\" class=\"related-card\"><div class=\"related-card-title\">How to calculate body fat percentage</div><p class=\"related-card-desc\">Every method, from calipers and smart scales to the Bod Pod and DXA, scored against DXA scans in one 437-person study.</p></a> <a href=\"/blog/",
+   "count": 1,
+   "label": "edit blog/index.html"
+  },
+  {
+   "file": "sitemap.xml",
+   "old": "at-calculator/</loc><lastmod>2026-10-04</lastmod><priority>0.9</priority></url>\n",
+   "new": "at-calculator/</loc><lastmod>2026-10-04</lastmod><priority>0.9</priority></url>\n  <url><loc>https://calculatemybmi.net/blog/how-to-measure-body-fat/</loc><lastmod>2026-10-07</lastmod><priority>0.8</priority></url>\n",
+   "count": 1,
+   "label": "edit sitemap.xml"
+  },
+  {
+   "file": "research/HANDOFF.md",
+   "old": "w, counts (now 9) and header nav entry (all pages) added 7 Oct 2026 (batch N1). Still open: /blog/how-to-measure-body-fat/",
+   "new": "w, counts (now 9) and header nav entry (all pages) added 7 Oct 2026 (batch N1). /blog/how-to-measure-body-fat/ built 7 Oct 2026 (batch G1): methods scored against DXA from Burns et al. PLOS ONE 2019 (n=437; HW 1.0, skinfolds 1.4, ADP 1.6, 4-electrode BIA 1.6, hand-held BIA 4.9 points; +-2.7-point equivalence), Deurenberg SEE 4.1, DoD tape LoA > +-3.5 (conference abstract). Body-fat cluster complete",
+   "count": 1,
+   "label": "edit research/HANDOFF.md"
+  }
+ ]
+}
