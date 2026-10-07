@@ -1,0 +1,81 @@
+{
+ "new_files": [
+  {
+   "path": "body-fat-calculator/index.html",
+   "sha256": "02454cb753e0c0f089feffa37220f05082a5010544c8c2d8c88d64c22cd30ce9"
+  },
+  {
+   "path": "body-fat-calculator/og-body-fat-calculator.png",
+   "sha256": "9b064596f063b952a24984c7bd2d7bffa9578560cc8a6e57a2caca581f5272d9"
+  },
+  {
+   "path": "research/body-fat-calculator/gen_bfc.py",
+   "sha256": "cf8c3cf069560c4769c3d0fb31ed7648d4e5fbc3ac5838eeda63fec49007c84b"
+  },
+  {
+   "path": "research/body-fat-calculator/tool_test_jsdom.js",
+   "sha256": "306034af0656414a2a2db5e88cdbdb76101644c9a5e3d35d462f225e17a921f1"
+  }
+ ],
+ "replace": [
+  {
+   "path": "research/page-map.csv",
+   "expect_sha256": "29078c315c788fb82254836d146f5342ffe4f6a4b83ccbe7b30241a3f65b85f8",
+   "sha256": "a644e9fbfcbbc4e6bddc26f945682b4abf34014016ac8fbe140b045e6ac18184"
+  },
+  {
+   "path": "research/data-sources.csv",
+   "expect_sha256": "078acedd2cf9580ff20cdf3f97de12268ab6c9dc11a31bf8f9302955f422c6cd",
+   "sha256": "ec4d0c2c0b8ac0605f122b7174dd7d1dacab5b0f86eff77678444c27a4af5539"
+  },
+  {
+   "path": "research/body-fat/gen_bf.py",
+   "expect_sha256": "df46c1d31a01158585b013b4d937b8773daaa3421175f364881e5a475a7a94e0",
+   "sha256": "999e5b505783972382e60b497925c1f3fbf81943a960662cf0e9ccd0434d9d58"
+  }
+ ],
+ "edits": [
+  {
+   "file": "body-fat-percentage-chart/index.html",
+   "old": "<h2>Related</h2><ul><li><a href=\"/average-weight/\">Average weight by height and age</a></li>",
+   "new": "<h2>Related</h2><ul><li><a href=\"/body-fat-calculator/\">Body fat calculator (tape, skinfold or BMI)</a></li><li><a href=\"/average-weight/\">Average weight by height and age</a></li>",
+   "count": 1,
+   "label": "chart related"
+  },
+  {
+   "file": "body-fat-percentage-chart/index.html",
+   "old": "the share of US adults your sex and age with more body fat than that number.</p>",
+   "new": "the share of US adults your sex and age with more body fat than that number. Don&rsquo;t know your number? Estimate it with our <a href=\"/body-fat-calculator/\">body fat calculator</a>.</p>",
+   "count": 1,
+   "label": "chart sentence"
+  },
+  {
+   "file": "lean-body-mass/index.html",
+   "old": "Compare yours with US adults on our <a href=\"/body-fat-percentage-chart/\">body fat percentage chart</a>.</p>",
+   "new": "Compare yours with US adults on our <a href=\"/body-fat-percentage-chart/\">body fat percentage chart</a>, or estimate it with our <a href=\"/body-fat-calculator/\">body fat calculator</a>.</p>",
+   "count": 1,
+   "label": "lbm link"
+  },
+  {
+   "file": "blog/body-fat-vs-bmi/index.html",
+   "old": "<a href=\"/body-fat-percentage-chart/\">body fat percentage chart</a>, built from CDC body scans.</p>",
+   "new": "<a href=\"/body-fat-percentage-chart/\">body fat percentage chart</a>, built from CDC body scans. To estimate yours, use our <a href=\"/body-fat-calculator/\">body fat calculator</a>.</p>",
+   "count": 1,
+   "label": "bfvsbmi link"
+  },
+  {
+   "file": "sitemap.xml",
+   "old": "  <url><loc>https://calculatemybmi.net/body-fat-percentage-chart/</loc><lastmod>2026-10-04</lastmod><priority>0.9</priority></url>",
+   "new": "  <url><loc>https://calculatemybmi.net/body-fat-percentage-chart/</loc><lastmod>2026-10-04</lastmod><priority>0.9</priority></url>\n  <url><loc>https://calculatemybmi.net/body-fat-calculator/</loc><lastmod>2026-10-04</lastmod><priority>0.9</priority></url>",
+   "count": 1,
+   "label": "sitemap"
+  },
+  {
+   "file": "research/HANDOFF.md",
+   "old": "Still open from this item: /body-fat-calculator/ (Navy tape + skinfold, results placed on these percentiles) and /blog/how-to-measure-body-fat/.",
+   "new": "Body fat calculator built 4 Oct 2026 (batch B2): Navy/Army tape equations (Army Table B-5 sample calcs via NCT02734238; exact values 47.3%/38.6% round to the Army's 47%/39%), Jackson-Pollock 3-site + Siri (published density 1.0597633 reproduced), Deurenberg 1991 BMI formula (SEE 4.1); results placed on the DXA percentiles + Gallagher ranges. Still open: /blog/how-to-measure-body-fat/; calculators hub card (hub copy says 8 calculators + comparison table) and header nav entry for the body fat calculator.",
+   "count": 1,
+   "label": "handoff"
+  }
+ ]
+}
