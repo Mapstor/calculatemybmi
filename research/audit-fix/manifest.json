@@ -1,0 +1,55 @@
+{
+ "new_files": [
+  {
+   "path": "research/audit/audit_pages.js",
+   "sha256": "70bd1ce534e6d119a826a046b169b9be65d0250920b4ad465c10a2f1f17d7379"
+  },
+  {
+   "path": "research/audit/audit_calcs.js",
+   "sha256": "d5152e5e8e1a00f21552771c2c316ec487c93beab4229b5720aaf726e9cf00f0"
+  },
+  {
+   "path": "research/audit/calc_test.js",
+   "sha256": "4c92687f8facf984eb6d4ddab8c0548fa86dbaab516c1910346005a6390cddca"
+  }
+ ],
+ "replace": [
+  {
+   "path": "blog/bmi-by-age/index.html",
+   "expect_sha256": "8fd694afebbb310875229f3cc59da51e15f0553677f8ad51c196b9a853ff7370",
+   "sha256": "0080a40a4e4afac75188ab2441297a4b891b9bc137602a92915f22391e0ee63e"
+  },
+  {
+   "path": "about/index.html",
+   "expect_sha256": "34f376eb8f0beb4adf61b9ee0cdac4300ed9129bd04e9e91b258537526468c4f",
+   "sha256": "d346a66d345a58e184a56540f5b97ff1ae6f00e91dbf7120896eaec02bc1cb28"
+  },
+  {
+   "path": "privacy/index.html",
+   "expect_sha256": "0221a28fae3c05f3023c0977969ec188a988ad5dc50f31668e52facc7c3519a4",
+   "sha256": "288f63b295daca756f089a612afe4e0665d1cd30ffab36a6292e123a8f0758af"
+  },
+  {
+   "path": "calculators/index.html",
+   "expect_sha256": "2721ec5b750fade9f52bc0c8b8911bbd30e5cb56ee68b366f081f9c0654e31f5",
+   "sha256": "2debfa8646776b07eaf4ad316b6df0463c9f431d1a61e8dfd5650bab3faa654f"
+  },
+  {
+   "path": "ideal-weight/index.html",
+   "expect_sha256": "545b082c46b65f53da4bbe0683bee6662a7eef03ee569c373c4b890d4d9a0f44",
+   "sha256": "c7e582db88c839e2e1c3c2055bd1e076e3a540bb7da9bc3f12686bd6fb7dd6d8"
+  },
+  {
+   "path": "assets/js/calculator.js",
+   "expect_sha256": "f22aa5fc3703e51edc6e897108dbc728d5a6788e8f48b5c01a26d1996c9666e8",
+   "sha256": "26ba1210a2d648740a0bdfccc8b3ec3bc6171a69c1a3bcbc0353695f7de42536"
+  },
+  {
+   "path": "research/HANDOFF.md",
+   "expect_sha256": "76cac00356d2689742cff2682c03e9b84b0359ef9352798c156ddf9a999cff8f",
+   "sha256": "42ab2848e138ed5885c75427ac56a4eb184b3fe85378f4d82d59aec61b8e8a8a"
+  }
+ ],
+ "edits": [],
+ "delete": []
+}
