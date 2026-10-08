@@ -1,0 +1,82 @@
+{
+ "new_files": [],
+ "replace": [
+  {
+   "path": "about/index.html",
+   "expect_sha256": "d346a66d345a58e184a56540f5b97ff1ae6f00e91dbf7120896eaec02bc1cb28",
+   "sha256": "cb26e3f9f97ea0846bd4777832532f187445ab71b08b9531b4ce9427ae13672e"
+  },
+  {
+   "path": "age-bmi-calculator/index.html",
+   "expect_sha256": "60bffe51d9aa41e00af63cf1c74fe2f4aab135142a739b3a1f0bd4509289721b",
+   "sha256": "b012be982f200a0255d72257ce278ce5fc3d62e9de4cecef2e0450f9439a514b"
+  },
+  {
+   "path": "assets/js/calculator.js",
+   "expect_sha256": "26ba1210a2d648740a0bdfccc8b3ec3bc6171a69c1a3bcbc0353695f7de42536",
+   "sha256": "4a8c8beb208025e3b395d7bca7ca14aa091fe74061208a8e159797b438f99530"
+  },
+  {
+   "path": "blog/bmi-by-age/index.html",
+   "expect_sha256": "0080a40a4e4afac75188ab2441297a4b891b9bc137602a92915f22391e0ee63e",
+   "sha256": "4d75ae506ee7fce60a716f27da1d39926f7282db72ff388757dafb46e55c0aa7"
+  },
+  {
+   "path": "blog/bmi-categories/index.html",
+   "expect_sha256": "67388e17de259c5b61532caf8620b596a564e81c0aaad509787e1790d74fea54",
+   "sha256": "841428c49054949d84f42427966050670b2061f759c9c115a6c6de25588c201f"
+  },
+  {
+   "path": "blog/what-is-bmi/index.html",
+   "expect_sha256": "8c14f65f5aaf51f043e0a49b8427d7307e75bdca33fe0e853cbf13e1d77e86b5",
+   "sha256": "1f65a344a1bb12d72de7113f6f27424c15e603faf640c9519785b920ab89ea53"
+  },
+  {
+   "path": "calculators/index.html",
+   "expect_sha256": "2debfa8646776b07eaf4ad316b6df0463c9f431d1a61e8dfd5650bab3faa654f",
+   "sha256": "73eab2bcb3e07df0f895d4f5d80a9a6483175976c3c18f99007c5997b7340e1d"
+  },
+  {
+   "path": "ideal-weight/index.html",
+   "expect_sha256": "c7e582db88c839e2e1c3c2055bd1e076e3a540bb7da9bc3f12686bd6fb7dd6d8",
+   "sha256": "030919c33729aaa07c2191408527e3dcda0d82db9777543849c6a89baaeb0d81"
+  },
+  {
+   "path": "index.html",
+   "expect_sha256": "a923917c77567829a21c8c10d93dfdec36e4707c2798d99bcb075769b16b6120",
+   "sha256": "955cec248576f64aa0750fee2fc96c73f2fd9dba2e426ca401367e96db7dd000"
+  },
+  {
+   "path": "kids-bmi-calculator/index.html",
+   "expect_sha256": "cd58d1ed2e2378916d7c9c397bd58f2930f84c271927e5df9996870c70ae55df",
+   "sha256": "4bc3b6379c93294bf94fad53de5d548b39a06694e6f07cec8f199930ba260d51"
+  },
+  {
+   "path": "lean-body-mass/index.html",
+   "expect_sha256": "e3315e8a119378d36f30e065eba9c3b524192df10e0b4545b937438ceea701b9",
+   "sha256": "1fd660d5cbb1b04a5883921bbebd17d36615e497ffc920f6e500406ac51e9be8"
+  },
+  {
+   "path": "men-bmi-calculator/index.html",
+   "expect_sha256": "9812bcdbd4f52d5f6eb56c3563c6e59b8858660b22ae4808a7086860f85ce725",
+   "sha256": "0a9bf7a85e24fce3d052453c1bedc667c446776c03af2b1868b2f3131d04bc49"
+  },
+  {
+   "path": "new-bmi-calculator/index.html",
+   "expect_sha256": "f6c6dce0b30534b1692d4803bb75a5f80c1579e709f745fe4e933850c3393d2d",
+   "sha256": "7ec8552079d927583248b1d2f2f4db94b5b46ccaa7a7f94afd16cc8e0813df20"
+  },
+  {
+   "path": "research/HANDOFF.md",
+   "expect_sha256": "42ab2848e138ed5885c75427ac56a4eb184b3fe85378f4d82d59aec61b8e8a8a",
+   "sha256": "239a495dcf923895e0a3a6b84eb69e50158b19e709e1c366a5598b6314fe7f0b"
+  },
+  {
+   "path": "women-bmi-calculator/index.html",
+   "expect_sha256": "e221272949746d269c6cf718f8d34d320a306f317ac82d99b9eb59ae146bac9b",
+   "sha256": "746c65cfaf3f336900ebddc1b9a2bc07d0520fbbccd81af6ee89ffed165e78f9"
+  }
+ ],
+ "edits": [],
+ "delete": []
+}
