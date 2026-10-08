@@ -1,0 +1,27 @@
+{
+ "new_files": [
+  {
+   "path": "research/calculator-checks/calc_test_jsdom.js",
+   "sha256": "4c92687f8facf984eb6d4ddab8c0548fa86dbaab516c1910346005a6390cddca"
+  }
+ ],
+ "replace": [
+  {
+   "path": "assets/js/calculator.js",
+   "expect_sha256": "f9dd9d07bb5f07f02aa08e868f0e984e14e30958b3751e57082a178814b4a9b8",
+   "sha256": "f22aa5fc3703e51edc6e897108dbc728d5a6788e8f48b5c01a26d1996c9666e8"
+  },
+  {
+   "path": "assets/css/styles.css",
+   "expect_sha256": "05845a701dbc94eee8a4ffd5e7fad8aceb07986e3daf4bf82e661ac4ab72c1a0",
+   "sha256": "1ba799558d0d3a8619ed7a8be07f50118f50d5883001cc76093732e96f7ae6b6"
+  },
+  {
+   "path": "research/HANDOFF.md",
+   "expect_sha256": "7542ed048e5205c091f2e2beebefa81901f793e0a2c1c85c820750adb5a86bc8",
+   "sha256": "76cac00356d2689742cff2682c03e9b84b0359ef9352798c156ddf9a999cff8f"
+  }
+ ],
+ "edits": [],
+ "delete": []
+}
