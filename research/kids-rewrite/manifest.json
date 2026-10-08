@@ -1,0 +1,27 @@
+{
+ "new_files": [
+  {
+   "path": "research/g2/g2_kids.py",
+   "sha256": "9cb3dec20d8bdb154eec034fb41b4d9fc55fdc2bfe3a50d3a2283b796cde9d90"
+  }
+ ],
+ "replace": [
+  {
+   "path": "kids-bmi-calculator/index.html",
+   "expect_sha256": "4bc3b6379c93294bf94fad53de5d548b39a06694e6f07cec8f199930ba260d51",
+   "sha256": "839f6216a35c9c55ef0696efb136b0b9445c41973a274c8a4301754a1660aeb2"
+  },
+  {
+   "path": "sitemap.xml",
+   "expect_sha256": "ad9f90e1db022a30cc07e623b46798c5a59200867d0ef2d2afa5da96e011e2b6",
+   "sha256": "417f89de6889e25314241a98eac4355b33bea9010c6c0c85e2ab6e80cce7ba2d"
+  },
+  {
+   "path": "research/HANDOFF.md",
+   "expect_sha256": "239a495dcf923895e0a3a6b84eb69e50158b19e709e1c366a5598b6314fe7f0b",
+   "sha256": "171f477ae953bf72a6b144476ff2492496f11528cef235f5a5cb07fcf7dc3c66"
+  }
+ ],
+ "edits": [],
+ "delete": []
+}
