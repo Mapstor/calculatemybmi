@@ -1,0 +1,52 @@
+{
+ "new_files": [
+  {
+   "path": "blog/what-is-bmi/og-what-is-bmi.png",
+   "sha256": "05e71f4adff95727324d5c22989d0f534688d94638a94ad99a5778205151bb21"
+  },
+  {
+   "path": "research/what-is-bmi/gen_wib.py",
+   "sha256": "554d7b0c1c6ea10e5bdeca598f75ac5d1c7ee485abe87c9304dd9cd89e8ed1cc"
+  },
+  {
+   "path": "research/what-is-bmi/bf_results.json",
+   "sha256": "4afc7ef5d700afc6c1129e010fd5e1072fb4f8d592ec0970c191fa0485c55f44"
+  },
+  {
+   "path": "research/what-is-bmi/aw_css.txt",
+   "sha256": "e87de24ca1863e957537a908349eb30480efbcf0812d8d1094145fb467024c24"
+  },
+  {
+   "path": "research/what-is-bmi/explorer_test_jsdom.js",
+   "sha256": "5139536d9dfdacc5742d8b63bf6e33c92440b03561221cf6f70f2f88a4eac3b9"
+  }
+ ],
+ "replace": [
+  {
+   "path": "blog/what-is-bmi/index.html",
+   "expect_sha256": "29baa7f6c7fa4ca0f451e2d1a78d6bf1cd69734baea9a7b173a02f7be44a68db",
+   "sha256": "8c14f65f5aaf51f043e0a49b8427d7307e75bdca33fe0e853cbf13e1d77e86b5"
+  },
+  {
+   "path": "research/page-map.csv",
+   "expect_sha256": "5c0c72aef6c0e6d7b145210238627f3eb2aa68bd1fca409bdb746d5a579dfc94",
+   "sha256": "ffaf84c8e14651e1aca0c4bdd190f4248e2ef2bded08ba70e852b8bf4499373a"
+  }
+ ],
+ "edits": [
+  {
+   "file": "sitemap.xml",
+   "old": "  <url><loc>https://calculatemybmi.net/blog/what-is-bmi/</loc><lastmod>2026-10-02",
+   "new": "  <url><loc>https://calculatemybmi.net/blog/what-is-bmi/</loc><lastmod>2026-10-07",
+   "count": 1,
+   "label": "edit sitemap.xml"
+  },
+  {
+   "file": "research/HANDOFF.md",
+   "old": " SEE 4.1, DoD tape LoA > +-3.5 (conference abstract). Body-fat cluster complete.",
+   "new": " SEE 4.1, DoD tape LoA > +-3.5 (conference abstract). Body-fat cluster complete. /blog/what-is-bmi/ rebuilt 7 Oct 2026 (batch W1): sourced hub explainer (CDC, NHLBI, WHO 2004, NCHS, Volpi, Deurenberg, our DXA data) + live BMI explorer; it had no sources before.",
+   "count": 1,
+   "label": "edit research/HANDOFF.md"
+  }
+ ]
+}
