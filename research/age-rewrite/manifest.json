@@ -1,0 +1,27 @@
+{
+ "new_files": [
+  {
+   "path": "research/g2/g2_age.py",
+   "sha256": "8f51ea7ead38575f629989f33b7d82a6b37b51339f8d91978875180653f1994d"
+  }
+ ],
+ "replace": [
+  {
+   "path": "age-bmi-calculator/index.html",
+   "expect_sha256": "b012be982f200a0255d72257ce278ce5fc3d62e9de4cecef2e0450f9439a514b",
+   "sha256": "1b6fe351c1de87c39c338d467d4b8a01274b57e9281981d4e3459a652e148f2d"
+  },
+  {
+   "path": "sitemap.xml",
+   "expect_sha256": "6e1839937574c6be37081158ee904bf4804def6d2d1db12ed518a7e35709d0dd",
+   "sha256": "04c46c6298fc3c690ed2c01cf0d8175eb65f4e046ce1f1125b517318a5595ca8"
+  },
+  {
+   "path": "research/HANDOFF.md",
+   "expect_sha256": "0a9c789a5b1497a1082c0978b5496d4829b5be8e95e939b373d4c68112cc122f",
+   "sha256": "001c9e984421eb58295fc42b87304abda873f971c973c78e26b6026a9dfa4632"
+  }
+ ],
+ "edits": [],
+ "delete": []
+}
