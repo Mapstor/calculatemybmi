@@ -1,0 +1,27 @@
+{
+ "new_files": [
+  {
+   "path": "research/g2/g2_lbm.py",
+   "sha256": "7b7833d02ab1189ee71fd66ef81907efa30323823259b8bc2036ab80e9711999"
+  }
+ ],
+ "replace": [
+  {
+   "path": "lean-body-mass/index.html",
+   "expect_sha256": "1fd660d5cbb1b04a5883921bbebd17d36615e497ffc920f6e500406ac51e9be8",
+   "sha256": "f6668ebde5523e7dbf347b353529660bbd421dee6e283940e1f3f503922ddf7b"
+  },
+  {
+   "path": "sitemap.xml",
+   "expect_sha256": "36e42d8e7cb6efb30511b3392ffe3538c3f819b290fcdab20d8276224b1d1863",
+   "sha256": "9cb40f7c1e2d32c1d32fbd91776f88698c9513ee7b4594427ec119553e99bf7f"
+  },
+  {
+   "path": "research/HANDOFF.md",
+   "expect_sha256": "f68807d59eed3d2add10bf9e4e36984ec319f4493d821d30585d3352736e12a6",
+   "sha256": "29dc29a159331f96ed512ae95d723466724f6a8e320f1034222cbf389da667e4"
+  }
+ ],
+ "edits": [],
+ "delete": []
+}
