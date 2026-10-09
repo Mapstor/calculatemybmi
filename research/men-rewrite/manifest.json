@@ -1,0 +1,27 @@
+{
+ "new_files": [
+  {
+   "path": "research/g2/g2_men.py",
+   "sha256": "d9029a8429dc81d9521cc44e89de63d72a439fff4363cd6a95b4f86dbde92539"
+  }
+ ],
+ "replace": [
+  {
+   "path": "men-bmi-calculator/index.html",
+   "expect_sha256": "0a9bf7a85e24fce3d052453c1bedc667c446776c03af2b1868b2f3131d04bc49",
+   "sha256": "dbe9620f3e5d6eb6dbf98c4a10f65325d1eb5433147a73b7792ab02d201e149d"
+  },
+  {
+   "path": "sitemap.xml",
+   "expect_sha256": "daada44ebfe616c2af24a9afe1311d99a82d430e7c46a583e645360158a44d30",
+   "sha256": "31d55e9a444e1b078f8abc74a1fe122bdbf104ca686bba0af1570a1ed0773b11"
+  },
+  {
+   "path": "research/HANDOFF.md",
+   "expect_sha256": "1b83f65155e8ecba3e0fc03506c7ea7eb3820202c795c421bffa4f38446d1f5c",
+   "sha256": "3c05b9810cf4646a26c0e6af6588c305be4f4ea164e4bc1002cfc2609bc55486"
+  }
+ ],
+ "edits": [],
+ "delete": []
+}
