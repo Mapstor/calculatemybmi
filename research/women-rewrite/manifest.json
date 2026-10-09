@@ -1,0 +1,27 @@
+{
+ "new_files": [
+  {
+   "path": "research/g2/g2_women.py",
+   "sha256": "e0083ce8045ae45e44f3dffd1a74a4167b7ac94686e97d75d077e28ab5c36ad9"
+  }
+ ],
+ "replace": [
+  {
+   "path": "women-bmi-calculator/index.html",
+   "expect_sha256": "746c65cfaf3f336900ebddc1b9a2bc07d0520fbbccd81af6ee89ffed165e78f9",
+   "sha256": "eebf7e0463071f1eebf3898496229a725bddfd6bdf688faa95bc0a94ad5d9a13"
+  },
+  {
+   "path": "sitemap.xml",
+   "expect_sha256": "9cb40f7c1e2d32c1d32fbd91776f88698c9513ee7b4594427ec119553e99bf7f",
+   "sha256": "daada44ebfe616c2af24a9afe1311d99a82d430e7c46a583e645360158a44d30"
+  },
+  {
+   "path": "research/HANDOFF.md",
+   "expect_sha256": "29dc29a159331f96ed512ae95d723466724f6a8e320f1034222cbf389da667e4",
+   "sha256": "1b83f65155e8ecba3e0fc03506c7ea7eb3820202c795c421bffa4f38446d1f5c"
+  }
+ ],
+ "edits": [],
+ "delete": []
+}
