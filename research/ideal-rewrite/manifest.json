@@ -1,0 +1,27 @@
+{
+ "new_files": [
+  {
+   "path": "research/g2/g2_ideal.py",
+   "sha256": "e67a41d8e58cee8542fed97f1bab4634e662c489a82a48db3d51c9b45e7445a3"
+  }
+ ],
+ "replace": [
+  {
+   "path": "ideal-weight/index.html",
+   "expect_sha256": "030919c33729aaa07c2191408527e3dcda0d82db9777543849c6a89baaeb0d81",
+   "sha256": "5ba2e6f415c15ef2e76a085c5166283b3ff21c1a4ea0118c20216013bc7868ee"
+  },
+  {
+   "path": "sitemap.xml",
+   "expect_sha256": "417f89de6889e25314241a98eac4355b33bea9010c6c0c85e2ab6e80cce7ba2d",
+   "sha256": "06b36337f17969e164881e3a724a749a7385cc2c649069bbeeb8801bf295b32c"
+  },
+  {
+   "path": "research/HANDOFF.md",
+   "expect_sha256": "171f477ae953bf72a6b144476ff2492496f11528cef235f5a5cb07fcf7dc3c66",
+   "sha256": "0b019f4fa92ca70d32af6a088ed347001dc66de43f69adeef30bfc35a64c47f3"
+  }
+ ],
+ "edits": [],
+ "delete": []
+}
