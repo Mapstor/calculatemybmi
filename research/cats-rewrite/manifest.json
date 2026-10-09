@@ -1,0 +1,27 @@
+{
+ "new_files": [
+  {
+   "path": "research/g2/g2_cats.py",
+   "sha256": "ddc596f1e6c6eea6c215a90fa7e8c7ce4f9ad9c8c116f169dbc2fcca4b850a9d"
+  }
+ ],
+ "replace": [
+  {
+   "path": "blog/bmi-categories/index.html",
+   "expect_sha256": "841428c49054949d84f42427966050670b2061f759c9c115a6c6de25588c201f",
+   "sha256": "0c9a4cf55c3aa4f61082ec61995ea3db5aaa5e4957876abb6f62eccfea34d0fb"
+  },
+  {
+   "path": "sitemap.xml",
+   "expect_sha256": "7b8697649cecb7ecbe0f67d991d698dd1535cc08d960669f0025b2f0ddf7e8ca",
+   "sha256": "36e42d8e7cb6efb30511b3392ffe3538c3f819b290fcdab20d8276224b1d1863"
+  },
+  {
+   "path": "research/HANDOFF.md",
+   "expect_sha256": "aec84daaaa1bd460237c3a095b360a19a3af643062bb8392a39f1b545b542097",
+   "sha256": "f68807d59eed3d2add10bf9e4e36984ec319f4493d821d30585d3352736e12a6"
+  }
+ ],
+ "edits": [],
+ "delete": []
+}
