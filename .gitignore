@@ -1,5 +1,4 @@
 .DS_Store
-.claude/
 *.log
 node_modules/
 .vercel/
@@ -7,3 +6,8 @@ node_modules/
 .devcontainer/
 151650*.jpeg
 .env*
+
+# Local-only Claude Code / Impeccable state (never committed)
+.claude/skills/impeccable/scripts/bin/
+.claude/settings.local.json
+.impeccable/config.local.json

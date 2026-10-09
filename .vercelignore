@@ -13,6 +13,10 @@ node_modules/
 research/
 data/
 audit/
+.impeccable/
+
+# Internal audit CSVs at the repo root — never ship (data pages serve CSVs elsewhere; the IndexNow .txt stays)
+/CLAIMS-DECISIONS*.csv
 
 # Build helpers
 scripts/

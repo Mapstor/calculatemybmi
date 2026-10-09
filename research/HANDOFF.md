@@ -55,3 +55,5 @@ keyword-ledger.csv, page-map.csv, data-sources.csv (created 30 Sep; older pages 
 - /blog/bmi-for-athletes/ is still short (~700 words): candidate for a sourced expansion.
 - Registry debt: data-sources.csv rows for the older pages.
 - SERP checks queued: body-fat chart one page vs women/men split; average weight split; "bmi for women" chart vs calculator intent.
+
+Superseded by DEVLOG.md (CMB-001, 2026-10-08).
