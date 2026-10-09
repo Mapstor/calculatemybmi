@@ -1,0 +1,38 @@
+import re,json,html as H
+exec(open("/home/claude/k3_patch2.py",encoding="utf-8").read().split("W_SHORT=")[0])
+ENT.update({"×":"(?:×|&times;)","²":"(?:²|&sup2;)","<":"(?:<|&lt;)",">":"(?:>|&gt;)","′":"(?:′|&prime;)","″":"(?:″|&Prime;)","≥":"(?:≥|&ge;)"})
+P="calculators/index.html"
+CDC='<a href="https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html" target="_blank" rel="noopener">CDC</a>'
+T(P,"The healthy range (18.5-24.9) is where most people should aim to maintain their weight.",f"The healthy-weight range is 18.5 to under 25 for adults ({CDC}).")
+T(P,"Best for: Women seeking gender-specific BMI guidance","Best for: Women who want context beyond the number: waist, body fat and pregnancy weight-gain ranges")
+T(P,"Best for: Adults over 45 and seniors seeking age-specific guidance","Best for: Anyone who wants to see their BMI next to US averages for their age and sex")
+T(P,"Best for: Anyone seeking a clinically-backed target weight range","Best for: Anyone who wants the classic formula-based weight estimates side by side")
+T(P,"typical spread is under 2 kg for average bodies, wider for heavier individuals.","for an average US woman (5&prime;3.5&Prime;, 172 lb) the three agree within about 1.6 kg; for an average US man (5&prime;9&Prime;, 199 lb) they differ by about 5.8 kg, mostly because the Hume equation gives lower values for men.")
+T(P,"Female-specific interpretation, life-stage guidance","NIH waist cut-off, ACOG pregnancy weight-gain ranges")
+T(P,"Male-specific interpretation, waist guidelines","NIH waist cut-off, muscle-mass note")
+T(P,"WHO standard + age adjustment","WHO/CDC standard (kg/m²)")
+T(P,"Adults 20+, focus 45+","Adults 20+")
+T(P,"Age-adjusted healthy ranges for seniors","US averages by age; Winter 2014 data for 65+")
+T(P,"Corrects height bias in traditional formula","Proposed height correction (not used clinically)")
+T(P,"Accounts for higher natural body fat and provides life-stage guidance","Adds waist, body fat and pregnancy context")
+T(P,"Addresses muscle mass, abdominal fat patterns, and male health thresholds","Adds the NIH waist cut-off and muscle-mass context")
+T(P,"Factor in your age (especially 45+)","See your BMI next to people your age")
+T(P,"Provides age-adjusted healthy ranges — a slightly higher BMI may be protective for seniors","Shows US average BMI, weight and waist by age; the cut-offs stay the same")
+T(P,"Uses height^2.5 instead of height^2 to produce fairer results across different heights","Uses height^2.5 instead of height^2, a proposal that health agencies have not adopted")
+T(P,"Estimates lean mass and body fat percentage — ideal for athletes and fitness tracking","Estimates lean mass and fat mass from height and weight")
+T(P,"For adults with stable weight, checking your BMI a few times per year is sufficient. If you are actively trying to lose or gain weight, monthly checks can help track progress without causing unnecessary stress over day-to-day fluctuations.",
+  "There is no official schedule for adults. Weight moves around from day to day with water and food, so the trend over weeks and months tells you more than any single reading.")
+s=open(P,encoding="utf-8").read()
+m=re.search(r"Daily weight can vary by 2(?:–|&ndash;|-)4 lbs[^<]*",s)
+if m: s=s.replace(m.group(0),""); LOG.append((P,1,"daily 2-4 lbs claim removed"))
+else: MISS.append((P,"daily weight claim"))
+# decision table: add the body fat calculator row after Lean Body Mass
+m=re.search(r'(<tr[^>]*>\s*<td[^>]*>Analyze body composition \(muscle vs\. fat\)</td>.*?</tr>)',s,re.S)
+if m:
+    row=m.group(1); new=re.sub(r'Analyze body composition \(muscle vs\. fat\)','Estimate your body fat percentage',row,1)
+    new=re.sub(r'<a href="/lean-body-mass/"[^>]*>[^<]*</a>','<a href="/body-fat-calculator/">Body Fat</a>',new,1)
+    new=re.sub(r'(<td[^>]*>)(?:(?!</td>).)*?</td>\s*</tr>$',r'\1Tape measure, calipers or the BMI formula, ranked against CDC body scans</td></tr>',new,flags=re.S)
+    s=s.replace(row,row+" "+new,1); LOG.append((P,1,"decision row added"))
+else: MISS.append((P,"decision table row"))
+open(P,"w",encoding="utf-8").write(s)
+print("applied:",len(LOG)); print("MISSES:",MISS)

@@ -1,0 +1,27 @@
+{
+ "new_files": [
+  {
+   "path": "research/g2/g2_calcs.py",
+   "sha256": "6cae242d10fd0037f9ca475b43370cc1e249bacf5799602265129335aca9b55f"
+  }
+ ],
+ "replace": [
+  {
+   "path": "calculators/index.html",
+   "expect_sha256": "73eab2bcb3e07df0f895d4f5d80a9a6483175976c3c18f99007c5997b7340e1d",
+   "sha256": "e797270d8494cc87fab0e97ccee3fe6c0c4403a4e1d0ba95a62ca2a8c21c77e2"
+  },
+  {
+   "path": "sitemap.xml",
+   "expect_sha256": "04c46c6298fc3c690ed2c01cf0d8175eb65f4e046ce1f1125b517318a5595ca8",
+   "sha256": "7b8697649cecb7ecbe0f67d991d698dd1535cc08d960669f0025b2f0ddf7e8ca"
+  },
+  {
+   "path": "research/HANDOFF.md",
+   "expect_sha256": "001c9e984421eb58295fc42b87304abda873f971c973c78e26b6026a9dfa4632",
+   "sha256": "aec84daaaa1bd460237c3a095b360a19a3af643062bb8392a39f1b545b542097"
+  }
+ ],
+ "edits": [],
+ "delete": []
+}
