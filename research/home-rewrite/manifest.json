@@ -1,0 +1,27 @@
+{
+ "new_files": [
+  {
+   "path": "research/g2/g2_home.py",
+   "sha256": "d4c443fa66b14999e54d787fc3ce3ce1b1264c438a0227b4830a7ace59b64db0"
+  }
+ ],
+ "replace": [
+  {
+   "path": "index.html",
+   "expect_sha256": "955cec248576f64aa0750fee2fc96c73f2fd9dba2e426ca401367e96db7dd000",
+   "sha256": "950afe956f08d5cd4516dcbf9998b5901699923b729edf9bc92e6c09ff86cfab"
+  },
+  {
+   "path": "sitemap.xml",
+   "expect_sha256": "06b36337f17969e164881e3a724a749a7385cc2c649069bbeeb8801bf295b32c",
+   "sha256": "6e1839937574c6be37081158ee904bf4804def6d2d1db12ed518a7e35709d0dd"
+  },
+  {
+   "path": "research/HANDOFF.md",
+   "expect_sha256": "0b019f4fa92ca70d32af6a088ed347001dc66de43f69adeef30bfc35a64c47f3",
+   "sha256": "0a9c789a5b1497a1082c0978b5496d4829b5be8e95e939b373d4c68112cc122f"
+  }
+ ],
+ "edits": [],
+ "delete": []
+}
