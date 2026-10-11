@@ -2,12 +2,12 @@
 > Handoff file. Read §0–§5 and the last 10 entries of §6 before any work. Rules: devlog skill (.claude/skills/devlog/SKILL.md).
 
 ## §0 Resume here
-_last update: 2026-10-11 · CMB-002_
-- Phase: content rewrites — G2 pass of older guides
-- Last confirmed: G2g lbm-rewrite (661c24c), G2h women-rewrite (f0b0bce), G2i men-rewrite (f5e0b93), CMB-001 DEVLOG-INIT (38c5bfc) — all live (pushed 2026-10-10, production spot-checks pass)
-- In flight (handed, NOT confirmed): none
-- Next action: CMB-003 — start G2 claim-by-claim rewrites of the 15 older guides (list in §5 [P1])
-- Waiting on owner: final IndexNow / Search Console / Bing round (D-07), after all [P1] guides land
+_last update: 2026-10-11 · CMB-003_
+- Phase: markup gate + design test done; awaiting chat verdict before any production push
+- Last confirmed (local main): CMB-003 STEPS 0–2 (0f30a3a R5 + impeccable 0.1.14 keep, 1e5b04f markup repair on 21 pages, e80ab70 BMI scale fix, a12dc96 anti-slop review) — done; chat renders will verify
+- In flight (handed, NOT confirmed): CMB-003 STEP 3 — Impeccable design test for `/men-bmi-calculator/` on branch `test/impeccable-men` (3c834c1); layout `unverified` (box has no browser)
+- Next action: chat's verdict on CMB-003 (markup + men design); project chat's next ID is CMB-004
+- Waiting on owner: push `main` to `review/cmb-003` + `test/impeccable-men` for preview deploys (production untouched until chat OK); eventually the IndexNow / Search Console / Bing round
 - Open questions:
   - Rebuilt data/tool pages built 2026-10-02…10-08 show "Reviewed <date>" or "Updated <date>" in the byline, conflicting with D-04 (no visible review date) — keep "Updated", or remove both?
   - GitHub repo `Mapstor/calculatemybmi` is public (checked 2026-10-10): everything committed (incl. `DEVLOG.md`, `.claude/`, `research/`, `CLAIMS-DECISIONS*.csv`) is world-readable on GitHub even though `.vercelignore` keeps it off the production domain — owner decides whether to make the repo private.
@@ -67,12 +67,16 @@ _last update: 2026-10-11 · CMB-002_
 - The jsdom test scripts under `research/` need Node + jsdom; the box has Node 20 but no jsdom (install step missing by design) — they ship for reference and run on Marko's Mac. Treat skipped jsdom runs as unverified.
 - Content batches ride in `research/<batch>/`; only their `apply_build.py` writes files. Never edit a batch-managed file by hand mid-flow — the hash-guarded replacements will refuse the next run.
 - The box has no browser — layout, hover and viewport-specific behaviour are `unverified` until Marko confirms with Chrome DevTools on Mac 2 (or impeccable detect with --viewport).
+- `scripts/check_structure.py` enforces balanced tags through `scripts/check_markup.py` since CMB-003 — a batch whose patch drops a closing tag fails the 40/40 gate. Use `scripts/check_markup.py --text FILE` before vs after to prove which text a batch changed.
 
 ## §5 Backlog (priority order)
 - [P1] G2 claim-by-claim rewrites of 15 older guides: `bmi-and-health-risks`, `bmi-and-metabolism`, `bmi-limitations`, `bmi-tracking-guide`, `bmi-chart-explained`, `bmi-chart-men`, `bmi-chart-women`, `bmi-formula`, `bmi-history`, `healthy-bmi-range`, `how-to-lower-bmi`, `body-fat-vs-bmi`, `underweight-bmi-risks`, `waist-to-height-ratio`, `bmi-by-age`.
 - [P1] After [P1] guides: owner push → final IndexNow / Search Console / Bing submission round (D-07).
-- [P2] Anti-slop pass over every page rewritten in chat before the anti-slop-prose skill was installed.
+- [P2] Anti-slop pass over every page rewritten in chat before the anti-slop-prose skill was installed. Men-page review (CMB-003 STEP 2) = **31 tells over ~3,100 words** — see `audit/cmb-003/anti-slop-men.md`.
 - [P2] Resolve §0 open question on "Reviewed/Updated" byline (D-04) sitewide.
+- [P2] `(teaser)` leaks into an H2 on `/men-bmi-calculator/` and `/women-bmi-calculator/` ("Healthy weight range for men (teaser)").
+- [P2] On `/men-bmi-calculator/`: the "BMI Calculator by Age" and "BMI by age guide" links both point to `/age-bmi-calculator/`; the "Body Fat Percentage vs BMI for Men" section lost its heading.
+- [P2] `/blog/bmi-and-metabolism/`: `theoverview` is glued together; info cards carry a heading with no body (e.g. "Reduced BMR").
 - [P3] Homepage `<title>` is 68 chars (truncated in SERP) — decide after Search Console data lands in the final round.
 - [P3] `/blog/bmi-for-athletes/` is still short (~700 words after T1 rebuild) — candidate for a sourced expansion.
 - [P3] Registry debt in `research/data-sources.csv` — rows missing for older guides.
@@ -238,8 +242,22 @@ _last update: 2026-10-11 · CMB-002_
   - `/men-bmi-calculator/` — "US men by the numbers" section present.
   - `/women-bmi-calculator/` — "US women by the numbers" section + 33.4% + 38.7% present; removed phrases absent.
   - `/DEVLOG.md`, `/.claude/skills/devlog/SKILL.md`, `/CLAIMS-DECISIONS.csv`, `/research/HANDOFF.md` — all return not-found on the production domain (`.vercelignore` is working).
-- Commit: this prompt's commit (pushed: no).
+- Commit: 60dae68 (pushed: no).
 - Notes: `Mapstor/calculatemybmi` is a **public** GitHub repo (checked 2026-10-10) — the Vercel exclusions keep internal files off the live domain but leave them world-readable on GitHub. Logged as a §0 open question for the owner.
+
+### 2026-10-11 · CMB-003 MARKUP+IMPECCABLE · chat → CC · done (STEPS 0–2) / handed (STEP 3)
+- What: STEP 0 kept the impeccable self-update (engine reports 0.1.14, matches working-tree VERSION; HEAD was 0.1.12) and added **R5 — no in-task impeccable self-updates** to CLAUDE.md. STEP 1 wrote `scripts/check_markup.py` (stdlib `html.parser`: orphan ends, implicit closes with p/li/td/th/tr/thead/tbody/option/dt/dd excepted, never-closed, block-under-emph for strong/b/em; `--text` snapshot = visible-text stream + href/src list + SHA-256 of title/metas/JSON-LD). Repaired tag balance on 21 failing pages (110 → 0 issues; delta −160 bytes). Replaced the no-op "HTML parses" block in `scripts/check_structure.py` with the new parser's checks. Fixed the BMI scale in `assets/css/styles.css` — segment widths 18.5/25/16.5/20/20 → 14/26/20/20/20, and label positions 0/14/40/60/80/100 % to match the marker's linear 15-40 scale. STEP 2 wrote `audit/cmb-003/anti-slop-men.md` (review-only). STEP 3 (branch `test/impeccable-men` only): added `assets/css/men.css` (scoped refinements — prose max-width, scale-label 12 px, result wrap, un-nest blog-cards inside sections, soften 4 px side-tabs to 1 px, shift the purple accent to primary cyan, darken brand-cyan link + CTA + amber/red callout text to clear AA 4.5:1), 5 `<label for>` + `<input id>` on the calculator, H1 → H2 skipped-heading fix. Linked `men.css` from the page head.
+- Files (main): `CLAUDE.md`, `.claude/skills/impeccable/{SKILL.md, reference/{doctor,init,new-work}.md, scripts/VERSION}`, `scripts/check_markup.py`, `scripts/check_structure.py`, `assets/css/styles.css`, `audit/cmb-003/anti-slop-men.md`, and the 21 repaired pages. Files (branch `test/impeccable-men`): `men-bmi-calculator/index.html`, `assets/css/men.css`, `audit/cmb-003/impeccable-men.md`.
+- Verified (main):
+  - `scripts/check_markup.py` on all 41 sitemap pages + `404.html`: **0 issues**.
+  - `scripts/check_markup.py --text` of every page vs `/tmp/cmb003-before/`: **no diff** — content byte-identical.
+  - `python3 scripts/check_structure.py` → **40/40 pages pass** (via the new markup parser).
+  - `python3 research/f1/verify.py` → **clean**.
+  - Scale labels confirmed byte-identical across the 5 pages that use the scale (`span>15</span>…<span>40</span>`); CSS-only change applies to all.
+- Verified (branch): markup 0 issues, --text diff empty, check_structure 40/40, verify.py clean, `git diff --stat main..test/impeccable-men` = only `men-bmi-calculator/index.html`, `assets/css/men.css`, `audit/cmb-003/impeccable-men.md`. Impeccable detect on the men page + men.css: **80 → 68 findings** (−22 real, +10 from darker-shade and `clamp()` steps the detector flags because DESIGN.md doesn't yet list them). `skipped-heading`, `side-tab` and `nested-cards` all materially down.
+- Unverified: layout, hover, 390 px wrap, menu behaviour — the box has no browser; needs Marko's preview-deploy renders of `review/cmb-003` + `test/impeccable-men`.
+- Commits: 0f30a3a (R5 + impeccable kept), 1e5b04f (markup + check_structure gate), e80ab70 (scale CSS), a12dc96 (anti-slop review), 3c834c1 (men design — on branch `test/impeccable-men`). Pushed: no.
+- Notes: STEP 3 adds no detector ignores; R3 exception candidates listed in `audit/cmb-003/impeccable-men.md`. Anti-slop pass counted **31 tells** on `/men-bmi-calculator/` body prose (~3,100 words).
 
 ## §7 History & archive
 - 2026-02 · Initial commit of BMI calculator site; GA4 + webmaster verification added (78f9434, 92b3baa).
