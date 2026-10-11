@@ -1,0 +1,100 @@
+
+/* ============================================
+   CONTENT PATTERNS v2 (CMB-006 pilot on /men-bmi-calculator/)
+   Opt-in classes: a page uses them only when its markup asks for them.
+   ============================================ */
+
+/* One centred reading column: page head, calculator, takeaways and sections share one width */
+main.reading .page-head,
+main.reading .calculator-card,
+main.reading .key-takeaways,
+main.reading .disclaimer-box,
+main.reading .toc-inline,
+main.reading .content-section { max-width: 680px; margin-left: auto; margin-right: auto; }
+main.reading .page-head .intro-text { max-width: none; margin-bottom: 0.5rem; }
+.byline { font-size: 0.875rem; color: var(--gray-600); margin: 0 0 1rem; }
+.byline a { color: var(--secondary); font-weight: 600; }
+.intro-note { font-size: 0.875rem; color: var(--gray-600); margin: 0 0 1.5rem; }
+
+/* Key takeaways that open with the direct answer */
+.key-takeaways .answer { font-size: 0.9375rem; color: var(--gray-800); margin: 0 0 0.75rem; }
+.disclaimer-box { background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 0.75rem 1rem; margin-bottom: 1.5rem; }
+.disclaimer-box p { font-size: 0.8125rem; color: var(--gray-600); margin: 0; }
+
+/* On-page contents as chips (wraps, never scrolls sideways) */
+.toc-inline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-bottom: 1.5rem; font-size: 0.875rem; }
+.toc-inline-title { font-weight: 600; color: var(--gray-700); margin-right: 0.25rem; }
+.toc-inline a { display: inline-flex; align-items: center; min-height: 36px; padding: 0 0.875rem; background: white; border: 1px solid var(--gray-200); border-radius: var(--radius-full); color: var(--gray-700); }
+.toc-inline a:hover { border-color: var(--primary); color: var(--link); text-decoration: none; }
+.toc-inline a { white-space: nowrap; }
+@media (max-width: 600px) {
+  .toc-inline { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding-bottom: 0.25rem; }
+  .toc-inline::-webkit-scrollbar { display: none; }
+  .toc-inline-title { flex: none; }
+}
+
+/* Flat sections: sub-sections are headings and lists, never cards inside the card */
+.flow p, .flow li, .flow dd { line-height: 1.65; }
+@media (min-width: 768px) { .flow p, .flow li, .flow dd { font-size: 1.0625rem; } }
+.flow h3 { font-size: 1.125rem; margin: 1.75rem 0 0.5rem; }
+.flow ul, .flow ol { padding-left: 1.25rem; margin: 0 0 1rem; }
+.flow li { margin-bottom: 0.375rem; }
+.flow dl { margin: 1rem 0 0; }
+.flow dt { font-weight: 600; color: var(--gray-900); margin-top: 1rem; }
+.flow dd { margin: 0.125rem 0 0; color: var(--gray-700); }
+.flow p.source-note { font-size: 0.8125rem; line-height: 1.5; color: var(--gray-600); max-width: 62ch; }
+.flow .source-list li { font-size: 0.9375rem; }
+main.reading :target { scroll-margin-top: 80px; }
+
+/* Stat callout: flat, quotable, with its source inside */
+.stat-callout { display: grid; grid-template-columns: auto 1fr; align-items: baseline; gap: 0.25rem 1rem; margin: 1.25rem 0; padding: 1rem 0; border-top: 1px solid var(--gray-200); border-bottom: 1px solid var(--gray-200); }
+.stat-callout-value { font-size: 2.25rem; font-weight: 700; line-height: 1; color: var(--secondary); }
+.stat-callout-text { font-size: 1rem; color: var(--gray-800); }
+.stat-callout-source { grid-column: 1 / -1; font-size: 0.8125rem; color: var(--gray-600); }
+
+/* Data tables inside prose */
+.flow .data-table caption { caption-side: top; text-align: left; font-weight: 600; font-size: 0.9375rem; color: var(--gray-800); padding: 0 0 0.5rem; }
+.flow .data-table th[scope="row"] { background: transparent; color: var(--gray-800); white-space: nowrap; }
+.flow .data-table .num { text-align: right; font-variant-numeric: tabular-nums; }
+.flow .data-table td { color: var(--gray-700); }
+.flow .nowrap { white-space: nowrap; }
+.flow .unit-alt { display: block; font-size: 0.8125rem; color: var(--gray-600); }
+@media (max-width: 600px) { .flow .data-table th, .flow .data-table td { padding: 0.625rem 0.5rem; } }
+
+/* Figures */
+.figure { max-width: 440px; margin: 1.25rem auto; }
+.figure svg { display: block; width: 100%; height: auto; }
+.figure figcaption { font-size: 0.8125rem; line-height: 1.5; color: var(--gray-600); margin-top: 0.5rem; }
+
+/* FAQ as a divided list */
+.faq-list.flat { gap: 0; border-top: 1px solid var(--gray-200); }
+.faq-list.flat .faq-item { border: 0; border-bottom: 1px solid var(--gray-200); border-radius: 0; }
+.faq-list.flat .faq-question { background: transparent; padding: 1rem 0; font-size: 1rem; font-weight: 600; color: var(--gray-900); gap: 1rem; }
+.faq-list.flat .faq-question:hover { background: transparent; color: var(--link); }
+.faq-list.flat .faq-answer { padding: 0 0 1rem; font-size: 1rem; }
+.faq-list.flat .faq-answer p { margin: 0; }
+
+/* One related block: two plain link lists */
+.related-cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 2rem; }
+@media (max-width: 600px) { .related-cols { grid-template-columns: 1fr; } }
+.related-cols h3 { font-size: 0.9375rem; color: var(--gray-700); margin: 0 0 0.25rem; }
+.related-cols ul { list-style: none; padding: 0; margin: 0 0 1rem; }
+.related-cols li { border-bottom: 1px solid var(--gray-100); }
+.related-cols li a { display: block; padding: 0.625rem 0; font-weight: 500; }
+
+/* Calculator: where the result ranks among US men */
+.rank-box { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--gray-200); }
+.rank-title { font-size: 0.875rem; color: var(--gray-600); }
+.rank-value { font-size: 1.25rem; font-weight: 700; color: var(--gray-900); margin: 0.125rem 0 0.75rem; }
+.rank-track { position: relative; height: 12px; border-radius: var(--radius-full); background: linear-gradient(90deg, var(--gray-100), var(--gray-300)); }
+.rank-median { position: absolute; left: 50%; top: -3px; width: 2px; height: 18px; background: var(--gray-500); }
+.rank-marker { position: absolute; top: -6px; width: 6px; height: 24px; border-radius: 3px; background: var(--secondary); transform: translateX(-50%); }
+.rank-axis { display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--gray-600); margin-top: 0.5rem; }
+.rank-text { font-size: 0.9375rem; color: var(--gray-700); margin: 0.75rem 0 0.25rem; }
+.rank-source { font-size: 0.75rem; color: var(--gray-600); margin: 0; }
+
+/* Links on the dark footer keep the light brand cyan (the darker --link is for light backgrounds) */
+.footer-bottom a { color: var(--primary-light); }
+
+/* Result tiles: the converted unit sits on its own line, so values never break mid-unit */
+.result-item-alt { display: block; font-size: 0.8125rem; font-weight: 400; color: var(--gray-600); margin-top: 0.125rem; }

@@ -1,0 +1,78 @@
+{
+ "new_files": [
+  {
+   "path": "assets/images/og/men-bmi-us-rank.png",
+   "sha256": "148042bbd6816fce5d461aaab0b68d5015560025f9705a14ea5deb87e17a2031"
+  },
+  {
+   "path": "research/men-pilot/SPEC.md",
+   "sha256": "6f7a189ae7c0cd907698b6bc74311b584f5c3e7bbdf81a71f56ce9683732e64f"
+  },
+  {
+   "path": "research/men-pilot/gen_men_pilot.py",
+   "sha256": "bae4476771323ebc5c8177b24d4fa2066aca798729b712e83ce71a04305bdfa0"
+  },
+  {
+   "path": "research/men-pilot/men_stats.json",
+   "sha256": "68c300d8d16fb980bacf2e125359ebd8ded33ac58781e71b7f944e59f903c3a9"
+  },
+  {
+   "path": "research/men-pilot/men_stats.py",
+   "sha256": "392e75f71af35defccf512b8a01bf813d175114c07b948987453ca23b1e7ad93"
+  },
+  {
+   "path": "research/men-pilot/og_men.py",
+   "sha256": "61236550e7a4b76d79d149af94a058d4daa9f071a0d8977836a00f1a87e5596b"
+  },
+  {
+   "path": "research/men-pilot/patch_calc_pilot.py",
+   "sha256": "f248e6f2b8997124f32f27e7270ef625944962b9e59dbd1d22b1f59d9682d224"
+  },
+  {
+   "path": "research/men-pilot/pilot.css",
+   "sha256": "cc19719b0bd8fbddcb087a0d9528b00fddc159e0b722b8c51b0b12caa7cfd90a"
+  },
+  {
+   "path": "research/men-pilot/rank_test_playwright.py",
+   "sha256": "109f4174612e6322d26245862572fd6effda85727712f3f315c01a98cc5fc361"
+  },
+  {
+   "path": "research/men-pilot/slop_scan.py",
+   "sha256": "241e16ded2c62e2828939c38be9a1ef7a71072e9774afedf6230699e3a7fdcca"
+  }
+ ],
+ "replace": [
+  {
+   "path": "DESIGN.md",
+   "expect_sha256": "65dd118c49d9487c273776ab62536c616f635c6cfb82d25972511ac383314cb8",
+   "sha256": "31fb1d48858b867bd759707c88490322b90ffc073be240a7398c8dd27f7e4ae0"
+  },
+  {
+   "path": "assets/css/styles.css",
+   "expect_sha256": "eb98dcd34ce061a7d04e36dd78e0fece6372235c08e6cdad5613109b898ac367",
+   "sha256": "cd0667a9cc5c788703e417d43cff54c91f0d6f5ca4533e7deba9b3689e8e966a"
+  },
+  {
+   "path": "assets/js/calculator.js",
+   "expect_sha256": "896e6a40c52841f8f9bc6545e03c70742bbc11ef1249999487b8d913ac9941b7",
+   "sha256": "a4ee9251dd50c20505f4e9cc60b5bdf1e4a632f487d5592325ea2a3f1a12c1ea"
+  },
+  {
+   "path": "men-bmi-calculator/index.html",
+   "expect_sha256": "a434ab1cfea1cb3c001a05794ef5cd0afd8dfd86d273beca61e181ab313942c2",
+   "sha256": "e7720f2897619b2caa82d43cce623f152fd027198ae5dcd511348b74bd8fb053"
+  },
+  {
+   "path": "research/data-sources.csv",
+   "expect_sha256": "a7a78a7f4e4f015af39c3f5242e5f7fd56979d0b8e6dc34e2765a5952d321cdc",
+   "sha256": "476a8ce82b5f1ad4a8730fa9a318af6a22456aceecbbbe1b66525780b1495451"
+  },
+  {
+   "path": "research/page-map.csv",
+   "expect_sha256": "ffaf84c8e14651e1aca0c4bdd190f4248e2ef2bded08ba70e852b8bf4499373a",
+   "sha256": "ef157a7b7b90e8d2318fa7a98f085423bb2032fa7af650e73c9caf2479ecd520"
+  }
+ ],
+ "edits": [],
+ "delete": []
+}

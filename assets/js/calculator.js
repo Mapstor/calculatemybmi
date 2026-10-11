@@ -574,8 +574,8 @@ function displayBMIResults(type, bmi, category, healthyRange, heightInches, weig
   if (marker) marker.style.left = getScalePosition(bmi) + '%';
   const healthyMinEl = document.getElementById(type + '-healthy-min');
   const healthyMaxEl = document.getElementById(type + '-healthy-max');
-  if (healthyMinEl) healthyMinEl.textContent = fmtBound(healthyRange, 'min') + ' (' + fmtBound(healthyRange, 'min', true) + ')';
-  if (healthyMaxEl) healthyMaxEl.textContent = fmtBound(healthyRange, 'max') + ' (' + fmtBound(healthyRange, 'max', true) + ')';
+  if (healthyMinEl) healthyMinEl.innerHTML = fmtBound(healthyRange, 'min') + ' <span class="result-item-alt">(' + fmtBound(healthyRange, 'min', true) + ')</span>';
+  if (healthyMaxEl) healthyMaxEl.innerHTML = fmtBound(healthyRange, 'max') + ' <span class="result-item-alt">(' + fmtBound(healthyRange, 'max', true) + ')</span>';
   const weightDiffEl = document.getElementById(type + '-weight-diff');
   if (weightDiffEl) weightDiffEl.textContent = healthyRangeText(healthyRange, weightLbs);
   if (extra.adjustedRange) {
@@ -926,8 +926,8 @@ function displayNewBMIResults(type, traditionalBMI, newBMI, diff, traditionalCat
   }
   const healthyMinEl = document.getElementById(type + '-healthy-min');
   const healthyMaxEl = document.getElementById(type + '-healthy-max');
-  if (healthyMinEl) healthyMinEl.textContent = fmtBound(healthyRange, 'min') + ' (' + fmtBound(healthyRange, 'min', true) + ')';
-  if (healthyMaxEl) healthyMaxEl.textContent = fmtBound(healthyRange, 'max') + ' (' + fmtBound(healthyRange, 'max', true) + ')';
+  if (healthyMinEl) healthyMinEl.innerHTML = fmtBound(healthyRange, 'min') + ' <span class="result-item-alt">(' + fmtBound(healthyRange, 'min', true) + ')</span>';
+  if (healthyMaxEl) healthyMaxEl.innerHTML = fmtBound(healthyRange, 'max') + ' <span class="result-item-alt">(' + fmtBound(healthyRange, 'max', true) + ')</span>';
   const weightDiffEl = document.getElementById(type + '-weight-diff');
   if (weightDiffEl) weightDiffEl.textContent = healthyRangeText(healthyRange, weightLbs);
   section.classList.add('visible');
