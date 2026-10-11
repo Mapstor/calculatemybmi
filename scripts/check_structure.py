@@ -74,13 +74,22 @@ def check_file(page, path):
         n = src_notag.count(brand)
         if n:
             problems.append(f'body-text brand mention "{brand}" ({n})')
-    # Basic parse check: try libxml if available; otherwise heuristic
+    # Tag-balance check — delegates to scripts/check_markup.py's parser.
     try:
-        import xml.etree.ElementTree as ET
-        # Not strict HTML but catches gross malformations
-        # Skip — HTML is not XML-parseable in general
-    except Exception:
-        pass
+        here = os.path.dirname(os.path.abspath(__file__))
+        if here not in sys.path:
+            sys.path.insert(0, here)
+        from check_markup import MarkupChecker
+        parser = MarkupChecker(src)
+        try:
+            parser.feed(src)
+            parser.close()
+        except Exception as exc:
+            problems.append(f'markup parse error: {exc}')
+        for off, kind, detail in parser.issues:
+            problems.append(f'markup @{off} [{kind}] {detail}')
+    except Exception as exc:
+        problems.append(f'check_markup import failed: {exc}')
     return problems
 
 def main():
