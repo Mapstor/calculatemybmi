@@ -7,6 +7,10 @@ Default mode: parse each HTML file and report
     (exceptions: p, li, td, th, tr, thead, tbody, option, dt, dd — HTML spec allows implicit close)
   - elements never closed before EOF
   - any p, div, section, ul, ol, li, table, h1-h6 or footer opened while a strong, b or em is open
+  Structure (added CMB-004 — balanced tags can still be nested wrong):
+  - block-in-heading: p, div, table, ul, ol, section, article or figure opened inside an h1-h6
+  - outside-container: p, h2-h4, ul, ol, table or figure inside <main> with no ancestor of class "container"
+  - content-in-calculator: a <section> opened inside .calculator-card, .calc-panel or .results-section
 Print file, issue, character offset and 80 chars of context. Exit 1 on any finding.
 
 --text mode: visible text (outside script, style, template) as one whitespace-collapsed
@@ -36,6 +40,10 @@ BLOCK_UNDER_EMPH = {
     'p', 'div', 'section', 'ul', 'ol', 'li', 'table', 'footer',
     'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
 }
+HEADINGS = {'h1', 'h2', 'h3', 'h4', 'h5', 'h6'}
+BLOCK_IN_HEADING = {'p', 'div', 'table', 'ul', 'ol', 'section', 'article', 'figure'}
+NEEDS_CONTAINER = {'p', 'h2', 'h3', 'h4', 'ul', 'ol', 'table', 'figure'}
+CALCULATOR_CLASSES = {'calculator-card', 'calc-panel', 'results-section'}
 # Elements whose content is CDATA-like and never counted as visible text or markup.
 RAW_TEXT = {'script', 'style', 'template'}
 
@@ -44,7 +52,7 @@ class MarkupChecker(HTMLParser):
     def __init__(self, src):
         super().__init__(convert_charrefs=False)
         self.src = src
-        self.stack = []   # list of (tag, offset)
+        self.stack = []   # list of (tag, offset, class tokens)
         self.issues = []  # list of (offset, kind, detail)
 
     def _offset(self):
@@ -64,7 +72,7 @@ class MarkupChecker(HTMLParser):
             return
         # Block-under-emphasis check.
         if tag in BLOCK_UNDER_EMPH:
-            for open_tag, _ in self.stack:
+            for open_tag, _, _ in self.stack:
                 if open_tag in INLINE_EMPH:
                     self._record(
                         off,
@@ -72,7 +80,26 @@ class MarkupChecker(HTMLParser):
                         f'<{tag}> opened while <{open_tag}> is still open',
                     )
                     break
-        self.stack.append((tag, off))
+        open_tags = [t for t, _, _ in self.stack]
+        if tag in BLOCK_IN_HEADING:
+            for open_tag in open_tags:
+                if open_tag in HEADINGS:
+                    self._record(off, 'block-in-heading', f'<{tag}> opened inside <{open_tag}>')
+                    break
+        if tag in NEEDS_CONTAINER and 'main' in open_tags:
+            if not any('container' in cls for _, _, cls in self.stack):
+                self._record(off, 'outside-container', f'<{tag}> inside <main> but outside .container')
+        if tag == 'section':
+            for open_tag, _, cls in self.stack:
+                hit = CALCULATOR_CLASSES & cls
+                if hit:
+                    self._record(off, 'content-in-calculator', f'<section> opened inside .{sorted(hit)[0]}')
+                    break
+        classes = set()
+        for name, value in attrs:
+            if name == 'class' and value:
+                classes = set(value.split())
+        self.stack.append((tag, off, classes))
 
     def handle_startendtag(self, tag, attrs):
         # Self-closing in HTML has no effect for non-void elements, so this is
@@ -87,11 +114,11 @@ class MarkupChecker(HTMLParser):
         # Walk stack from top; mark everything above the matching tag as
         # implicitly closed (an error unless the element is in IMPLICIT_CLOSE).
         for i in range(len(self.stack) - 1, -1, -1):
-            open_tag, open_off = self.stack[i]
+            open_tag, open_off, _ = self.stack[i]
             if open_tag == tag:
                 # Everything above i was closed implicitly by this end tag.
                 for j in range(len(self.stack) - 1, i, -1):
-                    inner_tag, inner_off = self.stack[j]
+                    inner_tag, inner_off, _ = self.stack[j]
                     if inner_tag not in IMPLICIT_CLOSE:
                         self._record(
                             inner_off,
@@ -107,7 +134,7 @@ class MarkupChecker(HTMLParser):
         # Report every element never closed before EOF (minus IMPLICIT_CLOSE,
         # which the spec lets end-of-parent close silently).
         super().close()
-        for tag, off in self.stack:
+        for tag, off, _ in self.stack:
             if tag in IMPLICIT_CLOSE:
                 continue
             self._record(off, 'never-closed', f'<{tag}> never closed')

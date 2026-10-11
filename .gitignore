@@ -11,3 +11,6 @@ node_modules/
 .claude/skills/impeccable/scripts/bin/
 .claude/settings.local.json
 .impeccable/config.local.json
+
+# Python bytecode (check_structure imports check_markup)
+__pycache__/
