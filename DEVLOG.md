@@ -2,12 +2,12 @@
 > Handoff file. Read §0–§5 and the last 10 entries of §6 before any work. Rules: devlog skill (.claude/skills/devlog/SKILL.md).
 
 ## §0 Resume here
-_last update: 2026-10-11 · CMB-003_
-- Phase: markup gate + design test done; awaiting chat verdict before any production push
-- Last confirmed (local main): CMB-003 STEPS 0–2 (0f30a3a R5 + impeccable 0.1.14 keep, 1e5b04f markup repair on 21 pages, e80ab70 BMI scale fix, a12dc96 anti-slop review) — done; chat renders will verify
-- In flight (handed, NOT confirmed): CMB-003 STEP 3 — Impeccable design test for `/men-bmi-calculator/` on branch `test/impeccable-men` (3c834c1); layout `unverified` (box has no browser)
-- Next action: chat's verdict on CMB-003 (markup + men design); project chat's next ID is CMB-004
-- Waiting on owner: push `main` to `review/cmb-003` + `test/impeccable-men` for preview deploys (production untouched until chat OK); eventually the IndexNow / Search Console / Bing round
+_last update: 2026-10-11 · CMB-004_
+- Phase: markup repair v2 applied; CMB-003 Impeccable test closed; ready for production push
+- Last confirmed (local main, done): CMB-003 STEPS 0–2 (0f30a3a, 1e5b04f, e80ab70, a12dc96, 6670731) + CMB-004 MARKUP-V2 (7c22067). Chat rendered CMB-003 at 390 and 1280 px and rejected STEP 1's repair as nested-wrong; CMB-004 supersedes it with structure-correct markup. CMB-003's scale CSS (STEP 1f) and the anti-slop review stand.
+- In flight (handed, NOT confirmed): none. `test/impeccable-men` deleted locally; remote copy awaits the owner's GitHub delete.
+- Next action: owner pushes `main` (production); then deletes `review/cmb-003` and `test/impeccable-men` on GitHub. Project chat's next ID is CMB-005.
+- Waiting on owner: production push of `main`; GitHub branch deletes; eventually the IndexNow / Search Console / Bing round (D-07).
 - Open questions:
   - Rebuilt data/tool pages built 2026-10-02…10-08 show "Reviewed <date>" or "Updated <date>" in the byline, conflicting with D-04 (no visible review date) — keep "Updated", or remove both?
   - GitHub repo `Mapstor/calculatemybmi` is public (checked 2026-10-10): everything committed (incl. `DEVLOG.md`, `.claude/`, `research/`, `CLAIMS-DECISIONS*.csv`) is world-readable on GitHub even though `.vercelignore` keeps it off the production domain — owner decides whether to make the repo private.
@@ -68,15 +68,22 @@ _last update: 2026-10-11 · CMB-003_
 - Content batches ride in `research/<batch>/`; only their `apply_build.py` writes files. Never edit a batch-managed file by hand mid-flow — the hash-guarded replacements will refuse the next run.
 - The box has no browser — layout, hover and viewport-specific behaviour are `unverified` until Marko confirms with Chrome DevTools on Mac 2 (or impeccable detect with --viewport).
 - `scripts/check_structure.py` enforces balanced tags through `scripts/check_markup.py` since CMB-003 — a batch whose patch drops a closing tag fails the 40/40 gate. Use `scripts/check_markup.py --text FILE` before vs after to prove which text a batch changed.
+- Balanced tags can still be nested wrong. Since CMB-004 `scripts/check_markup.py` adds three structure checks — `block-in-heading`, `outside-container`, `content-in-calculator` — all run from the 40/40 gate.
+- Markup and layout changes need a render check; the box has no browser, so chat renders a pushed branch. Patch whole elements, never text that runs across tag boundaries — that is how the 21 CMB-003 pages broke.
 
 ## §5 Backlog (priority order)
 - [P1] G2 claim-by-claim rewrites of 15 older guides: `bmi-and-health-risks`, `bmi-and-metabolism`, `bmi-limitations`, `bmi-tracking-guide`, `bmi-chart-explained`, `bmi-chart-men`, `bmi-chart-women`, `bmi-formula`, `bmi-history`, `healthy-bmi-range`, `how-to-lower-bmi`, `body-fat-vs-bmi`, `underweight-bmi-risks`, `waist-to-height-ratio`, `bmi-by-age`.
 - [P1] After [P1] guides: owner push → final IndexNow / Search Console / Bing submission round (D-07).
+- [P1] `/women-bmi-calculator/` and `/new-bmi-calculator/` lost their **Key Takeaways** box, **Medical Disclaimer** and the "X lbs above/below the healthy range" line (the weight-diff element) in `a83d1f7` on 2026-09-27 — restore them.
+- [P1] Review text CMB-004 made visible again (unseen since `a83d1f7`): `/new-bmi-calculator/` (whole article; its FAQ reads "see's analysis of BMI usefulness") and `/blog/bmi-limitations/` (a "Muscle Density / Fat Density" chart with no bars, a metabolic-health chart with clipped labels, "and other institutions has identified…" with its subject missing, a bare "Source: World Health Organization" line).
+- [P1] Calculator inputs on the other calculator pages have no programmatic `for`/`id` — apply the men-page pattern.
 - [P2] Anti-slop pass over every page rewritten in chat before the anti-slop-prose skill was installed. Men-page review (CMB-003 STEP 2) = **31 tells over ~3,100 words** — see `audit/cmb-003/anti-slop-men.md`.
 - [P2] Resolve §0 open question on "Reviewed/Updated" byline (D-04) sitewide.
 - [P2] `(teaser)` leaks into an H2 on `/men-bmi-calculator/` and `/women-bmi-calculator/` ("Healthy weight range for men (teaser)").
 - [P2] On `/men-bmi-calculator/`: the "BMI Calculator by Age" and "BMI by age guide" links both point to `/age-bmi-calculator/`; the "Body Fat Percentage vs BMI for Men" section lost its heading.
 - [P2] `/blog/bmi-and-metabolism/`: `theoverview` is glued together; info cards carry a heading with no body (e.g. "Reduced BMR").
+- [P2] `/lean-body-mass/`: the "Methods to Measure Body Composition" section lost its heading; the composition figure has two captions. `/women-bmi-calculator/`: the "Rows 18–64 … Row 65+" note describes a removed table. `/blog/bmi-categories/`: the category range chart sizes its zones with BMI values as flex weights (the same bug the scale had). `/blog/bmi-history/` references: "WHO: Obesity and Overweight Fact Sheet" has no link and ": How useful is BMI?" lost its source name.
+- [P2] Impeccable design candidates (owner decides, project chat implements in `styles.css` sitewide — never per page): links `#0e7490` (4.9:1) instead of `#0891b2` (3.7:1); flat related-guide / other-calculator lists instead of cards-in-cards; Healthy Min/Max values that don't break mid-unit at 390 px; 12 px scale labels; amber callout headings `#854d0e` instead of `#ca8a04`.
 - [P3] Homepage `<title>` is 68 chars (truncated in SERP) — decide after Search Console data lands in the final round.
 - [P3] `/blog/bmi-for-athletes/` is still short (~700 words after T1 rebuild) — candidate for a sourced expansion.
 - [P3] Registry debt in `research/data-sources.csv` — rows missing for older guides.
@@ -258,6 +265,15 @@ _last update: 2026-10-11 · CMB-003_
 - Unverified: layout, hover, 390 px wrap, menu behaviour — the box has no browser; needs Marko's preview-deploy renders of `review/cmb-003` + `test/impeccable-men`.
 - Commits: 0f30a3a (R5 + impeccable kept), 1e5b04f (markup + check_structure gate), e80ab70 (scale CSS), a12dc96 (anti-slop review), 3c834c1 (men design — on branch `test/impeccable-men`). Pushed: no.
 - Notes: STEP 3 adds no detector ignores; R3 exception candidates listed in `audit/cmb-003/impeccable-men.md`. Anti-slop pass counted **31 tells** on `/men-bmi-calculator/` body prose (~3,100 words).
+
+### 2026-10-11 · CMB-004 MARKUP-V2 · chat → CC · done
+- What: applied the skills chat's `research/cmb-004-markup/` package — a structure-correct supersession of CMB-003 STEP 1's tag repair. 20 pages rebuilt from their production versions so each missing closing tag goes back where the element's content ends (bold labels, the homepage h2, card and FAQ items, calculator and results boxes); leftover closers of removed wrappers deleted; one emptied section removed on `/lean-body-mass/`; the Sources block on `/blog/bmi-history/` moved inside `.container`. `/men-bmi-calculator/`: the five input `id`s + `<label for>` pattern from the CMB-003 test kept and shipped; the first H3 ("BMI Distribution Among U.S. Adult Men") promoted to H2 (skipped-heading fix). `scripts/check_markup.py` gained three structure checks — `block-in-heading`, `outside-container`, `content-in-calculator`; `check_structure.py` already runs it, so the 40/40 gate enforces them from now on. `.gitignore` gained `__pycache__/`. Closed the CMB-003 test: local `test/impeccable-men` deleted (remote awaits owner's GitHub delete). `assets/css/men.css` never reached main.
+- CMB-003 STEP 1 status: **superseded** here (balanced but nested wrong on chat's render — 11 guides' text out of `.container`, the homepage h2 still holding its paragraph and table, four calculator pages' articles still inside the calculator card). CMB-003's scale CSS (STEP 1f) and the anti-slop review stand. **CMB-003 STEP 3 verdict: partial.** Kept and shipped here: the 5 input `for`/`id` labels and the h3→h2 fix. Rejected: `assets/css/men.css` — recoloured whole callout paragraphs brown and red while the low-contrast amber heading stayed, left a purple heading on a box it turned cyan, darkened the CTA off-brand, 65-char measure left ragged cards, styled through inline-style substrings with `!important` so none of it was reusable, and missed the text-against-the-screen-edge bug. Detector on the men page at 390 px (chat renders): live 65, test branch 42, CMB-004 60 (edge 3 → 0, skipped heading 1 → 0).
+- Files: `.gitignore`, `scripts/check_markup.py`, `research/cmb-004-markup/` (apply_build.py + manifest + files/* mirrors), and 20 page HTMLs: `/index.html`, `/kids-bmi-calculator/`, `/lean-body-mass/`, `/men-bmi-calculator/`, `/new-bmi-calculator/`, `/women-bmi-calculator/`, `/calculators/`, `/ideal-weight/`, and the 12 `/blog/*` guides.
+- Verified (CMB-004 FIX.md gates): dry-run `0 new / 22 replaced / 0 edits / 0 deletions`; `python3 scripts/check_structure.py` → **40/40**; `python3 research/f1/verify.py` → clean; `scripts/check_markup.py` on all 41 sitemap pages + `404.html` → **0 issues each**; `--text` of each of the 20 changed pages vs `origin/main`: **0 diffs**; negative test on `origin/main:index.html` → exits 1 and lists `block-in-heading`, `block-under-emph`, `implicit-close`.
+- Verified (layout, from chat's Chromium renders at 390 and 1280 px): bold-bleed paragraphs 393 → 43 (intended bold only); text touching the screen edge 602 → 0; hidden article text 132 → 2 (both intended — the New BMI results heading before Calculate, and a method note in an inactive panel); sections inside calculators 35 → 0; headings holding block content 1 → 0; pages with sideways scroll 1 → 0.
+- Commits: 7c22067 (markup v2 + men labels + structure gate). Pushed: no (owner pushes `main` next).
+- Notes: `scripts/__pycache__/` added to `.gitignore` because `check_structure.py` now imports `check_markup.py`.
 
 ## §7 History & archive
 - 2026-02 · Initial commit of BMI calculator site; GA4 + webmaster verification added (78f9434, 92b3baa).
