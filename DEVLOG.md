@@ -2,14 +2,15 @@
 > Handoff file. Read §0–§5 and the last 10 entries of §6 before any work. Rules: devlog skill (.claude/skills/devlog/SKILL.md).
 
 ## §0 Resume here
-_last update: 2026-10-09 · CMB-001_
+_last update: 2026-10-11 · CMB-002_
 - Phase: content rewrites — G2 pass of older guides
-- Last confirmed: CMB-001 DEVLOG-INIT — handoff log + devlog/impeccable/anti-slop setup — done (this commit)
+- Last confirmed: G2g lbm-rewrite (661c24c), G2h women-rewrite (f0b0bce), G2i men-rewrite (f5e0b93), CMB-001 DEVLOG-INIT (38c5bfc) — all live (pushed 2026-10-10, production spot-checks pass)
 - In flight (handed, NOT confirmed): none
-- Next action: CMB-002 — start G2 claim-by-claim rewrites of the 15 older guides (list in §5 [P1])
-- Waiting on owner: push origin/main → HEAD (3 commits ahead: 661c24c, f0b0bce, f5e0b93); eventually IndexNow / Search Console / Bing final round
+- Next action: CMB-003 — start G2 claim-by-claim rewrites of the 15 older guides (list in §5 [P1])
+- Waiting on owner: final IndexNow / Search Console / Bing round (D-07), after all [P1] guides land
 - Open questions:
   - Rebuilt data/tool pages built 2026-10-02…10-08 show "Reviewed <date>" or "Updated <date>" in the byline, conflicting with D-04 (no visible review date) — keep "Updated", or remove both?
+  - GitHub repo `Mapstor/calculatemybmi` is public (checked 2026-10-10): everything committed (incl. `DEVLOG.md`, `.claude/`, `research/`, `CLAIMS-DECISIONS*.csv`) is world-readable on GitHub even though `.vercelignore` keeps it off the production domain — owner decides whether to make the repo private.
 
 ## §1 Site card
 - Domain · status · Raptive: calculatemybmi.net · live · Raptive ads live since late Sept 2026 (CMP owned by Raptive)
@@ -228,6 +229,17 @@ _last update: 2026-10-09 · CMB-001_
   - Layout verification `unverified` — no browser in box; Marko to run `.claude/skills/impeccable/scripts/impeccable detect --viewport 390x844 URL` on Mac 2 against localhost or the production URL.
 - Commit: this prompt's commit (pushed: no).
 - Notes: `.claude/settings.local.json` NOT committed (local-only). `.claude/skills/impeccable/scripts/bin/` NOT committed (compiled binaries, platform-specific). `.impeccable/config.local.json` absent at commit time but ignored going forward.
+
+### 2026-10-11 · CMB-002 LIVE-SYNC · chat → CC · done
+- What: record that owner pushed `7e870be..38c5bfc` to `origin/main` on 2026-10-10. Flips G2g lbm-rewrite (661c24c), G2h women-rewrite (f0b0bce), G2i men-rewrite (f5e0b93) and CMB-001 DEVLOG-INIT (38c5bfc) from `done` to `live` (status change recorded here; past entries left untouched per devlog append-only rule).
+- Files: `DEVLOG.md` only.
+- Verified (production checks, from chat 2026-10-10):
+  - `/lean-body-mass/` — Hume 54.4 kg at 175 cm / 75 kg and the 1966 attribution present.
+  - `/men-bmi-calculator/` — "US men by the numbers" section present.
+  - `/women-bmi-calculator/` — "US women by the numbers" section + 33.4% + 38.7% present; removed phrases absent.
+  - `/DEVLOG.md`, `/.claude/skills/devlog/SKILL.md`, `/CLAIMS-DECISIONS.csv`, `/research/HANDOFF.md` — all return not-found on the production domain (`.vercelignore` is working).
+- Commit: this prompt's commit (pushed: no).
+- Notes: `Mapstor/calculatemybmi` is a **public** GitHub repo (checked 2026-10-10) — the Vercel exclusions keep internal files off the live domain but leave them world-readable on GitHub. Logged as a §0 open question for the owner.
 
 ## §7 History & archive
 - 2026-02 · Initial commit of BMI calculator site; GA4 + webmaster verification added (78f9434, 92b3baa).
