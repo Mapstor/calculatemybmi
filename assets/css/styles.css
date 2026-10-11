@@ -133,13 +133,20 @@ main { flex: 1; padding: 2rem 0 3rem; }
 .bmi-scale { margin: 1.5rem 0; }
 .bmi-scale-bar { display: flex; height: 24px; border-radius: var(--radius-full); overflow: hidden; position: relative; }
 .bmi-scale-segment { height: 100%; display: flex; align-items: center; justify-content: center; font-size: 0.6875rem; font-weight: 600; color: white; }
-.bmi-scale-segment.underweight { background: var(--underweight); width: 18.5%; }
-.bmi-scale-segment.normal { background: var(--normal); width: 25%; }
-.bmi-scale-segment.overweight { background: var(--overweight); width: 16.5%; }
+.bmi-scale-segment.underweight { background: var(--underweight); width: 14%; }
+.bmi-scale-segment.normal { background: var(--normal); width: 26%; }
+.bmi-scale-segment.overweight { background: var(--overweight); width: 20%; }
 .bmi-scale-segment.obese { background: var(--obese); width: 20%; }
 .bmi-scale-segment.obese-severe { background: var(--obese-severe); width: 20%; }
 .bmi-scale-marker { position: absolute; top: -8px; width: 4px; height: 40px; background: var(--gray-900); border-radius: 2px; transform: translateX(-50%); transition: left 0.3s ease; }
-.bmi-scale-labels { display: flex; justify-content: space-between; margin-top: 0.5rem; font-size: 0.6875rem; color: var(--gray-500); }
+.bmi-scale-labels { position: relative; height: 1rem; margin-top: 0.5rem; font-size: 0.6875rem; color: var(--gray-500); }
+.bmi-scale-labels span { position: absolute; transform: translateX(-50%); }
+.bmi-scale-labels span:nth-child(1) { left: 0; transform: translateX(0); }
+.bmi-scale-labels span:nth-child(2) { left: 14%; }
+.bmi-scale-labels span:nth-child(3) { left: 40%; }
+.bmi-scale-labels span:nth-child(4) { left: 60%; }
+.bmi-scale-labels span:nth-child(5) { left: 80%; }
+.bmi-scale-labels span:nth-child(6) { left: 100%; transform: translateX(-100%); }
 
 /* Results Grid */
 .results-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; margin-top: 1rem; }
