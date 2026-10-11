@@ -6,8 +6,7 @@ function init() {
   setupTabs();
   setupCalculateButtons();
   setupUnitToggles();
-  setupFAQ();
-  // Mobile menu is handled by each page's inline script; binding it here too made one tap open and close it.
+  // FAQ accordions and the mobile menu are wired by each page's inline script; binding them here too made one tap open and close them.
 }
 
 function setupTabs() {
@@ -77,7 +76,12 @@ function calculateBMI(weightLbs, heightInches) {
   return (weightLbs / (heightInches * heightInches)) * 703;
 }
 
+// BMI is shown to one decimal; categories, ranges and tables all use that same rounded value.
+function round1(x) { return Math.round(x * 10 + 1e-9) / 10; }
+function bmiPrime(bmi) { const r = round1(bmi); return (r < 25 ? Math.min(Math.round(r * 4) / 100, 0.99) : Math.round(r * 4) / 100).toFixed(2); }
+
 function getBMICategory(bmi) {
+  bmi = round1(bmi);
   if (bmi < 16) return { category: 'Severe Thinness', class: 'underweight', range: 'Below 16', risk: 'Very High' };
   if (bmi < 17) return { category: 'Moderate Thinness', class: 'underweight', range: '16 - 16.9', risk: 'High' };
   if (bmi < 18.5) return { category: 'Underweight', class: 'underweight', range: '17 - 18.4', risk: 'Moderate' };
@@ -88,10 +92,44 @@ function getBMICategory(bmi) {
   return { category: 'Obese (Class III)', class: 'obese-severe', range: '40+', risk: 'Extremely High' };
 }
 
+// Whole-unit weights whose BMI, rounded to one decimal, sits inside a band (the rule the BMI charts use).
+// BMI 18.45 rounds up to 18.5 and 24.95 rounds up to 25.0, so the exact limits are cut-off -0.05 and +0.05.
+function weightBounds(heightInches, bmiLo, bmiHi) {
+  const k = heightInches * heightInches / 703;
+  const lo = (bmiLo - 0.05) * k, hi = (bmiHi + 0.05) * k;
+  return {
+    loLb: lo, hiLb: hi,
+    minLb: Math.ceil(lo - 1e-9), maxLb: Math.ceil(hi - 1e-9) - 1,
+    minKg: Math.ceil(lo / 2.20462 - 1e-9), maxKg: Math.ceil(hi / 2.20462 - 1e-9) - 1
+  };
+}
+
 function getHealthyWeightRange(heightInches) {
-  const minWeight = (18.5 * heightInches * heightInches) / 703;
-  const maxWeight = (24.9 * heightInches * heightInches) / 703;
-  return { min: minWeight, max: maxWeight };
+  const b = weightBounds(heightInches, 18.5, 24.9);
+  b.min = b.minLb; b.max = b.maxLb;
+  return b;
+}
+
+// Healthy-range limit or band in the user's units (alt = the other unit), and the distance from it.
+// Limits are whole numbers in the user's unit; the bracketed value converts that same number.
+function fmtBound(b, which, alt) {
+  const lb = which === 'min' ? b.minLb : b.maxLb, kg = which === 'min' ? b.minKg : b.maxKg;
+  if (!alt) return CMB_METRIC ? kg + ' kg' : lb + ' lbs';
+  return CMB_METRIC ? Math.round(kg * 2.20462) + ' lbs' : (lb / 2.20462).toFixed(1) + ' kg';
+}
+function fmtBand(b, alt) {
+  if (!alt) return CMB_METRIC ? b.minKg + '-' + b.maxKg + ' kg' : b.minLb + '-' + b.maxLb + ' lbs';
+  return CMB_METRIC ? Math.round(b.minKg * 2.20462) + '-' + Math.round(b.maxKg * 2.20462) + ' lbs' : (b.minLb / 2.20462).toFixed(1) + '-' + (b.maxLb / 2.20462).toFixed(1) + ' kg';
+}
+function bandGap(b, weightLbs) {
+  if (weightLbs < b.loLb) return { dir: 'below', lbs: CMB_METRIC ? (b.minKg - lbsToKg(weightLbs)) * 2.20462 : b.minLb - weightLbs };
+  if (weightLbs >= b.hiLb) return { dir: 'above', lbs: CMB_METRIC ? (lbsToKg(weightLbs) - b.maxKg) * 2.20462 : weightLbs - b.maxLb };
+  return { dir: 'inside', lbs: 0 };
+}
+function healthyRangeText(b, weightLbs) {
+  const g = bandGap(b, weightLbs);
+  if (g.dir === 'inside') return 'Within the healthy weight range for your height';
+  return fmtD(g.lbs) + ' (' + fmtDalt(g.lbs) + ') ' + g.dir + ' the healthy range for your height';
 }
 
 function getWeightForBMI(targetBMI, heightInches) {
@@ -166,9 +204,7 @@ function calculateWomen() {
   if (bmi <= 0) return;
   const category = getBMICategory(bmi);
   const healthyRange = getHealthyWeightRange(heightInches);
-  const idealMin = (19 * heightInches * heightInches) / 703;
-  const idealMax = (24 * heightInches * heightInches) / 703;
-  displayBMIResults('women', bmi, category, healthyRange, heightInches, weightLbs, { idealMin, idealMax, sex: 'female' });
+  displayBMIResults('women', bmi, category, healthyRange, heightInches, weightLbs, { sex: 'female' });
 }
 
 function calculateMen() {
@@ -179,9 +215,7 @@ function calculateMen() {
   if (bmi <= 0) return;
   const category = getBMICategory(bmi);
   const healthyRange = getHealthyWeightRange(heightInches);
-  const idealMin = (20 * heightInches * heightInches) / 703;
-  const idealMax = (25 * heightInches * heightInches) / 703;
-  displayBMIResults('men', bmi, category, healthyRange, heightInches, weightLbs, { idealMin, idealMax, sex: 'male' });
+  displayBMIResults('men', bmi, category, healthyRange, heightInches, weightLbs, { sex: 'male' });
 }
 
 function calculateByAge() {
@@ -193,7 +227,7 @@ function calculateByAge() {
   if (bmi <= 0) return;
   let adjustedRange;
   if (age < 65) adjustedRange = '18.5 - 24.9 (WHO adult range)';
-  else adjustedRange = '18.5 - 24.9 (WHO) &middot; 23 - 33 lowest-mortality plateau in Winter 2014 meta-analysis';
+  else adjustedRange = '18.5 - 24.9 (WHO adult range) \u00b7 lowest mortality observed across BMI 23-33 in adults 65+ (Winter 2014); observational, not a target';
   const category = getBMICategory(bmi);
   const healthyRange = getHealthyWeightRange(heightInches);
   displayBMIResults('age', bmi, category, healthyRange, heightInches, weightLbs, { adjustedRange, age });
@@ -358,7 +392,7 @@ function calculateNewBMI() {
   const heightM = inchesToCm(heightInches) / 100;
   const traditionalBMI = calculateBMI(weightLbs, heightInches);
   const newBMI = 1.3 * weightKg / Math.pow(heightM, 2.5);
-  const diff = newBMI - traditionalBMI;
+  const diff = round1(newBMI) - round1(traditionalBMI);
   const traditionalCat = getBMICategory(traditionalBMI);
   const newCat = getBMICategory(newBMI);
   const healthyRange = getHealthyWeightRange(heightInches);
@@ -368,6 +402,7 @@ function calculateNewBMI() {
 /* ===== SHARED HTML GENERATORS ===== */
 
 function genClassificationTable(bmi) {
+  bmi = round1(bmi);
   const cats = [
     ['Severe Thinness', '< 16', '#3b82f6'],
     ['Moderate Thinness', '16 - 16.9', '#60a5fa'],
@@ -395,37 +430,38 @@ function genClassificationTable(bmi) {
 function genKeyMetrics(bmi, heightInches, weightLbs, healthyRange, extra) {
   const weightKg = lbsToKg(weightLbs);
   const heightCm = inchesToCm(heightInches);
-  const bmiPrime = (bmi / 25).toFixed(2);
+  const r = round1(bmi), prime = bmiPrime(r);
   const ponderal = (weightKg / Math.pow(heightCm / 100, 3)).toFixed(1);
   let metrics = `
     <div class="er-metric"><div class="er-metric-label">BMI</div><div class="er-metric-value" style="color:${catColor(getBMICategory(bmi).class)};">${bmi.toFixed(1)}</div></div>
-    <div class="er-metric"><div class="er-metric-label">BMI Prime</div><div class="er-metric-value">${bmiPrime}</div><div class="er-metric-sub">${bmiPrime < 1 ? 'Below upper normal' : 'Above upper normal'}</div></div>
+    <div class="er-metric"><div class="er-metric-label">BMI Prime</div><div class="er-metric-value">${prime}</div><div class="er-metric-sub">${r < 25 ? 'Under the overweight cut-off' : 'At or over the overweight cut-off'}</div></div>
     <div class="er-metric"><div class="er-metric-label">Ponderal Index</div><div class="er-metric-value">${ponderal}</div><div class="er-metric-sub">kg/m&sup3;</div></div>
     <div class="er-metric"><div class="er-metric-label">Weight</div><div class="er-metric-value">${fmtW(weightLbs)}</div><div class="er-metric-sub">${fmtWalt(weightLbs)}</div></div>
     <div class="er-metric"><div class="er-metric-label">Height</div><div class="er-metric-value">${fmtH(heightInches)}</div><div class="er-metric-sub">${fmtHalt(heightInches)}</div></div>
-    <div class="er-metric"><div class="er-metric-label">Healthy Range</div><div class="er-metric-value">${fmtRange(healthyRange.min, healthyRange.max)}</div><div class="er-metric-sub">${fmtRangeAlt(healthyRange.min, healthyRange.max)}</div></div>`;
+    <div class="er-metric"><div class="er-metric-label">Healthy Range</div><div class="er-metric-value">${fmtBand(healthyRange)}</div><div class="er-metric-sub">${fmtBand(healthyRange, true)}</div></div>`;
   return `<div class="er-metrics">${metrics}</div>`;
 }
 
 function genWeightMilestones(bmi, heightInches, weightLbs) {
+  const healthy = weightBounds(heightInches, 18.5, 24.9);
+  const from = cut => weightBounds(heightInches, cut, 99);
   const targets = [
-    { label: 'Underweight threshold', bmiVal: 18.5 },
-    { label: 'Normal low end', bmiVal: 20 },
-    { label: 'Normal midpoint', bmiVal: 22 },
-    { label: 'Normal upper end', bmiVal: 24.9 },
-    { label: 'Overweight threshold', bmiVal: 25 },
-    { label: 'Obese threshold', bmiVal: 30 },
-    { label: 'Obese Class II', bmiVal: 35 },
+    { label: 'Healthy range starts', bmiVal: 18.5, lb: healthy.minLb, kg: healthy.minKg },
+    { label: 'Healthy range ends', bmiVal: 24.9, lb: healthy.maxLb, kg: healthy.maxKg },
+    { label: 'Overweight starts', bmiVal: 25, lb: from(25).minLb, kg: from(25).minKg },
+    { label: 'Obesity starts', bmiVal: 30, lb: from(30).minLb, kg: from(30).minKg },
+    { label: 'Class 2 obesity starts', bmiVal: 35, lb: from(35).minLb, kg: from(35).minKg },
+    { label: 'Class 3 obesity starts', bmiVal: 40, lb: from(40).minLb, kg: from(40).minKg },
   ];
   let rows = '';
   targets.forEach(t => {
-    const w = getWeightForBMI(t.bmiVal, heightInches);
+    const w = CMB_METRIC ? t.kg * 2.20462 : t.lb;
     const diff = w - weightLbs;
     const dU = CMB_METRIC ? Math.round(lbsToKg(diff)) : Math.round(diff), uL = CMB_METRIC ? ' kg' : ' lbs';
     const diffStr = dU > 0 ? '+' + dU + uL : dU < 0 ? dU + uL : '—';
     const color = Math.abs(diff) < 1 ? 'var(--primary-dark)' : diff > 0 ? 'var(--gray-600)' : 'var(--gray-600)';
     const isCurrent = Math.abs(bmi - t.bmiVal) < 2.5;
-    rows += `<tr${isCurrent ? ' style="background:var(--gray-50);"' : ''}><td>${t.label}</td><td style="text-align:center;font-weight:600;">${t.bmiVal}</td><td style="text-align:center;">${fmtW(w)} <span style="color:var(--gray-500);font-size:0.75rem;">(${fmtWalt(w)})</span></td><td style="text-align:center;color:${color};font-weight:600;">${diffStr}</td></tr>`;
+    rows += `<tr${isCurrent ? ' style="background:var(--gray-50);"' : ''}><td>${t.label}</td><td style="text-align:center;font-weight:600;">${t.bmiVal}</td><td style="text-align:center;">${CMB_METRIC ? t.kg + ' kg' : t.lb + ' lbs'} <span style="color:var(--gray-500);font-size:0.75rem;">(${fmtWalt(w)})</span></td><td style="text-align:center;color:${color};font-weight:600;">${diffStr}</td></tr>`;
   });
   return `<table class="er-table"><thead><tr><th>Milestone</th><th style="text-align:center;">BMI</th><th style="text-align:center;">Weight Needed</th><th style="text-align:center;">Change</th></tr></thead><tbody>${rows}</tbody></table>`;
 }
@@ -437,7 +473,7 @@ function genWhatIf(bmi, heightInches, weightLbs) {
   changes.forEach(c => {
     const newW = weightLbs + (CMB_METRIC ? kgToLbs(c) : c);
     if (newW <= 0) return;
-    const newBmi = calculateBMI(newW, heightInches);
+    const newBmi = round1(calculateBMI(newW, heightInches));
     const cat = getBMICategory(newBmi);
     const isCurrent = c === 0;
     rows += `<tr${isCurrent ? ' class="er-active"' : ''}><td style="text-align:center;font-weight:${isCurrent ? '700' : '400'};">${c === 0 ? 'Current' : (c > 0 ? '+' + c : c) + unit}</td><td style="text-align:center;">${fmtW(newW)}</td><td style="text-align:center;font-weight:600;color:${catColor(cat.class)};">${newBmi.toFixed(1)}</td><td><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${catColor(cat.class)};margin-right:4px;vertical-align:middle;"></span>${cat.category}</td></tr>`;
@@ -475,32 +511,35 @@ function genHealthRisks(bmi) {
 }
 
 function genWeightProgressBar(weightLbs, healthyRange) {
-  const min = healthyRange.min * 0.75;
-  const max = healthyRange.max * 1.35;
+  const zMin = CMB_METRIC ? healthyRange.minKg * 2.20462 : healthyRange.minLb;
+  const zMax = CMB_METRIC ? healthyRange.maxKg * 2.20462 : healthyRange.maxLb;
+  const min = zMin * 0.75;
+  const max = zMax * 1.35;
   const range = max - min;
   const pos = Math.max(0, Math.min(100, ((weightLbs - min) / range) * 100));
-  const hMinPos = ((healthyRange.min - min) / range) * 100;
-  const hMaxPos = ((healthyRange.max - min) / range) * 100;
+  const hMinPos = ((zMin - min) / range) * 100;
+  const hMaxPos = ((zMax - min) / range) * 100;
   return `<div style="position:relative;height:32px;background:var(--gray-100);border-radius:16px;margin:0.75rem 0;overflow:visible;">
     <div style="position:absolute;left:${hMinPos}%;width:${hMaxPos - hMinPos}%;height:100%;background:#dcfce7;border-radius:16px;"></div>
     <div style="position:absolute;left:${pos}%;top:-4px;width:20px;height:40px;background:var(--primary-dark);border-radius:10px;transform:translateX(-50%);border:3px solid white;box-shadow:0 2px 8px rgba(0,0,0,0.2);"></div>
-    <div style="position:absolute;left:${hMinPos}%;bottom:-20px;font-size:0.6875rem;color:var(--gray-500);transform:translateX(-50%);">${CMB_METRIC ? Math.round(lbsToKg(healthyRange.min)) : Math.round(healthyRange.min)}</div>
-    <div style="position:absolute;left:${hMaxPos}%;bottom:-20px;font-size:0.6875rem;color:var(--gray-500);transform:translateX(-50%);">${CMB_METRIC ? Math.round(lbsToKg(healthyRange.max)) : Math.round(healthyRange.max)}</div>
+    <div style="position:absolute;left:${hMinPos}%;bottom:-20px;font-size:0.6875rem;color:var(--gray-500);transform:translateX(-50%);">${CMB_METRIC ? healthyRange.minKg : healthyRange.minLb}</div>
+    <div style="position:absolute;left:${hMaxPos}%;bottom:-20px;font-size:0.6875rem;color:var(--gray-500);transform:translateX(-50%);">${CMB_METRIC ? healthyRange.maxKg : healthyRange.maxLb}</div>
     <div style="position:absolute;left:${pos}%;top:-22px;font-size:0.75rem;font-weight:700;color:var(--primary-dark);transform:translateX(-50%);">${fmtW(weightLbs)}</div>
   </div>`;
 }
 
 function genSummary(bmi, category, weightLbs, healthyRange, extra) {
   let text = '';
-  const rng = fmtRange(healthyRange.min, healthyRange.max);
+  const rng = fmtBand(healthyRange);
+  const gap = fmtD(bandGap(healthyRange, weightLbs).lbs);
   if (category.class === 'normal') {
     text = `Your BMI of <strong>${bmi.toFixed(1)}</strong> is in the <strong>healthy weight</strong> range (18.5 to under 25). At your height, that range is <strong>${rng}</strong>.`;
   } else if (category.class === 'underweight') {
-    text = `Your BMI of <strong>${bmi.toFixed(1)}</strong> is below 18.5, the <strong>underweight</strong> cut-off. At your height, the healthy range is <strong>${rng}</strong>, which starts <strong>${fmtD(healthyRange.min - weightLbs)}</strong> above your current weight. A doctor can tell you whether this is normal for you.`;
+    text = `Your BMI of <strong>${bmi.toFixed(1)}</strong> is below 18.5, the <strong>underweight</strong> cut-off. At your height, the healthy range is <strong>${rng}</strong>, which starts <strong>${gap}</strong> above your current weight. A doctor can tell you whether this is normal for you.`;
   } else if (category.class === 'overweight') {
-    text = `Your BMI of <strong>${bmi.toFixed(1)}</strong> is in the <strong>overweight</strong> range (25 to under 30). At your height, the healthy range is <strong>${rng}</strong>; its top is <strong>${fmtD(weightLbs - healthyRange.max)}</strong> below your current weight. BMI can&rsquo;t tell muscle from fat, so a <a href="/body-fat-calculator/">body fat estimate</a> or a waist measurement adds useful context.`;
+    text = `Your BMI of <strong>${bmi.toFixed(1)}</strong> is in the <strong>overweight</strong> range (25 to under 30). At your height, the healthy range is <strong>${rng}</strong>; its top is <strong>${gap}</strong> below your current weight. BMI can&rsquo;t tell muscle from fat, so a <a href="/body-fat-calculator/">body fat estimate</a> or a waist measurement adds useful context.`;
   } else {
-    text = `Your BMI of <strong>${bmi.toFixed(1)}</strong> is in the <strong>${category.category}</strong> range. At your height, the healthy range is <strong>${rng}</strong>; its top is <strong>${fmtD(weightLbs - healthyRange.max)}</strong> below your current weight. A doctor can put this in context with your other health measures.`;
+    text = `Your BMI of <strong>${bmi.toFixed(1)}</strong> is in the <strong>${category.category}</strong> range. At your height, the healthy range is <strong>${rng}</strong>; its top is <strong>${gap}</strong> below your current weight. A doctor can put this in context with your other health measures.`;
   }
   if (extra?.sex === 'male') {
     text += ' <em>Note for men: if you carry a lot of muscle, BMI can overstate body fat. NIH guidelines treat a waist above 40 inches (102 cm) as higher risk for men.</em>';
@@ -523,6 +562,7 @@ function displayBMIResults(type, bmi, category, healthyRange, heightInches, weig
   const bmiCategoryEl = document.getElementById(type + '-bmi-category');
   const bmiRangeEl = document.getElementById(type + '-bmi-range');
   const resultCard = document.getElementById(type + '-result-card');
+  bmi = round1(bmi);
   if (bmiValueEl) bmiValueEl.textContent = bmi.toFixed(1);
   if (bmiCategoryEl) bmiCategoryEl.textContent = category.category;
   if (bmiRangeEl) bmiRangeEl.textContent = 'BMI Range: ' + category.range;
@@ -534,20 +574,10 @@ function displayBMIResults(type, bmi, category, healthyRange, heightInches, weig
   if (marker) marker.style.left = getScalePosition(bmi) + '%';
   const healthyMinEl = document.getElementById(type + '-healthy-min');
   const healthyMaxEl = document.getElementById(type + '-healthy-max');
-  if (healthyMinEl) healthyMinEl.textContent = fmtD(healthyRange.min) + ' (' + fmtDalt(healthyRange.min) + ')';
-  if (healthyMaxEl) healthyMaxEl.textContent = fmtD(healthyRange.max) + ' (' + fmtDalt(healthyRange.max) + ')';
+  if (healthyMinEl) healthyMinEl.textContent = fmtBound(healthyRange, 'min') + ' (' + fmtBound(healthyRange, 'min', true) + ')';
+  if (healthyMaxEl) healthyMaxEl.textContent = fmtBound(healthyRange, 'max') + ' (' + fmtBound(healthyRange, 'max', true) + ')';
   const weightDiffEl = document.getElementById(type + '-weight-diff');
-  if (weightDiffEl) {
-    if (weightLbs < healthyRange.min) {
-      var diff = Math.round(healthyRange.min - weightLbs);
-      weightDiffEl.textContent = fmtD(healthyRange.min - weightLbs) + ' (' + fmtDalt(healthyRange.min - weightLbs) + ') below the healthy range for your height';
-    }
-    else if (weightLbs > healthyRange.max) {
-      var diff = Math.round(weightLbs - healthyRange.max);
-      weightDiffEl.textContent = fmtD(weightLbs - healthyRange.max) + ' (' + fmtDalt(weightLbs - healthyRange.max) + ') above the healthy range for your height';
-    }
-    else weightDiffEl.textContent = 'Within the healthy weight range for your height';
-  }
+  if (weightDiffEl) weightDiffEl.textContent = healthyRangeText(healthyRange, weightLbs);
   if (extra.adjustedRange) {
     const adjustedEl = document.getElementById(type + '-adjusted-range');
     if (adjustedEl) adjustedEl.textContent = extra.adjustedRange;
@@ -584,7 +614,7 @@ function displayBMIResults(type, bmi, category, healthyRange, heightInches, weig
     const w = extra.sex === 'female' ? '35 inches (88 cm)' : '40 inches (102 cm)';
     const who = extra.sex === 'female' ? 'women' : 'men';
     html += `<div class="er-section"><h3><span class="er-icon">${extra.sex === 'female' ? '&#9792;' : '&#9794;'}</span> What else to check</h3>
-      <p style="font-size:0.875rem;color:var(--gray-600);margin:0 0 0.5rem;"><strong>Waist size:</strong> US clinical guidelines (NIH) treat a waist above ${w} as a sign of higher risk for ${who}, whatever the BMI.</p>
+      <p style="font-size:0.875rem;color:var(--gray-600);margin:0 0 0.5rem;"><strong>Waist size:</strong> US clinical guidelines (NIH) treat a waist above ${w} as a sign of higher risk for ${who}, mainly at a BMI of 25 to 34.9.</p>
       <p style="font-size:0.875rem;color:var(--gray-600);margin:0;"><strong>Body fat:</strong> estimate yours with the <a href="/body-fat-calculator/">body fat calculator</a> and see what&rsquo;s typical for your age on the <a href="/body-fat-percentage-chart/">body fat percentage chart</a>. For formula-based weight ranges, see the <a href="/ideal-weight/">ideal weight calculator</a>.</p>
     </div>`;
   }
@@ -607,7 +637,7 @@ function displayBMIResults(type, bmi, category, healthyRange, heightInches, weig
     html += `<div class="er-section"><h3><span class="er-icon">&#128197;</span> BMI by Age Group</h3>
       <p style="font-size:0.8125rem;color:var(--gray-500);margin:0 0 0.5rem;">WHO does not publish age-adjusted BMI cut-offs. Your age: <strong>${extra.age}</strong></p>
       <table class="er-table"><thead><tr><th>Age Range</th><th>WHO Adult Range</th><th>Notes</th></tr></thead><tbody>${rows}</tbody></table>
-      <p style="font-size:0.8125rem;color:var(--gray-500);margin:0.75rem 0 0;">Your range: <strong>${extra.adjustedRange}</strong>. Individual factors such as muscle mass, existing conditions, and fitness level matter more than BMI alone.</p>
+      <p style="font-size:0.8125rem;color:var(--gray-500);margin:0.75rem 0 0;">Adult BMI range: <strong>${extra.adjustedRange}</strong>. Individual factors such as muscle mass, existing conditions, and fitness level matter more than BMI alone.</p>
     </div>`;
   }
 
@@ -863,6 +893,7 @@ function displayLBMResults(type, formulas, fatMass, bodyFatPct, totalWeightKg, w
 /* ===== DISPLAY: NEW BMI RESULTS ===== */
 
 function displayNewBMIResults(type, traditionalBMI, newBMI, diff, traditionalCat, newCat, healthyRange, heightInches, weightLbs) {
+  traditionalBMI = round1(traditionalBMI); newBMI = round1(newBMI);
   const section = document.getElementById(type + '-results');
   if (!section) return;
 
@@ -895,20 +926,10 @@ function displayNewBMIResults(type, traditionalBMI, newBMI, diff, traditionalCat
   }
   const healthyMinEl = document.getElementById(type + '-healthy-min');
   const healthyMaxEl = document.getElementById(type + '-healthy-max');
-  if (healthyMinEl) healthyMinEl.textContent = fmtD(healthyRange.min) + ' (' + fmtDalt(healthyRange.min) + ')';
-  if (healthyMaxEl) healthyMaxEl.textContent = fmtD(healthyRange.max) + ' (' + fmtDalt(healthyRange.max) + ')';
+  if (healthyMinEl) healthyMinEl.textContent = fmtBound(healthyRange, 'min') + ' (' + fmtBound(healthyRange, 'min', true) + ')';
+  if (healthyMaxEl) healthyMaxEl.textContent = fmtBound(healthyRange, 'max') + ' (' + fmtBound(healthyRange, 'max', true) + ')';
   const weightDiffEl = document.getElementById(type + '-weight-diff');
-  if (weightDiffEl) {
-    if (weightLbs < healthyRange.min) {
-      var diff = Math.round(healthyRange.min - weightLbs);
-      weightDiffEl.textContent = fmtD(healthyRange.min - weightLbs) + ' (' + fmtDalt(healthyRange.min - weightLbs) + ') below the healthy range for your height';
-    }
-    else if (weightLbs > healthyRange.max) {
-      var diff = Math.round(weightLbs - healthyRange.max);
-      weightDiffEl.textContent = fmtD(weightLbs - healthyRange.max) + ' (' + fmtDalt(weightLbs - healthyRange.max) + ') above the healthy range for your height';
-    }
-    else weightDiffEl.textContent = 'Within the healthy weight range for your height';
-  }
+  if (weightDiffEl) weightDiffEl.textContent = healthyRangeText(healthyRange, weightLbs);
   section.classList.add('visible');
 
   // Extended results
@@ -929,7 +950,7 @@ function displayNewBMIResults(type, traditionalBMI, newBMI, diff, traditionalCat
       <div class="er-metric"><div class="er-metric-label">Difference</div><div class="er-metric-value" style="color:${Math.abs(diff) < 0.5 ? 'var(--gray-600)' : diff > 0 ? '#ef4444' : '#22c55e'};">${diff >= 0 ? '+' : ''}${diff.toFixed(2)}</div><div class="er-metric-sub">${Math.abs(diff) < 0.5 ? 'Minimal' : Math.abs(diff) < 1 ? 'Small' : 'Significant'}</div></div>
       <div class="er-metric"><div class="er-metric-label">Weight</div><div class="er-metric-value">${fmtW(weightLbs)}</div><div class="er-metric-sub">${fmtWalt(weightLbs)}</div></div>
       <div class="er-metric"><div class="er-metric-label">Height</div><div class="er-metric-value">${fmtH(heightInches)}</div><div class="er-metric-sub">${fmtHalt(heightInches)}</div></div>
-      <div class="er-metric"><div class="er-metric-label">BMI Prime</div><div class="er-metric-value">${(newBMI / 25).toFixed(2)}</div><div class="er-metric-sub">New formula basis</div></div>
+      <div class="er-metric"><div class="er-metric-label">BMI Prime</div><div class="er-metric-value">${bmiPrime(newBMI)}</div><div class="er-metric-sub">New formula basis</div></div>
     </div></div>`;
 
   // Side-by-side classification
@@ -938,7 +959,7 @@ function displayNewBMIResults(type, traditionalBMI, newBMI, diff, traditionalCat
       <tr><td>Formula</td><td style="text-align:center;">weight(kg) / height(m)&sup2;</td><td style="text-align:center;">1.3 &times; weight(kg) / height(m)<sup>2.5</sup></td></tr>
       <tr><td>Your BMI</td><td style="text-align:center;font-weight:700;color:${catColor(traditionalCat.class)};">${traditionalBMI.toFixed(1)}</td><td style="text-align:center;font-weight:700;color:${catColor(newCat.class)};">${newBMI.toFixed(1)}</td></tr>
       <tr><td>Category</td><td style="text-align:center;">${traditionalCat.category}</td><td style="text-align:center;">${newCat.category}</td></tr>
-      <tr><td>BMI Prime</td><td style="text-align:center;">${(traditionalBMI / 25).toFixed(2)}</td><td style="text-align:center;">${(newBMI / 25).toFixed(2)}</td></tr>
+      <tr><td>BMI Prime</td><td style="text-align:center;">${bmiPrime(traditionalBMI)}</td><td style="text-align:center;">${bmiPrime(newBMI)}</td></tr>
     </tbody></table></div>`;
 
   // Height divergence table
