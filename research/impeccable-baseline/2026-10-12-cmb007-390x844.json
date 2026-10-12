@@ -1,0 +1,416 @@
+{
+ "what": "impeccable detect --json --viewport 390x844, every sitemap page + 404, after CMB-007 (pilot merged, flat cyan-700 action buttons)",
+ "engine": "impeccable 0.1.14, Chromium 1194, chat 2026-10-12",
+ "total_findings": 734,
+ "by_rule": {
+  "nested-cards": 242,
+  "low-contrast": 218,
+  "side-tab": 69,
+  "ai-color-palette": 65,
+  "tiny-text": 37,
+  "skipped-heading": 27,
+  "heading-rhythm": 21,
+  "border-accent-on-rounded": 19,
+  "undersized-ui-text": 18,
+  "cramped-padding": 6,
+  "gray-on-color": 5,
+  "icon-tile-stack": 4,
+  "text-occlusion": 3
+ },
+ "note": "Baseline for the D-14 rollout: each page batch reports its before/after against this file.",
+ "pages": {
+  "/blog/bmi-chart-explained/": {
+   "findings": 76,
+   "advisory": 3,
+   "by_rule": {
+    "low-contrast": 55,
+    "undersized-ui-text": 12,
+    "skipped-heading": 4,
+    "gray-on-color": 2,
+    "side-tab": 1,
+    "tiny-text": 1,
+    "ai-color-palette": 1
+   }
+  },
+  "/calculators/": {
+   "findings": 74,
+   "advisory": 5,
+   "by_rule": {
+    "nested-cards": 29,
+    "low-contrast": 27,
+    "side-tab": 16,
+    "skipped-heading": 1,
+    "ai-color-palette": 1
+   }
+  },
+  "/ideal-weight/": {
+   "findings": 60,
+   "advisory": 1,
+   "by_rule": {
+    "nested-cards": 40,
+    "ai-color-palette": 7,
+    "low-contrast": 6,
+    "side-tab": 5,
+    "tiny-text": 2
+   }
+  },
+  "/new-bmi-calculator/": {
+   "findings": 55,
+   "advisory": 0,
+   "by_rule": {
+    "nested-cards": 35,
+    "low-contrast": 14,
+    "tiny-text": 3,
+    "side-tab": 1,
+    "skipped-heading": 1,
+    "ai-color-palette": 1
+   }
+  },
+  "/": {
+   "findings": 50,
+   "advisory": 0,
+   "by_rule": {
+    "nested-cards": 40,
+    "cramped-padding": 4,
+    "side-tab": 3,
+    "skipped-heading": 2,
+    "gray-on-color": 1
+   }
+  },
+  "/age-bmi-calculator/": {
+   "findings": 36,
+   "advisory": 1,
+   "by_rule": {
+    "nested-cards": 23,
+    "low-contrast": 7,
+    "tiny-text": 3,
+    "side-tab": 1,
+    "cramped-padding": 1,
+    "skipped-heading": 1
+   }
+  },
+  "/women-bmi-calculator/": {
+   "findings": 32,
+   "advisory": 0,
+   "by_rule": {
+    "nested-cards": 24,
+    "ai-color-palette": 5,
+    "side-tab": 1,
+    "gray-on-color": 1,
+    "skipped-heading": 1
+   }
+  },
+  "/blog/bmi-limitations/": {
+   "findings": 27,
+   "advisory": 0,
+   "by_rule": {
+    "tiny-text": 14,
+    "ai-color-palette": 6,
+    "low-contrast": 5,
+    "side-tab": 1,
+    "skipped-heading": 1
+   }
+  },
+  "/blog/bmi-and-metabolism/": {
+   "findings": 25,
+   "advisory": 0,
+   "by_rule": {
+    "ai-color-palette": 12,
+    "low-contrast": 9,
+    "heading-rhythm": 2,
+    "side-tab": 1,
+    "skipped-heading": 1
+   }
+  },
+  "/blog/body-fat-vs-bmi/": {
+   "findings": 25,
+   "advisory": 0,
+   "by_rule": {
+    "low-contrast": 10,
+    "ai-color-palette": 10,
+    "tiny-text": 2,
+    "skipped-heading": 2,
+    "side-tab": 1
+   }
+  },
+  "/about/": {
+   "findings": 23,
+   "advisory": 0,
+   "by_rule": {
+    "nested-cards": 21,
+    "low-contrast": 2
+   }
+  },
+  "/blog/bmi-tracking-guide/": {
+   "findings": 22,
+   "advisory": 0,
+   "by_rule": {
+    "low-contrast": 6,
+    "ai-color-palette": 5,
+    "heading-rhythm": 5,
+    "text-occlusion": 3,
+    "side-tab": 1,
+    "tiny-text": 1,
+    "skipped-heading": 1
+   }
+  },
+  "/lean-body-mass/": {
+   "findings": 22,
+   "advisory": 0,
+   "by_rule": {
+    "nested-cards": 19,
+    "side-tab": 2,
+    "skipped-heading": 1
+   }
+  },
+  "/blog/how-to-lower-bmi/": {
+   "findings": 19,
+   "advisory": 0,
+   "by_rule": {
+    "low-contrast": 9,
+    "ai-color-palette": 6,
+    "heading-rhythm": 3,
+    "side-tab": 1
+   }
+  },
+  "/blog/bmi-formula/": {
+   "findings": 18,
+   "advisory": 0,
+   "by_rule": {
+    "low-contrast": 5,
+    "tiny-text": 4,
+    "ai-color-palette": 3,
+    "skipped-heading": 3,
+    "heading-rhythm": 2,
+    "side-tab": 1
+   }
+  },
+  "/blog/healthy-bmi-range/": {
+   "findings": 18,
+   "advisory": 0,
+   "by_rule": {
+    "low-contrast": 11,
+    "heading-rhythm": 2,
+    "skipped-heading": 2,
+    "side-tab": 1,
+    "tiny-text": 1,
+    "ai-color-palette": 1
+   }
+  },
+  "/blog/underweight-bmi-risks/": {
+   "findings": 18,
+   "advisory": 1,
+   "by_rule": {
+    "low-contrast": 9,
+    "icon-tile-stack": 4,
+    "side-tab": 2,
+    "ai-color-palette": 1,
+    "tiny-text": 1,
+    "skipped-heading": 1
+   }
+  },
+  "/blog/bmi-history/": {
+   "findings": 15,
+   "advisory": 0,
+   "by_rule": {
+    "low-contrast": 9,
+    "ai-color-palette": 2,
+    "heading-rhythm": 2,
+    "side-tab": 1,
+    "skipped-heading": 1
+   }
+  },
+  "/blog/bmi-categories/": {
+   "findings": 13,
+   "advisory": 0,
+   "by_rule": {
+    "side-tab": 3,
+    "heading-rhythm": 3,
+    "low-contrast": 2,
+    "ai-color-palette": 2,
+    "tiny-text": 1,
+    "gray-on-color": 1,
+    "skipped-heading": 1
+   }
+  },
+  "/blog/waist-to-height-ratio/": {
+   "findings": 12,
+   "advisory": 0,
+   "by_rule": {
+    "low-contrast": 4,
+    "ai-color-palette": 2,
+    "heading-rhythm": 2,
+    "skipped-heading": 2,
+    "side-tab": 1,
+    "tiny-text": 1
+   }
+  },
+  "/kids-bmi-calculator/": {
+   "findings": 12,
+   "advisory": 0,
+   "by_rule": {
+    "nested-cards": 6,
+    "low-contrast": 4,
+    "side-tab": 1,
+    "cramped-padding": 1
+   }
+  },
+  "/average-weight/": {
+   "findings": 10,
+   "advisory": 0,
+   "by_rule": {
+    "border-accent-on-rounded": 4,
+    "low-contrast": 3,
+    "undersized-ui-text": 2,
+    "side-tab": 1
+   }
+  },
+  "/obesity-rate-by-state/": {
+   "findings": 10,
+   "advisory": 1,
+   "by_rule": {
+    "side-tab": 5,
+    "border-accent-on-rounded": 4,
+    "low-contrast": 1
+   }
+  },
+  "/body-fat-calculator/": {
+   "findings": 9,
+   "advisory": 0,
+   "by_rule": {
+    "low-contrast": 4,
+    "undersized-ui-text": 3,
+    "side-tab": 2
+   }
+  },
+  "/body-fat-percentage-chart/": {
+   "findings": 8,
+   "advisory": 0,
+   "by_rule": {
+    "border-accent-on-rounded": 4,
+    "low-contrast": 2,
+    "undersized-ui-text": 1,
+    "side-tab": 1
+   }
+  },
+  "/blog/bmi-and-health-risks/": {
+   "findings": 7,
+   "advisory": 1,
+   "by_rule": {
+    "side-tab": 2,
+    "tiny-text": 2,
+    "low-contrast": 2,
+    "skipped-heading": 1
+   }
+  },
+  "/blog/how-to-measure-body-fat/": {
+   "findings": 7,
+   "advisory": 0,
+   "by_rule": {
+    "side-tab": 7
+   }
+  },
+  "/blog/bmi-for-athletes/": {
+   "findings": 5,
+   "advisory": 0,
+   "by_rule": {
+    "border-accent-on-rounded": 4,
+    "side-tab": 1
+   }
+  },
+  "/404.html": {
+   "findings": 4,
+   "advisory": 0,
+   "by_rule": {
+    "low-contrast": 4
+   }
+  },
+  "/childhood-obesity-statistics/": {
+   "findings": 4,
+   "advisory": 0,
+   "by_rule": {
+    "border-accent-on-rounded": 3,
+    "side-tab": 1
+   }
+  },
+  "/bmi-chart/": {
+   "findings": 3,
+   "advisory": 1,
+   "by_rule": {
+    "low-contrast": 2,
+    "tiny-text": 1
+   }
+  },
+  "/contact/": {
+   "findings": 3,
+   "advisory": 0,
+   "by_rule": {
+    "nested-cards": 2,
+    "side-tab": 1
+   }
+  },
+  "/terms/": {
+   "findings": 3,
+   "advisory": 0,
+   "by_rule": {
+    "nested-cards": 2,
+    "side-tab": 1
+   }
+  },
+  "/blog/": {
+   "findings": 2,
+   "advisory": 0,
+   "by_rule": {
+    "low-contrast": 2
+   }
+  },
+  "/blog/what-is-bmi/": {
+   "findings": 2,
+   "advisory": 0,
+   "by_rule": {
+    "side-tab": 1,
+    "low-contrast": 1
+   }
+  },
+  "/blog/bmi-by-age/": {
+   "findings": 1,
+   "advisory": 0,
+   "by_rule": {
+    "low-contrast": 1
+   }
+  },
+  "/blog/bmi-chart-men/": {
+   "findings": 1,
+   "advisory": 2,
+   "by_rule": {
+    "low-contrast": 1
+   }
+  },
+  "/blog/bmi-chart-women/": {
+   "findings": 1,
+   "advisory": 2,
+   "by_rule": {
+    "low-contrast": 1
+   }
+  },
+  "/privacy/": {
+   "findings": 1,
+   "advisory": 0,
+   "by_rule": {
+    "nested-cards": 1
+   }
+  },
+  "/us-obesity-statistics/": {
+   "findings": 1,
+   "advisory": 0,
+   "by_rule": {
+    "side-tab": 1
+   }
+  },
+  "/men-bmi-calculator/": {
+   "findings": 0,
+   "advisory": 0,
+   "by_rule": {}
+  }
+ }
+}

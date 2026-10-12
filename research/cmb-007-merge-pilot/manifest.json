@@ -1,0 +1,57 @@
+{
+ "new_files": [
+  {
+   "path": "research/impeccable-baseline/2026-10-12-cmb007-390x844.json",
+   "sha256": "1f244d58559e51e09d1a4baed994645c3b7c2dc8f7c3e8ae9e773bf7bbdd8d06"
+  }
+ ],
+ "replace": [
+  {
+   "path": "DESIGN.md",
+   "expect_sha256": "31fb1d48858b867bd759707c88490322b90ffc073be240a7398c8dd27f7e4ae0",
+   "sha256": "797918077d90796482d78c0baf1083b0ffc23031a9b653c045749f91e342c85c"
+  },
+  {
+   "path": "assets/css/styles.css",
+   "expect_sha256": "cd0667a9cc5c788703e417d43cff54c91f0d6f5ca4533e7deba9b3689e8e966a",
+   "sha256": "ec964058d12bd8a6fe99b1dce403820a74cb0241a9d8468a995c349bf902db1c"
+  },
+  {
+   "path": "average-weight/index.html",
+   "expect_sha256": "ee0f62cec37436df0c0e6a710fe8d33492efc5f5c5a776ca35277c0806612519",
+   "sha256": "e9ce806f0cf2e8fc889092740da491b31acdf29d3ec6476c13bc9ee6227b444a"
+  },
+  {
+   "path": "blog/what-is-bmi/index.html",
+   "expect_sha256": "1f65a344a1bb12d72de7113f6f27424c15e603faf640c9519785b920ab89ea53",
+   "sha256": "61177d8f35b3bc7489d165ded6378d29e37dac75899bb0c5e249839db0b9dd72"
+  },
+  {
+   "path": "body-fat-calculator/index.html",
+   "expect_sha256": "fab0a22f341ba66e286c7404123f094b3544cc9467d2591a219c30b4017faa2e",
+   "sha256": "595077a6f0bc4273a71368cae788d416d43a944de55c4766fb390b97779d518f"
+  },
+  {
+   "path": "body-fat-percentage-chart/index.html",
+   "expect_sha256": "d7803ca9423ccf92c6778d8036695497ced70424f171d2e18b7d58166389e254",
+   "sha256": "b80fb20186f23e2c2d9ce83f10c62e143499d218102c64cf16a6751ff57da531"
+  },
+  {
+   "path": "men-bmi-calculator/index.html",
+   "expect_sha256": "e7720f2897619b2caa82d43cce623f152fd027198ae5dcd511348b74bd8fb053",
+   "sha256": "1ee7509d395076a5dff561554fff906b3db76928ddf2edf97d8ee7607dd348c6"
+  },
+  {
+   "path": "sitemap.xml",
+   "expect_sha256": "3f9699bb6d6de31fea4bf0ca3660fcca5b84a18cf32042a47041e3cba47d8c74",
+   "sha256": "1ffa056a0ab72bf69ca0a721d8fba038e7a9f00c1a5c102d45af6d1c2085d4ea"
+  }
+ ],
+ "edits": [],
+ "delete": [
+  {
+   "path": "assets/images/og/men-waist-nhlbi-scale.png",
+   "expect_sha256": "9b2dead09b20b2b120f52b7bfe3b77d1ac3bea1ad3573650c1b377b7d8bb8c5d"
+  }
+ ]
+}

@@ -7,6 +7,7 @@ colors:
   primary-light: "#22d3ee"
   primary-bg: "#ecfeff"
   link: "#0e7490"
+  link-hover: "#155e75"
   secondary: "#164e63"
   accent: "#f59e0b"
   underweight: "#3b82f6"
@@ -88,7 +89,10 @@ A tight utility palette: one cyan brand, one deep-teal header, one amber accent,
 - **Cyan 600 — Primary Dark** (`#0891b2`): default link color, border on header-chrome, CTA gradient end.
 - **Cyan 400 — Primary Light** (`#22d3ee`): logo mark glyph, hover text in dark header, nav underline.
 - **Cyan 50 — Primary Bg** (`#ecfeff`): tint behind active nav items in dropdowns.
-- **Cyan 700 — Link** (`#0e7490`, `--link`): text links and accent text on light backgrounds — 5.4:1 on white (WCAG AA). Links on the dark footer stay `--primary-light`. Added in the CMB-006 pilot; `--primary-dark` keeps its other roles (CTA gradient end, borders).
+- **Cyan 700 — Link** (`#0e7490`, `--link`): text links and accent text on light backgrounds — 5.4:1 on white (WCAG AA). Links on the dark footer stay `--primary-light`. Added in the CMB-006 pilot; `--primary-dark` keeps its other roles (borders, chart fills).
+- **Cyan 800 — Link hover** (`#155e75`, `--link-hover`): hover for text links on light backgrounds and for the Calculate button — 7.3:1 on white.
+- **Action buttons** (`.calculate-btn` on the calculators, `.aw-cta` on the data-page tools; CMB-007, owner decision 2026-10-12): flat `--link` background, white text (5.4:1), hover `--link-hover`; no gradient, glow or lift. Retired: the cyan gradient (2.4–3.7:1 with white text) and the orange tool-button gradient (3.4:1).
+- **Form controls** (buttons, inputs, selects) inherit the body font stack.
 
 ### Secondary
 - **Deep Teal** (`#164e63`): sticky header background and mobile nav drawer. Used for brand chrome only, never body prose.
