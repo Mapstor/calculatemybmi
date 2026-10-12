@@ -1,0 +1,160 @@
+{
+ "new_files": [
+  {
+   "path": "research/dates/date_truth.py",
+   "sha256": "9546c2bcef4783d392293483bf9112e87d61172051d0df2354b4b03c3f884273"
+  },
+  {
+   "path": "research/dates/dates_cmb009.json",
+   "sha256": "fd33d3e2f4514df1183036cc2e3d2e5d53d7ee6a8f26a26f43d4616e16a37ef8"
+  },
+  {
+   "path": "research/dates/patch_cmb009.py",
+   "sha256": "321ae1079cb54596e5fe4f239f7af8da4b3c5f7ebf7f377a400d554170e8e965"
+  }
+ ],
+ "replace": [
+  {
+   "path": "about/index.html",
+   "expect_sha256": "cb26e3f9f97ea0846bd4777832532f187445ab71b08b9531b4ce9427ae13672e",
+   "sha256": "7ede43b505479a905ab0bfea5896cde098cf59661d9d969850a6637a1204bbb6"
+  },
+  {
+   "path": "average-weight/index.html",
+   "expect_sha256": "e9ce806f0cf2e8fc889092740da491b31acdf29d3ec6476c13bc9ee6227b444a",
+   "sha256": "5368eb3361086d1845b0a5c297d6aa5cf56ce9a71c3cc8c08e83a1c703e36da2"
+  },
+  {
+   "path": "blog/bmi-and-health-risks/index.html",
+   "expect_sha256": "37b4c4e38851a03db39a4a9b07f11490fc305d9e387bd116a01ba5fc2a4a1a81",
+   "sha256": "dae45f8fe1304d839184b3e5d2b47b1335768a972ef894e63356a93f119ae0d0"
+  },
+  {
+   "path": "blog/bmi-and-metabolism/index.html",
+   "expect_sha256": "088cdcc22e078b3cc5949711953273e28ad81a0fd5890339b18355f07496e1b4",
+   "sha256": "43ac7005bd96c6a1be96ed945ce20a9e9b75fe16187c7f245492936e2231c8f6"
+  },
+  {
+   "path": "blog/bmi-by-age/index.html",
+   "expect_sha256": "4d75ae506ee7fce60a716f27da1d39926f7282db72ff388757dafb46e55c0aa7",
+   "sha256": "588183ba062e7e208f68757732b54368fed2cfc0cd64e7df91e6863f18120a3a"
+  },
+  {
+   "path": "blog/bmi-categories/index.html",
+   "expect_sha256": "9ee1879380393b568a0f54bbafac96aae800b49635f23f0dbc053d58abc4ccb0",
+   "sha256": "9cfcefcd6a01dec543b8a36f1b42ebd46f5409bad05a9ac0aa750f44a928c1f5"
+  },
+  {
+   "path": "blog/bmi-chart-explained/index.html",
+   "expect_sha256": "05a7e11ce6efb574029471d04566161b398c94123ab01a6b4cc44bd6ea2b741b",
+   "sha256": "62719aa4b753d2f6669d9e194f0f3988c48a0612592decad6b66db45361b0fca"
+  },
+  {
+   "path": "blog/bmi-for-athletes/index.html",
+   "expect_sha256": "84b1eefe6f3b4bab3fd9d77eea7e245dfb3da777ae85f1e7553e1cb4972c6079",
+   "sha256": "9d2802fe9e3e882ce19172fa4e53d861c4dbcb365426e3990ce2a766bc2e9773"
+  },
+  {
+   "path": "blog/bmi-formula/index.html",
+   "expect_sha256": "13222bd1af081f2e7988e262adcd79acb6acd4986e6ffa22c845c705668d846f",
+   "sha256": "d6b0ad267893213d1dacd78cb50d70ebcffbaedabdcf40105191790185fbf8ae"
+  },
+  {
+   "path": "blog/bmi-history/index.html",
+   "expect_sha256": "e3d44b38cc53b42f04e05762c165f6cf3a33d2694cb74e8a4d3e8574c68c4df5",
+   "sha256": "a031b25314e0182c7476195bde26ea3db47d86e6eca5125308dc8ae483ab261d"
+  },
+  {
+   "path": "blog/bmi-limitations/index.html",
+   "expect_sha256": "1dd038954ea1c85ff33f1c88b1d5afc15b840be95fcf8f4470aadf2a0b435d63",
+   "sha256": "3969b0eebe27c14447ad7f1ab06e5cacdd7f0d50875c148ebe24834f7957b1a2"
+  },
+  {
+   "path": "blog/bmi-tracking-guide/index.html",
+   "expect_sha256": "23674c974a59aa2af37d65016ce09a75a65b657d129ec8171f5080753d14132b",
+   "sha256": "12920cd11e7acd8a9ec8c70e1771b8fd3f90d53455186dcb0b9b07ebc89932da"
+  },
+  {
+   "path": "blog/body-fat-vs-bmi/index.html",
+   "expect_sha256": "b9c2c556081d096d42019bc8c0607fe5b34ca3dd845314763b09e4cf0421dbc1",
+   "sha256": "0c53cb3c0d2a7cf8f68ab65aa979c19bb68bdd11848560a97acc8b6385fbfebb"
+  },
+  {
+   "path": "blog/healthy-bmi-range/index.html",
+   "expect_sha256": "06b7666309cd4c995b2ba1a58f74069936720ca2a7f73fa909c1ee5d2d4a8707",
+   "sha256": "50ad9f2a83633b50228daeddd13619629a7e0af5aa59f5ebfe5c1f0c05c1d881"
+  },
+  {
+   "path": "blog/how-to-lower-bmi/index.html",
+   "expect_sha256": "b93310668479626ee5eabe93e50df5dcf96f71acb1bd06b3d429d9889b336ba7",
+   "sha256": "e284f5616ba886404aff864fc7cf7b093494ff523bc56b75a5a9041d776dcbd3"
+  },
+  {
+   "path": "blog/how-to-measure-body-fat/index.html",
+   "expect_sha256": "a8f712147d3253d14c957a3e9c584336422cf3d5a631904ab906d869a59f9564",
+   "sha256": "fcb72d152ea2ff80818a156613835c05308441598b52575b9b1abd1b2e2d7ad3"
+  },
+  {
+   "path": "blog/underweight-bmi-risks/index.html",
+   "expect_sha256": "bb2140284b301e45f391af4946dde0dc88ed2db910a89a87e118183468aca0a0",
+   "sha256": "efa7caf2fcfcc54fa54de19b2faca542f621f3803d302a5f032bacbb6cfedc2e"
+  },
+  {
+   "path": "blog/waist-to-height-ratio/index.html",
+   "expect_sha256": "21ee2b7fde0a774b4581c30d3d9787626fd63fc396ecfc4d8f52da922b370f03",
+   "sha256": "14fcd92ebfdde5fa18489986788471d5e106e4acebb0659f07e2ea44c4a2b734"
+  },
+  {
+   "path": "blog/what-is-bmi/index.html",
+   "expect_sha256": "61177d8f35b3bc7489d165ded6378d29e37dac75899bb0c5e249839db0b9dd72",
+   "sha256": "01e74a575898b20b4e643ae60354aa3b964f83686a52a54b468aa23394aaaae1"
+  },
+  {
+   "path": "bmi-chart/index.html",
+   "expect_sha256": "1434803915508a76fb7dbfedf1a981a73a11f71f560f47268bb24cc9f94c8a26",
+   "sha256": "c913c64db51a1cb8fd49dff87a26cbd8d69e22ac6fb2633dc23b0347f63ba59e"
+  },
+  {
+   "path": "body-fat-calculator/index.html",
+   "expect_sha256": "595077a6f0bc4273a71368cae788d416d43a944de55c4766fb390b97779d518f",
+   "sha256": "03f0bc87236f46840ebf91ddc180472ae9187d5cf6b754085097f5ad8e0b28f8"
+  },
+  {
+   "path": "body-fat-percentage-chart/index.html",
+   "expect_sha256": "b80fb20186f23e2c2d9ce83f10c62e143499d218102c64cf16a6751ff57da531",
+   "sha256": "543b707cbea714e74b9b3fae679d5cac6ae80e320299303f5c349bd37f412e7b"
+  },
+  {
+   "path": "childhood-obesity-statistics/index.html",
+   "expect_sha256": "815caf2b1c2147685519e239c9f14b23d78e5d957cc96a21099c13bc307c47fe",
+   "sha256": "36ae3b61ac939dbe33b2d49c1822142c106bca182cf08c80c6f069fc500d3b2c"
+  },
+  {
+   "path": "obesity-rate-by-state/index.html",
+   "expect_sha256": "e3bb9d8d250825e5f7cc3bdbd0f255806419ff8319e297f788adfa713395ea81",
+   "sha256": "c44877e65f8749b330b62ceabb6098657ef3b4e586b72c37b68cc6f5331c938f"
+  },
+  {
+   "path": "privacy/index.html",
+   "expect_sha256": "288f63b295daca756f089a612afe4e0665d1cd30ffab36a6292e123a8f0758af",
+   "sha256": "3f277dbb256dbb527de0fab27b06f00df15d0d13ba5cb437f92debaab3fbfee3"
+  },
+  {
+   "path": "scripts/check_structure.py",
+   "expect_sha256": "3e4c5b823b52cd7c9f0e4b817011e9d2076b30b9bdb3e8f7bdadf7e36b30d8b9",
+   "sha256": "4d41a893c821a4a01bf989b7c80eae628d0f794b1abe035092ea319ed3152047"
+  },
+  {
+   "path": "sitemap.xml",
+   "expect_sha256": "cf5acebff2cf9f722e30d51acbf38bfbf540ea931456e4b8fa1cea22436f1c53",
+   "sha256": "9d5808ebc0bed31daaee3bc1eb56eee7c89bbb9478bbce7dbb04a880ebc5b5b1"
+  },
+  {
+   "path": "us-obesity-statistics/index.html",
+   "expect_sha256": "f2dfed49bb2a45602b2c270e4e926802fda58b7b3939970de38b6a3866bc1060",
+   "sha256": "c18ed70df6cc9cebe4ab2b6764db1d1e6a440541f1d5855597aeaf4ad15d3cf5"
+  }
+ ],
+ "edits": [],
+ "delete": []
+}

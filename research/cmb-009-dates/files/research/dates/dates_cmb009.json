@@ -1,0 +1,242 @@
+{
+ "/": {
+  "significant": "2026-10-12",
+  "significant_commit": "08d6773",
+  "visible": "2026-10-12",
+  "visible_commit": "08d6773"
+ },
+ "/about/": {
+  "significant": "2026-10-08",
+  "significant_commit": "e0cb070",
+  "visible": "2026-10-08",
+  "visible_commit": "e0cb070"
+ },
+ "/age-bmi-calculator/": {
+  "significant": "2026-10-11",
+  "significant_commit": "2e2ca23",
+  "visible": "2026-10-09",
+  "visible_commit": "edb2cb2"
+ },
+ "/average-weight/": {
+  "significant": "2026-10-04",
+  "significant_commit": "a4812a7",
+  "visible": "2026-10-04",
+  "visible_commit": "a4812a7"
+ },
+ "/blog/": {
+  "significant": "2026-10-08",
+  "significant_commit": "8819105",
+  "visible": "2026-10-08",
+  "visible_commit": "8819105"
+ },
+ "/blog/bmi-and-health-risks/": {
+  "significant": "2026-10-11",
+  "significant_commit": "2e2ca23",
+  "visible": "2026-10-02",
+  "visible_commit": "1a85c58"
+ },
+ "/blog/bmi-and-metabolism/": {
+  "significant": "2026-10-02",
+  "significant_commit": "c952de3",
+  "visible": "2026-10-02",
+  "visible_commit": "c952de3"
+ },
+ "/blog/bmi-by-age/": {
+  "significant": "2026-10-08",
+  "significant_commit": "e0cb070",
+  "visible": "2026-10-08",
+  "visible_commit": "e0cb070"
+ },
+ "/blog/bmi-categories/": {
+  "significant": "2026-10-12",
+  "significant_commit": "08d6773",
+  "visible": "2026-10-12",
+  "visible_commit": "08d6773"
+ },
+ "/blog/bmi-chart-explained/": {
+  "significant": "2026-10-11",
+  "significant_commit": "2e2ca23",
+  "visible": "2026-10-11",
+  "visible_commit": "2e2ca23"
+ },
+ "/blog/bmi-chart-men/": {
+  "significant": "2026-10-12",
+  "significant_commit": "08d6773",
+  "visible": "2026-10-12",
+  "visible_commit": "08d6773"
+ },
+ "/blog/bmi-chart-women/": {
+  "significant": "2026-10-12",
+  "significant_commit": "08d6773",
+  "visible": "2026-10-12",
+  "visible_commit": "08d6773"
+ },
+ "/blog/bmi-for-athletes/": {
+  "significant": "2026-10-08",
+  "significant_commit": "8819105",
+  "visible": "2026-10-08",
+  "visible_commit": "8819105"
+ },
+ "/blog/bmi-formula/": {
+  "significant": "2026-09-30",
+  "significant_commit": "3a99491",
+  "visible": "2026-09-30",
+  "visible_commit": "3a99491"
+ },
+ "/blog/bmi-history/": {
+  "significant": "2026-10-11",
+  "significant_commit": "2e2ca23",
+  "visible": "2026-10-02",
+  "visible_commit": "c952de3"
+ },
+ "/blog/bmi-limitations/": {
+  "significant": "2026-10-11",
+  "significant_commit": "2e2ca23",
+  "visible": "2026-10-02",
+  "visible_commit": "c952de3"
+ },
+ "/blog/bmi-tracking-guide/": {
+  "significant": "2026-10-01",
+  "significant_commit": "661d60c",
+  "visible": "2026-09-30",
+  "visible_commit": "3a99491"
+ },
+ "/blog/body-fat-vs-bmi/": {
+  "significant": "2026-10-07",
+  "significant_commit": "c838370",
+  "visible": "2026-10-07",
+  "visible_commit": "c838370"
+ },
+ "/blog/healthy-bmi-range/": {
+  "significant": "2026-10-12",
+  "significant_commit": "08d6773",
+  "visible": "2026-10-12",
+  "visible_commit": "08d6773"
+ },
+ "/blog/how-to-lower-bmi/": {
+  "significant": "2026-10-11",
+  "significant_commit": "2e2ca23",
+  "visible": "2026-10-02",
+  "visible_commit": "c952de3"
+ },
+ "/blog/how-to-measure-body-fat/": {
+  "significant": "2026-10-07",
+  "significant_commit": "c838370",
+  "visible": "2026-10-07",
+  "visible_commit": "c838370"
+ },
+ "/blog/underweight-bmi-risks/": {
+  "significant": "2026-10-12",
+  "significant_commit": "08d6773",
+  "visible": "2026-10-12",
+  "visible_commit": "08d6773"
+ },
+ "/blog/waist-to-height-ratio/": {
+  "significant": "2026-10-11",
+  "significant_commit": "2e2ca23",
+  "visible": "2026-10-02",
+  "visible_commit": "c952de3"
+ },
+ "/blog/what-is-bmi/": {
+  "significant": "2026-10-08",
+  "significant_commit": "e0cb070",
+  "visible": "2026-10-08",
+  "visible_commit": "e0cb070"
+ },
+ "/bmi-chart/": {
+  "significant": "2026-10-12",
+  "significant_commit": "08d6773",
+  "visible": "2026-10-12",
+  "visible_commit": "08d6773"
+ },
+ "/body-fat-calculator/": {
+  "significant": "2026-10-07",
+  "significant_commit": "c838370",
+  "visible": "2026-10-07",
+  "visible_commit": "c838370"
+ },
+ "/body-fat-percentage-chart/": {
+  "significant": "2026-10-07",
+  "significant_commit": "0ac545b",
+  "visible": "2026-10-07",
+  "visible_commit": "0ac545b"
+ },
+ "/calculators/": {
+  "significant": "2026-10-11",
+  "significant_commit": "2e2ca23",
+  "visible": "2026-10-11",
+  "visible_commit": "2e2ca23"
+ },
+ "/childhood-obesity-statistics/": {
+  "significant": "2026-10-02",
+  "significant_commit": "1a120fd",
+  "visible": "2026-10-02",
+  "visible_commit": "1a120fd"
+ },
+ "/contact/": {
+  "significant": "2026-10-08",
+  "significant_commit": "8819105",
+  "visible": "2026-08-01",
+  "visible_commit": "32fc6d6"
+ },
+ "/ideal-weight/": {
+  "significant": "2026-10-11",
+  "significant_commit": "2e2ca23",
+  "visible": "2026-10-09",
+  "visible_commit": "69879fa"
+ },
+ "/kids-bmi-calculator/": {
+  "significant": "2026-10-08",
+  "significant_commit": "88cb9e5",
+  "visible": "2026-10-08",
+  "visible_commit": "88cb9e5"
+ },
+ "/lean-body-mass/": {
+  "significant": "2026-10-09",
+  "significant_commit": "661c24c",
+  "visible": "2026-10-09",
+  "visible_commit": "661c24c"
+ },
+ "/men-bmi-calculator/": {
+  "significant": "2026-10-12",
+  "significant_commit": "d28a145",
+  "visible": "2026-10-12",
+  "visible_commit": "d28a145"
+ },
+ "/new-bmi-calculator/": {
+  "significant": "2026-10-11",
+  "significant_commit": "2e2ca23",
+  "visible": "2026-10-11",
+  "visible_commit": "2e2ca23"
+ },
+ "/obesity-rate-by-state/": {
+  "significant": "2026-10-02",
+  "significant_commit": "ebf6c30",
+  "visible": "2026-10-02",
+  "visible_commit": "ebf6c30"
+ },
+ "/privacy/": {
+  "significant": "2026-10-08",
+  "significant_commit": "a7f23f6",
+  "visible": "2026-10-08",
+  "visible_commit": "a7f23f6"
+ },
+ "/terms/": {
+  "significant": "2026-10-11",
+  "significant_commit": "2e2ca23",
+  "visible": "2026-10-11",
+  "visible_commit": "2e2ca23"
+ },
+ "/us-obesity-statistics/": {
+  "significant": "2026-10-02",
+  "significant_commit": "1a120fd",
+  "visible": "2026-10-02",
+  "visible_commit": "1a120fd"
+ },
+ "/women-bmi-calculator/": {
+  "significant": "2026-10-11",
+  "significant_commit": "2e2ca23",
+  "visible": "2026-10-11",
+  "visible_commit": "2e2ca23"
+ }
+}

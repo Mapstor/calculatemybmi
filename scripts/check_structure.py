@@ -12,6 +12,7 @@ Runs before every commit. Requires all 33 sitemap pages to pass:
     (two bindings cancel out: one tap opens and closes; CMB-005)
   - FAQPage JSON-LD answers match the visible FAQ answers word for word (CMB-005)
   - weight-by-height tables list whole-unit weights inside each category, in lb and kg (CMB-008)
+  - no visible review/update date in bylines and no "N min read" line (D-12, CMB-009)
 Exits non-zero on any failure.
 """
 import re, os, glob, sys, json, html
@@ -178,6 +179,12 @@ def check_file(page, path):
             problems.append(f'markup @{off} [{kind}] {detail}')
     except Exception as exc:
         problems.append(f'check_markup import failed: {exc}')
+    # D-12: no visible review/update date in bylines, no reading-time line (legal pages keep "Last updated").
+    for by in re.findall(r'(?s)<p class="byline"[^>]*>(.*?)</p>', src):
+        if re.search(r'(?:January|February|March|April|May|June|July|August|September|October|November|December)(?: \d{1,2},)? \d{4}|\b\d{1,2} (?:January|February|March|April|May|June|July|August|September|October|November|December) \d{4}', by) and re.search(r'Reviewed|Updated', by):
+            problems.append('byline shows a review/update date (D-12)')
+    if re.search(r'\b\d+ min read\b', re.sub(r'(?s)<script.*?</script>', '', src)):
+        problems.append('page shows an "N min read" line (D-12)')
     # Weight-by-height tables: each listed weight sits inside its category at that exact height, per unit (CMB-008).
     try:
         from check_weight_tables import table_problems
