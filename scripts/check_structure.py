@@ -11,6 +11,7 @@ Runs before every commit. Requires all 33 sitemap pages to pass:
   - exactly one click binding for FAQ accordions and for the mobile-menu toggle
     (two bindings cancel out: one tap opens and closes; CMB-005)
   - FAQPage JSON-LD answers match the visible FAQ answers word for word (CMB-005)
+  - weight-by-height tables list whole-unit weights inside each category, in lb and kg (CMB-008)
 Exits non-zero on any failure.
 """
 import re, os, glob, sys, json, html
@@ -177,6 +178,12 @@ def check_file(page, path):
             problems.append(f'markup @{off} [{kind}] {detail}')
     except Exception as exc:
         problems.append(f'check_markup import failed: {exc}')
+    # Weight-by-height tables: each listed weight sits inside its category at that exact height, per unit (CMB-008).
+    try:
+        from check_weight_tables import table_problems
+        problems.extend(f'weight table: {p}' for p in table_problems(src))
+    except Exception as exc:
+        problems.append(f'check_weight_tables import failed: {exc}')
     return problems
 
 def main():

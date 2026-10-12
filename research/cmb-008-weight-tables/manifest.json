@@ -1,0 +1,69 @@
+{
+ "new_files": [
+  {
+   "path": "research/chart-tables/audit_charts.py",
+   "sha256": "40179112ccb8aa27fc8cc867a088547ddf26f2f2a4043fcc75b104ab77b6e8ba"
+  },
+  {
+   "path": "research/chart-tables/chart_rules.py",
+   "sha256": "1c5118be980507b70c54c9f756d12ed6520a666f0bfbdbf3083e6e99cff772a5"
+  },
+  {
+   "path": "research/chart-tables/fix_tables.py",
+   "sha256": "c9619c55edc1a71793f525303a6e2e8df02e5f1210552140607f8f3104a20e17"
+  },
+  {
+   "path": "scripts/check_weight_tables.py",
+   "sha256": "b532e4c3d1772b0c0af144c77c1ef7312925820d99695277e3bc804c551768dd"
+  }
+ ],
+ "replace": [
+  {
+   "path": "blog/bmi-categories/index.html",
+   "expect_sha256": "ee9c958a34d10521d0b6f62d3460b0ac348364ff9a535c4564e2bdd8a5a781df",
+   "sha256": "9ee1879380393b568a0f54bbafac96aae800b49635f23f0dbc053d58abc4ccb0"
+  },
+  {
+   "path": "blog/bmi-chart-men/index.html",
+   "expect_sha256": "edfc7f8358ce38f3adee095b6bbada17eecd6bf3027cfc5ebf0501b79a4d1969",
+   "sha256": "3dba79aa6588bf8d467a425ae0378a64d256172f268ae1123adb1b3cc435da70"
+  },
+  {
+   "path": "blog/bmi-chart-women/index.html",
+   "expect_sha256": "fcbc3b3ffd2becf4f575efbe05f8fa72b4fdd05a5d008cff4752a2c091bd8363",
+   "sha256": "e7d879f9fa6049a5283843d5b7b890693d881ecfe084817b46b60ee99fba659f"
+  },
+  {
+   "path": "blog/healthy-bmi-range/index.html",
+   "expect_sha256": "ab806a2f46f9aae5a83f86b0b8dcee5414581620de34ee45c6276c8c5514e861",
+   "sha256": "06b7666309cd4c995b2ba1a58f74069936720ca2a7f73fa909c1ee5d2d4a8707"
+  },
+  {
+   "path": "blog/underweight-bmi-risks/index.html",
+   "expect_sha256": "6abb9e16f5fbd887912c3f244b3d9734613865e469be3a5c58407604cc8b3aae",
+   "sha256": "bb2140284b301e45f391af4946dde0dc88ed2db910a89a87e118183468aca0a0"
+  },
+  {
+   "path": "bmi-chart/index.html",
+   "expect_sha256": "89f4b921a5350ce5413e10868f949267eb12e9fb5fbfdffb686b3f4fdea1637b",
+   "sha256": "1434803915508a76fb7dbfedf1a981a73a11f71f560f47268bb24cc9f94c8a26"
+  },
+  {
+   "path": "index.html",
+   "expect_sha256": "eae5c38845df0fda30b416945c25c9ac962753ec0b1add728980785fc521ebde",
+   "sha256": "129c95c131d276c00114fd9f6fe4395f5bf423b64103e2f2a0d19f15129d787d"
+  },
+  {
+   "path": "scripts/check_structure.py",
+   "expect_sha256": "3baf31ba166ca71679e05fa91ec5542fbd6d42e7f29b6fbf5e56e90a2089ff27",
+   "sha256": "3e4c5b823b52cd7c9f0e4b817011e9d2076b30b9bdb3e8f7bdadf7e36b30d8b9"
+  },
+  {
+   "path": "sitemap.xml",
+   "expect_sha256": "1ffa056a0ab72bf69ca0a721d8fba038e7a9f00c1a5c102d45af6d1c2085d4ea",
+   "sha256": "cf5acebff2cf9f722e30d51acbf38bfbf540ea931456e4b8fa1cea22436f1c53"
+  }
+ ],
+ "edits": [],
+ "delete": []
+}
