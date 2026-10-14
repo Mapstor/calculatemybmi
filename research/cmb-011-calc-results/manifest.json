@@ -1,0 +1,121 @@
+{
+ "new_files": [
+  {
+   "path": "research/impeccable-baseline/2026-10-14-cmb011-390x844.json",
+   "sha256": "215025850b48df369a7489ed9269e15579c63ddf9b792cc0fafeccfe4b858e5e"
+  },
+  {
+   "path": "research/site-checks/residue_scan.py",
+   "sha256": "4c47756ab0065bfebd87158cfee57734c7f38a17ecdec0f2f4b591bdf13dfc1e"
+  }
+ ],
+ "replace": [
+  {
+   "path": "DESIGN.md",
+   "expect_sha256": "c465657b66646d8021cd5138fd1621ecead17ffcf59ad6784a2f8f26341888a6",
+   "sha256": "4ee7a9fa06f5985e7002eebc2799dca143686f90fbc8bbe618f4ba0cecd194dc"
+  },
+  {
+   "path": "assets/css/styles.css",
+   "expect_sha256": "390f4a6d952a68fc216ab5f84c0fbacfcb91d3afe675c8037230a8b29e0e2900",
+   "sha256": "de63109e6df549c530cead6e1ee8041803ab6163fb0d8d3ce185d9b9ea43927b"
+  },
+  {
+   "path": "assets/js/calculator.js",
+   "expect_sha256": "2444eb398b16c7b8f35a2111153c6212033ca73cd55d17770e7733bdfc3eca3c",
+   "sha256": "519a810bd4938cf4439c8b3b6e655e5636ce78d970142c6fa11c8f4b6804e1ad"
+  },
+  {
+   "path": "blog/bmi-and-health-risks/index.html",
+   "expect_sha256": "b64fd62ae297ab771aa00fccc60a94b60306877f365634fe4ef14c687f53036b",
+   "sha256": "7ef3432b0b190df3bb678386d2640a6bd200269021429d39ade93a5c06cf70a7"
+  },
+  {
+   "path": "blog/bmi-categories/index.html",
+   "expect_sha256": "92b18c389b86cfa78b6d92d06188582d8f52ed7244278df27b528c6d7f47c1d9",
+   "sha256": "8fcde9f381722a6e567ba49bf8a2b61f231b42205ff3ae7c87f335fa7ac33850"
+  },
+  {
+   "path": "blog/bmi-history/index.html",
+   "expect_sha256": "d356caad47bf39e20b8622970e32cbd6c91d340217230a45498d8b07bee9a9c3",
+   "sha256": "9b8abe2e7399a34625af073dff5630a9fbf11d11d6cd0d98d02410f693b99b50"
+  },
+  {
+   "path": "blog/bmi-limitations/index.html",
+   "expect_sha256": "ef4ec3dd25199c219e64a67c141849b6917cf2fe95af630189e37b24bc37d69e",
+   "sha256": "0c857fd68c82e078aab41df22a5bdf01ae2a5ea80def63a4fc92089c57fd7e8c"
+  },
+  {
+   "path": "blog/body-fat-vs-bmi/index.html",
+   "expect_sha256": "6a758a4f24e2b2302d5727871b5353e0b2a5b175a57696560819bd9b29886383",
+   "sha256": "824163bade2e1175a9b2cc10b30ba162d4f20ba085b567c1bc0aea4d05f230e2"
+  },
+  {
+   "path": "blog/index.html",
+   "expect_sha256": "5b853a4b8df97e38c1caaaac4f95dc703e5efa1c89134839ee84084b95179e9b",
+   "sha256": "5aa08e619e997de765097e1925b4cfccb0b982ef624bbcd9c3621b0ae962fbfa"
+  },
+  {
+   "path": "blog/waist-to-height-ratio/index.html",
+   "expect_sha256": "fadf61ccab68821fa380bb896123373b268ba58b1fc4ae4c133737ec4705a27d",
+   "sha256": "4d89f813a1f464aa58a6b4125142548ac7a1f7b196699474e2c6fcc8be6a373e"
+  },
+  {
+   "path": "calculators/index.html",
+   "expect_sha256": "b4bf7d65a9d9bd1134873e1f3584004e7132076ea915b4b0fdc7297b0277770f",
+   "sha256": "e9d3b4997a85285de500e80082481564eb5f1d6e96a07ee9b547b6635d9d4f7d"
+  },
+  {
+   "path": "ideal-weight/index.html",
+   "expect_sha256": "93e87d4f8deffaf0a0fc80a8e5c74549b0eb87f2ed5a931d3fe792f0f1b7432a",
+   "sha256": "b4cb6d9b951f3a1705cb1b861dfa94ff0176aad4884efc01a8623a9062b94035"
+  },
+  {
+   "path": "lean-body-mass/index.html",
+   "expect_sha256": "c774a93ed13871edc3ef0ef83cb061d41533c0ef4db84b035d54da35b9125d1a",
+   "sha256": "43fb79ebf875c9c2ac203565c2270b4abea468239630d4231b52f0119bbff0d7"
+  },
+  {
+   "path": "new-bmi-calculator/index.html",
+   "expect_sha256": "e271394f92fb2db548c8d110c81e4b31eed71b9c532a1a9bc528f68909341305",
+   "sha256": "dcb1273f9a4287e7f5ff8a5036e3d3e51cb30367a1904e77e9d60bdbe876459d"
+  },
+  {
+   "path": "research/calculator-checks/calc_e2e_playwright.py",
+   "expect_sha256": "af3b41bfc062a356cbc89a13a9622ced095110fee4901b8038c64515498d4b1b",
+   "sha256": "3252dff5625ec62f58eee3f74cad7bbdda4e6b29aaeb71a071502b270a0591fd"
+  },
+  {
+   "path": "research/calculator-checks/calc_test_jsdom.js",
+   "expect_sha256": "837797ce25ad17d118e0c9e52acfff27a7cb963f2b78a5d3839595053ef789e1",
+   "sha256": "bcc12de4d59a0827b17972766b3f15e5fc5bdbac285a2b59a57d6902364303b9"
+  },
+  {
+   "path": "research/site-checks/README.md",
+   "expect_sha256": "2d1bc16395e66ee2c6764200c1dc6e5508493b95d6125c1dba5a5c3ef647d7d5",
+   "sha256": "da1a8c01357a573a55dcb7a4f68a94158b919caddc5784e00ec47ae4df806984"
+  },
+  {
+   "path": "scripts/check_content_integrity.py",
+   "expect_sha256": "25504e840f8fba08b28a9ba24059c450ff2d1cec9525f72aab9da804e7b1643b",
+   "sha256": "9626840656bc5e1e1be33dd283ac538bc30678f088ad05515a4726fba5fea7e5"
+  },
+  {
+   "path": "scripts/check_structure.py",
+   "expect_sha256": "29dcd62aa31edc0871c96bc6de6a09bbfd5243eb50629c61ef0e432647bbb94e",
+   "sha256": "b5fd39f0787e860cdd35630e596ceb1412078573f5be5313d335be601763308a"
+  },
+  {
+   "path": "sitemap.xml",
+   "expect_sha256": "e903c317b82518dca33351cbe16c287455441fea004da7e766b81fa4058344e0",
+   "sha256": "f73da20244a0f93d6aee6da4d87c2ce5827287d866a664a7caf1968cb93933a4"
+  },
+  {
+   "path": "women-bmi-calculator/index.html",
+   "expect_sha256": "8d6e538c1c8be8928546aa26bceece2a9458b170394a0f609f4c958279f0b382",
+   "sha256": "ab312c0f44752cabbc5064dfcf95b6b40f107c2d87e011f126981659900494b2"
+  }
+ ],
+ "edits": [],
+ "delete": []
+}

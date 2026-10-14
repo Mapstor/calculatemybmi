@@ -15,6 +15,11 @@ Runs before every commit. Requires all 33 sitemap pages to pass:
   - no visible review/update date in bylines and no "N min read" line (D-12, CMB-009)
   - content integrity: no call to action without a link, no empty box/step/table frame, no cut sentence,
     no duplicate or dead related link, no emoji icons, no inline-styled buttons or bylines, D-11 (CMB-010)
+  - residue of deleted sections: no numbering gaps, no caption for a missing table, no empty chart row or icon,
+    no heading with nothing under it (CMB-011)
+  - assets/js/calculator.js (the results panel): no emoji or arrow entities, no low-contrast text hexes,
+    no gradients (CMB-011)
+  - the /blog/ hub links every guide in the sitemap; its ItemList and its guide counts match (CMB-011)
 Exits non-zero on any failure.
 """
 import re, os, glob, sys, json, html
@@ -201,8 +206,33 @@ def check_file(page, path):
         problems.append(f'check_content_integrity import failed: {exc}')
     return problems
 
-def main():
-    pages = sitemap_pages()
+def hub_problems(root, paths):
+    """The /blog/ hub links every guide in the sitemap, its ItemList lists exactly those, and its counts are right (CMB-011)."""
+    guides = sorted(p for p in paths if p.startswith('/blog/') and p != '/blog/')
+    try:
+        src = open(os.path.join(root, 'blog/index.html'), encoding='utf-8').read()
+    except OSError:
+        return ['blog/index.html missing']
+    out = []
+    m = re.search(r'(?s)<main\b.*?</main>', src)
+    linked = set(re.findall(r'href="(/blog/[^"#]+/)"', m.group(0) if m else src))
+    missing = [g for g in guides if g not in linked]
+    if missing: out.append(f'/blog/ hub does not link {missing}')
+    for b in re.findall(r'(?s)<script type="application/ld\+json">(.*?)</script>', src):
+        d = json.loads(b)
+        if d.get('@type') != 'CollectionPage': continue
+        items = d.get('mainEntity', {}).get('itemListElement', [])
+        urls = sorted(i['url'].replace('https://calculatemybmi.net', '') for i in items)
+        if urls != guides: out.append('/blog/ ItemList does not list exactly the sitemap guides')
+        if d.get('mainEntity', {}).get('numberOfItems') != len(guides): out.append('/blog/ ItemList numberOfItems is wrong')
+    for label, pat in (('title', r'<title>([^<]*)</title>'), ('description', r'<meta name="description" content="([^"]*)"'), ('intro', r'(?s)<p class="intro-text">(.*?)</p>')):
+        mm = re.search(pat, src)
+        nums = re.findall(r'\b(\d+) (?:[a-z-]+ )?(?:guides|articles)\b', mm.group(1)) if mm else []
+        if any(x != str(len(guides)) for x in nums): out.append(f'/blog/ {label} gives {nums} guides, the sitemap has {len(guides)}')
+    return out
+
+def main(root='/workspace'):
+    pages = sitemap_pages(root)
     ok = 0; fails = []
     for page, path in pages:
         probs = check_file(page, path)
@@ -210,11 +240,26 @@ def main():
             fails.append((page, probs))
         else:
             ok += 1
+    # The results panel is built by calculator.js, so its rules are checked on the script (CMB-011).
+    try:
+        here = os.path.dirname(os.path.abspath(__file__))
+        if here not in sys.path: sys.path.insert(0, here)
+        from check_content_integrity import js_problems
+        js = js_problems(open(os.path.join(root, 'assets/js/calculator.js'), encoding='utf-8').read())
+    except Exception as exc:
+        js = [f'calculator.js check failed: {exc}']
     print(f'check_structure: {ok}/{len(pages)} pages pass')
     for page, probs in fails:
         print(f'  FAIL {page}:')
         for p in probs: print(f'    - {p}')
-    return 0 if not fails else 1
+    if js:
+        print('  FAIL assets/js/calculator.js:')
+        for p in js: print(f'    - {p}')
+    hub = hub_problems(root, [p for p, _ in pages])
+    if hub:
+        print('  FAIL /blog/ hub:')
+        for p in hub: print(f'    - {p}')
+    return 0 if not fails and not js and not hub else 1
 
 if __name__ == '__main__':
     sys.exit(main())

@@ -8,13 +8,13 @@ let ok=0,fail=0;function t(n,c,x){if(c)ok++;else{fail++;console.log('FAIL',n,x||
  P.querySelector('.unit-btn[data-unit="metric"]').click();P.querySelector('.height-cm').value='182';P.querySelector('.weight-kg').value='88';d.getElementById('calc-standard-btn').click();
  const T=d.getElementById('standard-results').textContent.replace(/\s+/g,' ');
  t('bmi 26.6',/26\.6/.test(T));t('status metric',/6\.0 kg \(13 lbs\) above the healthy range/.test(T),T.match(/[^.]{0,40}above the healthy range[^.]{0,20}/));
- t('height 182 cm + 6\'0"',/182 cm/.test(T)&&/6'0"/.test(T)&&!/5'12"/.test(T));t('weight 88.0 kg first',/88\.0 kg/.test(T));t('range kg first',/62-82 kg/.test(T),T.match(/\d+-\d+ kg/));
- t('no health-risk levels',!/Health Risk Assessment/.test(T)&&/BMI and Health/.test(T));t('no "Lose"',!/Lose \d/.test(T));t('no errors',errs.length===0,errs);
+ t('height 182 cm + 6\'0"',/182 cm/.test(T)&&/6'0"/.test(T)&&!/5'12"/.test(T));t('weight 88.0 kg first',/88\.0 kg/.test(T));t('range kg first',/62–82 kg/.test(T),T.match(/\d+–\d+ kg/));
+ t('no health-risk levels',!/Health Risk Assessment/.test(T)&&/BMI and health/.test(T));t('no "Lose"',!/Lose \d/.test(T));t('no errors',errs.length===0,errs);
  // imperial 5'7" 160
  P.querySelector('.unit-btn[data-unit="imperial"]').click();P.querySelector('.height-ft').value='5';P.querySelector('.height-in').value='7';P.querySelector('.weight-lbs').value='160';d.getElementById('calc-standard-btn').click();
  const T2=d.getElementById('standard-results').textContent.replace(/\s+/g,' ');t('imperial 25.1',/25\.1/.test(T2));
  // CMB-005: category follows the BMI as shown (one decimal); healthy limits are whole pounds inside 18.5-24.9
- for(const [ft,inch,lb,bmi,cat] of [['5','10','174','25.0','Overweight'],['5','10','173','24.8','Normal'],['6','2','144','18.5','Normal'],['6','2','143','18.4','Underweight']]){
+ for(const [ft,inch,lb,bmi,cat] of [['5','10','174','25.0','Overweight'],['5','10','173','24.8','Healthy weight'],['6','2','144','18.5','Healthy weight'],['6','2','143','18.4','Underweight']]){
   P.querySelector('.height-ft').value=ft;P.querySelector('.height-in').value=inch;P.querySelector('.weight-lbs').value=lb;d.getElementById('calc-standard-btn').click();
   t('shown '+ft+"'"+inch+' '+lb+' = '+bmi+' '+cat,d.getElementById('standard-bmi-value').textContent===bmi&&d.getElementById('standard-bmi-category').textContent===cat,d.getElementById('standard-bmi-value').textContent+' '+d.getElementById('standard-bmi-category').textContent);}
  P.querySelector('.height-ft').value='5';P.querySelector('.height-in').value='10';P.querySelector('.weight-lbs').value='180';d.getElementById('calc-standard-btn').click();
@@ -41,6 +41,26 @@ for(const p of ['index.html','women-bmi-calculator/index.html','men-bmi-calculat
 {const {dom}=load('age-bmi-calculator/index.html');const d=dom.window.document;const P=d.getElementById('panel-age');const q=s=>P.querySelector(s);
  q('.height-ft').value='5';q('.height-in').value='9';q('.weight-lbs').value='180';q('.age-input').value='70';d.getElementById('calc-age-btn').click();
  const tile=d.getElementById('age-adjusted-range').textContent;t('age 70 tile has no entity text',!/&[a-z]+;/.test(tile),tile);
- t('age 70 tile keeps the adult range',/^18\.5 - 24\.9 \(WHO adult range\) \u00b7 lowest mortality observed across BMI 23-33/.test(tile),tile);
- t('age 70 extended line says Adult BMI range',/Adult BMI range: 18\.5 - 24\.9/.test(d.body.textContent));}
+ t('age 70 tile keeps the adult range',/^18\.5–24\.9 \(WHO adult range\) \u00b7 lowest mortality observed across BMI 23–33/.test(tile),tile);
+ t('age 70 summary explains the 65+ finding',/WHO cut-offs still apply at 65 and over/.test(d.body.textContent));
+ t('age 70 says WHO has no age-adjusted cut-offs',/At 70, the healthy BMI range is 18\.5 to 24\.9/.test(d.body.textContent));}
+// CMB-011: metric BMI is kg/m2 as entered (145 cm / 84 kg and 159 cm / 101 kg are 40.0, class III; 703 gave 39.9)
+{const {dom,errs}=load('index.html');const d=dom.window.document,P=d.getElementById('panel-standard');P.querySelector('.unit-btn[data-unit="metric"]').click();
+ for(const [cm,kg] of [['145','84'],['159','101']]){P.querySelector('.height-cm').value=cm;P.querySelector('.weight-kg').value=kg;d.getElementById('calc-standard-btn').click();
+  t('metric '+cm+'/'+kg+' = 40.0 class 3 obesity',d.getElementById('standard-bmi-value').textContent==='40.0'&&/Class 3 obesity/.test(d.getElementById('standard-bmi-category').textContent),d.getElementById('standard-bmi-value').textContent+' '+d.getElementById('standard-bmi-category').textContent);}
+ const T=d.getElementById('standard-results').textContent;t('no arrow glyphs in results',!/\u279C/.test(T));t('answer comes first',T.indexOf('What your result means')<T.indexOf('BMI categories'));t('no errors (metric 40)',errs.length===0,errs);}
+// CMB-011: women result line, ideal weight in the user's unit, lean mass with one decimal, kids percentile line
+{const {dom}=load('women-bmi-calculator/index.html');const d=dom.window.document,P=d.getElementById('panel-women');P.querySelector('.height-ft').value='5';P.querySelector('.height-in').value='5';P.querySelector('.weight-lbs').value='170';d.getElementById('calc-women-btn').click();
+ t('women status line',/above the healthy range/.test(d.getElementById('women-weight-diff').textContent),d.getElementById('women-weight-diff').textContent);}
+{const {dom,errs}=load('ideal-weight/index.html');const d=dom.window.document,P=d.getElementById('panel-ideal');P.querySelector('.height-ft').value='5';P.querySelector('.height-in').value='6';P.querySelector('.sex-select').value='female';P.querySelector('.frame-select').value='medium';d.getElementById('calc-ideal-btn').click();
+ t('ideal Devine in lbs first',d.getElementById('ideal-devine').textContent.replace(/\s+/g,' ').trim()==='131 lbs (59.3 kg)',d.getElementById('ideal-devine').textContent);
+ t('ideal average in lbs first',d.getElementById('ideal-average').textContent==='131.4 lbs (59.6 kg)',d.getElementById('ideal-average').textContent);
+ t('ideal summary gives the BMI at the formula weights',/your BMI would be 20\.9 to 21\.8, inside the healthy range/.test(d.getElementById('ideal-results').textContent),d.getElementById('ideal-results').textContent.match(/your BMI would be[^.]*/));
+ t('ideal frame link has a target',!!d.getElementById('frame-size'));t('ideal runs',errs.length===0,errs);}
+{const {dom,errs}=load('lean-body-mass/index.html');const d=dom.window.document,P=d.getElementById('panel-lbm');P.querySelector('.height-ft').value='5';P.querySelector('.height-in').value='8';P.querySelector('.weight-lbs').value='170';P.querySelector('.sex-select').value='male';d.getElementById('calc-lbm-btn').click();
+ t('lean mass 128.5 lbs (58.3 kg)',d.getElementById('lbm-lbm').textContent.replace(/\s+/g,' ').trim()==='128.5 lbs (58.3 kg)',d.getElementById('lbm-lbm').textContent);
+ t('lean mass kg for the chart',d.getElementById('lbm-lbm').dataset.kg==='58.30',d.getElementById('lbm-lbm').dataset.kg);t('lbm runs',errs.length===0,errs);}
+{const {dom,errs}=load('kids-bmi-calculator/index.html');const d=dom.window.document,P=d.getElementById('panel-kids');P.querySelector('.height-ft').value='4';P.querySelector('.height-in').value='6';P.querySelector('.weight-lbs').value='70';P.querySelector('.age-input').value='10';P.querySelector('.months-input').value='0';P.querySelector('.sex-select').value='male';d.getElementById('calc-kids-btn').click();
+ const note=d.getElementById('kids-percentile-note').textContent;t('kids percentile line (exact 54.46)',/^54th percentile for boys aged 10 years$/.test(note),note);
+ t('kids no simplified-estimate disclaimer',!/simplified BMI estimate/.test(d.getElementById('kids-results').textContent));t('kids runs',errs.length===0,errs);}
 console.log(`calculator checks: ${ok} passed, ${fail} failed`);process.exit(fail?1:0);

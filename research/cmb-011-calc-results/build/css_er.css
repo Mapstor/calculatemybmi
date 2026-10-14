@@ -1,0 +1,40 @@
+/* Extended results (CMB-011): flat sections divided by hairlines, the answer first, no card inside the calculator card */
+.er { margin-top: 2rem; }
+.er-section { margin: 1.5rem 0 0; padding: 1.5rem 0 0; border-top: 1px solid var(--gray-200); overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.er-section:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+.er-section h2 { font-size: 1.0625rem; font-weight: 600; line-height: 1.4; color: var(--gray-900); margin: 0 0 0.75rem; }
+.er-note { font-size: 0.875rem; line-height: 1.6; color: var(--gray-600); margin: 0 0 0.75rem; }
+.er-note:last-child { margin-bottom: 0; }
+.er-summary { font-size: 1rem; line-height: 1.65; color: var(--gray-800); }
+.er-summary p { margin: 0 0 0.75rem; }
+.er-summary p:last-child { margin-bottom: 0; }
+.er-summary strong { color: var(--gray-900); }
+.er-summary-note { font-size: 0.9375rem; color: var(--gray-600); }
+.er-metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; }
+.er-metrics-2 { grid-template-columns: repeat(2, 1fr); }
+.er-metrics-4 { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 600px) { .er-metrics, .er-metrics-4 { grid-template-columns: repeat(2, 1fr); } }
+.er-metric { background: var(--gray-50); border-radius: var(--radius-md); padding: 0.75rem; text-align: center; }
+.er-metric-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.02em; color: var(--gray-600); margin-bottom: 0.25rem; }
+.er-metric-value { font-size: 1.125rem; font-weight: 700; color: var(--gray-900); font-variant-numeric: tabular-nums; }
+.er-metric-sub { font-size: 0.75rem; color: var(--gray-600); margin-top: 0.125rem; }
+.er-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+.er-table th { padding: 0.5rem 0.625rem; background: var(--gray-100); color: var(--gray-900); font-weight: 600; text-align: left; border-bottom: 1px solid var(--gray-200); }
+.er-table thead td { border-bottom: 1px solid var(--gray-200); }   /* an empty corner cell stays blank */
+.er-table td { padding: 0.5rem 0.625rem; border-bottom: 1px solid var(--gray-200); color: var(--gray-700); vertical-align: top; }
+.er-table .er-num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.er-table th.er-num { white-space: normal; }
+@media (max-width: 400px) { .er-table { font-size: 0.8125rem; } .er-table th, .er-table td { padding: 0.5rem; } }
+.er-table tr.er-active td { background: var(--primary-bg); color: var(--gray-900); font-weight: 600; }
+.er-table tr.er-near td { background: var(--gray-50); }
+.er-alt { display: block; font-size: 0.75rem; font-weight: 400; color: var(--gray-600); }
+.er-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 0.5rem; vertical-align: middle; }
+.er-you { display: inline-block; margin-left: 0.375rem; padding: 0 0.5rem; border-radius: var(--radius-full); background: var(--link); color: #fff; font-size: 0.75rem; font-weight: 600; line-height: 1.375rem; white-space: nowrap; }
+.er-list { margin: 0 0 0.75rem 1.25rem; font-size: 0.9375rem; line-height: 1.6; color: var(--gray-700); }
+.er-list li { margin-bottom: 0.375rem; }
+/* Weight bar: the healthy band is edged in the strong green and labelled, so it never relies on colour alone */
+.er-weightbar { position: relative; height: 28px; margin: 2.25rem 10px 2.25rem; background: var(--gray-100); border-radius: 14px; }
+.er-weightbar-zone { position: absolute; top: 0; bottom: 0; background: #bbf7d0; border-left: 2px solid var(--normal-strong); border-right: 2px solid var(--normal-strong); }
+.er-weightbar-marker { position: absolute; top: -5px; width: 14px; height: 38px; margin-left: -7px; background: var(--link); border: 3px solid #fff; border-radius: 7px; box-shadow: 0 1px 4px rgb(0 0 0 / 0.25); }
+.er-weightbar-you { position: absolute; top: -28px; transform: translateX(-50%); font-size: 0.8125rem; font-weight: 700; color: var(--link); white-space: nowrap; }
+.er-weightbar-tick { position: absolute; top: 34px; transform: translateX(-50%); font-size: 0.75rem; color: var(--gray-600); font-variant-numeric: tabular-nums; }

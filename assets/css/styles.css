@@ -114,35 +114,34 @@ main { flex: 1; padding: 2rem 0 3rem; }
 .results-section.visible { display: block; animation: fadeIn 0.3s ease; }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
-/* BMI Result Card */
-.bmi-result-card { text-align: center; padding: 2rem; margin-bottom: 1.5rem; border-radius: var(--radius-xl); }
-.bmi-result-card.underweight { background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); border: 2px solid var(--underweight); }
-.bmi-result-card.normal { background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%); border: 2px solid var(--normal); }
-.bmi-result-card.overweight { background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border: 2px solid var(--overweight); }
-.bmi-result-card.obese { background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%); border: 2px solid var(--obese); }
-.bmi-result-card.obese-severe { background: linear-gradient(135deg, #fee2e2 0%, #fca5a5 100%); border: 2px solid var(--obese-severe); }
+/* BMI Result Card (CMB-011): a flat category tint, the number in the strong shade (4.7:1 or more on its tint) */
+.bmi-result-card { text-align: center; padding: 1.75rem 1.25rem; margin-bottom: 1.5rem; border-radius: var(--radius-xl); background: var(--gray-50); }
+.bmi-result-card.underweight { background: #eff6ff; }
+.bmi-result-card.normal { background: #ecfdf5; }
+.bmi-result-card.overweight { background: #fffbeb; }
+.bmi-result-card.obese, .bmi-result-card.obese-severe { background: #fef2f2; }
 
-.bmi-value { font-size: 4rem; font-weight: 700; line-height: 1; margin-bottom: 0.5rem; }
-.bmi-value.underweight { color: var(--underweight); }
-.bmi-value.normal { color: var(--normal); }
-.bmi-value.overweight { color: var(--overweight); }
-.bmi-value.obese { color: var(--obese); }
+.bmi-value { font-size: 4rem; font-weight: 700; line-height: 1; margin-bottom: 0.5rem; font-variant-numeric: tabular-nums; }
+.bmi-value.underweight { color: var(--underweight-strong); }
+.bmi-value.normal { color: var(--normal-strong); }
+.bmi-value.overweight { color: var(--overweight-strong); }
+.bmi-value.obese { color: var(--obese-strong); }
 .bmi-value.obese-severe { color: var(--obese-severe); }
 
-.bmi-category { font-size: 1.5rem; font-weight: 600; margin-bottom: 0.25rem; }
+.bmi-category { font-size: 1.5rem; font-weight: 600; color: var(--gray-900); margin-bottom: 0.25rem; }
 .bmi-range { font-size: 0.875rem; color: var(--gray-600); }
 
-/* BMI Scale */
+/* BMI Scale: white labels on the strong shades (5:1 or more) */
 .bmi-scale { margin: 1.5rem 0; }
 .bmi-scale-bar { display: flex; height: 24px; border-radius: var(--radius-full); overflow: hidden; position: relative; }
-.bmi-scale-segment { height: 100%; display: flex; align-items: center; justify-content: center; font-size: 0.6875rem; font-weight: 600; color: white; }
-.bmi-scale-segment.underweight { background: var(--underweight); width: 14%; }
-.bmi-scale-segment.normal { background: var(--normal); width: 26%; }
-.bmi-scale-segment.overweight { background: var(--overweight); width: 20%; }
-.bmi-scale-segment.obese { background: var(--obese); width: 20%; }
+.bmi-scale-segment { height: 100%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 600; color: #fff; }
+.bmi-scale-segment.underweight { background: var(--underweight-strong); width: 14%; }
+.bmi-scale-segment.normal { background: var(--normal-strong); width: 26%; }
+.bmi-scale-segment.overweight { background: var(--overweight-strong); width: 20%; }
+.bmi-scale-segment.obese { background: var(--obese-strong); width: 20%; }
 .bmi-scale-segment.obese-severe { background: var(--obese-severe); width: 20%; }
-.bmi-scale-marker { position: absolute; top: -8px; width: 4px; height: 40px; background: var(--gray-900); border-radius: 2px; transform: translateX(-50%); transition: left 0.3s ease; }
-.bmi-scale-labels { position: relative; height: 1rem; margin-top: 0.5rem; font-size: 0.6875rem; color: var(--gray-500); }
+.bmi-scale-marker { position: absolute; top: -8px; width: 4px; height: 40px; background: var(--gray-900); border-radius: 2px; transform: translateX(-50%); box-shadow: 0 0 0 2px #fff; transition: left 0.3s ease; }
+.bmi-scale-labels { position: relative; height: 1rem; margin-top: 0.5rem; font-size: 0.75rem; color: var(--gray-600); font-variant-numeric: tabular-nums; }
 .bmi-scale-labels span { position: absolute; transform: translateX(-50%); }
 .bmi-scale-labels span:nth-child(1) { left: 0; transform: translateX(0); }
 .bmi-scale-labels span:nth-child(2) { left: 14%; }
@@ -157,9 +156,11 @@ main { flex: 1; padding: 2rem 0 3rem; }
 .results-grid-4 { grid-template-columns: repeat(4, 1fr); }
 @media (max-width: 600px) { .results-grid, .results-grid-3, .results-grid-4 { grid-template-columns: repeat(2, 1fr); } }
 .result-item { padding: 0.875rem; background: var(--gray-50); border-radius: var(--radius-md); text-align: center; }
-.result-item-label { font-size: 0.6875rem; color: var(--gray-500); margin-bottom: 0.25rem; text-transform: uppercase; }
-.result-item-value { font-size: 1.125rem; font-weight: 600; color: var(--gray-800); }
-.result-item-value.highlight { color: var(--primary-dark); }
+.result-item-label { font-size: 0.75rem; color: var(--gray-600); margin-bottom: 0.25rem; text-transform: uppercase; letter-spacing: 0.02em; }
+.result-item-value { font-size: 1.125rem; font-weight: 600; color: var(--gray-900); font-variant-numeric: tabular-nums; }
+.result-item-value.highlight { color: var(--link); }
+@media (max-width: 600px) { .result-item--wide { grid-column: 1 / -1; } }
+#newbmi-category-change { font-size: 0.9375rem; font-weight: 500; }
 
 /* Weight Range Box */
 .weight-range-box { background: var(--gray-50); border-radius: var(--radius-lg); padding: 1rem; margin: 1rem 0; }
@@ -169,36 +170,46 @@ main { flex: 1; padding: 2rem 0 3rem; }
 .weight-range-item.current { outline: 3px solid var(--gray-900); outline-offset: 2px; }
 .weight-range-item span { display: block; font-weight: 600; font-size: 0.875rem; }
 
-/* Extended Results */
-.er{margin-top:1.5rem;}
-.er-section{background:white;border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:1.25rem;margin-bottom:1rem;overflow-x:auto;-webkit-overflow-scrolling:touch;}
-.er-section h3{font-size:1rem;font-weight:700;color:var(--gray-800);margin:0 0 1rem;display:flex;align-items:center;gap:0.5rem;}
-.er-section h3 .er-icon{font-size:1.125rem;}
-.er-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:0.625rem;}
-@media(max-width:600px){.er-metrics{grid-template-columns:repeat(2,1fr);}}
-.er-metric{background:var(--gray-50);border-radius:var(--radius-md);padding:0.75rem;text-align:center;}
-.er-metric-label{font-size:0.6875rem;text-transform:uppercase;letter-spacing:0.03em;color:var(--gray-500);margin-bottom:0.25rem;}
-.er-metric-value{font-size:1.125rem;font-weight:700;color:var(--gray-800);}
-.er-metric-sub{font-size:0.75rem;color:var(--gray-500);margin-top:0.125rem;}
-.er-table{width:100%;border-collapse:collapse;font-size:0.8125rem;margin:0.5rem 0;}
-.er-table th{padding:0.5rem 0.625rem;background:var(--secondary);color:white;font-weight:600;text-align:left;border:1px solid var(--gray-300);}
-.er-table td{padding:0.5rem 0.625rem;border:1px solid var(--gray-200);color:var(--gray-600);}
-.er-table tr.er-active{background:var(--primary-bg);font-weight:600;}
-.er-table tr.er-active td{color:var(--secondary);border-color:var(--primary-light);}
-.er-table tr:nth-child(even):not(.er-active){background:var(--gray-50);}
-.er-bar-wrap{height:8px;background:var(--gray-200);border-radius:4px;overflow:hidden;margin-top:0.375rem;}
-.er-bar-fill{height:100%;border-radius:4px;transition:width 0.4s ease;}
-.er-risk-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0.5rem;}
-@media(max-width:600px){.er-risk-grid{grid-template-columns:1fr;}}
-.er-risk{display:flex;align-items:center;gap:0.5rem;padding:0.5rem 0.625rem;background:var(--gray-50);border-radius:var(--radius-md);font-size:0.8125rem;}
-.er-risk-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
-.er-summary{background:var(--primary-bg);border:1px solid var(--primary-light);border-radius:var(--radius-lg);padding:1rem;font-size:0.875rem;color:var(--secondary);line-height:1.6;}
-.er-summary strong{color:var(--primary-dark);}
-.er-progress{display:flex;align-items:center;gap:0.75rem;margin:0.375rem 0;}
-.er-progress-label{font-size:0.8125rem;color:var(--gray-600);min-width:80px;}
-.er-progress-bar{flex:1;height:18px;background:var(--gray-100);border-radius:9px;overflow:hidden;position:relative;}
-.er-progress-fill{height:100%;border-radius:9px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;font-size:0.625rem;font-weight:700;color:white;min-width:24px;}
-.er-badge{display:inline-block;padding:0.125rem 0.5rem;border-radius:var(--radius-full);font-size:0.6875rem;font-weight:600;}
+/* Extended results (CMB-011): flat sections divided by hairlines, the answer first, no card inside the calculator card */
+.er { margin-top: 2rem; }
+.er-section { margin: 1.5rem 0 0; padding: 1.5rem 0 0; border-top: 1px solid var(--gray-200); overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.er-section:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+.er-section h2 { font-size: 1.0625rem; font-weight: 600; line-height: 1.4; color: var(--gray-900); margin: 0 0 0.75rem; }
+.er-note { font-size: 0.875rem; line-height: 1.6; color: var(--gray-600); margin: 0 0 0.75rem; }
+.er-note:last-child { margin-bottom: 0; }
+.er-summary { font-size: 1rem; line-height: 1.65; color: var(--gray-800); }
+.er-summary p { margin: 0 0 0.75rem; }
+.er-summary p:last-child { margin-bottom: 0; }
+.er-summary strong { color: var(--gray-900); }
+.er-summary-note { font-size: 0.9375rem; color: var(--gray-600); }
+.er-metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; }
+.er-metrics-2 { grid-template-columns: repeat(2, 1fr); }
+.er-metrics-4 { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 600px) { .er-metrics, .er-metrics-4 { grid-template-columns: repeat(2, 1fr); } }
+.er-metric { background: var(--gray-50); border-radius: var(--radius-md); padding: 0.75rem; text-align: center; }
+.er-metric-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.02em; color: var(--gray-600); margin-bottom: 0.25rem; }
+.er-metric-value { font-size: 1.125rem; font-weight: 700; color: var(--gray-900); font-variant-numeric: tabular-nums; }
+.er-metric-sub { font-size: 0.75rem; color: var(--gray-600); margin-top: 0.125rem; }
+.er-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+.er-table th { padding: 0.5rem 0.625rem; background: var(--gray-100); color: var(--gray-900); font-weight: 600; text-align: left; border-bottom: 1px solid var(--gray-200); }
+.er-table thead td { border-bottom: 1px solid var(--gray-200); }   /* an empty corner cell stays blank */
+.er-table td { padding: 0.5rem 0.625rem; border-bottom: 1px solid var(--gray-200); color: var(--gray-700); vertical-align: top; }
+.er-table .er-num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.er-table th.er-num { white-space: normal; }
+@media (max-width: 400px) { .er-table { font-size: 0.8125rem; } .er-table th, .er-table td { padding: 0.5rem; } }
+.er-table tr.er-active td { background: var(--primary-bg); color: var(--gray-900); font-weight: 600; }
+.er-table tr.er-near td { background: var(--gray-50); }
+.er-alt { display: block; font-size: 0.75rem; font-weight: 400; color: var(--gray-600); }
+.er-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 0.5rem; vertical-align: middle; }
+.er-you { display: inline-block; margin-left: 0.375rem; padding: 0 0.5rem; border-radius: var(--radius-full); background: var(--link); color: #fff; font-size: 0.75rem; font-weight: 600; line-height: 1.375rem; white-space: nowrap; }
+.er-list { margin: 0 0 0.75rem 1.25rem; font-size: 0.9375rem; line-height: 1.6; color: var(--gray-700); }
+.er-list li { margin-bottom: 0.375rem; }
+/* Weight bar: the healthy band is edged in the strong green and labelled, so it never relies on colour alone */
+.er-weightbar { position: relative; height: 28px; margin: 2.25rem 10px 2.25rem; background: var(--gray-100); border-radius: 14px; }
+.er-weightbar-zone { position: absolute; top: 0; bottom: 0; background: #bbf7d0; border-left: 2px solid var(--normal-strong); border-right: 2px solid var(--normal-strong); }
+.er-weightbar-marker { position: absolute; top: -5px; width: 14px; height: 38px; margin-left: -7px; background: var(--link); border: 3px solid #fff; border-radius: 7px; box-shadow: 0 1px 4px rgb(0 0 0 / 0.25); }
+.er-weightbar-you { position: absolute; top: -28px; transform: translateX(-50%); font-size: 0.8125rem; font-weight: 700; color: var(--link); white-space: nowrap; }
+.er-weightbar-tick { position: absolute; top: 34px; transform: translateX(-50%); font-size: 0.75rem; color: var(--gray-600); font-variant-numeric: tabular-nums; }
 
 /* Content Sections */
 .content-section { background: white; border-radius: var(--radius-xl); box-shadow: var(--shadow-md); padding: 1.5rem; margin-bottom: 1.5rem; max-width: 800px; margin-left: auto; margin-right: auto; }
@@ -636,3 +647,13 @@ main.reading :target { scroll-margin-top: 80px; }
 .resource-list li { padding: 0.75rem 0; border-bottom: 1px solid var(--gray-200); }
 .resource-list a { font-weight: 600; }
 .resource-list span { display: block; font-size: 0.875rem; color: var(--gray-600); margin-top: 0.125rem; }
+
+/* ============================================
+   CMB-011: title-plus-one-line link lists (blog hub, 404). These classes had no rules, so the lists rendered as run-on links.
+   ============================================ */
+.related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); column-gap: 1.5rem; border-top: 1px solid var(--gray-200); }
+.related-card { display: block; padding: 0.875rem 0; border-bottom: 1px solid var(--gray-200); color: inherit; text-decoration: none; }
+.related-card:hover { text-decoration: none; }
+.related-card-title { font-weight: 600; color: var(--link); line-height: 1.4; }
+.related-card:hover .related-card-title { color: var(--link-hover); text-decoration: underline; }
+.related-card-desc { margin: 0.125rem 0 0; font-size: 0.875rem; line-height: 1.5; color: var(--gray-600); }

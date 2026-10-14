@@ -10,6 +10,10 @@ which the box does not have; chat runs them (or the Mac). Serve the repo first: 
 | `box_probe.py BASE PATH...` | visible empty boxes, before and after each calculator runs |
 | `overflow_menu.py BASE PATH...` | any page wider than the screen at 360/390/1280 px; mobile menu opens and closes |
 | `snap_results.py PORT REPO_ROOT` | saves each calculator page with its results open (`_snap/`), so the detector can audit the results panel |
+| `residue_scan.py REPO COMMIT...` | text left behind by a bulk deletion that still points at what was deleted (CMB-011: 15 leftovers on 9 pages) |
 
 The static half of these checks runs in the box on every page: `scripts/check_content_integrity.py`, imported by
 `scripts/check_structure.py`. `patch_cmb010.py` is the CMB-010 build record.
+
+CMB-011: the results panel is now checked in the box too (`js_problems()` on `assets/js/calculator.js`), and the static
+gate catches numbering gaps, captions for a missing table, empty chart rows, empty icons and headings with nothing under them.

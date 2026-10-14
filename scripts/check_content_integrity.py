@@ -13,6 +13,13 @@ Catches what earlier automated edits left behind and what a style detector canno
   - inline-styled button links (use .cta-button, D-13) and inline-styled bylines (use .byline)
   - D-11: sex-specific "healthy/optimal" BMI ranges
   - placeholders in headings ("(teaser)", TODO, TBD, lorem)
+CMB-011 adds what a deleted table or section leaves behind:
+  - numbered items that skip a number ("Limitation #1, #3", "Method 2" with no Method 1)
+  - a caption for rows or columns in a section that has no table, or "the table below" on a page without one
+  - a chart row without its bar, an empty bar track, an empty icon
+  - a heading with nothing under it before the next heading of the same or higher rank
+js_problems() checks assets/js/calculator.js (the results panel): no emoji or arrow/dingbat entities,
+no base category hexes or other low-contrast hexes as text colour, no gradients.
 """
 import re, sys, html
 from html.parser import HTMLParser
@@ -119,12 +126,100 @@ def integrity_problems(src):
     # placeholders in headings
     for m in re.finditer(r'<h[1-6][^>]*>([^<]*(?:\(teaser\)|\bTODO\b|\bTBD\b|lorem ipsum)[^<]*)</h[1-6]>', src, re.I):
         out.append(f'placeholder in heading: "{m.group(1)[:50]}"')
+    out.extend(residue_problems(src))
+    return out
+
+NUMBERED = re.compile(r'>\s*(Limitation|Method|Step|Example|Tip|Mistake|Phase|Part|Rule|Reason|Myth|Option)\s*#?\s*(\d{1,2})\b')
+
+class _Outline(HTMLParser):
+    """Headings in <main> and whether anything (text, table, image, form control) follows before the next one."""
+    CONTENT = {'img', 'svg', 'table', 'canvas', 'iframe', 'video', 'input', 'select', 'button', 'picture'}
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.ev, self.main, self.skip, self.head = [], 0, 0, None
+    def handle_starttag(self, tag, attrs):
+        if tag == 'main': self.main = 1
+        if tag in ('script', 'style'): self.skip += 1
+        if not self.main: return
+        if re.fullmatch(r'h[1-6]', tag): self.head = [int(tag[1]), '']
+        elif tag in self.CONTENT and self.head is None: self.ev.append(('c', 0, tag))
+        if tag == 'section' and self.head is None: self.ev.append(('s', 0, ''))
+    def handle_endtag(self, tag):
+        if tag in ('script', 'style'): self.skip -= 1
+        if tag == 'main': self.main = 0
+        if not self.main: return
+        if re.fullmatch(r'h[1-6]', tag) and self.head:
+            self.ev.append(('h', self.head[0], ' '.join(self.head[1].split()))); self.head = None
+        if tag == 'section': self.ev.append(('/s', 0, ''))
+    def handle_data(self, data):
+        if self.skip or not self.main: return
+        if self.head is not None: self.head[1] += data
+        elif data.strip(): self.ev.append(('c', 0, 'text'))
+
+def residue_problems(src):
+    out = []
+    m = re.search(r'(?s)<main\b.*?</main>', src)
+    main = re.sub(r'(?s)<script.*?</script>|<style.*?</style>', '', m.group(0) if m else src)
+    vis = _visible(src)
+    # numbered items must run from 1 without gaps
+    nums = {}
+    for mm in NUMBERED.finditer(vis):
+        nums.setdefault(mm.group(1), set()).add(int(mm.group(2)))
+    for k, ns in sorted(nums.items()):
+        missing = [n for n in range(1, max(ns) + 1) if n not in ns]
+        if missing: out.append(f'numbered "{k}" items skip {missing}')
+    # captions for rows/columns in a section without a table; "the table below/above" on a page without one
+    for sec in re.finditer(r'(?s)<section\b[^>]*>(.*?)</section>', vis):
+        if '<table' in sec.group(1): continue
+        for pm in re.finditer(r'(?s)<(p|figcaption)\b[^>]*>(.*?)</\1>', sec.group(1)):
+            t = _text(pm.group(2))
+            if re.match(r'^(?:Rows?|Columns?)\s+\d', t): out.append(f'caption for a table that is not there: "{t[:50]}"')
+    if '<table' not in vis and re.search(r'(?i)\b(?:the|this) table (?:below|above)\b', _text(vis)):
+        out.append('text refers to a table that is not on the page')
+    # chart rows without a bar, empty bar tracks, empty icons
+    for mm in re.finditer(r'<div class="chart-bar-h-item"[^>]*>\s*<span class="chart-bar-h-label">([^<]*)</span>\s*</div>', main):
+        out.append(f'chart row without a bar: "{mm.group(1)[:30]}"')
+    if re.search(r'<div class="chart-bar-h-track"[^>]*>\s*</div>', main):
+        out.append('empty chart bar track')
+    if re.search(r'<svg\b[^>]*>\s*</svg>', main):
+        out.append('empty icon (svg with nothing inside)')
+    # a heading with nothing under it
+    o = _Outline(); o.feed(src); o.close()
+    ev = o.ev
+    for i, e in enumerate(ev):
+        if e[0] != 'h': continue
+        j, has = i + 1, False
+        while j < len(ev):
+            f = ev[j]
+            if f[0] == 'c' or (f[0] == 'h' and f[1] > e[1]): has = True; break
+            if f[0] in ('h', '/s'): break
+            j += 1
+        if not has and j < len(ev): out.append(f'heading with nothing under it: "{e[2][:50]}"')
+    return out
+
+ARROW_OR_DINGBAT = lambda c: 0x2190 <= c <= 0x21FF or 0x2700 <= c <= 0x27BF or 0x2900 <= c <= 0x297F or 0x2B00 <= c <= 0x2BFF or c >= 0x1F000
+LOW_CONTRAST_TEXT = ('#3b82f6', '#60a5fa', '#93c5fd', '#22c55e', '#f59e0b', '#f97316', '#ef4444', '#06b6d4', '#8b5cf6',
+                     '#94a3b8', '#e74c3c', '#4a90d9', '#9ca3af')
+
+def js_problems(js):
+    """Results-panel rules for assets/js/calculator.js (CMB-011)."""
+    out = []
+    for mm in re.finditer(r'&#(x[0-9a-fA-F]+|\d+);', js):
+        g = mm.group(1); code = int(g[1:], 16) if g[0] in 'xX' else int(g)
+        if ARROW_OR_DINGBAT(code): out.append(f'arrow, dingbat or emoji entity {mm.group(0)}')
+    for ch in sorted(set(EMOJI.findall(js))):
+        out.append(f'emoji: U+{ord(ch):04X}')
+    for mm in re.finditer(r'(?i)(?<![-\w])color:\s*(#[0-9a-f]{6})', js):
+        if mm.group(1).lower() in LOW_CONTRAST_TEXT: out.append(f'low-contrast text colour {mm.group(1)}')
+    if re.search(r'(?i)(?:linear|radial|conic)-gradient', js):
+        out.append('gradient in the results panel')
     return out
 
 if __name__ == '__main__':
     bad = 0
     for f in sys.argv[1:]:
-        probs = integrity_problems(open(f, encoding='utf-8').read())
+        src = open(f, encoding='utf-8').read()
+        probs = js_problems(src) if f.endswith('.js') else integrity_problems(src)
         if probs:
             bad += 1; print(f'FAIL {f}')
             for x in probs: print('   -', x)

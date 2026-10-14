@@ -9,7 +9,8 @@ base = sys.argv[1]
 def r1(x): return math.floor(x*10 + 0.5 + 1e-9)/10
 def bounds(h, lo=18.5, hi=24.9):
     k = h*h/703; L = (lo-0.05)*k; H = (hi+0.05)*k
-    return dict(minLb=math.ceil(L-1e-9), maxLb=math.ceil(H-1e-9)-1, minKg=math.ceil(L/2.20462-1e-9), maxKg=math.ceil(H/2.20462-1e-9)-1, L=L, H=H)
+    m2 = (h*0.0254)**2; LK = (lo-0.05)*m2; HK = (hi+0.05)*m2          # metric limits follow kg/m2 (CMB-011)
+    return dict(minLb=math.ceil(L-1e-9), maxLb=math.ceil(H-1e-9)-1, minKg=math.ceil(LK-1e-9), maxKg=math.ceil(HK-1e-9)-1, L=L, H=H)
 def cat(b):
     return 'under' if b < 18.5 else 'normal' if b < 25 else 'over' if b < 30 else 'obese'
 fails = []; checks = 0
@@ -18,7 +19,7 @@ def ok(cond, msg):
     if not cond: fails.append(msg)
 pages = {'/': 'standard', '/women-bmi-calculator/': 'women', '/men-bmi-calculator/': 'men', '/age-bmi-calculator/': 'age'}
 imperial_cases = [(5,10,180),(5,10,173),(5,10,174),(5,10,128),(5,10,129),(6,2,144),(6,2,143),(5,2,136),(5,2,137),(6,0,250),(5,4,95),(6,6,330)]
-metric_cases = [(178,82),(178,79),(178,80),(188,66),(188,65),(157,61),(157,62),(165,45),(200,140)]
+metric_cases = [(178,82),(178,79),(178,80),(188,66),(188,65),(157,61),(157,62),(165,45),(200,140),(145,84),(159,101)]  # last two: 40.0 in kg/m2, 39.9 with 703 (CMB-011)
 with sync_playwright() as p:
     b = p.chromium.launch(args=['--no-sandbox','--disable-dev-shm-usage'])
     ctx = b.new_context(viewport={'width':390,'height':844})
@@ -38,7 +39,7 @@ with sync_playwright() as p:
             shown = pg.inner_text(f'#{t}-bmi-value'); catTxt = pg.inner_text(f'#{t}-bmi-category')
             ok(shown == f'{R:.1f}', f'{path} {ft}\'{inch}" {lb}: shown {shown} expected {R:.1f}')
             exp = cat(R)
-            got = 'under' if re.search('Thin|Under', catTxt) else 'normal' if 'Normal' in catTxt else 'over' if 'Overweight' in catTxt else 'obese'
+            got = 'under' if re.search('(?i)thin|under', catTxt) else 'normal' if re.search('Normal|Healthy', catTxt) else 'over' if 'Overweight' in catTxt else 'obese'
             ok(got == exp, f'{path} {ft}\'{inch}" {lb}: category {catTxt} for BMI {R}')
             if not pg.locator(f'#{t}-healthy-min').count(): print('no healthy-min on', path); continue
             hmin = ' '.join(pg.inner_text(f'#{t}-healthy-min').split()); hmax = ' '.join(pg.inner_text(f'#{t}-healthy-max').split())
@@ -67,7 +68,7 @@ with sync_playwright() as p:
                     cells = line.split('\t')
                     if len(cells) >= 4:
                         bb = float(cells[2]); c = cells[3]
-                        g = 'under' if re.search('Thin|Under', c) else 'normal' if 'Normal' in c else 'over' if 'Overweight' in c else 'obese'
+                        g = 'under' if re.search('(?i)thin|under', c) else 'normal' if re.search('Normal|Healthy', c) else 'over' if 'Overweight' in c else 'obese'
                         ok(g == cat(bb), f'{path} what-if {line}')
         # metric
         for cm, kg in metric_cases:
@@ -75,9 +76,12 @@ with sync_playwright() as p:
             pg.fill(f'{panel} .height-cm', str(cm)); pg.fill(f'{panel} .weight-kg', str(kg))
             if t == 'age': pg.fill(f'{panel} .age-input', '40')
             pg.click(f'#calc-{t}-btn'); pg.wait_for_timeout(60)
-            h = cm/2.54; lb = kg*2.20462; R = r1(lb*703/h/h); B = bounds(h)
-            shown = pg.inner_text(f'#{t}-bmi-value')
+            h = cm/2.54; R = r1(kg/(cm/100)**2); B = bounds(h)               # metric BMI is kg/m2 as entered (CMB-011)
+            shown = pg.inner_text(f'#{t}-bmi-value'); catTxt = pg.inner_text(f'#{t}-bmi-category')
             ok(shown == f'{R:.1f}', f'{path} {cm}cm {kg}kg shown {shown} vs {R}')
+            got = 'under' if re.search('(?i)thin|under', catTxt) else 'normal' if re.search('Normal|Healthy', catTxt) else 'over' if 'Overweight' in catTxt else 'obese'
+            ok(got == cat(R), f'{path} {cm}cm {kg}kg category {catTxt} for BMI {R}')
+            if R >= 40: ok('Class 3' in catTxt, f'{path} {cm}cm {kg}kg: BMI {R} should be class 3 obesity, shown {catTxt}')
             hmin = ' '.join(pg.inner_text(f'#{t}-healthy-min').split()); hmax = ' '.join(pg.inner_text(f'#{t}-healthy-max').split())
             ok(hmin == f"{B['minKg']} kg ({round(B['minKg']*2.20462)} lbs)", f'{path} {cm}cm min {hmin} vs {B}')
             ok(hmax == f"{B['maxKg']} kg ({round(B['maxKg']*2.20462)} lbs)", f'{path} {cm}cm max {hmax} vs {B}')
@@ -98,8 +102,9 @@ with sync_playwright() as p:
         pg.goto(base + path, wait_until='load'); pg.click(btn); pg.wait_for_timeout(100)
         vis = pg.eval_on_selector('.results-section', 'e => getComputedStyle(e).display') if pg.locator('.results-section').count() else 'n/a'
         ok(not errs and vis != 'none', f'{path} errors {errs} results {vis}')
+        rid = {'/new-bmi-calculator/': '#newbmi-results', '/kids-bmi-calculator/': '#kids-results', '/ideal-weight/': '#ideal-results', '/lean-body-mass/': '#lbm-results'}[path]
+        txt = pg.inner_text(rid); ok('NaN' not in txt and 'undefined' not in txt and 'Infinity' not in txt, f'{path} NaN/undefined in results')
         if path == '/new-bmi-calculator/':
-            txt = pg.inner_text('#newbmi-results'); ok('NaN' not in txt and 'undefined' not in txt, f'{path} NaN/undefined in results')
             print('newbmi sample:', [pg.inner_text(x) for x in ('#newbmi-healthy-min', '#newbmi-healthy-max', '#newbmi-weight-diff') if pg.locator(x).count()])
         pg.close()
     b.close()

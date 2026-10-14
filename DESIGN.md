@@ -189,8 +189,18 @@ No sharp corners (0 radius) and no custom clip-paths. Borders are hairline (`1px
 - Pill toggles (sex, units) are the preferred control over native radios on tool pages; the Average Weight v2 and Body Fat Calculator pages establish the pattern.
 
 ### Result tiles & charts
-- Grids (`.results-grid`, `.results-grid-3`, `.results-grid-4`) of flat cards on `--gray-50` background with hairline borders.
-- Charts are inline SVG, no library; label-collision is checked geometrically before shipping (see A2/B1 widget tests).
+- Grids (`.results-grid`, `.results-grid-3`, `.results-grid-4`) of flat tiles on `--gray-50`; labels `--gray-600` at 0.75 rem. The main tile may span the row on phones (`.result-item--wide`).
+- Charts are inline SVG or plain CSS, no library; label-collision is checked geometrically before shipping (see A2/B1 widget tests).
+
+### Calculator results — answer first (CMB-011)
+- Result card: flat category tint (`#eff6ff`, `#ecfdf5`, `#fffbeb`, `#fef2f2`), no border or gradient. The BMI number takes the strong shade (4.7:1 or more on its tint); the category name is `--gray-900`.
+- Scale segments use the strong shades with white 0.75 rem labels (5:1 or more).
+- Extended results (`.er`) are flat sections divided by hairlines, never cards inside the calculator card. Order: what the result means, in plain sentences → the visual → tables → more numbers → links.
+- Section headings in sentence case. Numbers right-aligned with tabular figures (`.er-num`); the other unit sits under the value (`.er-alt`).
+- Category colour only on dots and on BMI values (strong shades from `catColor()`); differences, labels and notes stay neutral. The user's row gets `.er-active` and a "You" pill (`.er-you`), never an arrow glyph.
+- Every weight shows in the unit the user entered first and the other unit second, ideal weight and lean mass included. Metric input is computed in kg/m², US input with 703; the healthy kg limits follow kg/m².
+- No targets of our own (option B) and no unsourced thresholds; official guidance is attributed and linked.
+- `scripts/check_structure.py` runs `js_problems()` on `assets/js/calculator.js`: no emoji or arrow entities, no low-contrast hexes as text colour, no gradients.
 
 ### Category badges
 - Pill (`--radius-full`), category background with white text (BMI color lock applies).
