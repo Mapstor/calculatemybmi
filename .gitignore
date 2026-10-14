@@ -14,3 +14,5 @@ node_modules/
 
 # Python bytecode (check_structure imports check_markup)
 __pycache__/
+# chat-side detector snapshots of calculator results (research/site-checks/snap_results.py)
+_snap/

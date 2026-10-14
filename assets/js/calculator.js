@@ -592,28 +592,28 @@ function displayBMIResults(type, bmi, category, healthyRange, heightInches, weig
   let html = '';
 
   // 1. Key Metrics
-  html += `<div class="er-section"><h3><span class="er-icon">&#128202;</span> Your Key Metrics</h3>${genKeyMetrics(bmi, heightInches, weightLbs, healthyRange, extra)}</div>`;
+  html += `<div class="er-section"><h3>Your Key Metrics</h3>${genKeyMetrics(bmi, heightInches, weightLbs, healthyRange, extra)}</div>`;
 
   // 2. Weight position bar
-  html += `<div class="er-section"><h3><span class="er-icon">&#127919;</span> Where Your Weight Falls</h3><p style="font-size:0.8125rem;color:var(--gray-500);margin:0 0 0.5rem;">Green zone = healthy weight range for your height</p>${genWeightProgressBar(weightLbs, healthyRange)}<div style="height:24px;"></div></div>`;
+  html += `<div class="er-section"><h3>Where Your Weight Falls</h3><p style="font-size:0.8125rem;color:var(--gray-500);margin:0 0 0.5rem;">Green zone = healthy weight range for your height</p>${genWeightProgressBar(weightLbs, healthyRange)}<div style="height:24px;"></div></div>`;
 
   // 3. Classification table
-  html += `<div class="er-section"><h3><span class="er-icon">&#128203;</span> BMI Classification</h3>${genClassificationTable(bmi)}</div>`;
+  html += `<div class="er-section"><h3>BMI Classification</h3>${genClassificationTable(bmi)}</div>`;
 
   // 4. Weight milestones
-  html += `<div class="er-section"><h3><span class="er-icon">&#127947;</span> Weight Milestones for Your Height</h3><p style="font-size:0.8125rem;color:var(--gray-500);margin:0 0 0.5rem;">The weight that matches each BMI threshold at ${fmtH(heightInches)} (${fmtHalt(heightInches)})</p>${genWeightMilestones(bmi, heightInches, weightLbs)}</div>`;
+  html += `<div class="er-section"><h3>Weight Milestones for Your Height</h3><p style="font-size:0.8125rem;color:var(--gray-500);margin:0 0 0.5rem;">The weight that matches each BMI threshold at ${fmtH(heightInches)} (${fmtHalt(heightInches)})</p>${genWeightMilestones(bmi, heightInches, weightLbs)}</div>`;
 
   // 5. What-if scenarios
-  html += `<div class="er-section"><h3><span class="er-icon">&#128161;</span> What-If Weight Scenarios</h3><p style="font-size:0.8125rem;color:var(--gray-500);margin:0 0 0.5rem;">See how gaining or losing weight would change your BMI and category</p>${genWhatIf(bmi, heightInches, weightLbs)}</div>`;
+  html += `<div class="er-section"><h3>What-If Weight Scenarios</h3><p style="font-size:0.8125rem;color:var(--gray-500);margin:0 0 0.5rem;">See how gaining or losing weight would change your BMI and category</p>${genWhatIf(bmi, heightInches, weightLbs)}</div>`;
 
   // 6. Health risks
-  html += `<div class="er-section"><h3><span class="er-icon">&#9829;</span> BMI and Health</h3><p style="font-size:0.875rem;color:var(--gray-600);margin:0;">BMI is a screening measure, not a diagnosis. For what the research says about BMI and specific health risks, see our guide to <a href="/blog/bmi-and-health-risks/">BMI and health risks</a>.</p></div>`;
+  html += `<div class="er-section"><h3>BMI and Health</h3><p style="font-size:0.875rem;color:var(--gray-600);margin:0;">BMI is a screening measure, not a diagnosis. For what the research says about BMI and specific health risks, see our guide to <a href="/blog/bmi-and-health-risks/">BMI and health risks</a>.</p></div>`;
 
   // 7. Sex-specific sections (sourced: NIH/NHLBI 1998 waist cut-offs)
   if (extra.sex === 'female' || extra.sex === 'male') {
     const w = extra.sex === 'female' ? '35 inches (88 cm)' : '40 inches (102 cm)';
     const who = extra.sex === 'female' ? 'women' : 'men';
-    html += `<div class="er-section"><h3><span class="er-icon">${extra.sex === 'female' ? '&#9792;' : '&#9794;'}</span> What else to check</h3>
+    html += `<div class="er-section"><h3>What else to check</h3>
       <p style="font-size:0.875rem;color:var(--gray-600);margin:0 0 0.5rem;"><strong>Waist size:</strong> US clinical guidelines (NIH) treat a waist above ${w} as a sign of higher risk for ${who}, mainly at a BMI of 25 to 34.9.</p>
       <p style="font-size:0.875rem;color:var(--gray-600);margin:0;"><strong>Body fat:</strong> estimate yours with the <a href="/body-fat-calculator/">body fat calculator</a> and see what&rsquo;s typical for your age on the <a href="/body-fat-percentage-chart/">body fat percentage chart</a>. For formula-based weight ranges, see the <a href="/ideal-weight/">ideal weight calculator</a>.</p>
     </div>`;
@@ -634,7 +634,7 @@ function displayBMIResults(type, bmi, category, healthyRange, heightInches, weig
     decades.forEach((d, i) => {
       rows += `<tr${i === bandIdx ? ' class="er-active"' : ''}><td>${d.range}</td><td style="font-weight:600;">${d.rec}</td><td>${d.note}</td></tr>`;
     });
-    html += `<div class="er-section"><h3><span class="er-icon">&#128197;</span> BMI by Age Group</h3>
+    html += `<div class="er-section"><h3>BMI by Age Group</h3>
       <p style="font-size:0.8125rem;color:var(--gray-500);margin:0 0 0.5rem;">WHO does not publish age-adjusted BMI cut-offs. Your age: <strong>${extra.age}</strong></p>
       <table class="er-table"><thead><tr><th>Age Range</th><th>WHO Adult Range</th><th>Notes</th></tr></thead><tbody>${rows}</tbody></table>
       <p style="font-size:0.8125rem;color:var(--gray-500);margin:0.75rem 0 0;">Adult BMI range: <strong>${extra.adjustedRange}</strong>. Individual factors such as muscle mass, existing conditions, and fitness level matter more than BMI alone.</p>
@@ -642,7 +642,7 @@ function displayBMIResults(type, bmi, category, healthyRange, heightInches, weig
   }
 
   // 9. Summary
-  html += `<div class="er-section"><h3><span class="er-icon">&#128221;</span> Personalized Summary</h3>${genSummary(bmi, category, weightLbs, healthyRange, extra)}</div>`;
+  html += `<div class="er-section"><h3>Personalized Summary</h3>${genSummary(bmi, category, weightLbs, healthyRange, extra)}</div>`;
 
   ext.innerHTML = html;
 }
@@ -677,7 +677,7 @@ function displayKidsResults(type, bmi, category, years, months, sex, heightInche
   let html = '';
 
   // Key metrics
-  html += `<div class="er-section"><h3><span class="er-icon">&#128202;</span> Key Metrics</h3>
+  html += `<div class="er-section"><h3>Key Metrics</h3>
     <div class="er-metrics">
       <div class="er-metric"><div class="er-metric-label">BMI</div><div class="er-metric-value" style="color:${catColor(category.class)};">${bmi.toFixed(1)}</div></div>
       <div class="er-metric"><div class="er-metric-label">Age</div><div class="er-metric-value">${years} y ${months} m</div><div class="er-metric-sub">${sexLabel}</div></div>
@@ -688,7 +688,7 @@ function displayKidsResults(type, bmi, category, years, months, sex, heightInche
     </div></div>`;
 
   // Percentile categories
-  html += `<div class="er-section"><h3><span class="er-icon">&#128203;</span> Pediatric BMI Categories</h3>
+  html += `<div class="er-section"><h3>Pediatric BMI Categories</h3>
     <p style="font-size:0.8125rem;color:var(--gray-500);margin:0 0 0.5rem;">For children and teens, BMI is interpreted using age- and sex-specific percentile charts from the CDC</p>
     <table class="er-table"><thead><tr><th>Category</th><th>Percentile Range</th><th style="text-align:center;">Status</th></tr></thead><tbody>
       <tr${category.class === 'underweight' ? ' class="er-active"' : ''}><td><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#3b82f6;margin-right:6px;vertical-align:middle;"></span>Underweight</td><td>Below 5th percentile</td><td style="text-align:center;">${category.class === 'underweight' ? '<strong style="color:var(--primary-dark);">&#10140; Current</strong>' : ''}</td></tr>
@@ -698,7 +698,7 @@ function displayKidsResults(type, bmi, category, years, months, sex, heightInche
     </tbody></table></div>`;
 
   // Age-specific context
-  html += `<div class="er-section"><h3><span class="er-icon">&#128106;</span> Understanding Your Child&rsquo;s BMI</h3>
+  html += `<div class="er-section"><h3>Understanding Your Child&rsquo;s BMI</h3>
     <table class="er-table"><thead><tr><th>Factor</th><th>Why It Matters</th></tr></thead><tbody>
       <tr><td>Growth Spurts</td><td>Children grow in spurts; a temporary high BMI before a growth spurt is common and often normalizes</td></tr>
       <tr><td>Puberty</td><td>Body composition changes dramatically during puberty; ${sex === 'female' ? 'girls naturally gain more body fat' : 'boys gain more muscle mass'}; timing varies widely</td></tr>
@@ -717,7 +717,7 @@ function displayKidsResults(type, bmi, category, years, months, sex, heightInche
   } else {
     guidance = `A BMI of <strong>${bmi.toFixed(1)}</strong> at age <strong>${age}</strong> falls at or above the <strong>95th percentile</strong> for ${sexLabel}, indicating obesity. Please talk with your pediatrician, who can look at the growth trend and the whole child before deciding on any next step.`;
   }
-  html += `<div class="er-section"><h3><span class="er-icon">&#128221;</span> Guidance</h3><div class="er-summary">${guidance}<br><br><em>Important: This is a simplified BMI estimate. For accurate pediatric assessment, your child&rsquo;s BMI must be plotted on CDC growth charts by a healthcare provider who can account for their individual growth trajectory.</em></div></div>`;
+  html += `<div class="er-section"><h3>Guidance</h3><div class="er-summary">${guidance}<br><br><em>Important: This is a simplified BMI estimate. For accurate pediatric assessment, your child&rsquo;s BMI must be plotted on CDC growth charts by a healthcare provider who can account for their individual growth trajectory.</em></div></div>`;
 
   ext.innerHTML = html;
 }
@@ -767,7 +767,7 @@ function displayIdealWeightResults(type, weights, heightInches, sex, frame) {
   let html = '';
 
   // Summary metrics
-  html += `<div class="er-section"><h3><span class="er-icon">&#128202;</span> Summary</h3>
+  html += `<div class="er-section"><h3>Summary</h3>
     <div class="er-metrics">
       <div class="er-metric"><div class="er-metric-label">Average Ideal</div><div class="er-metric-value">${avg.toFixed(1)} kg</div><div class="er-metric-sub">${kgToLbs(avg).toFixed(0)} lbs</div></div>
       <div class="er-metric"><div class="er-metric-label">Formula Range</div><div class="er-metric-value">${minW.toFixed(1)}-${maxW.toFixed(1)}</div><div class="er-metric-sub">kg (${kgToLbs(minW).toFixed(0)}-${kgToLbs(maxW).toFixed(0)} lbs)</div></div>
@@ -778,7 +778,7 @@ function displayIdealWeightResults(type, weights, heightInches, sex, frame) {
     </div></div>`;
 
   // Visual comparison
-  html += `<div class="er-section"><h3><span class="er-icon">&#128200;</span> Formula Comparison</h3>
+  html += `<div class="er-section"><h3>Formula Comparison</h3>
     ${formulaBar('Devine', weights.devine, '#06b6d4')}
     ${formulaBar('Robinson', weights.robinson, '#8b5cf6')}
     ${formulaBar('Miller', weights.miller, '#22c55e')}
@@ -789,7 +789,7 @@ function displayIdealWeightResults(type, weights, heightInches, sex, frame) {
   </div>`;
 
   // Detailed table
-  html += `<div class="er-section"><h3><span class="er-icon">&#128203;</span> Detailed Comparison</h3>
+  html += `<div class="er-section"><h3>Detailed Comparison</h3>
     <table class="er-table"><thead><tr><th>Formula</th><th style="text-align:center;">Weight (kg)</th><th style="text-align:center;">Weight (lbs)</th><th style="text-align:center;">BMI</th><th>Origin</th></tr></thead><tbody>
       <tr><td>Devine (1974)</td><td style="text-align:center;font-weight:600;">${weights.devine.toFixed(1)}</td><td style="text-align:center;">${kgToLbs(weights.devine).toFixed(0)}</td><td style="text-align:center;">${calculateBMI(kgToLbs(weights.devine), heightInches).toFixed(1)}</td><td>Drug dosage calculations; widely used clinically</td></tr>
       <tr><td>Robinson (1983)</td><td style="text-align:center;font-weight:600;">${weights.robinson.toFixed(1)}</td><td style="text-align:center;">${kgToLbs(weights.robinson).toFixed(0)}</td><td style="text-align:center;">${calculateBMI(kgToLbs(weights.robinson), heightInches).toFixed(1)}</td><td>Modification of Devine; based on mortality data</td></tr>
@@ -801,7 +801,7 @@ function displayIdealWeightResults(type, weights, heightInches, sex, frame) {
     </tbody></table></div>`;
 
   // Frame size explanation
-  html += `<div class="er-section"><h3><span class="er-icon">&#128170;</span> Frame Size Adjustment</h3>
+  html += `<div class="er-section"><h3>Frame Size Adjustment</h3>
     <p style="font-size:0.875rem;color:var(--gray-600);margin:0 0 0.75rem;">Your selection: <strong>${frameLabel} frame</strong> (${frame === 'small' ? '-10%' : frame === 'large' ? '+10%' : 'no'} adjustment applied)</p>
     <table class="er-table"><thead><tr><th>Frame Size</th><th>Adjustment</th><th>Average Ideal</th><th>How to Determine</th></tr></thead><tbody>
       <tr${frame === 'small' ? ' class="er-active"' : ''}><td>Small</td><td>-10%</td><td>${(avg / frameLabel === 'Small' ? 1 : (frame === 'small' ? 0.9 : frame === 'large' ? 1.1 : 1)) * 0.9 > 0 ? ((weights.devine / (frame === 'small' ? 0.9 : frame === 'large' ? 1.1 : 1) + weights.robinson / (frame === 'small' ? 0.9 : frame === 'large' ? 1.1 : 1) + weights.miller / (frame === 'small' ? 0.9 : frame === 'large' ? 1.1 : 1) + weights.hamwi / (frame === 'small' ? 0.9 : frame === 'large' ? 1.1 : 1)) / 4 * 0.9).toFixed(1) : avg.toFixed(1)} kg</td><td>Wrist circumference &lt; ${sex === 'male' ? '6.5"' : '6"'}; fingers overlap when circling wrist</td></tr>
@@ -810,7 +810,7 @@ function displayIdealWeightResults(type, weights, heightInches, sex, frame) {
     </tbody></table></div>`;
 
   // Summary
-  html += `<div class="er-section"><h3><span class="er-icon">&#128221;</span> Recommendation</h3><div class="er-summary">Based on your height of <strong>${heightToFtIn(heightInches)}</strong> (${Math.round(heightCm)} cm), ${sex === 'male' ? 'male' : 'female'} sex, and <strong>${frameLabel.toLowerCase()} frame</strong>, your ideal weight averages <strong>${avg.toFixed(1)} kg (${kgToLbs(avg).toFixed(0)} lbs)</strong> across four established formulas. The WHO BMI-based healthy range for your height is <strong>${weights.bmiMin.toFixed(1)}-${weights.bmiMax.toFixed(1)} kg</strong>. These formulas provide useful targets, but your true ideal weight depends on body composition, fitness level, and overall health markers. Use these numbers as a reference range, not an absolute target.</div></div>`;
+  html += `<div class="er-section"><h3>Recommendation</h3><div class="er-summary">Based on your height of <strong>${heightToFtIn(heightInches)}</strong> (${Math.round(heightCm)} cm), ${sex === 'male' ? 'male' : 'female'} sex, and <strong>${frameLabel.toLowerCase()} frame</strong>, your ideal weight averages <strong>${avg.toFixed(1)} kg (${kgToLbs(avg).toFixed(0)} lbs)</strong> across four established formulas. The WHO BMI-based healthy range for your height is <strong>${weights.bmiMin.toFixed(1)}-${weights.bmiMax.toFixed(1)} kg</strong>. These formulas provide useful targets, but your true ideal weight depends on body composition, fitness level, and overall health markers. Use these numbers as a reference range, not an absolute target.</div></div>`;
 
   ext.innerHTML = html;
 }
@@ -851,7 +851,7 @@ function displayLBMResults(type, formulas, fatMass, bodyFatPct, totalWeightKg, w
   let html = '';
 
   // Key metrics
-  html += `<div class="er-section"><h3><span class="er-icon">&#128202;</span> Body Composition Breakdown</h3>
+  html += `<div class="er-section"><h3>Body Composition Breakdown</h3>
     <div class="er-metrics">
       <div class="er-metric"><div class="er-metric-label">Lean Body Mass</div><div class="er-metric-value" style="color:#06b6d4;">${lbm.toFixed(1)} kg</div><div class="er-metric-sub">${kgToLbs(lbm).toFixed(0)} lbs</div></div>
       <div class="er-metric"><div class="er-metric-label">Fat Mass</div><div class="er-metric-value" style="color:#f59e0b;">${fatMass.toFixed(1)} kg</div><div class="er-metric-sub">${kgToLbs(fatMass).toFixed(0)} lbs</div></div>
@@ -863,7 +863,7 @@ function displayLBMResults(type, formulas, fatMass, bodyFatPct, totalWeightKg, w
 
   // Composition visual bar
   const leanPct = ((lbm / totalWeightKg) * 100).toFixed(1);
-  html += `<div class="er-section"><h3><span class="er-icon">&#127912;</span> Composition Visualization</h3>
+  html += `<div class="er-section"><h3>Composition Visualization</h3>
     <div style="display:flex;height:36px;border-radius:18px;overflow:hidden;margin:0.5rem 0;">
       <div style="width:${leanPct}%;background:linear-gradient(135deg,#06b6d4,#0891b2);display:flex;align-items:center;justify-content:center;color:white;font-size:0.75rem;font-weight:700;">Lean ${leanPct}%</div>
       <div style="width:${bodyFatPct.toFixed(1)}%;background:linear-gradient(135deg,#f59e0b,#d97706);display:flex;align-items:center;justify-content:center;color:white;font-size:0.75rem;font-weight:700;">Fat ${bodyFatPct.toFixed(1)}%</div>
@@ -871,7 +871,7 @@ function displayLBMResults(type, formulas, fatMass, bodyFatPct, totalWeightKg, w
     <div style="display:flex;justify-content:space-between;margin-top:0.5rem;font-size:0.8125rem;color:var(--gray-500);"><span>Lean: ${lbm.toFixed(1)} kg (${kgToLbs(lbm).toFixed(0)} lbs)</span><span>Fat: ${fatMass.toFixed(1)} kg (${kgToLbs(fatMass).toFixed(0)} lbs)</span></div></div>`;
 
   // Multi-formula comparison
-  html += `<div class="er-section"><h3><span class="er-icon">&#128203;</span> Formula Comparison</h3>
+  html += `<div class="er-section"><h3>Formula Comparison</h3>
     <p style="font-size:0.8125rem;color:var(--gray-500);margin:0 0 0.5rem;">Three established formulas for estimating lean body mass</p>
     <table class="er-table"><thead><tr><th>Formula</th><th style="text-align:center;">LBM (kg)</th><th style="text-align:center;">LBM (lbs)</th><th style="text-align:center;">Fat Mass</th><th style="text-align:center;">Body Fat %</th></tr></thead><tbody>
       <tr class="er-active"><td>Boer (1984)</td><td style="text-align:center;font-weight:600;">${formulas.boer.toFixed(1)}</td><td style="text-align:center;">${kgToLbs(formulas.boer).toFixed(0)}</td><td style="text-align:center;">${fatMass.toFixed(1)} kg</td><td style="text-align:center;">${bodyFatPct.toFixed(1)}%</td></tr>
@@ -879,12 +879,12 @@ function displayLBMResults(type, formulas, fatMass, bodyFatPct, totalWeightKg, w
       <tr><td>Hume (1966)</td><td style="text-align:center;font-weight:600;">${formulas.hume.toFixed(1)}</td><td style="text-align:center;">${kgToLbs(formulas.hume).toFixed(0)}</td><td style="text-align:center;">${fatMassHume.toFixed(1)} kg</td><td style="text-align:center;">${bfHume.toFixed(1)}%</td></tr>
     </tbody></table></div>`;
 
-  html += `<div class="er-section"><h3><span class="er-icon">&#127947;</span> How your body fat compares</h3>
+  html += `<div class="er-section"><h3>How your body fat compares</h3>
     <p style="font-size:0.875rem;color:var(--gray-600);margin:0;">Compare your estimate with what US adults your age actually measure on CDC body scans, and with the provisional healthy ranges, on the <a href="/body-fat-percentage-chart/">body fat percentage chart</a>. For a direct estimate from tape measurements or skinfolds, use the <a href="/body-fat-calculator/">body fat calculator</a>.</p></div>`;
 
   // FFMI shown without unsourced 'average / exceptional' thresholds
   const ffmiNote = '';
-  html += `<div class="er-section"><h3><span class="er-icon">&#128170;</span> FFMI Interpretation</h3>
+  html += `<div class="er-section"><h3>FFMI Interpretation</h3>
     <div class="er-summary">Your Fat-Free Mass Index is <strong>${ffmi.toFixed(1)}</strong> (adjusted: <strong>${adjFfmi.toFixed(1)}</strong>). ${ffmiNote} FFMI provides a height-normalized measure of muscle mass, useful for tracking strength training progress. The natural limit for men is approximately 25; for women approximately 21. Values above these thresholds without performance-enhancing substances are exceptionally rare.</div></div>`;
 
   ext.innerHTML = html;
@@ -943,7 +943,7 @@ function displayNewBMIResults(type, traditionalBMI, newBMI, diff, traditionalCat
   let html = '';
 
   // Key metrics
-  html += `<div class="er-section"><h3><span class="er-icon">&#128202;</span> Detailed Comparison</h3>
+  html += `<div class="er-section"><h3>Detailed Comparison</h3>
     <div class="er-metrics">
       <div class="er-metric"><div class="er-metric-label">New BMI</div><div class="er-metric-value" style="color:${catColor(newCat.class)};">${newBMI.toFixed(1)}</div><div class="er-metric-sub">${newCat.category}</div></div>
       <div class="er-metric"><div class="er-metric-label">Traditional BMI</div><div class="er-metric-value" style="color:${catColor(traditionalCat.class)};">${traditionalBMI.toFixed(1)}</div><div class="er-metric-sub">${traditionalCat.category}</div></div>
@@ -954,7 +954,7 @@ function displayNewBMIResults(type, traditionalBMI, newBMI, diff, traditionalCat
     </div></div>`;
 
   // Side-by-side classification
-  html += `<div class="er-section"><h3><span class="er-icon">&#128203;</span> Classification Comparison</h3>
+  html += `<div class="er-section"><h3>Classification Comparison</h3>
     <table class="er-table"><thead><tr><th>Metric</th><th style="text-align:center;">Traditional Formula</th><th style="text-align:center;">New Formula (Trefethen)</th></tr></thead><tbody>
       <tr><td>Formula</td><td style="text-align:center;">weight(kg) / height(m)&sup2;</td><td style="text-align:center;">1.3 &times; weight(kg) / height(m)<sup>2.5</sup></td></tr>
       <tr><td>Your BMI</td><td style="text-align:center;font-weight:700;color:${catColor(traditionalCat.class)};">${traditionalBMI.toFixed(1)}</td><td style="text-align:center;font-weight:700;color:${catColor(newCat.class)};">${newBMI.toFixed(1)}</td></tr>
@@ -973,13 +973,13 @@ function displayNewBMIResults(type, traditionalBMI, newBMI, diff, traditionalCat
     const isCurrent = Math.abs(h - heightInches) < 1.5;
     divRows += `<tr${isCurrent ? ' class="er-active"' : ''}><td>${fmtH(h)}</td><td style="text-align:center;">${fmtHalt(h)}</td><td style="text-align:center;">${tBmi.toFixed(1)}</td><td style="text-align:center;">${nBmi.toFixed(1)}</td><td style="text-align:center;font-weight:600;color:${d > 0 ? '#ef4444' : d < -0.5 ? '#22c55e' : 'var(--gray-600)'};">${d >= 0 ? '+' : ''}${d.toFixed(1)}</td></tr>`;
   });
-  html += `<div class="er-section"><h3><span class="er-icon">&#128207;</span> How Height Affects the Difference</h3>
+  html += `<div class="er-section"><h3>How Height Affects the Difference</h3>
     <p style="font-size:0.8125rem;color:var(--gray-500);margin:0 0 0.5rem;">Same weight (${fmtW(weightLbs)}) at different heights &mdash; the New BMI corrects the traditional formula&rsquo;s height bias</p>
     <table class="er-table"><thead><tr><th>Height</th><th style="text-align:center;">cm</th><th style="text-align:center;">Trad. BMI</th><th style="text-align:center;">New BMI</th><th style="text-align:center;">Diff</th></tr></thead><tbody>${divRows}</tbody></table>
     <p style="font-size:0.8125rem;color:var(--gray-500);margin:0.5rem 0 0;"><strong>Key insight:</strong> For shorter people, the new formula gives a <em>higher</em> BMI (traditional underestimates). For taller people, it gives a <em>lower</em> BMI (traditional overestimates). The crossover point is around 5&rsquo;7&rdquo; (170 cm).</p></div>`;
 
   // Which should you use
-  html += `<div class="er-section"><h3><span class="er-icon">&#128161;</span> Which Formula Should You Use?</h3><div class="er-summary">
+  html += `<div class="er-section"><h3>Which Formula Should You Use?</h3><div class="er-summary">
     ${Math.abs(diff) < 0.5
       ? `At your height of <strong>${fmtH(heightInches)}</strong>, both formulas give nearly identical results (difference of just ${Math.abs(diff).toFixed(1)} points). Either formula works well for you.`
       : heightInches < 66

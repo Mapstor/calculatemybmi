@@ -106,6 +106,8 @@ A tight utility palette: one cyan brand, one deep-teal header, one amber accent,
 - **Overweight — Amber 500** (`#f59e0b`)
 - **Obese — Red 500** (`#ef4444`)
 - **Obese severe — Red 800** (`#991b1b`)
+- **Strong shades for white labels** (CMB-010): a bar, segment or step number that carries white text uses `--underweight-strong` `#1d4ed8`, `--normal-strong` `#15803d`, `--overweight-strong` `#b45309`, `--obese-strong` `#b91c1c` (all 5:1 or better with white). Unlabeled bars keep the base colours.
+- **Tints for table cells**: category cells use the `/bmi-chart/` tints (under `#dbeafe`, healthy `#d1fae5`, over `#fde68a`, class 1 `#fed7aa`, class 2 `#fecaca`, class 3 `#fca5a5`) with text tinted from the same hue, never grey on colour.
 
 ### Status (sparing)
 - **Success / Success Bg** (`#22c55e` / `#dcfce7`), **Warning / Warning Bg** (`#f59e0b` / `#fef3c7`), **Error / Error Bg** (`#ef4444` / `#fee2e2`). Used for inline notes, never full-bleed banners.
@@ -168,9 +170,9 @@ No sharp corners (0 radius) and no custom clip-paths. Borders are hairline (`1px
 
 ## Components
 
-### Primary CTA — `.calculate-btn`
-- Full-width `height: 48px`, cyan gradient `linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%)`, white text, `font-weight: 600`.
-- Radius `--radius-lg` (0.75rem), tinted shadow, lifts 2 px on hover.
+### Primary CTA — `.calculate-btn` and `.cta-button`
+- `.calculate-btn` (calculators): full-width `height: 48px`, flat `--link` background, white text (5.4:1), hover `--link-hover`; no gradient, glow or lift (D-13).
+- `.cta-button` (links that act as buttons, CMB-010): the same flat `--link` treatment, `min-height: 48px`, radius `--radius-lg`; `.cta-button--sm` is 40 px for in-card actions. Inline-styled button links are not allowed (check_structure fails them).
 
 ### Nav — desktop
 - Deep-teal bar, white logo, 0.9375 rem semibold links with `rgba(255,255,255,0.8)` default and white at active/hover; active state uses a 2 px `--primary-light` underline.
@@ -193,6 +195,13 @@ No sharp corners (0 radius) and no custom clip-paths. Borders are hairline (`1px
 ### Category badges
 - Pill (`--radius-full`), category background with white text (BMI color lock applies).
 
+### Cards inside a section
+- A `.content-section` is the card. Related cards (`.blog-card`) and FAQ items inside it render flat, divided by hairlines (CMB-010), as on the men page. Never a card inside a card.
+- Outside links to sources use `.resource-list` (link plus one muted line), not tiles.
+
+### Icons
+- No emoji or Unicode pictographs as icons, in page copy or in calculator results (CMB-010; check_structure fails them).
+
 ### FAQ — `.faq-item`
 - Site-native accordion. Visible answer must stay in sync with the FAQPage JSON-LD — DEVLOG §4 trap: re-run `research/f1/verify.py` after any FAQ change.
 
@@ -203,7 +212,7 @@ No sharp corners (0 radius) and no custom clip-paths. Borders are hairline (`1px
 
 ### Do:
 - **Do** keep every page under one `.container` and use `.content-narrow` for prose columns.
-- **Do** place one primary CTA per decision point and give it `.calculate-btn` or an equivalent gradient-and-shadow treatment.
+- **Do** place one primary CTA per decision point and give it `.calculate-btn` (a button) or `.cta-button` (a link); flat `--link`, no gradient or shadow (D-13).
 - **Do** honor the BMI category lock (blue / green / amber / red / dark red) in every chart that classifies BMI.
 - **Do** collapse multi-column grids to 1-2 columns at ≤ 600 px, not horizontal scroll.
 - **Do** test any new widget at 390 px and 1280 px before shipping (D-09).

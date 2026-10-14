@@ -13,6 +13,8 @@ Runs before every commit. Requires all 33 sitemap pages to pass:
   - FAQPage JSON-LD answers match the visible FAQ answers word for word (CMB-005)
   - weight-by-height tables list whole-unit weights inside each category, in lb and kg (CMB-008)
   - no visible review/update date in bylines and no "N min read" line (D-12, CMB-009)
+  - content integrity: no call to action without a link, no empty box/step/table frame, no cut sentence,
+    no duplicate or dead related link, no emoji icons, no inline-styled buttons or bylines, D-11 (CMB-010)
 Exits non-zero on any failure.
 """
 import re, os, glob, sys, json, html
@@ -191,6 +193,12 @@ def check_file(page, path):
         problems.extend(f'weight table: {p}' for p in table_problems(src))
     except Exception as exc:
         problems.append(f'check_weight_tables import failed: {exc}')
+    # Content integrity: leftovers of earlier automated edits, emoji icons, inline buttons, D-11 (CMB-010).
+    try:
+        from check_content_integrity import integrity_problems
+        problems.extend(f'content: {p}' for p in integrity_problems(src))
+    except Exception as exc:
+        problems.append(f'check_content_integrity import failed: {exc}')
     return problems
 
 def main():
