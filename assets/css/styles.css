@@ -668,3 +668,6 @@ main.reading :target { scroll-margin-top: 80px; }
 .cat-dot.overweight { background: var(--overweight-strong); }
 .cat-dot.obese { background: var(--obese-strong); }
 .cat-dot.obese-severe { background: var(--obese-severe); }
+
+/* CMB-013: in the reading layout, key takeaways keep a readable measure on wide screens (about 75 characters a line) */
+main.reading .key-takeaways .answer, main.reading .key-takeaways ul { max-width: 34rem; }

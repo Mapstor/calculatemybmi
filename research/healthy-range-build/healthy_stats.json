@@ -1,0 +1,245 @@
+{
+ "source": "CDC NHANES August 2021-August 2023 (DEMO_L, BMX_L); adults aged 20+, pregnant women excluded",
+ "method": "WTMEC2YR-weighted share of adults in each CDC BMI category (measured BMI, one decimal)",
+ "groups": {
+  "all": {
+   "all_ages": {
+    "underweight": 1.6,
+    "healthy": 26.0,
+    "overweight": 32.1,
+    "obesity": 40.3,
+    "class_3": 9.4,
+    "n": 5929,
+    "healthy_ci95": [
+     22.8,
+     29.3
+    ]
+   },
+   "20-39": {
+    "underweight": 2.5,
+    "healthy": 31.0,
+    "overweight": 31.0,
+    "obesity": 35.5,
+    "class_3": 9.5,
+    "n": 1498,
+    "healthy_ci95": [
+     26.0,
+     35.9
+    ]
+   },
+   "40-59": {
+    "underweight": 1.0,
+    "healthy": 22.3,
+    "overweight": 30.3,
+    "obesity": 46.4,
+    "class_3": 12.0,
+    "n": 1709,
+    "healthy_ci95": [
+     18.4,
+     26.2
+    ]
+   },
+   "60+": {
+    "underweight": 1.2,
+    "healthy": 24.6,
+    "overweight": 35.3,
+    "obesity": 38.9,
+    "class_3": 6.6,
+    "n": 2722,
+    "healthy_ci95": [
+     21.7,
+     27.5
+    ]
+   }
+  },
+  "men": {
+   "all_ages": {
+    "underweight": 1.1,
+    "healthy": 24.0,
+    "overweight": 35.7,
+    "obesity": 39.2,
+    "class_3": 6.7,
+    "n": 2680,
+    "healthy_ci95": [
+     20.5,
+     27.4
+    ]
+   },
+   "20-39": {
+    "underweight": 2.0,
+    "healthy": 28.3,
+    "overweight": 35.4,
+    "obesity": 34.3,
+    "class_3": 6.1,
+    "n": 672,
+    "healthy_ci95": [
+     23.7,
+     32.8
+    ]
+   },
+   "40-59": {
+    "underweight": 0.5,
+    "healthy": 20.7,
+    "overweight": 33.5,
+    "obesity": 45.4,
+    "class_3": 9.2,
+    "n": 762,
+    "healthy_ci95": [
+     15.5,
+     25.9
+    ]
+   },
+   "60+": {
+    "underweight": 0.6,
+    "healthy": 22.5,
+    "overweight": 38.9,
+    "obesity": 38.0,
+    "class_3": 4.3,
+    "n": 1246,
+    "healthy_ci95": [
+     18.1,
+     26.8
+    ]
+   }
+  },
+  "women": {
+   "all_ages": {
+    "underweight": 2.0,
+    "healthy": 28.1,
+    "overweight": 28.6,
+    "obesity": 41.3,
+    "class_3": 12.1,
+    "n": 3249,
+    "healthy_ci95": [
+     24.3,
+     31.8
+    ]
+   },
+   "20-39": {
+    "underweight": 2.9,
+    "healthy": 33.8,
+    "overweight": 26.5,
+    "obesity": 36.8,
+    "class_3": 13.0,
+    "n": 826,
+    "healthy_ci95": [
+     27.6,
+     40.0
+    ]
+   },
+   "40-59": {
+    "underweight": 1.6,
+    "healthy": 23.9,
+    "overweight": 27.2,
+    "obesity": 47.4,
+    "class_3": 14.7,
+    "n": 947,
+    "healthy_ci95": [
+     20.0,
+     27.7
+    ]
+   },
+   "60+": {
+    "underweight": 1.6,
+    "healthy": 26.5,
+    "overweight": 32.3,
+    "obesity": 39.6,
+    "class_3": 8.4,
+    "n": 1476,
+    "healthy_ci95": [
+     23.0,
+     30.0
+    ]
+   }
+  }
+ },
+ "healthy_differences": {
+  "women_minus_men": {
+   "diff": 4.1,
+   "ci95": [
+    0.7,
+    7.5
+   ]
+  },
+  "women_20_39_minus_men_20_39": {
+   "diff": 5.6,
+   "ci95": [
+    0.9,
+    10.2
+   ]
+  },
+  "women_20_39_minus_women_60_plus": {
+   "diff": 7.4,
+   "ci95": [
+    2.0,
+    12.7
+   ]
+  },
+  "men_60_plus_minus_men_40_59": {
+   "diff": 1.8,
+   "ci95": [
+    -3.3,
+    6.9
+   ]
+  },
+  "women_60_plus_minus_women_40_59": {
+   "diff": 2.6,
+   "ci95": [
+    -1.8,
+    6.9
+   ]
+  }
+ },
+ "design": {
+  "strata": 15,
+  "psus": 30,
+  "df": 15,
+  "t975": 2.1314
+ },
+ "reproduces_nchs": {
+  "obesity_all": {
+   "ours": 40.3,
+   "nchs": 40.3
+  },
+  "obesity_men": {
+   "ours": 39.2,
+   "nchs": 39.2
+  },
+  "obesity_women": {
+   "ours": 41.3,
+   "nchs": 41.3
+  },
+  "obesity_40_59": {
+   "ours": 46.4,
+   "nchs": 46.4
+  },
+  "obesity_20_39": {
+   "ours": 35.5,
+   "nchs": 35.5
+  },
+  "obesity_60_plus": {
+   "ours": 38.9,
+   "nchs": 38.9
+  },
+  "class3_all": {
+   "ours": 9.4,
+   "nchs": 9.4
+  },
+  "class3_men": {
+   "ours": 6.7,
+   "nchs": 6.7
+  },
+  "class3_women": {
+   "ours": 12.1,
+   "nchs": 12.1
+  },
+  "overweight_all": {
+   "ours": 32.1,
+   "nchs": 32.1
+  },
+  "underweight_all": {
+   "ours": 1.6,
+   "nchs": 1.6
+  }
+ }
+}

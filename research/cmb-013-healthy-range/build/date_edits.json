@@ -1,0 +1,5 @@
+[
+ {"file": "sitemap.xml", "label": "lastmod /blog/healthy-bmi-range/ = apply date",
+  "old": "<loc>https://calculatemybmi.net/blog/healthy-bmi-range/</loc><lastmod>2026-10-14</lastmod>",
+  "new": "<loc>https://calculatemybmi.net/blog/healthy-bmi-range/</loc><lastmod>{TODAY}</lastmod>", "count": 1}
+]

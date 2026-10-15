@@ -26,7 +26,7 @@ growth-chart-calculator,calculators,tool,tool,Height/weight-for-age percentiles 
 weight-loss-percentage-calculator,calculators,tool,tool,Percent-of-body-weight change with BMI-category crossing shown,Arithmetic only (no external data),T3,proposed,
 blog,root,hub,informational,Guide index,structural hub,T1,live,
 blog/what-is-bmi,blog,article,informational,,cdc-adult-bmi-categories,T2,live,Rebuilt 7 Oct 2026 with sources + BMI explorer.
-blog/healthy-bmi-range,blog,article,informational,,CDC adult categories; WHO; Winter 2014,T1,live,"Owns 22.2k + 18.1k ""normal bmi"" groups as secondaries"
+blog/healthy-bmi-range,blog,article,informational,Share of US adults with a healthy BMI by age and sex: NHANES 2021-2023 (built CMB-013) + the GBMC 2016 mortality evidence behind 18.5-24.9,nhanes-2021-2023-exam-files,T1,built,"D-14 rebuild CMB-013 (research/healthy-range-build/); also cites gbmc-2016-bmi-mortality, cdc-adult-bmi-categories, who-obesity-fact-sheet, nhlbi-1998-obesity-guidelines, who-2004-asian-bmi, ko-tang-2006-wpro-2000, nice-ng246-ethnicity-thresholds, cdc-ndpp-eligibility, nhlbi-calculate-your-bmi, odphp-physical-activity-guidelines, medlineplus-unintentional-weight-loss and the other rows listing this page. Owns 22.2k + 18.1k ""normal bmi"" groups as secondaries"
 blog/bmi-formula,blog,article,informational,,Quetelet formula; Trefethen 2013,T2,live,
 blog/bmi-history,blog,article,informational,,Primary historical sources (Quetelet 1835; Keys 1972),T3,live,
 blog/bmi-categories,blog,article,informational,,CDC adult categories; WHO classification,T2,live,

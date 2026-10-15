@@ -141,6 +141,8 @@ A tight utility palette: one cyan brand, one deep-teal header, one amber accent,
 
 - **Container**: `.container` — `max-width: 1200px`, `padding: 0 1rem`, centered.
 - **Reading column**: `.content-narrow` — `max-width: 800px`, centered. Prose and FAQ live here.
+- **Reading layout (D-14)**: `main.reading` keeps every block in one 680 px column. Inside it, the key-takeaways answer and bullets stop at `34rem`, about 75 characters a line at 15 px (CMB-013).
+- **Guide pages (CMB-013, `/blog/healthy-bmi-range/`)**: page head (H1, byline, up to three `.intro-text` paragraphs: pain, stakes, promise) → `.key-takeaways` (`p.answer` of 40–60 words, then bullets) → `.disclaimer-box` → hero `figure.figure` → `.toc-inline` → `section.content-section.flow` blocks → flat FAQ → sources and method → one `.related-cols` block. SVG text is 12 px or larger in viewBox units.
 - **Calculator card**: `.calculator-card` — `max-width: 720px`, centered, white, radius `--radius-xl` (1rem), shadow `--shadow-lg`.
 - **Main padding**: `main { padding: 2rem 0 3rem; }` with `overflow-wrap: break-word` so long sourced URLs can wrap on phones (added F1).
 - **Grids**: `.results-grid`, `.results-grid-3`, `.results-grid-4`, `.form-row`, `.form-row-3`, `.footer-grid`, `.tips-grid`, `.pros-cons` — CSS Grid, column counts tuned per widget.

@@ -1,0 +1,3 @@
+
+/* CMB-013: in the reading layout, key takeaways keep a readable measure on wide screens (about 75 characters a line) */
+main.reading .key-takeaways .answer, main.reading .key-takeaways ul { max-width: 34rem; }
