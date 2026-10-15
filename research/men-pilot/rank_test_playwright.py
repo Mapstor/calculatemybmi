@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Checks the men-page rank line against the Python percentile curve. usage: rank_test.py BASEURL STATS_JSON"""
+"""Checks the men-page rank line against the Python percentile curve. usage: rank_test.py BASEURL STATS_JSON
+Since CMB-012 the rank counts only men with a lower BMI: the curve is read at BMI - 0.1 (BMI is recorded to 0.1)."""
 import sys, json, math
 from playwright.sync_api import sync_playwright
 base, stats = sys.argv[1], sys.argv[2]
@@ -24,11 +25,11 @@ with sync_playwright() as p:
             bmi = r1(c[3]*703/(c[1]*12+c[2])**2)
         else:
             pg.click('#panel-men .unit-btn[data-unit="metric"]'); pg.fill('#men-height-cm', str(c[1])); pg.fill('#men-weight-kg', str(c[2]))
-            h = c[1]/2.54; bmi = r1(c[2]*2.20462*703/h/h)
+            bmi = r1(c[2]/(c[1]/100)**2)                                  # metric BMI is kg/m2 (CMB-011)
         pg.click('#calc-men-btn'); pg.wait_for_timeout(80)
         head = pg.inner_text('#men-rank-value'); txt = pg.inner_text('#men-rank-text'); left = pg.eval_on_selector('#men-rank-marker', 'e => e.style.left')
-        p_ = rank(bmi); r = round(p_)
-        exp = 'Lower than 99% of US men' if p_ < 1 else 'Higher than 99% of US men' if p_ > 99 else f'Higher than {r}% of US men'
+        lo = rank(round(bmi - 0.1, 1)); hi = 100 - rank(bmi); nn = lambda x: 99 if x > 99 else round(x)
+        exp = f'Lower than {nn(hi)}% of US men' if lo < 1 else f'Higher than {nn(lo)}% of US men'
         n += 1; ok = head == exp and f'{bmi:.1f}' in txt and not pg.eval_on_selector('#men-rank', 'e => e.hidden')
         if not ok: fails += 1
         print(('OK  ' if ok else 'FAIL'), c, 'BMI', bmi, '|', head, '|', left, '|', txt[:90])

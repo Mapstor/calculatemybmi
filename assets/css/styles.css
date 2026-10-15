@@ -657,3 +657,14 @@ main.reading :target { scroll-margin-top: 80px; }
 .related-card-title { font-weight: 600; color: var(--link); line-height: 1.4; }
 .related-card:hover .related-card-title { color: var(--link-hover); text-decoration: underline; }
 .related-card-desc { margin: 0.125rem 0 0; font-size: 0.875rem; line-height: 1.5; color: var(--gray-600); }
+
+/* ============================================
+   CMB-012 homepage: category dots in data tables. Category colour sits on the dot only (DESIGN.md results rule);
+   the strong shades keep the dot at 3:1 or more against white.
+   ============================================ */
+.cat-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 0.5rem; vertical-align: 0.05em; }
+.cat-dot.underweight { background: var(--underweight-strong); }
+.cat-dot.normal { background: var(--normal-strong); }
+.cat-dot.overweight { background: var(--overweight-strong); }
+.cat-dot.obese { background: var(--obese-strong); }
+.cat-dot.obese-severe { background: var(--obese-severe); }

@@ -1,0 +1,121 @@
+{
+ "new_files": [
+  {
+   "path": "assets/images/og/home-bmi-us-adults.png",
+   "sha256": "0b82dd6b70c8516d5f1d428fee7c84b1d7d5c63733cda1168a6b205dff43a9f2"
+  },
+  {
+   "path": "research/home-build/SPEC.md",
+   "sha256": "fe5a58a8c8d1e7070c1ba88d93dccc8322312ff3250405ceeaf698b9ad4585ba"
+  },
+  {
+   "path": "research/home-build/gen_home.py",
+   "sha256": "9dd4527cba1d9118182884eb1f868fdb9059f6a4099a3a7b57a1ea7752f70c78"
+  },
+  {
+   "path": "research/home-build/home_stats.json",
+   "sha256": "ee37d642f8ab5ca24e31b548817ea52229f22a440be1473f4f71fd71835b75e1"
+  },
+  {
+   "path": "research/home-build/home_stats.py",
+   "sha256": "9ba5a0d8a8cd8afa44e7da66eadb52d59642aa3216f14ed960134ef785fec872"
+  },
+  {
+   "path": "research/home-build/home_test_playwright.py",
+   "sha256": "359ba567e35e51b2c052ccd16ea61703c715eaf2434cfa2a8d77b467ba7dac19"
+  },
+  {
+   "path": "research/home-build/og_home.py",
+   "sha256": "5e3d2ba28b56582dfacd51d749b8331272a8419c24272d09b3830b80bf5e8d66"
+  },
+  {
+   "path": "research/impeccable-baseline/2026-10-14-cmb012-390x844.json",
+   "sha256": "3251965d13055af3775b4b3bf9db9977e1efa0095ea019379aafa9d16cacf7e5"
+  }
+ ],
+ "replace": [
+  {
+   "path": "DESIGN.md",
+   "expect_sha256": "4ee7a9fa06f5985e7002eebc2799dca143686f90fbc8bbe618f4ba0cecd194dc",
+   "sha256": "3c6639217557a55292d2e8bfa537ea11223746eae1b77be06d4f735d8ff93170"
+  },
+  {
+   "path": "assets/css/styles.css",
+   "expect_sha256": "de63109e6df549c530cead6e1ee8041803ab6163fb0d8d3ce185d9b9ea43927b",
+   "sha256": "9e3eb0f4af4eb0635dd37498b989ee7121409a295ff4caa9c081e4fd20cbaac2"
+  },
+  {
+   "path": "assets/js/calculator.js",
+   "expect_sha256": "519a810bd4938cf4439c8b3b6e655e5636ce78d970142c6fa11c8f4b6804e1ad",
+   "sha256": "b7518d7c795a56f1c6fc208c0d3add656cb7b0afad69c470391922318535d429"
+  },
+  {
+   "path": "index.html",
+   "expect_sha256": "d94945be6a5458d782b8385b30fa60dc4ba8a74e582c7d7d8a7ce1bd173f7d28",
+   "sha256": "ea6b66cfbfaaa6ee1ba2ec89fb22a772bfaa39303c4e40b89aec56155383ef80"
+  },
+  {
+   "path": "men-bmi-calculator/index.html",
+   "expect_sha256": "1ee7509d395076a5dff561554fff906b3db76928ddf2edf97d8ee7607dd348c6",
+   "sha256": "bb82ebb972d7c6ba2357c26b05644c3e07038bf64e629bd85dac9260b4b6d7ea"
+  },
+  {
+   "path": "research/calculator-checks/calc_e2e_playwright.py",
+   "expect_sha256": "3252dff5625ec62f58eee3f74cad7bbdda4e6b29aaeb71a071502b270a0591fd",
+   "sha256": "a5a2c27023aa1561ab5a155e04039202a3ea36f08cf6edd5bf263a1188fff951"
+  },
+  {
+   "path": "research/data-sources.csv",
+   "expect_sha256": "476a8ce82b5f1ad4a8730fa9a318af6a22456aceecbbbe1b66525780b1495451",
+   "sha256": "e3257d4d23b79bab18e81666fe74f299b03d2a96b7f8f27c5dfe096034c95fc1"
+  },
+  {
+   "path": "research/men-pilot/rank_test_playwright.py",
+   "expect_sha256": "109f4174612e6322d26245862572fd6effda85727712f3f315c01a98cc5fc361",
+   "sha256": "c0a0c476c817217cb8c9660220b12d5cdaeda7d460563903ff592b619b3854a2"
+  },
+  {
+   "path": "research/page-map.csv",
+   "expect_sha256": "ef157a7b7b90e8d2318fa7a98f085423bb2032fa7af650e73c9caf2479ecd520",
+   "sha256": "7c4cd8af7c958371d047c1d61fc9e7118c91d528dda98b1beafb96d3bbd37afb"
+  }
+ ],
+ "edits": [
+  {
+   "file": "blog/bmi-formula/index.html",
+   "label": "formula guide: unsourced 'healthy PI 11-15 kg/m3' removed",
+   "old": " A healthy PI is approximately 11&ndash;15 kg/m&sup3;. However, it has not been widely adopted in clinical practice.",
+   "new": " It has not been widely adopted in clinical practice.",
+   "count": 1
+  },
+  {
+   "file": "blog/bmi-formula/index.html",
+   "label": "formula guide dateModified = apply date",
+   "old": "\"dateModified\": \"2026-10-14\"",
+   "new": "\"dateModified\": \"{TODAY}\"",
+   "count": 1
+  },
+  {
+   "file": "sitemap.xml",
+   "label": "lastmod / = apply date",
+   "old": "<loc>https://calculatemybmi.net/</loc><lastmod>2026-10-14</lastmod>",
+   "new": "<loc>https://calculatemybmi.net/</loc><lastmod>{TODAY}</lastmod>",
+   "count": 1
+  },
+  {
+   "file": "sitemap.xml",
+   "label": "lastmod /men-bmi-calculator/ = apply date",
+   "old": "<loc>https://calculatemybmi.net/men-bmi-calculator/</loc><lastmod>2026-10-12</lastmod>",
+   "new": "<loc>https://calculatemybmi.net/men-bmi-calculator/</loc><lastmod>{TODAY}</lastmod>",
+   "count": 1
+  },
+  {
+   "file": "sitemap.xml",
+   "label": "lastmod /blog/bmi-formula/ = apply date",
+   "old": "<loc>https://calculatemybmi.net/blog/bmi-formula/</loc><lastmod>2026-10-14</lastmod>",
+   "new": "<loc>https://calculatemybmi.net/blog/bmi-formula/</loc><lastmod>{TODAY}</lastmod>",
+   "count": 1
+  }
+ ],
+ "delete": []
+}

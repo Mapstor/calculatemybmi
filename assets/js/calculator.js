@@ -117,15 +117,16 @@ function getHealthyWeightRange(heightInches) {
 }
 
 // Healthy-range limit or band in the user's units (alt = the other unit), and the distance from it.
-// Limits are whole numbers in the user's unit; the bracketed value converts that same number.
+// Limits are whole numbers in the user's unit; the bracketed value converts that same number to one decimal, either way,
+// so a converted limit can't round across the category line (72 kg at 170 cm is 158.7 lbs, not 159; CMB-012).
 function fmtBound(b, which, alt) {
   const lb = which === 'min' ? b.minLb : b.maxLb, kg = which === 'min' ? b.minKg : b.maxKg;
   if (!alt) return CMB_METRIC ? kg + ' kg' : lb + ' lbs';
-  return CMB_METRIC ? Math.round(kg * 2.20462) + ' lbs' : (lb / 2.20462).toFixed(1) + ' kg';
+  return CMB_METRIC ? (kg * 2.20462).toFixed(1) + ' lbs' : (lb / 2.20462).toFixed(1) + ' kg';
 }
 function fmtBand(b, alt) {
   if (!alt) return CMB_METRIC ? b.minKg + '–' + b.maxKg + ' kg' : b.minLb + '–' + b.maxLb + ' lbs';
-  return CMB_METRIC ? Math.round(b.minKg * 2.20462) + '–' + Math.round(b.maxKg * 2.20462) + ' lbs' : (b.minLb / 2.20462).toFixed(1) + '–' + (b.maxLb / 2.20462).toFixed(1) + ' kg';
+  return CMB_METRIC ? (b.minKg * 2.20462).toFixed(1) + '–' + (b.maxKg * 2.20462).toFixed(1) + ' lbs' : (b.minLb / 2.20462).toFixed(1) + '–' + (b.maxLb / 2.20462).toFixed(1) + ' kg';
 }
 function bandGap(b, weightLbs) {
   if (CMB_METRIC) {
@@ -159,7 +160,7 @@ function heightToFtIn(inches) {
 }
 var CMB_METRIC = false;                         // set from the unit toggle each time heights are read
 function fmtW(lbs) { return CMB_METRIC ? lbsToKg(lbs).toFixed(1) + ' kg' : Math.round(lbs) + ' lbs'; }
-function fmtWalt(lbs) { return CMB_METRIC ? Math.round(lbs) + ' lbs' : lbsToKg(lbs).toFixed(1) + ' kg'; }
+function fmtWalt(lbs) { return CMB_METRIC ? lbs.toFixed(1) + ' lbs' : lbsToKg(lbs).toFixed(1) + ' kg'; }
 function kgD(kg) { return (kg < 10 ? kg.toFixed(1) : String(Math.round(kg))) + ' kg'; }          // small differences keep a decimal: 0.5 kg, not 0 kg
 function lbD(lbs) { const r = Math.round(lbs); return r + (r === 1 ? ' lb' : ' lbs'); }
 function fmtD(lbs) { return CMB_METRIC ? kgD(lbsToKg(lbs)) : lbD(lbs); }
@@ -458,7 +459,7 @@ function genWeightMilestones(bmi, heightInches, weightLbs) {
   targets.forEach(t => {
     const w = CMB_METRIC ? t.kg * 2.20462 : t.lb;
     const diff = w - weightLbs;
-    const dU = CMB_METRIC ? Math.round(lbsToKg(diff)) : Math.round(diff), uL = CMB_METRIC ? ' kg' : ' lbs';
+    const dU = CMB_METRIC ? Math.round(lbsToKg(diff)) : Math.round(diff), uL = CMB_METRIC ? ' kg' : (Math.abs(dU) === 1 ? ' lb' : ' lbs');
     const diffStr = dU > 0 ? '+' + dU + uL : dU < 0 ? '−' + Math.abs(dU) + uL : '—';
     const isNear = Math.abs(bmi - t.bmiVal) < 2.5;
     rows += `<tr${isNear ? ' class="er-near"' : ''}><td>${t.label}</td><td class="er-num">${t.bmiVal}</td><td class="er-num">${CMB_METRIC ? t.kg + ' kg' : t.lb + ' lbs'}<span class="er-alt">${fmtWalt(w)}</span></td><td class="er-num">${diffStr}</td></tr>`;

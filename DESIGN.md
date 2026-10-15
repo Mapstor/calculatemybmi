@@ -199,8 +199,13 @@ No sharp corners (0 radius) and no custom clip-paths. Borders are hairline (`1px
 - Section headings in sentence case. Numbers right-aligned with tabular figures (`.er-num`); the other unit sits under the value (`.er-alt`).
 - Category colour only on dots and on BMI values (strong shades from `catColor()`); differences, labels and notes stay neutral. The user's row gets `.er-active` and a "You" pill (`.er-you`), never an arrow glyph.
 - Every weight shows in the unit the user entered first and the other unit second, ideal weight and lean mass included. Metric input is computed in kg/m², US input with 703; the healthy kg limits follow kg/m².
+- The converted unit has one decimal both ways ("159 lbs (72.1 kg)", "72 kg (158.7 lbs)"), so a converted limit never rounds across a category line (CMB-012; whole-pound rounding showed 72 kg at 170 cm as 159 lbs, which is BMI 25.0).
+- US rank (`.rank-box`, homepage and men page): "higher than X%" counts only adults with a lower BMI and "lower than Y%" only those with a higher one. NHANES records BMI to one decimal, so the curve is read at BMI − 0.1 for X; adults with the same BMI count on neither side (CMB-012).
 - No targets of our own (option B) and no unsourced thresholds; official guidance is attributed and linked.
 - `scripts/check_structure.py` runs `js_problems()` on `assets/js/calculator.js`: no emoji or arrow entities, no low-contrast hexes as text colour, no gradients.
+
+### Category dots in data tables — `.cat-dot` (CMB-012)
+- A 10 px dot before the category name in a static table (`<span class="cat-dot normal">`), in the strong shades. The category colour sits on the dot only; the text stays `--gray-800`.
 
 ### Category badges
 - Pill (`--radius-full`), category background with white text (BMI color lock applies).

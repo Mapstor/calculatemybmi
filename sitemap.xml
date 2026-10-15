@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Main pages -->
-  <url><loc>https://calculatemybmi.net/</loc><lastmod>2026-10-14</lastmod><priority>1.0</priority></url>
+  <url><loc>https://calculatemybmi.net/</loc><lastmod>2026-10-15</lastmod><priority>1.0</priority></url>
   <url><loc>https://calculatemybmi.net/about/</loc><lastmod>2026-10-14</lastmod><priority>0.7</priority></url>
   <url><loc>https://calculatemybmi.net/contact/</loc><lastmod>2026-10-08</lastmod><priority>0.5</priority></url>
   <url><loc>https://calculatemybmi.net/privacy/</loc><lastmod>2026-10-12</lastmod><priority>0.3</priority></url>
@@ -10,7 +10,7 @@
   <!-- Calculators -->
   <url><loc>https://calculatemybmi.net/calculators/</loc><lastmod>2026-10-14</lastmod><priority>0.9</priority></url>
   <url><loc>https://calculatemybmi.net/women-bmi-calculator/</loc><lastmod>2026-10-14</lastmod><priority>0.9</priority></url>
-  <url><loc>https://calculatemybmi.net/men-bmi-calculator/</loc><lastmod>2026-10-12</lastmod><priority>0.9</priority></url>
+  <url><loc>https://calculatemybmi.net/men-bmi-calculator/</loc><lastmod>2026-10-15</lastmod><priority>0.9</priority></url>
   <url><loc>https://calculatemybmi.net/age-bmi-calculator/</loc><lastmod>2026-10-14</lastmod><priority>0.9</priority></url>
   <url><loc>https://calculatemybmi.net/kids-bmi-calculator/</loc><lastmod>2026-10-08</lastmod><priority>0.9</priority></url>
   <url><loc>https://calculatemybmi.net/ideal-weight/</loc><lastmod>2026-10-14</lastmod><priority>0.9</priority></url>
@@ -22,7 +22,7 @@
 
   <!-- Blog articles (15 survivors) -->
   <url><loc>https://calculatemybmi.net/blog/what-is-bmi/</loc><lastmod>2026-10-12</lastmod><priority>0.9</priority></url>
-  <url><loc>https://calculatemybmi.net/blog/bmi-formula/</loc><lastmod>2026-10-14</lastmod><priority>0.8</priority></url>
+  <url><loc>https://calculatemybmi.net/blog/bmi-formula/</loc><lastmod>2026-10-15</lastmod><priority>0.8</priority></url>
   <url><loc>https://calculatemybmi.net/blog/bmi-history/</loc><lastmod>2026-10-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://calculatemybmi.net/blog/healthy-bmi-range/</loc><lastmod>2026-10-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://calculatemybmi.net/blog/bmi-categories/</loc><lastmod>2026-10-14</lastmod><priority>0.8</priority></url>

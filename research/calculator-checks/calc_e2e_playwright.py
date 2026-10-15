@@ -19,7 +19,7 @@ def ok(cond, msg):
     if not cond: fails.append(msg)
 pages = {'/': 'standard', '/women-bmi-calculator/': 'women', '/men-bmi-calculator/': 'men', '/age-bmi-calculator/': 'age'}
 imperial_cases = [(5,10,180),(5,10,173),(5,10,174),(5,10,128),(5,10,129),(6,2,144),(6,2,143),(5,2,136),(5,2,137),(6,0,250),(5,4,95),(6,6,330)]
-metric_cases = [(178,82),(178,79),(178,80),(188,66),(188,65),(157,61),(157,62),(165,45),(200,140),(145,84),(159,101)]  # last two: 40.0 in kg/m2, 39.9 with 703 (CMB-011)
+metric_cases = [(178,82),(178,79),(178,80),(188,66),(188,65),(157,61),(157,62),(165,45),(200,140),(145,84),(159,101),(170,70)]  # last two: 40.0 in kg/m2, 39.9 with 703 (CMB-011)
 with sync_playwright() as p:
     b = p.chromium.launch(args=['--no-sandbox','--disable-dev-shm-usage'])
     ctx = b.new_context(viewport={'width':390,'height':844})
@@ -83,8 +83,10 @@ with sync_playwright() as p:
             ok(got == cat(R), f'{path} {cm}cm {kg}kg category {catTxt} for BMI {R}')
             if R >= 40: ok('Class 3' in catTxt, f'{path} {cm}cm {kg}kg: BMI {R} should be class 3 obesity, shown {catTxt}')
             hmin = ' '.join(pg.inner_text(f'#{t}-healthy-min').split()); hmax = ' '.join(pg.inner_text(f'#{t}-healthy-max').split())
-            ok(hmin == f"{B['minKg']} kg ({round(B['minKg']*2.20462)} lbs)", f'{path} {cm}cm min {hmin} vs {B}')
-            ok(hmax == f"{B['maxKg']} kg ({round(B['maxKg']*2.20462)} lbs)", f'{path} {cm}cm max {hmax} vs {B}')
+            ok(hmin == f"{B['minKg']} kg ({B['minKg']*2.20462:.1f} lbs)", f'{path} {cm}cm min {hmin} vs {B}')
+            ok(hmax == f"{B['maxKg']} kg ({B['maxKg']*2.20462:.1f} lbs)", f'{path} {cm}cm max {hmax} vs {B}')
+            # the converted limits stay inside the healthy range at that height (CMB-012: 72 kg at 170 cm is 158.7 lbs, not 159)
+            ok(r1(B['maxKg']*2.20462*703/h/h) <= 24.9 and r1(round(B['maxKg']*2.20462, 1)*703/h/h) <= 24.9, f'{path} {cm}cm converted max crosses 24.9')
             diff = pg.inner_text(f'#{t}-weight-diff') if pg.locator(f'#{t}-weight-diff').count() else None
             if diff is None: pass
             elif 18.5 <= R < 25: ok(diff.startswith('Within'), f'{path} {cm}cm {kg}: {diff}')
