@@ -1,0 +1,44 @@
+[
+ {
+  "file": "bmi-chart/index.html",
+  "label": "/bmi-chart/ description: primes instead of an unescaped \" that ended the attribute",
+  "old": "<meta name=\"description\" content=\"BMI chart for adults by height and weight with CDC category bands. Lb + kg. Printable, all adult heights from 4'10\" to 6'6\". Same cutoffs for men and women.\">",
+  "new": "<meta name=\"description\" content=\"BMI chart for adults by height and weight with CDC category bands. Lb + kg. Printable, all adult heights from 4′10″ to 6′6″. Same cutoffs for men and women.\">",
+  "count": 1
+ },
+ {
+  "file": "bmi-chart/index.html",
+  "label": "/bmi-chart/ og:description: primes instead of an unescaped \" that ended the attribute",
+  "old": "<meta property=\"og:description\" content=\"BMI chart for adults by height and weight with CDC category bands. Lb + kg. Printable, all adult heights from 4'10\" to 6'6\". Same cutoffs for men and women.\">",
+  "new": "<meta property=\"og:description\" content=\"BMI chart for adults by height and weight with CDC category bands. Lb + kg. Printable, all adult heights from 4′10″ to 6′6″. Same cutoffs for men and women.\">",
+  "count": 1
+ },
+ {
+  "file": "bmi-chart/index.html",
+  "label": "/bmi-chart/ twitter:description: primes instead of an unescaped \" that ended the attribute",
+  "old": "<meta name=\"twitter:description\" content=\"BMI chart for adults by height and weight with CDC category bands. Lb + kg. Printable, all adult heights from 4'10\" to 6'6\". Same cutoffs for men and women.\">",
+  "new": "<meta name=\"twitter:description\" content=\"BMI chart for adults by height and weight with CDC category bands. Lb + kg. Printable, all adult heights from 4′10″ to 6′6″. Same cutoffs for men and women.\">",
+  "count": 1
+ },
+ {
+  "file": "blog/bmi-chart-men/index.html",
+  "label": "/blog/bmi-chart-men/ description: primes instead of an unescaped \" that ended the attribute",
+  "old": "<meta name=\"description\" content=\"BMI chart for men, all heights from 5'2\" to 6'6\". See your healthy weight range, category cut-offs by height, and how to read the chart. Uses CDC's adult BMI categories.\">",
+  "new": "<meta name=\"description\" content=\"BMI chart for men, all heights from 5′2″ to 6′6″. See your healthy weight range, category cut-offs by height, and how to read the chart. Uses CDC's adult BMI categories.\">",
+  "count": 1
+ },
+ {
+  "file": "blog/bmi-chart-men/index.html",
+  "label": "/blog/bmi-chart-men/ og:description: primes instead of an unescaped \" that ended the attribute",
+  "old": "<meta property=\"og:description\" content=\"BMI chart for men, all heights from 5'2\" to 6'6\". See your healthy weight range, category cut-offs by height, and how to read the chart. Uses CDC's adult BMI categories.\">",
+  "new": "<meta property=\"og:description\" content=\"BMI chart for men, all heights from 5′2″ to 6′6″. See your healthy weight range, category cut-offs by height, and how to read the chart. Uses CDC's adult BMI categories.\">",
+  "count": 1
+ },
+ {
+  "file": "blog/bmi-chart-men/index.html",
+  "label": "/blog/bmi-chart-men/ twitter:description: primes instead of an unescaped \" that ended the attribute",
+  "old": "<meta name=\"twitter:description\" content=\"BMI chart for men, all heights from 5'2\" to 6'6\". See your healthy weight range, category cut-offs by height, and how to read the chart. Uses CDC's adult BMI categories.\">",
+  "new": "<meta name=\"twitter:description\" content=\"BMI chart for men, all heights from 5′2″ to 6′6″. See your healthy weight range, category cut-offs by height, and how to read the chart. Uses CDC's adult BMI categories.\">",
+  "count": 1
+ }
+]

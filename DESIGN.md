@@ -209,6 +209,10 @@ No sharp corners (0 radius) and no custom clip-paths. Borders are hairline (`1px
 ### Category dots in data tables — `.cat-dot` (CMB-012)
 - A 10 px dot before the category name in a static table (`<span class="cat-dot normal">`), in the strong shades. The category colour sits on the dot only; the text stays `--gray-800`.
 
+### Weight-by-height chart tables — `.weight-chart` (CMB-014)
+- The chart table on D-14 chart pages (first `/blog/bmi-chart-women/`): one row per height with a `#h-5-4` id, one column per CDC category, pounds with kilograms below (`.cell-kg`), centimeters under the height (`.cell-cm`). Cells use the category tints with text from the same hue (`.c-under` … `.c-ob3`, 5.2:1 or better); white hairlines between cells; the height column stays put while the table scrolls sideways; a targeted row gets a 3 px `--link` bar. `min-width: 600px`, inside `.table-responsive`; headers wrap.
+- A printable chart image goes in `figure.figure.figure--wide` (680 px) as an `<img>` with width and height, linked to the full-size file, so search engines can index it.
+
 ### Category badges
 - Pill (`--radius-full`), category background with white text (BMI color lock applies).
 

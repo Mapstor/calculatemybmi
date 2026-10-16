@@ -1,0 +1,20 @@
+
+/* CMB-014: weight-by-height chart table (D-14 chart pages; first on /blog/bmi-chart-women/). Category tints as on /bmi-chart/, text tinted from the same hue (DESIGN.md); the height column stays put while the table scrolls sideways */
+.weight-chart { width: 100%; min-width: 600px; border-collapse: separate; border-spacing: 0; font-size: 0.8125rem; font-variant-numeric: tabular-nums; }
+.weight-chart caption { caption-side: top; text-align: left; font-weight: 600; font-size: 0.9375rem; color: var(--gray-800); padding: 0 0 0.5rem; }
+.weight-chart th, .weight-chart td { padding: 0.45rem 0.45rem; border-bottom: 1px solid #fff; border-right: 1px solid #fff; text-align: left; vertical-align: top; white-space: nowrap; line-height: 1.35; }
+.weight-chart thead th { background: var(--gray-100); color: var(--gray-800); font-weight: 600; font-size: 0.8125rem; white-space: normal; vertical-align: bottom; }
+.weight-chart th[scope="row"] { position: sticky; left: 0; z-index: 1; background: var(--gray-100); color: var(--gray-800); font-weight: 600; }
+.weight-chart .th-sub, .weight-chart .cell-cm { display: block; font-weight: 400; font-size: 0.75rem; color: var(--gray-600); }
+.weight-chart .nw { white-space: nowrap; }
+.weight-chart .cell-kg { display: block; font-size: 0.75rem; }
+.weight-chart .c-under { background: #dbeafe; color: #1e3a8a; }
+.weight-chart .c-healthy { background: #d1fae5; color: #14532d; }
+.weight-chart .c-over { background: #fde68a; color: #713f12; }
+.weight-chart .c-ob1 { background: #fed7aa; color: #7c2d12; }
+.weight-chart .c-ob2 { background: #fecaca; color: #7f1d1d; }
+.weight-chart .c-ob3 { background: #fca5a5; color: #7f1d1d; }
+.weight-chart tr:target th[scope="row"] { box-shadow: inset 3px 0 0 var(--link); }
+.figure--wide { max-width: 680px; }
+.figure img { display: block; width: 100%; height: auto; }
+@media print { .table-responsive { overflow: visible; } .weight-chart { min-width: 0; font-size: 0.7rem; } .weight-chart th[scope="row"] { position: static; } }

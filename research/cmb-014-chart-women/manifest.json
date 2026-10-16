@@ -1,0 +1,128 @@
+{
+ "new_files": [
+  {
+   "path": "assets/images/charts/bmi-chart-women.png",
+   "sha256": "0547eb2681a9a3720bedcee98abc870dd414ded56bddc7a769c3088c48d8316f"
+  },
+  {
+   "path": "assets/images/og/bmi-chart-women.png",
+   "sha256": "3fec2c7a24e357370dce7d9fc6e479f3c146d10bc092c2e0515729908106ac56"
+  },
+  {
+   "path": "research/chart-women-build/SPEC.md",
+   "sha256": "cdf332fd2f95266262227df47655fbece7ded5a1a36a1727a12dd9b12c051c91"
+  },
+  {
+   "path": "research/chart-women-build/bcw_grid.csv",
+   "sha256": "08a14f1485a8449c4aebd0f41b9f37a104b388aa12d5b79187485ea76eb535a9"
+  },
+  {
+   "path": "research/chart-women-build/bcw_stats.json",
+   "sha256": "d6d3b64e6e65138dd1476c9004167992b8b42995b5048a81c5f04949c687a5b7"
+  },
+  {
+   "path": "research/chart-women-build/bcw_stats.py",
+   "sha256": "64a8dab92b3ffd2512ac14fe785ba3e864742dc96802550d480c81959e2ee031"
+  },
+  {
+   "path": "research/chart-women-build/bcw_test_playwright.py",
+   "sha256": "d12c1f85c2255348e5c11b30ab2750759e61a2c9b9c3aa88e58cca51e18efa73"
+  },
+  {
+   "path": "research/chart-women-build/chart_bcw.py",
+   "sha256": "8d98f81541e1923ce5f201a60b5f1d28f6565e5b8512972b0f92eb465eddcf0a"
+  },
+  {
+   "path": "research/chart-women-build/gen_bcw.py",
+   "sha256": "8595db7df0e36905beac293e170000c6a00f0d02287e2dab92d2ff63430cbb4d"
+  },
+  {
+   "path": "research/chart-women-build/og_bcw.py",
+   "sha256": "19df2ff9ea29723990c27f927b8908564dc2f439756cf90f47102a77b3071746"
+  },
+  {
+   "path": "research/impeccable-baseline/2026-10-15-cmb014-390x844.json",
+   "sha256": "238688a4a52768708ccd4379b1994e18badd5e945a1522865e4b9fb231f733ff"
+  }
+ ],
+ "replace": [
+  {
+   "path": "DESIGN.md",
+   "expect_sha256": "4e96359e51d0f563759e53c629c836d4bf8df9aa4fa98105c430488c662065d9",
+   "sha256": "f91b75ace6870eda67fd5769f8900c5bceaaae5673212015fb2ddb9b5b85f856"
+  },
+  {
+   "path": "assets/css/styles.css",
+   "expect_sha256": "f7d4115b8136f3b4ced9ed8016770b71ac2b8dbdb85f2f5ec54566fd24571ba3",
+   "sha256": "ca1fad074368c5c78f0ddd2af4f30b4fac1fda231bedfcf845a4e3b65f59024a"
+  },
+  {
+   "path": "blog/bmi-chart-women/index.html",
+   "expect_sha256": "90b9c0338fca4ac8603b89326ff3827a7dfa03a66d5ecf7d1cfaab7b0f609609",
+   "sha256": "f990d6debec239f2776c9df57d5f5dfc3e5678660716d0332550db30a96705af",
+   "today": true
+  },
+  {
+   "path": "research/data-sources.csv",
+   "expect_sha256": "81006a81f4a10994093b7d4f54a549f25b3fca17e5d6151683306b020fbd269e",
+   "sha256": "b3fad4dc8d25f1ec027e7240f26b9fcd42daaa29e7f758ff2316ce163ebacca7"
+  },
+  {
+   "path": "research/page-map.csv",
+   "expect_sha256": "8206a77efa89756aba9b92d26e664d1f827995707dfce1b17aee911c2c98f460",
+   "sha256": "10a0450298f41c14863bdccaeada760730c60e54dab29904b803581c22faa28f"
+  }
+ ],
+ "edits": [
+  {
+   "file": "sitemap.xml",
+   "label": "lastmod /blog/bmi-chart-women/ = apply date",
+   "old": "<loc>https://calculatemybmi.net/blog/bmi-chart-women/</loc><lastmod>2026-10-12</lastmod>",
+   "new": "<loc>https://calculatemybmi.net/blog/bmi-chart-women/</loc><lastmod>{TODAY}</lastmod>",
+   "count": 1
+  },
+  {
+   "file": "bmi-chart/index.html",
+   "label": "/bmi-chart/ description: primes instead of an unescaped \" that ended the attribute",
+   "old": "<meta name=\"description\" content=\"BMI chart for adults by height and weight with CDC category bands. Lb + kg. Printable, all adult heights from 4'10\" to 6'6\". Same cutoffs for men and women.\">",
+   "new": "<meta name=\"description\" content=\"BMI chart for adults by height and weight with CDC category bands. Lb + kg. Printable, all adult heights from 4′10″ to 6′6″. Same cutoffs for men and women.\">",
+   "count": 1
+  },
+  {
+   "file": "bmi-chart/index.html",
+   "label": "/bmi-chart/ og:description: primes instead of an unescaped \" that ended the attribute",
+   "old": "<meta property=\"og:description\" content=\"BMI chart for adults by height and weight with CDC category bands. Lb + kg. Printable, all adult heights from 4'10\" to 6'6\". Same cutoffs for men and women.\">",
+   "new": "<meta property=\"og:description\" content=\"BMI chart for adults by height and weight with CDC category bands. Lb + kg. Printable, all adult heights from 4′10″ to 6′6″. Same cutoffs for men and women.\">",
+   "count": 1
+  },
+  {
+   "file": "bmi-chart/index.html",
+   "label": "/bmi-chart/ twitter:description: primes instead of an unescaped \" that ended the attribute",
+   "old": "<meta name=\"twitter:description\" content=\"BMI chart for adults by height and weight with CDC category bands. Lb + kg. Printable, all adult heights from 4'10\" to 6'6\". Same cutoffs for men and women.\">",
+   "new": "<meta name=\"twitter:description\" content=\"BMI chart for adults by height and weight with CDC category bands. Lb + kg. Printable, all adult heights from 4′10″ to 6′6″. Same cutoffs for men and women.\">",
+   "count": 1
+  },
+  {
+   "file": "blog/bmi-chart-men/index.html",
+   "label": "/blog/bmi-chart-men/ description: primes instead of an unescaped \" that ended the attribute",
+   "old": "<meta name=\"description\" content=\"BMI chart for men, all heights from 5'2\" to 6'6\". See your healthy weight range, category cut-offs by height, and how to read the chart. Uses CDC's adult BMI categories.\">",
+   "new": "<meta name=\"description\" content=\"BMI chart for men, all heights from 5′2″ to 6′6″. See your healthy weight range, category cut-offs by height, and how to read the chart. Uses CDC's adult BMI categories.\">",
+   "count": 1
+  },
+  {
+   "file": "blog/bmi-chart-men/index.html",
+   "label": "/blog/bmi-chart-men/ og:description: primes instead of an unescaped \" that ended the attribute",
+   "old": "<meta property=\"og:description\" content=\"BMI chart for men, all heights from 5'2\" to 6'6\". See your healthy weight range, category cut-offs by height, and how to read the chart. Uses CDC's adult BMI categories.\">",
+   "new": "<meta property=\"og:description\" content=\"BMI chart for men, all heights from 5′2″ to 6′6″. See your healthy weight range, category cut-offs by height, and how to read the chart. Uses CDC's adult BMI categories.\">",
+   "count": 1
+  },
+  {
+   "file": "blog/bmi-chart-men/index.html",
+   "label": "/blog/bmi-chart-men/ twitter:description: primes instead of an unescaped \" that ended the attribute",
+   "old": "<meta name=\"twitter:description\" content=\"BMI chart for men, all heights from 5'2\" to 6'6\". See your healthy weight range, category cut-offs by height, and how to read the chart. Uses CDC's adult BMI categories.\">",
+   "new": "<meta name=\"twitter:description\" content=\"BMI chart for men, all heights from 5′2″ to 6′6″. See your healthy weight range, category cut-offs by height, and how to read the chart. Uses CDC's adult BMI categories.\">",
+   "count": 1
+  }
+ ],
+ "delete": []
+}
