@@ -1,0 +1,7 @@
+sex,age,low,healthy,high,very_high,us_median
+Women,20–39,under 21%,21–32.9%,33–38.9%,39% or more,38.1%
+Women,40–59,under 23%,23–33.9%,34–39.9%,40% or more,40.3%
+Women,60–79,under 24%,24–35.9%,36–41.9%,42% or more,not scanned
+Men,20–39,under 8%,8–19.9%,20–24.9%,25% or more,26.2%
+Men,40–59,under 11%,11–21.9%,22–27.9%,28% or more,28.1%
+Men,60–79,under 13%,13–24.9%,25–29.9%,30% or more,not scanned

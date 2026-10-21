@@ -18,8 +18,11 @@ Pages and pictures (the data are the pages' own):
                      research/healthy-range-build/gen_hbr.py), the healthy bands on a light green ground.
   bmi-chart-women    the women's chart hero: one bar per height (4'10"-6'0", every 2 in) split where the weight crosses
                      a CDC category line (scripts/check_weight_tables.py), 5'4" outlined.
+  body-fat-percentage-chart  the body fat chart hero (CMB-016): the provisional ranges for women and men aged 20-39,
+                     40-59 and 60-79 (low, healthy, high, very high; research/body-fat-chart-build/bfpc_stats.json),
+                     one bar per group, women above men.
 Renders each SVG in Chromium at its exact size, checks there is no <text> and the size, and stores a palette PNG.
-usage: pref_images.py REPO_ROOT"""
+usage: pref_images.py REPO_ROOT [NAME ...]   (NAMEs: draw only those pages; CMB-016 drew body-fat-percentage-chart)"""
 import sys, os, io, json
 from playwright.sync_api import sync_playwright
 from PIL import Image
@@ -134,13 +137,35 @@ def women_bars(w, h):
     return frame(w, h, ''.join(out))
 
 
-PAGES = {'bmi-chart': bmi_chart, 'bmi-calculator': waffle, 'healthy-bmi-range': risk_bars, 'bmi-chart-women': women_bars}
+def body_fat(w, h):
+    """The body fat chart hero: provisional ranges for women and men in three age groups, a gap between the sexes."""
+    G = json.load(open(os.path.join(ROOT, 'research/body-fat-chart-build/bfpc_stats.json')))['gallagher']['cuts']
+    rows = [G[k][g] for k in ('f', 'm') for g in ('20-39', '40-59', '60-79')]
+    assert rows[0] == [21, 33, 39] and rows[3] == [8, 20, 25]
+    mx, my = w * 0.07, h * 0.1
+    x0, x1 = mx, w - mx
+    pitch = (h - 2 * my) / 6.6                                   # six bars and a gap of 0.6 bar between the sexes
+    bh = pitch * 0.62
+    xs = lambda p: x0 + p * (x1 - x0) / 50.0
+    out = []
+    for i, (a, b, c) in enumerate(rows):
+        y = my + (i + (0.6 if i >= 3 else 0)) * pitch + (pitch - bh) / 2
+        for k, lo, hi in (('under', 0, a), ('healthy', a, b), ('over', b, c), ('obese', c, 50)):
+            out.append(f'<rect x="{xs(lo) + 3:.1f}" y="{y:.1f}" width="{xs(hi) - xs(lo) - 6:.1f}" height="{bh:.1f}" '
+                       f'rx="{bh * 0.18:.1f}" fill="{BASE[k]}"/>')
+    return frame(w, h, ''.join(out))
+
+
+PAGES = {'bmi-chart': bmi_chart, 'bmi-calculator': waffle, 'healthy-bmi-range': risk_bars, 'bmi-chart-women': women_bars,
+         'body-fat-percentage-chart': body_fat}
 
 if __name__ == '__main__':
     os.makedirs(OUT, exist_ok=True)
     with sync_playwright() as pw:
         br = pw.chromium.launch(args=['--no-sandbox', '--disable-dev-shm-usage'])
         for name, draw in PAGES.items():
+            if sys.argv[2:] and name not in sys.argv[2:]:
+                continue
             for ratio, (w, h) in SIZES.items():
                 svg = draw(w, h)
                 assert '<text' not in svg and '<image' not in svg            # no words, numbers or logos

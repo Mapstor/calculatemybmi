@@ -220,6 +220,12 @@ No sharp corners (0 radius) and no custom clip-paths. Borders are hairline (`1px
 - A figure meant for image results goes in an `<img>` (inline SVG and CSS backgrounds are not indexed as images) with alt text, width and height, next to the text it illustrates, and is listed under its page in `sitemap.xml` (`<image:image>`).
 - `scripts/check_images.py`, run by `check_structure.py`, enforces all three. A rebuild adds its page to `PREFERRED` there.
 
+### Body fat rank tool and lookup tables (CMB-016)
+- `/body-fat-percentage-chart/` ranks a body fat reading with the shared calculator parts, not a page-level style: `.calculator-card.bfr` › `.calc-panel` › `.unit-toggle` (Woman / Man, `aria-pressed`) › `.form-row` with two `.form-input`s (body fat %, age) › `.calculate-btn`. Results follow "Calculator results — answer first": a `.bmi-result-card` tinted by the provisional range, the share in a neutral `.bmi-value` (a share is not a BMI, so no category colour on the number), then `.er-section`s with `h3` headings (the tool sits inside a section that has its own `h2`), a `.cat-dot` on the range line, and a compact percentile `.data-table`.
+- Shares of US adults never print as 100% or 0%: 99.5% or more reads “more than 99%”, 0.5% or less “under 1%”. A reading equal to the row counts on neither side, as in the US rank rule.
+- Narrow chart tables (three columns) use `.weight-chart.weight-chart--fit` (no 600 px minimum, so they fit a phone); the provisional range shows as the cell tint and as a second line (`.cell-kg`), so colour never carries it alone.
+- Women and men as chart series: `#be185d` and `#4338ca` (dataviz validator, light mode: CVD ΔE 18.3, normal-vision ΔE 29.3, both 3:1 or more on white); the middle half as the same hue at 16% opacity. The category colours stay for categories.
+
 ### Category badges
 - Pill (`--radius-full`), category background with white text (BMI color lock applies).
 

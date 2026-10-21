@@ -1,0 +1,123 @@
+{
+ "new_files": [
+  {
+   "path": "assets/images/charts/body-fat-percentage-chart.png",
+   "sha256": "15572cd4f87863b330e016be1174cb77191f4b0981be0b6e043d1f4275b4a58b"
+  },
+  {
+   "path": "assets/images/preferred/body-fat-percentage-chart-16x9.png",
+   "sha256": "57a12046c2f818fd5a59284d46d77e6c272570b1057178abed58d5e30ea3853e"
+  },
+  {
+   "path": "assets/images/preferred/body-fat-percentage-chart-1x1.png",
+   "sha256": "08c85afd66b04695a0763337ca4f396159e08d2552df6e8eed963a8ed8605d65"
+  },
+  {
+   "path": "assets/images/preferred/body-fat-percentage-chart-4x3.png",
+   "sha256": "7537451acb47d1aaaef2e848b835b2e568993edeb4317b553de96a2fe5ebe4fb"
+  },
+  {
+   "path": "research/body-fat-chart-build/SPEC.md",
+   "sha256": "2af6876f564784aa2662ab9a1e7d30e6b52d84c2081546fc99c8f68d0107dc9a"
+  },
+  {
+   "path": "research/body-fat-chart-build/bfpc_chart.csv",
+   "sha256": "6e0d49349855db01e1a138fa2280505d6e598cb962a1c349a0dcd990cb653270"
+  },
+  {
+   "path": "research/body-fat-chart-build/bfpc_stats.json",
+   "sha256": "6d176de484d8eb015b1552308997ca5a0c06c4c6fe2715acf556bd38774c1096"
+  },
+  {
+   "path": "research/body-fat-chart-build/bfpc_stats.py",
+   "sha256": "a31018ab8d10f5fa2ace22f2f3dbdbcc33e89b8b1bd72a39bff44dbd14f3d4b8"
+  },
+  {
+   "path": "research/body-fat-chart-build/bfpc_test_playwright.py",
+   "sha256": "27063057e6c4afabff6b4b4eae4c43360eab1cf09946bdb8cb2885e050129055"
+  },
+  {
+   "path": "research/body-fat-chart-build/chart_bfpc.py",
+   "sha256": "a8dc0ece4d4b16619c653f10eec2db25a87adf1bf811ba7d845f8a53211cd557"
+  },
+  {
+   "path": "research/body-fat-chart-build/gen_bfpc.py",
+   "sha256": "115e813efb4fc53ef15a435a701114ce0197cfee0bde9fd1c414efea9aa6281b"
+  },
+  {
+   "path": "research/impeccable-baseline/2026-10-21-cmb016-390x844.json",
+   "sha256": "111d91258b230528c4eb5ca9c25cfb5ebf87bd10f4204c786bb826009a9d3b18"
+  }
+ ],
+ "replace": [
+  {
+   "path": "DESIGN.md",
+   "expect_sha256": "b475dc2996483963e4e7be686baecf635c5f6014a101fc6444ee377586569dd0",
+   "sha256": "00de6844d8e57750b4b03cbe7365628ae7f7cc08bc37eb1ed919554d2d94052a"
+  },
+  {
+   "path": "assets/css/styles.css",
+   "expect_sha256": "8b1ed91de589aca6e0e1d5254bd0f09f7824e33c8ce4e4e62504e85b87cd4d56",
+   "sha256": "627630d4c55e4673b8629b1b91acf94ecfdf939f346f20f8742c27f121f2fa34"
+  },
+  {
+   "path": "body-fat-percentage-chart/index.html",
+   "expect_sha256": "f731827c7f429ab41a768ffe7c9abab17ac27b77a4ada4b464c05f36eae2e299",
+   "sha256": "eeeeec4631f48286aa84b4504b4932d8f5f4a291689aab454fbe61c0b165f3f4",
+   "today": true
+  },
+  {
+   "path": "research/data-sources.csv",
+   "expect_sha256": "c82814b99e17785d31a1765fbc1fffc9c21c204b3b5909455de8e732c2a272eb",
+   "sha256": "3c9f7fec15ccd89d5820eb689270194ce43974b827b897807cf005226eedbace"
+  },
+  {
+   "path": "research/page-map.csv",
+   "expect_sha256": "b6ff1542126d2cea1fb93a269a2b314f468307d575edff8a1db222d3c73cd8db",
+   "sha256": "4081c497ff4ec857bbf7455e52dee75dbf43b2cfb0d61d5f631374a1de32d2f4"
+  },
+  {
+   "path": "research/preferred-images/pref_images.py",
+   "expect_sha256": "e624e502d5c3ae93e1d7f2185a9d816c133791f3f17ee8738926b2d21ce1d09d",
+   "sha256": "a48c62b849d713d6714112606e9eaa79d57a803eb1dcf07b5991284375c43e9b"
+  },
+  {
+   "path": "scripts/check_images.py",
+   "expect_sha256": "f3098b6f385e9e2567d5f341486dd021ed925568d63ae660604147e576aca9e6",
+   "sha256": "11b32fc8e418eb379be58203a9261d45b9b7d57054d0acab9137e5a1831c0ba0"
+  }
+ ],
+ "edits": [
+  {
+   "file": "sitemap.xml",
+   "old": "<url><loc>https://calculatemybmi.net/body-fat-percentage-chart/</loc><lastmod>2026-10-12</lastmod><priority>0.9</priority></url>",
+   "new": "<url><loc>https://calculatemybmi.net/body-fat-percentage-chart/</loc><lastmod>{TODAY}</lastmod><priority>0.9</priority><image:image><image:loc>https://calculatemybmi.net/assets/images/charts/body-fat-percentage-chart.png</image:loc></image:image></url>",
+   "count": 1,
+   "label": "sitemap: /body-fat-percentage-chart/ lastmod and its printable chart image"
+  },
+  {
+   "file": "age-bmi-calculator/index.html",
+   "old": "from 25.4% in men in their 20s to 28.4% in their 50s",
+   "new": "from 25.4% in men in their 20s to 28.3% in their 50s",
+   "count": 1,
+   "label": "/age-bmi-calculator/: men 50-59 average body fat 28.3% (unrounded 28.347; 28.4 was 28.35 rounded again)"
+  },
+  {
+   "file": "sitemap.xml",
+   "old": "<url><loc>https://calculatemybmi.net/age-bmi-calculator/</loc><lastmod>2026-10-14</lastmod>",
+   "new": "<url><loc>https://calculatemybmi.net/age-bmi-calculator/</loc><lastmod>{TODAY}</lastmod>",
+   "count": 1,
+   "label": "sitemap: /age-bmi-calculator/ lastmod (its text changed)"
+  }
+ ],
+ "delete": [
+  {
+   "path": "body-fat-percentage-chart/og-body-fat-percentage-chart.png",
+   "expect_sha256": "31e872ecb45e0d8e17aacb781c5172a9c46b475697499701629de2eb01cc3d7c"
+  },
+  {
+   "path": "research/body-fat/tool_test_jsdom.js",
+   "expect_sha256": "98220f3f91961fd93ade9fd095ac54b045c7cb72244f86a0642496b9c4f16374"
+  }
+ ]
+}
