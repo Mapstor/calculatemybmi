@@ -212,6 +212,13 @@ No sharp corners (0 radius) and no custom clip-paths. Borders are hairline (`1px
 ### Weight-by-height chart tables — `.weight-chart` (CMB-014)
 - The chart table on D-14 chart pages (first `/blog/bmi-chart-women/`): one row per height with a `#h-5-4` id, one column per CDC category, pounds with kilograms below (`.cell-kg`), centimeters under the height (`.cell-cm`). Cells use the category tints with text from the same hue (`.c-under` … `.c-ob3`, 5.2:1 or better); white hairlines between cells; the height column stays put while the table scrolls sideways; a targeted row gets a 3 px `--link` bar. `min-width: 600px`, inside `.table-responsive`; headers wrap.
 - A printable chart image goes in `figure.figure.figure--wide` (680 px) as an `<img>` with width and height, linked to the full-size file, so search engines can index it.
+- Cells keep 8 px (0.5rem) beside the text. `.th-sub`, the muted second line, also works in `.data-table` row headers (CMB-015, the US adults table on `/bmi-chart/`).
+
+### Images in search results (CMB-015)
+- Every page carries `<meta name="robots" content="max-image-preview:large">`, which lets Google show a large image preview (and is required for large images in Discover).
+- Each D-14 page names a **preferred image**: its own figure redrawn with no words, numbers or logo (Google: avoid a generic image such as a logo, and images with text), in 16:9 (1200 × 675), 4:3 (1200 × 900) and 1:1 (1200 × 1200), drawn by `research/preferred-images/pref_images.py` into `assets/images/preferred/<name>-<ratio>.png`. The 16:9 file is `og:image` and `twitter:image` (`og:image:width` 1200, `og:image:height` 675); the main entity's JSON-LD `image` lists the 1:1, 4:3 and 16:9 files; a `WebPage` `primaryImageOfPage` names the 16:9 file. Keep wide margins so any crop holds the whole picture.
+- A figure meant for image results goes in an `<img>` (inline SVG and CSS backgrounds are not indexed as images) with alt text, width and height, next to the text it illustrates, and is listed under its page in `sitemap.xml` (`<image:image>`).
+- `scripts/check_images.py`, run by `check_structure.py`, enforces all three. A rebuild adds its page to `PREFERRED` there.
 
 ### Category badges
 - Pill (`--radius-full`), category background with white text (BMI color lock applies).

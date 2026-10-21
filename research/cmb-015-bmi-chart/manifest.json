@@ -1,0 +1,586 @@
+{
+ "new_files": [
+  {
+   "path": "assets/images/charts/bmi-chart.png",
+   "sha256": "cdc05237b6e413eb49f0f9cb8b11e4561691f7aebbbf386521a02ad050b42aa6"
+  },
+  {
+   "path": "assets/images/preferred/bmi-calculator-16x9.png",
+   "sha256": "04c8fbe3098e2ee714d21c64c1c7919cf30077b1b368fb006cba76fe06bbf514"
+  },
+  {
+   "path": "assets/images/preferred/bmi-calculator-1x1.png",
+   "sha256": "56825e133db5e22e2bffbf17a13789564306aae3a284a5e27a35093010e2eb7c"
+  },
+  {
+   "path": "assets/images/preferred/bmi-calculator-4x3.png",
+   "sha256": "e4f0a4bf15f6cc4600a963824ebf47360d7e125799ad00afb9a251cfed719065"
+  },
+  {
+   "path": "assets/images/preferred/bmi-chart-16x9.png",
+   "sha256": "d01dd2109c461ecd638e38d9023e49b0618cfaef18c7573651697e2ab6a52ed9"
+  },
+  {
+   "path": "assets/images/preferred/bmi-chart-1x1.png",
+   "sha256": "17242ab018fb2bf45f4bb7075c17cee3ee8418a6af20c12ea52dfddaa0906682"
+  },
+  {
+   "path": "assets/images/preferred/bmi-chart-4x3.png",
+   "sha256": "e87cbd03874eac6f48e50dd3de8b61699ff6e4a07b97e35f2db06f44d7ff83f8"
+  },
+  {
+   "path": "assets/images/preferred/bmi-chart-women-16x9.png",
+   "sha256": "4da5a01d717c20ed2bd85c664c12cd62056a66cac961b5509bde7d7f0ac84fdd"
+  },
+  {
+   "path": "assets/images/preferred/bmi-chart-women-1x1.png",
+   "sha256": "db6f5ad12816248d4716b9413506a7f8502711853da7564785159a37ea335978"
+  },
+  {
+   "path": "assets/images/preferred/bmi-chart-women-4x3.png",
+   "sha256": "22f3fe2281839664daf4af77f28f2d2086b596303f8952c090c09524523aa332"
+  },
+  {
+   "path": "assets/images/preferred/healthy-bmi-range-16x9.png",
+   "sha256": "9b054b4726228ee6ead07cdf1b6386ee7b222f96e5d1b79e795aa01ac89bb792"
+  },
+  {
+   "path": "assets/images/preferred/healthy-bmi-range-1x1.png",
+   "sha256": "add915744ad5cb839d132fdc7b8fdfb8a9ab62b6a4ddcb9ebd5aeeeff77234f7"
+  },
+  {
+   "path": "assets/images/preferred/healthy-bmi-range-4x3.png",
+   "sha256": "53bf313ecbac0d3309d66f6776fb2e1cecd911637ebd5b6fb681c7a53b4a89bb"
+  },
+  {
+   "path": "research/bmi-chart-build/SPEC.md",
+   "sha256": "d88da86c91aea6f26a054b3d1f6d2616d9e766922ec86c5c3414795bc67afbfc"
+  },
+  {
+   "path": "research/bmi-chart-build/bc_grid.csv",
+   "sha256": "1c4c37d7fce33e3838e0d6c79a5b9005ac2849507d86a9eb33269241a8da71ca"
+  },
+  {
+   "path": "research/bmi-chart-build/bc_stats.json",
+   "sha256": "6fa3cd22f4693487e383ffee0597f198e6ea817117b3af8dd8f84fbc18d997ef"
+  },
+  {
+   "path": "research/bmi-chart-build/bc_stats.py",
+   "sha256": "d208306185cfc4ca8dfdd90734b68b7e6c52247cc5fd10c4936843fbf02e3a31"
+  },
+  {
+   "path": "research/bmi-chart-build/bc_test_playwright.py",
+   "sha256": "9a621ce2cfa9a8fc8a933068ac7c11eafb70625ecdb1bc510bee421a75dcef65"
+  },
+  {
+   "path": "research/bmi-chart-build/chart_bc.py",
+   "sha256": "1642ce6304cc0d697a083d4a357e6460e941161b85c82a3a3a7f6907f7642455"
+  },
+  {
+   "path": "research/bmi-chart-build/gen_bc.py",
+   "sha256": "977d1608d0e9b36d345849ee10710574b53c97f836d8f6a85a433caec342a5a6"
+  },
+  {
+   "path": "research/impeccable-baseline/2026-10-21-cmb015-390x844.json",
+   "sha256": "dc29051ad51509d0b9f92bda567d46e22b9efbdc5bfb891c8bb1b7f21926083d"
+  },
+  {
+   "path": "research/preferred-images/pref_images.py",
+   "sha256": "e624e502d5c3ae93e1d7f2185a9d816c133791f3f17ee8738926b2d21ce1d09d"
+  },
+  {
+   "path": "scripts/check_images.py",
+   "sha256": "f3098b6f385e9e2567d5f341486dd021ed925568d63ae660604147e576aca9e6"
+  }
+ ],
+ "replace": [
+  {
+   "path": "DESIGN.md",
+   "expect_sha256": "f91b75ace6870eda67fd5769f8900c5bceaaae5673212015fb2ddb9b5b85f856",
+   "sha256": "b475dc2996483963e4e7be686baecf635c5f6014a101fc6444ee377586569dd0"
+  },
+  {
+   "path": "assets/css/styles.css",
+   "expect_sha256": "ca1fad074368c5c78f0ddd2af4f30b4fac1fda231bedfcf845a4e3b65f59024a",
+   "sha256": "8b1ed91de589aca6e0e1d5254bd0f09f7824e33c8ce4e4e62504e85b87cd4d56"
+  },
+  {
+   "path": "bmi-chart/index.html",
+   "expect_sha256": "30d6b5efc496e0844c7f0bcd9edbac9f11156c41b4da53c8266f2808c8bdfba4",
+   "sha256": "c0e2b7c95e6d872fc7d506eb522044f774cc643dfb17816098c923a1ef3b8fb1",
+   "today": true
+  },
+  {
+   "path": "research/data-sources.csv",
+   "expect_sha256": "b3fad4dc8d25f1ec027e7240f26b9fcd42daaa29e7f758ff2316ce163ebacca7",
+   "sha256": "c82814b99e17785d31a1765fbc1fffc9c21c204b3b5909455de8e732c2a272eb"
+  },
+  {
+   "path": "research/page-map.csv",
+   "expect_sha256": "10a0450298f41c14863bdccaeada760730c60e54dab29904b803581c22faa28f",
+   "sha256": "b6ff1542126d2cea1fb93a269a2b314f468307d575edff8a1db222d3c73cd8db"
+  },
+  {
+   "path": "scripts/check_structure.py",
+   "expect_sha256": "b5fd39f0787e860cdd35630e596ceb1412078573f5be5313d335be601763308a",
+   "sha256": "f2ec854d34c46acd003829c192602d734752b01f9063aa48b8aabb7f7c03a8ba"
+  }
+ ],
+ "edits": [
+  {
+   "file": "index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /"
+  },
+  {
+   "file": "about/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /about/"
+  },
+  {
+   "file": "contact/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /contact/"
+  },
+  {
+   "file": "privacy/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /privacy/"
+  },
+  {
+   "file": "terms/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /terms/"
+  },
+  {
+   "file": "calculators/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /calculators/"
+  },
+  {
+   "file": "women-bmi-calculator/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /women-bmi-calculator/"
+  },
+  {
+   "file": "men-bmi-calculator/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /men-bmi-calculator/"
+  },
+  {
+   "file": "age-bmi-calculator/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /age-bmi-calculator/"
+  },
+  {
+   "file": "kids-bmi-calculator/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /kids-bmi-calculator/"
+  },
+  {
+   "file": "ideal-weight/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /ideal-weight/"
+  },
+  {
+   "file": "lean-body-mass/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /lean-body-mass/"
+  },
+  {
+   "file": "new-bmi-calculator/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /new-bmi-calculator/"
+  },
+  {
+   "file": "blog/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /blog/"
+  },
+  {
+   "file": "blog/what-is-bmi/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /blog/what-is-bmi/"
+  },
+  {
+   "file": "blog/bmi-formula/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /blog/bmi-formula/"
+  },
+  {
+   "file": "blog/bmi-history/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /blog/bmi-history/"
+  },
+  {
+   "file": "blog/healthy-bmi-range/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /blog/healthy-bmi-range/"
+  },
+  {
+   "file": "blog/bmi-categories/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /blog/bmi-categories/"
+  },
+  {
+   "file": "blog/bmi-chart-explained/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /blog/bmi-chart-explained/"
+  },
+  {
+   "file": "blog/bmi-and-health-risks/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /blog/bmi-and-health-risks/"
+  },
+  {
+   "file": "blog/underweight-bmi-risks/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /blog/underweight-bmi-risks/"
+  },
+  {
+   "file": "blog/bmi-limitations/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /blog/bmi-limitations/"
+  },
+  {
+   "file": "blog/bmi-and-metabolism/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /blog/bmi-and-metabolism/"
+  },
+  {
+   "file": "blog/body-fat-vs-bmi/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /blog/body-fat-vs-bmi/"
+  },
+  {
+   "file": "blog/bmi-for-athletes/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /blog/bmi-for-athletes/"
+  },
+  {
+   "file": "blog/waist-to-height-ratio/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /blog/waist-to-height-ratio/"
+  },
+  {
+   "file": "blog/how-to-lower-bmi/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /blog/how-to-lower-bmi/"
+  },
+  {
+   "file": "blog/bmi-tracking-guide/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /blog/bmi-tracking-guide/"
+  },
+  {
+   "file": "blog/bmi-chart-women/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /blog/bmi-chart-women/"
+  },
+  {
+   "file": "blog/bmi-chart-men/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /blog/bmi-chart-men/"
+  },
+  {
+   "file": "blog/bmi-by-age/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /blog/bmi-by-age/"
+  },
+  {
+   "file": "us-obesity-statistics/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /us-obesity-statistics/"
+  },
+  {
+   "file": "obesity-rate-by-state/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /obesity-rate-by-state/"
+  },
+  {
+   "file": "childhood-obesity-statistics/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /childhood-obesity-statistics/"
+  },
+  {
+   "file": "average-weight/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /average-weight/"
+  },
+  {
+   "file": "body-fat-percentage-chart/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /body-fat-percentage-chart/"
+  },
+  {
+   "file": "body-fat-calculator/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /body-fat-calculator/"
+  },
+  {
+   "file": "blog/how-to-measure-body-fat/index.html",
+   "old": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "new": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"max-image-preview:large\">",
+   "count": 1,
+   "label": "robots max-image-preview:large: /blog/how-to-measure-body-fat/"
+  },
+  {
+   "file": "index.html",
+   "old": "<meta property=\"og:image\" content=\"https://calculatemybmi.net/assets/images/og/home-bmi-us-adults.png\">",
+   "new": "<meta property=\"og:image\" content=\"https://calculatemybmi.net/assets/images/preferred/bmi-calculator-16x9.png\">",
+   "count": 1,
+   "label": "og:image: index.html"
+  },
+  {
+   "file": "index.html",
+   "old": "<meta property=\"og:image:height\" content=\"630\">",
+   "new": "<meta property=\"og:image:height\" content=\"675\">",
+   "count": 1,
+   "label": "og:image:height: index.html"
+  },
+  {
+   "file": "index.html",
+   "old": "<meta name=\"twitter:image\" content=\"https://calculatemybmi.net/assets/images/og/home-bmi-us-adults.png\">",
+   "new": "<meta name=\"twitter:image\" content=\"https://calculatemybmi.net/assets/images/preferred/bmi-calculator-16x9.png\">",
+   "count": 1,
+   "label": "twitter:image: index.html"
+  },
+  {
+   "file": "index.html",
+   "old": "{\"@type\": \"WebApplication\", \"@id\": \"https://calculatemybmi.net/#calculator\", ",
+   "new": "{\"@type\": \"WebApplication\", \"@id\": \"https://calculatemybmi.net/#calculator\", \"image\": [\"https://calculatemybmi.net/assets/images/preferred/bmi-calculator-1x1.png\", \"https://calculatemybmi.net/assets/images/preferred/bmi-calculator-4x3.png\", \"https://calculatemybmi.net/assets/images/preferred/bmi-calculator-16x9.png\"], ",
+   "count": 1,
+   "label": "JSON-LD WebApplication image: /"
+  },
+  {
+   "file": "index.html",
+   "old": "\"@graph\": [{\"@type\": \"WebSite\", ",
+   "new": "\"@graph\": [{\"@type\": \"WebPage\", \"@id\": \"https://calculatemybmi.net/#webpage\", \"url\": \"https://calculatemybmi.net/\", \"isPartOf\": {\"@id\": \"https://calculatemybmi.net/#website\"}, \"mainEntity\": {\"@id\": \"https://calculatemybmi.net/#calculator\"}, \"primaryImageOfPage\": {\"@type\": \"ImageObject\", \"url\": \"https://calculatemybmi.net/assets/images/preferred/bmi-calculator-16x9.png\", \"width\": 1200, \"height\": 675}}, {\"@type\": \"WebSite\", ",
+   "count": 1,
+   "label": "JSON-LD WebPage primaryImageOfPage: /"
+  },
+  {
+   "file": "blog/healthy-bmi-range/index.html",
+   "old": "<meta property=\"og:image\" content=\"https://calculatemybmi.net/assets/images/og/healthy-bmi-range-risk.png\">",
+   "new": "<meta property=\"og:image\" content=\"https://calculatemybmi.net/assets/images/preferred/healthy-bmi-range-16x9.png\">",
+   "count": 1,
+   "label": "og:image: blog/healthy-bmi-range/index.html"
+  },
+  {
+   "file": "blog/healthy-bmi-range/index.html",
+   "old": "<meta property=\"og:image:height\" content=\"630\">",
+   "new": "<meta property=\"og:image:height\" content=\"675\">",
+   "count": 1,
+   "label": "og:image:height: blog/healthy-bmi-range/index.html"
+  },
+  {
+   "file": "blog/healthy-bmi-range/index.html",
+   "old": "<meta name=\"twitter:image\" content=\"https://calculatemybmi.net/assets/images/og/healthy-bmi-range-risk.png\">",
+   "new": "<meta name=\"twitter:image\" content=\"https://calculatemybmi.net/assets/images/preferred/healthy-bmi-range-16x9.png\">",
+   "count": 1,
+   "label": "twitter:image: blog/healthy-bmi-range/index.html"
+  },
+  {
+   "file": "blog/healthy-bmi-range/index.html",
+   "old": "\"image\": \"https://calculatemybmi.net/assets/images/og/healthy-bmi-range-risk.png\"",
+   "new": "\"image\": [\"https://calculatemybmi.net/assets/images/preferred/healthy-bmi-range-1x1.png\", \"https://calculatemybmi.net/assets/images/preferred/healthy-bmi-range-4x3.png\", \"https://calculatemybmi.net/assets/images/preferred/healthy-bmi-range-16x9.png\"]",
+   "count": 1,
+   "label": "JSON-LD Article image: blog/healthy-bmi-range/index.html"
+  },
+  {
+   "file": "blog/healthy-bmi-range/index.html",
+   "old": "\"mainEntityOfPage\": \"https://calculatemybmi.net/blog/healthy-bmi-range/\"}",
+   "new": "\"mainEntityOfPage\": {\"@type\": \"WebPage\", \"@id\": \"https://calculatemybmi.net/blog/healthy-bmi-range/\", \"url\": \"https://calculatemybmi.net/blog/healthy-bmi-range/\", \"primaryImageOfPage\": {\"@type\": \"ImageObject\", \"url\": \"https://calculatemybmi.net/assets/images/preferred/healthy-bmi-range-16x9.png\", \"width\": 1200, \"height\": 675}}}",
+   "count": 1,
+   "label": "JSON-LD mainEntityOfPage: blog/healthy-bmi-range/index.html"
+  },
+  {
+   "file": "blog/bmi-chart-women/index.html",
+   "old": "<meta property=\"og:image\" content=\"https://calculatemybmi.net/assets/images/og/bmi-chart-women.png\">",
+   "new": "<meta property=\"og:image\" content=\"https://calculatemybmi.net/assets/images/preferred/bmi-chart-women-16x9.png\">",
+   "count": 1,
+   "label": "og:image: blog/bmi-chart-women/index.html"
+  },
+  {
+   "file": "blog/bmi-chart-women/index.html",
+   "old": "<meta property=\"og:image:height\" content=\"630\">",
+   "new": "<meta property=\"og:image:height\" content=\"675\">",
+   "count": 1,
+   "label": "og:image:height: blog/bmi-chart-women/index.html"
+  },
+  {
+   "file": "blog/bmi-chart-women/index.html",
+   "old": "<meta name=\"twitter:image\" content=\"https://calculatemybmi.net/assets/images/og/bmi-chart-women.png\">",
+   "new": "<meta name=\"twitter:image\" content=\"https://calculatemybmi.net/assets/images/preferred/bmi-chart-women-16x9.png\">",
+   "count": 1,
+   "label": "twitter:image: blog/bmi-chart-women/index.html"
+  },
+  {
+   "file": "blog/bmi-chart-women/index.html",
+   "old": "\"image\": [\"https://calculatemybmi.net/assets/images/og/bmi-chart-women.png\", \"https://calculatemybmi.net/assets/images/charts/bmi-chart-women.png\"]}",
+   "new": "\"image\": [\"https://calculatemybmi.net/assets/images/preferred/bmi-chart-women-1x1.png\", \"https://calculatemybmi.net/assets/images/preferred/bmi-chart-women-4x3.png\", \"https://calculatemybmi.net/assets/images/preferred/bmi-chart-women-16x9.png\"], \"mainEntityOfPage\": {\"@type\": \"WebPage\", \"@id\": \"https://calculatemybmi.net/blog/bmi-chart-women/\", \"url\": \"https://calculatemybmi.net/blog/bmi-chart-women/\", \"primaryImageOfPage\": {\"@type\": \"ImageObject\", \"url\": \"https://calculatemybmi.net/assets/images/preferred/bmi-chart-women-16x9.png\", \"width\": 1200, \"height\": 675}}}",
+   "count": 1,
+   "label": "JSON-LD Article image + mainEntityOfPage: blog/bmi-chart-women/index.html"
+  },
+  {
+   "file": "blog/healthy-bmi-range/index.html",
+   "old": "\"author\": {\"@type\": \"Person\", \"@id\": \"https://calculatemybmi.net/about/#author-bio\"}",
+   "new": "\"author\": {\"@type\": \"Person\", \"@id\": \"https://calculatemybmi.net/about/#author-bio\", \"name\": \"Marko Visic\", \"url\": \"https://calculatemybmi.net/about/\"}",
+   "count": 1,
+   "label": "JSON-LD Article author name: blog/healthy-bmi-range/index.html"
+  },
+  {
+   "file": "blog/healthy-bmi-range/index.html",
+   "old": "\"publisher\": {\"@type\": \"Organization\", \"@id\": \"https://calculatemybmi.net/#organization\"}",
+   "new": "\"publisher\": {\"@type\": \"Organization\", \"@id\": \"https://calculatemybmi.net/#organization\", \"name\": \"CalculateMyBMI\", \"url\": \"https://calculatemybmi.net/\"}",
+   "count": 1,
+   "label": "JSON-LD Article publisher name: blog/healthy-bmi-range/index.html"
+  },
+  {
+   "file": "blog/bmi-chart-women/index.html",
+   "old": "\"author\": {\"@id\": \"https://calculatemybmi.net/about/#author-bio\"}",
+   "new": "\"author\": {\"@type\": \"Person\", \"@id\": \"https://calculatemybmi.net/about/#author-bio\", \"name\": \"Marko Visic\", \"url\": \"https://calculatemybmi.net/about/\"}",
+   "count": 1,
+   "label": "JSON-LD Article author name: blog/bmi-chart-women/index.html"
+  },
+  {
+   "file": "blog/bmi-chart-women/index.html",
+   "old": "\"publisher\": {\"@id\": \"https://calculatemybmi.net/#organization\"}",
+   "new": "\"publisher\": {\"@type\": \"Organization\", \"@id\": \"https://calculatemybmi.net/#organization\", \"name\": \"CalculateMyBMI\", \"url\": \"https://calculatemybmi.net/\"}",
+   "count": 1,
+   "label": "JSON-LD Article publisher name: blog/bmi-chart-women/index.html"
+  },
+  {
+   "file": "sitemap.xml",
+   "old": "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">",
+   "new": "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\" xmlns:image=\"http://www.google.com/schemas/sitemap-image/1.1\">",
+   "count": 1,
+   "label": "sitemap image namespace"
+  },
+  {
+   "file": "sitemap.xml",
+   "old": "<url><loc>https://calculatemybmi.net/</loc><lastmod>2026-10-15</lastmod><priority>1.0</priority></url>",
+   "new": "<url><loc>https://calculatemybmi.net/</loc><lastmod>{TODAY}</lastmod><priority>1.0</priority></url>",
+   "count": 1,
+   "label": "sitemap / lastmod"
+  },
+  {
+   "file": "sitemap.xml",
+   "old": "<url><loc>https://calculatemybmi.net/about/</loc><lastmod>2026-10-14</lastmod><priority>0.7</priority></url>",
+   "new": "<url><loc>https://calculatemybmi.net/about/</loc><lastmod>2026-10-14</lastmod><priority>0.7</priority><image:image><image:loc>https://calculatemybmi.net/assets/images/marko-visic.jpg</image:loc></image:image></url>",
+   "count": 1,
+   "label": "sitemap /about/ + image"
+  },
+  {
+   "file": "sitemap.xml",
+   "old": "<url><loc>https://calculatemybmi.net/blog/healthy-bmi-range/</loc><lastmod>2026-10-15</lastmod><priority>0.8</priority></url>",
+   "new": "<url><loc>https://calculatemybmi.net/blog/healthy-bmi-range/</loc><lastmod>{TODAY}</lastmod><priority>0.8</priority></url>",
+   "count": 1,
+   "label": "sitemap /blog/healthy-bmi-range/ lastmod"
+  },
+  {
+   "file": "sitemap.xml",
+   "old": "<url><loc>https://calculatemybmi.net/blog/bmi-chart-women/</loc><lastmod>2026-10-16</lastmod><priority>0.8</priority></url>",
+   "new": "<url><loc>https://calculatemybmi.net/blog/bmi-chart-women/</loc><lastmod>{TODAY}</lastmod><priority>0.8</priority><image:image><image:loc>https://calculatemybmi.net/assets/images/charts/bmi-chart-women.png</image:loc></image:image></url>",
+   "count": 1,
+   "label": "sitemap /blog/bmi-chart-women/ lastmod + image"
+  },
+  {
+   "file": "sitemap.xml",
+   "old": "<url><loc>https://calculatemybmi.net/bmi-chart/</loc><lastmod>2026-10-12</lastmod><priority>0.9</priority></url>",
+   "new": "<url><loc>https://calculatemybmi.net/bmi-chart/</loc><lastmod>{TODAY}</lastmod><priority>0.9</priority><image:image><image:loc>https://calculatemybmi.net/assets/images/charts/bmi-chart.png</image:loc></image:image></url>",
+   "count": 1,
+   "label": "sitemap /bmi-chart/ lastmod + image"
+  }
+ ],
+ "delete": [
+  {
+   "path": "assets/images/og/bmi-chart-women.png",
+   "expect_sha256": "3fec2c7a24e357370dce7d9fc6e479f3c146d10bc092c2e0515729908106ac56"
+  },
+  {
+   "path": "assets/images/og/healthy-bmi-range-risk.png",
+   "expect_sha256": "c6b038898b170bf852e62b513ebf4243199426c28307690b3474b8a67f23fc9a"
+  },
+  {
+   "path": "assets/images/og/home-bmi-us-adults.png",
+   "expect_sha256": "0b82dd6b70c8516d5f1d428fee7c84b1d7d5c63733cda1168a6b205dff43a9f2"
+  }
+ ]
+}

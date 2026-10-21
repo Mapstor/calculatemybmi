@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Structure gate for calculatemybmi.
-Runs before every commit. Requires all 33 sitemap pages to pass:
+Runs before every commit. Requires every sitemap page to pass:
   - exactly one <head>, </head>, <body, and </body>
   - <link rel="stylesheet" href="/assets/css/styles.css"> present
   - <title>, meta description, canonical, exactly one <h1>
@@ -20,6 +20,9 @@ Runs before every commit. Requires all 33 sitemap pages to pass:
   - assets/js/calculator.js (the results panel): no emoji or arrow entities, no low-contrast text hexes,
     no gradients (CMB-011)
   - the /blog/ hub links every guide in the sitemap; its ItemList and its guide counts match (CMB-011)
+  - images in search: max-image-preview:large on every page; the D-14 pages name a text-free preferred image
+    (16:9, 4:3, 1:1) in og:image, the JSON-LD image and primaryImageOfPage; every <img> in <main> is in the
+    image sitemap (scripts/check_images.py, CMB-015)
 Exits non-zero on any failure.
 """
 import re, os, glob, sys, json, html
@@ -204,6 +207,12 @@ def check_file(page, path):
         problems.extend(f'content: {p}' for p in integrity_problems(src))
     except Exception as exc:
         problems.append(f'check_content_integrity import failed: {exc}')
+    # Images in search: large previews allowed, preferred images named, image sitemap in step (CMB-015).
+    try:
+        from check_images import image_problems
+        problems.extend(f'images: {p}' for p in image_problems(page, src, path))
+    except Exception as exc:
+        problems.append(f'check_images failed: {exc}')
     return problems
 
 def hub_problems(root, paths):

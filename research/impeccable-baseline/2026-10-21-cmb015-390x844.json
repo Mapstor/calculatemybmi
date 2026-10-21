@@ -1,0 +1,409 @@
+{
+ "base": "GitHub main 621bf8b (CMB-014 live) vs + CMB-015 (chat)",
+ "date": "2026-10-21",
+ "engine": "0.1.14",
+ "results_open": {
+  "by_page_after": {
+   "age-bmi-calculator": 18,
+   "home": 0,
+   "ideal-weight": 28,
+   "kids-bmi-calculator": 6,
+   "lean-body-mass": 3,
+   "men-bmi-calculator": 0,
+   "new-bmi-calculator": 33,
+   "women-bmi-calculator": 16
+  },
+  "by_page_before": {
+   "age-bmi-calculator": 18,
+   "home": 20,
+   "ideal-weight": 28,
+   "kids-bmi-calculator": 6,
+   "lean-body-mass": 3,
+   "men-bmi-calculator": 0,
+   "new-bmi-calculator": 33,
+   "women-bmi-calculator": 16
+  },
+  "note": "carried over from 2026-10-15 (CMB-014): CMB-015 changes no calculator page except a head robots tag",
+  "total_after": 104,
+  "total_before": 124
+ },
+ "static_pages": {
+  "by_page_after": {
+   "404": {
+    "low-contrast": 1
+   },
+   "about": {
+    "low-contrast": 2,
+    "nested-cards": 14
+   },
+   "age-bmi-calculator": {
+    "cramped-padding": 1,
+    "low-contrast": 8,
+    "nested-cards": 5,
+    "skipped-heading": 1,
+    "tiny-text": 3
+   },
+   "average-weight": {
+    "border-accent-on-rounded": 4,
+    "low-contrast": 3,
+    "side-tab": 1,
+    "undersized-ui-text": 2
+   },
+   "blog": {},
+   "blog_bmi-and-health-risks": {
+    "side-tab": 1,
+    "skipped-heading": 1,
+    "tiny-text": 2,
+    "undersized-ui-text": 1
+   },
+   "blog_bmi-and-metabolism": {
+    "heading-rhythm": 2,
+    "low-contrast": 2,
+    "skipped-heading": 1
+   },
+   "blog_bmi-by-age": {},
+   "blog_bmi-categories": {
+    "gray-on-color": 1,
+    "heading-rhythm": 3,
+    "side-tab": 1,
+    "skipped-heading": 1,
+    "tiny-text": 1
+   },
+   "blog_bmi-chart-explained": {
+    "skipped-heading": 4,
+    "tiny-text": 1,
+    "undersized-ui-text": 1
+   },
+   "blog_bmi-chart-men": {
+    "low-contrast": 2
+   },
+   "blog_bmi-chart-women": {},
+   "blog_bmi-for-athletes": {
+    "border-accent-on-rounded": 4,
+    "side-tab": 1
+   },
+   "blog_bmi-formula": {
+    "ai-color-palette": 1,
+    "heading-rhythm": 2,
+    "low-contrast": 3,
+    "skipped-heading": 3,
+    "tiny-text": 4
+   },
+   "blog_bmi-history": {
+    "heading-rhythm": 2,
+    "low-contrast": 1,
+    "skipped-heading": 1
+   },
+   "blog_bmi-limitations": {
+    "low-contrast": 1,
+    "skipped-heading": 1,
+    "tiny-text": 14
+   },
+   "blog_bmi-tracking-guide": {
+    "heading-rhythm": 4,
+    "low-contrast": 3,
+    "skipped-heading": 1,
+    "tiny-text": 1
+   },
+   "blog_body-fat-vs-bmi": {
+    "low-contrast": 5,
+    "skipped-heading": 2,
+    "tiny-text": 2
+   },
+   "blog_healthy-bmi-range": {},
+   "blog_how-to-lower-bmi": {
+    "heading-rhythm": 3,
+    "low-contrast": 2
+   },
+   "blog_how-to-measure-body-fat": {
+    "side-tab": 7
+   },
+   "blog_underweight-bmi-risks": {
+    "low-contrast": 4,
+    "side-tab": 1,
+    "skipped-heading": 1,
+    "tiny-text": 1,
+    "undersized-ui-text": 1
+   },
+   "blog_waist-to-height-ratio": {
+    "heading-rhythm": 2,
+    "skipped-heading": 2,
+    "tiny-text": 1
+   },
+   "blog_what-is-bmi": {
+    "low-contrast": 1,
+    "side-tab": 1
+   },
+   "bmi-chart": {},
+   "body-fat-calculator": {
+    "low-contrast": 4,
+    "side-tab": 2,
+    "undersized-ui-text": 3
+   },
+   "body-fat-percentage-chart": {
+    "border-accent-on-rounded": 4,
+    "low-contrast": 2,
+    "side-tab": 1,
+    "undersized-ui-text": 1
+   },
+   "calculators": {
+    "low-contrast": 3,
+    "nested-cards": 15,
+    "side-tab": 10
+   },
+   "childhood-obesity-statistics": {
+    "border-accent-on-rounded": 3,
+    "side-tab": 1
+   },
+   "contact": {
+    "nested-cards": 2,
+    "side-tab": 1
+   },
+   "home": {},
+   "ideal-weight": {
+    "ai-color-palette": 1,
+    "low-contrast": 2,
+    "nested-cards": 19,
+    "side-tab": 4,
+    "tiny-text": 2
+   },
+   "kids-bmi-calculator": {
+    "cramped-padding": 1,
+    "low-contrast": 4,
+    "nested-cards": 1
+   },
+   "lean-body-mass": {
+    "nested-cards": 2,
+    "side-tab": 1
+   },
+   "men-bmi-calculator": {},
+   "new-bmi-calculator": {
+    "ai-color-palette": 1,
+    "low-contrast": 14,
+    "nested-cards": 14,
+    "skipped-heading": 1,
+    "tiny-text": 3
+   },
+   "obesity-rate-by-state": {
+    "border-accent-on-rounded": 4,
+    "low-contrast": 1,
+    "repeating-stripes-gradient": 1,
+    "side-tab": 5
+   },
+   "privacy": {
+    "nested-cards": 1
+   },
+   "terms": {
+    "nested-cards": 2,
+    "side-tab": 1
+   },
+   "us-obesity-statistics": {
+    "side-tab": 1
+   },
+   "women-bmi-calculator": {
+    "ai-color-palette": 5,
+    "gray-on-color": 1,
+    "nested-cards": 10
+   }
+  },
+  "by_page_before": {
+   "404": {
+    "low-contrast": 1
+   },
+   "about": {
+    "low-contrast": 2,
+    "nested-cards": 14
+   },
+   "age-bmi-calculator": {
+    "cramped-padding": 1,
+    "low-contrast": 8,
+    "nested-cards": 5,
+    "skipped-heading": 1,
+    "tiny-text": 3
+   },
+   "average-weight": {
+    "border-accent-on-rounded": 4,
+    "low-contrast": 3,
+    "side-tab": 1,
+    "undersized-ui-text": 2
+   },
+   "blog": {},
+   "blog_bmi-and-health-risks": {
+    "side-tab": 1,
+    "skipped-heading": 1,
+    "tiny-text": 2,
+    "undersized-ui-text": 1
+   },
+   "blog_bmi-and-metabolism": {
+    "heading-rhythm": 2,
+    "low-contrast": 2,
+    "skipped-heading": 1
+   },
+   "blog_bmi-by-age": {},
+   "blog_bmi-categories": {
+    "gray-on-color": 1,
+    "heading-rhythm": 3,
+    "side-tab": 1,
+    "skipped-heading": 1,
+    "tiny-text": 1
+   },
+   "blog_bmi-chart-explained": {
+    "skipped-heading": 4,
+    "tiny-text": 1,
+    "undersized-ui-text": 1
+   },
+   "blog_bmi-chart-men": {
+    "low-contrast": 2
+   },
+   "blog_bmi-chart-women": {},
+   "blog_bmi-for-athletes": {
+    "border-accent-on-rounded": 4,
+    "side-tab": 1
+   },
+   "blog_bmi-formula": {
+    "ai-color-palette": 1,
+    "heading-rhythm": 2,
+    "low-contrast": 3,
+    "skipped-heading": 3,
+    "tiny-text": 4
+   },
+   "blog_bmi-history": {
+    "heading-rhythm": 2,
+    "low-contrast": 1,
+    "skipped-heading": 1
+   },
+   "blog_bmi-limitations": {
+    "low-contrast": 1,
+    "skipped-heading": 1,
+    "tiny-text": 14
+   },
+   "blog_bmi-tracking-guide": {
+    "heading-rhythm": 4,
+    "low-contrast": 3,
+    "skipped-heading": 1,
+    "tiny-text": 1
+   },
+   "blog_body-fat-vs-bmi": {
+    "low-contrast": 5,
+    "skipped-heading": 2,
+    "tiny-text": 2
+   },
+   "blog_healthy-bmi-range": {},
+   "blog_how-to-lower-bmi": {
+    "heading-rhythm": 3,
+    "low-contrast": 2
+   },
+   "blog_how-to-measure-body-fat": {
+    "side-tab": 7
+   },
+   "blog_underweight-bmi-risks": {
+    "low-contrast": 4,
+    "side-tab": 1,
+    "skipped-heading": 1,
+    "tiny-text": 1,
+    "undersized-ui-text": 1
+   },
+   "blog_waist-to-height-ratio": {
+    "heading-rhythm": 2,
+    "skipped-heading": 2,
+    "tiny-text": 1
+   },
+   "blog_what-is-bmi": {
+    "low-contrast": 1,
+    "side-tab": 1
+   },
+   "bmi-chart": {
+    "low-contrast": 3,
+    "tiny-text": 1
+   },
+   "body-fat-calculator": {
+    "low-contrast": 4,
+    "side-tab": 2,
+    "undersized-ui-text": 3
+   },
+   "body-fat-percentage-chart": {
+    "border-accent-on-rounded": 4,
+    "low-contrast": 2,
+    "side-tab": 1,
+    "undersized-ui-text": 1
+   },
+   "calculators": {
+    "low-contrast": 3,
+    "nested-cards": 15,
+    "side-tab": 10
+   },
+   "childhood-obesity-statistics": {
+    "border-accent-on-rounded": 3,
+    "side-tab": 1
+   },
+   "contact": {
+    "nested-cards": 2,
+    "side-tab": 1
+   },
+   "home": {},
+   "ideal-weight": {
+    "ai-color-palette": 1,
+    "low-contrast": 2,
+    "nested-cards": 19,
+    "side-tab": 4,
+    "tiny-text": 2
+   },
+   "kids-bmi-calculator": {
+    "cramped-padding": 1,
+    "low-contrast": 4,
+    "nested-cards": 1
+   },
+   "lean-body-mass": {
+    "nested-cards": 2,
+    "side-tab": 1
+   },
+   "men-bmi-calculator": {},
+   "new-bmi-calculator": {
+    "ai-color-palette": 1,
+    "low-contrast": 14,
+    "nested-cards": 14,
+    "skipped-heading": 1,
+    "tiny-text": 3
+   },
+   "obesity-rate-by-state": {
+    "border-accent-on-rounded": 4,
+    "low-contrast": 1,
+    "repeating-stripes-gradient": 1,
+    "side-tab": 5
+   },
+   "privacy": {
+    "nested-cards": 1
+   },
+   "terms": {
+    "nested-cards": 2,
+    "side-tab": 1
+   },
+   "us-obesity-statistics": {
+    "side-tab": 1
+   },
+   "women-bmi-calculator": {
+    "ai-color-palette": 5,
+    "gray-on-color": 1,
+    "nested-cards": 10
+   }
+  },
+  "by_rule_after": {
+   "ai-color-palette": 8,
+   "border-accent-on-rounded": 19,
+   "cramped-padding": 2,
+   "gray-on-color": 2,
+   "heading-rhythm": 18,
+   "low-contrast": 68,
+   "nested-cards": 85,
+   "repeating-stripes-gradient": 1,
+   "side-tab": 40,
+   "skipped-heading": 20,
+   "tiny-text": 35,
+   "undersized-ui-text": 9
+  },
+  "note": "every sitemap page plus /404.html, before Calculate; /bmi-chart/ 4 -> 0 (also 0 at 1280x800, was 12); /blog/bmi-chart-women/ stays 0 at 390 and 1280 after the .weight-chart padding change; no other page changed",
+  "total_after": 307,
+  "total_before": 311
+ },
+ "viewport": "390x844"
+}
