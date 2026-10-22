@@ -24,8 +24,11 @@ Pages and pictures (the data are the pages' own):
   women-bmi-calculator  the women's calculator "BMI by age" figure (CMB-017): for each decade from the 20s to 80 and over,
                      the 10th-90th percentile line, the middle half and the median of US women's BMI
                      (research/women-calc-build/wbc_stats.json) over CDC's healthy range, BMI 16.5 to 44.5.
+  bmi-chart-men      the men's chart hero (CMB-018): one row per height from 5'4" to 6'2", the CDC category bands in
+                     pounds as light tints, and across each row the middle half of US men of that height (bar) and their
+                     median weight (tick), research/chart-men-build/bcm_stats.json; 100 to 260 lb, centered.
 Renders each SVG in Chromium at its exact size, checks there is no <text> and the size, and stores a palette PNG.
-usage: pref_images.py REPO_ROOT [NAME ...]   (NAMEs: draw only those pages; CMB-017 drew women-bmi-calculator)"""
+usage: pref_images.py REPO_ROOT [NAME ...]   (NAMEs: draw only those pages; CMB-018 drew bmi-chart-men)"""
 import sys, os, io, json
 from playwright.sync_api import sync_playwright
 from PIL import Image
@@ -182,8 +185,38 @@ def women_calc(w, h):
     return frame(w, h, ''.join(out))
 
 
+def men_chart(w, h):
+    """The men's chart hero: CDC bands in pounds per height (light tints), US men's middle half (bar) and median (tick)."""
+    BH = json.load(open(os.path.join(ROOT, 'research/chart-men-build/bcm_stats.json')))['by_height']
+    HS = list(range(64, 75))
+    assert f"{BH['70']['weight_q'][1]:.1f}" == '199.3'
+    LO, HI = 100, 260
+    TINTS = {'under': '#dbeafe', 'healthy': '#d1fae5', 'over': '#fde68a', 'obese': '#fecaca'}
+    mx, my = w * 0.07, h * 0.08
+    x0, x1 = mx, w - mx
+    pitch = (h - 2 * my) / len(HS)
+    bh = pitch * 0.7
+    xs = lambda lb: x0 + (min(max(lb, LO), HI) - LO) * (x1 - x0) / (HI - LO)
+    out = []
+    for i, ht in enumerate(HS):
+        cm = ht * 2.54
+        b = [bounds('lb', ht, cm, q) for q in range(4)]
+        segs = [('under', LO, b[0][1] + 0.5), ('healthy', b[1][0] - 0.5, b[1][1] + 0.5),
+                ('over', b[2][0] - 0.5, b[2][1] + 0.5), ('obese', b[3][0] - 0.5, HI)]
+        y = my + i * pitch + (pitch - bh) / 2
+        for k, a, c in segs:
+            out.append(f'<rect x="{xs(a) + 1.5:.1f}" y="{y:.1f}" width="{xs(c) - xs(a) - 3:.1f}" height="{bh:.1f}" fill="{TINTS[k]}"/>')
+        q = BH[str(ht)]['weight_q']
+        th = max(8, bh * 0.36)
+        out.append(f'<rect x="{xs(q[0]):.1f}" y="{y + (bh - th) / 2:.1f}" width="{xs(q[2]) - xs(q[0]):.1f}" height="{th:.1f}" '
+                   f'rx="{th / 2:.1f}" fill="#4338ca"/>')
+        tw = max(5, w * 0.005)
+        out.append(f'<rect x="{xs(q[1]) - tw / 2:.1f}" y="{y - bh * 0.06:.1f}" width="{tw:.1f}" height="{bh * 1.12:.1f}" rx="2" fill="#111827"/>')
+    return frame(w, h, ''.join(out))
+
+
 PAGES = {'bmi-chart': bmi_chart, 'bmi-calculator': waffle, 'healthy-bmi-range': risk_bars, 'bmi-chart-women': women_bars,
-         'body-fat-percentage-chart': body_fat, 'women-bmi-calculator': women_calc}
+         'body-fat-percentage-chart': body_fat, 'women-bmi-calculator': women_calc, 'bmi-chart-men': men_chart}
 
 if __name__ == '__main__':
     os.makedirs(OUT, exist_ok=True)

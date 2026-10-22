@@ -161,7 +161,7 @@ assert cm_ftin(168) == '5′6.1″' and cm_ftin(194) == '6′4.4″' and cm_ftin
 # ADA Standards of Care in Overweight and Obesity-2026, section 3 (recommendations 3.3a/3.3b, Table 3.1; press release
 # 2026-06-29; registry ada-2026-obesity-standards): non-Asian background, obesity at BMI >= 30, or BMI >= 25 with
 # waist-to-height ratio >= 0.5 or waist >= 88 cm (women) / 102 cm (men); Asian background, BMI >= 27.5, or BMI >= 23
-# with ratio >= 0.5 or waist >= 80 cm (women) / 90 cm (men). Table 3.1 gives 88 cm as 35 in and 80 cm as 31.5 in.
+# with ratio >= 0.5 or waist >= 80 cm (women) / 90 cm (men). Table 3.1 gives 88 cm as 35 in, 80 cm as 31.5 in, 102 cm as 40 in and 90 cm as 35.5 in (men's values read in CMB-018).
 # Nonpregnant adults. The line that counts first is the lower of half the height and the sex-specific waist.
 def waist_line(h, cut_cm):
     half = h * 2.54 / 2
@@ -596,7 +596,7 @@ sec_waist = (
     '<li><strong>BMI 25 to 29.9:</strong> obesity when the waist is at least half the height, or 88 cm (about 35 in) or '
     'more in women and 102 cm (about 40 in) or more in men; otherwise overweight.</li>'
     '<li><strong>Adults of Asian background:</strong> obesity from a BMI of 27.5, or from 23 with a waist at least half '
-    f'the height, or 80 cm (31.5 in) or more in women and 90 cm (35.4 in) or more in men ({ADA_CITE}).</li></ul>'
+    f'the height, or 80 cm (31.5 in) or more in women and 90 cm (35.5 in) or more in men ({ADA_CITE}).</li></ul>'
     f'<p>Either waist test is enough, so the lower line decides. For most adults that is half the height: '
     f'{wl(60 * 2.54 / 2)} at 5′0″, {wl(69 * 2.54 / 2)} at 5′9″ and {wl(72 * 2.54 / 2)} at 6′0″. For women 5′10″ and '
     'taller it is 88 cm. For adults of Asian background it is 80 cm for women 5′3″ and taller, and 90 cm for men 5′11″ and '

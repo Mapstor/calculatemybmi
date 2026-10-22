@@ -231,6 +231,10 @@ No sharp corners (0 radius) and no custom clip-paths. Borders are hairline (`1px
 - After Calculate the page script fills up to three flat boxes below the status line, each a `.rank-box` (hairline above, `.rank-title`, `.rank-text`, `.rank-source`; no card): the rank among US women (all and by age group), "US women with a BMI like yours" (body fat at that whole BMI, waist shares for that category) and, only when a waist is entered, the waist check. A box with nothing to say stays hidden.
 - The waist check compares what it prints. The waist is rounded to 0.1 in or 0.1 cm and the ratio is worked out from that printed waist, then cut (not rounded) to two decimals, so 0.50 always means a waist of at least half the height (0.4953 shows as 0.49). The BMI is the one the result card shows. The US-guidelines line compares in the unit the user entered and names only that unit (over 35 in, or over 88 cm). The ADA sentences quote the waist in cm against 88 cm, the unit the standard uses. When the answer for women of Asian background differs, the first ADA sentence says "for women of non-Asian background" and the Asian sentence follows. The source line says these are published thresholds applied to the numbers entered, not a diagnosis. Shares of US women follow the CMB-016 rule ("more than 99%", "under 1%").
 
+### Distributions over the chart (CMB-018)
+- A chart figure can carry where real people fall on it: on `/blog/bmi-chart-men/` each height row shows the CDC categories as the light table tints, a 6 px bar in the series color (men `#4338ca`) for the middle half of US men of that height, and a 3 px ink tick (`#111827`) for the median. Tints stay light so the bar and tick read on every band.
+- Box plots for one measure across categories: the 10th-90th percentile as a 1.5 px line, the middle half as a box in the series color at 16% opacity with a 1 px outline, the median as an ink tick; a dashed grey line marks a reference value, named in the figure. Row labels sit above their box, so values never collide with the marks.
+
 ### Category badges
 - Pill (`--radius-full`), category background with white text (BMI color lock applies).
 
