@@ -1,0 +1,92 @@
+{
+ "new_files": [
+  {
+   "path": "assets/images/preferred/women-bmi-calculator-16x9.png",
+   "sha256": "be9e8d532bb583b9d846c8abef419aea3c0118ff789367595912fe7fd5130de2"
+  },
+  {
+   "path": "assets/images/preferred/women-bmi-calculator-1x1.png",
+   "sha256": "bbfba037b828ce6b962f7655860dac3db5218e37c9f94fab5311bf46bef6155c"
+  },
+  {
+   "path": "assets/images/preferred/women-bmi-calculator-4x3.png",
+   "sha256": "9f1014131144cd636fb4267e8ae94add3fdb181679db4230bbe8867d441ab093"
+  },
+  {
+   "path": "research/impeccable-baseline/2026-10-22-cmb017-390x844.json",
+   "sha256": "ae0a73e49adf644d80d6d8d0796d19b3661848460aff34836d52237f0b114dfb"
+  },
+  {
+   "path": "research/women-calc-build/SPEC.md",
+   "sha256": "95e2f71cf3e7cd6b14a5135846d532398b71c7519713ba82dcd345ea6c5b2b7b"
+  },
+  {
+   "path": "research/women-calc-build/gen_wbc.py",
+   "sha256": "9c679c267998ed0412df2da85c50efe58acc70939b46af8880736d86599d91b9"
+  },
+  {
+   "path": "research/women-calc-build/wbc_stats.json",
+   "sha256": "6ec8ea7a4ec06f5c43eb43571c6fb565272c0793a518084927b20b73689122fb"
+  },
+  {
+   "path": "research/women-calc-build/wbc_stats.py",
+   "sha256": "f56770a81d688290951fa68780f3bf804c2bb2fcfad46e13c3fd7598be225d34"
+  },
+  {
+   "path": "research/women-calc-build/wbc_test_playwright.py",
+   "sha256": "27c0269cb860701a8fcad16bdb657ea5010cc4d4c1699a949053dbb16b1c2821"
+  }
+ ],
+ "replace": [
+  {
+   "path": "DESIGN.md",
+   "expect_sha256": "00de6844d8e57750b4b03cbe7365628ae7f7cc08bc37eb1ed919554d2d94052a",
+   "sha256": "50420293230d02835a879a17923e8b34ad834c2c9cd55fd4adef0988d720dde9"
+  },
+  {
+   "path": "assets/css/styles.css",
+   "expect_sha256": "627630d4c55e4673b8629b1b91acf94ecfdf939f346f20f8742c27f121f2fa34",
+   "sha256": "66b068a12c8ff6a502d6d7bd90270559ffc027cfecb0c803f5032bb29b57dcda"
+  },
+  {
+   "path": "research/data-sources.csv",
+   "expect_sha256": "3c9f7fec15ccd89d5820eb689270194ce43974b827b897807cf005226eedbace",
+   "sha256": "95dae0b6eab9afd073aa080fb7a3d0dc21a9787d475add94acf32eea9300188c"
+  },
+  {
+   "path": "research/page-map.csv",
+   "expect_sha256": "4081c497ff4ec857bbf7455e52dee75dbf43b2cfb0d61d5f631374a1de32d2f4",
+   "sha256": "71af38fd06c4c5ab5f57dbdaa25a51a313810f99fa1bf1e08ce43325d546c803"
+  },
+  {
+   "path": "research/preferred-images/pref_images.py",
+   "expect_sha256": "a48c62b849d713d6714112606e9eaa79d57a803eb1dcf07b5991284375c43e9b",
+   "sha256": "207e422a7653db2b8ecf818f0c63bdb2f1d55611d0127528b26b97454880b43b"
+  },
+  {
+   "path": "scripts/check_images.py",
+   "expect_sha256": "11b32fc8e418eb379be58203a9261d45b9b7d57054d0acab9137e5a1831c0ba0",
+   "sha256": "91243d715e04d89802910a15dc50a0212a413035af700fbdd241409a01db8419"
+  },
+  {
+   "path": "women-bmi-calculator/index.html",
+   "expect_sha256": "6c1bf3f27dbd6582c0cd96ecd36323533b393535cfd64a23ff6e01d6c5ff31f4",
+   "sha256": "ed07659fc6462967d7f6709bd9310c87d44a343c3343c5a1db00a094e0eb1c6a"
+  }
+ ],
+ "edits": [
+  {
+   "file": "sitemap.xml",
+   "old": "<url><loc>https://calculatemybmi.net/women-bmi-calculator/</loc><lastmod>2026-10-14</lastmod>",
+   "new": "<url><loc>https://calculatemybmi.net/women-bmi-calculator/</loc><lastmod>{TODAY}</lastmod>",
+   "count": 1,
+   "label": "sitemap: /women-bmi-calculator/ lastmod"
+  }
+ ],
+ "delete": [
+  {
+   "path": "assets/images/og/women-acog-pregnancy-ranges.png",
+   "expect_sha256": "7c0c3f253117f3f368899fc02e8f238c7aa7dbdb57edb9844f2bc75b81fcb64b"
+  }
+ ]
+}

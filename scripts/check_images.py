@@ -20,7 +20,8 @@ SITE = 'https://calculatemybmi.net'
 ROBOTS = '<meta name="robots" content="max-image-preview:large">'
 PREFERRED = {'/': 'bmi-calculator', '/blog/healthy-bmi-range/': 'healthy-bmi-range',
              '/blog/bmi-chart-women/': 'bmi-chart-women', '/bmi-chart/': 'bmi-chart',
-             '/body-fat-percentage-chart/': 'body-fat-percentage-chart'}
+             '/body-fat-percentage-chart/': 'body-fat-percentage-chart',
+             '/women-bmi-calculator/': 'women-bmi-calculator'}
 SIZES = {'1x1': (1200, 1200), '4x3': (1200, 900), '16x9': (1200, 675)}
 
 

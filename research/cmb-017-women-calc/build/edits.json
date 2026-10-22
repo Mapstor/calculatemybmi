@@ -1,0 +1,9 @@
+[
+ {
+  "file": "sitemap.xml",
+  "old": "<url><loc>https://calculatemybmi.net/women-bmi-calculator/</loc><lastmod>2026-10-14</lastmod>",
+  "new": "<url><loc>https://calculatemybmi.net/women-bmi-calculator/</loc><lastmod>{TODAY}</lastmod>",
+  "count": 1,
+  "label": "sitemap: /women-bmi-calculator/ lastmod"
+ }
+]

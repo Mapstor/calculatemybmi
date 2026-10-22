@@ -1,0 +1,4 @@
+
+/* CMB-017: /women-bmi-calculator/ pairs height (ft, in) and weight with the optional waist on phones, so the Calculate
+   button stays above the fold at 390 x 844 (the shared .form-row stacks to one column below 600 px). */
+@media (max-width: 600px) { .form-row.form-row--pair { grid-template-columns: repeat(2, 1fr); } }

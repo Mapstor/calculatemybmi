@@ -703,3 +703,7 @@ main.reading .key-takeaways .answer, main.reading .key-takeaways ul { max-width:
 .bfr .data-table th, .bfr .data-table td { padding: 0.5rem 0.375rem; }
 .weight-chart--fit th, .weight-chart--fit td { white-space: normal; }
 .data-table .cell-kg { display: block; font-size: 0.75rem; color: var(--gray-600); }
+
+/* CMB-017: /women-bmi-calculator/ pairs height (ft, in) and weight with the optional waist on phones, so the Calculate
+   button stays above the fold at 390 x 844 (the shared .form-row stacks to one column below 600 px). */
+@media (max-width: 600px) { .form-row.form-row--pair { grid-template-columns: repeat(2, 1fr); } }

@@ -226,6 +226,11 @@ No sharp corners (0 radius) and no custom clip-paths. Borders are hairline (`1px
 - Narrow chart tables (three columns) use `.weight-chart.weight-chart--fit` (no 600 px minimum, so they fit a phone); the provisional range shows as the cell tint and as a second line (`.cell-kg`), so colour never carries it alone.
 - Women and men as chart series: `#be185d` and `#4338ca` (dataviz validator, light mode: CVD ΔE 18.3, normal-vision ΔE 29.3, both 3:1 or more on white); the middle half as the same hue at 16% opacity. The category colours stay for categories.
 
+### Waist field and result boxes (CMB-017)
+- `/women-bmi-calculator/` adds an optional waist input to the shared calculator: a `.form-input.waist-in` beside the weight in the imperial row and a `.form-input.waist-cm` in the metric row, labeled "Waist (inches)" / "Waist (cm)", empty with the placeholder "Optional". `calculator.js` reads only the height and weight classes, so the field changes nothing there.
+- After Calculate the page script fills up to three flat boxes below the status line, each a `.rank-box` (hairline above, `.rank-title`, `.rank-text`, `.rank-source`; no card): the rank among US women (all and by age group), "US women with a BMI like yours" (body fat at that whole BMI, waist shares for that category) and, only when a waist is entered, the waist check. A box with nothing to say stays hidden.
+- The waist check compares what it prints. The waist is rounded to 0.1 in or 0.1 cm and the ratio is worked out from that printed waist, then cut (not rounded) to two decimals, so 0.50 always means a waist of at least half the height (0.4953 shows as 0.49). The BMI is the one the result card shows. The US-guidelines line compares in the unit the user entered and names only that unit (over 35 in, or over 88 cm). The ADA sentences quote the waist in cm against 88 cm, the unit the standard uses. When the answer for women of Asian background differs, the first ADA sentence says "for women of non-Asian background" and the Asian sentence follows. The source line says these are published thresholds applied to the numbers entered, not a diagnosis. Shares of US women follow the CMB-016 rule ("more than 99%", "under 1%").
+
 ### Category badges
 - Pill (`--radius-full`), category background with white text (BMI color lock applies).
 

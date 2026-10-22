@@ -21,8 +21,11 @@ Pages and pictures (the data are the pages' own):
   body-fat-percentage-chart  the body fat chart hero (CMB-016): the provisional ranges for women and men aged 20-39,
                      40-59 and 60-79 (low, healthy, high, very high; research/body-fat-chart-build/bfpc_stats.json),
                      one bar per group, women above men.
+  women-bmi-calculator  the women's calculator "BMI by age" figure (CMB-017): for each decade from the 20s to 80 and over,
+                     the 10th-90th percentile line, the middle half and the median of US women's BMI
+                     (research/women-calc-build/wbc_stats.json) over CDC's healthy range, BMI 16.5 to 44.5.
 Renders each SVG in Chromium at its exact size, checks there is no <text> and the size, and stores a palette PNG.
-usage: pref_images.py REPO_ROOT [NAME ...]   (NAMEs: draw only those pages; CMB-016 drew body-fat-percentage-chart)"""
+usage: pref_images.py REPO_ROOT [NAME ...]   (NAMEs: draw only those pages; CMB-017 drew women-bmi-calculator)"""
 import sys, os, io, json
 from playwright.sync_api import sync_playwright
 from PIL import Image
@@ -156,8 +159,31 @@ def body_fat(w, h):
     return frame(w, h, ''.join(out))
 
 
+def women_calc(w, h):
+    """The women's calculator figure: US women's BMI by decade (10th-90th line, middle half, median) over the healthy range."""
+    DEC = json.load(open(os.path.join(ROOT, 'research/women-calc-build/wbc_stats.json')))['decades']
+    ages = ('20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80+')
+    assert f"{DEC['20-29']['p50']:.1f}" == '25.5' and f"{DEC['80+']['p50']:.1f}" == '26.9'
+    mx, my = w * 0.07, h * 0.1
+    x0, x1 = mx, w - mx
+    xs = lambda b: x0 + (b - 16.5) * (x1 - x0) / 28.0               # BMI 16.5-44.5: the rows and the band, centered
+    pitch = (h - 2 * my) / len(ages)
+    bh = pitch * 0.5
+    out = [f'<rect x="{xs(18.5):.1f}" y="{my - pitch * 0.15:.1f}" width="{xs(25) - xs(18.5):.1f}" height="{h - 2 * my + pitch * 0.3:.1f}" '
+           f'rx="{pitch * 0.12:.1f}" fill="#bbf7d0"/>']
+    for i, d in enumerate(ages):
+        v = DEC[d]; yc = my + (i + 0.5) * pitch
+        out.append(f'<line x1="{xs(v["p10"]):.1f}" y1="{yc:.1f}" x2="{xs(v["p90"]):.1f}" y2="{yc:.1f}" stroke="#be185d" '
+                   f'stroke-width="{max(3, pitch * 0.07):.1f}" stroke-linecap="round"/>')
+        out.append(f'<rect x="{xs(v["p25"]):.1f}" y="{yc - bh / 2:.1f}" width="{xs(v["p75"]) - xs(v["p25"]):.1f}" height="{bh:.1f}" '
+                   f'rx="{bh * 0.2:.1f}" fill="#f9a8d4"/>')
+        out.append(f'<rect x="{xs(v["p50"]) - max(3, pitch * 0.05):.1f}" y="{yc - bh * 0.7:.1f}" width="{2 * max(3, pitch * 0.05):.1f}" '
+                   f'height="{bh * 1.4:.1f}" rx="2" fill="#111827"/>')
+    return frame(w, h, ''.join(out))
+
+
 PAGES = {'bmi-chart': bmi_chart, 'bmi-calculator': waffle, 'healthy-bmi-range': risk_bars, 'bmi-chart-women': women_bars,
-         'body-fat-percentage-chart': body_fat}
+         'body-fat-percentage-chart': body_fat, 'women-bmi-calculator': women_calc}
 
 if __name__ == '__main__':
     os.makedirs(OUT, exist_ok=True)
