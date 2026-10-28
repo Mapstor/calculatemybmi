@@ -17,8 +17,9 @@ BMI as CDC records it (one decimal); waist BMXWAIST and height BMXHT in cm.
    BMI >= 30, or >= 25 with waist-to-height >= 0.5 or waist >= 102 cm; Asian background, RIDRETH3 = 6: BMI >= 27.5, or >= 23
    with the ratio >= 0.5 or waist >= 90 cm; men whose class needs an unmeasured waist left out). Must equal bc_stats.json.
 5. By measured height rounded to the nearest inch, 5'4" to 6'2" (the heights where 76 or more men were measured): the share
-   with a BMI of 25 or more, and the weight quartiles research/average-weight/compute.py published (asserted equal). At
-   5'10" also the share in each category.
+   with a BMI of 25 or more (asserted equal to compute.py's), and the weight quartiles compute.py published (asserted
+   equal; since CMB-019 both use NCHS's 2.2046 lb per kg and the weighted CDF over distinct values). At 5'10" also the
+   share in each category.
 
 Round once (DEVLOG section 4): every printed figure comes from the unrounded estimate; keep() stores 4 decimals and stops if
 storing would change a printed figure.
@@ -36,7 +37,7 @@ B = D.BMXBMI
 A = D.RIDAGEYR
 WAIST, HT = D.BMXWAIST, D.BMXHT
 WHTR = WAIST / HT
-LB = 2.2046226218
+LB = 2.2046                                  # NCHS's pounds per kilogram, as research/average-weight/compute.py (CMB-019)
 D["wt_lb"] = D.BMXWT * LB
 HIN = np.floor(HT / 2.54 + 0.5)                                    # nearest whole inch, as compute.py
 men = (A >= 20) & (W > 0) & B.notna() & (D.RIAGENDR == 1)
@@ -87,11 +88,12 @@ def diff_same(dom, cond_a, cond_b):
 
 
 def wq(var, dom, qs):
-    """research/average-weight/compute.py's weighted quantiles (midpoint rule)."""
+    """research/average-weight/compute.py's weighted quantiles since CMB-019: the weighted CDF over distinct values with
+    linear interpolation (the homepage's method), which reproduces NCHS Series 3 No. 50 and doesn't depend on tie order."""
     m = dom & D[var].notna() & (W > 0)
-    x = D.loc[m, var].values; w = W[m].values; o = np.argsort(x); x = x[o]; w = w[o]
-    c = (np.cumsum(w) - w / 2) / w.sum()
-    return [float(np.interp(q, c, x)) for q in qs]
+    s = pd.DataFrame({"x": D.loc[m, var].round(6), "w": W[m]}).groupby("x").w.sum().sort_index()
+    F = np.cumsum(s.values) / s.values.sum()
+    return [float(np.interp(q, F, s.index.values)) for q in qs]
 
 
 R = {"source": "CDC NHANES August 2021-August 2023 (DEMO_L, BMX_L); men aged 20 and over",
@@ -171,8 +173,10 @@ R["by_height"] = {}
 for h in range(64, 75):
     dom = men & (HIN == h)
     q = wq("wt_lb", ad_w & (HIN == h), [.25, .5, .75])
-    assert all(abs(a - b) < 1e-9 for a, b in zip(q, AV[str(h)]["q"])), (h, q, AV[str(h)]["q"])
-    R["by_height"][str(h)] = {"n": int(dom.sum()), "bmi25_plus": est(dom, B >= 25),
+    assert all(abs(a - b) < 6e-5 for a, b in zip(q, AV[str(h)]["q"])), (h, q, AV[str(h)]["q"])   # stored to 4 decimals
+    b25 = est(dom, B >= 25)
+    assert b25["n"] == AV[str(h)]["bmi25_plus"]["n"] and abs(b25["pct"] - AV[str(h)]["bmi25_plus"]["pct"]) < 6e-5, h
+    R["by_height"][str(h)] = {"n": int(dom.sum()), "bmi25_plus": b25,
                               "weight_q": [keep(x) for x in q], "weight_mean": keep(AV[str(h)]["wt"]["mean"]),
                               "weight_n": AV[str(h)]["wt"]["n"]}
 d70 = men & (HIN == 70)

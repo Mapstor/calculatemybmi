@@ -107,7 +107,7 @@ assert (whole(OVER_LO), whole(OVER_HI)) == (64, 81)
 A70 = S['at_70in']
 assert [f1(A70[c]['pct']) for c in ('healthy', 'overweight', 'obesity')] == ['22.3', '38.3', '39.4']
 N70 = BH['70']['n']; AV70 = BH['70']['weight_mean']; MD70 = BH['70']['weight_q'][1]
-assert (N70, f1(AV70), f1(MD70)) == (313, '205.5', '199.3')
+assert (N70, f1(AV70), f1(MD70)) == (313, '205.5', '199.1')   # CMB-019: NCHS's percentile method (was 199.3)
 AV72 = AVGW['men']['height']['72']['wt']['mean']; assert f1(AV72) == '215.7'
 for h in HH:                                                              # the by-height table = /average-weight/'s men's rows
     a = AVGW['men']['height'][str(h)]['wt']

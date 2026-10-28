@@ -27,8 +27,12 @@ Pages and pictures (the data are the pages' own):
   bmi-chart-men      the men's chart hero (CMB-018): one row per height from 5'4" to 6'2", the CDC category bands in
                      pounds as light tints, and across each row the middle half of US men of that height (bar) and their
                      median weight (tick), research/chart-men-build/bcm_stats.json; 100 to 260 lb, centered.
+  average-weight     the /average-weight/ hero (CMB-019): the band of healthy weights at each height (BMI 18.5-24.9,
+                     whole pounds by scripts/check_weight_tables.py) and the average weight of US women and men at each
+                     height with 30 or more measured (research/average-weight/avgw_results.json), dots joined by a line;
+                     4'9" to 6'3" by 80 to 260 lb, centered.
 Renders each SVG in Chromium at its exact size, checks there is no <text> and the size, and stores a palette PNG.
-usage: pref_images.py REPO_ROOT [NAME ...]   (NAMEs: draw only those pages; CMB-018 drew bmi-chart-men)"""
+usage: pref_images.py REPO_ROOT [NAME ...]   (NAMEs: draw only those pages; CMB-019 drew average-weight and bmi-chart-men)"""
 import sys, os, io, json
 from playwright.sync_api import sync_playwright
 from PIL import Image
@@ -189,7 +193,7 @@ def men_chart(w, h):
     """The men's chart hero: CDC bands in pounds per height (light tints), US men's middle half (bar) and median (tick)."""
     BH = json.load(open(os.path.join(ROOT, 'research/chart-men-build/bcm_stats.json')))['by_height']
     HS = list(range(64, 75))
-    assert f"{BH['70']['weight_q'][1]:.1f}" == '199.3'
+    assert f"{BH['70']['weight_q'][1]:.1f}" == '199.1'                    # CMB-019: NCHS's factor and percentile method
     LO, HI = 100, 260
     TINTS = {'under': '#dbeafe', 'healthy': '#d1fae5', 'over': '#fde68a', 'obese': '#fecaca'}
     mx, my = w * 0.07, h * 0.08
@@ -215,8 +219,36 @@ def men_chart(w, h):
     return frame(w, h, ''.join(out))
 
 
+def avg_weight(w, h):
+    """The /average-weight/ hero: the healthy band per height and the average weight of US women and men per height."""
+    AV = json.load(open(os.path.join(ROOT, 'research/average-weight/avgw_results.json')))
+    HLO, HHI, WLO, WHI = 56.5, 75.5, 80, 260
+    side = min(w, h * 1.5)                                   # same proportions in every crop, centered
+    pw, ph = side * 0.84, side * 0.84 / 1.5
+    x0, y0 = (w - pw) / 2, (h - ph) / 2
+    hx = lambda i: x0 + (i - HLO) * pw / (HHI - HLO)
+    wy = lambda lb: y0 + ph - (lb - WLO) * ph / (WHI - WLO)
+    hs = list(range(57, 76))
+    B = {i: bounds('lb', i, i * 2.54, 1) for i in hs}
+    band = ' '.join(f'{hx(i):.1f},{wy(B[i][1]):.1f}' for i in hs) + ' ' + ' '.join(f'{hx(i):.1f},{wy(B[i][0]):.1f}' for i in reversed(hs))
+    out = [f'<line x1="{x0:.1f}" y1="{wy(k):.1f}" x2="{x0 + pw:.1f}" y2="{wy(k):.1f}" stroke="#e5e7eb" '
+           f'stroke-width="{side * 0.002:.1f}"/>' for k in (100, 150, 200, 250)]          # light grid under the band
+    out.append(f'<polygon points="{band}" fill="#d1fae5" stroke="#15803d" stroke-opacity="0.5" stroke-width="{side * 0.003:.1f}"/>')
+    for sex, col in (('women', '#be185d'), ('men', '#4338ca')):
+        pts = sorted((int(k), v['wt']['mean']) for k, v in AV[sex]['height'].items())
+        for i, m in pts:
+            assert m > B[i][1], (sex, i)                      # every average sits above the healthy band
+        out.append(f'<polyline points="{" ".join(f"{hx(i):.1f},{wy(m):.1f}" for i, m in pts)}" fill="none" stroke="{col}" '
+                   f'stroke-width="{side * 0.007:.1f}" stroke-linejoin="round"/>')
+        for i, m in pts:
+            out.append(f'<circle cx="{hx(i):.1f}" cy="{wy(m):.1f}" r="{side * 0.012:.1f}" fill="{col}" stroke="{BG}" '
+                       f'stroke-width="{side * 0.004:.1f}"/>')
+    return frame(w, h, ''.join(out))
+
+
 PAGES = {'bmi-chart': bmi_chart, 'bmi-calculator': waffle, 'healthy-bmi-range': risk_bars, 'bmi-chart-women': women_bars,
-         'body-fat-percentage-chart': body_fat, 'women-bmi-calculator': women_calc, 'bmi-chart-men': men_chart}
+         'body-fat-percentage-chart': body_fat, 'women-bmi-calculator': women_calc, 'bmi-chart-men': men_chart,
+         'average-weight': avg_weight}
 
 if __name__ == '__main__':
     os.makedirs(OUT, exist_ok=True)

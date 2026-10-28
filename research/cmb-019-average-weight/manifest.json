@@ -1,0 +1,148 @@
+{
+ "new_files": [
+  {
+   "path": "assets/images/preferred/average-weight-16x9.png",
+   "sha256": "e973bffd96f24e820bb4b9a2d7e6cca3ef96fca6b2803e0c13fed5e39c5e1d9f"
+  },
+  {
+   "path": "assets/images/preferred/average-weight-1x1.png",
+   "sha256": "f29673244c4b5adf92b89c12746903a90de51b5a9d947e281da55b1c78b77cba"
+  },
+  {
+   "path": "assets/images/preferred/average-weight-4x3.png",
+   "sha256": "192032b0acb244b02ab0a720a3c3252da0103a96056b80e5fab93f5dc59dafe3"
+  },
+  {
+   "path": "research/average-weight-build/SPEC.md",
+   "sha256": "268333189e104b5488a2fdd6551bc9be2cec6f194d5aeeb88218ffe9b48dbd6b"
+  },
+  {
+   "path": "research/average-weight-build/aw_test_playwright.py",
+   "sha256": "b3b6ff7174c86998974c5931a809680ee4ef328adb261723be70d231ac6d1e00"
+  },
+  {
+   "path": "research/average-weight-build/gen_aw.py",
+   "sha256": "83045528cee74afffee397354c060c5bcbcb4adb5d181fa2c9f686da0b00d31a"
+  },
+  {
+   "path": "research/impeccable-baseline/2026-10-22-cmb019-390x844.json",
+   "sha256": "19d4d2afb3489d271132b876870b4c30a249845f00ee1951531dcc3a783ac054"
+  }
+ ],
+ "replace": [
+  {
+   "path": "DESIGN.md",
+   "expect_sha256": "35ac6d831843bb0310fd451881eb1d881326da702a83fee978dbefb9be3590fe",
+   "sha256": "ce273ca13ffc51b3513d4b8a577ba8ac2d2026b8532a5c3b573f7f4be4e9ae53"
+  },
+  {
+   "path": "assets/css/styles.css",
+   "expect_sha256": "66b068a12c8ff6a502d6d7bd90270559ffc027cfecb0c803f5032bb29b57dcda",
+   "sha256": "3cad6d1d7721e50539eb3dd855b08422124db7a6ecb1d828b88dca21dd26b84d"
+  },
+  {
+   "path": "assets/images/preferred/bmi-chart-men-16x9.png",
+   "expect_sha256": "e851fabb2b8cc4f6484551f7c7ad365383f8da64da1c18bd97066abf87438120",
+   "sha256": "081edc053b8e2152c25b0f431a3815546bbceddc80318d1ea65826e2d081671a"
+  },
+  {
+   "path": "assets/images/preferred/bmi-chart-men-1x1.png",
+   "expect_sha256": "82c033674bcaf1a517c34d02586c29c41d6327be78d95062825eef186a91bdd1",
+   "sha256": "c02a7887e5e9db459ff203cd5b6c8a9ded4fc20ae2922bd80be45e0e7ef74c8c"
+  },
+  {
+   "path": "assets/images/preferred/bmi-chart-men-4x3.png",
+   "expect_sha256": "894bda46d243d5117bac753afafad537a6f74c4cfd558b12fd6cb086f7387269",
+   "sha256": "c07b159c4a1c3985b79d5dc722119321789f6492f386959d38446d4d2bc2b601"
+  },
+  {
+   "path": "average-weight/average-weight-nhanes-2021-2023.csv",
+   "expect_sha256": "25cf5ad7190aa8c94fd36fc9546b30a9beec46e9ec26ee22b261a0564f4a4201",
+   "sha256": "c4b79d074d0ea89236dd04820efca780b812c02e79870aa19d96ce9340038ad4"
+  },
+  {
+   "path": "average-weight/index.html",
+   "expect_sha256": "e8df8bd17d7adf6fe7804b33403bb96d446b687312c624ef13e6ef6563475ec9",
+   "sha256": "ba30f6de89ed37453b54405372af5d689a3430824c08b3c67a5130500fb20c7a",
+   "today": true
+  },
+  {
+   "path": "blog/bmi-chart-men/index.html",
+   "expect_sha256": "f90ec4bf7812768a6ee6d997475b1c449cabeab844469a4ad197ebc579918878",
+   "sha256": "0a19958a5ae97f342a142ebbffd17c65247958d5a10ba0a8202489231f53882c",
+   "today": true
+  },
+  {
+   "path": "research/average-weight/avgw_results.json",
+   "expect_sha256": "576951edf9026e1d4f31d56aedef938a4d48ebc04f715ed6ecf8192c9565765a",
+   "sha256": "c4687d0899d7c3d7a4c8b283db293bd906fa6689252cd9b0e2f8e56221b27abb"
+  },
+  {
+   "path": "research/average-weight/compute.py",
+   "expect_sha256": "548346eaca201df4251fef65843f5593678191259dedbda8b24e868e87343757",
+   "sha256": "eb92fb5616f26bc4d499dd2920bca62c74cee9d6c82ba09c43f57acfe196f103"
+  },
+  {
+   "path": "research/chart-men-build/SPEC.md",
+   "expect_sha256": "ed0c622bb76e53ee85c6706667c3524061f05a10f6cfcf84264dec1c15c2ac22",
+   "sha256": "f89ce5d064bcbbf5a8f84b4a972bf77d607090c19082df6a7f558a5319d908e4"
+  },
+  {
+   "path": "research/chart-men-build/bcm_stats.json",
+   "expect_sha256": "4bb73a5116f241a7bda04f3c039cafc1a45620e56fc970214606a96bc595569c",
+   "sha256": "0f6595e350f7e8067aa515839185e46c4c33d0c46f04db1e883187623148becb"
+  },
+  {
+   "path": "research/chart-men-build/bcm_stats.py",
+   "expect_sha256": "dee288fb81dda1b154bf78f0a7708e18654a0532395a3ad40ee406086da29271",
+   "sha256": "42096628ea0c3690d15f2ffda1b2ba2f87d386d8e665f81c3ffcc24d81919314"
+  },
+  {
+   "path": "research/chart-men-build/gen_bcm.py",
+   "expect_sha256": "5b23acf3c8e84dfeaa86fe6a6a55b1b6b326f0ed6600ef5feb5a2c1ade489a14",
+   "sha256": "2a4ff55933c0189872317a3f82a9f3be9fabb35bf8fd3544989713a85bb0eb33"
+  },
+  {
+   "path": "research/data-sources.csv",
+   "expect_sha256": "0199881156ada69ac4ebfb45a7803b32e0028513bd3f51cb749892aa4ded3c5e",
+   "sha256": "44870ad2c852081a6678974b38b9fd2606c9954aaf01df328fbc342289bd5372"
+  },
+  {
+   "path": "research/page-map.csv",
+   "expect_sha256": "cb5513ee5f46012359f7bd58cacfb33868039e8675b62efa565a29573a1c99ee",
+   "sha256": "97e44f79340ae1652fe4d4de4eb3d3ebd5d44289c43ea4f5ce82c3a3fd66fa71"
+  },
+  {
+   "path": "research/preferred-images/pref_images.py",
+   "expect_sha256": "43caf45369adf9a1096a4da295c840c316268f79ed99dab53875fa5cbcdb3882",
+   "sha256": "05dfaef92a36e3848dfdf01587ebba053a95e85a433d7d068bd6583cc1344663"
+  },
+  {
+   "path": "scripts/check_images.py",
+   "expect_sha256": "504c125cda9ee4a513c3767263ca7105736c22b4bf964875c70446ba828f303f",
+   "sha256": "ad15caa14c8b45da48ce6bc990c8b46cf64224b11230fb76ff032139357ac77b"
+  }
+ ],
+ "edits": [
+  {
+   "file": "sitemap.xml",
+   "label": "lastmod /average-weight/ = apply date",
+   "old": "<url><loc>https://calculatemybmi.net/average-weight/</loc><lastmod>2026-10-12</lastmod>",
+   "new": "<url><loc>https://calculatemybmi.net/average-weight/</loc><lastmod>{TODAY}</lastmod>",
+   "count": 1
+  },
+  {
+   "file": "sitemap.xml",
+   "label": "lastmod /blog/bmi-chart-men/ = apply date (the middle-half ranges and the 5'10\" median change)",
+   "old": "<url><loc>https://calculatemybmi.net/blog/bmi-chart-men/</loc><lastmod>2026-10-22</lastmod>",
+   "new": "<url><loc>https://calculatemybmi.net/blog/bmi-chart-men/</loc><lastmod>{TODAY}</lastmod>",
+   "count": 1
+  }
+ ],
+ "delete": [
+  {
+   "path": "average-weight/og-average-weight.png",
+   "expect_sha256": "8b3a943c1d806b97930ace342554d17bd9168546eff50e6a4e5a4f6fa8a19f7f"
+  }
+ ]
+}
