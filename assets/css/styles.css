@@ -696,9 +696,9 @@ main.reading .key-takeaways .answer, main.reading .key-takeaways ul { max-width:
    that has its own h2, and the body fat rank tool (DESIGN.md "Body fat rank tool and lookup tables"). */
 .weight-chart--fit { min-width: 0; }
 .er-section h3 { font-size: 1.0625rem; font-weight: 600; line-height: 1.4; color: var(--gray-900); margin: 0 0 0.75rem; }
-.bfr .bmi-value, .awt .bmi-value { font-size: 3rem; }
-.bfr .bmi-category, .awt .bmi-category { font-size: 1.0625rem; line-height: 1.4; }
-.bfr .er-section svg, .awt .er-section svg { display: block; width: 100%; max-width: 360px; height: auto; margin: 0 0 0.75rem; }
+.bfr .bmi-value, .awt .bmi-value, .bfc .bmi-value { font-size: 3rem; }
+.bfr .bmi-category, .awt .bmi-category, .bfc .bmi-category { font-size: 1.0625rem; line-height: 1.4; }
+.bfr .er-section svg, .awt .er-section svg, .bfc .er-section svg { display: block; width: 100%; max-width: 360px; height: auto; margin: 0 0 0.75rem; }
 .bfr .data-table caption { font-size: 0.875rem; }
 .bfr .data-table th, .bfr .data-table td { padding: 0.5rem 0.375rem; }
 .weight-chart--fit th, .weight-chart--fit td { white-space: normal; }
@@ -714,3 +714,15 @@ main.reading .key-takeaways .answer, main.reading .key-takeaways ul { max-width:
 .awt [hidden] { display: none; }
 .data-table--fit td.num { white-space: nowrap; }
 @media (max-width: 600px) { .flow .data-table--fit { font-size: 0.8125rem; } .flow .data-table--fit th, .flow .data-table--fit td { padding: 0.5rem 0.375rem; } }
+
+/* CMB-020 — /body-fat-calculator/ (DESIGN.md "Body fat calculator (CMB-020)"): the sex and units toggles share a row
+   (stacked under 360 px), the four-way method toggle wraps to two rows on phones, three measurements share a row (two
+   under 360 px), panes and rows hidden with the hidden attribute stay hidden (.form-row sets display: grid), and a table
+   heading row that spans the columns keeps 8 px beside its text on its grey ground. */
+.bfc [hidden] { display: none; }
+.bfc-toggles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; }
+.unit-toggle--methods { flex-wrap: wrap; gap: 4px; }
+.form-row.form-row--trio { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.bfc .form-hint { margin: 0.375rem 0 0; }
+@media (max-width: 600px) { .unit-toggle--methods .unit-btn { flex: 1 1 calc(50% - 2px); padding: 0.5rem; } .bfc-toggles .unit-btn { padding: 0.5rem; } .flow .data-table--fit th[colspan] { padding: 0.5rem; } }
+@media (max-width: 359px) { .bfc-toggles { grid-template-columns: 1fr; gap: 0; } .form-row.form-row--trio { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

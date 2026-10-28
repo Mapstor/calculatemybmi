@@ -31,8 +31,12 @@ Pages and pictures (the data are the pages' own):
                      whole pounds by scripts/check_weight_tables.py) and the average weight of US women and men at each
                      height with 30 or more measured (research/average-weight/avgw_results.json), dots joined by a line;
                      4'9" to 6'3" by 80 to 260 lb, centered.
+  body-fat-calculator  the body fat calculator's accuracy figure (CMB-020): formula minus scan on CDC's DXA scans for
+                     relative fat mass and the Deurenberg formula, women and men (research/body-fat-calculator-build/
+                     bfc_stats.json): the 10th-90th percentile line, the middle half and the median, each row on its own
+                     dashed zero line; -10 to +10 points, centered.
 Renders each SVG in Chromium at its exact size, checks there is no <text> and the size, and stores a palette PNG.
-usage: pref_images.py REPO_ROOT [NAME ...]   (NAMEs: draw only those pages; CMB-019 drew average-weight and bmi-chart-men)"""
+usage: pref_images.py REPO_ROOT [NAME ...]   (NAMEs: draw only those pages; CMB-020 drew body-fat-calculator)"""
 import sys, os, io, json
 from playwright.sync_api import sync_playwright
 from PIL import Image
@@ -246,9 +250,35 @@ def avg_weight(w, h):
     return frame(w, h, ''.join(out))
 
 
+def bf_calc(w, h):
+    """The body fat calculator's accuracy figure: formula minus scan, two formulas x two sexes, on dashed zero lines."""
+    F = json.load(open(os.path.join(ROOT, 'research/body-fat-calculator-build/bfc_stats.json')))['formulas']
+    assert f"{F['rfm']['women']['err_q']['p50']:.1f}" == '2.3' and f"{F['deur']['men']['err_q']['p50']:.1f}" == '-0.3'
+    rows = (('rfm', 'women', '#be185d'), ('rfm', 'men', '#4338ca'), ('deur', 'women', '#be185d'), ('deur', 'men', '#4338ca'))
+    side = min(w, h * 1.5)                                   # same proportions in every crop, centered
+    pw, ph = side * 0.84, side * 0.84 / 1.5
+    x0, y0 = (w - pw) / 2, (h - ph) / 2
+    xs = lambda e: x0 + (min(max(e, -10), 10) + 10) * pw / 20
+    pitch = ph / len(rows)
+    bh = pitch * 0.44
+    out = []
+    for i, (f, sx, col) in enumerate(rows):
+        q = F[f][sx]['err_q']; yc = y0 + (i + 0.5) * pitch
+        out.append(f'<line x1="{xs(0):.1f}" y1="{yc - pitch * 0.42:.1f}" x2="{xs(0):.1f}" y2="{yc + pitch * 0.42:.1f}" '
+                   f'stroke="#4b5563" stroke-width="{side * 0.004:.1f}" stroke-dasharray="{side * 0.012:.1f} {side * 0.009:.1f}"/>')
+        out.append(f'<line x1="{xs(q["p10"]):.1f}" y1="{yc:.1f}" x2="{xs(q["p90"]):.1f}" y2="{yc:.1f}" stroke="{col}" '
+                   f'stroke-width="{side * 0.006:.1f}" stroke-linecap="round"/>')
+        out.append(f'<rect x="{xs(q["p25"]):.1f}" y="{yc - bh / 2:.1f}" width="{xs(q["p75"]) - xs(q["p25"]):.1f}" height="{bh:.1f}" '
+                   f'rx="{bh * 0.15:.1f}" fill="{col}" fill-opacity="0.18" stroke="{col}" stroke-width="{side * 0.003:.1f}"/>')
+        tw = max(5, side * 0.006)
+        out.append(f'<rect x="{xs(q["p50"]) - tw / 2:.1f}" y="{yc - bh * 0.68:.1f}" width="{tw:.1f}" height="{bh * 1.36:.1f}" '
+                   'rx="2" fill="#111827"/>')
+    return frame(w, h, ''.join(out))
+
+
 PAGES = {'bmi-chart': bmi_chart, 'bmi-calculator': waffle, 'healthy-bmi-range': risk_bars, 'bmi-chart-women': women_bars,
          'body-fat-percentage-chart': body_fat, 'women-bmi-calculator': women_calc, 'bmi-chart-men': men_chart,
-         'average-weight': avg_weight}
+         'average-weight': avg_weight, 'body-fat-calculator': bf_calc}
 
 if __name__ == '__main__':
     os.makedirs(OUT, exist_ok=True)

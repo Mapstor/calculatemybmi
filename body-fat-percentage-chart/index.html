@@ -57,15 +57,15 @@ function rangeTxt(c,k){return k==='low'?'under '+c[0]+'%':k==='healthy'?c[0]+'â€
 function word(s,a){return a<20?(s==='f'?'girls':'boys'):(s==='f'?'women':'men');}
 function fig(v,q,c,s){var W=280,P=14,qa=q||[v,v,v,v,v],lo=Math.min(10,Math.floor(Math.min(qa[0],v)/5)*5),hi=Math.max(50,Math.ceil(Math.max(qa[4],v)/5)*5),
  X=function(x){return P+(x-lo)*(W-2*P)/(hi-lo);},g='',t,lx;
- if(q){g+='<rect x="'+X(q[0]).toFixed(1)+'" y="24" width="'+(X(q[4])-X(q[0])).toFixed(1)+'" height="18" rx="3" fill="'+SER[s]+'" fill-opacity="0.18"/>';
-  g+='<rect x="'+X(q[1]).toFixed(1)+'" y="24" width="'+(X(q[3])-X(q[1])).toFixed(1)+'" height="18" rx="3" fill="'+SER[s]+'" fill-opacity="0.45"/>';
-  g+='<line x1="'+X(q[2]).toFixed(1)+'" y1="21" x2="'+X(q[2]).toFixed(1)+'" y2="45" stroke="#111827" stroke-width="2"/>';}
- if(c){var e=[lo,c[0],c[1],c[2],hi],ks=['low','healthy','high','very high'];for(var i=0;i<4;i++){var a=Math.max(e[i],lo),b=Math.min(e[i+1],hi);if(b>a)g+='<rect x="'+(X(a)+(i?1:0)).toFixed(1)+'" y="52" width="'+(X(b)-X(a)-(i&&i<3?2:1)).toFixed(1)+'" height="8" rx="2" fill="'+BASE[ks[i]]+'"/>';}}
- g+='<line x1="'+X(v).toFixed(1)+'" y1="16" x2="'+X(v).toFixed(1)+'" y2="'+(c?64:48)+'" stroke="#111827" stroke-width="2" stroke-dasharray="3 2"/>';
+ if(q){g+='<rect x="'+X(q[0]).toFixed(1)+'" y="26" width="'+(X(q[4])-X(q[0])).toFixed(1)+'" height="18" rx="3" fill="'+SER[s]+'" fill-opacity="0.18"/>';
+  g+='<rect x="'+X(q[1]).toFixed(1)+'" y="26" width="'+(X(q[3])-X(q[1])).toFixed(1)+'" height="18" rx="3" fill="'+SER[s]+'" fill-opacity="0.45"/>';
+  g+='<line x1="'+X(q[2]).toFixed(1)+'" y1="23" x2="'+X(q[2]).toFixed(1)+'" y2="47" stroke="#111827" stroke-width="2"/>';}
+ if(c){var e=[lo,c[0],c[1],c[2],hi],ks=['low','healthy','high','very high'];for(var i=0;i<4;i++){var a=Math.max(e[i],lo),b=Math.min(e[i+1],hi);if(b>a)g+='<rect x="'+(X(a)+(i?1:0)).toFixed(1)+'" y="54" width="'+(X(b)-X(a)-(i&&i<3?2:1)).toFixed(1)+'" height="8" rx="2" fill="'+BASE[ks[i]]+'"/>';}}
+ g+='<line x1="'+X(v).toFixed(1)+'" y1="18" x2="'+X(v).toFixed(1)+'" y2="'+(c?66:50)+'" stroke="#111827" stroke-width="2" stroke-dasharray="3 2"/>';
  t='You '+(Math.round(v*10)/10)+'%';lx=Math.min(Math.max(X(v),t.length*3.6+2),W-t.length*3.6-2);
- g+='<text x="'+lx.toFixed(1)+'" y="11" font-size="12" text-anchor="middle" fill="#1f2937">'+t+'</text>';
- for(var x=lo;x<=hi;x+=10)g+='<text x="'+X(x).toFixed(1)+'" y="80" font-size="12" text-anchor="middle" fill="#4b5563">'+x+'%</text>';
- return '<svg viewBox="0 0 '+W+' 86" role="img" aria-label="Your reading of '+v+'% on a scale from '+lo+'% to '+hi+'%" xmlns="http://www.w3.org/2000/svg" font-family="inherit">'+g+'</svg>';}
+ g+='<text x="'+lx.toFixed(1)+'" y="13" font-size="12" text-anchor="middle" fill="#1f2937">'+t+'</text>';
+ for(var x=lo;x<=hi;x+=10)g+='<text x="'+X(x).toFixed(1)+'" y="82" font-size="12" text-anchor="middle" fill="#4b5563">'+x+'%</text>';
+ return '<svg viewBox="0 0 '+W+' 88" role="img" aria-label="Your reading of '+v+'% on a scale from '+lo+'% to '+hi+'%" xmlns="http://www.w3.org/2000/svg" font-family="inherit">'+g+'</svg>';}
 function show(){var v=parseFloat($('bfr-v').value),a=parseInt($('bfr-a').value,10);
  if(!(v>=3&&v<=65)||!(a>=8&&a<=79)){out.innerHTML='<p class="er-note">Enter a body fat percentage from 3 to 65 and an age from 8 to 79.</p>';out.classList.add('visible');return;}
  var g=grp(a),gg=ggrp(a),c=gg?D.gal[sex][gg]:null,k=c?cat(v,c):null,q=g?D.q[sex][g]:null,w=word(sex,a),h='',m,l;
