@@ -35,8 +35,12 @@ Pages and pictures (the data are the pages' own):
                      relative fat mass and the Deurenberg formula, women and men (research/body-fat-calculator-build/
                      bfc_stats.json): the 10th-90th percentile line, the middle half and the median, each row on its own
                      dashed zero line; -10 to +10 points, centered.
+  how-to-measure-body-fat  the /blog/how-to-measure-body-fat/ hero (CMB-021): seven methods against one DXA scanner in the
+                     same 437 college students (Burns et al. 2019, Table 3; research/how-to-measure-body-fat-build/
+                     burns_2019_table3.json): each method's average difference from the scan (dot) and its 90% CI (line),
+                     each row on its own dashed zero line, light grid lines at -6, -4 and -2; -6.5 to +0.5 points, centered.
 Renders each SVG in Chromium at its exact size, checks there is no <text> and the size, and stores a palette PNG.
-usage: pref_images.py REPO_ROOT [NAME ...]   (NAMEs: draw only those pages; CMB-020 drew body-fat-calculator)"""
+usage: pref_images.py REPO_ROOT [NAME ...]   (NAMEs: draw only those pages; CMB-021 drew how-to-measure-body-fat)"""
 import sys, os, io, json
 from playwright.sync_api import sync_playwright
 from PIL import Image
@@ -276,9 +280,35 @@ def bf_calc(w, h):
     return frame(w, h, ''.join(out))
 
 
+def htm(w, h):
+    """The how-to-measure hero: seven methods minus DXA (dot) with the 90% CI (line), each row on a dashed zero line."""
+    T = json.load(open(os.path.join(ROOT, 'research/how-to-measure-body-fat-build/burns_2019_table3.json'), encoding='utf-8'))
+    rows = sorted(T['rows'], key=lambda r: r['diff'])
+    assert [r['key'] for r in rows] == ['hw', 'sf', 'adp', 'valhalla', 'tanita', 'ir', 'omron']
+    assert all(r['diff'] > 0 for r in rows) and max(r['ci90'][1] for r in rows) < 6
+    side = min(w, h * 1.5)                                   # same proportions in every crop, centered
+    pw, ph = side * 0.84, side * 0.84 / 1.5
+    x0, y0 = (w - pw) / 2, (h - ph) / 2
+    xs = lambda e: x0 + (e + 6.5) * pw / 7                   # -6.5 to +0.5 points: the -6 grid line and zero line sit evenly
+    pitch = ph / len(rows)
+    out = []
+    for i, r in enumerate(rows):
+        yc = y0 + (i + 0.5) * pitch
+        for e in (-6, -4, -2):
+            out.append(f'<line x1="{xs(e):.1f}" y1="{yc - pitch * 0.4:.1f}" x2="{xs(e):.1f}" y2="{yc + pitch * 0.4:.1f}" '
+                       f'stroke="#e5e7eb" stroke-width="{side * 0.003:.1f}"/>')
+        out.append(f'<line x1="{xs(0):.1f}" y1="{yc - pitch * 0.42:.1f}" x2="{xs(0):.1f}" y2="{yc + pitch * 0.42:.1f}" '
+                   f'stroke="#4b5563" stroke-width="{side * 0.004:.1f}" stroke-dasharray="{side * 0.012:.1f} {side * 0.009:.1f}"/>')
+        out.append(f'<line x1="{xs(-r["ci90"][1]):.1f}" y1="{yc:.1f}" x2="{xs(-r["ci90"][0]):.1f}" y2="{yc:.1f}" '
+                   f'stroke="#0e7490" stroke-width="{side * 0.009:.1f}" stroke-linecap="round"/>')
+        out.append(f'<circle cx="{xs(-r["diff"]):.1f}" cy="{yc:.1f}" r="{side * 0.014:.1f}" fill="#111827" stroke="#ffffff" '
+                   f'stroke-width="{side * 0.004:.1f}"/>')
+    return frame(w, h, ''.join(out))
+
+
 PAGES = {'bmi-chart': bmi_chart, 'bmi-calculator': waffle, 'healthy-bmi-range': risk_bars, 'bmi-chart-women': women_bars,
          'body-fat-percentage-chart': body_fat, 'women-bmi-calculator': women_calc, 'bmi-chart-men': men_chart,
-         'average-weight': avg_weight, 'body-fat-calculator': bf_calc}
+         'average-weight': avg_weight, 'body-fat-calculator': bf_calc, 'how-to-measure-body-fat': htm}
 
 if __name__ == '__main__':
     os.makedirs(OUT, exist_ok=True)

@@ -1,0 +1,97 @@
+{
+ "new_files": [
+  {
+   "path": "assets/images/preferred/how-to-measure-body-fat-16x9.png",
+   "sha256": "310907e1becf58bd5aaac8cf6f9f5d37e9a72dfa4bb712b24584abfbea82066b"
+  },
+  {
+   "path": "assets/images/preferred/how-to-measure-body-fat-1x1.png",
+   "sha256": "69ad7d4b4a0eb5bdc6dd031bb231784a52727b904796c107c48ac3163be88e9c"
+  },
+  {
+   "path": "assets/images/preferred/how-to-measure-body-fat-4x3.png",
+   "sha256": "b97291439d85957d9298851dd4968cfc1d25156d7da75abb7ce1b66572ac75d5"
+  },
+  {
+   "path": "research/how-to-measure-body-fat-build/SPEC.md",
+   "sha256": "9f38459a9fa078d96b49c4bf4a44da1b2a1f85063328f5e3a17c009e10d93e33"
+  },
+  {
+   "path": "research/how-to-measure-body-fat-build/burns_2019_table3.json",
+   "sha256": "ce18a677460173de97247b9708d4f822a21ece29385d98a051431180740ce5de"
+  },
+  {
+   "path": "research/how-to-measure-body-fat-build/gen_htm.py",
+   "sha256": "9221aff96b36fd24ad0393852340bf5387b934ca321dc1b6cf8c783c8e4bdab6"
+  },
+  {
+   "path": "research/how-to-measure-body-fat-build/htm_stats.json",
+   "sha256": "34afc9af0f53a7480bcb9f4bff87af6d24dda89af51f2a64750ae51c5c03b026"
+  },
+  {
+   "path": "research/how-to-measure-body-fat-build/htm_stats.py",
+   "sha256": "fd8f55eb5af1241d0ffdfd5fa70a3cd4bfe1a1e3c70f5a402d8cb623a796f7fd"
+  },
+  {
+   "path": "research/how-to-measure-body-fat-build/htm_test_playwright.py",
+   "sha256": "e89e7f867ed2206d9561d0121ca3fba508505905588baab238b7099330e520dc"
+  },
+  {
+   "path": "research/impeccable-baseline/2026-10-29-cmb021-390x844.json",
+   "sha256": "cca4cf003c2943a856ebc6483fddc4aadf8979a21a3be9c4ec41bbcd21120803"
+  }
+ ],
+ "replace": [
+  {
+   "path": "DESIGN.md",
+   "expect_sha256": "6b8990f3342fb997e17973c3318474002ff2c951be999fe6a6ffd977d8cbebde",
+   "sha256": "faf208398036d47c516a75daf8ad84eb30c4508955e12464c40f0ff562998f33"
+  },
+  {
+   "path": "assets/css/styles.css",
+   "expect_sha256": "8245f068bb7133be91fb3af3dbf31d48c52e72dc9cedd6e9b9968ea32a77ff57",
+   "sha256": "4de5b232428b396da74daaf41c39622a7e02aaea6112f0ab50553d409bc1ca83"
+  },
+  {
+   "path": "blog/how-to-measure-body-fat/index.html",
+   "expect_sha256": "b83b58c49f6a9d2daa7d33da48b6b4c8a293da96dfa12a2ab1724735ba3547ed",
+   "sha256": "52b2bae9c95f002a9b2614c4c2cb37f59584416bddf89e7d96c29314c72158f4",
+   "today": true
+  },
+  {
+   "path": "research/data-sources.csv",
+   "expect_sha256": "0e255a2f92dbadfc6b336ffa5356b586904b93f66e9b7d3ce75d0711b990dc56",
+   "sha256": "f95b4385da10c74db25102d2546db7b7cdbf17edbc4adefdd6451e7177a33ee1"
+  },
+  {
+   "path": "research/page-map.csv",
+   "expect_sha256": "3a5b455461676f92874758b7a1a5224f916ee3488d72500e5b841828b271d580",
+   "sha256": "b6c6b9aae4d7497d22ed014bbf9a74827367b612927687e438d6f16ffe7fe875"
+  },
+  {
+   "path": "research/preferred-images/pref_images.py",
+   "expect_sha256": "ccf2a1d91c6e5f3ddffc0c6b02ad2b21d6750cd35ad6134606a6117b6edb5151",
+   "sha256": "9054b30b357f88458b9ad549e5230b7803635248b9c69677977dfc1279773890"
+  },
+  {
+   "path": "scripts/check_images.py",
+   "expect_sha256": "fd91ab9acb7c74edeb0149971465849b13feefcf44bb0d91c1e4ba8b1c4fcc90",
+   "sha256": "7638915ca6115feb83d5db288d74c408ac22ea22836396102e2b58af4da43c53"
+  }
+ ],
+ "edits": [
+  {
+   "file": "sitemap.xml",
+   "label": "lastmod /blog/how-to-measure-body-fat/ = apply date",
+   "old": "<url><loc>https://calculatemybmi.net/blog/how-to-measure-body-fat/</loc><lastmod>2026-10-12</lastmod>",
+   "new": "<url><loc>https://calculatemybmi.net/blog/how-to-measure-body-fat/</loc><lastmod>{TODAY}</lastmod>",
+   "count": 1
+  }
+ ],
+ "delete": [
+  {
+   "path": "blog/how-to-measure-body-fat/og-how-to-measure-body-fat.png",
+   "expect_sha256": "f0809dec56ca7256524fdf4c927c58a00c5235cc430b3cbc69089c2766515e72"
+  }
+ ]
+}

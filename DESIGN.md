@@ -248,6 +248,10 @@ No sharp corners (0 radius) and no custom clip-paths. Borders are hairline (`1px
 - The notes say what each check can and can't tell: trained technicians took CDC's measurements (measuring yourself adds error), and the US share and the range treat the estimate as a scan reading, so they are only as close as it.
 - The US / Metric switch converts every length and the weight to 0.1; switching back with nothing retyped restores the numbers as they were, so flipping units never changes a result.
 
+### Tables with long row labels (CMB-021)
+- `.data-table--wrap` lets a table's row labels (`th[scope="row"]`, which `.flow` tables keep on one line) wrap. Use it with `.data-table--fit` where the labels are names of several words (methods, measuring slips), so a three-column table fits a 320 px phone; numbers stay on one line.
+- Groups inside such a table are `tbody` elements, each led by a `th[scope="rowgroup"][colspan]` row (`/blog/how-to-measure-body-fat/`, the measuring-slip table).
+
 ### Category badges
 - Pill (`--radius-full`), category background with white text (BMI color lock applies).
 

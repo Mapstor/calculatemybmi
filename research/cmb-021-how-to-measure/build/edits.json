@@ -1,0 +1,9 @@
+[
+ {
+  "file": "sitemap.xml",
+  "label": "lastmod /blog/how-to-measure-body-fat/ = apply date",
+  "old": "<url><loc>https://calculatemybmi.net/blog/how-to-measure-body-fat/</loc><lastmod>2026-10-12</lastmod>",
+  "new": "<url><loc>https://calculatemybmi.net/blog/how-to-measure-body-fat/</loc><lastmod>{TODAY}</lastmod>",
+  "count": 1
+ }
+]

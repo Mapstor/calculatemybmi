@@ -1,0 +1,28 @@
+{
+ "source": "Burns RD, Fu Y, Constantino N. Measurement agreement in percent body fat estimates among laboratory and field assessments in college students: Use of equivalence testing. PLOS ONE 2019;14(3):e0214029. Table 3, Agreement in percent body fat estimates compared to dual-emission X-ray absorptiometry (PMC6426203, read in chat 2026-10-29; registry body-fat-method-validation)",
+ "column": "Mean Difference (DXA–Surrogate; % Body Fat), 90% C.I., 10% Equivalence Interval -2.7% - 2.7%, MAPE",
+ "n": 437,
+ "women": 301,
+ "men": 136,
+ "mean_age": 19.2,
+ "dxa": "Hologic Discovery W, software version 12.1",
+ "dxa_mean": 27.0,
+ "dxa_sd": 7.6,
+ "margin": 2.7,
+ "rows": [
+  {"key": "hw", "assessment": "Hydrostatic Weighing", "label": "Underwater weighing",
+   "device": "underwater swing in a stainless-steel tank, full exhalation, up to five trials", "diff": 1.0, "ci90": [0.6, 1.4], "mape": 13.4, "eq10": true, "eq15": true},
+  {"key": "sf", "assessment": "Skinfold Thickness", "label": "Skinfolds, 7 sites",
+   "device": "Lange Skinfold Caliper, trained graduate students, two measurements per site in rotation and a third if they differed by more than 2 mm", "diff": 1.4, "ci90": [1.1, 1.7], "mape": 11.7, "eq10": true, "eq15": true},
+  {"key": "adp", "assessment": "ADP", "label": "Bod Pod",
+   "device": "BOD POD (COSMED), seated, two body volume measurements", "diff": 1.6, "ci90": [1.3, 1.9], "mape": 14.5, "eq10": true, "eq15": true},
+  {"key": "ir", "assessment": "IR", "label": "Near-infrared",
+   "device": "Futrex-6100 A/ZL, light wand on the belly of the biceps", "diff": 4.2, "ci90": [3.7, 4.7], "mape": 18.7, "eq10": false, "eq15": false},
+  {"key": "omron", "assessment": "Omron BIA", "label": "Hand-held device",
+   "device": "OMRON Body Fat Analyzer HBF-306, held with arms extended", "diff": 4.9, "ci90": [4.5, 5.3], "mape": 21.9, "eq10": false, "eq15": false},
+  {"key": "tanita", "assessment": "Tanita BIA", "label": "Foot-to-foot scale",
+   "device": "Tanita BF-556 two-electrode foot-to-foot scale, shoes off", "diff": 3.5, "ci90": [3.0, 4.0], "mape": 17.2, "eq10": false, "eq15": true},
+  {"key": "valhalla", "assessment": "Valhalla BIA", "label": "Lab analyzer, 4 electrodes",
+   "device": "Valhalla Scientific Model 1990B, four electrodes on the right hand and foot, lying down", "diff": 1.6, "ci90": [1.1, 2.1], "mape": 17.0, "eq10": true, "eq15": true}
+ ]
+}
