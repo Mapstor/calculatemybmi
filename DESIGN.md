@@ -252,6 +252,12 @@ No sharp corners (0 radius) and no custom clip-paths. Borders are hairline (`1px
 - `.data-table--wrap` lets a table's row labels (`th[scope="row"]`, which `.flow` tables keep on one line) wrap. Use it with `.data-table--fit` where the labels are names of several words (methods, measuring slips), so a three-column table fits a 320 px phone; numbers stay on one line.
 - Groups inside such a table are `tbody` elements, each led by a `th[scope="rowgroup"][colspan]` row (`/blog/how-to-measure-body-fat/`, the measuring-slip table).
 
+### US obesity tool and embed code (CMB-022)
+- `/us-obesity-statistics/` puts "Where do you fit?" on the shared calculator parts, with no page-level style: `.calculator-card.obw` › `.calc-panel` › `.unit-toggle` (ft, in, lb / cm, kg; `aria-pressed`) › one `.form-row.form-row--trio` (feet, inches, pounds; two columns under 360 px) or one `.form-row.form-row--pair` (centimeters, kilograms) › `.calculate-btn`. The card follows its `.content-section`; rows hide with the `hidden` attribute (`.obw [hidden]`).
+- Results follow "Calculator results — answer first": a `.bmi-result-card` tinted by the CDC category with the BMI in the strong shade, the category, and its share of US adults with the count; then an `.er-section` with an `h3` and an `.er-table` of the six categories (`.cat-dot`, share, adults) where the user's row is `.er-active` with an `.er-you` pill. The BMI is rounded once to 0.1 (as `calculator.js`); the unit switch converts to 0.1 and restores the entered numbers when switched back with nothing retyped (the CMB-020 rule).
+- Embed code for a chart others may reuse: a read-only `textarea.embed-code` (system monospace, `--gray-50` ground, hairline border, resizable) under a `.form-label`, and a `button.cta-button.cta-button--sm` that copies it. `button.cta-button` drops the browser's button border.
+- Four-column number tables (`.data-table--fit.data-table--wrap`) fit a 320 px phone: under 360 px their cells keep 4 px beside the text (group heading rows keep 8 px), and a long single-word column heading carries a soft hyphen (`Over&shy;weight`) so it can break.
+
 ### Category badges
 - Pill (`--radius-full`), category background with white text (BMI color lock applies).
 

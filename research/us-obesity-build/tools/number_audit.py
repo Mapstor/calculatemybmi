@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
-"""number_audit.py — every number in the visible text of the built page must be in allowed_numbers.txt.
-Usage (repo root): python3 research/us-obesity-build/tools/number_audit.py us-obesity-statistics/index.html"""
+"""number_audit.py — every number in the visible text of /us-obesity-statistics/ must be in allowed_numbers.txt.
+Usage (repo root): python3 research/us-obesity-build/tools/number_audit.py us-obesity-statistics/index.html
+Scans <main> without its scripts, inline SVG figures, comments and the embed-code textarea. Since CMB-022 the page has no
+<article class="cmb-stats"> wrapper (D-16), so the scan covers <main>. allowed_numbers.txt is the CMB-022 page's own
+numbers, each traced in research/us-obesity-statistics-build/ (gen_obs.py stops on any figure that disagrees with its
+source, obs_test_playwright.py types the values in again); a new number on the page fails this gate until it is traced
+and added."""
 import re, sys, html, os
 p=sys.argv[1]; s=open(p,encoding="utf-8").read()
-m=re.search(r'<article class="cmb-stats">.*?</article>',s,re.S)
-if not m: print("FAIL: <article class=\"cmb-stats\"> not found"); sys.exit(1)
+m=re.search(r'<main\b.*?</main>',s,re.S)
+if not m: print("FAIL: <main> not found"); sys.exit(1)
 v=m.group(0)
 for pat in (r'<script.*?</script>',r'<svg.*?</svg>',r'<!--.*?-->',r'<textarea.*?</textarea>'): v=re.sub(pat,' ',v,flags=re.S)
 text=html.unescape(re.sub(r'<[^>]+>',' ',v))

@@ -1,0 +1,44 @@
+{
+ "source": "CDC NHANES August 2021-August 2023 (DEMO_L, BMX_L); adults aged 20+, examined, pregnant women excluded",
+ "method": "WTMEC2YR-weighted shares; Taylor linearization over SDMVSTRA x SDMVPSU, 15 df, t = 2.131",
+ "lb300": {
+  "all": {
+   "pct": 2.8708,
+   "se": 0.2198,
+   "ci95": [
+    2.4022,
+    3.3393
+   ],
+   "n": 5942,
+   "df": 15
+  },
+  "men": {
+   "pct": 4.0463,
+   "se": 0.4658,
+   "ci95": [
+    3.0535,
+    5.0391
+   ],
+   "n": 2688,
+   "df": 15
+  },
+  "women": {
+   "pct": 1.7395,
+   "se": 0.2092,
+   "ci95": [
+    1.2937,
+    2.1853
+   ],
+   "n": 3254,
+   "df": 15
+  }
+ },
+ "lb300_kg": 136.0777,
+ "check_home_stats": {
+  "class_1_pct": 20.5548,
+  "class_2_pct": 10.2948,
+  "obesity_pct": 40.2639,
+  "mean_bmi": 29.6812,
+  "n_bmi": 5929
+ }
+}

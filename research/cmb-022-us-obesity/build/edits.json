@@ -1,0 +1,9 @@
+[
+ {
+  "file": "sitemap.xml",
+  "label": "lastmod /us-obesity-statistics/ = apply date, and the chart image the page now shows",
+  "old": "<url><loc>https://calculatemybmi.net/us-obesity-statistics/</loc><lastmod>2026-10-12</lastmod><priority>0.9</priority></url>",
+  "new": "<url><loc>https://calculatemybmi.net/us-obesity-statistics/</loc><lastmod>{TODAY}</lastmod><priority>0.9</priority><image:image><image:loc>https://calculatemybmi.net/us-obesity-statistics/us-obesity-trend-1960-2023.svg</image:loc></image:image></url>",
+  "count": 1
+ }
+]

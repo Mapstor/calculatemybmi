@@ -25,7 +25,8 @@ PREFERRED = {'/': 'bmi-calculator', '/blog/healthy-bmi-range/': 'healthy-bmi-ran
              '/blog/bmi-chart-men/': 'bmi-chart-men',
              '/average-weight/': 'average-weight',
              '/body-fat-calculator/': 'body-fat-calculator',
-             '/blog/how-to-measure-body-fat/': 'how-to-measure-body-fat'}
+             '/blog/how-to-measure-body-fat/': 'how-to-measure-body-fat',
+             '/us-obesity-statistics/': 'us-obesity-statistics'}
 SIZES = {'1x1': (1200, 1200), '4x3': (1200, 900), '16x9': (1200, 675)}
 
 

@@ -1,0 +1,127 @@
+{
+ "new_files": [
+  {
+   "path": "assets/images/preferred/us-obesity-statistics-16x9.png",
+   "sha256": "1045ae48cf01e28ad4379e85be7bfa7fc8c70cd75156716e811f31328d246e7d"
+  },
+  {
+   "path": "assets/images/preferred/us-obesity-statistics-1x1.png",
+   "sha256": "f92a4bdb649d3f2ad6ab2b7d5394842d1a63bfa9b1a02847d5a64f0fb8510983"
+  },
+  {
+   "path": "assets/images/preferred/us-obesity-statistics-4x3.png",
+   "sha256": "2cacacb552890d03128ad66e5dbe0384eb1b15b1fb925ce268902f4974241b52"
+  },
+  {
+   "path": "research/impeccable-baseline/2026-10-30-cmb022-390x844.json",
+   "sha256": "b50c9708bdab8e78a60a75917310f225fdeb7ce616360a9c32f6c66e86d52e42"
+  },
+  {
+   "path": "research/us-obesity-statistics-build/SPEC.md",
+   "sha256": "68293fd31eb23b15c6355cf7abe182e3f87ad944d31c3c8c74f04a6a855fb9c1"
+  },
+  {
+   "path": "research/us-obesity-statistics-build/gen_obs.py",
+   "sha256": "07660fde1f47c1070393509e886bc00fe15c6bc76c847c413d89734f01dce2e3"
+  },
+  {
+   "path": "research/us-obesity-statistics-build/obs_sources.json",
+   "sha256": "213e80caa0c4a899335da9e56c7a5145fd6822baf01386564deef51572a00a4f"
+  },
+  {
+   "path": "research/us-obesity-statistics-build/obs_stats.json",
+   "sha256": "3417c9902f644acb0d1117edd8e344fd02ab7e52e10b8a596023b8ef6aa4258e"
+  },
+  {
+   "path": "research/us-obesity-statistics-build/obs_stats.py",
+   "sha256": "f379e3c9a7521a74a0c4929e865a482a203d68183dff3d2661ee17b08c64e0ec"
+  },
+  {
+   "path": "research/us-obesity-statistics-build/obs_test_playwright.py",
+   "sha256": "3fe8aef0ebb236988d5cbdeee97a57051174aed4ab0d15f04c5d72c7be87e303"
+  }
+ ],
+ "replace": [
+  {
+   "path": "DESIGN.md",
+   "expect_sha256": "faf208398036d47c516a75daf8ad84eb30c4508955e12464c40f0ff562998f33",
+   "sha256": "39625ee7d03167d8dc60bea43945ff09c0b66f37057e19c25d9ef89a5a8a7201"
+  },
+  {
+   "path": "assets/css/styles.css",
+   "expect_sha256": "4de5b232428b396da74daaf41c39622a7e02aaea6112f0ab50553d409bc1ca83",
+   "sha256": "f1c4a2eda9e5da22fdec2f9a24d4b9db76c32721c8da98e0f9979e61e6dfbf27"
+  },
+  {
+   "path": "research/data-sources.csv",
+   "expect_sha256": "f95b4385da10c74db25102d2546db7b7cdbf17edbc4adefdd6451e7177a33ee1",
+   "sha256": "d82314cedcda0bc6ce7f7fccd34fa24f69dad9a51a59c2494c410b6c18dd6913"
+  },
+  {
+   "path": "research/page-map.csv",
+   "expect_sha256": "b6c6b9aae4d7497d22ed014bbf9a74827367b612927687e438d6f16ffe7fe875",
+   "sha256": "44469dedd0f2d77078bda1ff4ae63fd48388ed41bdaf37b4b096bde496ad14f3"
+  },
+  {
+   "path": "research/preferred-images/pref_images.py",
+   "expect_sha256": "9054b30b357f88458b9ad549e5230b7803635248b9c69677977dfc1279773890",
+   "sha256": "ec6121fc28273be42cbe8181470b99adfe72ae03f709929b6da06b6922e6150f"
+  },
+  {
+   "path": "research/us-obesity-build/BUILD.md",
+   "expect_sha256": "d8546dca313fa5bd401c7ad77cd7556148685aa2f6180664d48b660d1060faf0",
+   "sha256": "a82d8da158f6a2f7c26f28f2d23a530decbf16b7b9a4fb52f0ba41f2c2fe1fa0"
+  },
+  {
+   "path": "research/us-obesity-build/research/build_dataset_us_obesity.py",
+   "expect_sha256": "9e8270f7e9c29df02fea85921a7cabc3d36af2055103d8613f1e527aabe566b8",
+   "sha256": "5ba423454ffbcfcac7ec8c97f0a34ee9fec0c25721f7d8c6275f0af93b3211d1"
+  },
+  {
+   "path": "research/us-obesity-build/tools/allowed_numbers.txt",
+   "expect_sha256": "f59f4ef7746b813f3c13842302922e81f815cfafe8c18cc2d2d97b48b8394510",
+   "sha256": "6c92d5522ffc4f3f05018a3c2e2d2248ac95072133fb9e24630932010803f33d"
+  },
+  {
+   "path": "research/us-obesity-build/tools/number_audit.py",
+   "expect_sha256": "137c1dc1bc546b18b3f33f9fe53574555f4b38b74a1575556747696461eb73ff",
+   "sha256": "8169fc5221ff2c5ff6cbf5921480c517c307345639b88b52353213fd29d5ca16"
+  },
+  {
+   "path": "scripts/check_images.py",
+   "expect_sha256": "7638915ca6115feb83d5db288d74c408ac22ea22836396102e2b58af4da43c53",
+   "sha256": "144aa924d1223c16f90d9be94bcd52b77a30019533ee6dd4ce149b8798bedefe"
+  },
+  {
+   "path": "us-obesity-statistics/index.html",
+   "expect_sha256": "5f257c8bd68ebfca1e14d034f4a6c5af536c76b2dcf74a15c4b0b4e8bbdfad03",
+   "sha256": "afda316bfdcfbc30bb940675fe0576ae5282f6d79cfc50d2847eb23955190632",
+   "today": true
+  },
+  {
+   "path": "us-obesity-statistics/us-obesity-data-nhanes-1960-2023.csv",
+   "expect_sha256": "550f22f3ea2cf32d7aae5ca3fbdb36d20efa626d387b0174bf37d42e8ad1e2ce",
+   "sha256": "07e75d534fb5f9f9b93cb648393fe43c2363f81724afdbfb387992c6602edfbd"
+  },
+  {
+   "path": "us-obesity-statistics/us-obesity-trend-1960-2023.svg",
+   "expect_sha256": "85e5911a34e92776243288d823e5d1f051ddcb78ef9fd589e02450211559dff5",
+   "sha256": "33cddd56c840ed380d82631bc3685d919b4aa4a49b2ebfdde08b7bc9c56a77f9"
+  }
+ ],
+ "edits": [
+  {
+   "file": "sitemap.xml",
+   "label": "lastmod /us-obesity-statistics/ = apply date, and the chart image the page now shows",
+   "old": "<url><loc>https://calculatemybmi.net/us-obesity-statistics/</loc><lastmod>2026-10-12</lastmod><priority>0.9</priority></url>",
+   "new": "<url><loc>https://calculatemybmi.net/us-obesity-statistics/</loc><lastmod>{TODAY}</lastmod><priority>0.9</priority><image:image><image:loc>https://calculatemybmi.net/us-obesity-statistics/us-obesity-trend-1960-2023.svg</image:loc></image:image></url>",
+   "count": 1
+  }
+ ],
+ "delete": [
+  {
+   "path": "us-obesity-statistics/og-us-obesity-statistics.png",
+   "expect_sha256": "cb9e623b24ba125228ceaac72683f4393a2e523559984fe58d0fa1c6b6a7831d"
+  }
+ ]
+}

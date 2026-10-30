@@ -1,4 +1,5 @@
 # BUILD — /us-obesity-statistics/ · calculatemybmi.net
+> CMB-022 (D-14 rebuild): the page was rebuilt; `research/us-obesity-statistics-build/SPEC.md` is the current build record and `gen_obs.py` its generator. This file is the S1 build of 30 Sep 2026. Changed since: the page now carries FAQPage JSON-LD (D-14), has no `<article class="cmb-stats">` wrapper (D-16), and `tools/number_audit.py` scans `<main>`; the never-cite list in rule 2 still applies.
 Prepared in chat, 30 Sep 2026. Every number, sentence, chart and citation in `page/` was verified against NCHS/CDC primary sources in chat (the box has no network, so nothing here can be re-verified locally). Your job is assembly, wiring and verification — not writing.
 
 ## Hard rules

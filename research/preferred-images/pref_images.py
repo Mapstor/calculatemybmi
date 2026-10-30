@@ -39,8 +39,12 @@ Pages and pictures (the data are the pages' own):
                      same 437 college students (Burns et al. 2019, Table 3; research/how-to-measure-body-fat-build/
                      burns_2019_table3.json): each method's average difference from the scan (dot) and its 90% CI (line),
                      each row on its own dashed zero line, light grid lines at -6, -4 and -2; -6.5 to +0.5 points, centered.
+  us-obesity-statistics  the /us-obesity-statistics/ hero (CMB-022): obesity, overweight and severe obesity among US
+                     adults aged 20 to 74 in every CDC survey from 1960-1962 to August 2021-August 2023 (age-adjusted; the
+                     page's CSV, = NCHS Health E-Stat 111 Table 1): three lines with a dot per survey in the category
+                     colors (red, amber, dark red) over light grid lines at 0, 10, 20, 30, 40 and 50%, centered.
 Renders each SVG in Chromium at its exact size, checks there is no <text> and the size, and stores a palette PNG.
-usage: pref_images.py REPO_ROOT [NAME ...]   (NAMEs: draw only those pages; CMB-021 drew how-to-measure-body-fat)"""
+usage: pref_images.py REPO_ROOT [NAME ...]   (NAMEs: draw only those pages; CMB-022 drew us-obesity-statistics)"""
 import sys, os, io, json
 from playwright.sync_api import sync_playwright
 from PIL import Image
@@ -306,9 +310,41 @@ def htm(w, h):
     return frame(w, h, ''.join(out))
 
 
+def obs_trend(w, h):
+    """The US obesity hero: obesity, overweight and severe obesity, adults 20-74, every survey 1960-1962 to 2021-2023."""
+    import csv
+    rows = [r for r in csv.DictReader(open(os.path.join(ROOT, 'us-obesity-statistics/us-obesity-data-nhanes-1960-2023.csv'),
+                                           encoding='utf-8'))
+            if r['dataset'] == 'HE111_T1_adults_20-74' and r['sex'] == 'all']
+    ser = {}
+    for r in rows:
+        ser.setdefault(r['measure'], []).append((float(r['midpoint_year']), float(r['percent'])))
+    for k in ser: ser[k].sort()
+    assert sorted(ser) == ['obesity', 'overweight', 'severe obesity'] and all(len(v) == 15 for v in ser.values())
+    assert ser['obesity'][0] == (1961.5, 13.4) and ser['obesity'][-1] == (2022.6, 40.8)
+    side = min(w, h * 1.6)                                   # same proportions in every crop, centered
+    pw, ph = side * 0.84, side * 0.84 / 1.6
+    x0, y0 = (w - pw) / 2, (h - ph) / 2
+    xs = lambda y: x0 + (y - 1960) * pw / 64                 # 1960 to 2024
+    ys = lambda v: y0 + ph - v * ph / 50                     # 0 to 50%
+    out = []
+    for v in range(0, 51, 10):
+        out.append(f'<line x1="{x0:.1f}" y1="{ys(v):.1f}" x2="{x0 + pw:.1f}" y2="{ys(v):.1f}" stroke="#e2e8f0" '
+                   f'stroke-width="{side * 0.0025:.1f}"/>')
+    for key, col in (('overweight', BASE['over']), ('obesity', BASE['obese']), ('severe obesity', BASE['severe'])):
+        pts = ' '.join(f'{xs(a):.1f},{ys(b):.1f}' for a, b in ser[key])
+        out.append(f'<polyline points="{pts}" fill="none" stroke="{col}" stroke-width="{side * 0.008:.1f}" '
+                   'stroke-linejoin="round" stroke-linecap="round"/>')
+        for a, b in ser[key]:
+            out.append(f'<circle cx="{xs(a):.1f}" cy="{ys(b):.1f}" r="{side * 0.009:.1f}" fill="{col}" stroke="#ffffff" '
+                       f'stroke-width="{side * 0.003:.1f}"/>')
+    return frame(w, h, ''.join(out))
+
+
 PAGES = {'bmi-chart': bmi_chart, 'bmi-calculator': waffle, 'healthy-bmi-range': risk_bars, 'bmi-chart-women': women_bars,
          'body-fat-percentage-chart': body_fat, 'women-bmi-calculator': women_calc, 'bmi-chart-men': men_chart,
-         'average-weight': avg_weight, 'body-fat-calculator': bf_calc, 'how-to-measure-body-fat': htm}
+         'average-weight': avg_weight, 'body-fat-calculator': bf_calc, 'how-to-measure-body-fat': htm,
+         'us-obesity-statistics': obs_trend}
 
 if __name__ == '__main__':
     os.makedirs(OUT, exist_ok=True)

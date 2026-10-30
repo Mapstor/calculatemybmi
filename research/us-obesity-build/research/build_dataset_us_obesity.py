@@ -127,8 +127,8 @@ add("HE111_crude_snapshot","adults","20+","all","all","all","Aug 2021-Aug 2023",
 add("HE111_crude_snapshot","adults","20+","all","all","all","Aug 2021-Aug 2023","obesity",40.3,"","crude","",S111,H111)
 add("HE111_crude_snapshot","adults","20+","all","all","all","Aug 2021-Aug 2023","severe obesity",9.4,"","crude","severe obesity is a subset of obesity",S111,H111)
 # ---- HE-Stat 119 Table 3: underweight, adults 20-74, age-adjusted (endpoints used for derived healthy-weight share)
-add("HE119_underweight","adults","20-74","all","all","all","1960-1962","underweight",4.0,"","age-adjusted","ages 20-74; used for calculated healthy-weight share",S119,H119)
-add("HE119_underweight","adults","20-74","all","all","all","Aug 2021-Aug 2023","underweight",1.7,"","age-adjusted","ages 20-74; used for calculated healthy-weight share",S119,H119)
+add("HE119_underweight","adults","20-74","all","all","all","1960-1962","underweight",4.0,0.2,"age-adjusted","ages 20-74; used for calculated healthy-weight share",S119,H119)
+add("HE119_underweight","adults","20-74","all","all","all","Aug 2021-Aug 2023","underweight",1.7,0.3,"age-adjusted","ages 20-74; used for calculated healthy-weight share",S119,H119)
 # ---- CALCULATED rows (all inputs are NCHS primary figures above; formula in note)
 SC="Calculated by CalculateMyBMI from NCHS figures"
 add("CALC_derived","adults","20+","all","all","all","Aug 2021-Aug 2023","overweight or obesity",72.4,"","calculated","= 32.1 overweight + 40.3 obesity (HE-Stat 111 crude)",SC,H111)

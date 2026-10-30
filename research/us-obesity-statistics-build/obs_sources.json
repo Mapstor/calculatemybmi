@@ -1,0 +1,112 @@
+{
+ "note": "Published values for /us-obesity-statistics/ that are not in the page's CSV, typed in from the sources as read in chat on 2026-10-29. gen_obs.py prints them and obs_test_playwright.py types them in again. The fact-check of 2026-10-30 re-read Gallup, Fourman (PMC12529213) and Al-Roub live; the sample notes and the 0.6 alternative were added then.",
+ "gallup_2025": {
+  "registry": "gallup-self-reported-obesity",
+  "title": "Obesity Rate Declining in U.S.",
+  "published": "2025-10-28",
+  "rate_2025": "37.0",
+  "peak": "39.9",
+  "peak_year": 2022,
+  "men_2025": "35.2",
+  "women_2025": "38.8",
+  "n": 16946,
+  "mode": "web",
+  "quotes": [
+   "After peaking at a record high of 39.9% in 2022, the U.S. adult obesity rate has gradually declined to 37.0% in 2025.",
+   "combined data from three nationally representative surveys of 16,946 U.S. adults",
+   "interviewed by web in the first three quarters of 2025",
+   "Gallup uses respondents’ self-reported height and weight to calculate body mass index (BMI) and subsequent weight classes.",
+   "A “vanity effect” in how respondents present themselves may explain why Gallup’s obesity estimates are typically somewhat lower",
+   "The rate among men has dropped 2.3 percentage points to 35.2% in 2025,",
+   "while women's rate has dropped 3.5 points to 38.8%."
+  ]
+ },
+ "fourman_2025": {
+  "registry": "fourman-2025-all-of-us-new-definition",
+  "authors": "Fourman LT, Awwad A, Gutiérrez-Sacristán A, Dash CA, Johnson JE, Thistle AK, Chahal N, Stockman SL, Toribio M, Anekwe C, Gattu AK, Grinspoon SK",
+  "title": "Implications of a New Obesity Definition Among the All of Us Cohort",
+  "journal": "JAMA Netw Open 2025;8(10):e2537619",
+  "published": "2025-10-15",
+  "n": 301026,
+  "ages": "18 to 80",
+  "enrolled": "May 31, 2017, to September 30, 2023",
+  "new_definition": "68.6",
+  "bmi_based": "42.9",
+  "anthropometric_only": "25.9",
+  "clinical": "36.1",
+  "counts": {
+   "bmi_based": 128992,
+   "new_definition": 206361,
+   "anthropometric_only": 78047,
+   "clinical": 108650
+  },
+  "sample_notes": [
+   "not weighted to the US population (an unweighted volunteer cohort); 61.0% female; Black or African American participants somewhat overrepresented (the paper)",
+   "the BMI-based 42.9% used race-specific BMI cut-offs per World Health Organization criteria"
+  ]
+ },
+ "alroub_2025": {
+  "registry": "alroub-2025-nhanes-new-definition",
+  "authors": "Al-Roub NM, Malik D, Essa M, Lu Y, Yang H, Spatz ES, Krumholz HM, Faridi KF",
+  "title": "Body Mass Index and Anthropometric Criteria to Assess Obesity",
+  "journal": "JAMA Netw Open 2025;8(12):e2549124",
+  "type": "Research Letter",
+  "published": "2025-12-29",
+  "n": 14414,
+  "represents": 237700000,
+  "years": "2017-2023",
+  "new_definition": [
+   "75.2",
+   "73.8",
+   "76.5"
+  ],
+  "bmi_30_plus": [
+   "39.9",
+   "38.0",
+   "41.0"
+  ],
+  "whtr_over_05": [
+   "80.0",
+   "78.6",
+   "81.3"
+  ],
+  "whr_elevated": "73.1",
+  "wc_elevated": "58.3",
+  "quotes": [
+   "The study included 14 414 participants representing 237 700 000 US adults.",
+   "Survey-weighted obesity prevalence was 75.2% (95% CI, 73.8%-76.5%) overall.",
+   "39.9% (95% CI, 38.0%-41.0%) of all adults had BMI of 30 or greater.",
+   "A waist-to-height ratio >0.5 was considered a criterion for obesity in the primary analysis.",
+   "The most common abnormal anthropometric criterion was WHtR above 0.50 (80.0% [95% CI, 78.6%-81.3%] of adults)",
+   "Prevalence did not change from 2017-2020 to 2021-2023.",
+   "With a waist-to-height ratio cut-off above 0.6 instead of 0.5 (the alternative analysis), obesity prevalence was 58.4% (95% CI, 56.7%-60.2%)."
+  ],
+  "whtr_06_definition": [
+   "58.4",
+   "56.7",
+   "60.2"
+  ]
+ },
+ "lancet_2025": {
+  "registry": "lancet-clinical-obesity-2025",
+  "experts": 58,
+  "organizations": 76,
+  "published": "2025-01-14",
+  "quotes": [
+   "Excess adiposity should be confirmed by either direct measurement of body fat, where available,",
+   "or at least one anthropometric criterion (eg, waist circumference, waist-to-hip ratio, or waist-to-height ratio)",
+   "At least two anthropometric criteria (waist circumference, waist-to-hip ratio or waist-to-height ratio) regardless of BMI",
+   "In people with very high BMI (ie, >40 kg/m²), however, excess adiposity can pragmatically be assumed",
+   "Validated methods and age- gender- and ethnicity-appropriate cut-off points should be used for all anthropometric criteria."
+  ]
+ },
+ "cdc_maps_2025": {
+  "registry": "cdc-brfss-state-obesity",
+  "updated": "2026-09-24",
+  "quotes": [
+   "21 states, Guam, and Puerto Rico had an obesity prevalence between 35% and less than 40%.",
+   "No state or territory had an obesity prevalence of 40% or higher.",
+   "all had an obesity prevalence higher than 25%, except the District of Columbia (24.2%)."
+  ]
+ }
+}

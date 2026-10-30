@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" width="640" height="440" role="img" aria-labelledby="trend-embed-title trend-embed-desc">
 <title id="trend-embed-title">US adult obesity, overweight and severe obesity, 1960–2023</title>
-<desc id="trend-embed-desc">Age-adjusted percent of US adults ages 20 to 74, measured by NHANES. Obesity rose from 13.4% in 1960–1962 to 40.8% in August 2021–August 2023. Severe obesity rose from 0.9% to 10.2%. Overweight stayed near 31% (31.5% to 31.3%). Source: CDC NCHS Health E-Stat 111.</desc>
-<style>.cmbv-ink{fill:#1F2937}.cmbv-mut{fill:#6B7280}.cmbv-ow{stroke:#E0A526}.cmbv-ob{stroke:#E0612D}.cmbv-sev{stroke:#9E1B1B}.cmbv-owf{fill:#E0A526}.cmbv-obf{fill:#E0612D}.cmbv-sevf{fill:#9E1B1B}.cmbv-owt{fill:#8A5A00}.cmbv-obt{fill:#B3431A}.cmbv-sevt{fill:#8E1B1B}text{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}</style>
+<desc id="trend-embed-desc">Age-adjusted percent of US adults ages 20 to 74, measured by NHES (1960–1962) and NHANES. Obesity rose from 13.4% in 1960–1962 to 40.8% in August 2021–August 2023. Severe obesity rose from 0.9% to 10.2%. Overweight stayed between 30.3% and 34.4% (31.5% in 1960–1962, 31.3% in August 2021–August 2023). Source: CDC NCHS Health E-Stat 111.</desc>
+<style>.cmbv-ink{fill:#1F2937}.cmbv-mut{fill:#6B7280}.cmbv-ow{stroke:#f59e0b}.cmbv-ob{stroke:#ef4444}.cmbv-sev{stroke:#991b1b}.cmbv-owf{fill:#f59e0b}.cmbv-obf{fill:#ef4444}.cmbv-sevf{fill:#991b1b}.cmbv-owt{fill:#b45309}.cmbv-obt{fill:#b91c1c}.cmbv-sevt{fill:#991b1b}text{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}</style>
 <rect width="640" height="440" fill="#FFFFFF"/>
 <text x="16" y="34" class="cmbv-ink" font-size="24" font-weight="700">US obesity tripled in 60 years</text>
-<text x="16" y="60" class="cmbv-mut" font-size="16">Adults ages 20–74, age-adjusted percent, measured (NHANES)</text>
+<text x="16" y="60" class="cmbv-mut" font-size="16">Adults ages 20–74, age-adjusted percent, measured (NHES, NHANES)</text>
 <line x1="44" y1="356.0" x2="530" y2="356.0" stroke="#E5E7EB" stroke-width="1"/>
 <text x="36" y="360.0" text-anchor="end" class="cmbv-mut" font-size="14">0%</text>
 <line x1="44" y1="303.2" x2="530" y2="303.2" stroke="#E5E7EB" stroke-width="1"/>
