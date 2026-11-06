@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Builds /new-bmi-calculator/ (CMB-023) from nb_stats.json. usage: python3 research/new-bmi-build/gen_nb.py
-Replaces, in new-bmi-calculator/index.html, only what the page owns: everything inside <main>, and in the head the meta
-description, the og:* and twitter:* text and images and the JSON-LD. The title, the Raptive, consent and GA4 scripts, the
-header, the scripts after </main> (calculator.js, the FAQ and menu toggles) and the footer stay byte for byte, so running
-it twice gives the same file. Every number on the page comes from nb_stats.json or is a fact from the registry rows
+Replaces, in new-bmi-calculator/index.html, only what the page owns: everything inside <main>, and in the head the title
+(since CMB-024), the meta description, the og:* and twitter:* text and images and the JSON-LD. The Raptive, consent and
+GA4 scripts, the header, the scripts after </main> (calculator.js, the FAQ and menu toggles) and the footer stay byte for
+byte, so running it twice gives the same file. Every number on the page comes from nb_stats.json or is a fact from the registry rows
 trefethen-new-bmi, economist-2013-trefethen-letter, cdc-calculating-bmi, cdc-adult-bmi-categories, cdc-about-bmi and
 who-obesity-fact-sheet (CMB-023 prompt, FACTS 1-7)."""
 import html, json, os, re
@@ -23,11 +23,11 @@ CDC_ABOUT = 'https://www.cdc.gov/bmi/about/index.html'
 WHO = 'https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight'
 M = '−'
 
-TITLE = 'New BMI Calculator (Trefethen) - Updated Body Mass Index Formula'      # kept (KWP check pending, DEVLOG §5)
+TITLE = 'New BMI Calculator: Oxford Professor’s Formula (Trefethen)'             # CMB-024: the Oxford queries (Search Console)
 H1 = 'New BMI Calculator (Trefethen Formula)'                                  # kept
-DESC = ('Compare New BMI, Trefethen’s 2013 formula, with traditional BMI for your height and weight. '
+DESC = ('The 2013 New BMI formula from Oxford professor Nick Trefethen, next to traditional BMI. '
         'See both numbers, the gap at your height and which one to use.')
-OG_TITLE = H1
+OG_TITLE = TITLE
 OG_ALT = ('Chart: New BMI minus traditional BMI by height at 154 lb (70 kg), above zero for shorter people, '
           'crossing zero at 5′6.5″ (1.69 m) and below zero for taller people.')
 
@@ -180,6 +180,10 @@ FAQ = [
      'Nick Trefethen, who signed his letter to The Economist of 5 January 2013 as professor of numerical analysis at the '
      'University of Oxford. The letter called BMI “a bizarre measure”; the formula itself is on his Oxford page. He describes '
      'himself there as “an applied mathematician, not a doctor or an epidemiologist.”'),
+    ('What is the Oxford BMI calculator?',
+     'It is the name many people search for New BMI, the formula Nick Trefethen published in 2013 while he was a '
+     'professor at the University of Oxford. This calculator applies his formula, which is on his Oxford page. It is his '
+     'own proposal, not a medical standard, and CDC still uses the traditional formula.'),
     ('Why is the new BMI different from traditional BMI?',
      'It divides weight by height to the power 2.5 instead of height squared, then multiplies by 1.3. Weight cancels out '
      'when you compare the two: New BMI = traditional BMI × 1.3 ÷ √height (m). So the gap depends on height alone, from '
@@ -255,14 +259,14 @@ MAIN = (
     '<div class="page-head">'
     f'<h1>{H1}</h1>'
     '<p class="byline">Written by <a href="/about/#author-bio">Marko Visic, MPharm</a> · Not medical advice</p>'
-    '<p class="intro-text">See your BMI with Nick Trefethen’s 2013 formula next to the traditional one.</p>'
+    '<p class="intro-text">See your BMI with the 2013 formula from Oxford professor Nick Trefethen, next to the traditional one.</p>'
     '<p class="intro-note">A mathematician’s proposal, not a medical standard: CDC still calculates BMI with height '
     'squared. <a href="#sources">Method and sources</a></p>'
     '</div>'
     + CALC +
     '<div class="key-takeaways"><div class="key-takeaways-title">Key takeaways</div>'
-    '<p class="answer"><strong>New BMI</strong> is Nick Trefethen’s 2013 alternative to the traditional formula: '
-    '1.3 × kg ÷ m<sup>2.5</sup>, or 5734 × lb ÷ in<sup>2.5</sup>. It <strong>matches traditional BMI at about 5′6.5″ '
+    '<p class="answer"><strong>New BMI</strong> is the 2013 alternative to the traditional formula from Nick Trefethen, '
+    'then a professor at the University of Oxford: 1.3 × kg ÷ m<sup>2.5</sup>, or 5734 × lb ÷ in<sup>2.5</sup>. It <strong>matches traditional BMI at about 5′6.5″ '
     '(1.69 m)</strong>, reads higher if you are shorter and lower if you are taller.</p><ul>'
     f'<li>The gap depends on height alone: New BMI is <strong>{up60} higher</strong> than traditional BMI at 5′0″ and '
     f'<strong>{dn72} lower</strong> at 6′0″, whatever you weigh.</li>'
@@ -448,7 +452,9 @@ def build(src):
     assert blocks, 'no JSON-LD in the head'
     ld = '\n<script type="application/ld+json">' + json.dumps(LD, ensure_ascii=False) + '</script>'
     head = head[:blocks[0].start()] + ld + ''.join(head[a.end():b.start()] for a, b in zip(blocks, blocks[1:])) + head[blocks[-1].end():]
-    assert f'<title>{TITLE}</title>' in head
+    titles = re.findall(r'<title>[^<]*</title>', head)
+    assert len(titles) == 1, titles
+    head = head.replace(titles[0], f'<title>{TITLE}</title>')
     body = re.sub(r'(?s)<main\b.*?</main>', lambda _: MAIN, rest, count=1)
     return head + '</head>' + body
 

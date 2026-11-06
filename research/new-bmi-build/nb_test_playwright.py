@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""/new-bmi-calculator/ checks in Chromium (CMB-023). Needs Python Playwright + Chromium.
+"""/new-bmi-calculator/ checks in Chromium (CMB-023; the Oxford wording since CMB-024). Needs Python Playwright + Chromium.
 Serve the repo (python3 -m http.server 8000), then:
   python3 research/new-bmi-build/nb_test_playwright.py http://localhost:8000 research/new-bmi-build/nb_stats.json
   - the calculator: every side-by-side row and both worked examples typed into the real calculator, and the page's cells
@@ -12,10 +12,13 @@ Serve the repo (python3 -m http.server 8000), then:
   - Calculate ends above the fold at 360 and 390 px; the page is never wider than the screen at 320, 360, 390 and 1280,
     before and after Calculate; every table fits its frame; rendered SVG labels stay inside the figure and off each
     other, every shape and line and the plotted curve;
-  - 7 FAQ in order, the JSON-LD equal to the visible answers, one tap opens an answer and one closes it;
+  - 8 FAQ in order ("What is the Oxford BMI calculator?" third since CMB-024, its answer word for word), the JSON-LD
+    equal to the visible answers, one tap opens an answer and one closes it;
   - sections sit directly in main .container, no <article>, no page-level style, no inline style in <main> outside the
     figure; the head's scripts other than JSON-LD, the header, and the scripts after </main> equal origin/main's;
-  - head: title and H1 kept, description, OG/Twitter text and the preferred images, the JSON-LD graph; old OG image gone;
+  - head: the CMB-024 title in <title>, og:title and twitter:title; the H1 kept; the description 160 characters or
+    fewer and the same in OG and Twitter; Oxford in the intro and the takeaways; the preferred images, the JSON-LD
+    graph; old OG image gone;
   - internal links answer 200, anchors exist, outside links are registry URLs; nothing from the prompt's NEVER WRITE list.
 Every check runs; nothing is skipped. Exit 1 on any failure."""
 import sys, os, json, math, re, csv, struct, subprocess
@@ -81,7 +84,8 @@ NEVER = [r'more accurate', r'\bcorrect', r'\bbias', r'remov\w* (?:a|the) bias', 
          r'mathematically sound', r'clinically validated', r'thousands of studies', r'major health organi[sz]ations',
          r'Royal Society', r'International Journal of Obesity', r'see.s analysis', r'cubed', r'\bcube\b', r'compromise',
          r'slimmer', r'\bNormal\b', r'\bobese\b']
-FAQ_Q = ['What is the new BMI formula?', 'Who created the new BMI?', 'Why is the new BMI different from traditional BMI?',
+FAQ_Q = ['What is the new BMI formula?', 'Who created the new BMI?', 'What is the Oxford BMI calculator?',
+         'Why is the new BMI different from traditional BMI?',
          'Is the new BMI more accurate than traditional BMI?', 'Should I use new BMI or traditional BMI?',
          'Does the new BMI change my category?', 'Which BMI do CDC and WHO use?']
 LABELS = {'/age-bmi-calculator/': ['age-height-ft', 'age-height-in', 'age-height-cm', 'age-weight-lbs', 'age-weight-kg', 'age-years'],
@@ -91,10 +95,13 @@ LABELS = {'/age-bmi-calculator/': ['age-height-ft', 'age-height-in', 'age-height
           '/lean-body-mass/': ['lbm-height-ft', 'lbm-height-in', 'lbm-height-cm', 'lbm-weight-lbs', 'lbm-weight-kg', 'lbm-sex'],
           '/new-bmi-calculator/': ['newbmi-height-ft', 'newbmi-height-in', 'newbmi-weight-lbs', 'newbmi-height-cm', 'newbmi-weight-kg']}
 PI = {r: f'{SITE}/assets/images/preferred/new-bmi-calculator-{r}.png' for r in ('1x1', '4x3', '16x9')}
-TITLE = 'New BMI Calculator (Trefethen) - Updated Body Mass Index Formula'
+TITLE = 'New BMI Calculator: Oxford Professor’s Formula (Trefethen)'
 H1 = 'New BMI Calculator (Trefethen Formula)'
-DESC = ('Compare New BMI, Trefethen’s 2013 formula, with traditional BMI for your height and weight. '
+DESC = ('The 2013 New BMI formula from Oxford professor Nick Trefethen, next to traditional BMI. '
         'See both numbers, the gap at your height and which one to use.')
+OXFORD_FAQ = ('It is the name many people search for New BMI, the formula Nick Trefethen published in 2013 while he was a '
+              'professor at the University of Oxford. This calculator applies his formula, which is on his Oxford page. It is '
+              'his own proposal, not a medical standard, and CDC still uses the traditional formula.')
 
 
 def git_main():
@@ -179,8 +186,8 @@ with sync_playwright() as p:
         ogt: document.querySelector('meta[property="og:title"]').content, twt: document.querySelector('meta[name="twitter:title"]').content,
         tw: [...document.querySelectorAll('meta[name="twitter:image"]')].map(m => m.content),
         ogd: document.querySelector('meta[property="og:description"]').content, twd: document.querySelector('meta[name="twitter:description"]').content})""")
-    ok(head['desc'] == DESC and len(DESC) <= 160, f'description {head["desc"]!r}')
-    ok(head['ogd'] == head['twd'] == DESC and head['ogt'] == head['twt'] == H1, f'OG / Twitter text {head}')
+    ok(head['desc'] == DESC and len(head['desc']) <= 160, f'description ({len(head["desc"])} characters) {head["desc"]!r}')
+    ok(head['ogd'] == head['twd'] == DESC and head['ogt'] == head['twt'] == TITLE, f'OG / Twitter text {head}')
     ok(head['robots'] == ['max-image-preview:large'] and head['canon'] == SITE + '/new-bmi-calculator/', 'robots / canonical')
     ok(head['og'] == [PI['16x9']] and head['tw'] == [PI['16x9']] and (head['ogw'], head['ogh']) == ('1200', '675'), f'OG / Twitter image {head}')
     ok(head['ogalt'].startswith('Chart: New BMI minus traditional BMI by height') and '"' not in head['ogalt'], 'og:image:alt')
@@ -197,12 +204,14 @@ with sync_playwright() as p:
     ok([i['name'] for i in GR['BreadcrumbList']['itemListElement']] == ['Home', 'Calculators', 'New BMI Calculator (Trefethen)'], 'breadcrumb')
 
     # ---- the fixed text: intro, takeaways, disclaimer (the men page's, verbatim)
-    ok(norm(pg.inner_text('.intro-text')) == 'See your BMI with Nick Trefethen’s 2013 formula next to the traditional one.', 'intro text')
+    intro = norm(pg.inner_text('.intro-text'))
+    ok(intro == 'See your BMI with the 2013 formula from Oxford professor Nick Trefethen, next to the traditional one.'
+       and 'Oxford' in intro, f'intro text {intro!r}')
     ok(norm(pg.inner_text('.intro-note')) == 'A mathematician’s proposal, not a medical standard: CDC still calculates BMI with height squared. Method and sources'
        and pg.get_attribute('.intro-note a', 'href') == '#sources', 'intro note')
     kt = pg.evaluate("() => [document.querySelector('.key-takeaways .answer').textContent, ...[...document.querySelectorAll('.key-takeaways li')].map(l => l.textContent)]")
     ok([norm(x) for x in kt] == [
-        'New BMI is Nick Trefethen’s 2013 alternative to the traditional formula: 1.3 × kg ÷ m2.5, or 5734 × lb ÷ in2.5. It matches traditional BMI at about 5′6.5″ (1.69 m), reads higher if you are shorter and lower if you are taller.',
+        'New BMI is the 2013 alternative to the traditional formula from Nick Trefethen, then a professor at the University of Oxford: 1.3 × kg ÷ m2.5, or 5734 × lb ÷ in2.5. It matches traditional BMI at about 5′6.5″ (1.69 m), reads higher if you are shorter and lower if you are taller.',
         'The gap depends on height alone: New BMI is 5.3% higher than traditional BMI at 5′0″ and 3.9% lower at 6′0″, whatever you weigh.',
         'A traditional BMI of 25.0 becomes 26.3 at 5′0″ and 24.0 at 6′0″.',
         'Trefethen says his formula is “not based on epidemiological studies” and may not be an improvement.',
@@ -351,7 +360,8 @@ with sync_playwright() as p:
         i.querySelector('.faq-answer').textContent.replace(/\\s+/g, ' ').trim()])""")
     ok([q for q, _ in visq] == FAQ_Q, f'FAQ questions {[q for q, _ in visq]}')
     ok([[q['name'], q['acceptedAnswer']['text']] for q in GR['FAQPage']['mainEntity']] == visq, 'FAQ JSON-LD differs from the visible answers')
-    ok(len(visq) == 7 and visq[3][1].startswith('Trefethen doesn’t claim that.'), 'FAQ 4 first sentence')
+    ok(len(visq) == 8 and visq[4][1].startswith('Trefethen doesn’t claim that.'), 'FAQ 5 (more accurate?) first sentence')
+    ok(len(visq) == 8 and visq[2] == ['What is the Oxford BMI calculator?', OXFORD_FAQ], f'FAQ 3 (Oxford) {visq[2] if len(visq) > 2 else None}')
     for i, q in enumerate(pg.query_selector_all('.faq-question')):
         q.scroll_into_view_if_needed(); q.click(); pg.wait_for_timeout(30)
         ok(pg.evaluate('i => document.querySelectorAll(".faq-item")[i].classList.contains("open")', i), f'FAQ {i} did not open in one tap')

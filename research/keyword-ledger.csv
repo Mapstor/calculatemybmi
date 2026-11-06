@@ -5069,7 +5069,7 @@ bmi calculator black female,10,0,-50,Low,B1-chart,tool,women-bmi-calculator,tert
 calculate bmi index female,10,-100,-100,Unknown,B1-chart,tool,women-bmi-calculator,tertiary,,auto,
 bmi calculators,,,,,existing-page,tool,calculators,primary,,na,"Live page target; not covered by KWP rounds B1-B3 - volume missing (seed in round 2), never estimated"
 bmi guides,,,,,existing-page,informational,blog,primary,,na,"Live page target; not covered by KWP rounds B1-B3 - volume missing (seed in round 2), never estimated"
-new bmi calculator,,,,,existing-page,tool,new-bmi-calculator,primary,,na,"Live page target; not covered by KWP rounds B1-B3 - volume missing (seed in round 2), never estimated"
+new bmi calculator,1000,-28,-28,Low,KWP-2026-11-06,tool,new-bmi-calculator,primary,,na,KWP-2026-11-06: the owner's KWP CSV for the seeds handed 2026-11-05 (CMB-023). latest bmi calculator is the same KWP group: do not add the two volumes.
 what is bmi,,,,,existing-page,informational,blog/what-is-bmi,primary,,na,"Live page target; not covered by KWP rounds B1-B3 - volume missing (seed in round 2), never estimated"
 bmi history,,,,,existing-page,informational,blog/bmi-history,primary,,na,"Live page target; not covered by KWP rounds B1-B3 - volume missing (seed in round 2), never estimated"
 bmi health risks,,,,,existing-page,informational,blog/bmi-and-health-risks,primary,,na,"Live page target; not covered by KWP rounds B1-B3 - volume missing (seed in round 2), never estimated"
@@ -5696,3 +5696,18 @@ obesity in african american community essay,0,0,0,,B-state-oct2026,informational
 trust for america's health obesity,10,0,,Low,B-state-oct2026,informational,,discard,navigational,na,TFAH report brand
 trust for america's health obesity report,10,-100,-100,,B-state-oct2026,informational,,discard,navigational,na,TFAH report brand
 us weight statistics,20,100,-33,Low,B-state-oct2026,informational,us-obesity-statistics,tertiary,,auto,US weight/BMI statistics; average-weight page proposed
+latest bmi calculator,1000,-28,-28,Low,KWP-2026-11-06,tool,new-bmi-calculator,secondary,,na,Same KWP group as new bmi calculator (KWP-2026-11-06): do not add the two volumes.
+new body mass index,480,0,-34,Low,KWP-2026-11-06,tool,new-bmi-calculator,secondary,,na,
+bmi new,480,0,-34,Low,KWP-2026-11-06,tool,new-bmi-calculator,secondary,,na,
+oxford bmi calculator,40,-25,50,Low,KWP-2026-11-06,tool,new-bmi-calculator,secondary,,na,
+bmi updated,70,-29,-29,Low,KWP-2026-11-06,tool,new-bmi-calculator,tertiary,,na,
+new bmi scale,40,0,0,Low,KWP-2026-11-06,tool,new-bmi-calculator,tertiary,,na,
+bmi for short people,40,33,0,Low,KWP-2026-11-06,tool,new-bmi-calculator,tertiary,,na,
+bmi short person,40,33,0,Low,KWP-2026-11-06,tool,new-bmi-calculator,tertiary,,na,
+new bmi formula,20,-50,-50,Low,KWP-2026-11-06,tool,new-bmi-calculator,tertiary,,na,
+actual bmi calculator,20,0,0,Low,KWP-2026-11-06,tool,new-bmi-calculator,tertiary,,na,
+trefethen bmi,10,0,0,Low,KWP-2026-11-06,tool,new-bmi-calculator,tertiary,,na,
+nick trefethen bmi,10,0,0,Low,KWP-2026-11-06,tool,new-bmi-calculator,tertiary,,na,
+trefethen bmi calculator,10,0,0,Low,KWP-2026-11-06,tool,new-bmi-calculator,tertiary,,na,
+new bmi formula calculator,10,0,0,Low,KWP-2026-11-06,tool,new-bmi-calculator,tertiary,,na,
+bmi 2.5,10,0,0,Low,KWP-2026-11-06,tool,new-bmi-calculator,tertiary,,na,
