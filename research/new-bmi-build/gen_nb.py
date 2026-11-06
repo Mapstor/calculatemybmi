@@ -181,8 +181,8 @@ FAQ = [
      'University of Oxford. The letter called BMI “a bizarre measure”; the formula itself is on his Oxford page. He describes '
      'himself there as “an applied mathematician, not a doctor or an epidemiologist.”'),
     ('What is the Oxford BMI calculator?',
-     'It is the name many people search for New BMI, the formula Nick Trefethen published in 2013 while he was a '
-     'professor at the University of Oxford. This calculator applies his formula, which is on his Oxford page. It is his '
+     'That is the name many people use when they search for New BMI, the formula Nick Trefethen published in 2013 '
+     'while he was a professor at the University of Oxford. This calculator applies his formula, which is on his Oxford page. It is his '
      'own proposal, not a medical standard, and CDC still uses the traditional formula.'),
     ('Why is the new BMI different from traditional BMI?',
      'It divides weight by height to the power 2.5 instead of height squared, then multiplies by 1.3. Weight cancels out '
@@ -265,8 +265,8 @@ MAIN = (
     '</div>'
     + CALC +
     '<div class="key-takeaways"><div class="key-takeaways-title">Key takeaways</div>'
-    '<p class="answer"><strong>New BMI</strong> is the 2013 alternative to the traditional formula from Nick Trefethen, '
-    'then a professor at the University of Oxford: 1.3 × kg ÷ m<sup>2.5</sup>, or 5734 × lb ÷ in<sup>2.5</sup>. It <strong>matches traditional BMI at about 5′6.5″ '
+    '<p class="answer"><strong>New BMI</strong> is Nick Trefethen’s 2013 alternative to the traditional formula, '
+    'proposed while he was a professor at the University of Oxford: 1.3 × kg ÷ m<sup>2.5</sup>, or 5734 × lb ÷ in<sup>2.5</sup>. It <strong>matches traditional BMI at about 5′6.5″ '
     '(1.69 m)</strong>, reads higher if you are shorter and lower if you are taller.</p><ul>'
     f'<li>The gap depends on height alone: New BMI is <strong>{up60} higher</strong> than traditional BMI at 5′0″ and '
     f'<strong>{dn72} lower</strong> at 6′0″, whatever you weigh.</li>'

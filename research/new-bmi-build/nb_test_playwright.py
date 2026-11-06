@@ -99,8 +99,8 @@ TITLE = 'New BMI Calculator: Oxford Professor’s Formula (Trefethen)'
 H1 = 'New BMI Calculator (Trefethen Formula)'
 DESC = ('The 2013 New BMI formula from Oxford professor Nick Trefethen, next to traditional BMI. '
         'See both numbers, the gap at your height and which one to use.')
-OXFORD_FAQ = ('It is the name many people search for New BMI, the formula Nick Trefethen published in 2013 while he was a '
-              'professor at the University of Oxford. This calculator applies his formula, which is on his Oxford page. It is '
+OXFORD_FAQ = ('That is the name many people use when they search for New BMI, the formula Nick Trefethen published in 2013 '
+              'while he was a professor at the University of Oxford. This calculator applies his formula, which is on his Oxford page. It is '
               'his own proposal, not a medical standard, and CDC still uses the traditional formula.')
 
 
@@ -211,7 +211,7 @@ with sync_playwright() as p:
        and pg.get_attribute('.intro-note a', 'href') == '#sources', 'intro note')
     kt = pg.evaluate("() => [document.querySelector('.key-takeaways .answer').textContent, ...[...document.querySelectorAll('.key-takeaways li')].map(l => l.textContent)]")
     ok([norm(x) for x in kt] == [
-        'New BMI is the 2013 alternative to the traditional formula from Nick Trefethen, then a professor at the University of Oxford: 1.3 × kg ÷ m2.5, or 5734 × lb ÷ in2.5. It matches traditional BMI at about 5′6.5″ (1.69 m), reads higher if you are shorter and lower if you are taller.',
+        'New BMI is Nick Trefethen’s 2013 alternative to the traditional formula, proposed while he was a professor at the University of Oxford: 1.3 × kg ÷ m2.5, or 5734 × lb ÷ in2.5. It matches traditional BMI at about 5′6.5″ (1.69 m), reads higher if you are shorter and lower if you are taller.',
         'The gap depends on height alone: New BMI is 5.3% higher than traditional BMI at 5′0″ and 3.9% lower at 6′0″, whatever you weigh.',
         'A traditional BMI of 25.0 becomes 26.3 at 5′0″ and 24.0 at 6′0″.',
         'Trefethen says his formula is “not based on epidemiological studies” and may not be an improvement.',
