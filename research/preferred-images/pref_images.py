@@ -43,8 +43,12 @@ Pages and pictures (the data are the pages' own):
                      adults aged 20 to 74 in every CDC survey from 1960-1962 to August 2021-August 2023 (age-adjusted; the
                      page's CSV, = NCHS Health E-Stat 111 Table 1): three lines with a dot per survey in the category
                      colors (red, amber, dark red) over light grid lines at 0, 10, 20, 30, 40 and 50%, centered.
+  new-bmi-calculator  the /new-bmi-calculator/ figure (CMB-023): New BMI minus traditional BMI at 70 kg, every 0.01 m
+                     from 1.40 to 2.00 m (research/new-bmi-build/nb_stats.json), on a zero line with light grid lines at
+                     -1 to +3 points; the dots at 5'0" and 6'0" and the open dot where the curve crosses zero at 1.69 m;
+                     -2 to +4 points, centered.
 Renders each SVG in Chromium at its exact size, checks there is no <text> and the size, and stores a palette PNG.
-usage: pref_images.py REPO_ROOT [NAME ...]   (NAMEs: draw only those pages; CMB-022 drew us-obesity-statistics)"""
+usage: pref_images.py REPO_ROOT [NAME ...]   (NAMEs: draw only those pages; CMB-023 drew new-bmi-calculator)"""
 import sys, os, io, json
 from playwright.sync_api import sync_playwright
 from PIL import Image
@@ -341,10 +345,39 @@ def obs_trend(w, h):
     return frame(w, h, ''.join(out))
 
 
+def new_bmi(w, h):
+    """The New BMI figure: New minus traditional BMI at 70 kg from 1.40 to 2.00 m, zero line, the 5'0" and 6'0" dots and
+    the crossing at 1.69 m."""
+    S = json.load(open(os.path.join(ROOT, 'research/new-bmi-build/nb_stats.json'), encoding='utf-8'))
+    C = S['curve']
+    assert C['kg'] == 70 and len(C['points']) == 61 and C['points'][0][0] == 1.4 and C['points'][-1][0] == 2.0
+    assert C['points'][0][1] > 0 > C['points'][-1][1] and C['cross_m'] == 1.69
+    side = min(w, h * 1.8)                                   # same proportions in every crop, centered
+    pw, ph = side * 0.84, side * 0.84 / 1.8
+    x0, y0 = (w - pw) / 2, (h - ph) / 2
+    xs = lambda m: x0 + (m - 1.40) * pw / 0.60               # 1.40 to 2.00 m
+    ys = lambda v: y0 + (4 - v) * ph / 6                     # +4 to -2 points
+    out = []
+    for v in (-1, 1, 2, 3):
+        out.append(f'<line x1="{x0:.1f}" y1="{ys(v):.1f}" x2="{x0 + pw:.1f}" y2="{ys(v):.1f}" stroke="#e2e8f0" '
+                   f'stroke-width="{side * 0.0025:.1f}"/>')
+    out.append(f'<line x1="{x0:.1f}" y1="{ys(0):.1f}" x2="{x0 + pw:.1f}" y2="{ys(0):.1f}" stroke="#4b5563" '
+               f'stroke-width="{side * 0.004:.1f}"/>')
+    pts = ' '.join(f'{xs(m):.1f},{ys(d):.1f}' for m, d in C['points'])
+    out.append(f'<polyline points="{pts}" fill="none" stroke="#0e7490" stroke-width="{side * 0.009:.1f}" '
+               'stroke-linejoin="round" stroke-linecap="round"/>')
+    for mk in C['marks']:
+        out.append(f'<circle cx="{xs(mk["m"]):.1f}" cy="{ys(mk["diff_exact"]):.1f}" r="{side * 0.012:.1f}" fill="#0e7490" '
+                   f'stroke="#ffffff" stroke-width="{side * 0.004:.1f}"/>')
+    out.append(f'<circle cx="{xs(C["cross_m"]):.1f}" cy="{ys(0):.1f}" r="{side * 0.012:.1f}" fill="#ffffff" stroke="#111827" '
+               f'stroke-width="{side * 0.004:.1f}"/>')
+    return frame(w, h, ''.join(out))
+
+
 PAGES = {'bmi-chart': bmi_chart, 'bmi-calculator': waffle, 'healthy-bmi-range': risk_bars, 'bmi-chart-women': women_bars,
          'body-fat-percentage-chart': body_fat, 'women-bmi-calculator': women_calc, 'bmi-chart-men': men_chart,
          'average-weight': avg_weight, 'body-fat-calculator': bf_calc, 'how-to-measure-body-fat': htm,
-         'us-obesity-statistics': obs_trend}
+         'us-obesity-statistics': obs_trend, 'new-bmi-calculator': new_bmi}
 
 if __name__ == '__main__':
     os.makedirs(OUT, exist_ok=True)

@@ -1,0 +1,703 @@
+{
+ "about": "New BMI (Trefethen) against traditional BMI with the arithmetic of calculateNewBMI() in assets/js/calculator.js; our calculation for /new-bmi-calculator/ (CMB-023). Built by research/new-bmi-build/nb_stats.py.",
+ "formulas": {
+  "traditional_us": "lb / in^2 * 703",
+  "traditional_metric": "kg / m^2",
+  "new_metric": "1.3 * kg / m^2.5",
+  "new_us": "5734 * lb / in^2.5",
+  "kg_per_lb": "1 / 2.20462",
+  "m_per_in": "2.54 / 100",
+  "rounding": "Math.round(x * 10 + 1e-9) / 10",
+  "difference": "round1(new) - round1(traditional)"
+ },
+ "side_by_side": [
+  {
+   "inches": 60,
+   "height": "5′0″",
+   "cm": "152.4 cm",
+   "lb": 120,
+   "kg": "54.4 kg",
+   "traditional": "23.4",
+   "new": "24.7",
+   "difference": "+1.3",
+   "traditional_category": "Healthy weight",
+   "new_category": "Healthy weight",
+   "category_changes": false,
+   "traditional_exact": 23.433333,
+   "new_exact": 24.67905
+  },
+  {
+   "inches": 60,
+   "height": "5′0″",
+   "cm": "152.4 cm",
+   "lb": 150,
+   "kg": "68.0 kg",
+   "traditional": "29.3",
+   "new": "30.8",
+   "difference": "+1.5",
+   "traditional_category": "Overweight",
+   "new_category": "Class 1 obesity",
+   "category_changes": true,
+   "traditional_exact": 29.291667,
+   "new_exact": 30.848813
+  },
+  {
+   "inches": 60,
+   "height": "5′0″",
+   "cm": "152.4 cm",
+   "lb": 180,
+   "kg": "81.6 kg",
+   "traditional": "35.2",
+   "new": "37.0",
+   "difference": "+1.8",
+   "traditional_category": "Class 2 obesity",
+   "new_category": "Class 2 obesity",
+   "category_changes": false,
+   "traditional_exact": 35.15,
+   "new_exact": 37.018575
+  },
+  {
+   "inches": 60,
+   "height": "5′0″",
+   "cm": "152.4 cm",
+   "lb": 210,
+   "kg": "95.3 kg",
+   "traditional": "41.0",
+   "new": "43.2",
+   "difference": "+2.2",
+   "traditional_category": "Class 3 obesity",
+   "new_category": "Class 3 obesity",
+   "category_changes": false,
+   "traditional_exact": 41.008333,
+   "new_exact": 43.188338
+  },
+  {
+   "inches": 64,
+   "height": "5′4″",
+   "cm": "162.6 cm",
+   "lb": 120,
+   "kg": "54.4 kg",
+   "traditional": "20.6",
+   "new": "21.0",
+   "difference": "+0.4",
+   "traditional_category": "Healthy weight",
+   "new_category": "Healthy weight",
+   "category_changes": false,
+   "traditional_exact": 20.595703,
+   "new_exact": 21.001805
+  },
+  {
+   "inches": 64,
+   "height": "5′4″",
+   "cm": "162.6 cm",
+   "lb": 150,
+   "kg": "68.0 kg",
+   "traditional": "25.7",
+   "new": "26.3",
+   "difference": "+0.6",
+   "traditional_category": "Overweight",
+   "new_category": "Overweight",
+   "category_changes": false,
+   "traditional_exact": 25.744629,
+   "new_exact": 26.252257
+  },
+  {
+   "inches": 64,
+   "height": "5′4″",
+   "cm": "162.6 cm",
+   "lb": 180,
+   "kg": "81.6 kg",
+   "traditional": "30.9",
+   "new": "31.5",
+   "difference": "+0.6",
+   "traditional_category": "Class 1 obesity",
+   "new_category": "Class 1 obesity",
+   "category_changes": false,
+   "traditional_exact": 30.893555,
+   "new_exact": 31.502708
+  },
+  {
+   "inches": 64,
+   "height": "5′4″",
+   "cm": "162.6 cm",
+   "lb": 210,
+   "kg": "95.3 kg",
+   "traditional": "36.0",
+   "new": "36.8",
+   "difference": "+0.8",
+   "traditional_category": "Class 2 obesity",
+   "new_category": "Class 2 obesity",
+   "category_changes": false,
+   "traditional_exact": 36.04248,
+   "new_exact": 36.753159
+  },
+  {
+   "inches": 68,
+   "height": "5′8″",
+   "cm": "172.7 cm",
+   "lb": 120,
+   "kg": "54.4 kg",
+   "traditional": "18.2",
+   "new": "18.0",
+   "difference": "−0.2",
+   "traditional_category": "Underweight",
+   "new_category": "Underweight",
+   "category_changes": false,
+   "traditional_exact": 18.243945,
+   "new_exact": 18.048216
+  },
+  {
+   "inches": 68,
+   "height": "5′8″",
+   "cm": "172.7 cm",
+   "lb": 150,
+   "kg": "68.0 kg",
+   "traditional": "22.8",
+   "new": "22.6",
+   "difference": "−0.2",
+   "traditional_category": "Healthy weight",
+   "new_category": "Healthy weight",
+   "category_changes": false,
+   "traditional_exact": 22.804931,
+   "new_exact": 22.56027
+  },
+  {
+   "inches": 68,
+   "height": "5′8″",
+   "cm": "172.7 cm",
+   "lb": 180,
+   "kg": "81.6 kg",
+   "traditional": "27.4",
+   "new": "27.1",
+   "difference": "−0.3",
+   "traditional_category": "Overweight",
+   "new_category": "Overweight",
+   "category_changes": false,
+   "traditional_exact": 27.365917,
+   "new_exact": 27.072324
+  },
+  {
+   "inches": 68,
+   "height": "5′8″",
+   "cm": "172.7 cm",
+   "lb": 210,
+   "kg": "95.3 kg",
+   "traditional": "31.9",
+   "new": "31.6",
+   "difference": "−0.3",
+   "traditional_category": "Class 1 obesity",
+   "new_category": "Class 1 obesity",
+   "category_changes": false,
+   "traditional_exact": 31.926903,
+   "new_exact": 31.584378
+  },
+  {
+   "inches": 72,
+   "height": "6′0″",
+   "cm": "182.9 cm",
+   "lb": 120,
+   "kg": "54.4 kg",
+   "traditional": "16.3",
+   "new": "15.6",
+   "difference": "−0.7",
+   "traditional_category": "Moderate thinness",
+   "new_category": "Severe thinness",
+   "category_changes": true,
+   "traditional_exact": 16.273148,
+   "new_exact": 15.644991
+  },
+  {
+   "inches": 72,
+   "height": "6′0″",
+   "cm": "182.9 cm",
+   "lb": 150,
+   "kg": "68.0 kg",
+   "traditional": "20.3",
+   "new": "19.6",
+   "difference": "−0.7",
+   "traditional_category": "Healthy weight",
+   "new_category": "Healthy weight",
+   "category_changes": false,
+   "traditional_exact": 20.341435,
+   "new_exact": 19.556239
+  },
+  {
+   "inches": 72,
+   "height": "6′0″",
+   "cm": "182.9 cm",
+   "lb": 180,
+   "kg": "81.6 kg",
+   "traditional": "24.4",
+   "new": "23.5",
+   "difference": "−0.9",
+   "traditional_category": "Healthy weight",
+   "new_category": "Healthy weight",
+   "category_changes": false,
+   "traditional_exact": 24.409722,
+   "new_exact": 23.467487
+  },
+  {
+   "inches": 72,
+   "height": "6′0″",
+   "cm": "182.9 cm",
+   "lb": 210,
+   "kg": "95.3 kg",
+   "traditional": "28.5",
+   "new": "27.4",
+   "difference": "−1.1",
+   "traditional_category": "Overweight",
+   "new_category": "Overweight",
+   "category_changes": false,
+   "traditional_exact": 28.478009,
+   "new_exact": 27.378735
+  },
+  {
+   "inches": 76,
+   "height": "6′4″",
+   "cm": "193.0 cm",
+   "lb": 120,
+   "kg": "54.4 kg",
+   "traditional": "14.6",
+   "new": "13.7",
+   "difference": "−0.9",
+   "traditional_category": "Severe thinness",
+   "new_category": "Severe thinness",
+   "category_changes": false,
+   "traditional_exact": 14.605263,
+   "new_exact": 13.666981
+  },
+  {
+   "inches": 76,
+   "height": "6′4″",
+   "cm": "193.0 cm",
+   "lb": 150,
+   "kg": "68.0 kg",
+   "traditional": "18.3",
+   "new": "17.1",
+   "difference": "−1.2",
+   "traditional_category": "Underweight",
+   "new_category": "Underweight",
+   "category_changes": false,
+   "traditional_exact": 18.256579,
+   "new_exact": 17.083726
+  },
+  {
+   "inches": 76,
+   "height": "6′4″",
+   "cm": "193.0 cm",
+   "lb": 180,
+   "kg": "81.6 kg",
+   "traditional": "21.9",
+   "new": "20.5",
+   "difference": "−1.4",
+   "traditional_category": "Healthy weight",
+   "new_category": "Healthy weight",
+   "category_changes": false,
+   "traditional_exact": 21.907895,
+   "new_exact": 20.500471
+  },
+  {
+   "inches": 76,
+   "height": "6′4″",
+   "cm": "193.0 cm",
+   "lb": 210,
+   "kg": "95.3 kg",
+   "traditional": "25.6",
+   "new": "23.9",
+   "difference": "−1.7",
+   "traditional_category": "Overweight",
+   "new_category": "Healthy weight",
+   "category_changes": true,
+   "traditional_exact": 25.559211,
+   "new_exact": 23.917216
+  }
+ ],
+ "by_height": [
+  {
+   "inches": 60,
+   "height": "5′0″",
+   "m": "1.52 m",
+   "cm": "152.4 cm",
+   "ratio": 1.053055,
+   "percent": "+5.3%",
+   "traditional_25_becomes": "26.3"
+  },
+  {
+   "inches": 64,
+   "height": "5′4″",
+   "m": "1.63 m",
+   "cm": "162.6 cm",
+   "ratio": 1.019616,
+   "percent": "+2.0%",
+   "traditional_25_becomes": "25.5"
+  },
+  {
+   "inches": 66.5,
+   "height": "5′6.5″",
+   "m": "1.69 m",
+   "cm": "168.9 cm",
+   "ratio": 1.000266,
+   "percent": "0.0%",
+   "traditional_25_becomes": "25.0"
+  },
+  {
+   "inches": 68,
+   "height": "5′8″",
+   "m": "1.73 m",
+   "cm": "172.7 cm",
+   "ratio": 0.989173,
+   "percent": "−1.1%",
+   "traditional_25_becomes": "24.7"
+  },
+  {
+   "inches": 70,
+   "height": "5′10″",
+   "m": "1.78 m",
+   "cm": "177.8 cm",
+   "ratio": 0.974939,
+   "percent": "−2.5%",
+   "traditional_25_becomes": "24.4"
+  },
+  {
+   "inches": 72,
+   "height": "6′0″",
+   "m": "1.83 m",
+   "cm": "182.9 cm",
+   "ratio": 0.961303,
+   "percent": "−3.9%",
+   "traditional_25_becomes": "24.0"
+  },
+  {
+   "inches": 76,
+   "height": "6′4″",
+   "m": "1.93 m",
+   "cm": "193.0 cm",
+   "ratio": 0.935664,
+   "percent": "−6.4%",
+   "traditional_25_becomes": "23.4"
+  }
+ ],
+ "examples": [
+  {
+   "inches": 62,
+   "height": "5′2″",
+   "cm": "157.5 cm",
+   "lb": 150,
+   "kg": "68.0 kg",
+   "traditional": "27.4",
+   "new": "28.4",
+   "difference": "+1.0",
+   "traditional_category": "Overweight",
+   "new_category": "Overweight",
+   "category_changes": false,
+   "traditional_exact": 27.432362,
+   "new_exact": 28.420869,
+   "kg_2dp": "68.04",
+   "m_4dp": "1.5748",
+   "in_squared": 3844,
+   "us_new": "28.4",
+   "metric_traditional": "27.4"
+  },
+  {
+   "inches": 74,
+   "height": "6′2″",
+   "cm": "188.0 cm",
+   "lb": 150,
+   "kg": "68.0 kg",
+   "traditional": "19.3",
+   "new": "18.3",
+   "difference": "−1.0",
+   "traditional_category": "Healthy weight",
+   "new_category": "Underweight",
+   "category_changes": true,
+   "traditional_exact": 19.256757,
+   "new_exact": 18.261535,
+   "kg_2dp": "68.04",
+   "m_4dp": "1.8796",
+   "in_squared": 5476,
+   "us_new": "18.3",
+   "metric_traditional": "19.3"
+  }
+ ],
+ "curve": {
+  "kg": 70,
+  "lb": "154",
+  "points": [
+   [
+    1.4,
+    3.525019
+   ],
+   [
+    1.41,
+    3.337772
+   ],
+   [
+    1.42,
+    3.156866
+   ],
+   [
+    1.43,
+    2.982064
+   ],
+   [
+    1.44,
+    2.813143
+   ],
+   [
+    1.45,
+    2.649887
+   ],
+   [
+    1.46,
+    2.492089
+   ],
+   [
+    1.47,
+    2.339551
+   ],
+   [
+    1.48,
+    2.192083
+   ],
+   [
+    1.49,
+    2.049504
+   ],
+   [
+    1.5,
+    1.911639
+   ],
+   [
+    1.51,
+    1.778321
+   ],
+   [
+    1.52,
+    1.649388
+   ],
+   [
+    1.53,
+    1.524687
+   ],
+   [
+    1.54,
+    1.404069
+   ],
+   [
+    1.55,
+    1.287392
+   ],
+   [
+    1.56,
+    1.174519
+   ],
+   [
+    1.57,
+    1.06532
+   ],
+   [
+    1.58,
+    0.959667
+   ],
+   [
+    1.59,
+    0.85744
+   ],
+   [
+    1.6,
+    0.758522
+   ],
+   [
+    1.61,
+    0.662801
+   ],
+   [
+    1.62,
+    0.570169
+   ],
+   [
+    1.63,
+    0.480523
+   ],
+   [
+    1.64,
+    0.393762
+   ],
+   [
+    1.65,
+    0.30979
+   ],
+   [
+    1.66,
+    0.228516
+   ],
+   [
+    1.67,
+    0.149849
+   ],
+   [
+    1.68,
+    0.073705
+   ],
+   [
+    1.69,
+    0.0
+   ],
+   [
+    1.7,
+    -0.071345
+   ],
+   [
+    1.71,
+    -0.140406
+   ],
+   [
+    1.72,
+    -0.207257
+   ],
+   [
+    1.73,
+    -0.271971
+   ],
+   [
+    1.74,
+    -0.334614
+   ],
+   [
+    1.75,
+    -0.395254
+   ],
+   [
+    1.76,
+    -0.453954
+   ],
+   [
+    1.77,
+    -0.510776
+   ],
+   [
+    1.78,
+    -0.56578
+   ],
+   [
+    1.79,
+    -0.619021
+   ],
+   [
+    1.8,
+    -0.670557
+   ],
+   [
+    1.81,
+    -0.72044
+   ],
+   [
+    1.82,
+    -0.768721
+   ],
+   [
+    1.83,
+    -0.815451
+   ],
+   [
+    1.84,
+    -0.860678
+   ],
+   [
+    1.85,
+    -0.904447
+   ],
+   [
+    1.86,
+    -0.946804
+   ],
+   [
+    1.87,
+    -0.987792
+   ],
+   [
+    1.88,
+    -1.027453
+   ],
+   [
+    1.89,
+    -1.065827
+   ],
+   [
+    1.9,
+    -1.102953
+   ],
+   [
+    1.91,
+    -1.13887
+   ],
+   [
+    1.92,
+    -1.173613
+   ],
+   [
+    1.93,
+    -1.207218
+   ],
+   [
+    1.94,
+    -1.239719
+   ],
+   [
+    1.95,
+    -1.27115
+   ],
+   [
+    1.96,
+    -1.301541
+   ],
+   [
+    1.97,
+    -1.330924
+   ],
+   [
+    1.98,
+    -1.35933
+   ],
+   [
+    1.99,
+    -1.386786
+   ],
+   [
+    2.0,
+    -1.413321
+   ]
+  ],
+  "marks": [
+   {
+    "inches": 60,
+    "height": "5′0″",
+    "m": 1.524,
+    "diff_exact": 1.599008,
+    "difference": "+1.6"
+   },
+   {
+    "inches": 72,
+    "height": "6′0″",
+    "m": 1.8288,
+    "diff_exact": -0.809924,
+    "difference": "−0.8"
+   }
+  ],
+  "cross_m": 1.69,
+  "cross_height": "5′6.5″",
+  "m_lo": 1.4,
+  "height_lo": "4′7.1″",
+  "diff_lo": 3.525019,
+  "m_hi": 2.0,
+  "height_hi": "6′6.7″",
+  "diff_hi": -1.413321
+ },
+ "anchors_checked": [
+  "5′2″ 150 lb: 27.4, 28.4, +1.0, Overweight, Overweight",
+  "6′2″ 150 lb: 19.3, 18.3, −1.0, Healthy weight, Underweight",
+  "5′0″ 150 lb: 29.3, 30.8, +1.5, Overweight, Class 1 obesity",
+  "6′4″ 210 lb: 25.6, 23.9, −1.7, Overweight, Healthy weight",
+  "6′4″ 150 lb: 18.3, 17.1, −1.2, Underweight, Underweight"
+ ]
+}
