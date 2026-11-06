@@ -740,3 +740,10 @@ main.reading .key-takeaways .answer, main.reading .key-takeaways ul { max-width:
 .embed-code:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-bg); }
 button.cta-button { border: 0; cursor: pointer; }
 @media (max-width: 359px) { .flow .data-table--wrap th:not([colspan]), .flow .data-table--wrap td { padding-left: 0.25rem; padding-right: 0.25rem; } }
+
+/* CMB-023 — the shared calculator without inline styles (DESIGN.md "New BMI page (CMB-023)"): a row of a .calc-panel can
+   start hidden with the hidden attribute (.form-row sets display: grid; calculator.js's unit toggle then sets display
+   inline, which wins), and the line under the healthy-weight tiles takes its size from here. The other calculators keep
+   their inline styles, which say the same. */
+.calc-panel [hidden] { display: none; }
+.weight-range-box p { margin: 0; font-size: 0.9375rem; }

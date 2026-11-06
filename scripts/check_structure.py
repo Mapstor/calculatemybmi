@@ -23,12 +23,18 @@ Runs before every commit. Requires every sitemap page to pass:
   - images in search: max-image-preview:large on every page; the D-14 pages name a text-free preferred image
     (16:9, 4:3, 1:1) in og:image, the JSON-LD image and primaryImageOfPage; every <img> in <main> is in the
     image sitemap (scripts/check_images.py, CMB-015)
+  - label wiring: every <label> has a for= that matches the id of exactly one input, select or textarea, and no
+    id repeats on the page, so a tap on a label focuses its field and screen readers name it (CMB-023)
+The repo root is the folder above scripts/, found from this file, so the gate runs from any checkout (CMB-023).
 Exits non-zero on any failure.
 """
 import re, os, glob, sys, json, html
+from collections import Counter
 from html.parser import HTMLParser
 
-def sitemap_pages(root='/workspace'):
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+def sitemap_pages(root=ROOT):
     sm = os.path.join(root, 'sitemap.xml')
     urls = re.findall(r'<loc>([^<]+)</loc>', open(sm).read())
     files = []
@@ -42,7 +48,7 @@ def sitemap_pages(root='/workspace'):
     return files
 
 _CALC_INIT = None
-def calc_init_calls(fn, root='/workspace'):
+def calc_init_calls(fn, root=ROOT):
     """1 if assets/js/calculator.js init() still calls fn(), else 0."""
     global _CALC_INIT
     if _CALC_INIT is None:
@@ -115,6 +121,34 @@ def faq_schema_drift(src):
             out.append(f'FAQ schema answer differs from the page: "{name[:60]}"')
     return out
 
+class _Labels(HTMLParser):
+    """Every element id, each <label>'s for= and text, and the ids of the controls a label can name."""
+    CONTROLS = ('input', 'select', 'textarea')
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.ids, self.labels, self.controls, self.cur = [], [], [], None
+    def handle_starttag(self, tag, attrs):
+        a = dict(attrs)
+        if a.get('id') is not None: self.ids.append(a['id'])
+        if tag in self.CONTROLS and a.get('id') is not None: self.controls.append(a['id'])
+        if tag == 'label': self.cur = [a.get('for'), []]
+    def handle_endtag(self, tag):
+        if tag == 'label' and self.cur is not None:
+            self.labels.append((self.cur[0], re.sub(r'\s+', ' ', ''.join(self.cur[1])).strip())); self.cur = None
+    def handle_data(self, data):
+        if self.cur is not None: self.cur[1].append(data)
+
+def label_problems(src):
+    """A <label> names exactly one input, select or textarea by for=, and no id repeats (CMB-023)."""
+    p = _Labels(); p.feed(src); p.close()
+    out = []
+    for f, text in p.labels:
+        if not f: out.append(f'label "{text[:40]}" has no for attribute')
+        elif p.controls.count(f) != 1: out.append(f'label for="{f}" matches {p.controls.count(f)} controls (need exactly 1)')
+    dup = sorted(k for k, n in Counter(p.ids).items() if n > 1)
+    if dup: out.append(f'ids used more than once: {dup}')
+    return out
+
 def check_file(page, path):
     problems = []
     if not os.path.exists(path):
@@ -173,6 +207,8 @@ def check_file(page, path):
         if n != 1: problems.append(f'mobile menu toggle has {n} click bindings (need exactly 1)')
     # Schema must match visible content: FAQPage answers are the visible answers.
     problems.extend(faq_schema_drift(src))
+    # Label wiring: each label names one field, ids are unique (CMB-023).
+    problems.extend(f'label: {p}' for p in label_problems(src))
     # Tag-balance check — delegates to scripts/check_markup.py's parser.
     try:
         here = os.path.dirname(os.path.abspath(__file__))
@@ -240,7 +276,7 @@ def hub_problems(root, paths):
         if any(x != str(len(guides)) for x in nums): out.append(f'/blog/ {label} gives {nums} guides, the sitemap has {len(guides)}')
     return out
 
-def main(root='/workspace'):
+def main(root=ROOT):
     pages = sitemap_pages(root)
     ok = 0; fails = []
     for page, path in pages:
