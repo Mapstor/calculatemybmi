@@ -47,8 +47,12 @@ Pages and pictures (the data are the pages' own):
                      from 1.40 to 2.00 m (research/new-bmi-build/nb_stats.json), on a zero line with light grid lines at
                      -1 to +3 points; the dots at 5'0" and 6'0" and the open dot where the curve crosses zero at 1.69 m;
                      -2 to +4 points, centered.
+  ideal-weight       the /ideal-weight/ figure (CMB-028): women 5'0"-6'0" and men 5'0"-6'6" side by side on one weight
+                     axis (90 to 220 lb, the same inches-to-width scale in both), the healthy band in whole pounds and the
+                     Hamwi, Devine, Robinson and Miller lines at a medium frame (research/ideal-weight-build/iw_stats.json),
+                     in the page figure's colours and dashes over light grid lines, centered.
 Renders each SVG in Chromium at its exact size, checks there is no <text> and the size, and stores a palette PNG.
-usage: pref_images.py REPO_ROOT [NAME ...]   (NAMEs: draw only those pages; CMB-023 drew new-bmi-calculator)"""
+usage: pref_images.py REPO_ROOT [NAME ...]   (NAMEs: draw only those pages; CMB-028 drew ideal-weight)"""
 import sys, os, io, json
 from playwright.sync_api import sync_playwright
 from PIL import Image
@@ -374,10 +378,46 @@ def new_bmi(w, h):
     return frame(w, h, ''.join(out))
 
 
+def ideal_weight(w, h):
+    """The /ideal-weight/ figure: the healthy band and the four formula lines for women and men, side by side."""
+    S = json.load(open(os.path.join(ROOT, 'research/ideal-weight-build/iw_stats.json'), encoding='utf-8'))
+    F = S['figure']
+    assert [p['inches'] for p in F['female']] == list(range(60, 73)) and [p['inches'] for p in F['male']] == list(range(60, 79))
+    side = min(w, h * 1.8)                                   # same proportions in every crop, centered
+    pw, ph = side * 0.84, side * 0.84 / 1.8
+    x0, y0 = (w - pw) / 2, (h - ph) / 2
+    gap = pw * 0.08
+    k = (pw - gap) / 30                                      # 12 + 18 inches, one scale for both panels
+    left = {'female': x0, 'male': x0 + 12 * k + gap}
+    hx = lambda sex, i: left[sex] + (i - 60) * k
+    wy = lambda lb: y0 + ph - (lb - 90) * ph / 130           # 90 to 220 lb
+    style = {'hamwi': ('#111827', None), 'devine': ('#be185d', (7, 4)), 'robinson': ('#0891b2', None), 'miller': ('#b45309', (2.5, 2.5))}
+    sw = side * 0.0075
+    out = []
+    for sex, pts in F.items():
+        a, b = pts[0]['inches'], pts[-1]['inches']
+        for lb in (100, 140, 180, 220):
+            out.append(f'<line x1="{hx(sex, a):.1f}" y1="{wy(lb):.1f}" x2="{hx(sex, b):.1f}" y2="{wy(lb):.1f}" stroke="#e5e7eb" '
+                       f'stroke-width="{side * 0.002:.1f}"/>')
+        band = (' '.join(f'{hx(sex, p["inches"]):.1f},{wy(p["healthy_lb"][1]):.1f}' for p in pts) + ' '
+                + ' '.join(f'{hx(sex, p["inches"]):.1f},{wy(p["healthy_lb"][0]):.1f}' for p in reversed(pts)))
+        out.append(f'<polygon points="{band}" fill="#d1fae5"/>')
+        out.append(f'<line x1="{hx(sex, a):.1f}" y1="{wy(90):.1f}" x2="{hx(sex, b):.1f}" y2="{wy(90):.1f}" stroke="#9ca3af" '
+                   f'stroke-width="{side * 0.002:.1f}"/>')
+    for n in ('hamwi', 'robinson', 'devine', 'miller'):     # the dashed lines on top, as on the page
+        col, dash = style[n]
+        extra = (f' stroke-dasharray="{dash[0] * sw / 2:.1f} {dash[1] * sw / 2:.1f}" stroke-linecap="butt"' if dash
+                 else ' stroke-linecap="round"')
+        for sex, pts in F.items():
+            line = ' '.join(f'{hx(sex, p["inches"]):.1f},{wy(p[n]):.1f}' for p in pts)
+            out.append(f'<polyline points="{line}" fill="none" stroke="{col}" stroke-width="{sw:.1f}" stroke-linejoin="round"{extra}/>')
+    return frame(w, h, ''.join(out))
+
+
 PAGES = {'bmi-chart': bmi_chart, 'bmi-calculator': waffle, 'healthy-bmi-range': risk_bars, 'bmi-chart-women': women_bars,
          'body-fat-percentage-chart': body_fat, 'women-bmi-calculator': women_calc, 'bmi-chart-men': men_chart,
          'average-weight': avg_weight, 'body-fat-calculator': bf_calc, 'how-to-measure-body-fat': htm,
-         'us-obesity-statistics': obs_trend, 'new-bmi-calculator': new_bmi}
+         'us-obesity-statistics': obs_trend, 'new-bmi-calculator': new_bmi, 'ideal-weight': ideal_weight}
 
 if __name__ == '__main__':
     os.makedirs(OUT, exist_ok=True)

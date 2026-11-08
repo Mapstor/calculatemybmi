@@ -54,9 +54,16 @@ for(const p of ['index.html','women-bmi-calculator/index.html','men-bmi-calculat
  t('women status line',/above the healthy range/.test(d.getElementById('women-weight-diff').textContent),d.getElementById('women-weight-diff').textContent);}
 {const {dom,errs}=load('ideal-weight/index.html');const d=dom.window.document,P=d.getElementById('panel-ideal');P.querySelector('.height-ft').value='5';P.querySelector('.height-in').value='6';P.querySelector('.sex-select').value='female';P.querySelector('.frame-select').value='medium';d.getElementById('calc-ideal-btn').click();
  t('ideal Devine in lbs first',d.getElementById('ideal-devine').textContent.replace(/\s+/g,' ').trim()==='131 lbs (59.3 kg)',d.getElementById('ideal-devine').textContent);
- t('ideal average in lbs first',d.getElementById('ideal-average').textContent==='131.4 lbs (59.6 kg)',d.getElementById('ideal-average').textContent);
- t('ideal summary gives the BMI at the formula weights',/your BMI would be 20\.9 to 21\.8, inside the healthy range/.test(d.getElementById('ideal-results').textContent),d.getElementById('ideal-results').textContent.match(/your BMI would be[^.]*/));
- t('ideal frame link has a target',!!d.getElementById('frame-size'));t('ideal runs',errs.length===0,errs);}
+ // CMB-028: Hamwi in his own pounds (130, not 129), the span of the four replaces the average, frame changes Hamwi only, no number under 5 feet
+ t('ideal Hamwi 130 lbs',d.getElementById('ideal-hamwi').textContent.replace(/\s+/g,' ').trim()==='130 lbs (59.0 kg)',d.getElementById('ideal-hamwi').textContent);
+ t('ideal span in lbs first',d.getElementById('ideal-span').textContent.replace(/\s+/g,' ').trim()==='130–135 lbs (59.0–61.3 kg)',d.getElementById('ideal-span').textContent);
+ t('ideal has no average',!d.getElementById('ideal-average')&&!/average/i.test(d.getElementById('ideal-results').textContent));
+ t('ideal summary gives the BMI at the formula weights',/your BMI would be 21\.0 to 21\.8, inside the healthy range/.test(d.getElementById('ideal-results').textContent),d.getElementById('ideal-results').textContent.match(/your BMI would be[^.]*/));
+ P.querySelector('.frame-select').value='large';d.getElementById('calc-ideal-btn').click();
+ t('ideal large frame changes Hamwi only',d.getElementById('ideal-hamwi').textContent.replace(/\s+/g,' ').trim()==='143 lbs (64.9 kg)'&&d.getElementById('ideal-devine').textContent.replace(/\s+/g,' ').trim()==='131 lbs (59.3 kg)',d.getElementById('ideal-hamwi').textContent+' / '+d.getElementById('ideal-devine').textContent);
+ P.querySelector('.height-ft').value='4';P.querySelector('.height-in').value='10';P.querySelector('.frame-select').value='medium';d.getElementById('calc-ideal-btn').click();
+ t('ideal 4\'10" gives no formula number',/^Starts at 5 feet/.test(d.getElementById('ideal-hamwi').textContent)&&/start at 5 feet \(60 inches\)/.test(d.getElementById('ideal-results').textContent)&&d.getElementById('ideal-bmi-range').textContent.replace(/\s+/g,' ').trim()==='89–119 lbs (40.4–54.0 kg)',d.getElementById('ideal-hamwi').textContent+' / '+d.getElementById('ideal-bmi-range').textContent);
+ t('ideal frame link has a target',!!d.getElementById('frame'));t('ideal runs',errs.length===0,errs);}
 {const {dom,errs}=load('lean-body-mass/index.html');const d=dom.window.document,P=d.getElementById('panel-lbm');P.querySelector('.height-ft').value='5';P.querySelector('.height-in').value='8';P.querySelector('.weight-lbs').value='170';P.querySelector('.sex-select').value='male';d.getElementById('calc-lbm-btn').click();
  t('lean mass 128.5 lbs (58.3 kg)',d.getElementById('lbm-lbm').textContent.replace(/\s+/g,' ').trim()==='128.5 lbs (58.3 kg)',d.getElementById('lbm-lbm').textContent);
  t('lean mass kg for the chart',d.getElementById('lbm-lbm').dataset.kg==='58.30',d.getElementById('lbm-lbm').dataset.kg);t('lbm runs',errs.length===0,errs);}

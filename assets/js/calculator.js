@@ -342,30 +342,27 @@ function categorizeChildBMI(bmi, percentile, pctP95) {
 }
 
 
+// Ideal body weight (CMB-028). Each formula starts at 5 feet (60 in, 152.4 cm) and adds a fixed amount per inch over it,
+// so under 5 feet there is no formula weight, only the healthy BMI range. Devine, Robinson and Miller are in kg as
+// Pai and Paloucek tabulate them (2000) and have no frame term; Hamwi is in his own pounds (1964), and frame size is his
+// rule, so it changes his number only: 10% less for a small frame, 10% more for a large one.
 function calculateIdealWeight() {
   const panel = document.getElementById('panel-ideal');
   const heightInches = getHeightInches(panel);
   const sex = panel.querySelector('.sex-select')?.value || 'female';
   const frame = panel.querySelector('.frame-select')?.value || 'medium';
   if (heightInches <= 0) return;
-  let devine, robinson, miller, hamwi;
-  const heightOver5ft = Math.max(0, heightInches - 60);
-  if (sex === 'male') {
-    devine = 50 + 2.3 * heightOver5ft;
-    robinson = 52 + 1.9 * heightOver5ft;
-    miller = 56.2 + 1.41 * heightOver5ft;
-    hamwi = 48 + 2.7 * heightOver5ft;
-  } else {
-    devine = 45.5 + 2.3 * heightOver5ft;
-    robinson = 49 + 1.7 * heightOver5ft;
-    miller = 53.1 + 1.36 * heightOver5ft;
-    hamwi = 45.5 + 2.2 * heightOver5ft;
-  }
-  let frameAdjust = 1;
-  if (frame === 'small') frameAdjust = 0.9;
-  if (frame === 'large') frameAdjust = 1.1;
-  devine *= frameAdjust; robinson *= frameAdjust; miller *= frameAdjust; hamwi *= frameAdjust;
-  displayIdealWeightResults('ideal', { devine, robinson, miller, hamwi }, heightInches, sex, frame);
+  if (heightInches < 60) { displayIdealWeightResults('ideal', null, heightInches, sex, frame); return; }
+  const over = heightInches - 60, male = sex === 'male';
+  const fromKg = kg => ({ kg: kg, lb: kgToLbs(kg) });
+  const devine = fromKg(male ? 50 + 2.3 * over : 45.5 + 2.3 * over);
+  const robinson = fromKg(male ? 52 + 1.9 * over : 49 + 1.7 * over);
+  const miller = fromKg(male ? 56.2 + 1.41 * over : 53.1 + 1.36 * over);
+  const hamwiAt = f => {
+    const lb = (male ? 106 + 6 * over : 100 + 5 * over) * (f === 'small' ? 0.9 : f === 'large' ? 1.1 : 1);
+    return { lb: lb, kg: lbsToKg(lb) };
+  };
+  displayIdealWeightResults('ideal', { hamwi: hamwiAt(frame), devine, robinson, miller, hamwiAt }, heightInches, sex, frame);
 }
 
 function calculateLBM() {
@@ -671,58 +668,67 @@ function displayKidsResults(type, bmi, category, years, months, sex, heightInche
 
 /* ===== DISPLAY: IDEAL WEIGHT RESULTS ===== */
 
-function displayIdealWeightResults(type, weights, heightInches, sex, frame) {
+// w: { hamwi, devine, robinson, miller } as { lb, kg }, plus hamwiAt(frame); null under 5 feet (CMB-028).
+function displayIdealWeightResults(type, w, heightInches, sex, frame) {
   const section = document.getElementById(type + '-results');
   if (!section) return;
-  const W = kg => cmbFmtKg(kg), Walt = kg => cmbFmtKgAlt(kg);
+  const set = (id, h) => { const el = document.getElementById(type + '-' + id); if (el) el.innerHTML = h; };
+  const alt = s => ' <span class="result-item-alt">(' + s + ')</span>';
+  const keys = ['hamwi', 'devine', 'robinson', 'miller'];
   const hr = getHealthyWeightRange(heightInches);
-  ['devine', 'robinson', 'miller', 'hamwi'].forEach(k => {
-    const el = document.getElementById(type + '-' + k);
-    if (el) el.innerHTML = W(weights[k]) + ' <span class="result-item-alt">(' + Walt(weights[k]) + ')</span>';
-  });
-  const bmiRangeEl = document.getElementById(type + '-bmi-range');
-  if (bmiRangeEl) bmiRangeEl.innerHTML = fmtBand(hr) + ' <span class="result-item-alt">(' + fmtBand(hr, true) + ')</span>';
-  const avg = (weights.devine + weights.robinson + weights.miller + weights.hamwi) / 4;
-  const avgEl = document.getElementById(type + '-average');
-  if (avgEl) avgEl.innerHTML = cmbFmtKg(avg, 1) + ' <span class="result-item-alt">(' + cmbFmtKgAlt(avg, 1) + ')</span>';
+  set('bmi-range', fmtBand(hr) + alt(fmtBand(hr, true)));
+  const at = fmtH(heightInches) + ' (' + fmtHalt(heightInches) + ')';
+  const origins = `<div class="er-section"><h2>Where the formulas come from</h2>
+    <ul class="er-list">
+      <li><strong>Hamwi (1964):</strong> desirable body weight in pounds, from an American Diabetes Association book, with a frame rule.</li>
+      <li><strong>Devine (1974):</strong> from an article on gentamicin dosing.</li>
+      <li><strong>Robinson (1983):</strong> fitted to the 1959 Metropolitan Life tables.</li>
+      <li><strong>Miller (1983):</strong> fitted to the 1983 Metropolitan Life tables.</li>
+    </ul>
+    <p class="er-note">Pai and Paloucek found Robinson&rsquo;s and Miller&rsquo;s equations &ldquo;strikingly similar&rdquo; to Devine&rsquo;s and concluded that &ldquo;any one of these equations may be used to estimate IBW&rdquo; (<a href="https://pubmed.ncbi.nlm.nih.gov/10981254/" target="_blank" rel="noopener">2000</a>).</p></div>`;
+  // two short notes: one paragraph of two long lines runs past 80 characters a line at desktop width
+  const frameRule = '<p class="er-note">Frame size changes only Hamwi&rsquo;s number: his rule subtracts 10% for a small frame and adds 10% for a large one.</p>'
+    + '<p class="er-note">The Devine, Robinson and Miller equations used here have no frame term.</p>';
+  const frameLink = 'To estimate your frame from your wrist, see <a href="#frame">body frame size</a>.';
+  let html;
+
+  if (!w) {
+    const start = CMB_METRIC ? '152.4 cm' : '5 feet', startAlt = CMB_METRIC ? '5 feet' : '152.4 cm';
+    keys.forEach(k => set(k, 'Starts at ' + start + alt(startAlt)));
+    set('span', 'Start at ' + start + alt(startAlt));
+    html = `<div class="er-section"><h2>What these numbers are</h2><div class="er-summary"><p>The four formulas start at 5 feet (60 inches), so they give no weight for ${at}. At that height the healthy BMI range of 18.5 to 24.9 is <strong>${fmtBand(hr)}</strong> (${fmtBand(hr, true)}).</p></div></div>`
+      + origins + `<div class="er-section"><h2>Frame size</h2>${frameRule}<p class="er-note">${frameLink}</p></div>`;
+  } else {
+    // Whole pounds and kilograms to 0.1, halves up; the 1e-9 keeps float noise from deciding an exact half, as in round1().
+    const pr = f => ({ lb: Math.round(f.lb + 1e-9), kg: Math.round(f.kg * 10 + 1e-9) / 10 });
+    const u = p => CMB_METRIC ? p.kg.toFixed(1) + ' kg' : p.lb + ' lbs';
+    const ua = p => CMB_METRIC ? p.lb + ' lbs' : p.kg.toFixed(1) + ' kg';
+    const P = {};
+    keys.forEach(k => { P[k] = pr(w[k]); set(k, u(P[k]) + alt(ua(P[k]))); });
+    // The span is the lowest to the highest of the four as printed, in each unit.
+    const lo = { lb: Math.min(...keys.map(k => P[k].lb)), kg: Math.min(...keys.map(k => P[k].kg)) };
+    const hi = { lb: Math.max(...keys.map(k => P[k].lb)), kg: Math.max(...keys.map(k => P[k].kg)) };
+    const rng = (a, b, unit, d) => (a === b ? a.toFixed(d) : a.toFixed(d) + '–' + b.toFixed(d)) + ' ' + unit;
+    const spanLb = rng(lo.lb, hi.lb, 'lbs', 0), spanKg = rng(lo.kg, hi.kg, 'kg', 1);
+    set('span', CMB_METRIC ? spanKg + alt(spanLb) : spanLb + alt(spanKg));
+    const bmis = keys.map(k => round1(calculateBMI(w[k].lb, heightInches)));
+    const bLo = Math.min(...bmis), bHi = Math.max(...bmis);
+    const where = bLo >= 18.5 && bHi < 25 ? 'inside the healthy range of 18.5 to 24.9'
+      : bHi < 18.5 ? 'below the healthy range of 18.5 to 24.9'
+      : bLo >= 25 ? 'above the healthy range of 18.5 to 24.9'
+      : 'partly outside the healthy range of 18.5 to 24.9';
+    const bmiText = bLo === bHi ? bLo.toFixed(1) : bLo.toFixed(1) + ' to ' + bHi.toFixed(1);
+    const spanText = u(lo) === u(hi) ? `all give <strong>${u(lo)}</strong>` : `span <strong>${u(lo)}</strong> to <strong>${u(hi)}</strong>`;
+    const others = ['small', 'medium', 'large'].filter(f => f !== frame);
+    const hamwiFor = f => { const p = pr(w.hamwiAt(f)); return u(p) + ' (' + ua(p) + ')'; };
+    html = `<div class="er-section"><h2>What these numbers are</h2><div class="er-summary"><p>For ${at}, ${sex === 'male' ? 'male' : 'female'}, ${frame} frame, the four formulas ${spanText}. At those weights your BMI would be ${bmiText}, ${where}.</p><p class="er-summary-note">Each formula gives one weight for a height. The healthy range above takes in every weight with a BMI of 18.5 to 24.9 at your height.</p></div></div>`
+      + origins
+      + `<div class="er-section"><h2>Frame size</h2>${frameRule}<p class="er-note">For a ${others[0]} frame Hamwi&rsquo;s weight is ${hamwiFor(others[0])}; for a ${others[1]} frame, ${hamwiFor(others[1])}. ${frameLink}</p></div>`;
+  }
 
   section.classList.add('visible');
-
   const ext = getExtendedContainer(type);
-  if (!ext) return;
-
-  const all = [weights.devine, weights.robinson, weights.miller, weights.hamwi];
-  const minW = Math.min(...all), maxW = Math.max(...all);
-  const frameLabel = frame.charAt(0).toUpperCase() + frame.slice(1);
-  const adj = frame === 'small' ? 0.9 : frame === 'large' ? 1.1 : 1;
-  const mediumAvg = avg / adj;
-  const bmis = all.map(kg => round1(calculateBMI(kgToLbs(kg), heightInches)));
-  const bLo = Math.min(...bmis), bHi = Math.max(...bmis);
-  const where = bLo >= 18.5 && bHi < 25 ? 'inside the healthy range of 18.5 to 24.9'
-    : bHi < 18.5 ? 'below the healthy range of 18.5 to 24.9'
-    : bLo >= 25 ? 'above the healthy range of 18.5 to 24.9'
-    : 'partly outside the healthy range of 18.5 to 24.9';
-  const bmiText = bLo === bHi ? 'would be ' + bLo.toFixed(1) : 'would be ' + bLo.toFixed(1) + ' to ' + bHi.toFixed(1);
-
-  let html = '';
-
-  html += `<div class="er-section"><h2>What these numbers are</h2><div class="er-summary"><p>For ${fmtH(heightInches)} (${fmtHalt(heightInches)}), ${sex === 'male' ? 'male' : 'female'}, ${frameLabel.toLowerCase()} frame, the four formulas span <strong>${W(minW)}</strong> to <strong>${W(maxW)}</strong>. At those weights your BMI ${bmiText}, ${where}.</p><p class="er-summary-note">The formulas come from clinical work such as drug dosing; for judging a healthy weight, the BMI range in the results above is the standard.</p></div></div>`;
-
-  html += `<div class="er-section"><h2>Where the formulas come from</h2>
-    <ul class="er-list">
-      <li><strong>Devine (1974):</strong> published for drug dosing, in an article on gentamicin.</li>
-      <li><strong>Robinson (1983):</strong> fitted to the 1959 Metropolitan Life height&ndash;weight tables.</li>
-      <li><strong>Miller (1983):</strong> fitted to the 1983 Metropolitan Life tables.</li>
-      <li><strong>Hamwi (1964):</strong> a quick clinical rule for estimating weight from height.</li>
-    </ul>
-    <p class="er-note">They agree closely because the height&ndash;weight tables behind them agree; Pai and Paloucek conclude that any one of them may be used (<a href="https://pubmed.ncbi.nlm.nih.gov/10981254/" target="_blank" rel="noopener">2000</a>).</p></div>`;
-
-  const others = ['small', 'medium', 'large'].filter(f => f !== frame).map(f => [f, mediumAvg * (f === 'small' ? 0.9 : f === 'large' ? 1.1 : 1)]);
-  html += `<div class="er-section"><h2>Frame size</h2>
-    <p class="er-note">You chose a <strong>${frame} frame</strong> (${frame === 'small' ? '10% below the medium-frame average' : frame === 'large' ? '10% above the medium-frame average' : 'no adjustment'}). With a ${others[0][0]} frame the average would be ${W(others[0][1])}; with a ${others[1][0]} frame, ${W(others[1][1])}.</p>
-    <p class="er-note">To estimate your frame from your wrist size, see <a href="#frame-size">body frame size</a>.</p></div>`;
-
-  ext.innerHTML = html;
+  if (ext) ext.innerHTML = html;
 }
 
 /* ===== DISPLAY: LBM RESULTS ===== */

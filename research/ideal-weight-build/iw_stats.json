@@ -1,0 +1,3355 @@
+{
+ "about": "Ideal body weight by the four formulas with the arithmetic of calculateIdealWeight() and displayIdealWeightResults() in assets/js/calculator.js; our calculation for /ideal-weight/ (CMB-028). Built by research/ideal-weight-build/iw_stats.py.",
+ "constants": {
+  "female": {
+   "hamwi": [
+    "100",
+    "5",
+    "lb"
+   ],
+   "devine": [
+    "45.5",
+    "2.3",
+    "kg"
+   ],
+   "robinson": [
+    "49",
+    "1.7",
+    "kg"
+   ],
+   "miller": [
+    "53.1",
+    "1.36",
+    "kg"
+   ]
+  },
+  "male": {
+   "hamwi": [
+    "106",
+    "6",
+    "lb"
+   ],
+   "devine": [
+    "50",
+    "2.3",
+    "kg"
+   ],
+   "robinson": [
+    "52",
+    "1.9",
+    "kg"
+   ],
+   "miller": [
+    "56.2",
+    "1.41",
+    "kg"
+   ]
+  }
+ },
+ "rules": {
+  "lb_per_kg": 2.20462,
+  "frame": {
+   "small": 0.9,
+   "medium": 1,
+   "large": 1.1
+  },
+  "start_inches": 60,
+  "printed": "whole lb = Math.round(lb + 1e-9); kg = Math.round(kg * 10 + 1e-9) / 10 (halves up)",
+  "span": "lowest to highest of the four as printed",
+  "bmi": "round1(calculateBMI(lb, inches))",
+  "healthy": "weightBounds(inches, 18.5, 24.9): whole lb and whole kg, each unit on its own"
+ },
+ "tables": {
+  "female": [
+   {
+    "inches": 60,
+    "height": "5′0″",
+    "cm": "152.4 cm",
+    "sex": "female",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 100,
+     "kg": "45.4",
+     "lb_exact": 100.0,
+     "kg_exact": 45.359291
+    },
+    "devine": {
+     "lb": 100,
+     "kg": "45.5",
+     "lb_exact": 100.31021,
+     "kg_exact": 45.5
+    },
+    "robinson": {
+     "lb": 108,
+     "kg": "49.0",
+     "lb_exact": 108.02638,
+     "kg_exact": 49.0
+    },
+    "miller": {
+     "lb": 117,
+     "kg": "53.1",
+     "lb_exact": 117.065322,
+     "kg_exact": 53.1
+    },
+    "span": {
+     "lb": [
+      100,
+      117
+     ],
+     "kg": [
+      "45.4",
+      "53.1"
+     ],
+     "width_lb": 17
+    },
+    "bmi": [
+     "19.5",
+     "22.9"
+    ],
+    "bmi_all": {
+     "hamwi": "19.5",
+     "devine": "19.6",
+     "robinson": "21.1",
+     "miller": "22.9"
+    },
+    "healthy": {
+     "lb": [
+      95,
+      127
+     ],
+     "kg": [
+      43,
+      57
+     ],
+     "kg_converted": [
+      "43.1",
+      "57.6"
+     ]
+    }
+   },
+   {
+    "inches": 61,
+    "height": "5′1″",
+    "cm": "154.9 cm",
+    "sex": "female",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 105,
+     "kg": "47.6",
+     "lb_exact": 105.0,
+     "kg_exact": 47.627255
+    },
+    "devine": {
+     "lb": 105,
+     "kg": "47.8",
+     "lb_exact": 105.380836,
+     "kg_exact": 47.8
+    },
+    "robinson": {
+     "lb": 112,
+     "kg": "50.7",
+     "lb_exact": 111.774234,
+     "kg_exact": 50.7
+    },
+    "miller": {
+     "lb": 120,
+     "kg": "54.5",
+     "lb_exact": 120.063605,
+     "kg_exact": 54.46
+    },
+    "span": {
+     "lb": [
+      105,
+      120
+     ],
+     "kg": [
+      "47.6",
+      "54.5"
+     ],
+     "width_lb": 15
+    },
+    "bmi": [
+     "19.8",
+     "22.7"
+    ],
+    "bmi_all": {
+     "hamwi": "19.8",
+     "devine": "19.9",
+     "robinson": "21.1",
+     "miller": "22.7"
+    },
+    "healthy": {
+     "lb": [
+      98,
+      132
+     ],
+     "kg": [
+      45,
+      59
+     ],
+     "kg_converted": [
+      "44.5",
+      "59.9"
+     ]
+    }
+   },
+   {
+    "inches": 62,
+    "height": "5′2″",
+    "cm": "157.5 cm",
+    "sex": "female",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 110,
+     "kg": "49.9",
+     "lb_exact": 110.0,
+     "kg_exact": 49.89522
+    },
+    "devine": {
+     "lb": 110,
+     "kg": "50.1",
+     "lb_exact": 110.451462,
+     "kg_exact": 50.1
+    },
+    "robinson": {
+     "lb": 116,
+     "kg": "52.4",
+     "lb_exact": 115.522088,
+     "kg_exact": 52.4
+    },
+    "miller": {
+     "lb": 123,
+     "kg": "55.8",
+     "lb_exact": 123.061888,
+     "kg_exact": 55.82
+    },
+    "span": {
+     "lb": [
+      110,
+      123
+     ],
+     "kg": [
+      "49.9",
+      "55.8"
+     ],
+     "width_lb": 13
+    },
+    "bmi": [
+     "20.1",
+     "22.5"
+    ],
+    "bmi_all": {
+     "hamwi": "20.1",
+     "devine": "20.2",
+     "robinson": "21.1",
+     "miller": "22.5"
+    },
+    "healthy": {
+     "lb": [
+      101,
+      136
+     ],
+     "kg": [
+      46,
+      61
+     ],
+     "kg_converted": [
+      "45.8",
+      "61.7"
+     ]
+    }
+   },
+   {
+    "inches": 63,
+    "height": "5′3″",
+    "cm": "160.0 cm",
+    "sex": "female",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 115,
+     "kg": "52.2",
+     "lb_exact": 115.0,
+     "kg_exact": 52.163185
+    },
+    "devine": {
+     "lb": 116,
+     "kg": "52.4",
+     "lb_exact": 115.522088,
+     "kg_exact": 52.4
+    },
+    "robinson": {
+     "lb": 119,
+     "kg": "54.1",
+     "lb_exact": 119.269942,
+     "kg_exact": 54.1
+    },
+    "miller": {
+     "lb": 126,
+     "kg": "57.2",
+     "lb_exact": 126.060172,
+     "kg_exact": 57.18
+    },
+    "span": {
+     "lb": [
+      115,
+      126
+     ],
+     "kg": [
+      "52.2",
+      "57.2"
+     ],
+     "width_lb": 11
+    },
+    "bmi": [
+     "20.4",
+     "22.3"
+    ],
+    "bmi_all": {
+     "hamwi": "20.4",
+     "devine": "20.5",
+     "robinson": "21.1",
+     "miller": "22.3"
+    },
+    "healthy": {
+     "lb": [
+      105,
+      140
+     ],
+     "kg": [
+      48,
+      63
+     ],
+     "kg_converted": [
+      "47.6",
+      "63.5"
+     ]
+    }
+   },
+   {
+    "inches": 64,
+    "height": "5′4″",
+    "cm": "162.6 cm",
+    "sex": "female",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 120,
+     "kg": "54.4",
+     "lb_exact": 120.0,
+     "kg_exact": 54.431149
+    },
+    "devine": {
+     "lb": 121,
+     "kg": "54.7",
+     "lb_exact": 120.592714,
+     "kg_exact": 54.7
+    },
+    "robinson": {
+     "lb": 123,
+     "kg": "55.8",
+     "lb_exact": 123.017796,
+     "kg_exact": 55.8
+    },
+    "miller": {
+     "lb": 129,
+     "kg": "58.5",
+     "lb_exact": 129.058455,
+     "kg_exact": 58.54
+    },
+    "span": {
+     "lb": [
+      120,
+      129
+     ],
+     "kg": [
+      "54.4",
+      "58.5"
+     ],
+     "width_lb": 9
+    },
+    "bmi": [
+     "20.6",
+     "22.2"
+    ],
+    "bmi_all": {
+     "hamwi": "20.6",
+     "devine": "20.7",
+     "robinson": "21.1",
+     "miller": "22.2"
+    },
+    "healthy": {
+     "lb": [
+      108,
+      145
+     ],
+     "kg": [
+      49,
+      65
+     ],
+     "kg_converted": [
+      "49.0",
+      "65.8"
+     ]
+    }
+   },
+   {
+    "inches": 65,
+    "height": "5′5″",
+    "cm": "165.1 cm",
+    "sex": "female",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 125,
+     "kg": "56.7",
+     "lb_exact": 125.0,
+     "kg_exact": 56.699114
+    },
+    "devine": {
+     "lb": 126,
+     "kg": "57.0",
+     "lb_exact": 125.66334,
+     "kg_exact": 57.0
+    },
+    "robinson": {
+     "lb": 127,
+     "kg": "57.5",
+     "lb_exact": 126.76565,
+     "kg_exact": 57.5
+    },
+    "miller": {
+     "lb": 132,
+     "kg": "59.9",
+     "lb_exact": 132.056738,
+     "kg_exact": 59.9
+    },
+    "span": {
+     "lb": [
+      125,
+      132
+     ],
+     "kg": [
+      "56.7",
+      "59.9"
+     ],
+     "width_lb": 7
+    },
+    "bmi": [
+     "20.8",
+     "22.0"
+    ],
+    "bmi_all": {
+     "hamwi": "20.8",
+     "devine": "20.9",
+     "robinson": "21.1",
+     "miller": "22.0"
+    },
+    "healthy": {
+     "lb": [
+      111,
+      149
+     ],
+     "kg": [
+      51,
+      68
+     ],
+     "kg_converted": [
+      "50.3",
+      "67.6"
+     ]
+    }
+   },
+   {
+    "inches": 66,
+    "height": "5′6″",
+    "cm": "167.6 cm",
+    "sex": "female",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 130,
+     "kg": "59.0",
+     "lb_exact": 130.0,
+     "kg_exact": 58.967078
+    },
+    "devine": {
+     "lb": 131,
+     "kg": "59.3",
+     "lb_exact": 130.733966,
+     "kg_exact": 59.3
+    },
+    "robinson": {
+     "lb": 131,
+     "kg": "59.2",
+     "lb_exact": 130.513504,
+     "kg_exact": 59.2
+    },
+    "miller": {
+     "lb": 135,
+     "kg": "61.3",
+     "lb_exact": 135.055021,
+     "kg_exact": 61.26
+    },
+    "span": {
+     "lb": [
+      130,
+      135
+     ],
+     "kg": [
+      "59.0",
+      "61.3"
+     ],
+     "width_lb": 5
+    },
+    "bmi": [
+     "21.0",
+     "21.8"
+    ],
+    "bmi_all": {
+     "hamwi": "21.0",
+     "devine": "21.1",
+     "robinson": "21.1",
+     "miller": "21.8"
+    },
+    "healthy": {
+     "lb": [
+      115,
+      154
+     ],
+     "kg": [
+      52,
+      70
+     ],
+     "kg_converted": [
+      "52.2",
+      "69.9"
+     ]
+    }
+   },
+   {
+    "inches": 67,
+    "height": "5′7″",
+    "cm": "170.2 cm",
+    "sex": "female",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 135,
+     "kg": "61.2",
+     "lb_exact": 135.0,
+     "kg_exact": 61.235043
+    },
+    "devine": {
+     "lb": 136,
+     "kg": "61.6",
+     "lb_exact": 135.804592,
+     "kg_exact": 61.6
+    },
+    "robinson": {
+     "lb": 134,
+     "kg": "60.9",
+     "lb_exact": 134.261358,
+     "kg_exact": 60.9
+    },
+    "miller": {
+     "lb": 138,
+     "kg": "62.6",
+     "lb_exact": 138.053304,
+     "kg_exact": 62.62
+    },
+    "span": {
+     "lb": [
+      134,
+      138
+     ],
+     "kg": [
+      "60.9",
+      "62.6"
+     ],
+     "width_lb": 4
+    },
+    "bmi": [
+     "21.0",
+     "21.6"
+    ],
+    "bmi_all": {
+     "hamwi": "21.1",
+     "devine": "21.3",
+     "robinson": "21.0",
+     "miller": "21.6"
+    },
+    "healthy": {
+     "lb": [
+      118,
+      159
+     ],
+     "kg": [
+      54,
+      72
+     ],
+     "kg_converted": [
+      "53.5",
+      "72.1"
+     ]
+    }
+   },
+   {
+    "inches": 68,
+    "height": "5′8″",
+    "cm": "172.7 cm",
+    "sex": "female",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 140,
+     "kg": "63.5",
+     "lb_exact": 140.0,
+     "kg_exact": 63.503007
+    },
+    "devine": {
+     "lb": 141,
+     "kg": "63.9",
+     "lb_exact": 140.875218,
+     "kg_exact": 63.9
+    },
+    "robinson": {
+     "lb": 138,
+     "kg": "62.6",
+     "lb_exact": 138.009212,
+     "kg_exact": 62.6
+    },
+    "miller": {
+     "lb": 141,
+     "kg": "64.0",
+     "lb_exact": 141.051588,
+     "kg_exact": 63.98
+    },
+    "span": {
+     "lb": [
+      138,
+      141
+     ],
+     "kg": [
+      "62.6",
+      "64.0"
+     ],
+     "width_lb": 3
+    },
+    "bmi": [
+     "21.0",
+     "21.4"
+    ],
+    "bmi_all": {
+     "hamwi": "21.3",
+     "devine": "21.4",
+     "robinson": "21.0",
+     "miller": "21.4"
+    },
+    "healthy": {
+     "lb": [
+      122,
+      164
+     ],
+     "kg": [
+      56,
+      74
+     ],
+     "kg_converted": [
+      "55.3",
+      "74.4"
+     ]
+    }
+   },
+   {
+    "inches": 69,
+    "height": "5′9″",
+    "cm": "175.3 cm",
+    "sex": "female",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 145,
+     "kg": "65.8",
+     "lb_exact": 145.0,
+     "kg_exact": 65.770972
+    },
+    "devine": {
+     "lb": 146,
+     "kg": "66.2",
+     "lb_exact": 145.945844,
+     "kg_exact": 66.2
+    },
+    "robinson": {
+     "lb": 142,
+     "kg": "64.3",
+     "lb_exact": 141.757066,
+     "kg_exact": 64.3
+    },
+    "miller": {
+     "lb": 144,
+     "kg": "65.3",
+     "lb_exact": 144.049871,
+     "kg_exact": 65.34
+    },
+    "span": {
+     "lb": [
+      142,
+      146
+     ],
+     "kg": [
+      "64.3",
+      "66.2"
+     ],
+     "width_lb": 4
+    },
+    "bmi": [
+     "20.9",
+     "21.6"
+    ],
+    "bmi_all": {
+     "hamwi": "21.4",
+     "devine": "21.6",
+     "robinson": "20.9",
+     "miller": "21.3"
+    },
+    "healthy": {
+     "lb": [
+      125,
+      168
+     ],
+     "kg": [
+      57,
+      76
+     ],
+     "kg_converted": [
+      "56.7",
+      "76.2"
+     ]
+    }
+   },
+   {
+    "inches": 70,
+    "height": "5′10″",
+    "cm": "177.8 cm",
+    "sex": "female",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 150,
+     "kg": "68.0",
+     "lb_exact": 150.0,
+     "kg_exact": 68.038936
+    },
+    "devine": {
+     "lb": 151,
+     "kg": "68.5",
+     "lb_exact": 151.01647,
+     "kg_exact": 68.5
+    },
+    "robinson": {
+     "lb": 146,
+     "kg": "66.0",
+     "lb_exact": 145.50492,
+     "kg_exact": 66.0
+    },
+    "miller": {
+     "lb": 147,
+     "kg": "66.7",
+     "lb_exact": 147.048154,
+     "kg_exact": 66.7
+    },
+    "span": {
+     "lb": [
+      146,
+      151
+     ],
+     "kg": [
+      "66.0",
+      "68.5"
+     ],
+     "width_lb": 5
+    },
+    "bmi": [
+     "20.9",
+     "21.7"
+    ],
+    "bmi_all": {
+     "hamwi": "21.5",
+     "devine": "21.7",
+     "robinson": "20.9",
+     "miller": "21.1"
+    },
+    "healthy": {
+     "lb": [
+      129,
+      173
+     ],
+     "kg": [
+      59,
+      78
+     ],
+     "kg_converted": [
+      "58.5",
+      "78.5"
+     ]
+    }
+   },
+   {
+    "inches": 71,
+    "height": "5′11″",
+    "cm": "180.3 cm",
+    "sex": "female",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 155,
+     "kg": "70.3",
+     "lb_exact": 155.0,
+     "kg_exact": 70.306901
+    },
+    "devine": {
+     "lb": 156,
+     "kg": "70.8",
+     "lb_exact": 156.087096,
+     "kg_exact": 70.8
+    },
+    "robinson": {
+     "lb": 149,
+     "kg": "67.7",
+     "lb_exact": 149.252774,
+     "kg_exact": 67.7
+    },
+    "miller": {
+     "lb": 150,
+     "kg": "68.1",
+     "lb_exact": 150.046437,
+     "kg_exact": 68.06
+    },
+    "span": {
+     "lb": [
+      149,
+      156
+     ],
+     "kg": [
+      "67.7",
+      "70.8"
+     ],
+     "width_lb": 7
+    },
+    "bmi": [
+     "20.8",
+     "21.8"
+    ],
+    "bmi_all": {
+     "hamwi": "21.6",
+     "devine": "21.8",
+     "robinson": "20.8",
+     "miller": "20.9"
+    },
+    "healthy": {
+     "lb": [
+      133,
+      178
+     ],
+     "kg": [
+      61,
+      81
+     ],
+     "kg_converted": [
+      "60.3",
+      "80.7"
+     ]
+    }
+   },
+   {
+    "inches": 72,
+    "height": "6′0″",
+    "cm": "182.9 cm",
+    "sex": "female",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 160,
+     "kg": "72.6",
+     "lb_exact": 160.0,
+     "kg_exact": 72.574866
+    },
+    "devine": {
+     "lb": 161,
+     "kg": "73.1",
+     "lb_exact": 161.157722,
+     "kg_exact": 73.1
+    },
+    "robinson": {
+     "lb": 153,
+     "kg": "69.4",
+     "lb_exact": 153.000628,
+     "kg_exact": 69.4
+    },
+    "miller": {
+     "lb": 153,
+     "kg": "69.4",
+     "lb_exact": 153.04472,
+     "kg_exact": 69.42
+    },
+    "span": {
+     "lb": [
+      153,
+      161
+     ],
+     "kg": [
+      "69.4",
+      "73.1"
+     ],
+     "width_lb": 8
+    },
+    "bmi": [
+     "20.7",
+     "21.9"
+    ],
+    "bmi_all": {
+     "hamwi": "21.7",
+     "devine": "21.9",
+     "robinson": "20.7",
+     "miller": "20.8"
+    },
+    "healthy": {
+     "lb": [
+      137,
+      183
+     ],
+     "kg": [
+      62,
+      83
+     ],
+     "kg_converted": [
+      "62.1",
+      "83.0"
+     ]
+    }
+   }
+  ],
+  "male": [
+   {
+    "inches": 60,
+    "height": "5′0″",
+    "cm": "152.4 cm",
+    "sex": "male",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 106,
+     "kg": "48.1",
+     "lb_exact": 106.0,
+     "kg_exact": 48.080848
+    },
+    "devine": {
+     "lb": 110,
+     "kg": "50.0",
+     "lb_exact": 110.231,
+     "kg_exact": 50.0
+    },
+    "robinson": {
+     "lb": 115,
+     "kg": "52.0",
+     "lb_exact": 114.64024,
+     "kg_exact": 52.0
+    },
+    "miller": {
+     "lb": 124,
+     "kg": "56.2",
+     "lb_exact": 123.899644,
+     "kg_exact": 56.2
+    },
+    "span": {
+     "lb": [
+      106,
+      124
+     ],
+     "kg": [
+      "48.1",
+      "56.2"
+     ],
+     "width_lb": 18
+    },
+    "bmi": [
+     "20.7",
+     "24.2"
+    ],
+    "bmi_all": {
+     "hamwi": "20.7",
+     "devine": "21.5",
+     "robinson": "22.4",
+     "miller": "24.2"
+    },
+    "healthy": {
+     "lb": [
+      95,
+      127
+     ],
+     "kg": [
+      43,
+      57
+     ],
+     "kg_converted": [
+      "43.1",
+      "57.6"
+     ]
+    }
+   },
+   {
+    "inches": 61,
+    "height": "5′1″",
+    "cm": "154.9 cm",
+    "sex": "male",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 112,
+     "kg": "50.8",
+     "lb_exact": 112.0,
+     "kg_exact": 50.802406
+    },
+    "devine": {
+     "lb": 115,
+     "kg": "52.3",
+     "lb_exact": 115.301626,
+     "kg_exact": 52.3
+    },
+    "robinson": {
+     "lb": 119,
+     "kg": "53.9",
+     "lb_exact": 118.829018,
+     "kg_exact": 53.9
+    },
+    "miller": {
+     "lb": 127,
+     "kg": "57.6",
+     "lb_exact": 127.008158,
+     "kg_exact": 57.61
+    },
+    "span": {
+     "lb": [
+      112,
+      127
+     ],
+     "kg": [
+      "50.8",
+      "57.6"
+     ],
+     "width_lb": 15
+    },
+    "bmi": [
+     "21.2",
+     "24.0"
+    ],
+    "bmi_all": {
+     "hamwi": "21.2",
+     "devine": "21.8",
+     "robinson": "22.5",
+     "miller": "24.0"
+    },
+    "healthy": {
+     "lb": [
+      98,
+      132
+     ],
+     "kg": [
+      45,
+      59
+     ],
+     "kg_converted": [
+      "44.5",
+      "59.9"
+     ]
+    }
+   },
+   {
+    "inches": 62,
+    "height": "5′2″",
+    "cm": "157.5 cm",
+    "sex": "male",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 118,
+     "kg": "53.5",
+     "lb_exact": 118.0,
+     "kg_exact": 53.523963
+    },
+    "devine": {
+     "lb": 120,
+     "kg": "54.6",
+     "lb_exact": 120.372252,
+     "kg_exact": 54.6
+    },
+    "robinson": {
+     "lb": 123,
+     "kg": "55.8",
+     "lb_exact": 123.017796,
+     "kg_exact": 55.8
+    },
+    "miller": {
+     "lb": 130,
+     "kg": "59.0",
+     "lb_exact": 130.116672,
+     "kg_exact": 59.02
+    },
+    "span": {
+     "lb": [
+      118,
+      130
+     ],
+     "kg": [
+      "53.5",
+      "59.0"
+     ],
+     "width_lb": 12
+    },
+    "bmi": [
+     "21.6",
+     "23.8"
+    ],
+    "bmi_all": {
+     "hamwi": "21.6",
+     "devine": "22.0",
+     "robinson": "22.5",
+     "miller": "23.8"
+    },
+    "healthy": {
+     "lb": [
+      101,
+      136
+     ],
+     "kg": [
+      46,
+      61
+     ],
+     "kg_converted": [
+      "45.8",
+      "61.7"
+     ]
+    }
+   },
+   {
+    "inches": 63,
+    "height": "5′3″",
+    "cm": "160.0 cm",
+    "sex": "male",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 124,
+     "kg": "56.2",
+     "lb_exact": 124.0,
+     "kg_exact": 56.245521
+    },
+    "devine": {
+     "lb": 125,
+     "kg": "56.9",
+     "lb_exact": 125.442878,
+     "kg_exact": 56.9
+    },
+    "robinson": {
+     "lb": 127,
+     "kg": "57.7",
+     "lb_exact": 127.206574,
+     "kg_exact": 57.7
+    },
+    "miller": {
+     "lb": 133,
+     "kg": "60.4",
+     "lb_exact": 133.225187,
+     "kg_exact": 60.43
+    },
+    "span": {
+     "lb": [
+      124,
+      133
+     ],
+     "kg": [
+      "56.2",
+      "60.4"
+     ],
+     "width_lb": 9
+    },
+    "bmi": [
+     "22.0",
+     "23.6"
+    ],
+    "bmi_all": {
+     "hamwi": "22.0",
+     "devine": "22.2",
+     "robinson": "22.5",
+     "miller": "23.6"
+    },
+    "healthy": {
+     "lb": [
+      105,
+      140
+     ],
+     "kg": [
+      48,
+      63
+     ],
+     "kg_converted": [
+      "47.6",
+      "63.5"
+     ]
+    }
+   },
+   {
+    "inches": 64,
+    "height": "5′4″",
+    "cm": "162.6 cm",
+    "sex": "male",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 130,
+     "kg": "59.0",
+     "lb_exact": 130.0,
+     "kg_exact": 58.967078
+    },
+    "devine": {
+     "lb": 131,
+     "kg": "59.2",
+     "lb_exact": 130.513504,
+     "kg_exact": 59.2
+    },
+    "robinson": {
+     "lb": 131,
+     "kg": "59.6",
+     "lb_exact": 131.395352,
+     "kg_exact": 59.6
+    },
+    "miller": {
+     "lb": 136,
+     "kg": "61.8",
+     "lb_exact": 136.333701,
+     "kg_exact": 61.84
+    },
+    "span": {
+     "lb": [
+      130,
+      136
+     ],
+     "kg": [
+      "59.0",
+      "61.8"
+     ],
+     "width_lb": 6
+    },
+    "bmi": [
+     "22.3",
+     "23.4"
+    ],
+    "bmi_all": {
+     "hamwi": "22.3",
+     "devine": "22.4",
+     "robinson": "22.6",
+     "miller": "23.4"
+    },
+    "healthy": {
+     "lb": [
+      108,
+      145
+     ],
+     "kg": [
+      49,
+      65
+     ],
+     "kg_converted": [
+      "49.0",
+      "65.8"
+     ]
+    }
+   },
+   {
+    "inches": 65,
+    "height": "5′5″",
+    "cm": "165.1 cm",
+    "sex": "male",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 136,
+     "kg": "61.7",
+     "lb_exact": 136.0,
+     "kg_exact": 61.688636
+    },
+    "devine": {
+     "lb": 136,
+     "kg": "61.5",
+     "lb_exact": 135.58413,
+     "kg_exact": 61.5
+    },
+    "robinson": {
+     "lb": 136,
+     "kg": "61.5",
+     "lb_exact": 135.58413,
+     "kg_exact": 61.5
+    },
+    "miller": {
+     "lb": 139,
+     "kg": "63.3",
+     "lb_exact": 139.442215,
+     "kg_exact": 63.25
+    },
+    "span": {
+     "lb": [
+      136,
+      139
+     ],
+     "kg": [
+      "61.5",
+      "63.3"
+     ],
+     "width_lb": 3
+    },
+    "bmi": [
+     "22.6",
+     "23.2"
+    ],
+    "bmi_all": {
+     "hamwi": "22.6",
+     "devine": "22.6",
+     "robinson": "22.6",
+     "miller": "23.2"
+    },
+    "healthy": {
+     "lb": [
+      111,
+      149
+     ],
+     "kg": [
+      51,
+      68
+     ],
+     "kg_converted": [
+      "50.3",
+      "67.6"
+     ]
+    }
+   },
+   {
+    "inches": 66,
+    "height": "5′6″",
+    "cm": "167.6 cm",
+    "sex": "male",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 142,
+     "kg": "64.4",
+     "lb_exact": 142.0,
+     "kg_exact": 64.410193
+    },
+    "devine": {
+     "lb": 141,
+     "kg": "63.8",
+     "lb_exact": 140.654756,
+     "kg_exact": 63.8
+    },
+    "robinson": {
+     "lb": 140,
+     "kg": "63.4",
+     "lb_exact": 139.772908,
+     "kg_exact": 63.4
+    },
+    "miller": {
+     "lb": 143,
+     "kg": "64.7",
+     "lb_exact": 142.550729,
+     "kg_exact": 64.66
+    },
+    "span": {
+     "lb": [
+      140,
+      143
+     ],
+     "kg": [
+      "63.4",
+      "64.7"
+     ],
+     "width_lb": 3
+    },
+    "bmi": [
+     "22.6",
+     "23.0"
+    ],
+    "bmi_all": {
+     "hamwi": "22.9",
+     "devine": "22.7",
+     "robinson": "22.6",
+     "miller": "23.0"
+    },
+    "healthy": {
+     "lb": [
+      115,
+      154
+     ],
+     "kg": [
+      52,
+      70
+     ],
+     "kg_converted": [
+      "52.2",
+      "69.9"
+     ]
+    }
+   },
+   {
+    "inches": 67,
+    "height": "5′7″",
+    "cm": "170.2 cm",
+    "sex": "male",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 148,
+     "kg": "67.1",
+     "lb_exact": 148.0,
+     "kg_exact": 67.131751
+    },
+    "devine": {
+     "lb": 146,
+     "kg": "66.1",
+     "lb_exact": 145.725382,
+     "kg_exact": 66.1
+    },
+    "robinson": {
+     "lb": 144,
+     "kg": "65.3",
+     "lb_exact": 143.961686,
+     "kg_exact": 65.3
+    },
+    "miller": {
+     "lb": 146,
+     "kg": "66.1",
+     "lb_exact": 145.659243,
+     "kg_exact": 66.07
+    },
+    "span": {
+     "lb": [
+      144,
+      148
+     ],
+     "kg": [
+      "65.3",
+      "67.1"
+     ],
+     "width_lb": 4
+    },
+    "bmi": [
+     "22.5",
+     "23.2"
+    ],
+    "bmi_all": {
+     "hamwi": "23.2",
+     "devine": "22.8",
+     "robinson": "22.5",
+     "miller": "22.8"
+    },
+    "healthy": {
+     "lb": [
+      118,
+      159
+     ],
+     "kg": [
+      54,
+      72
+     ],
+     "kg_converted": [
+      "53.5",
+      "72.1"
+     ]
+    }
+   },
+   {
+    "inches": 68,
+    "height": "5′8″",
+    "cm": "172.7 cm",
+    "sex": "male",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 154,
+     "kg": "69.9",
+     "lb_exact": 154.0,
+     "kg_exact": 69.853308
+    },
+    "devine": {
+     "lb": 151,
+     "kg": "68.4",
+     "lb_exact": 150.796008,
+     "kg_exact": 68.4
+    },
+    "robinson": {
+     "lb": 148,
+     "kg": "67.2",
+     "lb_exact": 148.150464,
+     "kg_exact": 67.2
+    },
+    "miller": {
+     "lb": 149,
+     "kg": "67.5",
+     "lb_exact": 148.767758,
+     "kg_exact": 67.48
+    },
+    "span": {
+     "lb": [
+      148,
+      154
+     ],
+     "kg": [
+      "67.2",
+      "69.9"
+     ],
+     "width_lb": 6
+    },
+    "bmi": [
+     "22.5",
+     "23.4"
+    ],
+    "bmi_all": {
+     "hamwi": "23.4",
+     "devine": "22.9",
+     "robinson": "22.5",
+     "miller": "22.6"
+    },
+    "healthy": {
+     "lb": [
+      122,
+      164
+     ],
+     "kg": [
+      56,
+      74
+     ],
+     "kg_converted": [
+      "55.3",
+      "74.4"
+     ]
+    }
+   },
+   {
+    "inches": 69,
+    "height": "5′9″",
+    "cm": "175.3 cm",
+    "sex": "male",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 160,
+     "kg": "72.6",
+     "lb_exact": 160.0,
+     "kg_exact": 72.574866
+    },
+    "devine": {
+     "lb": 156,
+     "kg": "70.7",
+     "lb_exact": 155.866634,
+     "kg_exact": 70.7
+    },
+    "robinson": {
+     "lb": 152,
+     "kg": "69.1",
+     "lb_exact": 152.339242,
+     "kg_exact": 69.1
+    },
+    "miller": {
+     "lb": 152,
+     "kg": "68.9",
+     "lb_exact": 151.876272,
+     "kg_exact": 68.89
+    },
+    "span": {
+     "lb": [
+      152,
+      160
+     ],
+     "kg": [
+      "68.9",
+      "72.6"
+     ],
+     "width_lb": 8
+    },
+    "bmi": [
+     "22.4",
+     "23.6"
+    ],
+    "bmi_all": {
+     "hamwi": "23.6",
+     "devine": "23.0",
+     "robinson": "22.5",
+     "miller": "22.4"
+    },
+    "healthy": {
+     "lb": [
+      125,
+      168
+     ],
+     "kg": [
+      57,
+      76
+     ],
+     "kg_converted": [
+      "56.7",
+      "76.2"
+     ]
+    }
+   },
+   {
+    "inches": 70,
+    "height": "5′10″",
+    "cm": "177.8 cm",
+    "sex": "male",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 166,
+     "kg": "75.3",
+     "lb_exact": 166.0,
+     "kg_exact": 75.296423
+    },
+    "devine": {
+     "lb": 161,
+     "kg": "73.0",
+     "lb_exact": 160.93726,
+     "kg_exact": 73.0
+    },
+    "robinson": {
+     "lb": 157,
+     "kg": "71.0",
+     "lb_exact": 156.52802,
+     "kg_exact": 71.0
+    },
+    "miller": {
+     "lb": 155,
+     "kg": "70.3",
+     "lb_exact": 154.984786,
+     "kg_exact": 70.3
+    },
+    "span": {
+     "lb": [
+      155,
+      166
+     ],
+     "kg": [
+      "70.3",
+      "75.3"
+     ],
+     "width_lb": 11
+    },
+    "bmi": [
+     "22.2",
+     "23.8"
+    ],
+    "bmi_all": {
+     "hamwi": "23.8",
+     "devine": "23.1",
+     "robinson": "22.5",
+     "miller": "22.2"
+    },
+    "healthy": {
+     "lb": [
+      129,
+      173
+     ],
+     "kg": [
+      59,
+      78
+     ],
+     "kg_converted": [
+      "58.5",
+      "78.5"
+     ]
+    }
+   },
+   {
+    "inches": 71,
+    "height": "5′11″",
+    "cm": "180.3 cm",
+    "sex": "male",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 172,
+     "kg": "78.0",
+     "lb_exact": 172.0,
+     "kg_exact": 78.01798
+    },
+    "devine": {
+     "lb": 166,
+     "kg": "75.3",
+     "lb_exact": 166.007886,
+     "kg_exact": 75.3
+    },
+    "robinson": {
+     "lb": 161,
+     "kg": "72.9",
+     "lb_exact": 160.716798,
+     "kg_exact": 72.9
+    },
+    "miller": {
+     "lb": 158,
+     "kg": "71.7",
+     "lb_exact": 158.0933,
+     "kg_exact": 71.71
+    },
+    "span": {
+     "lb": [
+      158,
+      172
+     ],
+     "kg": [
+      "71.7",
+      "78.0"
+     ],
+     "width_lb": 14
+    },
+    "bmi": [
+     "22.0",
+     "24.0"
+    ],
+    "bmi_all": {
+     "hamwi": "24.0",
+     "devine": "23.2",
+     "robinson": "22.4",
+     "miller": "22.0"
+    },
+    "healthy": {
+     "lb": [
+      133,
+      178
+     ],
+     "kg": [
+      61,
+      81
+     ],
+     "kg_converted": [
+      "60.3",
+      "80.7"
+     ]
+    }
+   },
+   {
+    "inches": 72,
+    "height": "6′0″",
+    "cm": "182.9 cm",
+    "sex": "male",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 178,
+     "kg": "80.7",
+     "lb_exact": 178.0,
+     "kg_exact": 80.739538
+    },
+    "devine": {
+     "lb": 171,
+     "kg": "77.6",
+     "lb_exact": 171.078512,
+     "kg_exact": 77.6
+    },
+    "robinson": {
+     "lb": 165,
+     "kg": "74.8",
+     "lb_exact": 164.905576,
+     "kg_exact": 74.8
+    },
+    "miller": {
+     "lb": 161,
+     "kg": "73.1",
+     "lb_exact": 161.201814,
+     "kg_exact": 73.12
+    },
+    "span": {
+     "lb": [
+      161,
+      178
+     ],
+     "kg": [
+      "73.1",
+      "80.7"
+     ],
+     "width_lb": 17
+    },
+    "bmi": [
+     "21.9",
+     "24.1"
+    ],
+    "bmi_all": {
+     "hamwi": "24.1",
+     "devine": "23.2",
+     "robinson": "22.4",
+     "miller": "21.9"
+    },
+    "healthy": {
+     "lb": [
+      137,
+      183
+     ],
+     "kg": [
+      62,
+      83
+     ],
+     "kg_converted": [
+      "62.1",
+      "83.0"
+     ]
+    }
+   },
+   {
+    "inches": 73,
+    "height": "6′1″",
+    "cm": "185.4 cm",
+    "sex": "male",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 184,
+     "kg": "83.5",
+     "lb_exact": 184.0,
+     "kg_exact": 83.461095
+    },
+    "devine": {
+     "lb": 176,
+     "kg": "79.9",
+     "lb_exact": 176.149138,
+     "kg_exact": 79.9
+    },
+    "robinson": {
+     "lb": 169,
+     "kg": "76.7",
+     "lb_exact": 169.094354,
+     "kg_exact": 76.7
+    },
+    "miller": {
+     "lb": 164,
+     "kg": "74.5",
+     "lb_exact": 164.310329,
+     "kg_exact": 74.53
+    },
+    "span": {
+     "lb": [
+      164,
+      184
+     ],
+     "kg": [
+      "74.5",
+      "83.5"
+     ],
+     "width_lb": 20
+    },
+    "bmi": [
+     "21.7",
+     "24.3"
+    ],
+    "bmi_all": {
+     "hamwi": "24.3",
+     "devine": "23.2",
+     "robinson": "22.3",
+     "miller": "21.7"
+    },
+    "healthy": {
+     "lb": [
+      140,
+      189
+     ],
+     "kg": [
+      64,
+      85
+     ],
+     "kg_converted": [
+      "63.5",
+      "85.7"
+     ]
+    }
+   },
+   {
+    "inches": 74,
+    "height": "6′2″",
+    "cm": "188.0 cm",
+    "sex": "male",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 190,
+     "kg": "86.2",
+     "lb_exact": 190.0,
+     "kg_exact": 86.182653
+    },
+    "devine": {
+     "lb": 181,
+     "kg": "82.2",
+     "lb_exact": 181.219764,
+     "kg_exact": 82.2
+    },
+    "robinson": {
+     "lb": 173,
+     "kg": "78.6",
+     "lb_exact": 173.283132,
+     "kg_exact": 78.6
+    },
+    "miller": {
+     "lb": 167,
+     "kg": "75.9",
+     "lb_exact": 167.418843,
+     "kg_exact": 75.94
+    },
+    "span": {
+     "lb": [
+      167,
+      190
+     ],
+     "kg": [
+      "75.9",
+      "86.2"
+     ],
+     "width_lb": 23
+    },
+    "bmi": [
+     "21.5",
+     "24.4"
+    ],
+    "bmi_all": {
+     "hamwi": "24.4",
+     "devine": "23.3",
+     "robinson": "22.2",
+     "miller": "21.5"
+    },
+    "healthy": {
+     "lb": [
+      144,
+      194
+     ],
+     "kg": [
+      66,
+      88
+     ],
+     "kg_converted": [
+      "65.3",
+      "88.0"
+     ]
+    }
+   },
+   {
+    "inches": 75,
+    "height": "6′3″",
+    "cm": "190.5 cm",
+    "sex": "male",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 196,
+     "kg": "88.9",
+     "lb_exact": 196.0,
+     "kg_exact": 88.90421
+    },
+    "devine": {
+     "lb": 186,
+     "kg": "84.5",
+     "lb_exact": 186.29039,
+     "kg_exact": 84.5
+    },
+    "robinson": {
+     "lb": 177,
+     "kg": "80.5",
+     "lb_exact": 177.47191,
+     "kg_exact": 80.5
+    },
+    "miller": {
+     "lb": 171,
+     "kg": "77.4",
+     "lb_exact": 170.527357,
+     "kg_exact": 77.35
+    },
+    "span": {
+     "lb": [
+      171,
+      196
+     ],
+     "kg": [
+      "77.4",
+      "88.9"
+     ],
+     "width_lb": 25
+    },
+    "bmi": [
+     "21.3",
+     "24.5"
+    ],
+    "bmi_all": {
+     "hamwi": "24.5",
+     "devine": "23.3",
+     "robinson": "22.2",
+     "miller": "21.3"
+    },
+    "healthy": {
+     "lb": [
+      148,
+      199
+     ],
+     "kg": [
+      67,
+      90
+     ],
+     "kg_converted": [
+      "67.1",
+      "90.3"
+     ]
+    }
+   },
+   {
+    "inches": 76,
+    "height": "6′4″",
+    "cm": "193.0 cm",
+    "sex": "male",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 202,
+     "kg": "91.6",
+     "lb_exact": 202.0,
+     "kg_exact": 91.625768
+    },
+    "devine": {
+     "lb": 191,
+     "kg": "86.8",
+     "lb_exact": 191.361016,
+     "kg_exact": 86.8
+    },
+    "robinson": {
+     "lb": 182,
+     "kg": "82.4",
+     "lb_exact": 181.660688,
+     "kg_exact": 82.4
+    },
+    "miller": {
+     "lb": 174,
+     "kg": "78.8",
+     "lb_exact": 173.635871,
+     "kg_exact": 78.76
+    },
+    "span": {
+     "lb": [
+      174,
+      202
+     ],
+     "kg": [
+      "78.8",
+      "91.6"
+     ],
+     "width_lb": 28
+    },
+    "bmi": [
+     "21.1",
+     "24.6"
+    ],
+    "bmi_all": {
+     "hamwi": "24.6",
+     "devine": "23.3",
+     "robinson": "22.1",
+     "miller": "21.1"
+    },
+    "healthy": {
+     "lb": [
+      152,
+      204
+     ],
+     "kg": [
+      69,
+      92
+     ],
+     "kg_converted": [
+      "68.9",
+      "92.5"
+     ]
+    }
+   },
+   {
+    "inches": 77,
+    "height": "6′5″",
+    "cm": "195.6 cm",
+    "sex": "male",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 208,
+     "kg": "94.3",
+     "lb_exact": 208.0,
+     "kg_exact": 94.347325
+    },
+    "devine": {
+     "lb": 196,
+     "kg": "89.1",
+     "lb_exact": 196.431642,
+     "kg_exact": 89.1
+    },
+    "robinson": {
+     "lb": 186,
+     "kg": "84.3",
+     "lb_exact": 185.849466,
+     "kg_exact": 84.3
+    },
+    "miller": {
+     "lb": 177,
+     "kg": "80.2",
+     "lb_exact": 176.744385,
+     "kg_exact": 80.17
+    },
+    "span": {
+     "lb": [
+      177,
+      208
+     ],
+     "kg": [
+      "80.2",
+      "94.3"
+     ],
+     "width_lb": 31
+    },
+    "bmi": [
+     "21.0",
+     "24.7"
+    ],
+    "bmi_all": {
+     "hamwi": "24.7",
+     "devine": "23.3",
+     "robinson": "22.0",
+     "miller": "21.0"
+    },
+    "healthy": {
+     "lb": [
+      156,
+      210
+     ],
+     "kg": [
+      71,
+      95
+     ],
+     "kg_converted": [
+      "70.8",
+      "95.3"
+     ]
+    }
+   },
+   {
+    "inches": 78,
+    "height": "6′6″",
+    "cm": "198.1 cm",
+    "sex": "male",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 214,
+     "kg": "97.1",
+     "lb_exact": 214.0,
+     "kg_exact": 97.068883
+    },
+    "devine": {
+     "lb": 202,
+     "kg": "91.4",
+     "lb_exact": 201.502268,
+     "kg_exact": 91.4
+    },
+    "robinson": {
+     "lb": 190,
+     "kg": "86.2",
+     "lb_exact": 190.038244,
+     "kg_exact": 86.2
+    },
+    "miller": {
+     "lb": 180,
+     "kg": "81.6",
+     "lb_exact": 179.8529,
+     "kg_exact": 81.58
+    },
+    "span": {
+     "lb": [
+      180,
+      214
+     ],
+     "kg": [
+      "81.6",
+      "97.1"
+     ],
+     "width_lb": 34
+    },
+    "bmi": [
+     "20.8",
+     "24.7"
+    ],
+    "bmi_all": {
+     "hamwi": "24.7",
+     "devine": "23.3",
+     "robinson": "22.0",
+     "miller": "20.8"
+    },
+    "healthy": {
+     "lb": [
+      160,
+      215
+     ],
+     "kg": [
+      73,
+      97
+     ],
+     "kg_converted": [
+      "72.6",
+      "97.5"
+     ]
+    }
+   }
+  ]
+ },
+ "frames": {
+  "female": [
+   {
+    "inches": 60,
+    "height": "5′0″",
+    "small": {
+     "lb": 90,
+     "kg": "40.8"
+    },
+    "large": {
+     "lb": 110,
+     "kg": "49.9"
+    }
+   },
+   {
+    "inches": 61,
+    "height": "5′1″",
+    "small": {
+     "lb": 95,
+     "kg": "42.9"
+    },
+    "large": {
+     "lb": 116,
+     "kg": "52.4"
+    }
+   },
+   {
+    "inches": 62,
+    "height": "5′2″",
+    "small": {
+     "lb": 99,
+     "kg": "44.9"
+    },
+    "large": {
+     "lb": 121,
+     "kg": "54.9"
+    }
+   },
+   {
+    "inches": 63,
+    "height": "5′3″",
+    "small": {
+     "lb": 104,
+     "kg": "46.9"
+    },
+    "large": {
+     "lb": 127,
+     "kg": "57.4"
+    }
+   },
+   {
+    "inches": 64,
+    "height": "5′4″",
+    "small": {
+     "lb": 108,
+     "kg": "49.0"
+    },
+    "large": {
+     "lb": 132,
+     "kg": "59.9"
+    }
+   },
+   {
+    "inches": 65,
+    "height": "5′5″",
+    "small": {
+     "lb": 113,
+     "kg": "51.0"
+    },
+    "large": {
+     "lb": 138,
+     "kg": "62.4"
+    }
+   },
+   {
+    "inches": 66,
+    "height": "5′6″",
+    "small": {
+     "lb": 117,
+     "kg": "53.1"
+    },
+    "large": {
+     "lb": 143,
+     "kg": "64.9"
+    }
+   },
+   {
+    "inches": 67,
+    "height": "5′7″",
+    "small": {
+     "lb": 122,
+     "kg": "55.1"
+    },
+    "large": {
+     "lb": 149,
+     "kg": "67.4"
+    }
+   },
+   {
+    "inches": 68,
+    "height": "5′8″",
+    "small": {
+     "lb": 126,
+     "kg": "57.2"
+    },
+    "large": {
+     "lb": 154,
+     "kg": "69.9"
+    }
+   },
+   {
+    "inches": 69,
+    "height": "5′9″",
+    "small": {
+     "lb": 131,
+     "kg": "59.2"
+    },
+    "large": {
+     "lb": 160,
+     "kg": "72.3"
+    }
+   },
+   {
+    "inches": 70,
+    "height": "5′10″",
+    "small": {
+     "lb": 135,
+     "kg": "61.2"
+    },
+    "large": {
+     "lb": 165,
+     "kg": "74.8"
+    }
+   },
+   {
+    "inches": 71,
+    "height": "5′11″",
+    "small": {
+     "lb": 140,
+     "kg": "63.3"
+    },
+    "large": {
+     "lb": 171,
+     "kg": "77.3"
+    }
+   },
+   {
+    "inches": 72,
+    "height": "6′0″",
+    "small": {
+     "lb": 144,
+     "kg": "65.3"
+    },
+    "large": {
+     "lb": 176,
+     "kg": "79.8"
+    }
+   }
+  ],
+  "male": [
+   {
+    "inches": 60,
+    "height": "5′0″",
+    "small": {
+     "lb": 95,
+     "kg": "43.3"
+    },
+    "large": {
+     "lb": 117,
+     "kg": "52.9"
+    }
+   },
+   {
+    "inches": 61,
+    "height": "5′1″",
+    "small": {
+     "lb": 101,
+     "kg": "45.7"
+    },
+    "large": {
+     "lb": 123,
+     "kg": "55.9"
+    }
+   },
+   {
+    "inches": 62,
+    "height": "5′2″",
+    "small": {
+     "lb": 106,
+     "kg": "48.2"
+    },
+    "large": {
+     "lb": 130,
+     "kg": "58.9"
+    }
+   },
+   {
+    "inches": 63,
+    "height": "5′3″",
+    "small": {
+     "lb": 112,
+     "kg": "50.6"
+    },
+    "large": {
+     "lb": 136,
+     "kg": "61.9"
+    }
+   },
+   {
+    "inches": 64,
+    "height": "5′4″",
+    "small": {
+     "lb": 117,
+     "kg": "53.1"
+    },
+    "large": {
+     "lb": 143,
+     "kg": "64.9"
+    }
+   },
+   {
+    "inches": 65,
+    "height": "5′5″",
+    "small": {
+     "lb": 122,
+     "kg": "55.5"
+    },
+    "large": {
+     "lb": 150,
+     "kg": "67.9"
+    }
+   },
+   {
+    "inches": 66,
+    "height": "5′6″",
+    "small": {
+     "lb": 128,
+     "kg": "58.0"
+    },
+    "large": {
+     "lb": 156,
+     "kg": "70.9"
+    }
+   },
+   {
+    "inches": 67,
+    "height": "5′7″",
+    "small": {
+     "lb": 133,
+     "kg": "60.4"
+    },
+    "large": {
+     "lb": 163,
+     "kg": "73.8"
+    }
+   },
+   {
+    "inches": 68,
+    "height": "5′8″",
+    "small": {
+     "lb": 139,
+     "kg": "62.9"
+    },
+    "large": {
+     "lb": 169,
+     "kg": "76.8"
+    }
+   },
+   {
+    "inches": 69,
+    "height": "5′9″",
+    "small": {
+     "lb": 144,
+     "kg": "65.3"
+    },
+    "large": {
+     "lb": 176,
+     "kg": "79.8"
+    }
+   },
+   {
+    "inches": 70,
+    "height": "5′10″",
+    "small": {
+     "lb": 149,
+     "kg": "67.8"
+    },
+    "large": {
+     "lb": 183,
+     "kg": "82.8"
+    }
+   },
+   {
+    "inches": 71,
+    "height": "5′11″",
+    "small": {
+     "lb": 155,
+     "kg": "70.2"
+    },
+    "large": {
+     "lb": 189,
+     "kg": "85.8"
+    }
+   },
+   {
+    "inches": 72,
+    "height": "6′0″",
+    "small": {
+     "lb": 160,
+     "kg": "72.7"
+    },
+    "large": {
+     "lb": 196,
+     "kg": "88.8"
+    }
+   },
+   {
+    "inches": 73,
+    "height": "6′1″",
+    "small": {
+     "lb": 166,
+     "kg": "75.1"
+    },
+    "large": {
+     "lb": 202,
+     "kg": "91.8"
+    }
+   },
+   {
+    "inches": 74,
+    "height": "6′2″",
+    "small": {
+     "lb": 171,
+     "kg": "77.6"
+    },
+    "large": {
+     "lb": 209,
+     "kg": "94.8"
+    }
+   },
+   {
+    "inches": 75,
+    "height": "6′3″",
+    "small": {
+     "lb": 176,
+     "kg": "80.0"
+    },
+    "large": {
+     "lb": 216,
+     "kg": "97.8"
+    }
+   },
+   {
+    "inches": 76,
+    "height": "6′4″",
+    "small": {
+     "lb": 182,
+     "kg": "82.5"
+    },
+    "large": {
+     "lb": 222,
+     "kg": "100.8"
+    }
+   },
+   {
+    "inches": 77,
+    "height": "6′5″",
+    "small": {
+     "lb": 187,
+     "kg": "84.9"
+    },
+    "large": {
+     "lb": 229,
+     "kg": "103.8"
+    }
+   },
+   {
+    "inches": 78,
+    "height": "6′6″",
+    "small": {
+     "lb": 193,
+     "kg": "87.4"
+    },
+    "large": {
+     "lb": 235,
+     "kg": "106.8"
+    }
+   }
+  ]
+ },
+ "examples": {
+  "woman_5_6": {
+   "inches": 66,
+   "height": "5′6″",
+   "cm": "167.6 cm",
+   "sex": "female",
+   "over": 6,
+   "medium": {
+    "inches": 66,
+    "height": "5′6″",
+    "cm": "167.6 cm",
+    "sex": "female",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 130,
+     "kg": "59.0",
+     "lb_exact": 130.0,
+     "kg_exact": 58.967078
+    },
+    "devine": {
+     "lb": 131,
+     "kg": "59.3",
+     "lb_exact": 130.733966,
+     "kg_exact": 59.3
+    },
+    "robinson": {
+     "lb": 131,
+     "kg": "59.2",
+     "lb_exact": 130.513504,
+     "kg_exact": 59.2
+    },
+    "miller": {
+     "lb": 135,
+     "kg": "61.3",
+     "lb_exact": 135.055021,
+     "kg_exact": 61.26
+    },
+    "span": {
+     "lb": [
+      130,
+      135
+     ],
+     "kg": [
+      "59.0",
+      "61.3"
+     ],
+     "width_lb": 5
+    },
+    "bmi": [
+     "21.0",
+     "21.8"
+    ],
+    "bmi_all": {
+     "hamwi": "21.0",
+     "devine": "21.1",
+     "robinson": "21.1",
+     "miller": "21.8"
+    },
+    "healthy": {
+     "lb": [
+      115,
+      154
+     ],
+     "kg": [
+      52,
+      70
+     ],
+     "kg_converted": [
+      "52.2",
+      "69.9"
+     ]
+    }
+   },
+   "steps": {
+    "hamwi": {
+     "base": "100",
+     "per_inch": "5",
+     "unit": "lb",
+     "value": "130",
+     "other_1dp": "59.0"
+    },
+    "devine": {
+     "base": "45.5",
+     "per_inch": "2.3",
+     "unit": "kg",
+     "value": "59.3",
+     "other_1dp": "130.7"
+    },
+    "robinson": {
+     "base": "49",
+     "per_inch": "1.7",
+     "unit": "kg",
+     "value": "59.2",
+     "other_1dp": "130.5"
+    },
+    "miller": {
+     "base": "53.1",
+     "per_inch": "1.36",
+     "unit": "kg",
+     "value": "61.26",
+     "other_1dp": "135.1"
+    }
+   }
+  },
+  "man_5_10": {
+   "inches": 70,
+   "height": "5′10″",
+   "cm": "177.8 cm",
+   "sex": "male",
+   "over": 10,
+   "medium": {
+    "inches": 70,
+    "height": "5′10″",
+    "cm": "177.8 cm",
+    "sex": "male",
+    "frame": "medium",
+    "hamwi": {
+     "lb": 166,
+     "kg": "75.3",
+     "lb_exact": 166.0,
+     "kg_exact": 75.296423
+    },
+    "devine": {
+     "lb": 161,
+     "kg": "73.0",
+     "lb_exact": 160.93726,
+     "kg_exact": 73.0
+    },
+    "robinson": {
+     "lb": 157,
+     "kg": "71.0",
+     "lb_exact": 156.52802,
+     "kg_exact": 71.0
+    },
+    "miller": {
+     "lb": 155,
+     "kg": "70.3",
+     "lb_exact": 154.984786,
+     "kg_exact": 70.3
+    },
+    "span": {
+     "lb": [
+      155,
+      166
+     ],
+     "kg": [
+      "70.3",
+      "75.3"
+     ],
+     "width_lb": 11
+    },
+    "bmi": [
+     "22.2",
+     "23.8"
+    ],
+    "bmi_all": {
+     "hamwi": "23.8",
+     "devine": "23.1",
+     "robinson": "22.5",
+     "miller": "22.2"
+    },
+    "healthy": {
+     "lb": [
+      129,
+      173
+     ],
+     "kg": [
+      59,
+      78
+     ],
+     "kg_converted": [
+      "58.5",
+      "78.5"
+     ]
+    }
+   },
+   "large": {
+    "inches": 70,
+    "height": "5′10″",
+    "cm": "177.8 cm",
+    "sex": "male",
+    "frame": "large",
+    "hamwi": {
+     "lb": 183,
+     "kg": "82.8",
+     "lb_exact": 182.6,
+     "kg_exact": 82.826065
+    },
+    "devine": {
+     "lb": 161,
+     "kg": "73.0",
+     "lb_exact": 160.93726,
+     "kg_exact": 73.0
+    },
+    "robinson": {
+     "lb": 157,
+     "kg": "71.0",
+     "lb_exact": 156.52802,
+     "kg_exact": 71.0
+    },
+    "miller": {
+     "lb": 155,
+     "kg": "70.3",
+     "lb_exact": 154.984786,
+     "kg_exact": 70.3
+    },
+    "span": {
+     "lb": [
+      155,
+      183
+     ],
+     "kg": [
+      "70.3",
+      "82.8"
+     ],
+     "width_lb": 28
+    },
+    "bmi": [
+     "22.2",
+     "26.2"
+    ],
+    "bmi_all": {
+     "hamwi": "26.2",
+     "devine": "23.1",
+     "robinson": "22.5",
+     "miller": "22.2"
+    },
+    "healthy": {
+     "lb": [
+      129,
+      173
+     ],
+     "kg": [
+      59,
+      78
+     ],
+     "kg_converted": [
+      "58.5",
+      "78.5"
+     ]
+    }
+   },
+   "steps": {
+    "hamwi": {
+     "base": "106",
+     "per_inch": "6",
+     "unit": "lb",
+     "value": "166",
+     "other_1dp": "75.3"
+    },
+    "devine": {
+     "base": "50",
+     "per_inch": "2.3",
+     "unit": "kg",
+     "value": "73",
+     "other_1dp": "160.9"
+    },
+    "robinson": {
+     "base": "52",
+     "per_inch": "1.9",
+     "unit": "kg",
+     "value": "71",
+     "other_1dp": "156.5"
+    },
+    "miller": {
+     "base": "56.2",
+     "per_inch": "1.41",
+     "unit": "kg",
+     "value": "70.3",
+     "other_1dp": "155.0"
+    }
+   },
+   "hamwi_large_exact_lb": "182.6",
+   "hamwi_large_bmi": "26.2"
+  }
+ },
+ "agree": {
+  "female": {
+   "narrowest": [
+    {
+     "height": "5′8″",
+     "lb": [
+      138,
+      141
+     ],
+     "width": 3,
+     "spread_unrounded": 3.04
+    }
+   ],
+   "widest": [
+    {
+     "height": "5′0″",
+     "lb": [
+      100,
+      117
+     ],
+     "width": 17,
+     "spread_unrounded": 17.07
+    }
+   ],
+   "bmi": [
+    "19.5",
+    "22.9"
+   ],
+   "all_inside_healthy": true
+  },
+  "male": {
+   "narrowest": [
+    {
+     "height": "5′5″",
+     "lb": [
+      136,
+      139
+     ],
+     "width": 3,
+     "spread_unrounded": 3.86
+    },
+    {
+     "height": "5′6″",
+     "lb": [
+      140,
+      143
+     ],
+     "width": 3,
+     "spread_unrounded": 2.78
+    }
+   ],
+   "widest": [
+    {
+     "height": "6′6″",
+     "lb": [
+      180,
+      214
+     ],
+     "width": 34,
+     "spread_unrounded": 34.15
+    }
+   ],
+   "bmi": [
+    "20.7",
+    "24.7"
+   ],
+   "all_inside_healthy": true
+  }
+ },
+ "figure": {
+  "female": [
+   {
+    "inches": 60,
+    "hamwi": 100,
+    "devine": 100.3102,
+    "robinson": 108.0264,
+    "miller": 117.0653,
+    "healthy_lb": [
+     95,
+     127
+    ]
+   },
+   {
+    "inches": 61,
+    "hamwi": 105,
+    "devine": 105.3808,
+    "robinson": 111.7742,
+    "miller": 120.0636,
+    "healthy_lb": [
+     98,
+     132
+    ]
+   },
+   {
+    "inches": 62,
+    "hamwi": 110,
+    "devine": 110.4515,
+    "robinson": 115.5221,
+    "miller": 123.0619,
+    "healthy_lb": [
+     101,
+     136
+    ]
+   },
+   {
+    "inches": 63,
+    "hamwi": 115,
+    "devine": 115.5221,
+    "robinson": 119.2699,
+    "miller": 126.0602,
+    "healthy_lb": [
+     105,
+     140
+    ]
+   },
+   {
+    "inches": 64,
+    "hamwi": 120,
+    "devine": 120.5927,
+    "robinson": 123.0178,
+    "miller": 129.0585,
+    "healthy_lb": [
+     108,
+     145
+    ]
+   },
+   {
+    "inches": 65,
+    "hamwi": 125,
+    "devine": 125.6633,
+    "robinson": 126.7656,
+    "miller": 132.0567,
+    "healthy_lb": [
+     111,
+     149
+    ]
+   },
+   {
+    "inches": 66,
+    "hamwi": 130,
+    "devine": 130.734,
+    "robinson": 130.5135,
+    "miller": 135.055,
+    "healthy_lb": [
+     115,
+     154
+    ]
+   },
+   {
+    "inches": 67,
+    "hamwi": 135,
+    "devine": 135.8046,
+    "robinson": 134.2614,
+    "miller": 138.0533,
+    "healthy_lb": [
+     118,
+     159
+    ]
+   },
+   {
+    "inches": 68,
+    "hamwi": 140,
+    "devine": 140.8752,
+    "robinson": 138.0092,
+    "miller": 141.0516,
+    "healthy_lb": [
+     122,
+     164
+    ]
+   },
+   {
+    "inches": 69,
+    "hamwi": 145,
+    "devine": 145.9458,
+    "robinson": 141.7571,
+    "miller": 144.0499,
+    "healthy_lb": [
+     125,
+     168
+    ]
+   },
+   {
+    "inches": 70,
+    "hamwi": 150,
+    "devine": 151.0165,
+    "robinson": 145.5049,
+    "miller": 147.0482,
+    "healthy_lb": [
+     129,
+     173
+    ]
+   },
+   {
+    "inches": 71,
+    "hamwi": 155,
+    "devine": 156.0871,
+    "robinson": 149.2528,
+    "miller": 150.0464,
+    "healthy_lb": [
+     133,
+     178
+    ]
+   },
+   {
+    "inches": 72,
+    "hamwi": 160,
+    "devine": 161.1577,
+    "robinson": 153.0006,
+    "miller": 153.0447,
+    "healthy_lb": [
+     137,
+     183
+    ]
+   }
+  ],
+  "male": [
+   {
+    "inches": 60,
+    "hamwi": 106,
+    "devine": 110.231,
+    "robinson": 114.6402,
+    "miller": 123.8996,
+    "healthy_lb": [
+     95,
+     127
+    ]
+   },
+   {
+    "inches": 61,
+    "hamwi": 112,
+    "devine": 115.3016,
+    "robinson": 118.829,
+    "miller": 127.0082,
+    "healthy_lb": [
+     98,
+     132
+    ]
+   },
+   {
+    "inches": 62,
+    "hamwi": 118,
+    "devine": 120.3723,
+    "robinson": 123.0178,
+    "miller": 130.1167,
+    "healthy_lb": [
+     101,
+     136
+    ]
+   },
+   {
+    "inches": 63,
+    "hamwi": 124,
+    "devine": 125.4429,
+    "robinson": 127.2066,
+    "miller": 133.2252,
+    "healthy_lb": [
+     105,
+     140
+    ]
+   },
+   {
+    "inches": 64,
+    "hamwi": 130,
+    "devine": 130.5135,
+    "robinson": 131.3954,
+    "miller": 136.3337,
+    "healthy_lb": [
+     108,
+     145
+    ]
+   },
+   {
+    "inches": 65,
+    "hamwi": 136,
+    "devine": 135.5841,
+    "robinson": 135.5841,
+    "miller": 139.4422,
+    "healthy_lb": [
+     111,
+     149
+    ]
+   },
+   {
+    "inches": 66,
+    "hamwi": 142,
+    "devine": 140.6548,
+    "robinson": 139.7729,
+    "miller": 142.5507,
+    "healthy_lb": [
+     115,
+     154
+    ]
+   },
+   {
+    "inches": 67,
+    "hamwi": 148,
+    "devine": 145.7254,
+    "robinson": 143.9617,
+    "miller": 145.6592,
+    "healthy_lb": [
+     118,
+     159
+    ]
+   },
+   {
+    "inches": 68,
+    "hamwi": 154,
+    "devine": 150.796,
+    "robinson": 148.1505,
+    "miller": 148.7678,
+    "healthy_lb": [
+     122,
+     164
+    ]
+   },
+   {
+    "inches": 69,
+    "hamwi": 160,
+    "devine": 155.8666,
+    "robinson": 152.3392,
+    "miller": 151.8763,
+    "healthy_lb": [
+     125,
+     168
+    ]
+   },
+   {
+    "inches": 70,
+    "hamwi": 166,
+    "devine": 160.9373,
+    "robinson": 156.528,
+    "miller": 154.9848,
+    "healthy_lb": [
+     129,
+     173
+    ]
+   },
+   {
+    "inches": 71,
+    "hamwi": 172,
+    "devine": 166.0079,
+    "robinson": 160.7168,
+    "miller": 158.0933,
+    "healthy_lb": [
+     133,
+     178
+    ]
+   },
+   {
+    "inches": 72,
+    "hamwi": 178,
+    "devine": 171.0785,
+    "robinson": 164.9056,
+    "miller": 161.2018,
+    "healthy_lb": [
+     137,
+     183
+    ]
+   },
+   {
+    "inches": 73,
+    "hamwi": 184,
+    "devine": 176.1491,
+    "robinson": 169.0944,
+    "miller": 164.3103,
+    "healthy_lb": [
+     140,
+     189
+    ]
+   },
+   {
+    "inches": 74,
+    "hamwi": 190,
+    "devine": 181.2198,
+    "robinson": 173.2831,
+    "miller": 167.4188,
+    "healthy_lb": [
+     144,
+     194
+    ]
+   },
+   {
+    "inches": 75,
+    "hamwi": 196,
+    "devine": 186.2904,
+    "robinson": 177.4719,
+    "miller": 170.5274,
+    "healthy_lb": [
+     148,
+     199
+    ]
+   },
+   {
+    "inches": 76,
+    "hamwi": 202,
+    "devine": 191.361,
+    "robinson": 181.6607,
+    "miller": 173.6359,
+    "healthy_lb": [
+     152,
+     204
+    ]
+   },
+   {
+    "inches": 77,
+    "hamwi": 208,
+    "devine": 196.4316,
+    "robinson": 185.8495,
+    "miller": 176.7444,
+    "healthy_lb": [
+     156,
+     210
+    ]
+   },
+   {
+    "inches": 78,
+    "hamwi": 214,
+    "devine": 201.5023,
+    "robinson": 190.0382,
+    "miller": 179.8529,
+    "healthy_lb": [
+     160,
+     215
+    ]
+   }
+  ]
+ },
+ "formula_table": {
+  "female": {
+   "hamwi": {
+    "unit": "lb",
+    "base": "100",
+    "per_inch": "5",
+    "other_unit": "kg",
+    "base_other": "45.4",
+    "per_inch_other": "2.27"
+   },
+   "devine": {
+    "unit": "kg",
+    "base": "45.5",
+    "per_inch": "2.3",
+    "other_unit": "lb",
+    "base_other": "100.3",
+    "per_inch_other": "5.07"
+   },
+   "robinson": {
+    "unit": "kg",
+    "base": "49",
+    "per_inch": "1.7",
+    "other_unit": "lb",
+    "base_other": "108.0",
+    "per_inch_other": "3.75"
+   },
+   "miller": {
+    "unit": "kg",
+    "base": "53.1",
+    "per_inch": "1.36",
+    "other_unit": "lb",
+    "base_other": "117.1",
+    "per_inch_other": "3.00"
+   }
+  },
+  "male": {
+   "hamwi": {
+    "unit": "lb",
+    "base": "106",
+    "per_inch": "6",
+    "other_unit": "kg",
+    "base_other": "48.1",
+    "per_inch_other": "2.72"
+   },
+   "devine": {
+    "unit": "kg",
+    "base": "50",
+    "per_inch": "2.3",
+    "other_unit": "lb",
+    "base_other": "110.2",
+    "per_inch_other": "5.07"
+   },
+   "robinson": {
+    "unit": "kg",
+    "base": "52",
+    "per_inch": "1.9",
+    "other_unit": "lb",
+    "base_other": "114.6",
+    "per_inch_other": "4.19"
+   },
+   "miller": {
+    "unit": "kg",
+    "base": "56.2",
+    "per_inch": "1.41",
+    "other_unit": "lb",
+    "base_other": "123.9",
+    "per_inch_other": "3.11"
+   }
+  }
+ },
+ "healthy_kg_cm_label_moves": [
+  "female 5′11″: 61-81 kg at the exact height, 60-81 kg typed as 180.3 cm",
+  "male 5′11″: 61-81 kg at the exact height, 60-81 kg typed as 180.3 cm"
+ ],
+ "anchors_checked": [
+  "woman 5'6\" medium 130/131/131/135 lb, span 130-135, healthy 115-154, BMI 21.0-21.8",
+  "man 5'10\" medium 166/161/157/155 lb, span 155-166, healthy 129-173, BMI 22.2-23.8; large Hamwi 183 (82.8)",
+  "woman 5'4\" small Hamwi 108 (49.0), Devine 121, Robinson 123, Miller 129",
+  "woman 4'10\" no formula weight, healthy 89-119 lb",
+  "metric woman 160 cm 52.1/52.4/54.1/57.2 kg, healthy 48-63; man 170 cm 66.9/65.9/65.2/66.0, 54-72; man 185 cm 83.0/79.5/76.4/74.3, 64-85",
+  "agree: women 5'8\" 138-141 and 5'0\" 100-117; men 5'6\" 140-143 and 6'6\" 180-214; BMI 19.5-22.9 and 20.7-24.7"
+ ]
+}
