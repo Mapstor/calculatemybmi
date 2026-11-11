@@ -267,10 +267,11 @@ function calculateKids() {
 }
 
 function getLMSRow(sex, agemos) {
-  // Half-month labels: for agemos m in [24, 240), the CDC row is at floor(m) + 0.5,
-  // except the 24.0 boundary row is used exactly for agemos = 24.
+  // CDC lists each month at its half-month point, and that row covers the whole month ("48.5 months represents
+  // 48.0 months up to but not including 49.0 months of age"), so every age in [24, 240) months reads the row at
+  // floor(m) + 0.5: 2 years 0 months is the 24.5 row. The data's 24.0 row stays unused (CMB-030).
   var data = (sex === 'male' || sex === 'boys' || sex === 'boy') ? window.CDC_BMI_LMS.boys : window.CDC_BMI_LMS.girls;
-  var target = (agemos === 24) ? 24 : Math.floor(agemos) + 0.5;
+  var target = Math.floor(agemos) + 0.5;
   var idx = data.agemos.indexOf(target);
   if (idx === -1) {
     // Nearest fallback
@@ -617,6 +618,22 @@ function displayKidsResults(type, bmi, category, years, months, sex, heightInche
 
   if (bmiValueEl) { bmiValueEl.textContent = bmi.toFixed(1); bmiValueEl.className = 'bmi-value ' + category.class; }
   if (bmiCategoryEl) bmiCategoryEl.textContent = category.category;
+  // CDC's category name stays "Severe obesity"; the line under it gives the class in the American Academy of Pediatrics'
+  // expanded definition, as CDC quotes it: class 3 at 140% of the 95th percentile or more, or BMI 40 or more; class 2 at
+  // 120% to under 140%, or BMI 35 to under 40. Same unrounded BMI and % of the 95th as the category (CMB-030).
+  let aapEl = document.getElementById(type + '-aap-class');
+  if (category.category === 'Severe obesity') {
+    if (!aapEl && bmiCategoryEl) {
+      aapEl = document.createElement('div');
+      aapEl.id = type + '-aap-class';
+      aapEl.className = 'bmi-range';
+      bmiCategoryEl.insertAdjacentElement('afterend', aapEl);
+    }
+    const p95 = result ? result.pctP95 : 0;
+    if (aapEl) aapEl.textContent = 'The American Academy of Pediatrics calls this class ' + (p95 >= 140 || bmi >= 40 ? 3 : 2) + ' obesity.';
+  } else if (aapEl) {
+    aapEl.remove();
+  }
   if (percentileEl) percentileEl.innerHTML = pctText ? '<strong>' + pctText + '</strong> for ' + sexLabel + ' aged ' + ageText : category.note;
   if (resultCard) resultCard.className = 'bmi-result-card ' + category.class;
 

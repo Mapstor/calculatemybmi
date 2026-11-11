@@ -372,6 +372,7 @@ body weight calculator with height and age,10,-100,0,Unknown,B1-chart,tool,age-b
 bmi calculator by age chart,10,-100,-100,Unknown,B1-chart,tool,age-bmi-calculator,tertiary,,auto,
 best bmi calculator with age,10,-100,-100,Unknown,B1-chart,tool,age-bmi-calculator,tertiary,,auto,
 bmi calculator kg and cm with age,10,-100,-100,Unknown,B1-chart,tool,age-bmi-calculator,tertiary,,auto,
+bmi for age calculator,5400,-45,-56,Low,KWP-2026-11-08,tool,age-bmi-calculator,secondary,,na,"KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings. KWP groups adult phrasings such as ""age and bmi calculator"" with it."
 body fat calculator army,18100,-45,-55,Low,B3-bodyfat,tool,army-body-fat-calculator,primary,,auto,KWP group variants: apft body fat calculator; army body fat cal; army body fat composition calculator; army body fat percentage calculator; army calculator body fat; army fat percentage calculator; army fitness calculator body fat
 army ht wt calculator,12100,-18,-18,Low,B1-chart,tool,army-body-fat-calculator,secondary,,auto,KWP group variants: height and weight chart army calculator; army height weight calculator
 army bmi test,2900,-55,-64,Low,B3-bodyfat,tool,army-body-fat-calculator,secondary,,auto,KWP group variants: army bmi calculator; army body mass calculator; army body mass index calculator; bmi calculator military
@@ -626,6 +627,8 @@ average canadian weight female,10,-100,0,Unknown,B2-population,informational,ave
 5 5 average weight female kg,10,-100,-100,Unknown,B2-population,informational,average-weight,tertiary,,auto,
 average weight for 175cm woman,10,-100,-100,Unknown,B2-population,informational,average-weight,tertiary,,auto,
 average bmi by gender and age,10,-100,-100,Unknown,B1-chart,informational,average-weight,tertiary,,auto,
+weight percentile calculator adults,210,-18,-18,Low,KWP-2026-11-08,tool,average-weight,tertiary,,na,KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings.
+adult weight percentile,70,-22,-50,Low,KWP-2026-11-08,informational,average-weight,tertiary,,na,KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings.
 calorie calculator body weight,260,0,-19,Low,B3-bodyfat,informational,blog/bmi-and-metabolism,primary,,auto,
 tdee calculator body fat,170,-21,-35,Low,B3-bodyfat,informational,blog/bmi-and-metabolism,secondary,,auto,
 bmr calculator with body fat,140,-21,-58,Low,B3-bodyfat,informational,blog/bmi-and-metabolism,secondary,,auto,KWP group variants: basal metabolic rate calculator body fat; metabolic rate calculator body fat; metabolic rate calculator with body fat
@@ -3122,7 +3125,6 @@ healthy weight for 5,1000,30,-19,Low,B2-population,informational,bmi-chart,terti
 for my height how much should i weigh,1000,-12,-45,Low,B1-chart,informational,bmi-chart,tertiary,,auto,
 at 5 8 how much should i weigh,880,0,0,Low,B2-population,informational,bmi-chart,tertiary,,auto,
 height weight scale,880,22,-12,High,B1-chart,informational,bmi-chart,tertiary,,auto,KWP group variants: height and weight scale; weight scale according to height; weight scale per height
-bmi chart for teens,880,-18,-33,Low,B1-chart,informational,bmi-chart,tertiary,,auto,
 my plate chart,880,0,85,High,B1-chart,informational,bmi-chart,tertiary,,auto,
 5 9 normal weight,880,14,0,Low,B1-chart,informational,bmi-chart,tertiary,,auto,
 normal weight for 5 4,880,0,0,Low,B2-population,informational,bmi-chart,tertiary,,auto,
@@ -4431,6 +4433,8 @@ female weight for age chart,10,0,∞,Low,B1-chart,tool,growth-chart-calculator,t
 normal height and weight of newborn,10,0,0,Low,B1-chart,tool,growth-chart-calculator,tertiary,,auto,
 men's height growth chart,10,0,-100,Unknown,B1-chart,tool,growth-chart-calculator,tertiary,,auto,
 growth chart teenage male,10,-50,-50,Low,B1-chart,tool,growth-chart-calculator,tertiary,,auto,
+weight for height percentile calculator,3600,-19,-34,Low,KWP-2026-11-08,tool,growth-chart-calculator,secondary,,na,KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings.
+childrens growth chart calculator,1600,-19,-32,Low,KWP-2026-11-08,tool,growth-chart-calculator,secondary,,na,KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings.
 bmi calculation table,2240000,0,-45,Low,B1-chart,tool,home,primary,,auto,"KWP reports the ""bmi calculator"" close-variant group volume on this idea (""bmi calculator"" itself was not returned in B1-B3)"
 calculating body mass,49500,-18,-18,Medium,B3-bodyfat,tool,home,secondary,,auto,KWP group variants: compute body mass index; determining body mass index
 bmi chart calculator,18100,-18,-18,Low,B1-chart,tool,home,secondary,,auto,KWP group variants: correct bmi calculator; normal bmi calculator
@@ -4601,6 +4605,8 @@ da 5501 calculator,10,-100,0,Unknown,B3-bodyfat,tool,home,tertiary,,auto,
 digital weighing scale with bmi calculator,10,-100,-100,Unknown,B3-bodyfat,tool,home,tertiary,,auto,
 da form 5501 calculator,10,-100,-100,Unknown,B3-bodyfat,tool,home,tertiary,,auto,
 body mass density calculator,10,-100,-100,Unknown,B3-bodyfat,tool,home,tertiary,,auto,
+bmi percentile calculator adults,210,-58,-66,Low,KWP-2026-11-08,tool,home,tertiary,,na,KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings.
+adult bmi percentile,140,0,-35,Low,KWP-2026-11-08,informational,home,tertiary,,na,KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings.
 ideal body weight calculator,22200,49,49,Low,KWP-2026-11-07,tool,ideal-weight,primary,,na,"KWP-2026-11-07: the owner's three CSVs for the seeds handed 2026-11-07. Replaces 'body weight ideal calculator' (B2-population, 22200), the same KWP group: do not add the two volumes."
 healthy weight calculator,2400,-33,-56,Low,KWP-2026-11-07,tool,ideal-weight,secondary,,na,"KWP-2026-11-07: the owner's three CSVs for the seeds handed 2026-11-07. Replaces 'appropriate weight calculator' (B2-population, 2900), the same KWP group: do not add the two volumes."
 goal weight by height,2400,-21,-34,Low,KWP-2026-11-07,tool,ideal-weight,secondary,,na,KWP-2026-11-07: the owner's three CSVs for the seeds handed 2026-11-07. Updated in place from B1-chart (2400). KWP group variants: ideal weight for height; perfect weight for height; proper weight for height; optimum weight for height; good weight for height; appropriate weight for height; best weight for height; ideal body weight for height; appropriate height and weight; desirable weight for height; ideal height and weight; ideal weight for ideal height; perfect body weight for height; preferred weight for height; suggested weight by height; weight and height ideal; healthy weight by height; height and weight ideal; perfect weight with height; recommended weight by height
@@ -4735,10 +4741,10 @@ women's correct weight for height,10,-100,-100,Unknown,B1-chart,tool,ideal-weigh
 perfect weight by age,10,-100,-100,Unknown,B1-chart,tool,ideal-weight,tertiary,,auto,
 ideal height with weight,10,-100,-100,Unknown,B1-chart,tool,ideal-weight,tertiary,,auto,
 perfect weight for height cm male,10,-100,-100,Unknown,B1-chart,tool,ideal-weight,tertiary,,auto,
-bmi calculator teenage,12100,0,0,Low,B1-chart,tool,kids-bmi-calculator,primary,,auto,
-pedia bmi calculator,3600,24,0,Low,B1-chart,tool,kids-bmi-calculator,secondary,,auto,
-bmi calculator teenage female,480,-19,85,Low,B1-chart,tool,kids-bmi-calculator,secondary,,auto,
-bmi by age percentile,320,23,-46,Low,B1-chart,tool,kids-bmi-calculator,secondary,,auto,
+teenage bmi calculator,12100,-33,0,Low,KWP-2026-11-08,tool,kids-bmi-calculator,primary,,na,"KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings. Replaces 'bmi calculator teenage' (B1-chart, 12100), the same KWP group: do not add the two volumes."
+pediatric bmi calculator,3600,0,-19,Low,KWP-2026-11-08,tool,kids-bmi-calculator,secondary,,na,"KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings. Replaces 'pedia bmi calculator' (B1-chart, 3600), the same KWP group: do not add the two volumes."
+bmi calculator teenage female,590,-19,182,Low,KWP-2026-11-08,tool,kids-bmi-calculator,secondary,,na,KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings. Updated in place from B1-chart (480).
+bmi for age percentile,320,23,-18,Low,KWP-2026-11-08,informational,kids-bmi-calculator,secondary,,na,"KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings. Replaces 'bmi by age percentile' (B1-chart, 320), the same KWP group: do not add the two volumes."
 weight chart for teenage females,260,-19,-19,Low,B1-chart,tool,kids-bmi-calculator,secondary,,auto,
 pediatric height weight chart,170,-21,-35,Low,B1-chart,tool,kids-bmi-calculator,tertiary,,auto,KWP group variants: pediatric height and weight chart
 normal bmi for teenager,110,0,0,Low,B1-chart,tool,kids-bmi-calculator,tertiary,,auto,
@@ -4759,6 +4765,26 @@ healthy bmi for teenage female,10,0,-100,Unknown,B1-chart,tool,kids-bmi-calculat
 height weight chart teenage male,10,0,-100,Unknown,B1-chart,tool,kids-bmi-calculator,tertiary,,auto,
 normal weight for pediatrics,10,-50,0,Low,B1-chart,tool,kids-bmi-calculator,tertiary,,auto,
 bmi normal range for pediatrics,10,-100,-100,Unknown,B1-chart,tool,kids-bmi-calculator,tertiary,,auto,
+bmi percentile calculator,1900,-16,-33,Low,KWP-2026-11-08,tool,kids-bmi-calculator,secondary,,na,KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings.
+bmi percentiles,1900,0,-21,Low,KWP-2026-11-08,informational,kids-bmi-calculator,secondary,,na,KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings.
+teenage bmi chart,880,0,-18,Low,KWP-2026-11-08,informational,kids-bmi-calculator,secondary,,na,"KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings. Replaces 'bmi chart for teens' (B1-chart, 880, bmi-chart tertiary), most likely the same KWP group; it moves from bmi-chart because teen charts belong with the percentiles: do not add the two volumes."
+bmi in pediatrics,720,-18,-18,Low,KWP-2026-11-08,informational,kids-bmi-calculator,secondary,,na,KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings.
+pediatric bmi calculator percentile,590,0,0,Low,KWP-2026-11-08,tool,kids-bmi-calculator,secondary,,na,KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings.
+pediatric bmi chart,260,-19,-46,Low,KWP-2026-11-08,informational,kids-bmi-calculator,tertiary,,na,KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings.
+bmi percentile chart,260,-18,-76,Low,KWP-2026-11-08,informational,kids-bmi-calculator,tertiary,,na,KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings.
+cdc bmi for age calculator,260,-92,57,Low,KWP-2026-11-08,tool,kids-bmi-calculator,tertiary,,na,KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings.
+95th percentile bmi,170,-18,-33,Low,KWP-2026-11-08,informational,kids-bmi-calculator,tertiary,,na,KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings.
+body mass index pediatric 5th percentile to 85 for age,140,21,21,Low,KWP-2026-11-08,informational,kids-bmi-calculator,tertiary,,na,KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings.
+healthy bmi for teens,110,-18,-18,Low,KWP-2026-11-08,informational,kids-bmi-calculator,tertiary,,na,KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings.
+healthy weight for teenagers,90,-29,-64,Low,KWP-2026-11-08,informational,kids-bmi-calculator,tertiary,,na,KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings.
+85th percentile bmi,70,0,-29,Low,KWP-2026-11-08,informational,kids-bmi-calculator,tertiary,,na,KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings.
+bmi z score calculator,70,0,-44,Low,KWP-2026-11-08,tool,kids-bmi-calculator,tertiary,,na,KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings.
+what does bmi percentile mean,70,-29,-29,Low,KWP-2026-11-08,informational,kids-bmi-calculator,tertiary,,na,KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings.
+cdc bmi calculator pediatric,30,-33,-50,Low,KWP-2026-11-08,tool,kids-bmi-calculator,tertiary,,na,KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings.
+pediatric bmi percentile chart,30,-67,-75,Low,KWP-2026-11-08,informational,kids-bmi-calculator,tertiary,,na,KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings.
+ideal body weight formula for pediatrics,140,91,91,Low,KWP-2026-11-08,,,discard,offtopic,na,KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings. D-01 pediatric dosing weight
+ideal body weight calculator for pediatrics,110,0,0,Low,KWP-2026-11-08,,,discard,offtopic,na,KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings. D-01 pediatric dosing weight
+ideal body weight paediatrics,70,57,22,Low,KWP-2026-11-08,,,discard,offtopic,na,KWP-2026-11-08: the owner's three CSVs for the seeds handed 2026-11-08; Keyword Planner gave no data for the kids and child phrasings. D-01 pediatric dosing weight
 lean body fat calculator,6600,49,124,Low,B3-bodyfat,tool,lean-body-mass,primary,,auto,KWP group variants: body fat lean mass calculator
 muscle percentage female,880,-18,-45,Low,B3-bodyfat,tool,lean-body-mass,secondary,,auto,KWP group variants: muscle percentage for women
 muscle mass percentage calculator,320,-19,-56,Low,B3-bodyfat,tool,lean-body-mass,secondary,,auto,
