@@ -51,8 +51,12 @@ Pages and pictures (the data are the pages' own):
                      axis (90 to 220 lb, the same inches-to-width scale in both), the healthy band in whole pounds and the
                      Hamwi, Devine, Robinson and Miller lines at a medium frame (research/ideal-weight-build/iw_stats.json),
                      in the page figure's colours and dashes over light grid lines, centered.
+  kids-bmi-calculator  the /kids-bmi-calculator/ figure (CMB-030): boys and girls side by side, ages 2 to 20 (every month
+                     row from 24.5 to 239.5) by BMI 12 to 36, CDC's five BMI-for-age bands in the page figure's category
+                     tints with white gaps at their edges: the 5th, 85th and 95th percentiles and 120% of the 95th or a BMI
+                     of 35, whichever is lower (research/kids-build/kids_stats.json), centered.
 Renders each SVG in Chromium at its exact size, checks there is no <text> and the size, and stores a palette PNG.
-usage: pref_images.py REPO_ROOT [NAME ...]   (NAMEs: draw only those pages; CMB-028 drew ideal-weight)"""
+usage: pref_images.py REPO_ROOT [NAME ...]   (NAMEs: draw only those pages; CMB-030 drew kids-bmi-calculator)"""
 import sys, os, io, json
 from playwright.sync_api import sync_playwright
 from PIL import Image
@@ -414,10 +418,41 @@ def ideal_weight(w, h):
     return frame(w, h, ''.join(out))
 
 
+def kids_bmi(w, h):
+    """The /kids-bmi-calculator/ figure: CDC's five BMI-for-age bands for boys and girls side by side, month by month."""
+    S = json.load(open(os.path.join(ROOT, 'research/kids-build/kids_stats.json'), encoding='utf-8'))
+    F = S['figure']
+    assert all([p['agemos'] for p in F[sex]] == [m + 0.5 for m in range(24, 240)] for sex in ('male', 'female'))
+    side = min(w, h * 1.8)                                   # same proportions in every crop, centered
+    pw, ph = side * 0.84, side * 0.84 / 1.8
+    x0, y0 = (w - pw) / 2, (h - ph) / 2
+    gap = pw * 0.08
+    k = (pw - gap) / 2 / 216                                 # 216 months a panel, one scale for both
+    left = {'male': x0, 'female': x0 + 216 * k + gap}
+    mx = lambda sex, m: left[sex] + (m - 24) * k
+    by = lambda v: y0 + ph - (v - 12) * ph / 24              # BMI 12 to 36, as on the page
+    tints = ('#dbeafe', '#d1fae5', '#fde68a', '#fecaca', '#fca5a5')
+    out = []
+    for sex, pts in F.items():
+        def edge(line):
+            val = (lambda p: min(p['p120'], 35.0)) if line == 'p120' else (lambda p: p[line])
+            return ([(mx(sex, 24), by(val(pts[0])))] + [(mx(sex, p['agemos']), by(val(p))) for p in pts]
+                    + [(mx(sex, 240), by(val(pts[-1])))])
+        edges = ([[(mx(sex, 24), by(12)), (mx(sex, 240), by(12))]] + [edge(ln) for ln in ('p5', 'p85', 'p95', 'p120')]
+                 + [[(mx(sex, 24), by(36)), (mx(sex, 240), by(36))]])
+        for fill, lo, hi in zip(tints, edges, edges[1:]):
+            out.append('<polygon points="' + ' '.join(f'{a:.1f},{b:.1f}' for a, b in lo + hi[::-1]) + f'" fill="{fill}"/>')
+        for e in edges[1:-1]:                                # the band edges as white gaps, as on the page
+            out.append('<polyline points="' + ' '.join(f'{a:.1f},{b:.1f}' for a, b in e)
+                       + f'" fill="none" stroke="#ffffff" stroke-width="{side * 0.004:.1f}" stroke-linejoin="round"/>')
+    return frame(w, h, ''.join(out))
+
+
 PAGES = {'bmi-chart': bmi_chart, 'bmi-calculator': waffle, 'healthy-bmi-range': risk_bars, 'bmi-chart-women': women_bars,
          'body-fat-percentage-chart': body_fat, 'women-bmi-calculator': women_calc, 'bmi-chart-men': men_chart,
          'average-weight': avg_weight, 'body-fat-calculator': bf_calc, 'how-to-measure-body-fat': htm,
-         'us-obesity-statistics': obs_trend, 'new-bmi-calculator': new_bmi, 'ideal-weight': ideal_weight}
+         'us-obesity-statistics': obs_trend, 'new-bmi-calculator': new_bmi, 'ideal-weight': ideal_weight,
+         'kids-bmi-calculator': kids_bmi}
 
 if __name__ == '__main__':
     os.makedirs(OUT, exist_ok=True)

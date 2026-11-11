@@ -117,183 +117,6 @@
    "row": "nhanes-anthropometric-reference"
   },
   {
-   "page": "/kids-bmi-calculator/",
-   "sig": "Should an #- or #-year-old use this calculator or the adult one?",
-   "classes": "B",
-   "why": "ages inside the calculator's range",
-   "checks": [
-    {
-     "target": 1,
-     "kind": "src",
-     "fn": "calculateKids",
-     "has": "agemos < 24 || agemos >= 240",
-     "label": "calculateKids accepts 24 to 239 months"
-    }
-   ]
-  },
-  {
-   "page": "/kids-bmi-calculator/",
-   "sig": "The #th percentile is simply the middle: half of children of that age and sex have a lower BMI.",
-   "classes": "D",
-   "why": "the definition of a median"
-  },
-  {
-   "page": "/kids-bmi-calculator/",
-   "sig": "These are the BMI values where each category begins, at each birthday, calculated from the CDC LMS reference data the calculator uses (BMI at the #th, #th and #th percentiles).",
-   "classes": "B",
-   "why": "the child category cut-offs",
-   "checks": [
-    {
-     "target": 1,
-     "kind": "num",
-     "expr": "__A.kcat($1, 100, 20) !== __A.kcat($1 - 0.01, 100, 20) ? $1 : -1",
-     "label": "categorizeChildBMI changes category at this percentile",
-     "dec": 0
-    },
-    {
-     "target": 2,
-     "kind": "num",
-     "expr": "__A.kcat($2, 100, 20) !== __A.kcat($2 - 0.01, 100, 20) ? $2 : -1",
-     "label": "categorizeChildBMI changes category at this percentile",
-     "dec": 0
-    },
-    {
-     "target": 3,
-     "kind": "num",
-     "expr": "__A.kcat($3, 100, 20) !== __A.kcat($3 - 0.01, 100, 20) ? $3 : -1",
-     "label": "categorizeChildBMI changes category at this percentile",
-     "dec": 0
-    }
-   ]
-  },
-  {
-   "page": "/kids-bmi-calculator/",
-   "sig": "For a #-year-old girl, for example, a BMI between the #th- and #th-percentile values in her row is in the healthy-weight range.",
-   "classes": [
-    "D",
-    "B",
-    "B"
-   ],
-   "why": "an example age; the healthy-weight cut-offs",
-   "checks": [
-    {
-     "target": 2,
-     "kind": "num",
-     "expr": "__A.kcat($2, 100, 20) !== __A.kcat($2 - 0.01, 100, 20) ? $2 : -1",
-     "label": "categorizeChildBMI changes category at this percentile",
-     "dec": 0
-    },
-    {
-     "target": 3,
-     "kind": "num",
-     "expr": "__A.kcat($3, 100, 20) !== __A.kcat($3 - 0.01, 100, 20) ? $3 : -1",
-     "label": "categorizeChildBMI changes category at this percentile",
-     "dec": 0
-    }
-   ]
-  },
-  {
-   "page": "/kids-bmi-calculator/",
-   "sig": "Calculated from the CDC extended BMI-for-age LMS data files (# growth-chart reference); values at age in years + # months.",
-   "classes": [
-    "C",
-    "B"
-   ],
-   "why": "the LMS row the calculator reads",
-   "checks": [
-    {
-     "target": 2,
-     "kind": "src",
-     "fn": "getLMSRow",
-     "has": "Math.floor(agemos) + 0.5",
-     "label": "getLMSRow reads the row at whole months + 0.5"
-    }
-   ],
-   "row": "cdc-child-bmi-categories"
-  },
-  {
-   "page": "/kids-bmi-calculator/",
-   "sig": "Median BMI falls from age # to a low around ages #-# and then rises through the teens, which is why the same BMI can be high for a #-year-old and low for a #-year-old.",
-   "classes": [
-    "B",
-    "B",
-    "B",
-    "D",
-    "D"
-   ],
-   "why": "where the LMS median is lowest; example ages",
-   "checks": [
-    {
-     "target": 2,
-     "kind": "num",
-     "expr": "(() => { const f = sex => { let b = 2, bv = 1e9; for (let a = 2; a <= 19; a++) { const v = __A.kidsM(sex, a * 12); if (v < bv) { bv = v; b = a; } } return b; }; const m = f('male'), w = f('female'); return (m >= $2 && m <= $3 && w >= $2 && w <= $3) ? $2 : -1; })()",
-     "label": "the LMS median M is lowest between these ages for boys and girls (getLMSRow)",
-     "dec": 0
-    }
-   ]
-  },
-  {
-   "page": "/kids-bmi-calculator/",
-   "sig": "The table shows the median (#th percentile) BMI for boys and girls at each age, from the CDC data files.",
-   "classes": "D",
-   "why": "the definition of a median"
-  },
-  {
-   "page": "/kids-bmi-calculator/",
-   "sig": "For children at or above the #th percentile it also shows BMI as a percentage of the #th percentile, which is how severe obesity is defined.",
-   "classes": [
-    "B",
-    "B"
-   ],
-   "why": "the obesity cut-off",
-   "checks": [
-    {
-     "target": 1,
-     "kind": "num",
-     "expr": "__A.kcat($1, 100, 20) !== __A.kcat($1 - 0.01, 100, 20) ? $1 : -1",
-     "label": "categorizeChildBMI changes category at this percentile",
-     "dec": 0
-    }
-   ]
-  },
-  {
-   "page": "/kids-bmi-calculator/",
-   "sig": "Age | #th healthy from | #th overweight from | #th obesity from",
-   "classes": "B",
-   "why": "the column headers name the child category cut-offs",
-   "region": "table",
-   "checks": [
-    {
-     "target": 1,
-     "kind": "num",
-     "expr": "__A.kcat($1, 100, 20) !== __A.kcat($1 - 0.01, 100, 20) ? $1 : -1",
-     "label": "categorizeChildBMI changes category at this percentile",
-     "dec": 0
-    },
-    {
-     "target": 2,
-     "kind": "num",
-     "expr": "__A.kcat($2, 100, 20) !== __A.kcat($2 - 0.01, 100, 20) ? $2 : -1",
-     "label": "categorizeChildBMI changes category at this percentile",
-     "dec": 0
-    },
-    {
-     "target": 3,
-     "kind": "num",
-     "expr": "__A.kcat($3, 100, 20) !== __A.kcat($3 - 0.01, 100, 20) ? $3 : -1",
-     "label": "categorizeChildBMI changes category at this percentile",
-     "dec": 0
-    }
-   ]
-  },
-  {
-   "page": "/kids-bmi-calculator/",
-   "sig": "Body fat percentage chart (ages #-#)",
-   "classes": "C",
-   "why": "the DXA survey ages (a link label)",
-   "row": "nhanes-2011-2018-dxa"
-  },
-  {
    "page": "/obesity-rate-by-state/",
    "sig": "North Dakota rose the most, up # percentage points from # to #, followed by New Mexico (+#) and Wisconsin (+#).",
    "classes": [
@@ -2867,6 +2690,15 @@
      "dec": 1
     }
    ]
+  },
+  {
+   "page": "/kids-bmi-calculator/",
+   "sig": "What are the #th and #th percentiles?",
+   "exact": true,
+   "region": "faq-q",
+   "classes": "C",
+   "why": "CDC's overweight and obesity cut-offs, in the FAQ question CMB-030 set (the searcher's words, which the rules can't read)",
+   "row": "cdc-child-bmi-categories"
   }
  ]
 }
