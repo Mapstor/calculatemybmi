@@ -749,6 +749,13 @@ button.cta-button { border: 0; cursor: pointer; }
 .weight-range-box p { margin: 0; font-size: 0.9375rem; }
 
 /* CMB-028 — /ideal-weight/ (DESIGN.md "Ideal weight page (CMB-028)"): a by-height table with six number columns (height,
-   four formulas, a range) fits a 360 px phone when its cells keep 4 px beside the text below 400 px and its column
-   headings carry soft hyphens, so a heading breaks only when the screen needs it. */
+   four formulas, a range) keeps 4 px beside the text in its cells below 400 px. */
 @media (max-width: 399px) { .flow .data-table--tight th, .flow .data-table--tight td { padding-left: 0.25rem; padding-right: 0.25rem; } }
+
+/* CMB-031 — column headings that are names never break (DESIGN.md "Ideal weight page"): below 440 px the headings of a
+   .data-table--small-head take the tiny label size and sit on the row's last line, so a heading wraps only between
+   words ("Healthy BMI range" on two lines) and every heading ends right above its numbers; below 380 px they keep 2 px
+   beside the text. The by-height tables then fit a 360 px phone with every formula name whole, and scroll inside their
+   frame only at 320 px. */
+@media (max-width: 439px) { .flow .data-table--small-head thead th { vertical-align: bottom; } .flow .data-table--small-head thead th, .flow .data-table--small-head thead .th-sub { font-size: 0.6875rem; } }
+@media (max-width: 379px) { .flow .data-table--small-head thead th { padding-left: 0.125rem; padding-right: 0.125rem; } }

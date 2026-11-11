@@ -654,7 +654,13 @@ function displayKidsResults(type, bmi, category, years, months, sex, heightInche
   } else if (category.category === 'Overweight') {
     guidance = `A BMI of ${b} ${at} is in the <strong>overweight</strong> range for ${sexLabel} (the 85th to below the 95th percentile). Children are still growing, so one reading says little on its own; a pediatrician can look at the growth trend.`;
   } else if (category.category === 'Severe obesity') {
-    guidance = `A BMI of ${b} ${at} is at or above <strong>120% of the 95th percentile</strong> for ${sexLabel}, which CDC classes as severe obesity. Talk with your pediatrician, who can look at the growth trend and the whole child before deciding on any next step.`;
+    // Under 120% of the 95th percentile only CDC's BMI 35 rule makes it severe obesity, so the sentence names that rule;
+    // same unrounded BMI and % of the 95th as categorizeChildBMI() (CMB-031).
+    const by35 = bmi >= 35 && result && result.pctP95 < 120;
+    guidance = (by35
+      ? `A BMI of ${b} ${at} is <strong>35 or more</strong>, which CDC classes as severe obesity.`
+      : `A BMI of ${b} ${at} is at or above <strong>120% of the 95th percentile</strong> for ${sexLabel}, which CDC classes as severe obesity.`)
+      + ' Talk with your pediatrician, who can look at the growth trend and the whole child before deciding on any next step.';
   } else {
     guidance = `A BMI of ${b} ${at} is at or above the <strong>95th percentile</strong> for ${sexLabel}, which CDC classes as obesity. Talk with your pediatrician, who can look at the growth trend and the whole child before deciding on any next step.`;
   }

@@ -38,7 +38,11 @@ analytics), as in research/cmb-027/hub_examples_playwright.py. Viewport 390 x 84
    C  outside fact: a statistic, cut-off, threshold, study result or year that comes, or should come, from a
       source. Matched to research/data-sources.csv: the row the sentence links to (url or endpoint; for a
       table cell, the table's links and source line), else the row manual.json names for it, else the row
-      the sentence names (first author, report number, BRFSS), else a row whose sample_note holds a
+      the sentence names (first author, report number, BRFSS), else the page's own data_source row
+      (research/page-map.csv, when it names a registry row; CMB-031) when its dataset holds the number at the
+      precision the page prints, or its sample_note or notes hold it (a distinctive number or a year), else the
+      rows the registry says serve the page (pages_served; a number none of them holds is "not in its row"
+      against the page's own row when that row serves the page), else a row whose sample_note holds a
       distinctive number (a decimal or 4+ digits), else a row the paragraph links to that holds the number.
       Status:
         row          the number is in that row's sample_note (a year may sit in its source or domain)
@@ -46,7 +50,14 @@ analytics), as in research/cmb-027/hub_examples_playwright.py. Viewport 390 x 84
         row-dataset  it is in the dataset the registry says the row serves: cdc-brfss-state-obesity, the
                      2011-2025 state CSVs (cell by state, year and age group); nhanes-2021-2023-exam-files and
                      nhanes-anthropometric-reference, avgw_results.json (written by the compute.py the first
-                     row's sample_note names; the age tables cell by sex, age group and measure)
+                     row's sample_note names; the age tables cell by sex, age group and measure);
+                     cdc-extended-bmi-data, data/cdc/bmi-age-2022.csv at the precision the page prints (CMB-031):
+                     a table cell by sex (the caption), birthday row (age x 12 + 0.5 months) and column (5th,
+                     50th, 85th, 95th, 120% of 95th), the header's columns and the row ages; in prose, a value of
+                     the column the sentence (or its FAQ question or paragraph) names, for the sex and the ages
+                     it names, and a whole number of months the file has a row for; any other value only when
+                     printed to 4 or more decimals or exactly as the file has it (at 0.1 a BMI matches some cell
+                     of the 13,000-value file by chance)
         not-in-row   a row is identified but holds no such number ("differs from its row"). Two notes, which
                      change no status: "also in", the other rows whose sample_note or notes hold the same
                      number (3+ significant digits) with two others of the sentence (or its only other) within
@@ -1494,6 +1505,20 @@ def load_registry():
     return rows
 
 
+OWN_ROW = {}   # page -> its data_source registry row (research/page-map.csv), filled in main() (CMB-031)
+
+
+def load_own_rows(rows):
+    """The registry row each page names as its data_source in research/page-map.csv (free text names none)."""
+    domains = {r['domain'] for r in rows}
+    out = {}
+    for r in csv.DictReader(open(REPO / 'research' / 'page-map.csv', newline='', encoding='utf-8')):
+        slug, src = r['slug'].strip().strip('/'), r['data_source'].strip()
+        if src in domains:
+            out['/' if slug == 'home' else '/' + slug + '/'] = src
+    return out
+
+
 def load_datasets():
     ds = {}
     brfss = defaultdict(dict)
@@ -1529,7 +1554,73 @@ def load_datasets():
     a = {'aw': aw, 'values': vals, 'file': 'research/average-weight/avgw_results.json'}
     ds['nhanes-2021-2023-exam-files'] = a
     ds['nhanes-anthropometric-reference'] = a
+    # CDC's data file for the extended BMI-for-age charts (registry cdc-extended-bmi-data), every column by sex and
+    # month of age; matched at the precision the page prints (CMB-031)
+    kids, vals = {'male': {}, 'female': {}}, set()
+    for row in csv.DictReader(open(REPO / 'data/cdc/bmi-age-2022.csv', newline='', encoding='utf-8')):
+        rec = {c: float(x) for c, x in row.items() if c != 'sex' and x not in ('', None)}
+        kids['male' if row['sex'].strip() == '1' else 'female'][rec['agemos']] = rec
+        vals.update(rec.values())
+    ds['cdc-extended-bmi-data'] = {'kids': kids, 'values': vals, 'precision': True, 'file': 'data/cdc/bmi-age-2022.csv'}
     return ds
+
+
+KIDS_COLS = {'5th': 'P5', '50th': 'P50', '85th': 'P85', '95th': 'P95', '120% of 95th': 'pct120ofP95'}
+KIDS_WORDS = [(r'\bmedian\b|\b50th\b', 'P50'), (r'\b5th\b', 'P5'), (r'\b85th\b', 'P85'), (r'(?<!of the )(?<!of )\b95th\b', 'P95'),
+              (r'\b120% of (?:the |his row\W?s |her row\W?s )?95th\b', 'pct120ofP95'), (r'\bhealthy\b', 'P5'), (r'\bhealthy\b', 'P85'),
+              (r'\bsigma\b', 'sigma'), (r'\bL =', 'L'), (r'\bM =', 'M'), (r'\bS =', 'S')]
+
+
+def kids_keyed(s, k, d):
+    """bmi-age-2022.csv keyed by what the page says: a table cell by sex (caption), birthday row and column; in
+    prose, the columns the sentence (or its FAQ question or paragraph) names, for the sexes and ages it names, and a
+    whole number of months the file has a row for. None when nothing keys the number."""
+    v, dec = k.value, k.dec
+    if s.region == 'table' and s.cells:
+        cap = s.unit.get('caption', '')
+        sex = 'male' if re.match(r'Boys\b', cap) else 'female' if re.match(r'Girls\b', cap) else None
+        head = [norm1(squash(h)) for h in s.unit.get('colHead') or []]
+        col = head[k.cell] if k.cell is not None and k.cell < len(head) else ''
+        if sex is None:
+            return None
+        if s.unit.get('isHead'):
+            if col in KIDS_COLS:
+                return {'status': 'row-dataset', 'note': f'a column of the dataset ({KIDS_COLS[col]})'}
+            return None
+        age = s.cells[0].strip()
+        if not re.fullmatch(r'\d{1,2}', age) or int(age) * 12 + 0.5 not in d['kids'][sex]:
+            return None
+        agemos = int(age) * 12 + 0.5
+        if k.cell == 0:
+            return {'status': 'row-dataset', 'note': f'an age of the dataset (the {agemos}-month row)'}
+        if col in KIDS_COLS:
+            want = d['kids'][sex][agemos][KIDS_COLS[col]]
+            if half_up(want, dec) == v:
+                return {'status': 'row-dataset', 'value': want}
+            return {'status': 'not-in-row', 'value': want, 'note': f'dataset has {want} for {sex} at {age} ({agemos} months), {col}'}
+        return None
+    t = s.t
+    if dec == 0 and re.match(r'\s*(?:(?:to|-)\s*\d+\s*)?months?\b', k.suf):    # "24 to 239 months", "239 months"
+        if v + 0.5 in d['kids']['male']:
+            return {'status': 'row-dataset', 'note': f'a month of age the dataset has a row for ({v + 0.5})'}
+    if dec < 1 or k.ord:
+        return None
+    text = t + ' ' + (s.unit.get('question') or '') + ' ' + (s.unit.get('ctx') or '')
+    cols = {c for rx, c in KIDS_WORDS if re.search(rx, text, re.I)}
+    sexes = [x for x, rx in (('male', r"\b(?:boys?|boy's|his|he)\b"), ('female', r"\b(?:girls?|girl's|her|she)\b")) if re.search(rx, t, re.I)] \
+        or ['male', 'female']
+    ages = set()
+    for m in re.finditer(r'(?:\b(?:age|aged|at|from|and)\s+|,\s*)(\d{1,2})(?!\d|[.,]\d)(?!\s*(?:%|lb|kg|cm|months?\b))|(\d{1,2})[- ]year[- ]old|(\d{1,2}) years?\b', t):
+        a = int(next(g for g in m.groups() if g))
+        if 2 <= a <= 20:
+            ages.add(a)
+    rows_ = [(x, a * 12 + 0.5) for x in sexes for a in sorted(ages) if a * 12 + 0.5 in d['kids'][x]]
+    for x, am in rows_:
+        for c in sorted(cols):
+            want = d['kids'][x][am].get(c)
+            if want is not None and (half_up(want, dec) == v or half_up(abs(want), dec) == v):
+                return {'status': 'row-dataset', 'value': want, 'note': f'{x} at {int(am // 12)} ({am} months), {c}'}
+    return None
 
 
 def holds(nums, v, dec):
@@ -1551,8 +1642,19 @@ def distinctive(k):
 
 
 def dataset_value(s, k, domain, d, keyed_only=False):
-    """The dataset a row serves: a keyed cell (the state tables, the age page's average tables), else any value."""
+    """The dataset a row serves: a keyed cell (the state tables, the age page's average tables, CDC's extended BMI
+    file), else any value."""
     v, dec = k.value, k.dec
+    if 'kids' in d:
+        got = kids_keyed(s, k, d)
+        if got is not None:
+            return got | {'domain': domain, 'dataset': d['file']}
+        if keyed_only:
+            return None
+        # any value of the file: exactly as stored, or at the page's precision from 4 decimals up
+        if distinctive(k) and any(abs(abs(w) - v) < 1e-9 or (dec >= 4 and half_up(abs(w), dec) == v) for w in d['values']):
+            return {'status': 'row-dataset', 'domain': domain, 'dataset': d['file'], 'note': 'a value of the file at the printed precision'}
+        return None
     head = [norm1(squash(h)) for h in s.unit.get('colHead') or []]
     col = head[k.cell] if s.region == 'table' and k.cell is not None and k.cell < len(head) else ''
     if domain == 'cdc-brfss-state-obesity' and s.region == 'table' and s.cells:
@@ -1699,14 +1801,46 @@ def match_row(s, k, rows, ds):
         return {'status': 'no-row', 'links': links[:4], 'note': f'names {near}, who has no registry row'}
     if name_rows:
         return verdict(name_rows, 'name')
+    # the page's own data_source row (research/page-map.csv) first (CMB-031): its dataset at the precision the page
+    # prints (a keyed cell that differs is "not in its row" there), and its sample_note or notes for a distinctive
+    # number or a year; a small whole number found there by chance goes on to the rules below
+    own = next((r for r in rows if r['domain'] == OWN_ROW.get(s.page)), None)
+    if own:
+        got = own_verdict(s, k, own, ds, year)
+        if got is not None:
+            return got
     # the rows the registry says serve this page (pages_served), when the sentence or its table/figure names
-    # their publisher or survey, or the number is a data year
+    # their publisher or survey, or the number is a data year; a number none of them holds is "not in its row"
+    # against the page's own row when that row serves the page
     served = [r for r in rows if s.page.strip('/') in [x.strip() for x in r['pages_served'].split(';')]]
     by_number = number_match(s, k, rows) if distinctive(k) else (year_match(s, k, rows) if year else None)
     if served and (s.page in DATA_PAGES or re.search(r'\b(CDC|NCHS|NHANES|BRFSS|E-Stat|survey|measured|self-reported)\b', s.t + ' ' + s.ctx(), re.I)):
         got = verdict(served, 'pages_served')
+        if got['status'] == 'not-in-row' and own in served:
+            got = got | {'domain': own['domain'], 'sample_note': own['sample_note'][:400]}
         return by_number if got['status'] == 'not-in-row' and by_number and by_number.get('strong') else got
     return by_number or {'status': 'no-row', 'links': links[:4]}
+
+
+def own_verdict(s, k, r, ds, year):
+    """The page's own data_source row (CMB-031), in verdict()'s order: its sample_note (a distinctive number or a
+    year), its dataset keyed, its notes (a distinctive number), its dataset at the precision the page prints. None
+    when it holds nothing of this number."""
+    v, dec = k.value, k.dec
+    d = ds.get(r['domain'])
+    if (distinctive(k) and holds(r['_sn'], v, dec)) or (year and (holds(r['_sn'], v, 0) or holds(r['_ident'], v, 0))):
+        return {'status': 'row', 'domain': r['domain'], 'how': 'data_source'}
+    if d:
+        got = dataset_value(s, k, r['domain'], d, keyed_only=True)
+        if got is not None:
+            return got | {'how': 'data_source'}
+    if distinctive(k) and holds(r['_notes'], v, dec):
+        return {'status': 'row-notes', 'domain': r['domain'], 'how': 'data_source'}
+    if d:
+        got = dataset_value(s, k, r['domain'], d)
+        if got is not None:
+            return got | {'how': 'data_source'}
+    return None
 
 
 PUBLISHER_TOKENS = ('NHANES', 'NCHS', 'BRFSS', 'Gallup', 'WHO', 'NHLBI', 'NIDDK', 'Lancet', 'NICE', 'ADA', 'MedlinePlus', 'All of Us')
@@ -2231,6 +2365,7 @@ def main():
     manual = load_manual()
     used = Counter()
     rows = load_registry()
+    OWN_ROW.update(load_own_rows(rows))
     ds = load_datasets()
     calc_js = (REPO / 'assets/js/calculator.js').read_text(encoding='utf-8')
     lms_js = (REPO / 'assets/js/cdc-bmi-lms.js').read_text(encoding='utf-8')

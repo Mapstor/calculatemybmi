@@ -8,6 +8,7 @@ Copies the served site (the repo without .git, research, .claude and audit) to a
   4. a removed for:             the label of kids-sex loses its for attribute
   5. an article wrapper:        the #examples section wrapped in <article>
   6. a banned phrase:           "Children with obesity are more likely to have type 2 diabetes." added to #prevalence
+  7. the 120% sentence back:    calculator.js (the temp copy) says "120% of the 95th percentile" when only BMI 35 decides (CMB-031)
 Needs Python Playwright + Chromium (the test does). Exit 1 if the control fails or any break passes."""
 import os, shutil, subprocess, sys, tempfile, time, urllib.request
 
@@ -31,6 +32,7 @@ BREAKS = [
                                 ('</section><section id="age"', '</section></article><section id="age"')]),
     ('a banned phrase', KP, [('had severe obesity (', 'had severe obesity. Children with obesity are more likely to have type 2 '
                                                       'diabetes (')]),
+    ('the 120% sentence back for the BMI 35 case', JS, [('const by35 = bmi >= 35 && result && result.pctP95 < 120;', 'const by35 = false;')]),
 ]
 
 

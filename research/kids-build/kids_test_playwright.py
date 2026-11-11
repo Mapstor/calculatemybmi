@@ -9,7 +9,9 @@ Serve the repo (python3 -m http.server 8000), then:
   - the calculator: chat's step 1 anchors typed in as literals (US units); CDC's two examples through
     computeKidsPercentile(); the American Academy of Pediatrics' class line under severe obesity at 126.8% (class 2),
     at 140% or more (class 3), at BMI 40 or more under 140% (class 3) and at BMI 35 to 40 under 120% (class 2), gone
-    again after a result that isn't severe obesity; getLMSRow() reads floor(age in months) + 0.5 at every age;
+    again after a result that isn't severe obesity; getLMSRow() reads floor(age in months) + 0.5 at every age; the
+    severe obesity sentence (CMB-031): a girl of 17 years 0 months at BMI 35.2, under 120% of her 95th (35.6), reads
+    "is 35 or more", and CDC's boy at 126.8% keeps the 120% sentence;
   - the worked examples, the age example and every number sentence in the takeaways, FAQ and sections against
     kids_stats.json, the two examples chat typed in also typed in here;
   - the figure: every band and band-edge point against kids_stats.json, the tints, the legend above the panels, the
@@ -108,8 +110,9 @@ RESULT_JS = """() => {
       [m.querySelector('.er-metric-value').textContent.trim(), m.querySelector('.er-metric-sub').textContent.trim()]; });
   const card = document.getElementById('kids-result-card');
   const kids = [...card.children].map(e => e.id);
+  const guide = document.querySelector('#kids-results .er-summary p');
   return {bmi: t('kids-bmi-value'), cat: t('kids-bmi-category'), line: t('kids-percentile-note'), aap: t('kids-aap-class'),
-          kids, metrics, visible: getComputedStyle(document.getElementById('kids-results')).display !== 'none',
+          guide: guide ? guide.textContent.replace(/\\s+/g, ' ').trim() : null, kids, metrics, visible: getComputedStyle(document.getElementById('kids-results')).display !== 'none',
           text: document.getElementById('kids-results').textContent};
 }"""
 
@@ -305,6 +308,18 @@ with sync_playwright() as p:
     ok(g['cat'] == 'Severe obesity' and g['aap'] == 'The American Academy of Pediatrics calls this class 2 obesity.'
        and metric(g, '% of 95th percentile')[0] == '126.8%' and g['kids'][:4] == ['kids-bmi-value', 'kids-bmi-category', 'kids-aap-class', 'kids-percentile-note'],
        f'AAP class 2 at 126.8%: {g["cat"]} / {g["aap"]} / {g["kids"]}')
+    # the severe obesity sentence (CMB-031): CDC's boy is over 120% of his 95th, so the 120% sentence stays
+    PED = ' Talk with your pediatrician, who can look at the growth trend and the whole child before deciding on any next step.'
+    ok(g['guide'] == 'A BMI of 22.6 at 4 years 2 months is at or above 120% of the 95th percentile for boys, which CDC classes as severe obesity.' + PED,
+       f'severe obesity sentence, CDC boy at 126.8%: {g["guide"]}')
+    # a girl of 17 years 0 months at BMI 35.2 (150 cm, 79.2 kg): under 120% of her 95th (35.6), so only the BMI 35 rule decides
+    ok(T['female'][17]['p120'] == '35.6' and Decimal('35.2') / Decimal(T['female'][17]['p95_exact']) * 100 < 120, 'girl 17: 35.2 under 120% of her 95th')
+    g = calc(pg, 'female', 17, 0, cm=150, kg='79.2')
+    p95_shown = metric(g, '% of 95th percentile')[0]
+    ok(g['bmi'] == '35.2' and g['cat'] == 'Severe obesity' and float(p95_shown.rstrip('%')) < 120
+       and g['aap'] == 'The American Academy of Pediatrics calls this class 2 obesity.'
+       and g['guide'] == 'A BMI of 35.2 at 17 years is 35 or more, which CDC classes as severe obesity.' + PED,
+       f'severe obesity sentence, girl 17 years 0 months at BMI 35.2: {g["bmi"]} / {g["cat"]} / {p95_shown} / {g["aap"]} / {g["guide"]}')
     g = calc(pg, 'female', 10, 0, ft=4, inch=6, lb=140)
     ok(g['cat'] == 'Severe obesity' and g['aap'] == 'The American Academy of Pediatrics calls this class 3 obesity.'
        and float(metric(g, '% of 95th percentile')[0].rstrip('%')) >= 140, f'AAP class 3 at 140% or more: {g["aap"]} {metric(g, "% of 95th percentile")}')

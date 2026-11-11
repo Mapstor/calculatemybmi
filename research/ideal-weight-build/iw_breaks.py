@@ -8,6 +8,11 @@ Copies the served site (the repo without .git, research, .claude and audit) to a
   4. a removed for:             the label of ideal-frame loses its for attribute
   5. an article wrapper:        the #frame section wrapped in <article>
   6. a banned phrase:           "Averaging the four gives a more robust estimate." added to the formulas section
+  7. a soft hyphen back:        the women's by-height heading Robinson written Robin&shy;son again (CMB-031)
+  8. the small headings gone:   the women's by-height table loses .data-table--small-head, so its whole names no longer
+                                fit a 360 or a 390 px phone (CMB-031)
+  9. an average of formulas:    "Their average ideal weight is the middle of the span." added to the formulas section
+                                (CMB-031: the narrowed "average" rule still bans it)
 Needs Python Playwright + Chromium (the test does). Exit 1 if the control fails or any break passes."""
 import os, shutil, subprocess, sys, tempfile, time, urllib.request
 
@@ -29,6 +34,16 @@ BREAKS = [
                                 ('</section><section id="examples"', '</section></article><section id="examples"')]),
     ('a banned phrase', IW, [('<p>Hamwi’s formula is in pounds, the other three in kilograms.</p>',
                               '<p>Hamwi’s formula is in pounds, the other three in kilograms. Averaging the four gives a more robust estimate.</p>')]),
+    ('a soft hyphen back', IW, [('<caption>Women, medium frame: lb, with kg under each value</caption><thead><tr><th scope="col">Height'
+                                 '<span class="th-sub">cm</span></th><th scope="col" class="num">Hamwi</th><th scope="col" class="num">Devine</th>'
+                                 '<th scope="col" class="num">Robinson</th>',
+                                 '<caption>Women, medium frame: lb, with kg under each value</caption><thead><tr><th scope="col">Height'
+                                 '<span class="th-sub">cm</span></th><th scope="col" class="num">Hamwi</th><th scope="col" class="num">Devine</th>'
+                                 '<th scope="col" class="num">Robin&shy;son</th>')]),
+    ('the small headings gone', IW, [('<table class="data-table data-table--fit data-table--tight data-table--small-head"><caption>Women',
+                                      '<table class="data-table data-table--fit data-table--tight"><caption>Women')]),
+    ('an average of formulas', IW, [('<p>Hamwi’s formula is in pounds, the other three in kilograms.</p>',
+                                     '<p>Hamwi’s formula is in pounds, the other three in kilograms. Their average ideal weight is the middle of the span.</p>')]),
 ]
 
 

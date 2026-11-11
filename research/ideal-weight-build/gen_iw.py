@@ -173,15 +173,15 @@ def figure():
 
 
 # ---------------------------------------------------------------- tables
-# Six number columns fit a 360 px phone only if a heading can break: soft hyphens, used only where the screen needs them
-HYPH = {'hamwi': 'Ham&shy;wi', 'devine': 'Dev&shy;ine', 'robinson': 'Robin&shy;son', 'miller': 'Mil&shy;ler'}
+# Six number columns and whole formula names: on phones the headings take the tiny label size (.data-table--small-head),
+# so no name breaks and the table fits a 360 px phone; "Healthy BMI range" wraps between its words (CMB-031).
 
 
 def by_height_table(sex):
     word = sex_word(sex)
     head = ('<thead><tr><th scope="col">Height<span class="th-sub">cm</span></th>'
-            + ''.join(f'<th scope="col" class="num">{HYPH[n]}</th>' for n in NAMES)
-            + '<th scope="col" class="num">Heal&shy;thy BMI range</th></tr></thead>')
+            + ''.join(f'<th scope="col" class="num">{LABEL[n]}</th>' for n in NAMES)
+            + '<th scope="col" class="num">Healthy BMI range</th></tr></thead>')
     body = []
     for r in S['tables'][sex]:
         rid = f'{word}-{r["inches"] // 12}-{r["inches"] % 12}'
@@ -189,7 +189,7 @@ def by_height_table(sex):
         h = r['healthy']
         body.append(f'<tr id="{rid}"><th scope="row">{r["height"]}<span class="th-sub">{r["cm"].split()[0]}</span></th>{cells}'
                     f'<td class="num">{h["lb"][0]}–{h["lb"][1]}<span class="cell-kg">{h["kg"][0]}–{h["kg"][1]}</span></td></tr>')
-    return ('<div class="table-responsive"><table class="data-table data-table--fit data-table--tight">'
+    return ('<div class="table-responsive"><table class="data-table data-table--fit data-table--tight data-table--small-head">'
             f'<caption>{word.capitalize()}, medium frame: lb, with kg under each value</caption>'
             + head + '<tbody>' + ''.join(body) + '</tbody></table></div>')
 
@@ -508,6 +508,7 @@ MAIN = (
     '<div><h3>Guides and data</h3><ul><li><a href="/bmi-chart/">BMI chart</a></li>'
     '<li><a href="/blog/bmi-chart-women/">BMI chart for women</a></li>'
     '<li><a href="/blog/bmi-chart-men/">BMI chart for men</a></li>'
+    '<li><a href="/average-weight/">Average weight by height</a></li>'
     '<li><a href="/blog/healthy-bmi-range/">Healthy BMI range</a></li>'
     '<li><a href="/blog/body-fat-vs-bmi/">Body fat vs BMI</a></li>'
     '<li><a href="/blog/bmi-limitations/">Limitations of BMI</a></li></ul></div>'
