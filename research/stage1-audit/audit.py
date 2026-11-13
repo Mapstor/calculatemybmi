@@ -57,7 +57,11 @@ analytics), as in research/cmb-027/hub_examples_playwright.py. Viewport 390 x 84
                      the column the sentence (or its FAQ question or paragraph) names, for the sex and the ages
                      it names, and a whole number of months the file has a row for; any other value only when
                      printed to 4 or more decimals or exactly as the file has it (at 0.1 a BMI matches some cell
-                     of the 13,000-value file by chance)
+                     of the 13,000-value file by chance); nhanes-child-weight-trends, the childhood page's CSV of
+                     NCHS Health E-Stat 112 Tables 1-3, only while its SHA-256 is the one checked against the
+                     published tables (CMB-043, research/cmb-043/he112_check.js): a table cell by table (the
+                     caption), survey period and column (race group and period in Table 3), the periods and
+                     column headings; in prose, a survey year of the file or a distinctive value of it
         not-in-row   a row is identified but holds no such number ("differs from its row"). Two notes, which
                      change no status: "also in", the other rows whose sample_note or notes hold the same
                      number (3+ significant digits) with two others of the sentence (or its only other) within
@@ -79,6 +83,7 @@ findings, not failures); 1 otherwise.
 """
 import argparse
 import csv
+import hashlib
 import html
 import json
 import math
@@ -1562,7 +1567,74 @@ def load_datasets():
         kids['male' if row['sex'].strip() == '1' else 'female'][rec['agemos']] = rec
         vals.update(rec.values())
     ds['cdc-extended-bmi-data'] = {'kids': kids, 'values': vals, 'precision': True, 'file': 'data/cdc/bmi-age-2022.csv'}
+    # NCHS Health E-Stat 112 Tables 1-3 as the childhood page's CSV holds them (CMB-043): all 278 rows were read
+    # against the published tables in Chrome (research/cmb-043/he112_check.js), so the file serves as the row's
+    # dataset only while its SHA-256 is the one checked; an edited CSV needs the check again
+    he = REPO / HE112_CSV
+    if he.exists() and hashlib.sha256(he.read_bytes()).hexdigest() == HE112_SHA256:
+        cells, vals, years = {}, set(), set()
+        for r in list(csv.reader(open(he, newline='', encoding='utf-8')))[2:]:
+            t, per, grp, meas, pct, se, flag = r
+            cells[(t, norm1(per), grp, meas)] = float(pct)
+            vals.add(float(pct))
+            if se:
+                vals.add(float(se))
+            years.update(int(y) for y in re.findall(r'\d{4}', per))
+        ds['nhanes-child-weight-trends'] = {'he112': cells, 'values': vals, 'years': years, 'file': HE112_CSV}
     return ds
+
+
+HE112_CSV = 'childhood-obesity-statistics/childhood-obesity-nhanes-1963-2023.csv'
+HE112_SHA256 = '4ff775bf81e6955eaf2c5a85f36817e988922e6b5b89e143ee735345b99a75ed'
+HE112_TABLES = {'children and teens ages 2-19: obesity, severe obesity and overweight by survey period': '1',
+                'obesity by age group, ages 2-19': '2', 'obesity by race and hispanic origin, ages 2-19': '3'}
+HE112_T1 = {'obesity': ('all 2-19', 'obesity'), 'severe obesity': ('all 2-19', 'severe_obesity'),
+            'overweight': ('all 2-19', 'overweight'), 'obesity, boys': ('boys 2-19', 'obesity'),
+            'obesity, girls': ('girls 2-19', 'obesity')}
+HE112_T2 = {'ages 2-5': 'all 2-5', 'ages 6-11': 'all 6-11', 'ages 12-19': 'all 12-19'}
+
+
+def he112_keyed(s, k, d):
+    """The childhood page's three tables keyed into Health E-Stat 112 (CMB-043): table by caption, survey period by
+    the row label, measure or age group by the column (Table 3: race group by the row label, sex and period by the
+    column). None when the number isn't in one of those tables."""
+    if s.region != 'table' or not s.cells:
+        return None
+    cap = norm1(squash(s.unit.get('caption', ''))).lower()
+    t = next((n for c, n in HE112_TABLES.items() if cap.startswith(c)), None)
+    if t is None:
+        return None
+    head = [norm1(squash(h)).lower() for h in s.unit.get('colHead') or []]
+    col = head[k.cell] if k.cell is not None and k.cell < len(head) else ''
+    period = lambda x: 'Aug 2021-Aug 2023' if re.search(r'2021', x) else x
+    periods = {key[1] for key in d['he112'] if key[0] == t}
+    if s.unit.get('isHead'):
+        if t == '2' and col in HE112_T2:
+            return {'status': 'row-dataset', 'note': 'an age group of the dataset'}
+        if t == '3' and re.fullmatch(r'(boys|girls) (2017-2018|2021-2023)', col):
+            return {'status': 'row-dataset', 'note': 'a survey period of the dataset'}
+        return None
+    if t in ('1', '2') and k.cell == 0:
+        if period(s.cells[0].strip()) in periods:
+            return {'status': 'row-dataset', 'note': 'a survey period of the dataset'}
+        return None
+    if t == '1' and col in HE112_T1:
+        key = (t, period(s.cells[0].strip())) + HE112_T1[col]
+    elif t == '2' and col in HE112_T2:
+        per = period(s.cells[0].strip())
+        grp = HE112_T2[col] + (' (12-17)' if per == '1966-1970' and col == 'ages 12-19' else '')
+        key = (t, per, grp, 'obesity')
+    elif t == '3' and re.fullmatch(r'(boys|girls) (2017-2018|2021-2023)', col):
+        sex, per = col.split(' ')
+        key = (t, period(per), f'{sex} {s.cells[0].strip()}', 'obesity')
+    else:
+        return None
+    want = d['he112'].get(key)
+    if want is None:
+        return {'status': 'not-in-row', 'note': f'dataset has no row for {" / ".join(key)}'}
+    if half_up(want, k.dec) == k.value:
+        return {'status': 'row-dataset', 'value': want}
+    return {'status': 'not-in-row', 'value': want, 'note': f'dataset has {want} for {" / ".join(key)}'}
 
 
 KIDS_COLS = {'5th': 'P5', '50th': 'P50', '85th': 'P85', '95th': 'P95', '120% of 95th': 'pct120ofP95'}
@@ -1645,6 +1717,17 @@ def dataset_value(s, k, domain, d, keyed_only=False):
     """The dataset a row serves: a keyed cell (the state tables, the age page's average tables, CDC's extended BMI
     file), else any value."""
     v, dec = k.value, k.dec
+    if 'he112' in d:
+        got = he112_keyed(s, k, d)
+        if got is not None:
+            return got | {'domain': domain, 'dataset': d['file']}
+        if keyed_only:
+            return None
+        if dec == 0 and v in d['years']:
+            return {'status': 'row-dataset', 'domain': domain, 'dataset': d['file'], 'note': 'a survey year of the dataset'}
+        if distinctive(k) and holds(d['values'], v, dec):
+            return {'status': 'row-dataset', 'domain': domain, 'dataset': d['file'], 'note': 'a value of the file'}
+        return None
     if 'kids' in d:
         got = kids_keyed(s, k, d)
         if got is not None:
@@ -1828,6 +1911,12 @@ def own_verdict(s, k, r, ds, year):
     when it holds nothing of this number."""
     v, dec = k.value, k.dec
     d = ds.get(r['domain'])
+    if d and 'he112' in d:
+        # a cell of the childhood page's tables is read in its own cell of Health E-Stat 112 first (CMB-043): a
+        # sample_note number that fits by chance mustn't pass a cell that differs
+        got = dataset_value(s, k, r['domain'], d, keyed_only=True)
+        if got is not None:
+            return got | {'how': 'data_source'}
     if (distinctive(k) and holds(r['_sn'], v, dec)) or (year and (holds(r['_sn'], v, 0) or holds(r['_ident'], v, 0))):
         return {'status': 'row', 'domain': r['domain'], 'how': 'data_source'}
     if d:
@@ -2527,7 +2616,7 @@ def write_report(base, pages, all_sents, skipped, page_errors, a_errors, manual,
                             if also:
                                 c['also_in'] = list(dict.fromkeys(also))[:3]
                         inc = [h for h, nums, cited in (page_csvs or {}).get(page, []) if c['row'] in cited and (k.value, k.dec) in nums]
-                        if inc:
+                        if inc and k.row.get('dataset') != HE112_CSV:   # a CSV checked against its source isn't "open"
                             c['page_csv'] = inc[0]
                         P['c_not_in_row'].append(c)
         P['score'] = len(P['mismatches']) + len(P['c_no_row'])
