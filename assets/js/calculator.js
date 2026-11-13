@@ -734,7 +734,9 @@ function displayIdealWeightResults(type, w, heightInches, sex, frame) {
     const rng = (a, b, unit, d) => (a === b ? a.toFixed(d) : a.toFixed(d) + '–' + b.toFixed(d)) + ' ' + unit;
     const spanLb = rng(lo.lb, hi.lb, 'lbs', 0), spanKg = rng(lo.kg, hi.kg, 'kg', 1);
     set('span', CMB_METRIC ? spanKg + alt(spanLb) : spanLb + alt(spanKg));
-    const bmis = keys.map(k => round1(calculateBMI(w[k].lb, heightInches)));
+    // BMI at the weights as printed, in the unit shown, so a printed weight typed into a BMI calculator gives the same BMI
+    // (CMB-033: a 5'10" man with a large frame read 183 lbs and BMI 26.2, from Hamwi's unrounded 182.6 lb; 183 lb is 26.3).
+    const bmis = keys.map(k => round1(calculateBMI(CMB_METRIC ? P[k].kg * 2.20462 : P[k].lb, heightInches)));
     const bLo = Math.min(...bmis), bHi = Math.max(...bmis);
     const where = bLo >= 18.5 && bHi < 25 ? 'inside the healthy range of 18.5 to 24.9'
       : bHi < 18.5 ? 'below the healthy range of 18.5 to 24.9'

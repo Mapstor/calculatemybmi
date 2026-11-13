@@ -153,8 +153,12 @@ def row(inches, sex, frame='medium'):
         cells[name] = {'lb': plb, 'kg': kg_s(pk10), 'lb_exact': round(float(elb), 6), 'kg_exact': round(float(ekg), 6)}
     bmis = []
     for name in NAMES:
-        b = round1_js(bmi_js(js[name][0], inches))
-        assert F(round(b * 10), 10) == round_bmi_exact(ex[name][0], inches), (inches, sex, name, b)
+        # BMI at the weight as printed (CMB-033), as displayIdealWeightResults() states it: what a reader gets by typing
+        # the printed whole pounds into a BMI calculator (from the unrounded weight, Hamwi's 182.6 lb at 5'10" large frame
+        # read 26.2 next to a printed 183 lb, which is 26.3).
+        plb = cells[name]['lb']
+        b = round1_js(bmi_js(plb, inches))
+        assert F(round(b * 10), 10) == round_bmi_exact(F(plb), inches), (inches, sex, name, b)
         bmis.append(b)
     minLb, maxLb, minKg, maxKg = weight_bounds_js(inches)
     assert (minLb, maxLb) == bounds_exact(inches, 'lb') and (minKg, maxKg) == bounds_exact(inches, 'kg'), (inches, minLb, maxLb, minKg, maxKg)
@@ -311,7 +315,7 @@ assert strip(agree['male']['narrowest']) == [{'height': '5′5″', 'lb': [136, 
                                               {'height': '5′6″', 'lb': [140, 143], 'width': 3}], agree['male']
 assert min(agree['male']['narrowest'], key=lambda x: x['spread_unrounded'])['height'] == '5′6″', agree['male']
 assert strip(agree['male']['widest']) == [{'height': '6′6″', 'lb': [180, 214], 'width': 34}], agree['male']
-assert agree['female']['bmi'] == ['19.5', '22.9'] and agree['male']['bmi'] == ['20.7', '24.7'], agree
+assert agree['female']['bmi'] == ['19.5', '22.8'] and agree['male']['bmi'] == ['20.7', '24.7'], agree   # 22.9 from unrounded weights until CMB-033
 assert agree['female']['all_inside_healthy'] and agree['male']['all_inside_healthy'], agree
 # the 6'6" men's ends the takeaway names: Miller 180, Hamwi 214
 assert T['male'][78]['miller']['lb'] == 180 and T['male'][78]['hamwi']['lb'] == 214, T['male'][78]

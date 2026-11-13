@@ -13,6 +13,8 @@ Copies the served site (the repo without .git, research, .claude and audit) to a
                                 fit a 360 or a 390 px phone (CMB-031)
   9. an average of formulas:    "Their average ideal weight is the middle of the span." added to the formulas section
                                 (CMB-031: the narrowed "average" rule still bans it)
+ 10. BMI from unrounded weights: calculator.js (the temp copy) states the results summary's BMI from the formulas'
+                                unrounded weights again, so a 5′10″ man with a large frame reads 26.2 next to 183 lb (CMB-033)
 Needs Python Playwright + Chromium (the test does). Exit 1 if the control fails or any break passes."""
 import os, shutil, subprocess, sys, tempfile, time, urllib.request
 
@@ -42,6 +44,8 @@ BREAKS = [
                                  '<th scope="col" class="num">Robin&shy;son</th>')]),
     ('the small headings gone', IW, [('<table class="data-table data-table--fit data-table--tight data-table--small-head"><caption>Women',
                                       '<table class="data-table data-table--fit data-table--tight"><caption>Women')]),
+    ('BMI from unrounded weights', JS, [('    const bmis = keys.map(k => round1(calculateBMI(CMB_METRIC ? P[k].kg * 2.20462 : P[k].lb, heightInches)));',
+                                        '    const bmis = keys.map(k => round1(calculateBMI(w[k].lb, heightInches)));')]),
     ('an average of formulas', IW, [('<p>Hamwi’s formula is in pounds, the other three in kilograms.</p>',
                                      '<p>Hamwi’s formula is in pounds, the other three in kilograms. Their average ideal weight is the middle of the span.</p>')]),
 ]
