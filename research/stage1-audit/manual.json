@@ -2074,8 +2074,8 @@
   {
    "page": "/blog/body-fat-vs-bmi/",
    "sig": "You're athletic or muscular, making specific body composition goals, older (#+), or want the most accurate individual health assessment.",
-   "classes": "C",
-   "why": "an age threshold with no source"
+   "classes": "D",
+   "why": "an age group in a list of situations (CMB-037; was \"an age threshold with no source\")"
   },
   {
    "page": "/blog/body-fat-vs-bmi/",
@@ -2320,13 +2320,15 @@
    "page": "/privacy/",
    "sig": "GA# offers # or # months for user-level and event-level data; the setting in force here is the one selected on the property and can be viewed by the site operator.",
    "classes": "C",
-   "why": "a fact about Google Analytics (no registry row)"
+   "row": "google-analytics-data-retention",
+   "why": "GA4's retention options, Google's help page (CMB-037)"
   },
   {
    "page": "/privacy/",
    "sig": "The site is not directed at children under the age of # (or # in the EEA, depending on member state law).",
    "classes": "C",
-   "why": "legal ages (COPPA, GDPR; no registry row)"
+   "row": "gdpr-article-8",
+   "why": "COPPA's under 13 (ftc-coppa-rule) and GDPR Article 8's 16, which member states may lower to no less than 13; the Article 8 row holds both numbers (CMB-037)"
   },
   {
    "page": "/lean-body-mass/",
@@ -2817,6 +2819,20 @@
    "classes": "C",
    "row": "ko-tang-2006-wpro-2000",
    "why": "the ethnic-variation card: the 2000 Asia-Pacific proposal (WHO Western Pacific, IASO, IOTF), overweight from 23 instead of 25 (CMB-036)"
+  },
+  {
+   "page": "/blog/",
+   "sig": "From Quetelet's # index to Ancel Keys naming it BMI in # and the WHO categories.",
+   "classes": "C",
+   "row": "eknoyan-2008-quetelet",
+   "why": "the BMI history card: Eknoyan 2008's dates (CMB-037)"
+  },
+  {
+   "page": "/blog/",
+   "sig": "Your waist divided by your height: the # boundary and how it compares with BMI.",
+   "classes": "C",
+   "row": "nice-ng246-ethnicity-thresholds",
+   "why": "the waist-to-height card: NICE's 0.5 boundary (increased central adiposity from 0.5) (CMB-037)"
   }
  ]
 }
