@@ -290,6 +290,9 @@ No sharp corners (0 radius) and no custom clip-paths. Borders are hairline (`1px
 ### Cards inside a section
 - A `.content-section` is the card. Related cards (`.blog-card`) and FAQ items inside it render flat, divided by hairlines (CMB-010), as on the men page. Never a card inside a card.
 - Outside links to sources use `.resource-list` (link plus one muted line), not tiles.
+- A box inside a section card is a tinted panel with no border, or a flat item divided by hairlines; never a 1 px outline inside a card, and no hover lift on a static card (CMB-041).
+- Pages outside the D-14 column put `.measure-36` on their container: prose at 36em, and text-only boxes (`.cmb-answer`, `.cmb-callout`) at the same measure (CMB-041).
+- KPI tiles and region cards on the data pages show their colour as a small swatch before the label; a light map colour never carries text (CMB-041).
 
 ### Icons
 - No emoji or Unicode pictographs as icons, in page copy or in calculator results (CMB-010; check_structure fails them).
