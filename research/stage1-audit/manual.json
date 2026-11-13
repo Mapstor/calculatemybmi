@@ -1003,7 +1003,7 @@
   },
   {
    "page": "/blog/bmi-formula/",
-   "sig": "Result: BMI = # (Normal weight)",
+   "sig": "Result: BMI = # (Healthy weight)",
    "classes": "A",
    "why": "the worked example's result (metric)",
    "nth": 1,
@@ -1023,7 +1023,7 @@
        "read": "bmi"
       },
       {
-       "text": "Normal weight",
+       "text": "Healthy weight",
        "read": "category"
       }
      ]
@@ -1032,7 +1032,7 @@
   },
   {
    "page": "/blog/bmi-formula/",
-   "sig": "Result: BMI = # (Normal weight)",
+   "sig": "Result: BMI = # (Healthy weight)",
    "classes": "A",
    "why": "the worked example's result (US units)",
    "nth": 2,
@@ -1053,7 +1053,7 @@
        "read": "bmi"
       },
       {
-       "text": "Normal weight",
+       "text": "Healthy weight",
        "read": "category"
       }
      ]
@@ -1986,7 +1986,7 @@
   },
   {
    "page": "/blog/underweight-bmi-risks/",
-   "sig": "Height | Underweight (BMI <#) | Normal Range Start (BMI #) | Ideal Weight Mid-Range",
+   "sig": "Height | Underweight (BMI <#) | Normal Range Start (BMI #)",
    "classes": [
     "-",
     "B"
@@ -2047,7 +2047,7 @@
     "A",
     "A"
    ],
-   "why": "the worked example (its category is the next sentence: \"This falls within the \"normal\" weight category.\")",
+   "why": "the worked example (its category is the next sentence: \"This falls within the healthy weight category.\")",
    "checks": [
     {
      "target": 3,
@@ -2064,7 +2064,7 @@
        "read": "bmi"
       },
       {
-       "text": "normal",
+       "text": "healthy weight",
        "read": "category"
       }
      ]
@@ -2380,8 +2380,8 @@
     {
      "target": 1,
      "kind": "num",
-     "expr": "0.407 * 81.6",
-     "label": "0.407 x 81.6",
+     "expr": "0.407 * 81.65",
+     "label": "0.407 x 81.65",
      "dec": 2
     },
     {

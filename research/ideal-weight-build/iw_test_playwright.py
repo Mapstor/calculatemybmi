@@ -14,13 +14,16 @@ Serve the repo (python3 -m http.server 8000), then:
   - labels: each names the expected field and a click on it focuses that field, in US units and in metric;
   - Calculate ends above the fold at 360 and 390 px; the page is never wider than the screen at 320, 360, 390 and 1280,
     before and after Calculate; every table fits its frame at 360, 390 and 1280 (at 320 a table may scroll inside a frame
-    that stays on the screen);
+    that stays on the screen); no table heading carries a soft hyphen, and none wraps inside a word at 360 and 390
+    (CMB-031: Hamwi, Devine, Robinson, Miller and "Healthy BMI range" stay whole);
   - 9 FAQ in order, the JSON-LD equal to the visible answers, one tap opens an answer and one closes it;
   - sections sit directly in main .container, no <article>, no page-level style, no inline style in <main> outside the
     figure; the head's scripts other than JSON-LD, the header and everything after </main> equal origin/main's;
   - head: title, description, OG and Twitter text and images, the JSON-LD graph, the preferred images, old OG image gone;
-  - internal links answer 200, anchors exist, outside links are registry URLs; nothing from the prompt's NEVER WRITE list,
-    and no "average" in <main>, in the results or in the head.
+  - internal links answer 200, anchors exist, outside links are registry URLs; nothing from the prompt's NEVER WRITE list
+    in <main> or in the head, where the "average" rule bans an average of the formulas ("average of the four", "average
+    ideal weight", "averaging"; CMB-031, so the related block's "Average weight by height" link passes); no "average" at
+    all in the results.
 Every check runs; nothing is skipped. Exit 1 on any failure."""
 import sys, os, json, math, re, csv, struct, subprocess
 from decimal import Decimal, ROUND_HALF_UP
@@ -103,7 +106,7 @@ FAQ_Q = ['How much should I weigh for my height?', 'What is ideal body weight (I
 LABEL_IDS = ['ideal-height-ft', 'ideal-height-in', 'ideal-height-cm', 'ideal-sex', 'ideal-frame']
 # The prompt's NEVER WRITE list (the FAQ question that asks "most accurate" is the searcher's own words and is removed first)
 NEVER = [r'\bmore accurate\b', r'\bmost accurate\b', r'\bvalidated\b', r'\bproven\b', r'\bthe best\b', r'\bbest formula', r'robust',
-         r'averag', r'\belbow', r'\bmortality\b', r'correlat\w* with',
+         r'\baverage of (?:the )?(?:four|4|formulas)\b', r'\baverage ideal (?:body )?weight', r'\baveraging\b', r'\belbow', r'\bmortality\b', r'correlat\w* with',
          r'Hamwi[’\']?s? (?:rule|formula|equation)s?[^.]{0,60}\b(?:behind|basis|became|converted|turned into)\b[^.]{0,40}Devine',
          r'Devine[^.]{0,60}\b(?:convert\w*|version|based on|took|adapted)\b[^.]{0,40}Hamwi', r'Pai and Paloucek[^.]{0,80}\bframe\b[^.]{0,40}10%',
          r'\btarget weight', r'\bgoal weight', r'you should weigh', r'\blose weight', r'\bweight[- ]loss', r'\bdiet\b', r'\bcalori',
@@ -122,6 +125,17 @@ def head_scripts(src):
     return [s for s in re.findall(r'(?s)<script\b[^>]*>.*?</script>', head) if 'application/ld+json' not in s]
 
 
+# Every visible table heading in <main>: its text, whether one word sits on two lines, whether it holds a soft hyphen
+HEAD_WRAP_JS = r"""() => [...document.querySelectorAll('main table th')].filter(th => th.offsetParent !== null).map(th => {
+  const r = document.createRange(), tops = [], w = document.createTreeWalker(th, NodeFilter.SHOW_TEXT); let n;
+  while ((n = w.nextNode())) { for (let i = 0; i < n.length; i++) {
+      if (/[\s\u00ad]/.test(n.data[i])) { tops.push(null); continue; }
+      r.setStart(n, i); r.setEnd(n, i + 1); const b = r.getClientRects()[0]; tops.push(b ? Math.round(b.top) : null); }
+    tops.push(null); }
+  let word = [], split = false;
+  for (const t of tops) { if (t === null) { if (new Set(word).size > 1) split = true; word = []; } else word.push(t); }
+  return [th.textContent.replace(/\s+/g, ' ').trim(), split, /\u00ad/.test(th.textContent)];
+})"""
 US_RX = re.compile(r'(\d+) lbs \((\d+\.\d) kg\)')
 MET_RX = re.compile(r'(\d+\.\d) kg \((\d+) lbs\)')
 
@@ -492,7 +506,7 @@ with sync_playwright() as p:
         q.click(); pg.wait_for_timeout(30)
         ok(not pg.evaluate('i => document.querySelectorAll(".faq-item")[i].classList.contains("open")', i), f'FAQ {i} did not close in one tap')
 
-    # ---- words: nothing from the NEVER WRITE list; no "average" in <main>, the results or the head
+    # ---- words: nothing from the NEVER WRITE list (no average of the formulas) in <main>, the FAQ or the head
     calc(pg, 5, 6)
     faq_t = ' '.join(a for _, a in visq)
     allw = (norm(pg.evaluate("document.querySelector('main').textContent")) + ' ' + faq_t + ' ' + ' '.join(str(v) for v in head.values())
@@ -559,6 +573,11 @@ with sync_playwright() as p:
                 .map(t => [t.caption ? t.caption.textContent : t.className, t.offsetWidth, t.parentElement.clientWidth,
                            getComputedStyle(t.parentElement).overflowX, t.parentElement.getBoundingClientRect().right])""")
             ok(len(fits) == 4, f'{len(fits)} tables at {w}')
+            if w in (360, 390):                              # CMB-031: a heading wraps only between words, never inside one
+                heads = pg.evaluate(HEAD_WRAP_JS)
+                ok(len(heads) >= 24, f'{len(heads)} table headings at {w}')
+                for txt, split, shy in heads:
+                    ok(not split and not shy, f'table heading wraps inside a word at {w} {when} Calculate: {txt!r}' + (' (soft hyphen)' if shy else ''))
             for cap, tw, fw, ovf, right in fits:
                 if w >= 360:
                     ok(tw <= fw + 1, f'table wider than its frame at {w} {when} Calculate: {cap} {tw} > {fw}')
