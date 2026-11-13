@@ -33,7 +33,7 @@ page,template,s,s_value,p,p_value,d,d_value,date
 /blog/bmi-by-age/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 635 words)",pass,"detector 390: 0, 1280: 0",2026-11-13
 /bmi-chart/,,pass,"page test 1,086 checks, 0 failures",pass,"0/1k (0 tells, 3102 words)",pass,"detector 390: 0, 1280: 0",2026-11-13
 /us-obesity-statistics/,,pass,"page test 589 checks, 0 failures",pass,"0/1k (0 tells, 3487 words)",pass,"detector 390: 0, 390 results: 0, 1280: 0, 1280 results: 0",2026-11-13
-/obesity-rate-by-state/,,fail,"audit 0 mismatches, 4 no row, 13 not in row",pass,"0/1k (0 tells, 1681 words)",pass,"detector 390: 0, 1280: 0",2026-11-13
+/obesity-rate-by-state/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 1681 words)",pass,"detector 390: 0, 1280: 0",2026-11-13
 /childhood-obesity-statistics/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 1266 words)",pass,"detector 390: 0, 1280: 0",2026-11-13
 /average-weight/,,pass,"page test 545 checks, 0 failures",pass,"0/1k (0 tells, 2298 words)",pass,"detector 390: 0, 390 results: 0, 1280: 0, 1280 results: 0",2026-11-13
 /body-fat-percentage-chart/,,pass,"page test 519 checks, 0 failures",pass,"0/1k (0 tells, 2530 words)",pass,"detector 390: 0, 390 results: 0, 1280: 0, 1280 results: 0",2026-11-13
