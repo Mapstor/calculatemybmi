@@ -687,7 +687,7 @@ main.reading :target { scroll-margin-top: 80px; }
 /* CMB-013: in the reading layout, key takeaways keep a readable measure on wide screens (about 75 characters a line) */
 main.reading .key-takeaways .answer, main.reading .key-takeaways ul { max-width: 34rem; }
 /* CMB-034: calculator results text under 80 characters a line at desktop width (the results' small type ran 86 to 96). */
-.er-summary p, .er-note, .er-summary-note, .rank-text { max-width: 65ch; }
+.er-summary p, .er-note, .er-summary-note, .rank-text { max-width: 36em; }
 
 /* CMB-014: weight-by-height chart table (D-14 chart pages; first on /blog/bmi-chart-women/). Category tints as on /bmi-chart/, text tinted from the same hue (DESIGN.md); the height column stays put while the table scrolls sideways */
 .weight-chart { width: 100%; min-width: 600px; border-collapse: separate; border-spacing: 0; font-size: 0.8125rem; font-variant-numeric: tabular-nums; }
@@ -785,3 +785,8 @@ button.cta-button { border: 0; cursor: pointer; }
 .container--guide p, .container--guide li, .container--guide figcaption, .container--guide .numbered-step-content { max-width: 36em; }
 .container--guide article > h3 { margin: 2rem 0 0.75rem; }
 .container--guide article > h3 + * { margin-top: 0; }
+
+/* CMB-041: prose measure for pages outside the D-14 reading column (contact, the calculators hub, lean body mass, the
+   two obesity data pages): 36em, under 80 characters a line at desktop width, as .container--guide. */
+.measure-36 p, .measure-36 li, .measure-36 figcaption { max-width: 36em; }
+.measure-36 .cmb-answer, .measure-36 .cmb-callout { max-width: calc(36em + 34px); }
