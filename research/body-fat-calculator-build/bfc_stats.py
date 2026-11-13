@@ -160,10 +160,9 @@ assert int(ADULT.sum()) == P['meta']['n_adults_20_59'] == 10864, int(ADULT.sum()
 SEXES = (('women', WOMEN), ('men', MEN))
 QS = (.10, .25, .50, .75, .90)
 
-# ---- 0b. one percentile rule on the page. bfpc_stats.py applies the midpoint rule reading by reading after an unstable
-# sort, so the order of tied readings can move its percentiles by up to 0.07; over distinct values the same rule can't
-# depend on that order. On the 50 quartiles the page prints from bfpc_stats.json (5 percentiles, 5 age groups, both
-# sexes) the two agree within 0.08 points; a stable sort alone already moves 5 of them by 0.1 when printed.
+# ---- 0b. one percentile rule on the page. Since CMB-039 bfpc_stats.py applies this same rule (over distinct values;
+# before, reading by reading after an unstable sort), so the 50 quartiles the page prints from bfpc_stats.json
+# (5 percentiles, 5 age groups, both sexes) equal this script's to the 4 decimals that file stores.
 OKP = (D.W > 0) & (D.RIDEXPRG != 1) & D.pf.notna()                    # bfpc_stats.py's sample mask
 GAP = 0.0
 for k, sx in (('m', MEN), ('f', WOMEN)):
@@ -171,7 +170,7 @@ for k, sx in (('m', MEN), ('f', WOMEN)):
         mine = wq_raw(D.pf, OKP & sx & D.RIDAGEYR.between(a0, a1), QS)
         theirs = [P['by_age'][k][g][p] for p in ('p10', 'p25', 'p50', 'p75', 'p90')]
         GAP = max(GAP, max(abs(a - b) for a, b in zip(mine, theirs)))
-assert GAP < 0.08, GAP
+assert GAP < 0.0001, GAP
 R = {'meta': {'cycles': '2011-2012 to 2017-2018', 'weights': 'WTMEC2YR/4', 'ages': '20-59', 'strata': N_STRATA,
               'psus': N_PSU, 'df': DF, 't975': round(TQ, 4), 'n_scanned_20_59': int(ADULT.sum())},
      'formulas': {}}

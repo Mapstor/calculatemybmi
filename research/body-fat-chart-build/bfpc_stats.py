@@ -9,7 +9,9 @@ pregnant women excluded (RIDEXPRG = 1). CDC scanned ages 8-59 in these cycles.
 Variance: Taylor linearization with the masked strata and PSUs (SDMVSTRA x SDMVPSU); 95% CIs use t with the design's
 degrees of freedom (PSUs minus strata). A difference between groups is stated only when its 95% CI excludes 0
 (DEVLOG section 4, the NHANES comparison rule).
-Quantiles: weighted, midpoint rule (as compute_bf.py), so the rank tool's curves stay identical.
+Quantiles: weighted midpoint rule over distinct values (each value's weight centred on it, linear in between), as
+research/body-fat-calculator-build/bfc_stats.py and compute_bf.py apply it, so the order of tied readings can't move
+a percentile (CMB-039; before, the rule ran reading by reading after an unstable sort).
 Rounding: values the page prints are rounded once, from the unrounded estimate. The JSON stores them at 4 decimals (the
 rank tool's shares at 2 or 3) and keep() stops the run if storing would change any figure the page prints (a 1-decimal
 value, or a whole-percent share with its "more than 99%" / "under 1%" tails). 'mean' stays at 2 decimals (the record
@@ -122,13 +124,11 @@ def share(dom, cond, digits=1):
 
 
 def wq_raw(dom, qs, var='pf'):
+    """Weighted midpoint rule over distinct values: each value's weight centred on it, linear in between."""
     m = dom & OK & D[var].notna()
-    x = D.loc[m, var].values
-    w = D.W[m].values
-    o = np.argsort(x)                       # same call as compute_bf.py, so the curves match it
-    x, w = x[o], w[o]
-    c = (np.cumsum(w) - w / 2) / w.sum()
-    return [float(np.interp(q, c, x)) for q in qs]
+    s = pd.DataFrame({'x': D.loc[m, var].round(6), 'w': D.W[m]}).groupby('x').w.sum().sort_index()
+    c = (np.cumsum(s.values) - s.values / 2) / s.values.sum()
+    return [float(np.interp(q, c, s.index.values)) for q in qs]
 
 
 def wq(dom, qs, var='pf'):

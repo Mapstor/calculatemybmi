@@ -4,13 +4,15 @@
 Sample and method as research/body-fat-chart-build/bfpc_stats.py (CMB-016): NHANES 2011-2012 to 2017-2018 DEMO, DXX and
 BMX files pooled with WTMEC2YR / 4; valid whole-body percent fat (DXDTOPF); men aged 20 to 59 (CDC scanned ages 8-59);
 BMI as recorded; categories healthy 18.5-24.99, overweight 25-29.99, obesity 30 and over. Weighted quantiles by the
-midpoint rule. Variance by Taylor linearization (SDMVSTRA x SDMVPSU), t with the design df (PSUs minus strata).
+midpoint rule over distinct values (as bfpc_stats.py, since CMB-039). Variance by Taylor linearization (SDMVSTRA x SDMVPSU), t with the design df (PSUs minus strata).
 
 1. Body fat in each BMI category: 10th, 25th, 50th, 75th and 90th percentiles (asserted equal to bfpc_stats.json).
 2. How often BMI and body fat disagree, both ways:
    - men with an overweight BMI (and with obesity) whose body fat is no higher than the median man with a healthy BMI;
    - men with a healthy BMI whose body fat is at least the median of men with an overweight BMI.
-   Each a weighted share with its 95% CI. The benchmarks are the unrounded medians (the page prints them to 0.1).
+   Each a weighted share with its 95% CI. Readings are recorded to 0.1, so each reading is compared with the median as
+   the page prints it (to 0.1): a man whose reading equals the printed median carries as much body fat (CMB-039; over
+   distinct values the unrounded overweight median is 26.90, just above the 26.9 readings, and would drop them all).
 3. Men without a valid scan in each BMI category (weighted share), which the page's method states.
 
 Round once: keep() stores 4 decimals and stops if that changes a printed figure.
@@ -75,13 +77,13 @@ def share(dom, cond):
 
 def wq(dom, qs):
     m = dom & OK
-    x = D.loc[m, 'pf'].values; w = D.W[m].values; o = np.argsort(x); x, w = x[o], w[o]
-    c = (np.cumsum(w) - w / 2) / w.sum()
-    return [float(np.interp(q, c, x)) for q in qs]
+    s = pd.DataFrame({'x': D.loc[m, 'pf'].round(6), 'w': D.W[m]}).groupby('x').w.sum().sort_index()
+    c = (np.cumsum(s.values) - s.values / 2) / s.values.sum()
+    return [float(np.interp(q, c, s.index.values)) for q in qs]
 
 
 R = {'source': 'CDC NHANES 2011-2018 whole-body DXA (DXX_G-J) with DEMO_G-J and BMX_G-J; men aged 20 to 59',
-     'method': f'WTMEC2YR/4; midpoint weighted quantiles; Taylor linearization, df {DF}, t = {TQ:.4f}',
+     'method': f'WTMEC2YR/4; midpoint weighted quantiles over distinct values; Taylor linearization, df {DF}, t = {TQ:.4f}',
      'by_cat': {}}
 BF = json.load(open(BFPC))['bmi']['by_cat']['m']
 dom_of = {}
@@ -94,11 +96,13 @@ for c, (lo, hi) in CATS.items():
         assert R['by_cat'][c][k] == BF[c][k], (c, k, R['by_cat'][c][k], BF[c][k])
 MED_H = wq(dom_of['healthy'], [.5])[0]
 MED_O = wq(dom_of['over'], [.5])[0]
-R['benchmarks'] = {'median_healthy': keep(MED_H), 'median_over': keep(MED_O)}
+PF10 = (D.pf * 10).round()                 # readings in tenths of a point (CDC records DXDTOPF to 0.1)
+B_H, B_O = round(MED_H * 10), round(MED_O * 10)  # the medians as printed, in tenths
+R['benchmarks'] = {'median_healthy': keep(MED_H), 'median_over': keep(MED_O), 'compared_at': [B_H / 10, B_O / 10]}
 R['disagree'] = {
-    'over_at_or_below_healthy_median': share(dom_of['over'], D.pf <= MED_H),
-    'obese_at_or_below_healthy_median': share(dom_of['obese'], D.pf <= MED_H),
-    'healthy_at_or_above_over_median': share(dom_of['healthy'], D.pf >= MED_O),
+    'over_at_or_below_healthy_median': share(dom_of['over'], PF10 <= B_H),
+    'obese_at_or_below_healthy_median': share(dom_of['obese'], PF10 <= B_H),
+    'healthy_at_or_above_over_median': share(dom_of['healthy'], PF10 >= B_O),
 }
 # Men without a valid whole-body scan (no DXDTOPF), by BMI category, weighted: the page's method names them.
 R['missing_scan'] = {}
@@ -111,7 +115,7 @@ json.dump(R, open(OUT, 'w'), indent=1)
 print('df', DF, 't', round(TQ, 4))
 for c, v in R['by_cat'].items():
     print(c, v['n'], [f"{v[k]:.1f}" for k in ('p10', 'p25', 'p50', 'p75', 'p90')])
-print('benchmarks', {k: f'{v:.2f}' for k, v in R['benchmarks'].items()})
+print('benchmarks', {k: f'{v:.2f}' for k, v in R['benchmarks'].items() if k != 'compared_at'}, 'compared at', R['benchmarks']['compared_at'])
 for k, v in R['disagree'].items():
     print(k, f"{v['pct']:.1f}", [f'{x:.1f}' for x in v['ci95']], 'n', v['n'])
 print('missing scan', {c: f"{v['pct']:.1f}% ({v['n_missing']} of {v['n']})" for c, v in R['missing_scan'].items()})

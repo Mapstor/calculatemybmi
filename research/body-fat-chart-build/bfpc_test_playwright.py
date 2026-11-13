@@ -9,7 +9,8 @@ Serve the repo (python3 -m http.server 8000), then:
   - the BMI tables, the age tables, the BMI figure's hover labels and the figure descriptions equal bfpc_stats.json;
   - single rounding (the 2026-10-21 fact-check's numbers, typed in here, not read from the stats): men 50-59 average
     28.3%; men 20-39 at 21% 77%, men 40-59 at 31% 28%, women 20-39 at 36% 61% and at 42% 26%; BMI-figure labels women
-    BMI 39 median 44.7%, men BMI 18 middle half from 15.5%, men BMI 31 middle half to 32.1%; the tool 90% for a boy of 9 at
+    BMI 39 median 44.7%, men BMI 18 middle half from 15.5%, men BMI 31 middle half to 32.0% (32.047 by the order-free rule
+    of CMB-039; 32.0531, so 32.1%, before); the tool 90% for a boy of 9 at
     20% and 82% for a woman of 25 at 30%;
   - the rank tool: eight cases (default, a man at 15.5%, a woman of 65, a girl of 12, a boy of 9 at 20%, a woman of 25 at
     30%, a man of 41 at 31.7%, an out-of-range reading) give the share interpolated here from the stats, the range on the
@@ -111,7 +112,10 @@ with sync_playwright() as p:
         ok(got == want, f'fact-check cell {k} {pc}% col {col}: {got!r} vs {want!r}')
     main_text = pg.evaluate("() => document.querySelector('main').textContent.replace(/\\s+/g, ' ')")   # closed FAQ answers too
     ok('(25.4% to 28.3%)' in main_text and 'from 25.4% to 28.3% for men' in main_text, 'men 20s-to-50s text not 25.4% to 28.3%')
-    ok('28.4%' not in main_text, 'a 28.4% is still printed')
+    # The men's 50s average was printed 28.4% (28.347 rounded twice). Tables are checked cell by cell above, and since
+    # CMB-039 girls 12-15 have a 25th percentile of 28.4% (28.36), so the guard reads the text outside the tables.
+    prose = pg.evaluate("() => { const m = document.querySelector('main').cloneNode(true); m.querySelectorAll('table').forEach(t => t.remove()); return m.textContent.replace(/\\s+/g, ' '); }")
+    ok('28.4%' not in prose, 'a 28.4% is still printed outside the tables')
     # BMI figure hover labels: every one equals the stats; three the fact-check found rounded twice are typed in.
     tips = pg.evaluate("() => [...document.querySelectorAll('#bmi figure svg circle title')].map(t => t.textContent)")
     want_tips = []
@@ -123,7 +127,7 @@ with sync_playwright() as p:
     for frag in ('Women, BMI 39 to 39.9: median 44.7%', 'Men, BMI 18 to 18.9: median', 'Men, BMI 31 to 31.9: median'):
         ok(any(t.startswith(frag) for t in tips), f'hover label {frag!r} missing')
     ok(any(t.startswith('Men, BMI 18 to 18.9:') and 'middle half 15.5–' in t for t in tips), 'men BMI 18 middle half not from 15.5%')
-    ok(any(t.startswith('Men, BMI 31 to 31.9:') and '–32.1%' in t for t in tips), 'men BMI 31 middle half not to 32.1%')
+    ok(any(t.startswith('Men, BMI 31 to 31.9:') and '–32.0%' in t for t in tips), 'men BMI 31 middle half not to 32.0%')
 
     # Images in search: robots, OG/Twitter, JSON-LD, the preferred files, the printable chart, the CSV
     head = pg.evaluate("""() => ({robots: [...document.querySelectorAll('meta[name="robots"]')].map(m => m.content),
