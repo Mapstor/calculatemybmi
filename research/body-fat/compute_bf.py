@@ -12,8 +12,11 @@ def est(var,dom):
         if nh>1: v+=nh/(nh-1)*((zj-zj.mean())**2).sum()
     return dict(mean=round(float(mean),2),se=round(math.sqrt(v),3),n=int(m.sum()))
 def wq(dom,qs,var="pf"):
-    m=dom&ok&D[var].notna(); x=D.loc[m,var].values; w=D.W[m].values; o=np.argsort(x); x=x[o]; w=w[o]; c=(np.cumsum(w)-w/2)/w.sum()
-    return [round(float(np.interp(q,c,x)),2) for q in qs]
+    # weighted midpoint rule over distinct values (CMB-039): each value's weight centred on it, linear in between,
+    # so the order of tied readings can't move a percentile (bfc_stats.py's rule; bfpc_stats.py asserts these equal)
+    m=dom&ok&D[var].notna(); s=pd.DataFrame({"x":D.loc[m,var].round(6),"w":D.W[m]}).groupby("x").w.sum().sort_index()
+    c=(np.cumsum(s.values)-s.values/2)/s.values.sum()
+    return [round(float(np.interp(q,c,s.index.values)),2) for q in qs]
 def share(dom,cond):
     m=dom&ok; return round(float(D.W[m&cond].sum()/D.W[m].sum()*100),1)
 GAL={"f":{"20-39":(21,33,39),"40-59":(23,34,40)},"m":{"20-39":(8,20,25),"40-59":(11,22,28)}}   # Gallagher-based bands (low<a, normal a-<b, high b-<c, very high >=c)
