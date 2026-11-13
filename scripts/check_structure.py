@@ -170,8 +170,24 @@ def check_file(page, path):
     if '<header class="header">' not in src: problems.append('no shared header')
     else:
         header_block = re.search(r'<header class="header">[\s\S]*?</header>', src)
-        if header_block and '<a href="/bmi-chart/">BMI Chart</a>' not in header_block.group(0):
+        # the link may carry the current-page marker (CMB-034: class="active" aria-current="page" on /bmi-chart/ itself)
+        if header_block and not re.search(r'<a href="/bmi-chart/"(?: class="active" aria-current="page")?>BMI Chart</a>', header_block.group(0)):
             problems.append('shared header missing BMI Chart nav link')
+        # one rule for the menu's current-page marker (research/cmb-034/menu_marker.py): the page itself, or its section
+        if header_block:
+            here = page if page.endswith('/') else None
+            marked = re.findall(r'<a href="([^"]+)"[^>]*aria-current="(page|true)"', header_block.group(0))
+            links = set(re.findall(r'<a href="([^"]+)"', header_block.group(0)))
+            if here in links:
+                want = {(here, 'page')}
+            elif here and here.startswith('/blog/') and here != '/blog/':
+                want = {('/blog/', 'true')}
+            elif here in ('/obesity-rate-by-state/', '/childhood-obesity-statistics/'):
+                want = {('/us-obesity-statistics/', 'true')}
+            else:
+                want = set()
+            if here and set(marked) != want:
+                problems.append(f'menu marker {sorted(set(marked))} should be {sorted(want)}')
     if '<footer' not in src: problems.append('no footer')
     rap_count = src.count('Raptive Head Tag Manual')
     if rap_count != 1: problems.append(f'Raptive tag count != 1 ({rap_count})')

@@ -212,7 +212,9 @@ main { flex: 1; padding: 2rem 0 3rem; }
 .er-weightbar-tick { position: absolute; top: 34px; transform: translateX(-50%); font-size: 0.75rem; color: var(--gray-600); font-variant-numeric: tabular-nums; }
 
 /* Content Sections */
-.content-section { background: white; border-radius: var(--radius-xl); box-shadow: var(--shadow-md); padding: 1.5rem; margin-bottom: 1.5rem; max-width: 800px; margin-left: auto; margin-right: auto; }
+.content-section { background: white; border-radius: var(--radius-xl); box-shadow: var(--shadow-md); padding: 1.5rem; margin-bottom: 1.5rem; max-width: 680px; margin-left: auto; margin-right: auto; }
+/* CMB-034: 680 px, the D-14 reading column (main.reading), on every page: at 800 px a section's lines ran 95 to 99 characters
+   at desktop width (detector line-length, 424 findings on 30 pages); 680 px keeps them under 80. */
 .content-section h2 { margin-top: 0; }
 .content-section h2::after { content: ''; display: block; width: 60px; height: 3px; background: var(--primary); margin-top: 0.5rem; border-radius: var(--radius-full); }
 
@@ -684,6 +686,8 @@ main.reading :target { scroll-margin-top: 80px; }
 
 /* CMB-013: in the reading layout, key takeaways keep a readable measure on wide screens (about 75 characters a line) */
 main.reading .key-takeaways .answer, main.reading .key-takeaways ul { max-width: 34rem; }
+/* CMB-034: calculator results text under 80 characters a line at desktop width (the results' small type ran 86 to 96). */
+.er-summary p, .er-note, .er-summary-note, .rank-text { max-width: 65ch; }
 
 /* CMB-014: weight-by-height chart table (D-14 chart pages; first on /blog/bmi-chart-women/). Category tints as on /bmi-chart/, text tinted from the same hue (DESIGN.md); the height column stays put while the table scrolls sideways */
 .weight-chart { width: 100%; min-width: 600px; border-collapse: separate; border-spacing: 0; font-size: 0.8125rem; font-variant-numeric: tabular-nums; }
