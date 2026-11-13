@@ -276,6 +276,14 @@ No sharp corners (0 radius) and no custom clip-paths. Borders are hairline (`1px
 - Tables: the category table is `.data-table--fit` with a `.cat-dot` in each row header; the birthday tables (age, 5th, 50th, 85th, 95th, 120% of 95th) are `.data-table--fit.data-table--tight` and fit a 360 px phone. Their source line starts "Source:" and links CDC's data file, which is how the Stage 1 audit finds a table's source.
 - The figure: two panels (boys, girls) on one BMI axis (12 to 36) and one age scale (2 to 20), the five CDC categories as bands in the tints the `/bmi-chart/` figure uses (underweight `#dbeafe`, healthy `#d1fae5`, overweight `#fde68a`, obesity `#fecaca`, severe obesity `#fca5a5`), 1.5-unit white gaps along the band edges (the 5th, 85th and 95th percentiles and 120% of the 95th or BMI 35, whichever is lower), grid hairlines in ink at 12% over the tints, and the legend above the panels in the `/bmi-chart/` swatch style (12-unit squares with a `#9ca3af` outline). One invisible column per year of age carries a `<title>` with that birthday's cut-offs. The dataviz validator fails these tints as a categorical palette (blue-100 against green-100 is ΔE 4.8 for deuteranopes), so identity never rests on colour: the white gaps, the fixed bottom-to-top order, the legend and the tables under the figure carry it.
 
+### Old guides (CMB-040) — `.container--guide`
+- The guides not yet rebuilt to D-14 sit in `.container.container--guide` (680 px, as `main.reading`). Prose (`p`, `li`, `figcaption`, step text) stops at 36em, under 80 characters a line at desktop width; the measure is set in em, not ch, because ch follows the font's zero.
+- An h3 directly in the article gets 2rem above and 0.75rem below; the block after it starts flush, so a heading binds to what it introduces.
+- Card and step titles that follow an h2 are h3: `.tip-content`, `.info-card`, `.related-article-card`, `.numbered-step-content` and `.pros-list` / `.cons-list` style h3 and h4 alike. An h4 only under an h3.
+- Callouts: tinted background with a 1 px border in the same hue; no coloured side or top stripe on a callout, tile or card.
+- Category-coloured text uses the strong inks (`--normal-strong`, `--overweight-strong`, `--obese-strong`, `--underweight-strong`); the 500-level category colours are for fills. Secondary text on a tinted tile takes that tile's hue, never gray.
+- SVG body labels are 12 or larger in viewBox units; a label that no longer fits is moved, right-aligned or split, never shrunk.
+
 ### Category badges
 - Pill (`--radius-full`), category background with white text (BMI color lock applies).
 
