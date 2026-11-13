@@ -20,7 +20,9 @@ At a 390 x 844 viewport it:
                                healthy weight
        /men-bmi-calculator/    BMI and category; the waist line in inches
        /age-bmi-calculator/    BMI; the Winter 2014 band (BMI 23-33, adults 65+, the year twice) and
-                               that the BMI falls inside it; also that the same height and weight
+                               that the BMI falls inside it (since CMB-036 the example names the band's
+                               ends as the points where the risk of death was higher and began to
+                               rise, and says the BMI lies between the two); also that the same height and weight
                                give the same BMI at age 30 (the calculator doesn't adjust for age)
        /kids-bmi-calculator/   BMI, percentile, category; the sex and age the result names
        /new-bmi-calculator/    traditional BMI and New BMI; where the example states them, the
@@ -243,20 +245,28 @@ def ex_age(ex, pg):
     if not band:
         check(ex, 'Winter 2014 band printed', 'printed', 'not printed', False)
         return
-    m = ex.find(r'adults (\d+)\+', 'band age group')
+    m = ex.find(r'adults (\d+)(?:\+| and over)', 'band age group')
     if m:
         ex.cover(m, 1)
         check(ex, 'band age group (adults N+)', m[1], band[3])
-    m = ex.find(r'\((\d+)-(\d+) in Winter', 'band')
+    # CMB-036 wording (Winter's abstract): higher risk below the band's low end, rising from about its high end
+    m = ex.find(r'\((\d+)-(\d+) in Winter|below a BMI of (\d+) and began to rise at about (\d+)', 'band')
     if m:
-        ex.cover(m, 1, 2)
-        check(ex, 'band (BMI low-high)', f'{m[1]}-{m[2]}', f'{band[1]}-{band[2]}')
+        lo, hi = (1, 2) if m[1] else (3, 4)
+        ex.cover(m, lo, hi)
+        check(ex, 'band (BMI low-high)', f'{m[lo]}-{m[hi]}', f'{band[1]}-{band[2]}')
     for m in re.finditer(r'Winter et al\., [^,()]+, (\d{4})|Winter (\d{4})', ex.text):
         g = 1 if m[1] else 2
         ex.cover(m, g)
         check(ex, 'Winter year', m[g], band[4])
     if bmi and ex.find(r'falls within the (?:observed )?lower-mortality band', 'falls within', required=False):
         check(ex, 'BMI falls inside the band', f'{bmi} inside', f'{band[1]}-{band[2]}',
+              float(band[1]) <= float(bmi) <= float(band[2]))
+    m = ex.find(r'(\d+\.\d) lies between the (two)', 'between', required=False)
+    if bmi and m:
+        ex.cover(m, 1, 2)
+        check(ex, 'the example BMI', m[1], bmi)
+        check(ex, 'BMI between the two points', f'{bmi} inside', f'{band[1]}-{band[2]}',
               float(band[1]) <= float(bmi) <= float(band[2]))
     # the calculator doesn't adjust BMI for age: the same inputs at age 30 give the same number
     pg.fill('#age-years', '30')

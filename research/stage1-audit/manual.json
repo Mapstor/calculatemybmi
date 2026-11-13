@@ -2723,6 +2723,100 @@
    "why": "the scale's marker at the page's own example (50 kg at 1.70 m, BMI 17.3, checked as B in its sentence; CMB-033)",
    "exact": true,
    "value": 17.3
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "sig": "BMI #-#: near the underweight / normal boundary",
+   "classes": "D",
+   "why": "a heading naming the band around the 18.5 cut-off (CMB-036)"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "sig": "BMI #-#: near the normal / overweight boundary",
+   "classes": "D",
+   "why": "a heading naming the band around the 25 cut-off (CMB-036)"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "sig": "BMI #-#: near the overweight / obese boundary",
+   "classes": "D",
+   "why": "a heading naming the band around the 30 cut-off (CMB-036)"
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "sig": "#%",
+   "classes": "C",
+   "exact": true,
+   "value": 35.5,
+   "row": "nhanes-adult-weight-trends",
+   "why": "a bar of the sex chart whose source line cites Health E-Stat 111: Table 1, 20 and older, age-adjusted, men, overweight (CMB-036)"
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "sig": "#%",
+   "classes": "C",
+   "exact": true,
+   "value": 28.1,
+   "row": "nhanes-adult-weight-trends",
+   "why": "a bar of the sex chart whose source line cites Health E-Stat 111: Table 1, 20 and older, age-adjusted, women, overweight (CMB-036)"
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "sig": "#%",
+   "classes": "C",
+   "exact": true,
+   "value": 39.3,
+   "row": "nhanes-adult-weight-trends",
+   "why": "a bar of the sex chart whose source line cites Health E-Stat 111: Table 1, 20 and older, age-adjusted, men, obesity (CMB-036)"
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "sig": "#%",
+   "classes": "C",
+   "exact": true,
+   "value": 41.4,
+   "row": "nhanes-adult-weight-trends",
+   "why": "a bar of the sex chart whose source line cites Health E-Stat 111: Table 1, 20 and older, age-adjusted, women, obesity (CMB-036)"
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "sig": "#-# years | # - # | The same cut-offs at every adult age (CDC).",
+   "classes": [
+    "C",
+    "D",
+    "-",
+    "-"
+   ],
+   "row": "cdc-adult-bmi-categories",
+   "why": "20: CDC's adults (20 and older); 64: the row ends where the table's 65+ row starts (CMB-036)"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "sig": "Older adults (#+)",
+   "classes": "D",
+   "exact": true,
+   "why": "a heading naming an age group (CMB-036)"
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "sig": "NFL prospects: #% obese by BMI",
+   "classes": "C",
+   "row": "provencher-2018-nfl-combine",
+   "why": "the athlete card of the figure, Provencher 2018 (CMB-036)"
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "sig": "but #% obese by body fat (#)",
+   "classes": "C",
+   "row": "provencher-2018-nfl-combine",
+   "why": "the athlete card of the figure, Provencher 2018 (CMB-036)"
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "sig": "overweight cutoff # (not #)",
+   "classes": "C",
+   "row": "ko-tang-2006-wpro-2000",
+   "why": "the ethnic-variation card: the 2000 Asia-Pacific proposal (WHO Western Pacific, IASO, IOTF), overweight from 23 instead of 25 (CMB-036)"
   }
  ]
 }
