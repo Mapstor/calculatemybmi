@@ -3046,6 +3046,66 @@
    "classes": "C",
    "row": "nice-ng246-ethnicity-thresholds",
    "why": "FAQ: NICE NG246, adults with a BMI under 35 (CMB-042)"
+  },
+  {
+   "page": "/obesity-rate-by-state/",
+   "sig": "Earlier one-year gaps: New Jersey (#), Florida (#), Kentucky and Pennsylvania (#) and Tennessee (#).",
+   "classes": "B",
+   "why": "years the dataset has no estimate for (CMB-044)",
+   "checks": [
+    {
+     "target": 1,
+     "kind": "num",
+     "expr": "(st => { const g = Array.from({length: 15}, (_, i) => String(2011 + i)).filter(y => __D.brfss[st][y] === undefined); return g.length === 1 ? Number(g[0]) : -1; })('New Jersey')",
+     "dec": 0,
+     "label": "New Jersey: the only year from 2011 to 2025 with no estimate in the CDC BRFSS CSV"
+    },
+    {
+     "target": 2,
+     "kind": "num",
+     "expr": "(st => { const g = Array.from({length: 15}, (_, i) => String(2011 + i)).filter(y => __D.brfss[st][y] === undefined); return g.length === 1 ? Number(g[0]) : -1; })('Florida')",
+     "dec": 0,
+     "label": "Florida: the only year from 2011 to 2025 with no estimate in the CDC BRFSS CSV"
+    },
+    {
+     "target": 3,
+     "kind": "num",
+     "expr": "(a => a.every(x => x === a[0]) ? a[0] : -1)([(st => { const g = Array.from({length: 15}, (_, i) => String(2011 + i)).filter(y => __D.brfss[st][y] === undefined); return g.length === 1 ? Number(g[0]) : -1; })('Kentucky'), (st => { const g = Array.from({length: 15}, (_, i) => String(2011 + i)).filter(y => __D.brfss[st][y] === undefined); return g.length === 1 ? Number(g[0]) : -1; })('Pennsylvania')])",
+     "dec": 0,
+     "label": "Kentucky and Pennsylvania: the only year from 2011 to 2025 with no estimate in the CDC BRFSS CSV"
+    },
+    {
+     "target": 4,
+     "kind": "num",
+     "expr": "(st => { const g = Array.from({length: 15}, (_, i) => String(2011 + i)).filter(y => __D.brfss[st][y] === undefined); return g.length === 1 ? Number(g[0]) : -1; })('Tennessee')",
+     "dec": 0,
+     "label": "Tennessee: the only year from 2011 to 2025 with no estimate in the CDC BRFSS CSV"
+    }
+   ]
+  },
+  {
+   "page": "/obesity-rate-by-state/",
+   "sig": "All # states, ranked by the share of adults with a BMI of # or higher in #.",
+   "classes": [
+    "D",
+    "-",
+    "-"
+   ],
+   "why": "the number of US states (the table lists all 50, the three with no 2025 estimate labelled) (CMB-044)"
+  },
+  {
+   "page": "/obesity-rate-by-state/",
+   "sig": "our US obesity statistics page has the full measured trend since #.",
+   "classes": "C",
+   "row": "nhanes-adult-weight-trends",
+   "why": "our US page: the NHANES series from 1960-1962 (CMB-044)"
+  },
+  {
+   "page": "/obesity-rate-by-state/",
+   "sig": "US obesity rate and statistics (measured, since #)",
+   "classes": "C",
+   "row": "nhanes-adult-weight-trends",
+   "why": "a related card: the NHANES series from 1960-1962 (CMB-044)"
   }
  ]
 }

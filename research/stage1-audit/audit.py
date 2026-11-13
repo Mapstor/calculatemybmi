@@ -1019,9 +1019,14 @@ def svg_rules(page, sents, adds):
                 if s.unit['cx'] < 35:
                     s.assign(0, 'D', 'axis tick')
                     continue
-                yr = min(years, key=lambda y: abs(y[0].unit['cx'] - s.unit['cx']))
-                if abs(yr[0].unit['cx'] - s.unit['cx']) > 12:
+                # the bar's year: the year the labelled years put at its x (every other year is labelled, so an
+                # even year's bar has no label of its own; CMB-044)
+                ys = sorted(years, key=lambda y: y[0].unit['cx'])
+                (xa, ya), (xb, yb) = (ys[0][0].unit['cx'], ys[0][1]), (ys[-1][0].unit['cx'], ys[-1][1])
+                f = ya + (s.unit['cx'] - xa) * (yb - ya) / (xb - xa) if xb != xa else ya
+                if abs(f - round(f)) > 0.15 or not ya <= round(f) <= yb:
                     continue
+                yr = (None, round(f))
                 s.assign(0, 'B', 'count of states in a dataset year', {'kind': 'num', 'expr': f'__A.brfssCount("{yr[1]}", 35)', 'target': 0, 'dec': 0,
                                                                        'label': f'states (of the 50) at 35% or higher in {yr[1]}, the CDC BRFSS CSV the registry row serves'})
                 job(adds, s, 0)
