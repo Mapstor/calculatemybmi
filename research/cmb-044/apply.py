@@ -2,8 +2,9 @@
 """CMB-044 STATE-SOURCES: S on /obesity-rate-by-state/. Two of its numbers sat next to a link to the other survey,
 so the audit read them against the wrong row: the survey-comparison figure's caption links only NCHS Data Brief 508,
 though its left half is BRFSS (24.2-39.7%, 2025), and the Gallup sentence's "measured 40.3%" (NHANES) sits next to the
-Gallup link alone. Each gets its own source by linking words already on the page, so no visible text changes and the
-page's dateModified stays; the sitemap lastmod follows the new links (§4). The page and the sitemap are checked by
+Gallup link alone. Each gets its own source by linking words already on the page. No word changes, but
+research/dates/date_truth.py reads a closing tag before a full stop as a space, so it counts the text as changed:
+dateModified and the sitemap lastmod both move to the commit's day (§4). The page and the sitemap are checked by
 SHA-256; every marker must occur once.
 usage: python3 research/cmb-044/apply.py [--check]   (--check applies in memory and writes nothing)
 Run order from main: registry.py, manual.py, apply.py."""
@@ -26,6 +27,7 @@ EDITS = {
         ('State estimates: BRFSS 2025. National measured estimate',
          f'State estimates: <a href="{MAPS}" rel="noopener">BRFSS 2025</a>. National measured estimate'),
         ('against the measured 40.3%.</p>', f'against the <a href="{DB508}" rel="noopener">measured 40.3%</a>.</p>'),
+        ('"dateModified": "2026-10-02"', f'"dateModified": "{TODAY}"'),
     ],
     'sitemap.xml': [
         ('<loc>https://calculatemybmi.net/obesity-rate-by-state/</loc><lastmod>2026-10-12</lastmod>',
