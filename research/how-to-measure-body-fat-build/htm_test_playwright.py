@@ -320,9 +320,9 @@ with sync_playwright() as p:
         'How do I measure body fat with a tape measure?', 'How accurate is InBody?', 'How accurate is a Bod Pod?',
         'Why do different methods give different numbers?', 'How much body fat should I have?'], 'FAQ questions')
 
-    # The menu marks Guides, in both menus, and nothing else.
-    cur = pg.eval_on_selector_all('[aria-current="page"]', 'as => as.map(a => [a.getAttribute("href"), a.className, a.textContent.trim()])')
-    ok(cur == [['/blog/', 'active', 'Guides'], ['/blog/', 'active', 'Guides']], f'menu current page {cur}')
+    # The menu marks Guides, its section, in both menus, and nothing else (CMB-034: aria-current="true" for a section).
+    cur = pg.eval_on_selector_all('[aria-current]', 'as => as.map(a => [a.getAttribute("href"), a.className, a.textContent.trim(), a.getAttribute("aria-current")])')
+    ok(cur == [['/blog/', 'active', 'Guides', 'true'], ['/blog/', 'active', 'Guides', 'true']], f'menu current page {cur}')
     ok(pg.eval_on_selector_all('header a.active, nav a.active', 'as => as.length') == 2, 'other menu links marked active')
 
     # Links, chips, FAQ.
