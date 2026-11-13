@@ -1,0 +1,38 @@
+page,score,item
+/,S,rank curve stored at 2 decimals (a few ranks one point off; DEVLOG §5 rank curves)
+/,S,"an ""ask a doctor"" line with no source that says when, and no Lancet Commission BMI > 40 exception (§5)"
+/,S,"BMI 16–16.9 and under 16 called moderate and severe thinness, cited to WHO 1995, whose report says grade 2 and grade 3 thinness (§5)"
+/,S,"Winter 2014 worded ""rose … above 33""; the abstract says risk began to rise at about 33 (§5)"
+/men-bmi-calculator/,S,rank curve stored at 2 decimals (§5 rank curves)
+/men-bmi-calculator/,S,"Winter 2014 worded ""rose … above 33"" (§5)"
+/men-bmi-calculator/,S,Gallagher 2000 body-fat ranges not yet checked against the paper's own table (§5 Gallagher)
+/women-bmi-calculator/,S,"rank curve stored at 2 decimals: 8 of 3,204 results one point off, e.g. BMI 18.1 shows 2% for 1% (§5)"
+/women-bmi-calculator/,S,Gallagher 2000 body-fat ranges not yet checked against the paper's own table (§5 Gallagher)
+/blog/bmi-chart-men/,S,"the 5′10″ rank column reads the 2-decimal men's curve: 170 lb shows 79% for 78.4% (§5 rank curves)"
+/age-bmi-calculator/,S,"""65+ (Winter 2014) 23–33 (observed plateau)"" reads as an age-specific range; the OG image draws a mortality curve with no data behind it (§5)"
+/age-bmi-calculator/,S,Winter 2014 paraphrased as lowest mortality across BMI 23–33 (§5 Winter)
+/age-bmi-calculator/,S,Gallagher 2000 body-fat ranges not yet checked against the paper's own table (§5 Gallagher)
+/calculators/,S,Winter 2014 paraphrased as lowest mortality across BMI 23–33 (§5 Winter)
+/blog/bmi-chart-explained/,S,Winter 2014 paraphrased as lowest mortality across BMI 23–33 (§5 Winter)
+/blog/bmi-by-age/,S,Winter 2014 paraphrased as lowest mortality across BMI 23–33 (§5 Winter)
+/blog/bmi-limitations/,S,Winter 2014 paraphrased as lowest mortality across BMI 23–33 (§5 Winter)
+/blog/bmi-and-health-risks/,S,Winter 2014 paraphrased as lowest mortality across BMI 23–33 (§5 Winter)
+/blog/bmi-and-health-risks/,S,"the 5–10% weight-loss line credits CDC and NHLBI, whose linked pages give no 5–10%; the NAFLD 7–10% and the FAQ's 5–10% name no source (§5)"
+/blog/bmi-categories/,S,Winter 2014 paraphrased as lowest mortality across BMI 23–33 (§5 Winter)
+/blog/bmi-categories/,S,the category range chart sizes its zones with BMI values as flex weights (§5)
+/blog/bmi-and-metabolism/,S,"two .chart-compare blocks with unsourced values, "". Healthy Living"" with no source name, ""+/- 5%"" and ""Estimated to represent 10-30%"" with no source (§5)"
+/blog/how-to-lower-bmi/,S,"the FAQ's ""every 10-15 pounds lost"" and ""after 2-4 weeks"" (page and JSON-LD) with no source (§5)"
+/blog/bmi-history/,S,"references: the WHO fact sheet has no link and "": How useful is BMI?"" lost its source name (§5)"
+/blog/bmi-formula/,S,5 probe hits and unsourced lines (§5)
+/about/,S,"New BMI called ""the Trefethen height-corrected variant""; the ideal-weight formulas ""developed for clinical dosing"" (§5)"
+/body-fat-percentage-chart/,S,"tied readings' order moves 14 of 70 age-table percentiles and 5 of 50 tool quartiles by 0.1 (§5 order-free percentiles)"
+/body-fat-calculator/,S,"""Siri WE, 1956"" cited next to Topend's Jackson-Pollock page, which prints only the density equations (§5)"
+/kids-bmi-calculator/,S,"the results' ""Talk with your pediatrician"" lines name no source that says when (§5)"
+/ideal-weight/,S,"the results summary takes BMI from the unrounded formula weights: a 5′10″ man with a large frame reads 155 to 183 lbs and BMI 22.2 to 26.2, but 183 lb is BMI 26.3 (found 2026-11-13)"
+/lean-body-mass/,D,"""Methods to Measure Body Composition"" lost its heading; the composition figure has two captions (§5)"
+/average-weight/,D,"the menu marks ""Obesity Statistics"" as the current page (§5 menu marker)"
+/body-fat-percentage-chart/,D,"the menu marks ""Obesity Statistics"" as the current page (§5 menu marker)"
+/blog/bmi-for-athletes/,D,"the menu marks ""Obesity Statistics"" as the current page (§5 menu marker)"
+/blog/what-is-bmi/,D,"the menu marks ""Obesity Statistics"" as the current page (§5 menu marker)"
+/bmi-chart/,D,the menu marks no current page though it links this one (§5 menu marker)
+/calculators/,D,the menu marks no current page though it links this one (§5 menu marker)

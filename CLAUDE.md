@@ -4,7 +4,7 @@ Operational notes for Claude Code / chat sessions on this repo. The runtime trut
 
 ## DEVLOG — mandatory
 - Before any work: read `DEVLOG.md` §0–§5 + the last 10 §6 entries.
-- After any task that changes files, data, config, deps or a decision: update `DEVLOG.md` per `.claude/skills/devlog/SKILL.md` and commit it with the work. Never push main. Push only the claude/ID branch a prompt names.
+- After any task that changes files, data, config, deps or a decision: update `DEVLOG.md` per `.claude/skills/devlog/SKILL.md` and commit it with the work. Never push main. Push only `claude/` branches. A chat that does the work itself merges its own PR by DEVLOG D-24 (merge commit, after the tests and its Chrome check on the preview); otherwise the owner merges.
 - `done` only with verification that actually ran; skipped tests and UI behaviour = unverified. No secrets in `DEVLOG.md`.
 
 ## Prose — anti-slop
@@ -21,5 +21,5 @@ Operational notes for Claude Code / chat sessions on this repo. The runtime trut
 - R1 — Layout, spacing, alignment, typography and responsive work go through the `impeccable` skill (`layout`, `typeset`, `polish`, `adapt`, `audit`).
 - R2 — Refine inside the current look. Never change brand fonts, colors, logo or Raptive ad containers; add no motion or effects (`animate`, `delight`, `overdrive`, `bolder`) unless the prompt asks. The skill's go-bold defaults apply only to an explicitly requested redesign or new page.
 - R3 — An intentional choice the detector flags gets a recorded exception (`.claude/skills/impeccable/scripts/impeccable ignores add-value RULE VALUE --reason "WHY"`), never a silent workaround.
-- R4 — After design work, mark layout `unverified` in `DEVLOG.md`. Chat checks it in Claude in Chrome: the Vercel preview before the merge, the live page after it (D-21). No owner phone test and no Mac detector run.
+- R4 — After design work, mark layout `unverified` in `DEVLOG.md` until chat checks it in Claude in Chrome: the Vercel preview before the merge at desktop and phone width (D-25), the live page after it, on a few pages only because the site shows live ads. No owner phone test and no Mac detector run.
 - R5 — No Impeccable self-updates inside a task (`impeccable update`, `npx impeccable update`, `install`). If impeccable context reports `UPDATE_AVAILABLE`, note it in `DEVLOG.md` §0 and carry on; the owner updates on the Mac, engines included.
