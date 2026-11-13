@@ -1374,123 +1374,6 @@
   },
   {
    "page": "/blog/bmi-history/",
-   "sig": "The Body Mass Index has a fascinating #-year journey from a Belgian mathematician's statistical curiosity to one of the most widely used health metrics in the world.",
-   "classes": "B",
-   "why": "years since 1832, to the hundred",
-   "checks": [
-    {
-     "target": 1,
-     "kind": "num",
-     "expr": "2026 - 1832",
-     "label": "2026 minus 1832, rounded to the hundred",
-     "dec": -2
-    }
-   ]
-  },
-  {
-   "page": "/blog/bmi-history/",
-   "sig": "Discover the fascinating #-year history of BMI.",
-   "classes": "B",
-   "why": "years since 1832, to the hundred",
-   "region": "meta",
-   "checks": [
-    {
-     "target": 1,
-     "kind": "num",
-     "expr": "2026 - 1832",
-     "label": "2026 minus 1832, rounded to the hundred",
-     "dec": -2
-    }
-   ]
-  },
-  {
-   "page": "/blog/bmi-history/",
-   "sig": "For the first # years after its creation, the Quetelet Index was used almost exclusively by statisticians and social scientists.",
-   "classes": [
-    "B"
-   ],
-   "why": "years from 1832 to 1972",
-   "checks": [
-    {
-     "target": 1,
-     "kind": "num",
-     "expr": "1972 - 1832",
-     "label": "1972 minus 1832",
-     "dec": 0
-    }
-   ]
-  },
-  {
-   "page": "/blog/bmi-history/",
-   "sig": "The term \"Body Mass Index\" (BMI) was coined # years later by American physiologist Ancel Keys in a # paper published in the Journal of Chronic Diseases.",
-   "classes": [
-    "B",
-    "-"
-   ],
-   "why": "years from 1832 to 1972",
-   "checks": [
-    {
-     "target": 1,
-     "kind": "num",
-     "expr": "1972 - 1832",
-     "label": "1972 minus 1832",
-     "dec": 0
-    }
-   ]
-  },
-  {
-   "page": "/blog/bmi-history/",
-   "sig": "Its adoption as a medical diagnostic tool didn't occur until the #s-#s, over # years after its creation.",
-   "classes": [
-    "-",
-    "-",
-    "B"
-   ],
-   "why": "years from 1832 to 1972",
-   "checks": [
-    {
-     "target": 3,
-     "kind": "num",
-     "expr": "1972 - 1832",
-     "label": "1972 minus 1832",
-     "dec": 0
-    }
-   ]
-  },
-  {
-   "page": "/blog/bmi-history/",
-   "sig": "The repurposing of his formula for individual health assessment came #+ years later, driven by needs that Quetelet never envisioned.",
-   "classes": [
-    "B"
-   ],
-   "why": "years from 1832 to 1972",
-   "checks": [
-    {
-     "target": 1,
-     "kind": "num",
-     "expr": "1972 - 1832",
-     "label": "1972 minus 1832",
-     "dec": 0
-    }
-   ]
-  },
-  {
-   "page": "/blog/bmi-history/",
-   "sig": "He recommended BMI for population studies, not individual clinical diagnosis - echoing Quetelet's original intent from # years earlier.",
-   "classes": "B",
-   "why": "years from 1832 to 1972",
-   "checks": [
-    {
-     "target": 1,
-     "kind": "num",
-     "expr": "1972 - 1832",
-     "label": "1972 minus 1832",
-     "dec": 0
-    }
-   ]
-  },
-  {
-   "page": "/blog/bmi-history/",
    "sig": "← # years >",
    "classes": "B",
    "why": "years from 1832 to 1972",
@@ -1525,28 +1408,6 @@
   },
   {
    "page": "/blog/bmi-history/",
-   "sig": "So while the formula is nearly # years old, the name \"BMI\" is only about # years old.",
-   "classes": "B",
-   "why": "ages of the formula and the name",
-   "checks": [
-    {
-     "target": 1,
-     "kind": "num",
-     "expr": "2026 - 1832",
-     "label": "2026 minus 1832, to the hundred",
-     "dec": -2
-    },
-    {
-     "target": 2,
-     "kind": "num",
-     "expr": "2026 - 1972",
-     "label": "2026 minus 1972, to the ten",
-     "dec": -1
-    }
-   ]
-  },
-  {
-   "page": "/blog/bmi-history/",
    "sig": "Oxford mathematician Nick Trefethen proposed a modified formula that uses height to the power of # instead of #:",
    "classes": [
     "-",
@@ -1570,18 +1431,6 @@
    "why": "the current year (the timeline's end)",
    "exact": true,
    "value": 2026
-  },
-  {
-   "page": "/blog/bmi-history/",
-   "sig": "BMI #-# may represent increased risk (vs #-# for general population)",
-   "classes": [
-    "C",
-    "C",
-    "-",
-    "-"
-   ],
-   "why": "the WHO 2004 Asian cut-offs",
-   "row": "who-2004-asian-bmi"
   },
   {
    "page": "/blog/bmi-history/",
@@ -1891,34 +1740,6 @@
   },
   {
    "page": "/blog/how-to-lower-bmi/",
-   "sig": "The traditional teaching is that ~# kcal equals one pound of body fat, so a # kcal/day deficit gives ~# lb/week and # kcal/day gives ~# lb/week.",
-   "classes": [
-    "C",
-    "B",
-    "B",
-    "B",
-    "B"
-   ],
-   "why": "the 3,500 kcal rule applied: a week of a daily deficit",
-   "checks": [
-    {
-     "target": 3,
-     "kind": "num",
-     "expr": "$2 * 7 / $1",
-     "label": "500 kcal x 7 days / 3,500",
-     "dec": 0
-    },
-    {
-     "target": 5,
-     "kind": "num",
-     "expr": "$4 * 7 / $1",
-     "label": "1,000 kcal x 7 days / 3,500",
-     "dec": 0
-    }
-   ]
-  },
-  {
-   "page": "/blog/how-to-lower-bmi/",
    "sig": "Your Height | Weight to Lose per BMI Point | Example: BMI # to #",
    "classes": "B",
    "why": "the example's two BMIs (inputs)",
@@ -1971,26 +1792,6 @@
      "dec": -2
     }
    ]
-  },
-  {
-   "page": "/blog/bmi-and-metabolism/",
-   "sig": "# lbs LBM",
-   "classes": "C",
-   "why": "an illustration's value with no source (the .chart-compare block)",
-   "exact": true
-  },
-  {
-   "page": "/blog/bmi-and-metabolism/",
-   "sig": "# lbs fat",
-   "classes": "C",
-   "why": "an illustration's value with no source (the .chart-compare block)",
-   "exact": true
-  },
-  {
-   "page": "/blog/bmi-and-metabolism/",
-   "sig": "While thyroid disorders can affect metabolism and weight, they typically account for only modest weight changes (#-# pounds).",
-   "classes": "C",
-   "why": "a claim with no source"
   },
   {
    "page": "/blog/body-fat-vs-bmi/",
@@ -2075,13 +1876,6 @@
    "why": "an illustration (two hypothetical people)",
    "exact": true,
    "value": 30
-  },
-  {
-   "page": "/blog/waist-to-height-ratio/",
-   "sig": "# - #",
-   "classes": "C",
-   "why": "a WHtR band with no source",
-   "exact": true
   },
   {
    "page": "/blog/bmi-tracking-guide/",
@@ -2920,6 +2714,338 @@
    "classes": "D",
    "region": "table",
    "why": "a label (the example's loss steps the table works out) (CMB-038)"
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "sig": "#%",
+   "classes": "C",
+   "exact": true,
+   "value": 34.7,
+   "row": "hirode-2020-metabolic-syndrome",
+   "why": "the metabolic syndrome tile, Hirode & Wong 2020 (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "sig": "US adults with it, #-#",
+   "classes": "C",
+   "row": "hirode-2020-metabolic-syndrome",
+   "why": "the tile label, NHANES 2011 to 2016 (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "sig": "#x",
+   "classes": "C",
+   "exact": true,
+   "value": 5,
+   "row": "alberti-2009-metabolic-syndrome",
+   "why": "the diabetes tile, Alberti 2009 (\"5-fold\") (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "sig": "#x",
+   "classes": "C",
+   "exact": true,
+   "value": 2,
+   "row": "alberti-2009-metabolic-syndrome",
+   "why": "the cardiovascular tile, Alberti 2009 (\"twice the risk\") (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "sig": "Cardiovascular disease risk over #-# years",
+   "classes": "C",
+   "row": "alberti-2009-metabolic-syndrome",
+   "why": "the tile label, Alberti 2009 (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "sig": "The American Thyroid Association says about # to # pounds",
+   "classes": "C",
+   "row": "ata-thyroid-weight",
+   "why": "the thyroid FAQ names the ATA without a link (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "sig": "#.",
+   "classes": "C",
+   "exact": true,
+   "value": 2009,
+   "row": "alberti-2009-metabolic-syndrome",
+   "why": "a reference-list year, Alberti 2009 (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "sig": "Am J Clin Nutr. #.",
+   "classes": "C",
+   "exact": true,
+   "value": 1984,
+   "row": "roza-shizgal-1984-harris-benedict",
+   "why": "a reference-list year, Roza & Shizgal 1984 (CMB-042)"
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "sig": "#",
+   "classes": "C",
+   "exact": true,
+   "value": 1.55,
+   "row": "cappuccio-2008-sleep-obesity",
+   "why": "the sleep tile, Cappuccio 2008 (pooled odds ratio) (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "sig": "The Complete History of BMI: From Quetelet to Modern Medicine (#-#)",
+   "classes": [
+    "C",
+    "D"
+   ],
+   "row": "eknoyan-2008-quetelet",
+   "why": "the title and H1: the 1832 index (2026, the current year) (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "sig": "#",
+   "classes": "C",
+   "exact": true,
+   "value": 1832,
+   "row": "eknoyan-2008-quetelet",
+   "why": "a timeline year: the Quetelet index, Eknoyan 2008 (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "sig": "#",
+   "classes": "C",
+   "exact": true,
+   "value": 1959,
+   "row": "nuttall-2015-bmi-review",
+   "why": "a timeline year: MetLife's 1959 tables, Nuttall 2015 (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "sig": "#",
+   "classes": "C",
+   "exact": true,
+   "value": 1972,
+   "row": "keys-1972-indices",
+   "why": "a timeline year: Keys et al. 1972 (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "sig": "#",
+   "classes": "C",
+   "exact": true,
+   "value": 1985,
+   "row": "nih-1985-consensus-obesity",
+   "why": "a timeline year: the NIH consensus conference (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "sig": "#",
+   "classes": "C",
+   "exact": true,
+   "value": 1995,
+   "row": "who-trs-854",
+   "why": "a timeline year: WHO TRS 854 (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "sig": "#",
+   "classes": "C",
+   "exact": true,
+   "value": 1998,
+   "row": "nhlbi-1998-obesity-guidelines",
+   "why": "a timeline year: the NIH guidelines (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "sig": "NIH sets # and #",
+   "classes": "C",
+   "row": "nhlbi-1998-obesity-guidelines",
+   "why": "a timeline label: the 1998 cut-offs (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "sig": "# MetLife",
+   "classes": "C",
+   "exact": true,
+   "value": 1959,
+   "row": "nuttall-2015-bmi-review",
+   "why": "the timeline figure label, Nuttall 2015 (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "sig": "The Birth of the Quetelet Index (#)",
+   "classes": "C",
+   "row": "eknoyan-2008-quetelet",
+   "why": "a heading: the 1832 index (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "sig": "The Quetelet Index (#)",
+   "classes": "C",
+   "row": "eknoyan-2008-quetelet",
+   "why": "the formula box: the 1832 index (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "sig": "Asian BMI Cutoffs (#)",
+   "classes": "C",
+   "row": "who-2004-asian-bmi",
+   "why": "a heading: WHO Expert Consultation 2004 (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "sig": "NIH and the # Cut-Offs",
+   "classes": "C",
+   "row": "nhlbi-1998-obesity-guidelines",
+   "why": "a heading and its contents entry (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "sig": "#: An NIH Consensus Conference",
+   "classes": "C",
+   "row": "nih-1985-consensus-obesity",
+   "why": "a heading: the 1985 conference (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "sig": "#: The Cut-Offs Used Today",
+   "classes": "C",
+   "row": "nhlbi-1998-obesity-guidelines",
+   "why": "a heading: the 1998 guidelines (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "sig": "Adolphe Quetelet described the index in #, and it became known as the Quetelet index.",
+   "classes": "C",
+   "row": "eknoyan-2008-quetelet",
+   "why": "FAQ: the 1832 index, Eknoyan 2008 (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "sig": "Ancel Keys and colleagues named it the body mass index in a # paper in the Journal of Chronic Diseases, # years later.",
+   "classes": [
+    "C",
+    "B"
+   ],
+   "row": "keys-1972-indices",
+   "why": "FAQ: Keys 1972, and the gap from Quetelet's 1832 index (CMB-042)",
+   "checks": [
+    {
+     "target": 2,
+     "kind": "num",
+     "expr": "$1 - 1832",
+     "dec": 0,
+     "label": "years from the 1832 index to the 1972 paper"
+    }
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "sig": "So the formula is nearly # years old and the name BMI just over #.",
+   "classes": "D",
+   "why": "rounded ages: 2026 - 1832 = 194 and 2026 - 1972 = 54 (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "sig": "Earlier weight standards came from insurers, such as Metropolitan Life",
+   "classes": "C",
+   "row": "nuttall-2015-bmi-review",
+   "why": "FAQ: MetLife's 1959 tables, Nuttall 2015 (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "sig": "Quetelet, A. (#).",
+   "classes": "C",
+   "exact": true,
+   "value": 1835,
+   "row": "eknoyan-2008-quetelet",
+   "why": "a reference-list year: the 1835 book (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "sig": "(#).",
+   "classes": "C",
+   "exact": true,
+   "value": 1998,
+   "row": "nhlbi-1998-obesity-guidelines",
+   "why": "a reference-list year: the NIH guidelines (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "sig": "The history of BMI, from Adolphe Quetelet",
+   "classes": "C",
+   "row": "eknoyan-2008-quetelet",
+   "why": "the meta description: the 1832 index and the 1972 name, Eknoyan 2008 (CMB-042)"
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "sig": "NICE applies the same # boundary to both sexes and all ethnicities.",
+   "classes": "C",
+   "row": "nice-ng246-ethnicity-thresholds",
+   "why": "an info card: NICE NG246 (CMB-042)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "sig": "The Body Mass Index has a #-year history, from a Belgian mathematician's statistical curiosity to one of the most widely used health metrics in the world.",
+   "classes": "B",
+   "why": "years since 1832, to the hundred (CMB-042)",
+   "checks": [
+    {
+     "target": 1,
+     "kind": "num",
+     "expr": "2026 - 1832",
+     "label": "2026 minus 1832, rounded to the hundred",
+     "dec": -2
+    }
+   ]
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "sig": "# - #",
+   "classes": "C",
+   "exact": true,
+   "value": 0.4,
+   "row": "nice-ng246-ethnicity-thresholds",
+   "why": "a chart bar: NICE NG246 healthy central adiposity (CMB-042)"
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "sig": "# - #",
+   "classes": "C",
+   "exact": true,
+   "value": 0.5,
+   "row": "nice-ng246-ethnicity-thresholds",
+   "why": "a chart bar: NICE NG246 increased central adiposity (CMB-042)"
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "sig": "# or more",
+   "classes": "C",
+   "exact": true,
+   "value": 0.6,
+   "row": "nice-ng246-ethnicity-thresholds",
+   "why": "a chart bar: NICE NG246 high central adiposity (CMB-042)"
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "sig": "Half your height is the waist at a ratio of #; a waist below it keeps the ratio under #:",
+   "classes": "C",
+   "row": "nice-ng246-ethnicity-thresholds",
+   "why": "the waist table intro: the NICE boundary (CMB-042)"
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "sig": "Height | Waist at a Ratio of #",
+   "classes": "C",
+   "row": "nice-ng246-ethnicity-thresholds",
+   "why": "the waist table header: the NICE boundary (CMB-042)",
+   "region": "table"
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "sig": "That is why NICE pairs the ratio with BMI for adults with a BMI under #.",
+   "classes": "C",
+   "row": "nice-ng246-ethnicity-thresholds",
+   "why": "FAQ: NICE NG246, adults with a BMI under 35 (CMB-042)"
   }
  ]
 }
