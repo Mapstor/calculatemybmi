@@ -15,7 +15,9 @@ Copies the served site (the repo without .git and research/) to two temp folders
                                 expected: a B mismatch (weightBounds(66, 18.5, 24.9).minLb is 115)
     3. an unsourced statistic   /blog/what-is-bmi/  a new sentence "Roughly 61.7% of adults check their BMI
                                 less than once a year." in the "What is BMI" section
-                                expected: a C number with no registry row
+                                expected: a C number with no registry row, or not in the row the page's rows give
+                                it (CMB-043: since registry rows serve /blog/what-is-bmi/, the audit reads it
+                                against them and reports it "not in its row"; either way it is untraced)
 
 Prints each expectation with what the report says, then "N of 3 planted errors reported; control clean: yes/no".
 Exit 0 only when all three are reported in the broken copy and none of the three spots is a finding in the control.
@@ -101,7 +103,8 @@ def findings(rep):
     a = [m for m in pages['/blog/underweight-bmi-risks/']['mismatches'] if m['class'] == 'A' and 'a person who weighs 50 kg' in m['sentence']]
     b = [m for m in pages['/blog/bmi-categories/']['mismatches'] if m['class'] == 'B' and m['sentence'].startswith('5′6″') or
          (m['class'] == 'B' and m['sentence'].startswith("5'6"))]
-    c = [x for x in pages['/blog/what-is-bmi/']['c_no_row'] if x['number'] == '61.7']
+    c = [x for x in pages['/blog/what-is-bmi/']['c_no_row'] + pages['/blog/what-is-bmi/']['c_not_in_row']
+         if x['number'] == '61.7']
     return a, b, c
 
 
@@ -119,7 +122,7 @@ def main():
     for n, (label, hit, want) in enumerate((
             ('1. wrong example output (A)', a1, 'page BMI 17.8, calculator 17.3'),
             ('2. wrong range cell (B)', b1, 'page 117, computed 115'),
-            ('3. unsourced statistic (C)', c1, '61.7 with no registry row')), 1):
+            ('3. unsourced statistic (C)', c1, '61.7 untraced (no row, or not in its row)')), 1):
         ok = bool(hit)
         if n == 1:
             ok = ok and '17.8' in hit[0]['page_value'] and '17.3' in hit[0]['computed']
@@ -128,7 +131,7 @@ def main():
         caught += ok
         got = hit[0] if hit else None
         shown = (f"{got.get('page_value')} vs {got.get('computed')}" if got and 'page_value' in got else
-                 (f"no row: \"{got['sentence']}\"" if got else 'not reported'))
+                 (f"untraced: \"{got['sentence']}\"" if got else 'not reported'))
         print(f"  {'caught' if ok else 'MISSED'}  {label}: expected {want}; report: {shown}")
     clean = not a0 and not [m for m in b0 if m.get('page_value') == '117'] and not c0
     print(f'  control: example {"clean" if not a0 else "REPORTED"}, range cell {"clean" if not b0 else "REPORTED"}, '
