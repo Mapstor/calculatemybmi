@@ -22,7 +22,7 @@ page,template,s,s_value,p,p_value,d,d_value,date
 /blog/bmi-and-health-risks/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 2578 words)",pass,"detector 390: 0, 1280: 0",2026-11-13
 /blog/underweight-bmi-risks/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0.5/1k (1 tells, 2097 words: about-the-page 1)",pass,"detector 390: 0, 1280: 0",2026-11-13
 /blog/bmi-limitations/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"1.4/1k (3 tells, 2120 words: ai-word 1, transition-opener 1, about-the-page 1)",pass,"detector 390: 0, 1280: 0",2026-11-13
-/blog/bmi-and-metabolism/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0.4/1k (1 tells, 2299 words: ai-word 1)",pass,"detector 390: 0, 1280: 0",2026-11-13
+/blog/bmi-and-metabolism/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0.4/1k (1 tells, 2294 words: ai-word 1)",pass,"detector 390: 0, 1280: 0",2026-11-13
 /blog/body-fat-vs-bmi/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0.9/1k (1 tells, 1120 words: ai-word 1)",pass,"detector 390: 0, 1280: 0",2026-11-13
 /blog/bmi-for-athletes/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"1.2/1k (1 tells, 857 words: vague-authority 1)",pass,"detector 390: 0, 1280: 0",2026-11-13
 /blog/waist-to-height-ratio/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0.5/1k (1 tells, 2067 words: about-the-page 1)",pass,"detector 390: 0, 1280: 0",2026-11-13

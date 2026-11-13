@@ -124,14 +124,18 @@ NEW = [
     dict(STATIC, domain='ata-thyroid-weight',
          source='American Thyroid Association. Thyroid and Weight (patient page and brochure)',
          publisher='American Thyroid Association', url='https://www.thyroid.org/thyroid-and-weight/',
-         endpoint='https://www.thyroid.org/wp-content/uploads/patients/brochures/ata-thyroid-weight-brochure.pdf',
+         endpoint='https://www.thyroid.org/thyroid-and-weight/',
          license='Patient information; facts cited with attribution', tier='A', granularity='summary', format='web page',
          attribution='American Thyroid Association', coverage='hypothyroidism, hyperthyroidism and body weight',
          sample_note=f'Patient page ({WS}): "Most of the weight gained is actually due to retaining salt and water. For '
                      'most patients, about 5-10 pounds of weight gain may be related to the thyroid, depending on the '
                      'severity of the hypothyroidism, but individuals may differ."; the earlier page text: "Massive weight '
                      'gain is rarely associated with hypothyroidism. In general, 5-10 pounds of body weight may be '
-                     'attributable to the thyroid, depending on the severity of the hypothyroidism."',
+                     'attributable to the thyroid, depending on the severity of the hypothyroidism." Chrome, 2026-11-13: '
+                     'the page holds the first passage word for word (in its hypothyroidism section); the "massive '
+                     'weight gain" sentence is gone from it, so the site doesn\'t quote it, and the brochure PDF '
+                     '(wp-content/uploads/patients/brochures/ata-thyroid-weight-brochure.pdf) now redirects to the '
+                     'home page.',
          pages_served='blog/bmi-and-metabolism'),
     dict(STATIC, domain='hall-2011-energy-imbalance',
          source='Hall KD, Sacks G, Chandramohan D, et al. Quantification of the effect of energy imbalance on bodyweight. '

@@ -47,6 +47,9 @@ Run order from main: registry.py, manual.py, apply.py, og_images.py.
    percentile charts" twice and "exceeds half their height ... may warrant attention"), and its three improve lists
    ("has been shown", "strongly linked", "effective for", no source) replaced by CDC's pace and the Physical Activity
    Guidelines (D-06).
+   Read against the sources in Chrome: the thyroid FAQ keeps only what ATA's page says now (its "massive weight gain"
+   line is gone from the page), and Caleyachetty's 3.5 million adults are "a study", not "the largest"; the metabolism
+   page's link to the age calculator no longer promises age-specific recommendations (D-11).
    The waist figure marks NICE's boundary as "≥ 0.5, increased risk" (was "> 0.5, elevated risk") and its description
    no longer puts the waist at the navel or the callouts on the right. /blog/bmi-and-metabolism/ shares the site card:
    its old image (removed) drew a TDEE donut with overlapping arcs and a "60-75% per NIDDK" share no row holds.
@@ -247,8 +250,8 @@ EDITS = {MET: [
         'treatment with thyroid hormone replacement typically resolves metabolic effects.',
         'Yes, an underactive thyroid (hypothyroidism) can slow metabolism and add weight, but usually not much. The '
         'American Thyroid Association says about 5 to 10 pounds of weight gain may be related to the thyroid for most '
-        'patients, depending on how severe the hypothyroidism is, that most of the weight gained is salt and water, and '
-        'that massive weight gain is rarely associated with hypothyroidism.', 2),
+        'patients, depending on how severe the hypothyroidism is, and that most of the weight gained is salt and '
+        'water.', 2),
     lit('<li>. Healthy Living</li> <li>Pontzer H, et al. Daily energy expenditure through the human life course. Science. '
         '2021.</li> <li>Caleyachetty R, et al. Metabolically Healthy Obese and Incident Cardiovascular Disease Events. '
         'JACC. 2017.</li> </ul>',
@@ -696,6 +699,12 @@ EDITS[WHT] = [
 EDITS[MET] += [
     lit('https://calculatemybmi.net/assets/images/og/metabolism-tdee-donut.png',
         'https://calculatemybmi.net/assets/images/og-image.png', 3),
+    # read against the abstract in Chrome: one study of 3.5 million adults, not "the largest"
+    lit('Definitions vary; the largest study, of 3.5 million UK adults, counted',
+        'Definitions vary; a study of 3.5 million UK adults counted'),
+    # D-11: the age page gives no age-specific recommendations
+    lit('Our <a href="/age-bmi-calculator/">BMI by age guide</a> provides age-specific recommendations.</p>',
+        'Our <a href="/age-bmi-calculator/">BMI by age guide</a> explains how BMI is read at different ages.</p>'),
 ]
 EDITS[HIS] += [
     lit('The Body Mass Index has a fascinating 200-year journey from', 'The Body Mass Index has a 200-year history, from'),
