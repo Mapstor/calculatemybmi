@@ -243,7 +243,7 @@ with sync_playwright() as p:
     ok([norm(x) for x in kt] == [
         'Ideal body weight (IBW) is a weight worked out from height alone. The four formulas in use start at 5 feet and add a fixed amount per inch: for a 5′6″ woman they give 130 to 135 lb, inside the healthy BMI range of 115 to 154 lb at that height.',
         'The formulas agree within 3 lb at 5′8″ for women and 5′6″ for men and split apart toward both ends: at 6′6″ the men’s run from 180 lb (Miller) to 214 lb (Hamwi).',
-        'At a medium frame every formula stays inside CDC’s healthy BMI range at the heights in the tables, at a BMI of 19.5 to 22.9 for women and 20.7 to 24.7 for men.',
+        'At a medium frame every formula stays inside CDC’s healthy BMI range at the heights in the tables, at a BMI of 19.5 to 22.8 for women and 20.7 to 24.7 for men.',
         'Hamwi (1964) works in pounds and adjusts for frame size: 10% less for a small frame, 10% more for a large one.',
         'Pai and Paloucek concluded that “any one of these equations may be used to estimate IBW,” and Peterson and colleagues note that IBW equations “have largely been replaced by BMI ranges.”'],
        f'key takeaways {kt}')
@@ -306,8 +306,7 @@ with sync_playwright() as p:
             ok(cells[9] == f'{klo}–{khi}' and wb == [klo, khi] and st[h]['healthy']['kg'] == [klo, khi],
                f'{word} {hlab(h)} healthy kg: page {cells[9]}, weightBounds {wb}, rule {klo}–{khi}')
             ok(got['span'] == span_text(want), f'{word} {hlab(h)} span tile {got["span"]!r} != {span_text(want)!r}')
-            ex = exact(h, sex)
-            bm = [bmi_r(ex[n][0], h) for n in NAMES]
+            bm = [bmi_r(want[n][0], h) for n in NAMES]          # BMI at the printed weights (CMB-033)
             lbs = [want[n][0] for n in NAMES]
             summ = (f'For {hq(h)} ({math.floor(h * 2.54 + 0.5)} cm), {sex}, medium frame, the four formulas span {min(lbs)} lbs to {max(lbs)} lbs. '
                     f'At those weights your BMI would be {float(min(bm)):.1f} to {float(max(bm)):.1f}, inside the healthy range of 18.5 to 24.9.')
@@ -350,6 +349,8 @@ with sync_playwright() as p:
     ok(g['span'] == '155–166 lbs (70.3–75.3 kg)' and g['bmi-range'].startswith('129–173 lbs') and 'your BMI would be 22.2 to 23.8' in g['results'], f'anchor man 5′10″ {g["span"]}')
     gl = calc(pg, 5, 10, sex='male', frame='large')
     ok(gl['hamwi'] == '183 lbs (82.8 kg)' and [gl[n] for n in NAMES[1:]] == [g[n] for n in NAMES[1:]], f'anchor man 5′10″ large {gl["hamwi"]}')
+    ok('the four formulas span 155 lbs to 183 lbs. At those weights your BMI would be 22.2 to 26.3, partly outside the healthy range of 18.5 to 24.9.' in gl['results'],
+       'anchor man 5′10″ large: the BMI of the printed 183 lb is 26.3 (CMB-033; Hamwi unrounded 182.6 lb gave 26.2)')
     g = calc(pg, 5, 4, sex='female', frame='small')
     ok(g['hamwi'] == '108 lbs (49.0 kg)' and [g[n + '_p'][0] for n in NAMES[1:]] == [121, 123, 129], f'anchor woman 5′4″ small {[g[n] for n in NAMES]}')
     g = calc(pg, 4, 10, sex='female')
@@ -365,6 +366,10 @@ with sync_playwright() as p:
            f'anchor metric {cm} cm {sex}: {[g[n] for n in NAMES]}')
         ok(g['bmi-range'].startswith(f'{klo}–{khi} kg (') and healthy(Fr(cm) / Fr('2.54'))[1] == (klo, khi), f'anchor metric {cm} cm healthy {g["bmi-range"]}')
         ok(g['span'] == span_text({n: (g[n + '_p'][0], g[n + '_p'][1]) for n in NAMES}, metric=True), f'metric {cm} cm span {g["span"]}')
+        # metric summary: the BMI of each printed kg at the height typed, kg/m², rounded once half up (CMB-033)
+        kb = sorted(Fr(half(Fr(k) / (Fr(cm) / 100) ** 2, 1), 10) for k in want)
+        ok(f'At those weights your BMI would be {float(kb[0]):.1f} to {float(kb[-1]):.1f}' in g['results'] or (kb[0] == kb[-1] and f'your BMI would be {float(kb[0]):.1f},' in g['results']),
+           f'metric {cm} cm summary BMI from the printed kg, want {float(kb[0]):.1f} to {float(kb[-1]):.1f}')
     g = calc(pg, cm=147, sex='female')
     ok(all(g[n] == 'Starts at 152.4 cm (5 feet)' for n in NAMES) and g['span'] == 'Start at 152.4 cm (5 feet)', f'147 cm tiles {[g[n] for n in NAMES]}')
     g = calc(pg, cm=152.4, sex='female')
@@ -382,8 +387,8 @@ with sync_playwright() as p:
             ok(nar == [68] and sp[68] == (138, 141) and wid == [60] and sp[60] == (100, 117), f'women narrowest {nar} widest {wid}')
         else:
             ok(nar == [65, 66] and sp[66] == (140, 143) and sp[65] == (136, 139) and wid == [78] and sp[78] == (180, 214), f'men narrowest {nar} widest {wid}')
-    bmis = {sex: [bmi_r(lb, h) for h in TABLE_H[sex] for lb, _ in exact(h, sex).values()] for sex in ('female', 'male')}
-    ok((float(min(bmis['female'])), float(max(bmis['female'])), float(min(bmis['male'])), float(max(bmis['male']))) == (19.5, 22.9, 20.7, 24.7),
+    bmis = {sex: [bmi_r(printed(h, sex)[n][0], h) for h in TABLE_H[sex] for n in NAMES] for sex in ('female', 'male')}   # printed weights (CMB-033)
+    ok((float(min(bmis['female'])), float(max(bmis['female'])), float(min(bmis['male'])), float(max(bmis['male']))) == (19.5, 22.8, 20.7, 24.7),
        f'BMI at the four across the tables {[float(min(v)) for v in bmis.values()]} {[float(max(v)) for v in bmis.values()]}')
     bh = norm(pg.inner_text('#by-height'))
     ok('The four come closest at 5′8″ for women (138 to 141 lb) and at 5′5″ and 5′6″ for men (3 lb apart), and split apart toward both ends: '
@@ -421,7 +426,7 @@ with sync_playwright() as p:
             ok(norm(ex[1 + 2 * k]) == f'{LABEL[n]}: {pr_[n][0]} lb ({pr_[n][1]} kg)' and norm(ex[2 + 2 * k]) == f'{b} + {pi} × {over} = {vs} {u}',
                f'example {hlab(h)} {n}: {ex[1 + 2 * k]!r} {ex[2 + 2 * k]!r}')
         (lo, hi), (klo, khi) = healthy(h)
-        bm = sorted(bmi_r(lb, h) for lb, _ in exact(h, sex).values())
+        bm = sorted(bmi_r(pr_[n][0], h) for n in NAMES)          # printed weights (CMB-033)
         lbs = sorted(pr_[n][0] for n in NAMES)
         last = norm(ex[-1])
         ok(last.startswith(f'The four span {lbs[0]} to {lbs[-1]} lb, a BMI of {float(bm[0]):.1f} to {float(bm[-1]):.1f}') and f'{lo} to {hi} lb ({klo} to {khi} kg)' in last,

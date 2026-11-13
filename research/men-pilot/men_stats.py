@@ -54,7 +54,7 @@ res = {
     "method": "WTMEC2YR-weighted cumulative distribution over distinct values, linear interpolation",
     "reproduces_series3": checks,
     "bmi_n": n,
-    "p1_p99": [round(x, 2) for x in q99],
+    "p1_p99": [round(x, 4) for x in q99],   # 4 decimals since CMB-033 (research/rank-curves/curves.py)
     "table": dict(zip(["p5", "p10", "p15", "p25", "p50", "p75", "p85", "p90", "p95"], [round(x, 1) for x in qtab])),
     "waist_n": int(mw.sum()),
     "waist_mean_in": round(float((W[mw] * D.BMXWAIST[mw]).sum() / W[mw].sum()) / 2.54, 1),

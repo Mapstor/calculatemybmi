@@ -104,13 +104,13 @@
     },
     "bmi": [
      "19.5",
-     "22.9"
+     "22.8"
     ],
     "bmi_all": {
      "hamwi": "19.5",
-     "devine": "19.6",
+     "devine": "19.5",
      "robinson": "21.1",
-     "miller": "22.9"
+     "miller": "22.8"
     },
     "healthy": {
      "lb": [
@@ -174,8 +174,8 @@
     ],
     "bmi_all": {
      "hamwi": "19.8",
-     "devine": "19.9",
-     "robinson": "21.1",
+     "devine": "19.8",
+     "robinson": "21.2",
      "miller": "22.7"
     },
     "healthy": {
@@ -240,8 +240,8 @@
     ],
     "bmi_all": {
      "hamwi": "20.1",
-     "devine": "20.2",
-     "robinson": "21.1",
+     "devine": "20.1",
+     "robinson": "21.2",
      "miller": "22.5"
     },
     "healthy": {
@@ -368,13 +368,13 @@
     },
     "bmi": [
      "20.6",
-     "22.2"
+     "22.1"
     ],
     "bmi_all": {
      "hamwi": "20.6",
-     "devine": "20.7",
+     "devine": "20.8",
      "robinson": "21.1",
-     "miller": "22.2"
+     "miller": "22.1"
     },
     "healthy": {
      "lb": [
@@ -438,7 +438,7 @@
     ],
     "bmi_all": {
      "hamwi": "20.8",
-     "devine": "20.9",
+     "devine": "21.0",
      "robinson": "21.1",
      "miller": "22.0"
     },
@@ -697,13 +697,13 @@
      "width_lb": 4
     },
     "bmi": [
-     "20.9",
+     "21.0",
      "21.6"
     ],
     "bmi_all": {
      "hamwi": "21.4",
      "devine": "21.6",
-     "robinson": "20.9",
+     "robinson": "21.0",
      "miller": "21.3"
     },
     "healthy": {
@@ -896,13 +896,13 @@
     },
     "bmi": [
      "20.7",
-     "21.9"
+     "21.8"
     ],
     "bmi_all": {
      "hamwi": "21.7",
-     "devine": "21.9",
+     "devine": "21.8",
      "robinson": "20.7",
-     "miller": "20.8"
+     "miller": "20.7"
     },
     "healthy": {
      "lb": [
@@ -969,7 +969,7 @@
     "bmi_all": {
      "hamwi": "20.7",
      "devine": "21.5",
-     "robinson": "22.4",
+     "robinson": "22.5",
      "miller": "24.2"
     },
     "healthy": {
@@ -1034,7 +1034,7 @@
     ],
     "bmi_all": {
      "hamwi": "21.2",
-     "devine": "21.8",
+     "devine": "21.7",
      "robinson": "22.5",
      "miller": "24.0"
     },
@@ -1100,7 +1100,7 @@
     ],
     "bmi_all": {
      "hamwi": "21.6",
-     "devine": "22.0",
+     "devine": "21.9",
      "robinson": "22.5",
      "miller": "23.8"
     },
@@ -1166,7 +1166,7 @@
     ],
     "bmi_all": {
      "hamwi": "22.0",
-     "devine": "22.2",
+     "devine": "22.1",
      "robinson": "22.5",
      "miller": "23.6"
     },
@@ -1228,13 +1228,13 @@
     },
     "bmi": [
      "22.3",
-     "23.4"
+     "23.3"
     ],
     "bmi_all": {
      "hamwi": "22.3",
-     "devine": "22.4",
-     "robinson": "22.6",
-     "miller": "23.4"
+     "devine": "22.5",
+     "robinson": "22.5",
+     "miller": "23.3"
     },
     "healthy": {
      "lb": [
@@ -1294,13 +1294,13 @@
     },
     "bmi": [
      "22.6",
-     "23.2"
+     "23.1"
     ],
     "bmi_all": {
      "hamwi": "22.6",
      "devine": "22.6",
      "robinson": "22.6",
-     "miller": "23.2"
+     "miller": "23.1"
     },
     "healthy": {
      "lb": [
@@ -1360,13 +1360,13 @@
     },
     "bmi": [
      "22.6",
-     "23.0"
+     "23.1"
     ],
     "bmi_all": {
      "hamwi": "22.9",
-     "devine": "22.7",
+     "devine": "22.8",
      "robinson": "22.6",
-     "miller": "23.0"
+     "miller": "23.1"
     },
     "healthy": {
      "lb": [
@@ -1425,14 +1425,14 @@
      "width_lb": 4
     },
     "bmi": [
-     "22.5",
+     "22.6",
      "23.2"
     ],
     "bmi_all": {
      "hamwi": "23.2",
-     "devine": "22.8",
-     "robinson": "22.5",
-     "miller": "22.8"
+     "devine": "22.9",
+     "robinson": "22.6",
+     "miller": "22.9"
     },
     "healthy": {
      "lb": [
@@ -1496,9 +1496,9 @@
     ],
     "bmi_all": {
      "hamwi": "23.4",
-     "devine": "22.9",
+     "devine": "23.0",
      "robinson": "22.5",
-     "miller": "22.6"
+     "miller": "22.7"
     },
     "healthy": {
      "lb": [
@@ -1563,7 +1563,7 @@
     "bmi_all": {
      "hamwi": "23.6",
      "devine": "23.0",
-     "robinson": "22.5",
+     "robinson": "22.4",
      "miller": "22.4"
     },
     "healthy": {
@@ -1694,8 +1694,8 @@
     ],
     "bmi_all": {
      "hamwi": "24.0",
-     "devine": "23.2",
-     "robinson": "22.4",
+     "devine": "23.1",
+     "robinson": "22.5",
      "miller": "22.0"
     },
     "healthy": {
@@ -1755,14 +1755,14 @@
      "width_lb": 17
     },
     "bmi": [
-     "21.9",
+     "21.8",
      "24.1"
     ],
     "bmi_all": {
      "hamwi": "24.1",
      "devine": "23.2",
      "robinson": "22.4",
-     "miller": "21.9"
+     "miller": "21.8"
     },
     "healthy": {
      "lb": [
@@ -1821,14 +1821,14 @@
      "width_lb": 20
     },
     "bmi": [
-     "21.7",
+     "21.6",
      "24.3"
     ],
     "bmi_all": {
      "hamwi": "24.3",
      "devine": "23.2",
      "robinson": "22.3",
-     "miller": "21.7"
+     "miller": "21.6"
     },
     "healthy": {
      "lb": [
@@ -1887,14 +1887,14 @@
      "width_lb": 23
     },
     "bmi": [
-     "21.5",
+     "21.4",
      "24.4"
     ],
     "bmi_all": {
      "hamwi": "24.4",
-     "devine": "23.3",
+     "devine": "23.2",
      "robinson": "22.2",
-     "miller": "21.5"
+     "miller": "21.4"
     },
     "healthy": {
      "lb": [
@@ -1953,14 +1953,14 @@
      "width_lb": 25
     },
     "bmi": [
-     "21.3",
+     "21.4",
      "24.5"
     ],
     "bmi_all": {
      "hamwi": "24.5",
-     "devine": "23.3",
-     "robinson": "22.2",
-     "miller": "21.3"
+     "devine": "23.2",
+     "robinson": "22.1",
+     "miller": "21.4"
     },
     "healthy": {
      "lb": [
@@ -2019,14 +2019,14 @@
      "width_lb": 28
     },
     "bmi": [
-     "21.1",
+     "21.2",
      "24.6"
     ],
     "bmi_all": {
      "hamwi": "24.6",
-     "devine": "23.3",
-     "robinson": "22.1",
-     "miller": "21.1"
+     "devine": "23.2",
+     "robinson": "22.2",
+     "miller": "21.2"
     },
     "healthy": {
      "lb": [
@@ -2090,8 +2090,8 @@
     ],
     "bmi_all": {
      "hamwi": "24.7",
-     "devine": "23.3",
-     "robinson": "22.0",
+     "devine": "23.2",
+     "robinson": "22.1",
      "miller": "21.0"
     },
     "healthy": {
@@ -2786,10 +2786,10 @@
     },
     "bmi": [
      "22.2",
-     "26.2"
+     "26.3"
     ],
     "bmi_all": {
-     "hamwi": "26.2",
+     "hamwi": "26.3",
      "devine": "23.1",
      "robinson": "22.5",
      "miller": "22.2"
@@ -2869,7 +2869,7 @@
    ],
    "bmi": [
     "19.5",
-    "22.9"
+    "22.8"
    ],
    "all_inside_healthy": true
   },

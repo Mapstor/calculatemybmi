@@ -7,7 +7,7 @@ them (3,249 women). Weights: MEC exam weights (WTMEC2YR). BMI as CDC records it 
 
 1. The rank curves (1st to 99th percentile of BMI) for all women and for ages 20-39, 40-59 and 60+, by the homepage's
    method (research/home-build/home_stats.py: weighted cumulative distribution over the distinct measured values, linear
-   interpolation), stored at 2 decimals as the page script reads them. The all-women curve must equal the homepage's
+   interpolation), stored at 4 decimals as the page script reads them (2 until CMB-033). The all-women curve must equal the homepage's
    women-only curve, so both pages rank a woman the same way.
 2. The percentile table (5th to 95th) for the same four groups, and BMI by decade of age (10th to 90th percentile,
    mean, n) for the figure; the decade means must equal research/average-weight/avgw_results.json (which reproduces
@@ -84,10 +84,10 @@ R = {"source": "CDC NHANES August 2021-August 2023 (DEMO_L, BMX_L); women aged 2
                "shares with 95% CI by Taylor linearization (15 df, t = 2.1314)",
      "curves": {}, "table": {}, "decades": {}}
 
-# 1. Rank curves at 2 decimals (the page script's arrays) and the percentile table.
+# 1. Rank curves at 4 decimals (the page script's arrays; 2 until CMB-033) and the percentile table.
 for g, dom in GROUPS.items():
     q99, n = quantiles(dom, QS)
-    c = [round(x, 2) for x in q99]
+    c = [round(x, 4) for x in q99]
     assert all(b > a for a, b in zip(c, c[1:])), f"{g}: the curve must rise strictly"
     qt, _ = quantiles(dom, list(TAB.values()))
     R["curves"][g] = c

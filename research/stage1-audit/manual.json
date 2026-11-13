@@ -1691,9 +1691,9 @@
    "page": "/blog/bmi-categories/",
    "sig": "#",
    "classes": "D",
-   "why": "axis tick (the range chart's start)",
+   "why": "axis tick (the scale's start, CMB-033)",
    "exact": true,
-   "value": 10
+   "value": 15
   },
   {
    "page": "/blog/bmi-categories/",
@@ -1980,9 +1980,9 @@
    "page": "/blog/underweight-bmi-risks/",
    "sig": "#",
    "classes": "D",
-   "why": "axis tick (the scale's start)",
+   "why": "axis tick (the scale's start, CMB-033)",
    "exact": true,
-   "value": 10
+   "value": 15
   },
   {
    "page": "/blog/underweight-bmi-risks/",
@@ -2699,6 +2699,30 @@
    "classes": "C",
    "why": "CDC's overweight and obesity cut-offs, in the FAQ question CMB-030 set (the searcher's words, which the rules can't read)",
    "row": "cdc-child-bmi-categories"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "sig": "#",
+   "classes": "D",
+   "why": "axis tick (the scale's end, CMB-033)",
+   "exact": true,
+   "value": 45
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "sig": "#",
+   "classes": "D",
+   "why": "axis tick (the scale's end, CMB-033)",
+   "exact": true,
+   "value": 45
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "sig": "#",
+   "classes": "D",
+   "why": "the scale's marker at the page's own example (50 kg at 1.70 m, BMI 17.3, checked as B in its sentence; CMB-033)",
+   "exact": true,
+   "value": 17.3
   }
  ]
 }

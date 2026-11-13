@@ -101,7 +101,7 @@ for name, dom in (("adults", adults), ("men", men), ("women", women)):
         "bmi_n": n,
         "mean": round(mean("BMXBMI", dom), 1),
         "table": dict(zip(["p5", "p10", "p25", "p50", "p75", "p90", "p95"], [round(x, 1) for x in qt])),
-        "p1_p99": [round(x, 2) for x in q99],
+        "p1_p99": [round(x, 4) for x in q99],   # 4 decimals since CMB-033: 2 moved a few ranks by a point
     }
 
 
