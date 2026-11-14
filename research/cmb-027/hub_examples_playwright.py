@@ -18,7 +18,7 @@ At a 390 x 844 viewport it:
        /                       BMI and category; lowest and highest healthy weight
        /women-bmi-calculator/  BMI and category; "within the healthy range"; lowest and highest
                                healthy weight
-       /men-bmi-calculator/    BMI and category; the waist line in inches
+       /men-bmi-calculator/    BMI and category; the waist line in inches; the rank among US men (CMB-048)
        /age-bmi-calculator/    BMI; the Winter 2014 finding (higher below 23, rising at about 33, adults 65 and over, the
                                year twice; CMB-045 wording) and
                                that the BMI falls inside it (since CMB-036 the example names the band's
@@ -43,6 +43,10 @@ At a 390 x 844 viewport it:
      example: each must sit inside an input or a compared claim, or it is reported as SKIP. A block
      whose button links to no known calculator, or an input the text doesn't give, is SKIP too.
 
+  5. (CMB-048) the FAQ: JSON-LD equal to the visible answers; each sourced sentence present, its numbers worked out from
+     bfpc_stats.json or checked in the registry row's own text; the claims the claims pass removed stay out; outside
+     links in the registry. The men's example states the rank the calculator prints.
+
 Prints every check, then "N checks, F failures, S skipped". Exit 0 only when F = 0 and S = 0.
 """
 import re
@@ -64,6 +68,47 @@ CATEGORY = re.compile(r'\b(?:severe thinness|moderate thinness|underweight|norma
 checks = 0
 failures = []
 skipped = []
+
+# CMB-048: the FAQ's numbers, from the data files and the registry rows that hold them
+import csv, json, os                                                    # noqa: E401,E402
+ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..'))
+_BC = json.load(open(os.path.join(ROOT, 'research/body-fat-chart-build/bfpc_stats.json'), encoding='utf-8'))['bmi']['by_cat']
+REG, REG_URLS = {}, set()
+for _r in csv.DictReader(open(os.path.join(ROOT, 'research/data-sources.csv'), encoding='utf-8')):
+    REG[_r['domain']] = ' '.join((_r['coverage'], _r['sample_note'], _r['notes']))
+    REG_URLS |= {_r['url']} | {e.strip() for e in _r['endpoint'].split(' ; ') if e.strip()}
+_d1 = lambda x: f'{x:.1f}'
+FAQ_FRAGMENTS = [
+    'CDC calls it a screening measure that "does not distinguish between fat, muscle, and bone mass"',
+    'for an individual it should be considered with other factors, such as blood pressure and cholesterol levels',
+    'At a given BMI, body fat may vary by sex, age, and race and Hispanic origin, NCHS notes',
+    'CDC applies its adult categories regardless of age, sex, or race',
+    f"women had a median of {_d1(_BC['f']['healthy']['p50'])}% body fat and men {_d1(_BC['m']['healthy']['p50'])}% (our calculation",
+    'more than 35 inches (88 cm) for women and 40 inches (102 cm) for men',
+    'adults aged 20 and over, the ages CDC\'s adult categories cover',
+    'children and teens aged 2 through 19, the ages of CDC\'s BMI-for-age charts',
+    '53.4% of prospects had a BMI of 30 or more, but only 8.9% had obesity by measured body fat (Provencher et al., 2018)',
+    'in a study of 80 adults who weighed themselves daily, weight was higher early in the week and fell during it',
+    'CDC reads a child\'s BMI as a percentile among children of the same sex and age',
+    'he writes that it may not be an improvement (Trefethen)',
+]
+FAQ_NEVER = [r'height bias', r'population-level', r'6-11%', r'store fat abdominally', r'12% body fat', r'sometimes more accurate',
+             r'typically exceed', r'no official schedule', r'typically annually', r'under pediatrician guidance',
+             r'consult (?:a|your) healthcare', r'ACOG', r'life-stage', r'menopaus', r'exercises regularly',
+             r"world's leading", r'authoritative sources']
+REG_QUOTES = [
+    ('cdc-about-bmi', 'BMI does not distinguish between fat, muscle, and bone mass'),
+    ('cdc-about-bmi', 'For individuals, BMI should be considered with other factors, such as blood pressure, cholesterol levels'),
+    ('nhanes-adult-weight-trends', 'at a given BMI level, body fat may vary by sex, age, and race and Hispanic origin'),
+    ('cdc-adult-bmi-categories', "based on a person's BMI regardless of age, sex, or race"),
+    ('nhlbi-1998-obesity-guidelines', 'Waist >102 cm (>40 in) men and >88 cm (>35 in) women'),
+    ('cdc-child-bmi-categories', 'expressed relative to others of the same sex and age'),
+    ('cdc-child-bmi-categories', 'ages 2 through 19'),
+    ('provencher-2018-nfl-combine', '53.4% of the athletes as obese, body fat 8.9%'),
+    ('orsama-2014-weight-rhythms', 'The daily weight in 80 adults'),
+    ('orsama-2014-weight-rhythms', 'higher weight early in the week'),
+    ('trefethen-new-bmi', 'may not be an improvement'),
+]
 
 
 def norm(s):
@@ -226,6 +271,10 @@ def ex_men(ex, pg):
     if m:
         ex.cover(m, 1)
         check(ex, 'waist line (in)', m[1], first(r'waist above (\d+) inches', text_of(pg, '#men-results')))
+    m = ex.find(r'higher than (\d+)% of US men', 'rank', required=False)          # CMB-048
+    if m:
+        ex.cover(m, 1)
+        check(ex, 'rank among US men', f'Higher than {m[1]}% of US men', text_of(pg, '#men-rank-value'))
 
 
 def ex_age(ex, pg):
@@ -498,6 +547,27 @@ with sync_playwright() as p:
         pg.close()
         for left in ex.unaccounted():
             skip(ex, left)
+    # ---- the FAQ (CMB-048 claims pass)
+    hub, hub_errors = new_page(ctx)
+    hub.goto(BASE + '/calculators/', wait_until='load')
+    faq = hub.evaluate("""() => [...document.querySelectorAll('.faq-item')].map(i => [i.querySelector('.faq-question').textContent,
+        i.querySelector('.faq-answer').textContent, [...i.querySelectorAll('.faq-answer a[href^="http"]')].map(a => a.href)])""")
+    ld = hub.evaluate("""() => JSON.parse(document.querySelector('script[type="application/ld+json"]').textContent)['@graph']
+        .find(x => x['@type'] === 'FAQPage').mainEntity.map(e => [e.name, e.acceptedAnswer.text])""")
+    main_text = norm(hub.evaluate("() => document.querySelector('main').textContent"))
+    hub.close()
+    page.tag = '/calculators/ FAQ'
+    check(page, 'JSON-LD = visible FAQ', 'equal', 'equal' if [(norm(q), norm(a)) for q, a in ld] ==
+          [(norm(q), norm(a)) for q, a, _ in faq] else 'differs')
+    for f in FAQ_FRAGMENTS:
+        check(page, 'FAQ sentence', f[:60], f[:60] if norm(f) in main_text else 'missing')
+    for pat in FAQ_NEVER:
+        check(page, 'removed claim stays out', pat, 'absent' if not re.search(pat, main_text, re.I) else 'present',
+              not re.search(pat, main_text, re.I))
+    links = sorted({u for _, _, us in faq for u in us})
+    check(page, 'FAQ outside links in the registry', 'all', ', '.join(u for u in links if u not in REG_URLS) or 'all')
+    for k, quote in REG_QUOTES:
+        check(page, f'registry {k} holds the quote', quote[:50], quote[:50] if quote in REG[k] else 'not in the row')
     browser.close()
 
 print(f'\n{checks} checks, {len(failures)} failures, {len(skipped)} skipped')

@@ -88,7 +88,8 @@ FAQ_Q = ['What is the new BMI formula?', 'Who created the new BMI?', 'What is th
          'Why is the new BMI different from traditional BMI?',
          'Is the new BMI more accurate than traditional BMI?', 'Should I use new BMI or traditional BMI?',
          'Does the new BMI change my category?', 'Which BMI do CDC and WHO use?']
-LABELS = {'/age-bmi-calculator/': ['age-height-ft', 'age-height-in', 'age-height-cm', 'age-weight-lbs', 'age-weight-kg', 'age-years'],
+LABELS = {'/age-bmi-calculator/': ['age-height-ft', 'age-height-in', 'age-height-cm', 'age-weight-lbs', 'age-weight-kg', 'age-years',
+                                   'age-sex'],   # the sex select since CMB-045
           '/kids-bmi-calculator/': ['kids-height-ft', 'kids-height-in', 'kids-height-cm', 'kids-weight-lbs', 'kids-weight-kg',
                                     'kids-age-years', 'kids-age-months', 'kids-sex'],
           '/ideal-weight/': ['ideal-height-ft', 'ideal-height-in', 'ideal-height-cm', 'ideal-sex', 'ideal-frame'],
