@@ -1,0 +1,1804 @@
+{
+ "/": [],
+ "/about/": [
+  {
+   "tag": "p",
+   "trigger": "evidence",
+   "sentence": "Free, evidence-based BMI and body composition calculators.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "healthcare providers",
+   "sentence": "The site aims to (1) make BMI and body-composition screening tools freely accessible, (2) explain what BMI and related metrics actually mean through the guides section (starting with the what-is-BMI guide), and (3) help readers prepare more informed conversations with their own healthcare providers.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "clinician",
+   "sentence": "It is not a substitute for a clinician.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "h3",
+   "trigger": "Evidence",
+   "sentence": "Evidence-Based",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "linked to",
+   "sentence": "The following organisations are the ones most often linked to for classification standards, clinical thresholds, and background context:",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "clinician",
+   "sentence": "Those belong with a qualified clinician.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "professional",
+   "sentence": "They are not a substitute for professional medical advice, diagnosis, or treatment.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "Consult",
+   "sentence": "Consult a qualified healthcare provider before making decisions about your health, diet, or exercise based on your BMI or any other metric.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "healthcare provider",
+   "sentence": "Consider it alongside a lean body mass estimate and an ideal weight target range, and take the results to your own healthcare provider for interpretation.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "healthcare professional",
+   "sentence": "BMI is a screening tool with known limitations: it does not distinguish muscle from fat mass, and results should be interpreted alongside guidance from a healthcare professional.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "professional",
+   "sentence": "They use the same formulas that appear in clinical practice, but the results are not a substitute for professional medical evaluation.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "healthcare provider",
+   "sentence": "BMI is one of many things a healthcare provider considers when assessing health.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "doctor",
+   "sentence": "Take your result to a doctor, nutritionist, or other qualified professional who can interpret it against your full medical history and any relevant labs.",
+   "sourced": false,
+   "block_sourced": false
+  }
+ ],
+ "/contact/": [
+  {
+   "tag": "p",
+   "trigger": "physician",
+   "sentence": "The site is written by a pharmacist (MPharm), not a physician.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "healthcare provider",
+   "sentence": "If you have a concern about your weight, body composition, or health, speak to a qualified healthcare provider.",
+   "sourced": false,
+   "block_sourced": false
+  }
+ ],
+ "/privacy/": [
+  {
+   "tag": "p",
+   "trigger": "Effective",
+   "sentence": "Effective 28 January 2026 — Last updated 12 October 2026",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "recommends",
+   "sentence": "Google Analytics is set up the way Raptive recommends for Google Consent Mode v2:",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "healthcare providers",
+   "sentence": "The pediatric BMI calculator is a tool intended for use by parents, guardians, and healthcare providers — it processes inputs entirely client-side and does not transmit them to us.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "protection",
+   "sentence": "If you are in the EEA and believe our processing infringes your rights, you have the right to lodge a complaint with your national data protection supervisory authority.",
+   "sourced": false,
+   "block_sourced": false
+  }
+ ],
+ "/terms/": [
+  {
+   "tag": "p",
+   "trigger": "Effective",
+   "sentence": "Effective Date: January 28, 2026 | Last Updated: October 11, 2026",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "professional",
+   "sentence": "It is not intended to be a substitute for professional medical advice, diagnosis, or treatment .",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "physician",
+   "sentence": "Always seek the advice of your physician, qualified health provider, or other qualified medical professional with any questions you may have regarding a medical condition, your weight, your body composition, or your overall health.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "professional",
+   "sentence": "Never disregard professional medical advice or delay in seeking it because of something you have read on this Site or because of a result generated by one of our calculators.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "doctor",
+   "sentence": "If you think you may have a medical emergency, call your doctor, go to the nearest emergency department, or call emergency services (such as 911 in the United States) immediately. CalculateMyBMI.net does not recommend or endorse any specific tests, physicians, products, procedures, opinions, or other information that may be mentioned on the Site.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "healthcare professional",
+   "sentence": "Only a qualified healthcare professional can assess your individual health status.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "pediatrician",
+   "sentence": "Results for children must always be interpreted by a pediatrician or qualified healthcare provider in the context of the child's individual growth pattern and development.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "recommendation",
+   "sentence": "The inclusion of any link does not imply endorsement, approval, or recommendation by CalculateMyBMI.net of the linked website, its content, its products, or its services.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "professional",
+   "sentence": "Failure to seek or delay in seeking professional medical advice based on information provided by the Site.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "caused",
+   "sentence": "Any claim that your use of the Site caused damage to a third party.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "effective",
+   "sentence": "Any changes will be effective immediately upon posting the updated Terms on this page, with the \"Last Updated\" date revised accordingly.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "cause",
+   "sentence": "Any cause of action or claim you may have arising out of or relating to these Terms or the Site must be commenced within one (1) year after the cause of action accrues.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "cause",
+   "sentence": "Otherwise, such cause of action or claim is permanently barred.",
+   "sourced": false,
+   "block_sourced": false
+  }
+ ],
+ "/calculators/": [],
+ "/women-bmi-calculator/": [],
+ "/men-bmi-calculator/": [
+  {
+   "tag": "p",
+   "trigger": "evidence",
+   "sentence": "The evidence behind each risk is in BMI and health risks ; for a BMI under 18.5, see underweight BMI risks .",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "h3",
+   "trigger": "health care provider",
+   "sentence": "Talking with a health care provider",
+   "sourced": false,
+   "block_sourced": false
+  }
+ ],
+ "/age-bmi-calculator/": [
+  {
+   "tag": "li",
+   "trigger": "lead to",
+   "sentence": "Muscle mass tends to fall with age, so the same BMI can mean more body fat; the American Diabetes Association notes that this may lead to obesity being missed in older adults.",
+   "sourced": false,
+   "block_sourced": false
+  }
+ ],
+ "/kids-bmi-calculator/": [
+  {
+   "tag": "p",
+   "trigger": "shown to",
+   "sentence": "BMI is CDC’s formula (US units × 703, or kg/m²), shown to 0.1.",
+   "sourced": false,
+   "block_sourced": false
+  }
+ ],
+ "/ideal-weight/": [
+  {
+   "tag": "p",
+   "trigger": "Clinicians",
+   "sentence": "Clinicians still use IBW equations “to calculate drug dosing, to estimate overweight and underweight statuses, and to calculate nutrient intakes,” Peterson and colleagues write.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "associated with",
+   "sentence": "Peterson and colleagues write that it “was originally defined as the weight associated with the greatest life expectancy at each height” and that “IBW equations are still being used by clinicians to calculate drug dosing, to estimate overweight and underweight statuses, and to calculate nutrient intakes.”",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "clinicians",
+   "sentence": "Pai and Paloucek concluded that “any one of these equations may be used to estimate IBW.” Robinson and colleagues found that estimates “obtained by the widely used empirical method probably contain only minor errors.” Peterson and colleagues point out that the equations give a single weight, where most clinicians favor a range.",
+   "sourced": false,
+   "block_sourced": false
+  }
+ ],
+ "/lean-body-mass/": [
+  {
+   "tag": "p",
+   "trigger": "clinicians",
+   "sentence": "Some clinicians express protein needs relative to lean mass rather than total weight.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "clinician",
+   "sentence": "How much you need depends on age, size, health and activity, so targets are best set with a clinician or registered dietitian.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "h2",
+   "trigger": "Improve",
+   "sentence": "How to Improve Your Body Composition",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "clinician",
+   "sentence": "How much you need depends on your age, size, health and activity, so individual targets are best set with a clinician or registered dietitian.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "recommended",
+   "sentence": "For precise measurements, clinical methods like DEXA scanning, hydrostatic weighing, or air displacement plethysmography are recommended.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "improves",
+   "sentence": "When people talk about \"gaining lean mass,\" they usually mean increasing skeletal muscle, but technically LBM also increases if bone density improves or hydration levels change.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "recommend",
+   "sentence": "For further reading on body composition, lean body mass, and health assessment methods, we recommend these authoritative sources:",
+   "sourced": false,
+   "block_sourced": false
+  }
+ ],
+ "/new-bmi-calculator/": [
+  {
+   "tag": "li",
+   "trigger": "improvement",
+   "sentence": "Trefethen says his formula is “not based on epidemiological studies” and may not be an improvement.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "doctor",
+   "sentence": "“I am an applied mathematician, not a doctor or an epidemiologist,” he writes, and the new formulas are “not based on epidemiological studies” and may not be an improvement.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "doctor",
+   "sentence": "He describes himself there as “an applied mathematician, not a doctor or an epidemiologist.”",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "improvement",
+   "sentence": "He writes that his formulas are “not based on epidemiological studies” and may not be an improvement, and he points to a 2007 paper by Heymsfield and colleagues in the American Journal of Clinical Nutrition that supports the exponent 2.",
+   "sourced": false,
+   "block_sourced": false
+  }
+ ],
+ "/blog/": [
+  {
+   "tag": "p",
+   "trigger": "recommendations",
+   "sentence": "Everything on this site is informational — we do not provide medical treatment content, medication guidance, or surgical recommendations.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "clinician",
+   "sentence": "Those decisions belong with a qualified clinician.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "research found",
+   "sentence": "Why the adult cut-offs stay the same at every age, and what research found for adults over 65.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "see a",
+   "sentence": "Calorie deficit, diet, activity, sleep, plateaus and when to see a doctor.",
+   "sourced": false,
+   "block_sourced": false
+  }
+ ],
+ "/blog/what-is-bmi/": [
+  {
+   "tag": "li",
+   "trigger": "doctors",
+   "sentence": "How doctors use BMI",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "h2",
+   "trigger": "doctors",
+   "sentence": "How doctors use BMI",
+   "sourced": false,
+   "block_sourced": false
+  }
+ ],
+ "/blog/bmi-formula/": [],
+ "/blog/bmi-history/": [
+  {
+   "tag": "p",
+   "trigger": "clinicians",
+   "sentence": "Despite its widespread adoption, BMI has faced growing criticism from researchers, clinicians, and public health advocates.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "lead to",
+   "sentence": "The move toward personalized medicine may eventually lead to individually-calibrated health metrics that account for genetics, ethnicity, age, sex, and medical history.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "recommended",
+   "sentence": "In 1985 an NIH consensus conference recommended wider use of BMI.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "recommends",
+   "sentence": "The medical community increasingly recommends using BMI alongside other measures rather than replacing it entirely.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "improvement",
+   "sentence": "He argues that the standard BMI makes short people think they are thinner, and tall people fatter, than they are; he also writes that his formula is not based on epidemiological studies and may not be an improvement.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "consult",
+   "sentence": "Always consult a qualified healthcare provider for personalized health assessment and recommendations.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "Expert",
+   "sentence": "WHO Expert Consultation.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "Expert",
+   "sentence": "WHO Expert Consultation.",
+   "sourced": false,
+   "block_sourced": false
+  }
+ ],
+ "/blog/healthy-bmi-range/": [
+  {
+   "tag": "p",
+   "trigger": "protective",
+   "sentence": "Crude analyses that ignored smoking and existing disease gave exaggerated risks for underweight and inverted ones for overweight, so overweight looked protective.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "lower risk",
+   "sentence": "The authors could reproduce a 2013 review’s finding that overweight carried a lower risk of death in analyses with inadequate control for these biases, but not in the strict one.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "figcaption",
+   "trigger": "higher risk",
+   "sentence": "Hazard ratio for death by BMI band among 3,951,455 never-smokers without chronic disease; 1.20 means a 20% higher risk than at 22.5 to 24.9.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "cause",
+   "sentence": "Per 5 BMI units above 25, the risk of death in never-smokers was 39% higher in Europe and in East Asia, 31% in Australia and New Zealand and 29% in North America; the authors write that “the associations of both overweight and obesity with higher all-cause mortality were broadly consistent in four continents”.",
+   "sourced": false,
+   "block_sourced": false
+  }
+ ],
+ "/blog/bmi-categories/": [
+  {
+   "tag": "p",
+   "trigger": "associated with",
+   "sentence": "A BMI below 16.0 indicates severe underweight, a condition associated with significant medical risk.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "doctor",
+   "sentence": "A doctor can look for the cause, which ranges from not eating enough to an underlying illness.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "recommended",
+   "sentence": "Medical consultation is recommended to identify and treat underlying causes, which may include gastrointestinal malabsorption, thyroid disorders, chronic infection, eating disorders, or inadequate caloric intake.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "h3",
+   "trigger": "Causes",
+   "sentence": "Common Causes of Underweight (across all three grades)",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "reduce appetite",
+   "sentence": "Depression and other mental-health conditions that reduce appetite or food intake",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "clinician",
+   "sentence": "They are not personalised medical advice, and this site does not cover treatment options, medication choices, or surgical decisions — those belong with a qualified clinician.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "recommended",
+   "sentence": "1995: The WHO recommended unified cutoffs of 25 (overweight) and 30 (obesity) regardless of sex.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "clinician",
+   "sentence": "Any downstream decisions belong with a clinician.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "contribute to",
+   "sentence": "Blood pressure, blood sugar, cholesterol, fitness level, diet quality, and sleep all contribute to your health status.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "doctor",
+   "sentence": "BMI is one of several markers a doctor looks at.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "h3",
+   "trigger": "Talk to Your",
+   "sentence": "Talk to Your Doctor",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "healthcare provider",
+   "sentence": "If your BMI category concerns you, discuss it with your healthcare provider.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "associated with",
+   "sentence": "Obesity (BMI 30+) indicates a level of excess weight that is almost always associated with significant excess body fat and clearly elevated health risks.",
+   "sourced": false,
+   "block_sourced": false
+  }
+ ],
+ "/blog/bmi-chart-explained/": [
+  {
+   "tag": "li",
+   "trigger": "causes",
+   "sentence": "Possible causes: Eating disorders, hyperthyroidism, digestive conditions, inadequate intake, high metabolic rate",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "consult",
+   "sentence": "Action: If unintentional, consult a healthcare provider to rule out underlying conditions",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "associated with",
+   "sentence": "The green zone represents the healthy BMI range associated with the lowest health risks for most adults.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "higher risk",
+   "sentence": "Subclasses: Class I (30-34.9), Class II (35-39.9), Class III (40+) with progressively higher risk",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "healthcare providers",
+   "sentence": "However, women naturally have more body fat than men at equivalent BMI values, which is why some healthcare providers recommend sex-specific interpretations.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "associated with",
+   "sentence": "This range is associated with the lowest risk of weight-related health problems for most adults.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "consult",
+   "sentence": "Always consult a qualified healthcare provider for personalized assessment, diagnosis, and treatment recommendations.",
+   "sourced": false,
+   "block_sourced": false
+  }
+ ],
+ "/blog/bmi-and-health-risks/": [
+  {
+   "tag": "p",
+   "trigger": "associated with",
+   "sentence": "Body Mass Index (BMI) is a screening tool for identifying potential health risks associated with weight.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "cause",
+   "sentence": "J-curve relationship: both very low and very high BMI carry elevated all-cause mortality; the WHO healthy range (18.5–24.9) is the standard reference for lowest observed risk in most adult populations.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "associated with",
+   "sentence": "Cancer link: excess body weight is associated with at least 13 cancer types identified by IARC.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "cause",
+   "sentence": "Cardiovascular disease (CVD) is the leading cause of death worldwide, and BMI is one of the most significant modifiable risk factors.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "contributes to",
+   "sentence": "Excess body weight contributes to cardiovascular disease through multiple mechanisms including increased blood pressure, elevated cholesterol levels, chronic inflammation, and insulin resistance.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "promotes",
+   "sentence": "Atherosclerosis acceleration: Excess adipose tissue promotes plaque buildup in arterial walls",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "h3",
+   "trigger": "Causes",
+   "sentence": "How Excess Weight Causes Diabetes",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "h2",
+   "trigger": "Associated with",
+   "sentence": "Cancer Risks Associated with BMI",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "h3",
+   "trigger": "Promotes",
+   "sentence": "How Obesity Promotes Cancer",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "promote",
+   "sentence": "Chronic inflammation: Fat tissue, especially visceral fat, produces inflammatory cytokines that can damage DNA and promote cell proliferation",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "leads to",
+   "sentence": "Elevated insulin and IGF-1: Obesity-related insulin resistance leads to higher circulating insulin and insulin-like growth factor-1, both of which stimulate cell growth",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "contributing to",
+   "sentence": "Estrogen production: Adipose tissue converts androgens to estrogens, increasing exposure in postmenopausal women and contributing to hormone-sensitive cancers",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "associated with",
+   "sentence": "OSA is strongly associated with elevated BMI.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "causing",
+   "sentence": "Fat deposits around the upper airway narrow the breathing passage, causing repeated episodes of breathing cessation during sleep.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "Increased risk",
+   "sentence": "Increased risk of motor vehicle accidents",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "associated with",
+   "sentence": "Obesity is associated with a higher risk of asthma and worse asthma control in those already diagnosed.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "linked to",
+   "sentence": "Obesity is also linked to osteoarthritis in joints that bear no weight, such as the hands, which suggests that metabolic factors (inflammation, adipokines) contribute alongside mechanical stress.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "associated with",
+   "sentence": "Obesity is also associated with worse kidney-disease outcomes overall, including faster CKD progression, more treatment-resistant hypertension, and higher mortality among dialysis patients.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "contribute to",
+   "sentence": "Obesity can contribute to depression and anxiety, while mental health conditions can lead to behaviors that promote weight gain.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "contribute to",
+   "sentence": "Weight-related stigma, body image concerns, and social isolation contribute to these associations.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "h3",
+   "trigger": "Benefits",
+   "sentence": "Benefits of modest weight loss",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "clinician",
+   "sentence": "Whether any specific approach is right for you is a conversation with a qualified clinician, not something this page can decide.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "associated with",
+   "sentence": "Obesity is associated with higher rates of depression, and depression with weight gain over time; the effect is particularly pronounced in women and in those with severe obesity.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "improves",
+   "sentence": "Weight loss often improves mental-health symptoms, and addressing mental health typically supports weight management.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "association",
+   "sentence": "Type 2 diabetes has the strongest single association with elevated BMI: risk rises steeply across the overweight and obese ranges.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "professional",
+   "sentence": "It is not a substitute for professional medical advice, diagnosis, or treatment.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "consult",
+   "sentence": "Always consult with qualified healthcare providers for personalized health assessment and recommendations.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "physician",
+   "sentence": "If you have concerns about your weight or health, please seek guidance from a physician, registered dietitian, or other appropriate healthcare professional.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "Evidence",
+   "sentence": "Evidence-based strategies for reaching and maintaining a healthier weight.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "associated with",
+   "sentence": "Health concerns associated with being underweight and how to address them.",
+   "sourced": false,
+   "block_sourced": false
+  }
+ ],
+ "/blog/underweight-bmi-risks/": [
+  {
+   "tag": "li",
+   "trigger": "Causes",
+   "sentence": "Common Causes: High metabolism, eating disorders, chronic illness, medications, or inadequate nutrition",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "Causes",
+   "sentence": "Causes of Being Underweight",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "See a",
+   "sentence": "When to See a Doctor",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "healthcare providers",
+   "sentence": "Understanding these classifications helps healthcare providers assess risk levels and determine appropriate interventions.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "recommendations",
+   "sentence": "Use our ideal weight calculator for personalized weight recommendations based on your height, age, and body frame.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "associated with",
+   "sentence": "Research consistently shows that very low BMI is associated with increased mortality and morbidity across multiple body systems.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "effectiveness",
+   "sentence": "Reduced vaccine effectiveness: The immune response to vaccinations may be diminished",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "protection",
+   "sentence": "Reduced muscle mass means less protection for bones during falls and less stimulation for bone growth.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "Higher risks",
+   "sentence": "Pregnancy complications: Higher risks of preterm birth and low birth weight babies",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "leads to",
+   "sentence": "These deficiencies create a cycle: poor nutrition leads to fatigue and reduced appetite, which further decreases food intake and worsens nutritional status.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "associated with",
+   "sentence": "Beyond the major risks discussed above, being underweight is associated with numerous other health issues:",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "h2",
+   "trigger": "Causes",
+   "sentence": "Causes of Being Underweight",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "cause",
+   "sentence": "Understanding why someone is underweight matters because the underlying cause is what a clinician needs to identify before anything else.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "Causes",
+   "sentence": "Causes range from lifestyle factors to serious medical conditions.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "figcaption",
+   "trigger": "causes",
+   "sentence": "Both sides — causes and consequences — are discussed in detail below with references to WHO, NIMH and other institutional sources.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "cause",
+   "sentence": "Several medical conditions can cause unintentional weight loss or make weight gain difficult:",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "cause",
+   "sentence": "Diabetes (Type 1): Uncontrolled diabetes can cause significant weight loss",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "cause",
+   "sentence": "Cancer: Many cancers cause cachexia (wasting syndrome) and appetite loss",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "lead to",
+   "sentence": "Chronic infections: HIV, tuberculosis, and parasitic infections can lead to weight loss",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "reduce appetite",
+   "sentence": "Medication side effects: Certain medications reduce appetite or increase metabolism",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "h2",
+   "trigger": "See a",
+   "sentence": "When to See a Doctor",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "consult",
+   "sentence": "It is important to consult a healthcare provider if you experience any of the following:",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "professional",
+   "sentence": "Moderate to severe thinness requires professional assessment to identify causes and prevent complications.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "linked to",
+   "sentence": "Missing or irregular periods (amenorrhea) may signal hormonal changes linked to low weight.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "doctor",
+   "sentence": "Your doctor may order blood tests, check thyroid function, screen for celiac disease, or refer you to a registered dietitian or specialist based on your symptoms.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "helps build",
+   "sentence": "Strength training helps build muscle mass, which weighs more than fat and improves overall health.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "improving",
+   "sentence": "For detailed guidance on reaching your target weight, see our guide to improving your BMI and ideal weight calculator guide .",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "contribute to",
+   "sentence": "Mental health conditions can contribute to being underweight, and being underweight can worsen mental health symptoms.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "cause",
+   "sentence": "Depression: Can cause appetite loss, lack of motivation to prepare food, and changes in eating habits",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "cause",
+   "sentence": "Low blood sugar from insufficient calories can cause irritability and mood swings",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "professionals",
+   "sentence": "A comprehensive approach involving mental health professionals, dietitians, and physicians produces the best outcomes.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "healthcare provider",
+   "sentence": "Healthy weight gain usually means eating nutrient-dense foods more often, choosing calorie-rich healthy options like nuts, avocados, whole grains and olive oil, including enough protein, adding strength training to build muscle, and addressing any underlying medical conditions with a healthcare provider, who can also help set individual targets.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "improves",
+   "sentence": "Reaching a healthy BMI often improves fertility outcomes.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "Research shows",
+   "sentence": "Research shows that being severely underweight carries mortality risks comparable to or even greater than severe obesity.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "associated with",
+   "sentence": "Both extremes of BMI are associated with increased health risks.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "causes",
+   "sentence": "Common causes include high natural metabolism, medical conditions (hyperthyroidism, celiac disease, diabetes, cancer, chronic infections), eating disorders (anorexia, bulimia), medication side effects, mental health conditions (depression, anxiety), substance use, genetic factors, and economic factors like food insecurity.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "can help",
+   "sentence": "A thorough medical evaluation can help identify the specific cause.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "consult",
+   "sentence": "If you are concerned about your weight, have experienced unintentional weight loss, or show signs of an eating disorder, please consult a qualified healthcare provider.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "professional",
+   "sentence": "Always seek professional medical guidance before making significant changes to your diet or exercise routine.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "h4",
+   "trigger": "Improving",
+   "sentence": "Improving Your BMI",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "Evidence",
+   "sentence": "Evidence-based strategies for reaching and maintaining a healthy weight.",
+   "sourced": false,
+   "block_sourced": false
+  }
+ ],
+ "/blog/bmi-limitations/": [
+  {
+   "tag": "p",
+   "trigger": "evidence",
+   "sentence": "Body Mass Index (BMI) has been the go-to health screening tool for decades, but mounting scientific evidence reveals significant flaws in this 200-year-old formula.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "professional",
+   "sentence": "Due to their high muscle mass and low body fat, many professional athletes are technically \"obese\" according to BMI despite being in peak physical condition.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "cause",
+   "sentence": "Pre-pregnancy BMI is used to determine appropriate weight gain during pregnancy, but ongoing BMI calculations during pregnancy are meaningless and potentially harmful if they cause unnecessary anxiety.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "can help",
+   "sentence": "Our Lean Body Mass Calculator can help estimate your non-fat mass, including bones and muscle.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "evidence",
+   "sentence": "Here are evidence-based alternatives that provide more accurate health assessments:",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "effective",
+   "sentence": "BMI is effective for tracking obesity trends in large populations where individual variations average out.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "benefit",
+   "sentence": "As a quick, free screening tool, BMI can identify individuals who may benefit from further assessment.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "recommended",
+   "sentence": "For a free, simple alternative, waist-to-height ratio (keeping your waist less than half your height) is recommended by many researchers.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "recommended",
+   "sentence": "Pre-pregnancy BMI helps determine appropriate weight gain ranges, but calculating BMI during pregnancy is not recommended as weight gain includes the baby, placenta, amniotic fluid, and increased blood volume - all healthy components of pregnancy.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "pediatrician",
+   "sentence": "Growth charts and pediatrician assessment are essential.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "healthcare provider",
+   "sentence": "Individual health status depends on many factors that only a qualified healthcare provider can assess.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "consult",
+   "sentence": "Always consult with your doctor or registered dietitian before making health decisions based on any single metric.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "professional",
+   "sentence": "If you have concerns about your weight or health, please seek professional medical evaluation.",
+   "sourced": false,
+   "block_sourced": false
+  }
+ ],
+ "/blog/bmi-and-metabolism/": [
+  {
+   "tag": "p",
+   "trigger": "can help",
+   "sentence": "Understanding how your metabolic rate interacts with BMI can help you make informed decisions about diet, exercise, and lifestyle.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "Boosting",
+   "sentence": "Boosting Metabolism Naturally",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "associated with",
+   "sentence": "Elevated BMI is associated with:",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "contribute to",
+   "sentence": "These factors contribute to \"metabolic inflexibility\": the reduced ability to switch between burning carbohydrates and fats for fuel.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "clinician",
+   "sentence": "Protein supplies the amino acids muscle needs; individual targets depend on age, size and activity and are best set with a clinician or registered dietitian.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "can help",
+   "sentence": "Understanding these changes can help you adapt your approach to maintain metabolic health as you age.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "associated with",
+   "sentence": "The metabolic decline associated with aging stems from multiple interconnected factors:",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "improving",
+   "sentence": "Understanding this adaptation matters for long-term success in improving your BMI .",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "Helps maintain",
+   "sentence": "Prioritize protein: Helps maintain muscle mass during caloric deficit",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "h2",
+   "trigger": "Boosting",
+   "sentence": "Boosting Metabolism Naturally",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "evidence",
+   "sentence": "While you cannot dramatically change your metabolic rate, evidence-based strategies can optimize your metabolism and support healthy weight management.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "h3",
+   "trigger": "Evidence",
+   "sentence": "Evidence-Based Metabolism Boosters",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "promote",
+   "sentence": "Chronic stress elevates cortisol, which can promote fat storage and metabolic dysfunction.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "cause",
+   "sentence": "Weight loss does cause metabolic adaptation, where your body becomes more efficient and burns fewer calories than expected for your new size.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "healthcare providers",
+   "sentence": "Metabolic conditions, thyroid disorders, and weight management strategies should be discussed with qualified healthcare providers.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "consult",
+   "sentence": "Always consult a physician before making significant changes to your diet or exercise regimen, especially if you have existing health conditions.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "Evidence",
+   "sentence": "Evidence-based strategies for achieving and maintaining a healthy BMI range.",
+   "sourced": false,
+   "block_sourced": false
+  }
+ ],
+ "/blog/body-fat-vs-bmi/": [
+  {
+   "tag": "li",
+   "trigger": "protection",
+   "sentence": "Essential fat: Required for normal physiological function, including hormone regulation, vitamin absorption, and organ protection.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "associated with",
+   "sentence": "Excess storage fat, particularly visceral fat, is associated with health risks.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "professionals",
+   "sentence": "This is why many health professionals now recommend tracking body fat alongside or instead of BMI.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "increased risks",
+   "sentence": "People with normal weight obesity face increased risks for type 2 diabetes, cardiovascular disease, and metabolic syndrome - risks that wouldn't be detected by BMI alone.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "Professional",
+   "sentence": "Professional athletes (football players, wrestlers, rugby players)",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "healthcare providers",
+   "sentence": "Widely understood by healthcare providers",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "effective",
+   "sentence": "The most effective approach to health assessment uses multiple metrics together.",
+   "sourced": false,
+   "block_sourced": false
+  }
+ ],
+ "/blog/bmi-for-athletes/": [
+  {
+   "tag": "li",
+   "trigger": "studies show",
+   "sentence": "What the studies show",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "h2",
+   "trigger": "studies show",
+   "sentence": "What the studies show",
+   "sourced": false,
+   "block_sourced": false
+  }
+ ],
+ "/blog/waist-to-height-ratio/": [
+  {
+   "tag": "li",
+   "trigger": "Improve",
+   "sentence": "How to Improve Your Ratio",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "effectiveness",
+   "sentence": "The effectiveness of WHtR stems from basic human physiology: where you store fat matters enormously for health, and waist circumference is the best simple proxy for the most dangerous fat deposits.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "effectiveness",
+   "sentence": "WHtR's effectiveness comes from its ability to estimate visceral fat - the deep abdominal fat that surrounds your liver, pancreas, and intestines.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "cause",
+   "sentence": "Releases inflammatory chemicals: Visceral fat produces cytokines that cause chronic low-grade inflammation throughout the body",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "Associated with",
+   "sentence": "Increases cardiovascular risk: Associated with elevated triglycerides, LDL cholesterol, and blood pressure",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "h2",
+   "trigger": "Improve",
+   "sentence": "How to Improve Your Waist-to-Height Ratio",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "improving",
+   "sentence": "For more detailed guidance on healthy weight management, see our guides on improving your BMI and how to lower your BMI .",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "increased risk",
+   "sentence": "Elevated WHtR indicates increased risk but doesn't confirm disease.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "Evidence",
+   "sentence": "Evidence-based strategies for healthy weight management that also reduce WHtR.",
+   "sourced": false,
+   "block_sourced": false
+  }
+ ],
+ "/blog/how-to-lower-bmi/": [
+  {
+   "tag": "li",
+   "trigger": "Recommendations",
+   "sentence": "Exercise Recommendations",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "h4",
+   "trigger": "Professional",
+   "sentence": "Set a Target With a Professional",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "clinician",
+   "sentence": "A safe calorie target for weight loss depends on your health and is best set with a clinician or registered dietitian.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "cause",
+   "sentence": "Refined carbohydrates: White bread, pasta, and pastries cause blood sugar spikes and crashes",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "h2",
+   "trigger": "Recommendations",
+   "sentence": "Exercise Recommendations for Lowering BMI",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "improving",
+   "sentence": "Both types of exercise play important roles in lowering BMI and improving health:",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "Improves",
+   "sentence": "Improves heart health",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "improves",
+   "sentence": "Reduces stress and improves mood",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "Lowers blood",
+   "sentence": "Lowers blood pressure",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "boosts",
+   "sentence": "Builds muscle and boosts metabolism",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "Improves",
+   "sentence": "Improves body composition",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "improve",
+   "sentence": "Behavioral interventions significantly improve long-term weight management outcomes.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "lead to",
+   "sentence": "Recognize situations that lead to overeating: stress, boredom, social settings, certain times of day.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "dietitian",
+   "sentence": "Consider joining a support group or working with a registered dietitian.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "reduces insulin",
+   "sentence": "Metabolism: Poor sleep reduces insulin sensitivity and affects how your body processes nutrients",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "promotes",
+   "sentence": "Chronic stress elevates cortisol, a hormone that promotes fat storage, particularly around the abdomen, and increases appetite.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "Effective",
+   "sentence": "Effective stress management techniques include:",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "helps maintain",
+   "sentence": "Setting achievable goals helps maintain motivation and creates sustainable change.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "improvements",
+   "sentence": "Tracking multiple indicators gives a more complete picture of your health improvements.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "Improved",
+   "sentence": "Improved nutrition and exercise typically boost daily energy and reduce fatigue.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "improve",
+   "sentence": "Blood pressure, blood sugar, cholesterol levels often improve with weight loss.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "cause",
+   "sentence": "Water retention: Hormonal fluctuations, sodium intake, and exercise can cause temporary water weight",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "professional",
+   "sentence": "While most people can lower their BMI through lifestyle changes, some situations require professional medical guidance.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "h3",
+   "trigger": "Consult",
+   "sentence": "Consult a Healthcare Provider If:",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "healthcare provider",
+   "sentence": "Those are decisions a qualified healthcare provider makes with you.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "professional",
+   "sentence": "This information is intended for educational purposes only and should not replace professional medical advice.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "consult",
+   "sentence": "Before starting any weight loss program, especially if you have existing health conditions or take medications, consult with your healthcare provider.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "recommendations",
+   "sentence": "These strategies are general recommendations and may need to be modified based on your individual health needs.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "boosts",
+   "sentence": "Exercise helps preserve muscle mass during weight loss, boosts metabolism, improves mood and energy, and is important for maintaining weight loss long-term.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "improve",
+   "sentence": "While you might not see immediate BMI drops (since muscle is denser than fat), you'll improve your body composition, which is often more important for health.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "causes",
+   "sentence": "If weighing causes stress or obsessive behaviors, reduce frequency or focus on other metrics like how clothes fit.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "effectively",
+   "sentence": "How to monitor your BMI progress effectively and understand what the numbers mean.",
+   "sourced": false,
+   "block_sourced": false
+  }
+ ],
+ "/blog/bmi-tracking-guide/": [
+  {
+   "tag": "p",
+   "trigger": "effective",
+   "sentence": "However, effective monitoring requires more than stepping on a scale occasionally.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "evidence",
+   "sentence": "Whether you are working toward a healthier weight or maintaining your current BMI, these evidence-based strategies will help you track progress accurately and avoid common pitfalls.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "healthcare providers",
+   "sentence": "Medical documentation: A weight history provides valuable data for healthcare providers",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "causes",
+   "sentence": "Understanding what causes daily fluctuations helps you interpret your data correctly and avoid unnecessary stress.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "effectively",
+   "sentence": "Here is how to choose and use tracking tools effectively:",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "li",
+   "trigger": "effective",
+   "sentence": "Paper log: Low-tech but effective; keeps tracking simple and private",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "h2",
+   "trigger": "Effective",
+   "sentence": "Setting Effective Milestone Goals",
+   "sourced": false,
+   "block_sourced": false
+  }
+ ],
+ "/blog/bmi-chart-women/": [],
+ "/blog/bmi-chart-men/": [],
+ "/blog/bmi-by-age/": [
+  {
+   "tag": "p",
+   "trigger": "evidence",
+   "sentence": "This guide explains what the category bodies actually publish, shows how obesity prevalence varies by age in the US, and covers the observational evidence for adults aged 65 and over.",
+   "sourced": false,
+   "block_sourced": false
+  },
+  {
+   "tag": "p",
+   "trigger": "higher risk",
+   "sentence": "A meta-analysis of adults aged 65 and over found a higher risk of death below a BMI of 23, but the published categories themselves don’t shift.",
+   "sourced": false,
+   "block_sourced": false
+  }
+ ],
+ "/bmi-chart/": [],
+ "/us-obesity-statistics/": [],
+ "/obesity-rate-by-state/": [],
+ "/childhood-obesity-statistics/": [],
+ "/average-weight/": [],
+ "/body-fat-percentage-chart/": [],
+ "/body-fat-calculator/": [],
+ "/blog/how-to-measure-body-fat/": []
+}

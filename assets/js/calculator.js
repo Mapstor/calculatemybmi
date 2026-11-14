@@ -513,11 +513,11 @@ function genSummary(bmi, category, weightLbs, healthyRange, extra) {
   if (category.class === 'normal') {
     text = `Your BMI of <strong>${bmi.toFixed(1)}</strong> is in the <strong>healthy weight</strong> range (18.5 to under 25). At your height, that range is <strong>${rng}</strong>.`;
   } else if (category.class === 'underweight') {
-    text = `Your BMI of <strong>${bmi.toFixed(1)}</strong> is below 18.5, the <strong>underweight</strong> cut-off. At your height, the healthy range is <strong>${rng}</strong>, which starts <strong>${gap}</strong> above your current weight. A doctor can tell you whether this is normal for you.`;
+    text = `Your BMI of <strong>${bmi.toFixed(1)}</strong> is below 18.5, the <strong>underweight</strong> cut-off. At your height, the healthy range is <strong>${rng}</strong>, which starts <strong>${gap}</strong> above your current weight. CDC: &ldquo;Persons may consider seeking advice from their health care providers about their BMI&rdquo; (<a href="https://www.cdc.gov/bmi/adult-calculator/index.html" target="_blank" rel="noopener">Adult BMI Calculator</a>).`;
   } else if (category.class === 'overweight') {
     text = `Your BMI of <strong>${bmi.toFixed(1)}</strong> is in the <strong>overweight</strong> range (25 to under 30). At your height, the healthy range is <strong>${rng}</strong>; its top is <strong>${gap}</strong> below your current weight. BMI can&rsquo;t tell muscle from fat, so a <a href="/body-fat-calculator/">body fat estimate</a> or a waist measurement adds useful context.`;
   } else {
-    text = `Your BMI of <strong>${bmi.toFixed(1)}</strong> is in the <strong>${category.category.toLowerCase()}</strong> range. At your height, the healthy range is <strong>${rng}</strong>; its top is <strong>${gap}</strong> below your current weight. A doctor can put this in context with your other health measures.`;
+    text = `Your BMI of <strong>${bmi.toFixed(1)}</strong> is in the <strong>${category.category.toLowerCase()}</strong> range. At your height, the healthy range is <strong>${rng}</strong>; its top is <strong>${gap}</strong> below your current weight. CDC says that for an individual, BMI should be considered with other factors, such as blood pressure and cholesterol levels (<a href="https://www.cdc.gov/bmi/about/index.html" target="_blank" rel="noopener">CDC</a>).`;
   }
   let note = '';
   if (extra && extra.age >= 65) {
