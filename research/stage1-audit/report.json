@@ -4,12 +4,12 @@
  "viewport": "390x844",
  "pages_audited": 24,
  "pages_skipped": [],
- "numbers": 4783,
+ "numbers": 4890,
  "totals": {
   "A": 47,
-  "B": 1638,
-  "C": 2276,
-  "D": 624,
+  "B": 1625,
+  "C": 2371,
+  "D": 649,
   "X": 198,
   "U": 0
  },
@@ -19,16 +19,16 @@
  "c_not_in_row_in_page_csv": 0,
  "c_not_in_row_also_in_other_row": 0,
  "c_status": {
-  "row": 1131,
-  "row-notes": 215,
+  "row": 1208,
+  "row-notes": 233,
   "not-in-row": 28,
   "row-dataset": 902
  },
- "checks_run": 1128,
+ "checks_run": 1121,
  "check_errors": [],
  "unclassified": [],
- "manual_entries": 242,
- "manual_entries_used": 238,
+ "manual_entries": 253,
+ "manual_entries_used": 249,
  "worst10": [
   {
    "page": "/kids-bmi-calculator/",
@@ -2943,34 +2943,31 @@
   },
   {
    "page": "/blog/bmi-and-health-risks/",
-   "jsonld_mirrors": 9,
+   "jsonld_mirrors": 46,
    "mismatches": [],
    "c_no_row": [],
    "c_not_in_row": [],
    "names_differ": [
-    "\"healthy range\" = calculator.js \"Healthy weight\"",
     "\"Class I\" = calculator.js \"Class 1 obesity\"",
     "\"Class II\" = calculator.js \"Class 2 obesity\"",
     "\"Class III\" = calculator.js \"Class 3 obesity\"",
-    "\"healthy\" = calculator.js \"Healthy weight\"",
-    "\"Severely Underweight\" = calculator.js \"Severe thinness\"",
-    "\"Underweight\" here is Moderate thinness + Underweight in calculator.js",
-    "\"Normal Weight\" = calculator.js \"Healthy weight\"",
-    "\"Obese Class I\" = calculator.js \"Class 1 obesity\"",
-    "\"Obese Class II\" = calculator.js \"Class 2 obesity\"",
-    "\"Obese Class III\" = calculator.js \"Class 3 obesity\"",
     "\"healthy\" = calculator.js \"Healthy weight\""
    ],
    "d": [
     {
-     "number": "2",
-     "why": "name or label with a number",
-     "sentence": "Diabetes connection: type 2 diabetes is the single strongest BMI-linked chronic disease; risk rises steeply above the WHO normal range."
-    },
-    {
      "number": "13",
      "why": "count in prose",
-     "sentence": "Cancer link: excess body weight is associated with at least 13 cancer types identified by IARC."
+     "sentence": "Compared with people at a healthy weight, those with overweight or obesity are at greater risk for many diseases, including diabetes, high blood pressure, cardiovascular disease, stroke and at least 13 types of cancer, and have a higher risk of death from all causes (NCI)."
+    },
+    {
+     "number": "10",
+     "why": "count in prose",
+     "sentence": "Diabetes: nearly 9 in 10 people with type 2 diabetes have overweight or obesity (NIDDK)"
+    },
+    {
+     "number": "2",
+     "why": "name or label with a number",
+     "sentence": "Diabetes: nearly 9 in 10 people with type 2 diabetes have overweight or obesity (NIDDK)"
     },
     {
      "number": "2",
@@ -2978,49 +2975,139 @@
      "sentence": "Modest weight loss: in a trial of adults with type 2 diabetes, those who lost 5% to under 10% of their weight in a year were more likely to improve blood sugar, blood pressure and blood fats (Wing et al., 2011)."
     },
     {
+     "number": "15.0",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+     "sentence": "BMI 15.0–18.4"
+    },
+    {
+     "number": "18.4",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+     "sentence": "BMI 15.0–18.4"
+    },
+    {
+     "number": "18.5",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+     "sentence": "BMI 18.5–19.9"
+    },
+    {
+     "number": "19.9",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+     "sentence": "BMI 18.5–19.9"
+    },
+    {
+     "number": "20.0",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+     "sentence": "BMI 20.0–22.4"
+    },
+    {
+     "number": "22.4",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+     "sentence": "BMI 20.0–22.4"
+    },
+    {
+     "number": "22.5",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+     "sentence": "BMI 22.5–24.9"
+    },
+    {
+     "number": "24.9",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+     "sentence": "BMI 22.5–24.9"
+    },
+    {
+     "number": "25.0",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+     "sentence": "BMI 25.0–27.4"
+    },
+    {
+     "number": "27.4",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+     "sentence": "BMI 25.0–27.4"
+    },
+    {
+     "number": "27.5",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+     "sentence": "BMI 27.5–29.9"
+    },
+    {
+     "number": "29.9",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+     "sentence": "BMI 27.5–29.9"
+    },
+    {
+     "number": "30.0",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+     "sentence": "BMI 30.0–34.9"
+    },
+    {
+     "number": "34.9",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+     "sentence": "BMI 30.0–34.9"
+    },
+    {
+     "number": "35.0",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+     "sentence": "BMI 35.0–39.9"
+    },
+    {
+     "number": "39.9",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+     "sentence": "BMI 35.0–39.9"
+    },
+    {
+     "number": "40.0",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+     "sentence": "BMI 40.0–59.9"
+    },
+    {
+     "number": "59.9",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+     "sentence": "BMI 40.0–59.9"
+    },
+    {
      "number": "2013",
      "why": "citation detail",
-     "sentence": "The pooled adult data from Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) anchor the mid-range figures: overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant), Grade 2+ obesity HR 1.29, all relative to normal weight."
+     "sentence": "Pooling general-population studies, Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) reported overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant) and Grade 2+ obesity HR 1.29, all relative to normal weight."
     },
     {
      "number": "23280227",
      "why": "citation detail (PMID)",
-     "sentence": "The pooled adult data from Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) anchor the mid-range figures: overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant), Grade 2+ obesity HR 1.29, all relative to normal weight."
+     "sentence": "Pooling general-population studies, Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) reported overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant) and Grade 2+ obesity HR 1.29, all relative to normal weight."
     },
     {
      "number": "2.88M",
      "why": "citation detail",
-     "sentence": "The pooled adult data from Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) anchor the mid-range figures: overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant), Grade 2+ obesity HR 1.29, all relative to normal weight."
+     "sentence": "Pooling general-population studies, Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) reported overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant) and Grade 2+ obesity HR 1.29, all relative to normal weight."
     },
     {
      "number": "270,000",
      "why": "citation detail",
-     "sentence": "The pooled adult data from Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) anchor the mid-range figures: overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant), Grade 2+ obesity HR 1.29, all relative to normal weight."
+     "sentence": "Pooling general-population studies, Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) reported overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant) and Grade 2+ obesity HR 1.29, all relative to normal weight."
     },
     {
      "number": "0.94",
      "why": "citation detail",
-     "sentence": "The pooled adult data from Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) anchor the mid-range figures: overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant), Grade 2+ obesity HR 1.29, all relative to normal weight."
+     "sentence": "Pooling general-population studies, Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) reported overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant) and Grade 2+ obesity HR 1.29, all relative to normal weight."
     },
     {
      "number": "1",
      "why": "name or label with a number",
-     "sentence": "The pooled adult data from Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) anchor the mid-range figures: overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant), Grade 2+ obesity HR 1.29, all relative to normal weight."
+     "sentence": "Pooling general-population studies, Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) reported overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant) and Grade 2+ obesity HR 1.29, all relative to normal weight."
     },
     {
      "number": "0.95",
      "why": "citation detail",
-     "sentence": "The pooled adult data from Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) anchor the mid-range figures: overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant), Grade 2+ obesity HR 1.29, all relative to normal weight."
+     "sentence": "Pooling general-population studies, Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) reported overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant) and Grade 2+ obesity HR 1.29, all relative to normal weight."
     },
     {
      "number": "2",
      "why": "name or label with a number",
-     "sentence": "The pooled adult data from Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) anchor the mid-range figures: overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant), Grade 2+ obesity HR 1.29, all relative to normal weight."
+     "sentence": "Pooling general-population studies, Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) reported overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant) and Grade 2+ obesity HR 1.29, all relative to normal weight."
     },
     {
      "number": "1.29",
      "why": "citation detail",
-     "sentence": "The pooled adult data from Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) anchor the mid-range figures: overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant), Grade 2+ obesity HR 1.29, all relative to normal weight."
+     "sentence": "Pooling general-population studies, Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) reported overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant) and Grade 2+ obesity HR 1.29, all relative to normal weight."
     },
     {
      "number": "65",
@@ -3055,22 +3142,7 @@
     {
      "number": "three",
      "why": "number word (count in prose)",
-     "sentence": "The WHO obesity classification divides the obese range into three classes: Class I (BMI 30.0–34.9), Class II (BMI 35.0–39.9), and Class III (BMI ≥ 40.0)."
-    },
-    {
-     "number": "three",
-     "why": "number word (count in prose)",
-     "sentence": "Health-risk associations with the conditions discussed on this page apply across all three classes and become more pronounced at higher classes."
-    },
-    {
-     "number": "8",
-     "why": "count in prose",
-     "sentence": "See our BMI Categories guide for the full 8-category classification."
-    },
-    {
-     "number": "two",
-     "why": "number word (count in prose)",
-     "sentence": "Risk is compounded by the frequent co-occurrence of hypertension and diabetes in those with elevated BMI; the biggest single lever is managing those two conditions."
+     "sentence": "WHO’s 2000 report divides the obese range into three classes: Class I (BMI 30.0–34.9), Class II (BMI 35.0–39.9) and Class III (BMI ≥ 40.0) (WHO, 2000)."
     },
     {
      "number": "2",
@@ -3078,14 +3150,29 @@
      "sentence": "Type 2 Diabetes and BMI"
     },
     {
-     "number": "1",
+     "number": "10",
+     "why": "count in prose",
+     "sentence": "Nearly 9 in 10 people with type 2 diabetes have overweight or obesity, and over time high blood glucose can lead to heart disease, stroke, kidney disease, eye problems and nerve damage."
+    },
+    {
+     "number": "2",
      "why": "name or label with a number",
-     "sentence": "Elevated insulin and IGF-1: Obesity-related insulin resistance leads to higher circulating insulin and insulin-like growth factor-1, both of which stimulate cell growth"
+     "sentence": "Nearly 9 in 10 people with type 2 diabetes have overweight or obesity, and over time high blood glucose can lead to heart disease, stroke, kidney disease, eye problems and nerve damage."
+    },
+    {
+     "number": "2",
+     "why": "name or label with a number",
+     "sentence": "For people at risk of type 2 diabetes, NIDDK says losing at least 5% to 7% of their starting weight may prevent or delay it: about 10 to 14 pounds for someone who weighs 200 (NIDDK)."
     },
     {
      "number": "1",
      "why": "name or label with a number",
-     "sentence": "Elevated insulin and IGF-1: Obesity-related insulin resistance leads to higher circulating insulin and insulin-like growth factor-1, both of which stimulate cell growth"
+     "sentence": "Insulin and IGF-1: people with obesity often have higher blood levels of both, and high levels are associated with higher risks of colorectal, thyroid, breast, prostate, ovarian and endometrial cancers (NCI)"
+    },
+    {
+     "number": "three",
+     "why": "number word (count in prose)",
+     "sentence": "A diagnosis needs at least three of these: a large waist, high triglycerides, high blood pressure, high fasting blood glucose and low HDL cholesterol."
     },
     {
      "number": "65",
@@ -3093,57 +3180,93 @@
      "sentence": "Older adults (65+)"
     },
     {
-     "number": "Two",
+     "number": "three",
      "why": "number word (count in prose)",
-     "sentence": "Two people at the same BMI can have very different metabolic profiles depending on distribution."
+     "sentence": "In 3.5 million British adults followed for a mean of 5.4 years, people with obesity and none of three metabolic abnormalities (diabetes, high blood pressure, high blood fats) still had a higher risk of coronary heart disease (HR 1.49), cerebrovascular disease (1.07) and heart failure (1.96) than normal-weight people with none (Caleyachetty et al., 2017)."
     },
     {
      "number": "2",
      "why": "name or label with a number",
      "sentence": "In the Look AHEAD trial of adults with overweight or obesity and type 2 diabetes, those who lost 5% to under 10% of their weight in a year had greater odds of improving blood sugar (HbA1c), blood pressure, HDL cholesterol and triglycerides (Wing et al., 2011)."
-    },
-    {
-     "number": "2",
-     "why": "name or label with a number",
-     "sentence": "Type 2 diabetes"
-    },
-    {
-     "number": "2",
-     "why": "name or label with a number",
-     "sentence": "In the Look AHEAD trial of adults with overweight or obesity and type 2 diabetes, those who lost 5% to under 10% of their weight in a year had greater odds of improving blood sugar (HbA1c), blood pressure, HDL cholesterol and triglycerides (Wing et al., 2011)."
-    },
-    {
-     "number": "dozen",
-     "why": "number word (count in prose)",
-     "sentence": "At least a dozen cancers have documented associations with excess adiposity, including endometrial (uterine), oesophageal adenocarcinoma, kidney, liver, pancreatic, colorectal, postmenopausal breast, gallbladder, gastric cardia, thyroid, meningioma, multiple myeloma, and ovarian."
     },
     {
      "number": "1",
      "why": "name or label with a number",
-     "sentence": "Mechanisms include chronic inflammation, elevated circulating insulin and IGF-1, increased oestrogen production by adipose tissue, and impaired immune surveillance."
+     "sentence": "Endometrial (type 1) | Two to four times with overweight or obesity; about seven times with severe obesity"
+    },
+    {
+     "number": "Two",
+     "why": "number word (count in prose)",
+     "sentence": "Endometrial (type 1) | Two to four times with overweight or obesity; about seven times with severe obesity"
+    },
+    {
+     "number": "three",
+     "why": "number word (count in prose)",
+     "sentence": "Being free of diabetes, high blood pressure and high blood fats doesn’t erase the risk: in 3.5 million British adults, people with obesity and none of those three still had a higher risk of coronary heart disease (HR 1.49) and heart failure (1.96) than normal-weight people with none (Caleyachetty et al., 2017)."
+    },
+    {
+     "number": "three",
+     "why": "number word (count in prose)",
+     "sentence": "Obesity also raises the risk of conditions that have nothing to do with those three, such as osteoarthritis and sleep apnea (NIDDK)."
     },
     {
      "number": "2",
      "why": "name or label with a number",
-     "sentence": "Type 2 diabetes has the strongest single association with elevated BMI: risk rises steeply across the overweight and obese ranges."
+     "sentence": "In the Look AHEAD trial of adults with overweight or obesity and type 2 diabetes, those who lost 5% to under 10% of their weight in a year had greater odds of improving blood sugar (HbA1c), blood pressure, HDL cholesterol and triglycerides (Wing et al., 2011)."
+    },
+    {
+     "number": "2",
+     "why": "name or label with a number",
+     "sentence": "NIDDK adds that people at risk of type 2 diabetes may prevent or delay it by losing at least 5% to 7% of their starting weight, and that losing at least 3% to 5% may reduce fat in the liver (NIDDK)."
+    },
+    {
+     "number": "2",
+     "why": "name or label with a number",
+     "sentence": "NIDDK’s list runs from type 2 diabetes, high blood pressure, heart disease and stroke to fatty liver disease, some cancers, sleep apnea, osteoarthritis, kidney disease and mental health problems."
+    },
+    {
+     "number": "10",
+     "why": "count in prose",
+     "sentence": "Nearly 9 in 10 people with type 2 diabetes have overweight or obesity (NIDDK), and among cancers the increases are largest for endometrial and esophageal cancer (NCI)."
+    },
+    {
+     "number": "2",
+     "why": "name or label with a number",
+     "sentence": "Nearly 9 in 10 people with type 2 diabetes have overweight or obesity (NIDDK), and among cancers the increases are largest for endometrial and esophageal cancer (NCI)."
+    },
+    {
+     "number": "1",
+     "why": "name or label with a number",
+     "sentence": "The name for findings like Flegal 2013’s, where overweight carried a slightly lower risk of death than normal weight (HR 0.94) and grade 1 obesity about the same (0.95) (Flegal 2013)."
+    },
+    {
+     "number": "13",
+     "why": "the page description: the GBMC's 239 studies (C) and NCI's 13 cancers, a count in prose (D) (CMB-051) (manual.json)",
+     "sentence": "The risk of death across the BMI range, from 239 studies, and what NIH and NCI say about diabetes, heart disease, stroke, 13 cancers, sleep apnea and more."
     }
    ],
-   "checks_ok": 17,
+   "checks_ok": 10,
    "page_errors": [],
    "score": 0,
    "totals": {
-    "B": 28,
-    "D": 33,
-    "C": 21
+    "D": 58,
+    "C": 116,
+    "B": 15
    },
    "c_rows": {
-    "row": 21
+    "row-notes": 18,
+    "row": 98
    },
    "c_row_domains": {
+    "gbmc-2016-bmi-mortality": 47,
+    "niddk-health-risks": 14,
+    "nci-obesity-cancer": 20,
     "wing-2011-look-ahead": 9,
-    "flegal-2013-jama-mortality": 2,
+    "who-trs-894-obesity": 2,
     "winter-2014-bmi-mortality-65": 7,
-    "provencher-2018-nfl-combine": 3
+    "caleyachetty-2017-mho": 10,
+    "provencher-2018-nfl-combine": 3,
+    "flegal-2013-jama-mortality": 4
    },
    "excluded": {}
   },
@@ -63326,50 +63449,257 @@
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "main",
-   "sentence": "J-curve relationship: both very low and very high BMI carry elevated all-cause mortality; the WHO healthy range (18.5–24.9) is the standard reference for lowest observed risk in most adult populations.",
-   "number": "18.5",
-   "value": 18.5,
-   "class": "B",
-   "why": "category cut-off",
-   "heading": "BMI and Health Risks: Complete Guide to Weight-Related Conditions",
-   "check": {
-    "status": "ok",
-    "kind": "category",
-    "page": "18.5-24.9 (healthy range)",
-    "computed": "Healthy weight in calculator.js",
-    "label": "category cut-off (getBMICategory)",
-    "name_differs": "\"healthy range\" = calculator.js \"Healthy weight\""
-   }
-  },
-  {
-   "page": "/blog/bmi-and-health-risks/",
-   "region": "main",
-   "sentence": "J-curve relationship: both very low and very high BMI carry elevated all-cause mortality; the WHO healthy range (18.5–24.9) is the standard reference for lowest observed risk in most adult populations.",
-   "number": "24.9",
-   "value": 24.9,
-   "class": "B",
-   "why": "category cut-off (other bound)",
-   "heading": "BMI and Health Risks: Complete Guide to Weight-Related Conditions"
-  },
-  {
-   "page": "/blog/bmi-and-health-risks/",
-   "region": "main",
-   "sentence": "Diabetes connection: type 2 diabetes is the single strongest BMI-linked chronic disease; risk rises steeply above the WHO normal range.",
-   "number": "2",
-   "value": 2.0,
-   "class": "D",
-   "why": "name or label with a number",
-   "heading": "BMI and Health Risks: Complete Guide to Weight-Related Conditions"
-  },
-  {
-   "page": "/blog/bmi-and-health-risks/",
-   "region": "main",
-   "sentence": "Cancer link: excess body weight is associated with at least 13 cancer types identified by IARC.",
+   "sentence": "Compared with people at a healthy weight, those with overweight or obesity are at greater risk for many diseases, including diabetes, high blood pressure, cardiovascular disease, stroke and at least 13 types of cancer, and have a higher risk of death from all causes (NCI).",
    "number": "13",
    "value": 13.0,
    "class": "D",
    "why": "count in prose",
-   "heading": "BMI and Health Risks: Complete Guide to Weight-Related Conditions"
+   "heading": "BMI and Health Risks: Complete Guide to Weight-Related Conditions",
+   "links": [
+    "https://www.cancer.gov/about-cancer/causes-prevention/risk/obesity/obesity-fact-sheet"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Risk of death: in pooled data from 239 studies it was lowest at a BMI of 20.0 to 24.9, 1.51 times as high at 15.0 to 18.4 and 2.76 times at 40.0 to 59.9 (GBMC, 2016)",
+   "number": "239",
+   "value": 239.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI and Health Risks: Complete Guide to Weight-Related Conditions",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Risk of death: in pooled data from 239 studies it was lowest at a BMI of 20.0 to 24.9, 1.51 times as high at 15.0 to 18.4 and 2.76 times at 40.0 to 59.9 (GBMC, 2016)",
+   "number": "20.0",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI and Health Risks: Complete Guide to Weight-Related Conditions",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Risk of death: in pooled data from 239 studies it was lowest at a BMI of 20.0 to 24.9, 1.51 times as high at 15.0 to 18.4 and 2.76 times at 40.0 to 59.9 (GBMC, 2016)",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI and Health Risks: Complete Guide to Weight-Related Conditions",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Risk of death: in pooled data from 239 studies it was lowest at a BMI of 20.0 to 24.9, 1.51 times as high at 15.0 to 18.4 and 2.76 times at 40.0 to 59.9 (GBMC, 2016)",
+   "number": "1.51",
+   "value": 1.51,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI and Health Risks: Complete Guide to Weight-Related Conditions",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Risk of death: in pooled data from 239 studies it was lowest at a BMI of 20.0 to 24.9, 1.51 times as high at 15.0 to 18.4 and 2.76 times at 40.0 to 59.9 (GBMC, 2016)",
+   "number": "15.0",
+   "value": 15.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI and Health Risks: Complete Guide to Weight-Related Conditions",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Risk of death: in pooled data from 239 studies it was lowest at a BMI of 20.0 to 24.9, 1.51 times as high at 15.0 to 18.4 and 2.76 times at 40.0 to 59.9 (GBMC, 2016)",
+   "number": "18.4",
+   "value": 18.4,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI and Health Risks: Complete Guide to Weight-Related Conditions",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Risk of death: in pooled data from 239 studies it was lowest at a BMI of 20.0 to 24.9, 1.51 times as high at 15.0 to 18.4 and 2.76 times at 40.0 to 59.9 (GBMC, 2016)",
+   "number": "2.76",
+   "value": 2.76,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI and Health Risks: Complete Guide to Weight-Related Conditions",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Risk of death: in pooled data from 239 studies it was lowest at a BMI of 20.0 to 24.9, 1.51 times as high at 15.0 to 18.4 and 2.76 times at 40.0 to 59.9 (GBMC, 2016)",
+   "number": "40.0",
+   "value": 40.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI and Health Risks: Complete Guide to Weight-Related Conditions",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Risk of death: in pooled data from 239 studies it was lowest at a BMI of 20.0 to 24.9, 1.51 times as high at 15.0 to 18.4 and 2.76 times at 40.0 to 59.9 (GBMC, 2016)",
+   "number": "59.9",
+   "value": 59.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI and Health Risks: Complete Guide to Weight-Related Conditions",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Risk of death: in pooled data from 239 studies it was lowest at a BMI of 20.0 to 24.9, 1.51 times as high at 15.0 to 18.4 and 2.76 times at 40.0 to 59.9 (GBMC, 2016)",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "BMI and Health Risks: Complete Guide to Weight-Related Conditions",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Diabetes: nearly 9 in 10 people with type 2 diabetes have overweight or obesity (NIDDK)",
+   "number": "9",
+   "value": 9.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI and Health Risks: Complete Guide to Weight-Related Conditions",
+   "row": {
+    "status": "row",
+    "domain": "niddk-health-risks",
+    "how": "link"
+   },
+   "links": [
+    "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/health-risks"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Diabetes: nearly 9 in 10 people with type 2 diabetes have overweight or obesity (NIDDK)",
+   "number": "10",
+   "value": 10.0,
+   "class": "D",
+   "why": "count in prose",
+   "heading": "BMI and Health Risks: Complete Guide to Weight-Related Conditions",
+   "links": [
+    "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/health-risks"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Diabetes: nearly 9 in 10 people with type 2 diabetes have overweight or obesity (NIDDK)",
+   "number": "2",
+   "value": 2.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "BMI and Health Risks: Complete Guide to Weight-Related Conditions",
+   "links": [
+    "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/health-risks"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Cancer: overweight and obesity are linked to 13 cancers, with the largest increases for endometrial and esophageal cancer (NCI)",
+   "number": "13",
+   "value": 13.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI and Health Risks: Complete Guide to Weight-Related Conditions",
+   "row": {
+    "status": "row",
+    "domain": "nci-obesity-cancer",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cancer.gov/about-cancer/causes-prevention/risk/obesity/obesity-fact-sheet"
+   ]
   },
   {
    "page": "/blog/bmi-and-health-risks/",
@@ -63429,27 +63759,507 @@
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "main",
-   "sentence": "Dot area encodes qualitative association strength as described in the prose sections below (WHO, Flegal 2013, NIDDK, NHLBI).",
-   "number": "2013",
-   "value": 2013.0,
+   "sentence": "The Global BMI Mortality Collaboration pooled 239 studies from 32 countries and, to limit the effect of smoking and existing illness, analysed never-smokers without chronic disease at the start, leaving out the first 5 years of follow-up.",
+   "number": "239",
+   "value": 239.0,
    "class": "C",
-   "why": "year",
-   "heading": "BMI categories and associated health risks",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI and the Risk of Death",
    "row": {
-    "status": "row",
-    "domain": "flegal-2013-jama-mortality",
-    "how": "name"
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
    }
   },
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "main",
-   "sentence": "The pooled adult data from Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) anchor the mid-range figures: overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant), Grade 2+ obesity HR 1.29, all relative to normal weight.",
+   "sentence": "The Global BMI Mortality Collaboration pooled 239 studies from 32 countries and, to limit the effect of smoking and existing illness, analysed never-smokers without chronic disease at the start, leaving out the first 5 years of follow-up.",
+   "number": "32",
+   "value": 32.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI and the Risk of Death",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "The Global BMI Mortality Collaboration pooled 239 studies from 32 countries and, to limit the effect of smoking and existing illness, analysed never-smokers without chronic disease at the start, leaving out the first 5 years of follow-up.",
+   "number": "5",
+   "value": 5.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI and the Risk of Death",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Against a BMI of 22.5 to 24.9, the risk of death was higher below 20 and at every step above 25 (Global BMI Mortality Collaboration, 2016).",
+   "number": "22.5",
+   "value": 22.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI and the Risk of Death",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Against a BMI of 22.5 to 24.9, the risk of death was higher below 20 and at every step above 25 (Global BMI Mortality Collaboration, 2016).",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI and the Risk of Death",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Against a BMI of 22.5 to 24.9, the risk of death was higher below 20 and at every step above 25 (Global BMI Mortality Collaboration, 2016).",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI and the Risk of Death",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Against a BMI of 22.5 to 24.9, the risk of death was higher below 20 and at every step above 25 (Global BMI Mortality Collaboration, 2016).",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI and the Risk of Death",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Against a BMI of 22.5 to 24.9, the risk of death was higher below 20 and at every step above 25 (Global BMI Mortality Collaboration, 2016).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "BMI and the Risk of Death",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Risk of death by BMI (hazard ratio; 1.00 = BMI 22.5 to 24.9)",
+   "number": "1.00",
+   "value": 1.0,
+   "class": "C",
+   "why": "the GBMC chart's title: its reference band (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Risk of death by BMI (hazard ratio; 1.00 = BMI 22.5 to 24.9)",
+   "number": "22.5",
+   "value": 22.5,
+   "class": "C",
+   "why": "the GBMC chart's title: its reference band (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Risk of death by BMI (hazard ratio; 1.00 = BMI 22.5 to 24.9)",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "C",
+   "why": "the GBMC chart's title: its reference band (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "BMI 15.0–18.4",
+   "number": "15.0",
+   "value": 15.0,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "BMI 15.0–18.4",
+   "number": "18.4",
+   "value": 18.4,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "1.51",
+   "number": "1.51",
+   "value": 1.51,
+   "class": "C",
+   "why": "a hazard ratio in the GBMC bar chart (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "BMI 18.5–19.9",
+   "number": "18.5",
+   "value": 18.5,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "BMI 18.5–19.9",
+   "number": "19.9",
+   "value": 19.9,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "1.13",
+   "number": "1.13",
+   "value": 1.13,
+   "class": "C",
+   "why": "a hazard ratio in the GBMC bar chart (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "BMI 20.0–22.4",
+   "number": "20.0",
+   "value": 20.0,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "BMI 20.0–22.4",
+   "number": "22.4",
+   "value": 22.4,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "1.00",
+   "number": "1.00",
+   "value": 1.0,
+   "class": "C",
+   "why": "a hazard ratio in the GBMC bar chart (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "BMI 22.5–24.9",
+   "number": "22.5",
+   "value": 22.5,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "BMI 22.5–24.9",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "1.00",
+   "number": "1.00",
+   "value": 1.0,
+   "class": "C",
+   "why": "a hazard ratio in the GBMC bar chart (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "BMI 25.0–27.4",
+   "number": "25.0",
+   "value": 25.0,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "BMI 25.0–27.4",
+   "number": "27.4",
+   "value": 27.4,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "1.07",
+   "number": "1.07",
+   "value": 1.07,
+   "class": "C",
+   "why": "a hazard ratio in the GBMC bar chart (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "BMI 27.5–29.9",
+   "number": "27.5",
+   "value": 27.5,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "BMI 27.5–29.9",
+   "number": "29.9",
+   "value": 29.9,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "1.20",
+   "number": "1.20",
+   "value": 1.2,
+   "class": "C",
+   "why": "a hazard ratio in the GBMC bar chart (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "BMI 30.0–34.9",
+   "number": "30.0",
+   "value": 30.0,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "BMI 30.0–34.9",
+   "number": "34.9",
+   "value": 34.9,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "1.45",
+   "number": "1.45",
+   "value": 1.45,
+   "class": "C",
+   "why": "a hazard ratio in the GBMC bar chart (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "BMI 35.0–39.9",
+   "number": "35.0",
+   "value": 35.0,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "BMI 35.0–39.9",
+   "number": "39.9",
+   "value": 39.9,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "1.94",
+   "number": "1.94",
+   "value": 1.94,
+   "class": "C",
+   "why": "a hazard ratio in the GBMC bar chart (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "BMI 40.0–59.9",
+   "number": "40.0",
+   "value": 40.0,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "BMI 40.0–59.9",
+   "number": "59.9",
+   "value": 59.9,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "2.76",
+   "number": "2.76",
+   "value": 2.76,
+   "class": "C",
+   "why": "a hazard ratio in the GBMC bar chart (CMB-051) (manual.json)",
+   "heading": "BMI and the Risk of Death",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Pooling general-population studies, Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) reported overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant) and Grade 2+ obesity HR 1.29, all relative to normal weight.",
    "number": "2013",
    "value": 2013.0,
    "class": "D",
    "why": "citation detail",
-   "heading": "Relative Mortality Risk by BMI Category",
+   "heading": "BMI and the Risk of Death",
    "links": [
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
@@ -63459,12 +64269,12 @@
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "main",
-   "sentence": "The pooled adult data from Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) anchor the mid-range figures: overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant), Grade 2+ obesity HR 1.29, all relative to normal weight.",
+   "sentence": "Pooling general-population studies, Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) reported overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant) and Grade 2+ obesity HR 1.29, all relative to normal weight.",
    "number": "23280227",
    "value": 23280227.0,
    "class": "D",
    "why": "citation detail (PMID)",
-   "heading": "Relative Mortality Risk by BMI Category",
+   "heading": "BMI and the Risk of Death",
    "links": [
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
@@ -63474,12 +64284,12 @@
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "main",
-   "sentence": "The pooled adult data from Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) anchor the mid-range figures: overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant), Grade 2+ obesity HR 1.29, all relative to normal weight.",
+   "sentence": "Pooling general-population studies, Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) reported overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant) and Grade 2+ obesity HR 1.29, all relative to normal weight.",
    "number": "2.88M",
    "value": 2880000.0,
    "class": "D",
    "why": "citation detail",
-   "heading": "Relative Mortality Risk by BMI Category",
+   "heading": "BMI and the Risk of Death",
    "links": [
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
@@ -63489,12 +64299,12 @@
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "main",
-   "sentence": "The pooled adult data from Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) anchor the mid-range figures: overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant), Grade 2+ obesity HR 1.29, all relative to normal weight.",
+   "sentence": "Pooling general-population studies, Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) reported overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant) and Grade 2+ obesity HR 1.29, all relative to normal weight.",
    "number": "270,000",
    "value": 270000.0,
    "class": "D",
    "why": "citation detail",
-   "heading": "Relative Mortality Risk by BMI Category",
+   "heading": "BMI and the Risk of Death",
    "links": [
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
@@ -63504,12 +64314,12 @@
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "main",
-   "sentence": "The pooled adult data from Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) anchor the mid-range figures: overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant), Grade 2+ obesity HR 1.29, all relative to normal weight.",
+   "sentence": "Pooling general-population studies, Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) reported overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant) and Grade 2+ obesity HR 1.29, all relative to normal weight.",
    "number": "0.94",
    "value": 0.94,
    "class": "D",
    "why": "citation detail",
-   "heading": "Relative Mortality Risk by BMI Category",
+   "heading": "BMI and the Risk of Death",
    "links": [
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
@@ -63519,12 +64329,12 @@
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "main",
-   "sentence": "The pooled adult data from Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) anchor the mid-range figures: overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant), Grade 2+ obesity HR 1.29, all relative to normal weight.",
+   "sentence": "Pooling general-population studies, Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) reported overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant) and Grade 2+ obesity HR 1.29, all relative to normal weight.",
    "number": "1",
    "value": 1.0,
    "class": "D",
    "why": "name or label with a number",
-   "heading": "Relative Mortality Risk by BMI Category",
+   "heading": "BMI and the Risk of Death",
    "links": [
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
@@ -63534,12 +64344,12 @@
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "main",
-   "sentence": "The pooled adult data from Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) anchor the mid-range figures: overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant), Grade 2+ obesity HR 1.29, all relative to normal weight.",
+   "sentence": "Pooling general-population studies, Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) reported overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant) and Grade 2+ obesity HR 1.29, all relative to normal weight.",
    "number": "0.95",
    "value": 0.95,
    "class": "D",
    "why": "citation detail",
-   "heading": "Relative Mortality Risk by BMI Category",
+   "heading": "BMI and the Risk of Death",
    "links": [
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
@@ -63549,12 +64359,12 @@
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "main",
-   "sentence": "The pooled adult data from Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) anchor the mid-range figures: overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant), Grade 2+ obesity HR 1.29, all relative to normal weight.",
+   "sentence": "Pooling general-population studies, Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) reported overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant) and Grade 2+ obesity HR 1.29, all relative to normal weight.",
    "number": "2",
    "value": 2.0,
    "class": "D",
    "why": "name or label with a number",
-   "heading": "Relative Mortality Risk by BMI Category",
+   "heading": "BMI and the Risk of Death",
    "links": [
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
@@ -63564,12 +64374,12 @@
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "main",
-   "sentence": "The pooled adult data from Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) anchor the mid-range figures: overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant), Grade 2+ obesity HR 1.29, all relative to normal weight.",
+   "sentence": "Pooling general-population studies, Flegal et al. 2013 (JAMA, PMID 23280227; ~2.88M individuals, >270,000 deaths) reported overweight HR 0.94, Grade 1 obesity HR 0.95 (not statistically significant) and Grade 2+ obesity HR 1.29, all relative to normal weight.",
    "number": "1.29",
    "value": 1.29,
    "class": "D",
    "why": "citation detail",
-   "heading": "Relative Mortality Risk by BMI Category",
+   "heading": "BMI and the Risk of Death",
    "links": [
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
@@ -63584,7 +64394,7 @@
    "value": 65.0,
    "class": "D",
    "why": "citation detail",
-   "heading": "Relative Mortality Risk by BMI Category",
+   "heading": "BMI and the Risk of Death",
    "links": [
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
@@ -63600,7 +64410,7 @@
    "value": 2014.0,
    "class": "D",
    "why": "citation detail",
-   "heading": "Relative Mortality Risk by BMI Category",
+   "heading": "BMI and the Risk of Death",
    "links": [
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
@@ -63616,7 +64426,7 @@
    "value": 23.0,
    "class": "D",
    "why": "citation detail",
-   "heading": "Relative Mortality Risk by BMI Category",
+   "heading": "BMI and the Risk of Death",
    "links": [
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
@@ -63632,7 +64442,7 @@
    "value": 23.0,
    "class": "D",
    "why": "citation detail",
-   "heading": "Relative Mortality Risk by BMI Category",
+   "heading": "BMI and the Risk of Death",
    "links": [
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
@@ -63648,7 +64458,7 @@
    "value": 23.9,
    "class": "D",
    "why": "citation detail",
-   "heading": "Relative Mortality Risk by BMI Category",
+   "heading": "BMI and the Risk of Death",
    "links": [
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
@@ -63664,7 +64474,7 @@
    "value": 33.0,
    "class": "D",
    "why": "citation detail",
-   "heading": "Relative Mortality Risk by BMI Category",
+   "heading": "BMI and the Risk of Death",
    "links": [
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
@@ -63675,20 +64485,38 @@
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "main",
-   "sentence": "The WHO obesity classification divides the obese range into three classes: Class I (BMI 30.0–34.9), Class II (BMI 35.0–39.9), and Class III (BMI ≥ 40.0).",
+   "sentence": "WHO’s 2000 report divides the obese range into three classes: Class I (BMI 30.0–34.9), Class II (BMI 35.0–39.9) and Class III (BMI ≥ 40.0) (WHO, 2000).",
+   "number": "2000",
+   "value": 2000.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Obesity classes at a glance",
+   "row": {
+    "status": "row",
+    "domain": "who-trs-894-obesity",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "WHO’s 2000 report divides the obese range into three classes: Class I (BMI 30.0–34.9), Class II (BMI 35.0–39.9) and Class III (BMI ≥ 40.0) (WHO, 2000).",
    "number": "three",
    "value": 3,
    "class": "D",
    "why": "number word (count in prose)",
    "heading": "Obesity classes at a glance",
    "links": [
-    "https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight"
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
    ]
   },
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "main",
-   "sentence": "The WHO obesity classification divides the obese range into three classes: Class I (BMI 30.0–34.9), Class II (BMI 35.0–39.9), and Class III (BMI ≥ 40.0).",
+   "sentence": "WHO’s 2000 report divides the obese range into three classes: Class I (BMI 30.0–34.9), Class II (BMI 35.0–39.9) and Class III (BMI ≥ 40.0) (WHO, 2000).",
    "number": "30.0",
    "value": 30.0,
    "class": "B",
@@ -63703,26 +64531,26 @@
     "name_differs": "\"Class I\" = calculator.js \"Class 1 obesity\""
    },
    "links": [
-    "https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight"
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
    ]
   },
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "main",
-   "sentence": "The WHO obesity classification divides the obese range into three classes: Class I (BMI 30.0–34.9), Class II (BMI 35.0–39.9), and Class III (BMI ≥ 40.0).",
+   "sentence": "WHO’s 2000 report divides the obese range into three classes: Class I (BMI 30.0–34.9), Class II (BMI 35.0–39.9) and Class III (BMI ≥ 40.0) (WHO, 2000).",
    "number": "34.9",
    "value": 34.9,
    "class": "B",
    "why": "category cut-off (other bound)",
    "heading": "Obesity classes at a glance",
    "links": [
-    "https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight"
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
    ]
   },
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "main",
-   "sentence": "The WHO obesity classification divides the obese range into three classes: Class I (BMI 30.0–34.9), Class II (BMI 35.0–39.9), and Class III (BMI ≥ 40.0).",
+   "sentence": "WHO’s 2000 report divides the obese range into three classes: Class I (BMI 30.0–34.9), Class II (BMI 35.0–39.9) and Class III (BMI ≥ 40.0) (WHO, 2000).",
    "number": "35.0",
    "value": 35.0,
    "class": "B",
@@ -63737,26 +64565,26 @@
     "name_differs": "\"Class II\" = calculator.js \"Class 2 obesity\""
    },
    "links": [
-    "https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight"
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
    ]
   },
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "main",
-   "sentence": "The WHO obesity classification divides the obese range into three classes: Class I (BMI 30.0–34.9), Class II (BMI 35.0–39.9), and Class III (BMI ≥ 40.0).",
+   "sentence": "WHO’s 2000 report divides the obese range into three classes: Class I (BMI 30.0–34.9), Class II (BMI 35.0–39.9) and Class III (BMI ≥ 40.0) (WHO, 2000).",
    "number": "39.9",
    "value": 39.9,
    "class": "B",
    "why": "category cut-off (other bound)",
    "heading": "Obesity classes at a glance",
    "links": [
-    "https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight"
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
    ]
   },
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "main",
-   "sentence": "The WHO obesity classification divides the obese range into three classes: Class I (BMI 30.0–34.9), Class II (BMI 35.0–39.9), and Class III (BMI ≥ 40.0).",
+   "sentence": "WHO’s 2000 report divides the obese range into three classes: Class I (BMI 30.0–34.9), Class II (BMI 35.0–39.9) and Class III (BMI ≥ 40.0) (WHO, 2000).",
    "number": "40.0",
    "value": 40.0,
    "class": "B",
@@ -63771,41 +64599,26 @@
     "name_differs": "\"Class III\" = calculator.js \"Class 3 obesity\""
    },
    "links": [
-    "https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight"
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
    ]
   },
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "main",
-   "sentence": "Health-risk associations with the conditions discussed on this page apply across all three classes and become more pronounced at higher classes.",
-   "number": "three",
-   "value": 3,
-   "class": "D",
-   "why": "number word (count in prose)",
-   "heading": "Obesity classes at a glance"
-  },
-  {
-   "page": "/blog/bmi-and-health-risks/",
-   "region": "main",
-   "sentence": "See our BMI Categories guide for the full 8-category classification.",
-   "number": "8",
-   "value": 8.0,
-   "class": "D",
-   "why": "count in prose",
+   "sentence": "WHO’s 2000 report divides the obese range into three classes: Class I (BMI 30.0–34.9), Class II (BMI 35.0–39.9) and Class III (BMI ≥ 40.0) (WHO, 2000).",
+   "number": "2000",
+   "value": 2000.0,
+   "class": "C",
+   "why": "year",
    "heading": "Obesity classes at a glance",
+   "row": {
+    "status": "row",
+    "domain": "who-trs-894-obesity",
+    "how": "link"
+   },
    "links": [
-    "http://localhost:8765/blog/bmi-categories/"
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
    ]
-  },
-  {
-   "page": "/blog/bmi-and-health-risks/",
-   "region": "main",
-   "sentence": "Risk is compounded by the frequent co-occurrence of hypertension and diabetes in those with elevated BMI; the biggest single lever is managing those two conditions.",
-   "number": "two",
-   "value": 2,
-   "class": "D",
-   "why": "number word (count in prose)",
-   "heading": "Stroke"
   },
   {
    "page": "/blog/bmi-and-health-risks/",
@@ -63815,32 +64628,350 @@
    "value": 2.0,
    "class": "D",
    "why": "name or label with a number",
-   "heading": "Cardiovascular Risk Pattern by BMI"
+   "heading": "Stroke"
   },
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "main",
-   "sentence": "Elevated insulin and IGF-1: Obesity-related insulin resistance leads to higher circulating insulin and insulin-like growth factor-1, both of which stimulate cell growth",
+   "sentence": "Nearly 9 in 10 people with type 2 diabetes have overweight or obesity, and over time high blood glucose can lead to heart disease, stroke, kidney disease, eye problems and nerve damage.",
+   "number": "9",
+   "value": 9.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Type 2 Diabetes and BMI",
+   "row": {
+    "status": "row",
+    "domain": "niddk-health-risks",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Nearly 9 in 10 people with type 2 diabetes have overweight or obesity, and over time high blood glucose can lead to heart disease, stroke, kidney disease, eye problems and nerve damage.",
+   "number": "10",
+   "value": 10.0,
+   "class": "D",
+   "why": "count in prose",
+   "heading": "Type 2 Diabetes and BMI"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Nearly 9 in 10 people with type 2 diabetes have overweight or obesity, and over time high blood glucose can lead to heart disease, stroke, kidney disease, eye problems and nerve damage.",
+   "number": "2",
+   "value": 2.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "Type 2 Diabetes and BMI"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "For people at risk of type 2 diabetes, NIDDK says losing at least 5% to 7% of their starting weight may prevent or delay it: about 10 to 14 pounds for someone who weighs 200 (NIDDK).",
+   "number": "2",
+   "value": 2.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "Type 2 Diabetes and BMI",
+   "links": [
+    "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/health-risks"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "For people at risk of type 2 diabetes, NIDDK says losing at least 5% to 7% of their starting weight may prevent or delay it: about 10 to 14 pounds for someone who weighs 200 (NIDDK).",
+   "number": "5",
+   "value": 5.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Type 2 Diabetes and BMI",
+   "row": {
+    "status": "row",
+    "domain": "niddk-health-risks",
+    "how": "link"
+   },
+   "links": [
+    "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/health-risks"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "For people at risk of type 2 diabetes, NIDDK says losing at least 5% to 7% of their starting weight may prevent or delay it: about 10 to 14 pounds for someone who weighs 200 (NIDDK).",
+   "number": "7",
+   "value": 7.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Type 2 Diabetes and BMI",
+   "row": {
+    "status": "row",
+    "domain": "niddk-health-risks",
+    "how": "link"
+   },
+   "links": [
+    "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/health-risks"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "For people at risk of type 2 diabetes, NIDDK says losing at least 5% to 7% of their starting weight may prevent or delay it: about 10 to 14 pounds for someone who weighs 200 (NIDDK).",
+   "number": "10",
+   "value": 10.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Type 2 Diabetes and BMI",
+   "row": {
+    "status": "row",
+    "domain": "niddk-health-risks",
+    "how": "link"
+   },
+   "links": [
+    "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/health-risks"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "For people at risk of type 2 diabetes, NIDDK says losing at least 5% to 7% of their starting weight may prevent or delay it: about 10 to 14 pounds for someone who weighs 200 (NIDDK).",
+   "number": "14",
+   "value": 14.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Type 2 Diabetes and BMI",
+   "row": {
+    "status": "row",
+    "domain": "niddk-health-risks",
+    "how": "link"
+   },
+   "links": [
+    "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/health-risks"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "For people at risk of type 2 diabetes, NIDDK says losing at least 5% to 7% of their starting weight may prevent or delay it: about 10 to 14 pounds for someone who weighs 200 (NIDDK).",
+   "number": "200",
+   "value": 200.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Type 2 Diabetes and BMI",
+   "row": {
+    "status": "row",
+    "domain": "niddk-health-risks",
+    "how": "link"
+   },
+   "links": [
+    "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/health-risks"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "An International Agency for Research on Cancer working group reviewed more than 1,000 studies and found consistent evidence that more body fat goes with a higher risk of a number of cancers.",
+   "number": "1,000",
+   "value": 1000.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Cancer and BMI",
+   "row": {
+    "status": "row",
+    "domain": "nci-obesity-cancer",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "NCI lists 13, and the size of the increase differs between them (NCI):",
+   "number": "13",
+   "value": 13.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Cancer and BMI",
+   "row": {
+    "status": "row",
+    "domain": "nci-obesity-cancer",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cancer.gov/about-cancer/causes-prevention/risk/obesity/obesity-fact-sheet"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Source: NCI, Obesity and Cancer (reviewed January 28, 2025).",
+   "number": "28",
+   "value": 28.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Obesity-associated cancers",
+   "row": {
+    "status": "row",
+    "domain": "nci-obesity-cancer",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cancer.gov/about-cancer/causes-prevention/risk/obesity/obesity-fact-sheet"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Source: NCI, Obesity and Cancer (reviewed January 28, 2025).",
+   "number": "2025",
+   "value": 2025.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Obesity-associated cancers",
+   "row": {
+    "status": "row",
+    "domain": "nci-obesity-cancer",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cancer.gov/about-cancer/causes-prevention/risk/obesity/obesity-fact-sheet"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "A study NCI cites estimated that in 2019 about 4.8% of new cancer cases in US men aged 30 and older, and 10.6% in women, were due to excess body weight (NCI).",
+   "number": "2019",
+   "value": 2019.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Obesity-associated cancers",
+   "row": {
+    "status": "row",
+    "domain": "nci-obesity-cancer",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cancer.gov/about-cancer/causes-prevention/risk/obesity/obesity-fact-sheet"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "A study NCI cites estimated that in 2019 about 4.8% of new cancer cases in US men aged 30 and older, and 10.6% in women, were due to excess body weight (NCI).",
+   "number": "4.8",
+   "value": 4.8,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Obesity-associated cancers",
+   "row": {
+    "status": "row",
+    "domain": "nci-obesity-cancer",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cancer.gov/about-cancer/causes-prevention/risk/obesity/obesity-fact-sheet"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "A study NCI cites estimated that in 2019 about 4.8% of new cancer cases in US men aged 30 and older, and 10.6% in women, were due to excess body weight (NCI).",
+   "number": "30",
+   "value": 30.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Obesity-associated cancers",
+   "row": {
+    "status": "row",
+    "domain": "nci-obesity-cancer",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cancer.gov/about-cancer/causes-prevention/risk/obesity/obesity-fact-sheet"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "A study NCI cites estimated that in 2019 about 4.8% of new cancer cases in US men aged 30 and older, and 10.6% in women, were due to excess body weight (NCI).",
+   "number": "10.6",
+   "value": 10.6,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Obesity-associated cancers",
+   "row": {
+    "status": "row",
+    "domain": "nci-obesity-cancer",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cancer.gov/about-cancer/causes-prevention/risk/obesity/obesity-fact-sheet"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "Insulin and IGF-1: people with obesity often have higher blood levels of both, and high levels are associated with higher risks of colorectal, thyroid, breast, prostate, ovarian and endometrial cancers (NCI)",
    "number": "1",
    "value": 1.0,
    "class": "D",
    "why": "name or label with a number",
-   "heading": "How Obesity Promotes Cancer"
+   "heading": "How Obesity Might Raise Cancer Risk",
+   "links": [
+    "https://www.cancer.gov/about-cancer/causes-prevention/risk/obesity/obesity-fact-sheet"
+   ]
   },
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "main",
-   "sentence": "Elevated insulin and IGF-1: Obesity-related insulin resistance leads to higher circulating insulin and insulin-like growth factor-1, both of which stimulate cell growth",
-   "number": "1",
-   "value": 1.0,
+   "sentence": "They most often affect people with overweight or obesity, and NIDDK says losing at least 3% to 5% of body weight may reduce fat in the liver (NIDDK).",
+   "number": "3",
+   "value": 3.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Liver Disease (Non-Alcoholic Fatty Liver Disease)",
+   "row": {
+    "status": "row",
+    "domain": "niddk-health-risks",
+    "how": "link"
+   },
+   "links": [
+    "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/health-risks"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "They most often affect people with overweight or obesity, and NIDDK says losing at least 3% to 5% of body weight may reduce fat in the liver (NIDDK).",
+   "number": "5",
+   "value": 5.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Liver Disease (Non-Alcoholic Fatty Liver Disease)",
+   "row": {
+    "status": "row",
+    "domain": "niddk-health-risks",
+    "how": "link"
+   },
+   "links": [
+    "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/health-risks"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "A diagnosis needs at least three of these: a large waist, high triglycerides, high blood pressure, high fasting blood glucose and low HDL cholesterol.",
+   "number": "three",
+   "value": 3,
    "class": "D",
-   "why": "name or label with a number",
-   "heading": "How Obesity Promotes Cancer"
+   "why": "number word (count in prose)",
+   "heading": "Metabolic syndrome"
   },
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "main",
-   "sentence": "While much attention focuses on the risks of excess weight, being underweight (BMI below 18.5) carries its own significant health risks.",
+   "sentence": "Being underweight (BMI below 18.5) carries risks of its own.",
    "number": "18.5",
    "value": 18.5,
    "class": "B",
@@ -63855,6 +64986,165 @@
    },
    "links": [
     "http://localhost:8765/blog/underweight-bmi-risks/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "In the Global BMI Mortality Collaboration’s never-smokers, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of 22.5 to 24.9, close to the 1.45 of 30.0 to 34.9 (GBMC, 2016).",
+   "number": "15.0",
+   "value": 15.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "In the Global BMI Mortality Collaboration’s never-smokers, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of 22.5 to 24.9, close to the 1.45 of 30.0 to 34.9 (GBMC, 2016).",
+   "number": "18.4",
+   "value": 18.4,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "In the Global BMI Mortality Collaboration’s never-smokers, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of 22.5 to 24.9, close to the 1.45 of 30.0 to 34.9 (GBMC, 2016).",
+   "number": "1.51",
+   "value": 1.51,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "In the Global BMI Mortality Collaboration’s never-smokers, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of 22.5 to 24.9, close to the 1.45 of 30.0 to 34.9 (GBMC, 2016).",
+   "number": "22.5",
+   "value": 22.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "In the Global BMI Mortality Collaboration’s never-smokers, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of 22.5 to 24.9, close to the 1.45 of 30.0 to 34.9 (GBMC, 2016).",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "In the Global BMI Mortality Collaboration’s never-smokers, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of 22.5 to 24.9, close to the 1.45 of 30.0 to 34.9 (GBMC, 2016).",
+   "number": "1.45",
+   "value": 1.45,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "In the Global BMI Mortality Collaboration’s never-smokers, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of 22.5 to 24.9, close to the 1.45 of 30.0 to 34.9 (GBMC, 2016).",
+   "number": "30.0",
+   "value": 30.0,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "Health Risks of Being Underweight",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "30.0 to 34.9 (no category named)",
+    "computed": "Class 1 obesity in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "In the Global BMI Mortality Collaboration’s never-smokers, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of 22.5 to 24.9, close to the 1.45 of 30.0 to 34.9 (GBMC, 2016).",
+   "number": "34.9",
+   "value": 34.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "Health Risks of Being Underweight",
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "In the Global BMI Mortality Collaboration’s never-smokers, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of 22.5 to 24.9, close to the 1.45 of 30.0 to 34.9 (GBMC, 2016).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
    ]
   },
   {
@@ -64030,12 +65320,123 @@
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "main",
-   "sentence": "Two people at the same BMI can have very different metabolic profiles depending on distribution.",
-   "number": "Two",
-   "value": 2,
+   "sentence": "In 3.5 million British adults followed for a mean of 5.4 years, people with obesity and none of three metabolic abnormalities (diabetes, high blood pressure, high blood fats) still had a higher risk of coronary heart disease (HR 1.49), cerebrovascular disease (1.07) and heart failure (1.96) than normal-weight people with none (Caleyachetty et al., 2017).",
+   "number": "3.5 million",
+   "value": 3500000.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "“Metabolically healthy” obesity or overweight",
+   "row": {
+    "status": "row-notes",
+    "domain": "caleyachetty-2017-mho",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1016/j.jacc.2017.07.763"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "In 3.5 million British adults followed for a mean of 5.4 years, people with obesity and none of three metabolic abnormalities (diabetes, high blood pressure, high blood fats) still had a higher risk of coronary heart disease (HR 1.49), cerebrovascular disease (1.07) and heart failure (1.96) than normal-weight people with none (Caleyachetty et al., 2017).",
+   "number": "5.4",
+   "value": 5.4,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "“Metabolically healthy” obesity or overweight",
+   "row": {
+    "status": "row",
+    "domain": "caleyachetty-2017-mho",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1016/j.jacc.2017.07.763"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "In 3.5 million British adults followed for a mean of 5.4 years, people with obesity and none of three metabolic abnormalities (diabetes, high blood pressure, high blood fats) still had a higher risk of coronary heart disease (HR 1.49), cerebrovascular disease (1.07) and heart failure (1.96) than normal-weight people with none (Caleyachetty et al., 2017).",
+   "number": "three",
+   "value": 3,
    "class": "D",
    "why": "number word (count in prose)",
-   "heading": "Fat distribution"
+   "heading": "“Metabolically healthy” obesity or overweight",
+   "links": [
+    "https://doi.org/10.1016/j.jacc.2017.07.763"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "In 3.5 million British adults followed for a mean of 5.4 years, people with obesity and none of three metabolic abnormalities (diabetes, high blood pressure, high blood fats) still had a higher risk of coronary heart disease (HR 1.49), cerebrovascular disease (1.07) and heart failure (1.96) than normal-weight people with none (Caleyachetty et al., 2017).",
+   "number": "1.49",
+   "value": 1.49,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "“Metabolically healthy” obesity or overweight",
+   "row": {
+    "status": "row",
+    "domain": "caleyachetty-2017-mho",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1016/j.jacc.2017.07.763"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "In 3.5 million British adults followed for a mean of 5.4 years, people with obesity and none of three metabolic abnormalities (diabetes, high blood pressure, high blood fats) still had a higher risk of coronary heart disease (HR 1.49), cerebrovascular disease (1.07) and heart failure (1.96) than normal-weight people with none (Caleyachetty et al., 2017).",
+   "number": "1.07",
+   "value": 1.07,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "“Metabolically healthy” obesity or overweight",
+   "row": {
+    "status": "row",
+    "domain": "caleyachetty-2017-mho",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1016/j.jacc.2017.07.763"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "In 3.5 million British adults followed for a mean of 5.4 years, people with obesity and none of three metabolic abnormalities (diabetes, high blood pressure, high blood fats) still had a higher risk of coronary heart disease (HR 1.49), cerebrovascular disease (1.07) and heart failure (1.96) than normal-weight people with none (Caleyachetty et al., 2017).",
+   "number": "1.96",
+   "value": 1.96,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "“Metabolically healthy” obesity or overweight",
+   "row": {
+    "status": "row",
+    "domain": "caleyachetty-2017-mho",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1016/j.jacc.2017.07.763"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "main",
+   "sentence": "In 3.5 million British adults followed for a mean of 5.4 years, people with obesity and none of three metabolic abnormalities (diabetes, high blood pressure, high blood fats) still had a higher risk of coronary heart disease (HR 1.49), cerebrovascular disease (1.07) and heart failure (1.96) than normal-weight people with none (Caleyachetty et al., 2017).",
+   "number": "2017",
+   "value": 2017.0,
+   "class": "C",
+   "why": "year",
+   "heading": "“Metabolically healthy” obesity or overweight",
+   "row": {
+    "status": "row",
+    "domain": "caleyachetty-2017-mho",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1016/j.jacc.2017.07.763"
+   ]
   },
   {
    "page": "/blog/bmi-and-health-risks/",
@@ -64045,7 +65446,7 @@
    "value": 2.0,
    "class": "D",
    "why": "name or label with a number",
-   "heading": "Benefits of modest weight loss",
+   "heading": "Modest weight loss",
    "links": [
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC3120182/"
    ]
@@ -64058,7 +65459,7 @@
    "value": 5.0,
    "class": "C",
    "why": "statistic (percent)",
-   "heading": "Benefits of modest weight loss",
+   "heading": "Modest weight loss",
    "row": {
     "status": "row",
     "domain": "wing-2011-look-ahead",
@@ -64076,7 +65477,7 @@
    "value": 10.0,
    "class": "C",
    "why": "statistic (percent)",
-   "heading": "Benefits of modest weight loss",
+   "heading": "Modest weight loss",
    "row": {
     "status": "row",
     "domain": "wing-2011-look-ahead",
@@ -64094,7 +65495,7 @@
    "value": 2011.0,
    "class": "C",
    "why": "year",
-   "heading": "Benefits of modest weight loss",
+   "heading": "Modest weight loss",
    "row": {
     "status": "row",
     "domain": "wing-2011-look-ahead",
@@ -64106,188 +65507,216 @@
   },
   {
    "page": "/blog/bmi-and-health-risks/",
-   "region": "table",
-   "sentence": "Severely Underweight | <16.0",
-   "number": "16.0",
-   "value": 16.0,
-   "class": "B",
-   "why": "category cut-off",
-   "heading": "Relative Mortality Risk by BMI Category",
-   "check": {
-    "status": "ok",
-    "kind": "category",
-    "page": "16.0 (Severely Underweight)",
-    "computed": "Severe thinness in calculator.js",
-    "label": "category cut-off (getBMICategory)",
-    "name_differs": "\"Severely Underweight\" = calculator.js \"Severe thinness\""
-   }
-  },
-  {
-   "page": "/blog/bmi-and-health-risks/",
-   "region": "table",
-   "sentence": "Underweight | 16.0-18.4",
-   "number": "16.0",
-   "value": 16.0,
-   "class": "B",
-   "why": "category cut-off",
-   "heading": "Relative Mortality Risk by BMI Category",
-   "check": {
-    "status": "ok",
-    "kind": "category",
-    "page": "16.0-18.4 (Underweight)",
-    "computed": "Moderate thinness / Underweight in calculator.js",
-    "label": "category cut-off (getBMICategory)",
-    "name_differs": "\"Underweight\" here is Moderate thinness + Underweight in calculator.js"
-   }
-  },
-  {
-   "page": "/blog/bmi-and-health-risks/",
-   "region": "table",
-   "sentence": "Underweight | 16.0-18.4",
-   "number": "18.4",
-   "value": 18.4,
-   "class": "B",
-   "why": "category cut-off (other bound)",
-   "heading": "Relative Mortality Risk by BMI Category"
-  },
-  {
-   "page": "/blog/bmi-and-health-risks/",
-   "region": "table",
-   "sentence": "Normal Weight | 18.5-24.9",
+   "region": "main",
+   "sentence": "The risks of a BMI below 18.5, and when to get help.",
    "number": "18.5",
    "value": 18.5,
    "class": "B",
    "why": "category cut-off",
-   "heading": "Relative Mortality Risk by BMI Category",
+   "heading": "Underweight BMI Risks",
    "check": {
     "status": "ok",
     "kind": "category",
-    "page": "18.5-24.9 (Normal Weight)",
-    "computed": "Healthy weight in calculator.js",
-    "label": "category cut-off (getBMICategory)",
-    "name_differs": "\"Normal Weight\" = calculator.js \"Healthy weight\""
-   }
-  },
-  {
-   "page": "/blog/bmi-and-health-risks/",
-   "region": "table",
-   "sentence": "Normal Weight | 18.5-24.9",
-   "number": "24.9",
-   "value": 24.9,
-   "class": "B",
-   "why": "category cut-off (other bound)",
-   "heading": "Relative Mortality Risk by BMI Category"
-  },
-  {
-   "page": "/blog/bmi-and-health-risks/",
-   "region": "table",
-   "sentence": "Overweight | 25.0-29.9",
-   "number": "25.0",
-   "value": 25.0,
-   "class": "B",
-   "why": "category cut-off",
-   "heading": "Relative Mortality Risk by BMI Category",
-   "check": {
-    "status": "ok",
-    "kind": "category",
-    "page": "25.0-29.9 (Overweight)",
-    "computed": "Overweight in calculator.js",
+    "page": "18.5 (Underweight)",
+    "computed": "Severe thinness / Moderate thinness / Underweight in calculator.js",
     "label": "category cut-off (getBMICategory)"
-   }
+   },
+   "links": [
+    "http://localhost:8765/blog/underweight-bmi-risks/"
+   ]
   },
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "table",
-   "sentence": "Overweight | 25.0-29.9",
-   "number": "29.9",
-   "value": 29.9,
-   "class": "B",
-   "why": "category cut-off (other bound)",
-   "heading": "Relative Mortality Risk by BMI Category"
-  },
-  {
-   "page": "/blog/bmi-and-health-risks/",
-   "region": "table",
-   "sentence": "Obese Class I | 30.0-34.9",
-   "number": "30.0",
-   "value": 30.0,
-   "class": "B",
-   "why": "category cut-off",
-   "heading": "Relative Mortality Risk by BMI Category",
-   "check": {
-    "status": "ok",
-    "kind": "category",
-    "page": "30.0-34.9 (Obese Class I)",
-    "computed": "Class 1 obesity in calculator.js",
-    "label": "category cut-off (getBMICategory)",
-    "name_differs": "\"Obese Class I\" = calculator.js \"Class 1 obesity\""
-   }
-  },
-  {
-   "page": "/blog/bmi-and-health-risks/",
-   "region": "table",
-   "sentence": "Obese Class I | 30.0-34.9",
-   "number": "34.9",
-   "value": 34.9,
-   "class": "B",
-   "why": "category cut-off (other bound)",
-   "heading": "Relative Mortality Risk by BMI Category"
-  },
-  {
-   "page": "/blog/bmi-and-health-risks/",
-   "region": "table",
-   "sentence": "Obese Class II | 35.0-39.9",
-   "number": "35.0",
-   "value": 35.0,
-   "class": "B",
-   "why": "category cut-off",
-   "heading": "Relative Mortality Risk by BMI Category",
-   "check": {
-    "status": "ok",
-    "kind": "category",
-    "page": "35.0-39.9 (Obese Class II)",
-    "computed": "Class 2 obesity in calculator.js",
-    "label": "category cut-off (getBMICategory)",
-    "name_differs": "\"Obese Class II\" = calculator.js \"Class 2 obesity\""
-   }
-  },
-  {
-   "page": "/blog/bmi-and-health-risks/",
-   "region": "table",
-   "sentence": "Obese Class II | 35.0-39.9",
-   "number": "39.9",
-   "value": 39.9,
-   "class": "B",
-   "why": "category cut-off (other bound)",
-   "heading": "Relative Mortality Risk by BMI Category"
-  },
-  {
-   "page": "/blog/bmi-and-health-risks/",
-   "region": "table",
-   "sentence": "Obese Class III | ≥40.0",
-   "number": "40.0",
-   "value": 40.0,
-   "class": "B",
-   "why": "category cut-off",
-   "heading": "Relative Mortality Risk by BMI Category",
-   "check": {
-    "status": "ok",
-    "kind": "category",
-    "page": "40.0 (Obese Class III)",
-    "computed": "Class 3 obesity in calculator.js",
-    "label": "category cut-off (getBMICategory)",
-    "name_differs": "\"Obese Class III\" = calculator.js \"Class 3 obesity\""
-   }
-  },
-  {
-   "page": "/blog/bmi-and-health-risks/",
-   "region": "svg",
-   "sentence": "Type 2 diabetes",
-   "number": "2",
-   "value": 2.0,
+   "sentence": "Endometrial (type 1) | Two to four times with overweight or obesity; about seven times with severe obesity",
+   "number": "1",
+   "value": 1.0,
    "class": "D",
    "why": "name or label with a number",
-   "heading": "BMI categories and associated health risks"
+   "heading": "Obesity-associated cancers"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "table",
+   "sentence": "Endometrial (type 1) | Two to four times with overweight or obesity; about seven times with severe obesity",
+   "number": "Two",
+   "value": 2,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Obesity-associated cancers"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "table",
+   "sentence": "Endometrial (type 1) | Two to four times with overweight or obesity; about seven times with severe obesity",
+   "number": "four",
+   "value": 4,
+   "class": "C",
+   "why": "statistic in words",
+   "heading": "Obesity-associated cancers",
+   "row": {
+    "status": "row-notes",
+    "domain": "nci-obesity-cancer",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "table",
+   "sentence": "Endometrial (type 1) | Two to four times with overweight or obesity; about seven times with severe obesity",
+   "number": "seven",
+   "value": 7,
+   "class": "C",
+   "why": "statistic in words",
+   "heading": "Obesity-associated cancers",
+   "row": {
+    "status": "row-notes",
+    "domain": "nci-obesity-cancer",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "table",
+   "sentence": "Esophageal | More than twice with obesity; nearly five times with severe obesity",
+   "number": "twice",
+   "value": 2,
+   "class": "C",
+   "why": "statistic in words",
+   "heading": "Obesity-associated cancers",
+   "row": {
+    "status": "row-notes",
+    "domain": "nci-obesity-cancer",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "table",
+   "sentence": "Esophageal | More than twice with obesity; nearly five times with severe obesity",
+   "number": "five",
+   "value": 5,
+   "class": "C",
+   "why": "statistic in words",
+   "heading": "Obesity-associated cancers",
+   "row": {
+    "status": "row",
+    "domain": "nci-obesity-cancer",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "table",
+   "sentence": "Upper stomach, liver, kidney, multiple myeloma, meningioma, pancreatic, colorectal, gallbladder, postmenopausal breast, ovarian, thyroid | From about 10% higher to double with obesity",
+   "number": "10",
+   "value": 10.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Obesity-associated cancers",
+   "row": {
+    "status": "row",
+    "domain": "nci-obesity-cancer",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "Being free of diabetes, high blood pressure and high blood fats doesn’t erase the risk: in 3.5 million British adults, people with obesity and none of those three still had a higher risk of coronary heart disease (HR 1.49) and heart failure (1.96) than normal-weight people with none (Caleyachetty et al., 2017).",
+   "number": "3.5 million",
+   "value": 3500000.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Can you be healthy with a high BMI?",
+   "row": {
+    "status": "row-notes",
+    "domain": "caleyachetty-2017-mho",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1016/j.jacc.2017.07.763"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "Being free of diabetes, high blood pressure and high blood fats doesn’t erase the risk: in 3.5 million British adults, people with obesity and none of those three still had a higher risk of coronary heart disease (HR 1.49) and heart failure (1.96) than normal-weight people with none (Caleyachetty et al., 2017).",
+   "number": "three",
+   "value": 3,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "FAQ: Can you be healthy with a high BMI?",
+   "links": [
+    "https://doi.org/10.1016/j.jacc.2017.07.763"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "Being free of diabetes, high blood pressure and high blood fats doesn’t erase the risk: in 3.5 million British adults, people with obesity and none of those three still had a higher risk of coronary heart disease (HR 1.49) and heart failure (1.96) than normal-weight people with none (Caleyachetty et al., 2017).",
+   "number": "1.49",
+   "value": 1.49,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Can you be healthy with a high BMI?",
+   "row": {
+    "status": "row",
+    "domain": "caleyachetty-2017-mho",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1016/j.jacc.2017.07.763"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "Being free of diabetes, high blood pressure and high blood fats doesn’t erase the risk: in 3.5 million British adults, people with obesity and none of those three still had a higher risk of coronary heart disease (HR 1.49) and heart failure (1.96) than normal-weight people with none (Caleyachetty et al., 2017).",
+   "number": "1.96",
+   "value": 1.96,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Can you be healthy with a high BMI?",
+   "row": {
+    "status": "row",
+    "domain": "caleyachetty-2017-mho",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1016/j.jacc.2017.07.763"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "Being free of diabetes, high blood pressure and high blood fats doesn’t erase the risk: in 3.5 million British adults, people with obesity and none of those three still had a higher risk of coronary heart disease (HR 1.49) and heart failure (1.96) than normal-weight people with none (Caleyachetty et al., 2017).",
+   "number": "2017",
+   "value": 2017.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: Can you be healthy with a high BMI?",
+   "row": {
+    "status": "row",
+    "domain": "caleyachetty-2017-mho",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1016/j.jacc.2017.07.763"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "Obesity also raises the risk of conditions that have nothing to do with those three, such as osteoarthritis and sleep apnea (NIDDK).",
+   "number": "three",
+   "value": 3,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "FAQ: Can you be healthy with a high BMI?",
+   "links": [
+    "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/health-risks"
+   ]
   },
   {
    "page": "/blog/bmi-and-health-risks/",
@@ -64359,8 +65788,93 @@
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "faq-a",
-   "sentence": "Cancer risk begins to rise across the overweight range (BMI 25–29.9) and increases more substantially in the obese range (BMI 30+).",
-   "number": "25",
+   "sentence": "NIDDK adds that people at risk of type 2 diabetes may prevent or delay it by losing at least 5% to 7% of their starting weight, and that losing at least 3% to 5% may reduce fat in the liver (NIDDK).",
+   "number": "2",
+   "value": 2.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "FAQ: How much does reducing BMI lower health risks?",
+   "links": [
+    "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/health-risks"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "NIDDK adds that people at risk of type 2 diabetes may prevent or delay it by losing at least 5% to 7% of their starting weight, and that losing at least 3% to 5% may reduce fat in the liver (NIDDK).",
+   "number": "5",
+   "value": 5.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQ: How much does reducing BMI lower health risks?",
+   "row": {
+    "status": "row",
+    "domain": "niddk-health-risks",
+    "how": "link"
+   },
+   "links": [
+    "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/health-risks"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "NIDDK adds that people at risk of type 2 diabetes may prevent or delay it by losing at least 5% to 7% of their starting weight, and that losing at least 3% to 5% may reduce fat in the liver (NIDDK).",
+   "number": "7",
+   "value": 7.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQ: How much does reducing BMI lower health risks?",
+   "row": {
+    "status": "row",
+    "domain": "niddk-health-risks",
+    "how": "link"
+   },
+   "links": [
+    "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/health-risks"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "NIDDK adds that people at risk of type 2 diabetes may prevent or delay it by losing at least 5% to 7% of their starting weight, and that losing at least 3% to 5% may reduce fat in the liver (NIDDK).",
+   "number": "3",
+   "value": 3.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQ: How much does reducing BMI lower health risks?",
+   "row": {
+    "status": "row",
+    "domain": "niddk-health-risks",
+    "how": "link"
+   },
+   "links": [
+    "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/health-risks"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "NIDDK adds that people at risk of type 2 diabetes may prevent or delay it by losing at least 5% to 7% of their starting weight, and that losing at least 3% to 5% may reduce fat in the liver (NIDDK).",
+   "number": "5",
+   "value": 5.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQ: How much does reducing BMI lower health risks?",
+   "row": {
+    "status": "row",
+    "domain": "niddk-health-risks",
+    "how": "link"
+   },
+   "links": [
+    "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/health-risks"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "NCI links both overweight (BMI 25.0 to 29.9) and obesity (30.0 or more) to 13 cancers: endometrial, esophageal, upper stomach, liver, kidney, multiple myeloma, meningioma, pancreatic, colorectal, gallbladder, postmenopausal breast, ovarian and thyroid.",
+   "number": "25.0",
    "value": 25.0,
    "class": "B",
    "why": "category cut-off",
@@ -64368,7 +65882,7 @@
    "check": {
     "status": "ok",
     "kind": "category",
-    "page": "25-29.9 (overweight)",
+    "page": "25.0 to 29.9 (overweight)",
     "computed": "Overweight in calculator.js",
     "label": "category cut-off (getBMICategory)"
    }
@@ -64376,7 +65890,7 @@
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "faq-a",
-   "sentence": "Cancer risk begins to rise across the overweight range (BMI 25–29.9) and increases more substantially in the obese range (BMI 30+).",
+   "sentence": "NCI links both overweight (BMI 25.0 to 29.9) and obesity (30.0 or more) to 13 cancers: endometrial, esophageal, upper stomach, liver, kidney, multiple myeloma, meningioma, pancreatic, colorectal, gallbladder, postmenopausal breast, ovarian and thyroid.",
    "number": "29.9",
    "value": 29.9,
    "class": "B",
@@ -64386,8 +65900,8 @@
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "faq-a",
-   "sentence": "Cancer risk begins to rise across the overweight range (BMI 25–29.9) and increases more substantially in the obese range (BMI 30+).",
-   "number": "30",
+   "sentence": "NCI links both overweight (BMI 25.0 to 29.9) and obesity (30.0 or more) to 13 cancers: endometrial, esophageal, upper stomach, liver, kidney, multiple myeloma, meningioma, pancreatic, colorectal, gallbladder, postmenopausal breast, ovarian and thyroid.",
+   "number": "30.0",
    "value": 30.0,
    "class": "B",
    "why": "category cut-off",
@@ -64395,7 +65909,7 @@
    "check": {
     "status": "ok",
     "kind": "category",
-    "page": "30 (obese)",
+    "page": "30.0 (obesity)",
     "computed": "Class 1 obesity / Class 2 obesity / Class 3 obesity in calculator.js",
     "label": "category cut-off (getBMICategory)"
    }
@@ -64403,32 +65917,161 @@
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "faq-a",
-   "sentence": "At least a dozen cancers have documented associations with excess adiposity, including endometrial (uterine), oesophageal adenocarcinoma, kidney, liver, pancreatic, colorectal, postmenopausal breast, gallbladder, gastric cardia, thyroid, meningioma, multiple myeloma, and ovarian.",
-   "number": "dozen",
-   "value": 12,
-   "class": "D",
-   "why": "number word (count in prose)",
-   "heading": "FAQ: At what BMI does cancer risk increase?"
+   "sentence": "NCI links both overweight (BMI 25.0 to 29.9) and obesity (30.0 or more) to 13 cancers: endometrial, esophageal, upper stomach, liver, kidney, multiple myeloma, meningioma, pancreatic, colorectal, gallbladder, postmenopausal breast, ovarian and thyroid.",
+   "number": "13",
+   "value": 13.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: At what BMI does cancer risk increase?",
+   "row": {
+    "status": "row",
+    "domain": "nci-obesity-cancer",
+    "how": "paragraph link"
+   }
   },
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "faq-a",
-   "sentence": "Mechanisms include chronic inflammation, elevated circulating insulin and IGF-1, increased oestrogen production by adipose tissue, and impaired immune surveillance.",
-   "number": "1",
-   "value": 1.0,
-   "class": "D",
-   "why": "name or label with a number",
-   "heading": "FAQ: At what BMI does cancer risk increase?"
+   "sentence": "The increases are largest for endometrial and esophageal cancer; for the others, obesity raises the risk by about 10% up to double.",
+   "number": "10",
+   "value": 10.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQ: At what BMI does cancer risk increase?",
+   "row": {
+    "status": "row",
+    "domain": "nci-obesity-cancer",
+    "how": "paragraph link"
+   }
   },
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "faq-a",
-   "sentence": "Type 2 diabetes has the strongest single association with elevated BMI: risk rises steeply across the overweight and obese ranges.",
+   "sentence": "A study NCI cites estimated that in 2019 about 4.8% of new cancer cases in US men aged 30 and older, and 10.6% in women, were due to excess body weight (NCI).",
+   "number": "2019",
+   "value": 2019.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: At what BMI does cancer risk increase?",
+   "row": {
+    "status": "row",
+    "domain": "nci-obesity-cancer",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cancer.gov/about-cancer/causes-prevention/risk/obesity/obesity-fact-sheet"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "A study NCI cites estimated that in 2019 about 4.8% of new cancer cases in US men aged 30 and older, and 10.6% in women, were due to excess body weight (NCI).",
+   "number": "4.8",
+   "value": 4.8,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQ: At what BMI does cancer risk increase?",
+   "row": {
+    "status": "row",
+    "domain": "nci-obesity-cancer",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cancer.gov/about-cancer/causes-prevention/risk/obesity/obesity-fact-sheet"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "A study NCI cites estimated that in 2019 about 4.8% of new cancer cases in US men aged 30 and older, and 10.6% in women, were due to excess body weight (NCI).",
+   "number": "30",
+   "value": 30.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: At what BMI does cancer risk increase?",
+   "row": {
+    "status": "row",
+    "domain": "nci-obesity-cancer",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cancer.gov/about-cancer/causes-prevention/risk/obesity/obesity-fact-sheet"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "A study NCI cites estimated that in 2019 about 4.8% of new cancer cases in US men aged 30 and older, and 10.6% in women, were due to excess body weight (NCI).",
+   "number": "10.6",
+   "value": 10.6,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQ: At what BMI does cancer risk increase?",
+   "row": {
+    "status": "row",
+    "domain": "nci-obesity-cancer",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cancer.gov/about-cancer/causes-prevention/risk/obesity/obesity-fact-sheet"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "NIDDK’s list runs from type 2 diabetes, high blood pressure, heart disease and stroke to fatty liver disease, some cancers, sleep apnea, osteoarthritis, kidney disease and mental health problems.",
    "number": "2",
    "value": 2.0,
    "class": "D",
    "why": "name or label with a number",
    "heading": "FAQ: What health conditions are most strongly linked to BMI?"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "Nearly 9 in 10 people with type 2 diabetes have overweight or obesity (NIDDK), and among cancers the increases are largest for endometrial and esophageal cancer (NCI).",
+   "number": "9",
+   "value": 9.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: What health conditions are most strongly linked to BMI?",
+   "row": {
+    "status": "row",
+    "domain": "niddk-health-risks",
+    "how": "link"
+   },
+   "links": [
+    "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/health-risks",
+    "https://www.cancer.gov/about-cancer/causes-prevention/risk/obesity/obesity-fact-sheet"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "Nearly 9 in 10 people with type 2 diabetes have overweight or obesity (NIDDK), and among cancers the increases are largest for endometrial and esophageal cancer (NCI).",
+   "number": "10",
+   "value": 10.0,
+   "class": "D",
+   "why": "count in prose",
+   "heading": "FAQ: What health conditions are most strongly linked to BMI?",
+   "links": [
+    "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/health-risks",
+    "https://www.cancer.gov/about-cancer/causes-prevention/risk/obesity/obesity-fact-sheet"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "Nearly 9 in 10 people with type 2 diabetes have overweight or obesity (NIDDK), and among cancers the increases are largest for endometrial and esophageal cancer (NCI).",
+   "number": "2",
+   "value": 2.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "FAQ: What health conditions are most strongly linked to BMI?",
+   "links": [
+    "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/health-risks",
+    "https://www.cancer.gov/about-cancer/causes-prevention/risk/obesity/obesity-fact-sheet"
+   ]
   },
   {
    "page": "/blog/bmi-and-health-risks/",
@@ -64507,35 +66150,7 @@
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "faq-a",
-   "sentence": "It is not evidence that being overweight is protective and does not change the WHO healthy adult range of 18.5–24.9.",
-   "number": "18.5",
-   "value": 18.5,
-   "class": "B",
-   "why": "category cut-off",
-   "heading": "FAQ: What is the “obesity paradox”?",
-   "check": {
-    "status": "ok",
-    "kind": "category",
-    "page": "18.5-24.9 (healthy)",
-    "computed": "Healthy weight in calculator.js",
-    "label": "category cut-off (getBMICategory)",
-    "name_differs": "\"healthy\" = calculator.js \"Healthy weight\""
-   }
-  },
-  {
-   "page": "/blog/bmi-and-health-risks/",
-   "region": "faq-a",
-   "sentence": "It is not evidence that being overweight is protective and does not change the WHO healthy adult range of 18.5–24.9.",
-   "number": "24.9",
-   "value": 24.9,
-   "class": "B",
-   "why": "category cut-off (other bound)",
-   "heading": "FAQ: What is the “obesity paradox”?"
-  },
-  {
-   "page": "/blog/bmi-and-health-risks/",
-   "region": "faq-a",
-   "sentence": "The pooled analysis behind it is Flegal 2013 (JAMA).",
+   "sentence": "The name for findings like Flegal 2013’s, where overweight carried a slightly lower risk of death than normal weight (HR 0.94) and grade 1 obesity about the same (0.95) (Flegal 2013).",
    "number": "2013",
    "value": 2013.0,
    "class": "C",
@@ -64547,10 +66162,323 @@
     "how": "link"
    },
    "links": [
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/"
    ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "The name for findings like Flegal 2013’s, where overweight carried a slightly lower risk of death than normal weight (HR 0.94) and grade 1 obesity about the same (0.95) (Flegal 2013).",
+   "number": "0.94",
+   "value": 0.94,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: What is the “obesity paradox”?",
+   "row": {
+    "status": "row",
+    "domain": "flegal-2013-jama-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "The name for findings like Flegal 2013’s, where overweight carried a slightly lower risk of death than normal weight (HR 0.94) and grade 1 obesity about the same (0.95) (Flegal 2013).",
+   "number": "1",
+   "value": 1.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "FAQ: What is the “obesity paradox”?",
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "The name for findings like Flegal 2013’s, where overweight carried a slightly lower risk of death than normal weight (HR 0.94) and grade 1 obesity about the same (0.95) (Flegal 2013).",
+   "number": "0.95",
+   "value": 0.95,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: What is the “obesity paradox”?",
+   "row": {
+    "status": "row",
+    "domain": "flegal-2013-jama-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "The name for findings like Flegal 2013’s, where overweight carried a slightly lower risk of death than normal weight (HR 0.94) and grade 1 obesity about the same (0.95) (Flegal 2013).",
+   "number": "2013",
+   "value": 2013.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: What is the “obesity paradox”?",
+   "row": {
+    "status": "row",
+    "domain": "flegal-2013-jama-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "The Global BMI Mortality Collaboration limited its main analysis to never-smokers without chronic disease and left out the first 5 years of follow-up; there, the risk of death rose at every step above a BMI of 25, from 1.07 at 25.0 to 27.4 to 2.76 at 40.0 to 59.9 (GBMC, 2016).",
+   "number": "5",
+   "value": 5.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: What is the “obesity paradox”?",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "The Global BMI Mortality Collaboration limited its main analysis to never-smokers without chronic disease and left out the first 5 years of follow-up; there, the risk of death rose at every step above a BMI of 25, from 1.07 at 25.0 to 27.4 to 2.76 at 40.0 to 59.9 (GBMC, 2016).",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: What is the “obesity paradox”?",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "The Global BMI Mortality Collaboration limited its main analysis to never-smokers without chronic disease and left out the first 5 years of follow-up; there, the risk of death rose at every step above a BMI of 25, from 1.07 at 25.0 to 27.4 to 2.76 at 40.0 to 59.9 (GBMC, 2016).",
+   "number": "1.07",
+   "value": 1.07,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: What is the “obesity paradox”?",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "The Global BMI Mortality Collaboration limited its main analysis to never-smokers without chronic disease and left out the first 5 years of follow-up; there, the risk of death rose at every step above a BMI of 25, from 1.07 at 25.0 to 27.4 to 2.76 at 40.0 to 59.9 (GBMC, 2016).",
+   "number": "25.0",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: What is the “obesity paradox”?",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "The Global BMI Mortality Collaboration limited its main analysis to never-smokers without chronic disease and left out the first 5 years of follow-up; there, the risk of death rose at every step above a BMI of 25, from 1.07 at 25.0 to 27.4 to 2.76 at 40.0 to 59.9 (GBMC, 2016).",
+   "number": "27.4",
+   "value": 27.4,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: What is the “obesity paradox”?",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "The Global BMI Mortality Collaboration limited its main analysis to never-smokers without chronic disease and left out the first 5 years of follow-up; there, the risk of death rose at every step above a BMI of 25, from 1.07 at 25.0 to 27.4 to 2.76 at 40.0 to 59.9 (GBMC, 2016).",
+   "number": "2.76",
+   "value": 2.76,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: What is the “obesity paradox”?",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "The Global BMI Mortality Collaboration limited its main analysis to never-smokers without chronic disease and left out the first 5 years of follow-up; there, the risk of death rose at every step above a BMI of 25, from 1.07 at 25.0 to 27.4 to 2.76 at 40.0 to 59.9 (GBMC, 2016).",
+   "number": "40.0",
+   "value": 40.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: What is the “obesity paradox”?",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "The Global BMI Mortality Collaboration limited its main analysis to never-smokers without chronic disease and left out the first 5 years of follow-up; there, the risk of death rose at every step above a BMI of 25, from 1.07 at 25.0 to 27.4 to 2.76 at 40.0 to 59.9 (GBMC, 2016).",
+   "number": "59.9",
+   "value": 59.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: What is the “obesity paradox”?",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "faq-a",
+   "sentence": "The Global BMI Mortality Collaboration limited its main analysis to never-smokers without chronic disease and left out the first 5 years of follow-up; there, the risk of death rose at every step above a BMI of 25, from 1.07 at 25.0 to 27.4 to 2.76 at 40.0 to 59.9 (GBMC, 2016).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: What is the “obesity paradox”?",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "Being free of diabetes, high blood pressure and high blood fats doesn’t erase the risk: in 3.5 million British adults, people with obesity and none of those three still had a higher risk of coronary heart disease (HR 1.49) and heart failure (1.96) than normal-weight people with none (Caleyachetty et al., 2017).",
+   "number": "3.5 million",
+   "value": 3500000.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can you be healthy with a high BMI?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "caleyachetty-2017-mho",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "Being free of diabetes, high blood pressure and high blood fats doesn’t erase the risk: in 3.5 million British adults, people with obesity and none of those three still had a higher risk of coronary heart disease (HR 1.49) and heart failure (1.96) than normal-weight people with none (Caleyachetty et al., 2017).",
+   "number": "three",
+   "value": 3,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "FAQPage JSON-LD: Can you be healthy with a high BMI?",
+   "mirror_of": "the visible FAQ answer (same text)"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "Being free of diabetes, high blood pressure and high blood fats doesn’t erase the risk: in 3.5 million British adults, people with obesity and none of those three still had a higher risk of coronary heart disease (HR 1.49) and heart failure (1.96) than normal-weight people with none (Caleyachetty et al., 2017).",
+   "number": "1.49",
+   "value": 1.49,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can you be healthy with a high BMI?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "caleyachetty-2017-mho",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "Being free of diabetes, high blood pressure and high blood fats doesn’t erase the risk: in 3.5 million British adults, people with obesity and none of those three still had a higher risk of coronary heart disease (HR 1.49) and heart failure (1.96) than normal-weight people with none (Caleyachetty et al., 2017).",
+   "number": "1.96",
+   "value": 1.96,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can you be healthy with a high BMI?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "caleyachetty-2017-mho",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "Being free of diabetes, high blood pressure and high blood fats doesn’t erase the risk: in 3.5 million British adults, people with obesity and none of those three still had a higher risk of coronary heart disease (HR 1.49) and heart failure (1.96) than normal-weight people with none (Caleyachetty et al., 2017).",
+   "number": "2017",
+   "value": 2017.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: Can you be healthy with a high BMI?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "caleyachetty-2017-mho",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "Obesity also raises the risk of conditions that have nothing to do with those three, such as osteoarthritis and sleep apnea (NIDDK).",
+   "number": "three",
+   "value": 3,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "FAQPage JSON-LD: Can you be healthy with a high BMI?",
+   "mirror_of": "the visible FAQ answer (same text)"
   },
   {
    "page": "/blog/bmi-and-health-risks/",
@@ -64614,8 +66542,83 @@
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "jsonld",
-   "sentence": "Cancer risk begins to rise across the overweight range (BMI 25–29.9) and increases more substantially in the obese range (BMI 30+).",
-   "number": "25",
+   "sentence": "NIDDK adds that people at risk of type 2 diabetes may prevent or delay it by losing at least 5% to 7% of their starting weight, and that losing at least 3% to 5% may reduce fat in the liver (NIDDK).",
+   "number": "2",
+   "value": 2.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "FAQPage JSON-LD: How much does reducing BMI lower health risks?",
+   "mirror_of": "the visible FAQ answer (same text)"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "NIDDK adds that people at risk of type 2 diabetes may prevent or delay it by losing at least 5% to 7% of their starting weight, and that losing at least 3% to 5% may reduce fat in the liver (NIDDK).",
+   "number": "5",
+   "value": 5.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQPage JSON-LD: How much does reducing BMI lower health risks?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "niddk-health-risks",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "NIDDK adds that people at risk of type 2 diabetes may prevent or delay it by losing at least 5% to 7% of their starting weight, and that losing at least 3% to 5% may reduce fat in the liver (NIDDK).",
+   "number": "7",
+   "value": 7.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQPage JSON-LD: How much does reducing BMI lower health risks?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "niddk-health-risks",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "NIDDK adds that people at risk of type 2 diabetes may prevent or delay it by losing at least 5% to 7% of their starting weight, and that losing at least 3% to 5% may reduce fat in the liver (NIDDK).",
+   "number": "3",
+   "value": 3.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQPage JSON-LD: How much does reducing BMI lower health risks?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "niddk-health-risks",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "NIDDK adds that people at risk of type 2 diabetes may prevent or delay it by losing at least 5% to 7% of their starting weight, and that losing at least 3% to 5% may reduce fat in the liver (NIDDK).",
+   "number": "5",
+   "value": 5.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQPage JSON-LD: How much does reducing BMI lower health risks?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "niddk-health-risks",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "NCI links both overweight (BMI 25.0 to 29.9) and obesity (30.0 or more) to 13 cancers: endometrial, esophageal, upper stomach, liver, kidney, multiple myeloma, meningioma, pancreatic, colorectal, gallbladder, postmenopausal breast, ovarian and thyroid.",
+   "number": "25.0",
    "value": 25.0,
    "class": "B",
    "why": "category cut-off",
@@ -64624,7 +66627,7 @@
    "check": {
     "status": "ok",
     "kind": "category",
-    "page": "25-29.9 (overweight)",
+    "page": "25.0 to 29.9 (overweight)",
     "computed": "Overweight in calculator.js",
     "label": "category cut-off (getBMICategory)"
    }
@@ -64632,7 +66635,7 @@
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "jsonld",
-   "sentence": "Cancer risk begins to rise across the overweight range (BMI 25–29.9) and increases more substantially in the obese range (BMI 30+).",
+   "sentence": "NCI links both overweight (BMI 25.0 to 29.9) and obesity (30.0 or more) to 13 cancers: endometrial, esophageal, upper stomach, liver, kidney, multiple myeloma, meningioma, pancreatic, colorectal, gallbladder, postmenopausal breast, ovarian and thyroid.",
    "number": "29.9",
    "value": 29.9,
    "class": "B",
@@ -64643,8 +66646,8 @@
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "jsonld",
-   "sentence": "Cancer risk begins to rise across the overweight range (BMI 25–29.9) and increases more substantially in the obese range (BMI 30+).",
-   "number": "30",
+   "sentence": "NCI links both overweight (BMI 25.0 to 29.9) and obesity (30.0 or more) to 13 cancers: endometrial, esophageal, upper stomach, liver, kidney, multiple myeloma, meningioma, pancreatic, colorectal, gallbladder, postmenopausal breast, ovarian and thyroid.",
+   "number": "30.0",
    "value": 30.0,
    "class": "B",
    "why": "category cut-off",
@@ -64653,7 +66656,7 @@
    "check": {
     "status": "ok",
     "kind": "category",
-    "page": "30 (obese)",
+    "page": "30.0 (obesity)",
     "computed": "Class 1 obesity / Class 2 obesity / Class 3 obesity in calculator.js",
     "label": "category cut-off (getBMICategory)"
    }
@@ -64661,24 +66664,457 @@
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "jsonld",
-   "sentence": "At least a dozen cancers have documented associations with excess adiposity, including endometrial (uterine), oesophageal adenocarcinoma, kidney, liver, pancreatic, colorectal, postmenopausal breast, gallbladder, gastric cardia, thyroid, meningioma, multiple myeloma, and ovarian.",
-   "number": "dozen",
-   "value": 12,
-   "class": "D",
-   "why": "number word (count in prose)",
+   "sentence": "NCI links both overweight (BMI 25.0 to 29.9) and obesity (30.0 or more) to 13 cancers: endometrial, esophageal, upper stomach, liver, kidney, multiple myeloma, meningioma, pancreatic, colorectal, gallbladder, postmenopausal breast, ovarian and thyroid.",
+   "number": "13",
+   "value": 13.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
    "heading": "FAQPage JSON-LD: At what BMI does cancer risk increase?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nci-obesity-cancer",
+    "how": "paragraph link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "The increases are largest for endometrial and esophageal cancer; for the others, obesity raises the risk by about 10% up to double.",
+   "number": "10",
+   "value": 10.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQPage JSON-LD: At what BMI does cancer risk increase?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nci-obesity-cancer",
+    "how": "paragraph link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "A study NCI cites estimated that in 2019 about 4.8% of new cancer cases in US men aged 30 and older, and 10.6% in women, were due to excess body weight (NCI).",
+   "number": "2019",
+   "value": 2019.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: At what BMI does cancer risk increase?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nci-obesity-cancer",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "A study NCI cites estimated that in 2019 about 4.8% of new cancer cases in US men aged 30 and older, and 10.6% in women, were due to excess body weight (NCI).",
+   "number": "4.8",
+   "value": 4.8,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQPage JSON-LD: At what BMI does cancer risk increase?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nci-obesity-cancer",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "A study NCI cites estimated that in 2019 about 4.8% of new cancer cases in US men aged 30 and older, and 10.6% in women, were due to excess body weight (NCI).",
+   "number": "30",
+   "value": 30.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: At what BMI does cancer risk increase?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nci-obesity-cancer",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "A study NCI cites estimated that in 2019 about 4.8% of new cancer cases in US men aged 30 and older, and 10.6% in women, were due to excess body weight (NCI).",
+   "number": "10.6",
+   "value": 10.6,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQPage JSON-LD: At what BMI does cancer risk increase?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nci-obesity-cancer",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "NIDDK’s list runs from type 2 diabetes, high blood pressure, heart disease and stroke to fatty liver disease, some cancers, sleep apnea, osteoarthritis, kidney disease and mental health problems.",
+   "number": "2",
+   "value": 2.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "FAQPage JSON-LD: What health conditions are most strongly linked to BMI?",
    "mirror_of": "the visible FAQ answer (same text)"
   },
   {
    "page": "/blog/bmi-and-health-risks/",
    "region": "jsonld",
-   "sentence": "Mechanisms include chronic inflammation, elevated circulating insulin and IGF-1, increased oestrogen production by adipose tissue, and impaired immune surveillance.",
+   "sentence": "Nearly 9 in 10 people with type 2 diabetes have overweight or obesity (NIDDK), and among cancers the increases are largest for endometrial and esophageal cancer (NCI).",
+   "number": "9",
+   "value": 9.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: What health conditions are most strongly linked to BMI?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "niddk-health-risks",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "Nearly 9 in 10 people with type 2 diabetes have overweight or obesity (NIDDK), and among cancers the increases are largest for endometrial and esophageal cancer (NCI).",
+   "number": "10",
+   "value": 10.0,
+   "class": "D",
+   "why": "count in prose",
+   "heading": "FAQPage JSON-LD: What health conditions are most strongly linked to BMI?",
+   "mirror_of": "the visible FAQ answer (same text)"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "Nearly 9 in 10 people with type 2 diabetes have overweight or obesity (NIDDK), and among cancers the increases are largest for endometrial and esophageal cancer (NCI).",
+   "number": "2",
+   "value": 2.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "FAQPage JSON-LD: What health conditions are most strongly linked to BMI?",
+   "mirror_of": "the visible FAQ answer (same text)"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "At the NFL Scouting Combine, 53.4% of prospects had a BMI of 30 or more, but only 8.9% had obesity by measured body fat (Provencher et al., 2018).",
+   "number": "53.4",
+   "value": 53.4,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQPage JSON-LD: Is BMI accurate for people with a lot of muscle?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "provencher-2018-nfl-combine",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "At the NFL Scouting Combine, 53.4% of prospects had a BMI of 30 or more, but only 8.9% had obesity by measured body fat (Provencher et al., 2018).",
+   "number": "30",
+   "value": 30.0,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "FAQPage JSON-LD: Is BMI accurate for people with a lot of muscle?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "30 (no category named)",
+    "computed": "Class 1 obesity / Class 2 obesity / Class 3 obesity in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "At the NFL Scouting Combine, 53.4% of prospects had a BMI of 30 or more, but only 8.9% had obesity by measured body fat (Provencher et al., 2018).",
+   "number": "8.9",
+   "value": 8.9,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQPage JSON-LD: Is BMI accurate for people with a lot of muscle?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "provencher-2018-nfl-combine",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "At the NFL Scouting Combine, 53.4% of prospects had a BMI of 30 or more, but only 8.9% had obesity by measured body fat (Provencher et al., 2018).",
+   "number": "2018",
+   "value": 2018.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: Is BMI accurate for people with a lot of muscle?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "provencher-2018-nfl-combine",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "The name for findings like Flegal 2013’s, where overweight carried a slightly lower risk of death than normal weight (HR 0.94) and grade 1 obesity about the same (0.95) (Flegal 2013).",
+   "number": "2013",
+   "value": 2013.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: What is the “obesity paradox”?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "flegal-2013-jama-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "The name for findings like Flegal 2013’s, where overweight carried a slightly lower risk of death than normal weight (HR 0.94) and grade 1 obesity about the same (0.95) (Flegal 2013).",
+   "number": "0.94",
+   "value": 0.94,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: What is the “obesity paradox”?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "flegal-2013-jama-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "The name for findings like Flegal 2013’s, where overweight carried a slightly lower risk of death than normal weight (HR 0.94) and grade 1 obesity about the same (0.95) (Flegal 2013).",
    "number": "1",
    "value": 1.0,
    "class": "D",
    "why": "name or label with a number",
-   "heading": "FAQPage JSON-LD: At what BMI does cancer risk increase?",
+   "heading": "FAQPage JSON-LD: What is the “obesity paradox”?",
    "mirror_of": "the visible FAQ answer (same text)"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "The name for findings like Flegal 2013’s, where overweight carried a slightly lower risk of death than normal weight (HR 0.94) and grade 1 obesity about the same (0.95) (Flegal 2013).",
+   "number": "0.95",
+   "value": 0.95,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: What is the “obesity paradox”?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "flegal-2013-jama-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "The name for findings like Flegal 2013’s, where overweight carried a slightly lower risk of death than normal weight (HR 0.94) and grade 1 obesity about the same (0.95) (Flegal 2013).",
+   "number": "2013",
+   "value": 2013.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: What is the “obesity paradox”?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "flegal-2013-jama-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "The Global BMI Mortality Collaboration limited its main analysis to never-smokers without chronic disease and left out the first 5 years of follow-up; there, the risk of death rose at every step above a BMI of 25, from 1.07 at 25.0 to 27.4 to 2.76 at 40.0 to 59.9 (GBMC, 2016).",
+   "number": "5",
+   "value": 5.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: What is the “obesity paradox”?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "The Global BMI Mortality Collaboration limited its main analysis to never-smokers without chronic disease and left out the first 5 years of follow-up; there, the risk of death rose at every step above a BMI of 25, from 1.07 at 25.0 to 27.4 to 2.76 at 40.0 to 59.9 (GBMC, 2016).",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: What is the “obesity paradox”?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "The Global BMI Mortality Collaboration limited its main analysis to never-smokers without chronic disease and left out the first 5 years of follow-up; there, the risk of death rose at every step above a BMI of 25, from 1.07 at 25.0 to 27.4 to 2.76 at 40.0 to 59.9 (GBMC, 2016).",
+   "number": "1.07",
+   "value": 1.07,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: What is the “obesity paradox”?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "The Global BMI Mortality Collaboration limited its main analysis to never-smokers without chronic disease and left out the first 5 years of follow-up; there, the risk of death rose at every step above a BMI of 25, from 1.07 at 25.0 to 27.4 to 2.76 at 40.0 to 59.9 (GBMC, 2016).",
+   "number": "25.0",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: What is the “obesity paradox”?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "The Global BMI Mortality Collaboration limited its main analysis to never-smokers without chronic disease and left out the first 5 years of follow-up; there, the risk of death rose at every step above a BMI of 25, from 1.07 at 25.0 to 27.4 to 2.76 at 40.0 to 59.9 (GBMC, 2016).",
+   "number": "27.4",
+   "value": 27.4,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: What is the “obesity paradox”?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "The Global BMI Mortality Collaboration limited its main analysis to never-smokers without chronic disease and left out the first 5 years of follow-up; there, the risk of death rose at every step above a BMI of 25, from 1.07 at 25.0 to 27.4 to 2.76 at 40.0 to 59.9 (GBMC, 2016).",
+   "number": "2.76",
+   "value": 2.76,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: What is the “obesity paradox”?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "The Global BMI Mortality Collaboration limited its main analysis to never-smokers without chronic disease and left out the first 5 years of follow-up; there, the risk of death rose at every step above a BMI of 25, from 1.07 at 25.0 to 27.4 to 2.76 at 40.0 to 59.9 (GBMC, 2016).",
+   "number": "40.0",
+   "value": 40.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: What is the “obesity paradox”?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "The Global BMI Mortality Collaboration limited its main analysis to never-smokers without chronic disease and left out the first 5 years of follow-up; there, the risk of death rose at every step above a BMI of 25, from 1.07 at 25.0 to 27.4 to 2.76 at 40.0 to 59.9 (GBMC, 2016).",
+   "number": "59.9",
+   "value": 59.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: What is the “obesity paradox”?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "jsonld",
+   "sentence": "The Global BMI Mortality Collaboration limited its main analysis to never-smokers without chronic disease and left out the first 5 years of follow-up; there, the risk of death rose at every step above a BMI of 25, from 1.07 at 25.0 to 27.4 to 2.76 at 40.0 to 59.9 (GBMC, 2016).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: What is the “obesity paradox”?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "meta",
+   "sentence": "The risk of death across the BMI range, from 239 studies, and what NIH and NCI say about diabetes, heart disease, stroke, 13 cancers, sleep apnea and more.",
+   "number": "239",
+   "value": 239.0,
+   "class": "C",
+   "why": "the page description: the GBMC's 239 studies (C) and NCI's 13 cancers, a count in prose (D) (CMB-051) (manual.json)",
+   "heading": "meta",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "region": "meta",
+   "sentence": "The risk of death across the BMI range, from 239 studies, and what NIH and NCI say about diabetes, heart disease, stroke, 13 cancers, sleep apnea and more.",
+   "number": "13",
+   "value": 13.0,
+   "class": "D",
+   "why": "the page description: the GBMC's 239 studies (C) and NCI's 13 cancers, a count in prose (D) (CMB-051) (manual.json)",
+   "heading": "meta"
   },
   {
    "page": "/blog/underweight-bmi-risks/",

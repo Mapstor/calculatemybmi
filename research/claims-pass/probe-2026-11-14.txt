@@ -1,34 +1,3 @@
- 30  /blog/bmi-and-health-risks/
-       <p> (associated with) Body Mass Index (BMI) is a screening tool for identifying potential health risks associated with weight.
-       <li> (cause) J-curve relationship: both very low and very high BMI carry elevated all-cause mortality; the WHO healthy range (18.5–24.9) is the standard reference for lowest observed risk in most adult populations.
-       <li> (associated with) Cancer link: excess body weight is associated with at least 13 cancer types identified by IARC.
-       <p> (cause) Cardiovascular disease (CVD) is the leading cause of death worldwide, and BMI is one of the most significant modifiable risk factors.
-       <p> (contributes to) Excess body weight contributes to cardiovascular disease through multiple mechanisms including increased blood pressure, elevated cholesterol levels, chronic inflammation, and insulin resistance.
-       <li> (promotes) Atherosclerosis acceleration: Excess adipose tissue promotes plaque buildup in arterial walls
-       <h3> (Causes) How Excess Weight Causes Diabetes
-       <h2> (Associated with) Cancer Risks Associated with BMI
-       <h3> (Promotes) How Obesity Promotes Cancer
-       <li> (promote) Chronic inflammation: Fat tissue, especially visceral fat, produces inflammatory cytokines that can damage DNA and promote cell proliferation
-       <li> (leads to) Elevated insulin and IGF-1: Obesity-related insulin resistance leads to higher circulating insulin and insulin-like growth factor-1, both of which stimulate cell growth
-       <li> (contributing to) Estrogen production: Adipose tissue converts androgens to estrogens, increasing exposure in postmenopausal women and contributing to hormone-sensitive cancers
-       <p> (associated with) OSA is strongly associated with elevated BMI.
-       <p> (causing) Fat deposits around the upper airway narrow the breathing passage, causing repeated episodes of breathing cessation during sleep.
-       <li> (Increased risk) Increased risk of motor vehicle accidents
-       <p> (associated with) Obesity is associated with a higher risk of asthma and worse asthma control in those already diagnosed.
-       <p> (linked to) Obesity is also linked to osteoarthritis in joints that bear no weight, such as the hands, which suggests that metabolic factors (inflammation, adipokines) contribute alongside mechanical stress.
-       <p> (associated with) Obesity is also associated with worse kidney-disease outcomes overall, including faster CKD progression, more treatment-resistant hypertension, and higher mortality among dialysis patients.
-       <p> (contribute to) Obesity can contribute to depression and anxiety, while mental health conditions can lead to behaviors that promote weight gain.
-       <p> (contribute to) Weight-related stigma, body image concerns, and social isolation contribute to these associations.
-       <h3> (Benefits) Benefits of modest weight loss
-       <p> (clinician) Whether any specific approach is right for you is a conversation with a qualified clinician, not something this page can decide.
-       <p> (associated with) Obesity is associated with higher rates of depression, and depression with weight gain over time; the effect is particularly pronounced in women and in those with severe obesity.
-       <p> (improves) Weight loss often improves mental-health symptoms, and addressing mental health typically supports weight management.
-       <p> (association) Type 2 diabetes has the strongest single association with elevated BMI: risk rises steeply across the overweight and obese ranges.
-       <p> (professional) It is not a substitute for professional medical advice, diagnosis, or treatment.
-       <p> (consult) Always consult with qualified healthcare providers for personalized health assessment and recommendations.
-       <p> (physician) If you have concerns about your weight or health, please seek guidance from a physician, registered dietitian, or other appropriate healthcare professional.
-       <p> (Evidence) Evidence-based strategies for reaching and maintaining a healthier weight.
-       <p> (associated with) Health concerns associated with being underweight and how to address them.
  17  /blog/bmi-and-metabolism/
        <p> (can help) Understanding how your metabolic rate interacts with BMI can help you make informed decisions about diet, exercise, and lifestyle.
        <li> (Boosting) Boosting Metabolism Naturally
@@ -207,4 +176,4 @@
        <li> (lead to) Muscle mass tends to fall with age, so the same BMI can mean more body fat; the American Diabetes Association notes that this may lead to obesity being missed in older adults.
   1  /kids-bmi-calculator/
        <p> (shown to) BMI is CDC’s formula (US units × 703, or kg/m²), shown to 0.1.
-183 hits on 26 of 40 pages
+153 hits on 25 of 40 pages
