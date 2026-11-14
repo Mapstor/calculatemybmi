@@ -309,7 +309,13 @@ with sync_playwright() as p:
        and metric(g, '% of 95th percentile')[0] == '126.8%' and g['kids'][:4] == ['kids-bmi-value', 'kids-bmi-category', 'kids-aap-class', 'kids-percentile-note'],
        f'AAP class 2 at 126.8%: {g["cat"]} / {g["aap"]} / {g["kids"]}')
     # the severe obesity sentence (CMB-031): CDC's boy is over 120% of his 95th, so the 120% sentence stays
-    PED = ' Talk with your pediatrician, who can look at the growth trend and the whole child before deciding on any next step.'
+    # CMB-046: the bare pediatrician lines are gone (no source said when); the note quotes CDC's calculator page instead
+    PED = ''
+    note = ('This uses the CDC BMI-for-age growth charts, with CDC’s 2022 extended charts above the 95th percentile. One reading '
+            'is a screening result, not a diagnosis. CDC: “Persons may consider seeking advice from their health care providers '
+            'about their BMI” (Child and Teen BMI Calculator).')
+    ok(note in re.sub(r'\s+', ' ', g['text']), f'CDC note under the result: {g["text"][:300]}')
+    ok(not re.search(r'pediatrician|\bdoctor|talk (?:to|with) your|growth trend|checkups', g['text']), 'a bare doctor line in the kids results')
     ok(g['guide'] == 'A BMI of 22.6 at 4 years 2 months is at or above 120% of the 95th percentile for boys, which CDC classes as severe obesity.' + PED,
        f'severe obesity sentence, CDC boy at 126.8%: {g["guide"]}')
     # a girl of 17 years 0 months at BMI 35.2 (150 cm, 79.2 kg): under 120% of her 95th (35.6), so only the BMI 35 rule decides
@@ -519,7 +525,8 @@ with sync_playwright() as p:
     ok(outside and outside <= REG_URLS, f'outside links not in the registry: {sorted(outside - REG_URLS)}')
     ok(outside == {'https://www.cdc.gov/growthcharts/extended-bmi-data-files.htm', 'https://www.cdc.gov/growthcharts/data/extended-bmi/bmi-age-2022.csv',
                    'https://www.cdc.gov/bmi/child-teen-calculator/bmi-categories.html', 'https://www.cdc.gov/growth-chart-training/hcp/using-bmi/calculating-bmi.html',
-                   'https://www.cdc.gov/bmi/about/index.html', 'https://www.cdc.gov/nchs/data/hestat/hestat112.htm'}, f'outside links {sorted(outside)}')
+                   'https://www.cdc.gov/bmi/about/index.html', 'https://www.cdc.gov/nchs/data/hestat/hestat112.htm',
+                   'https://www.cdc.gov/bmi/child-teen-calculator/index.html'}, f'outside links {sorted(outside)}')   # the last: the results' note (CMB-046)
     ok(all(pg.evaluate('h => [...document.querySelectorAll(`main a[href="${h}"]`)].every(a => a.target === "_blank" && a.rel === "noopener")', h_) for h_ in outside),
        'outside links open in a new tab')
     ok(pg.evaluate("document.querySelectorAll('main .related-cols').length") == 1, 'one related block')

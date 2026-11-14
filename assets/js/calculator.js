@@ -658,21 +658,20 @@ function displayKidsResults(type, bmi, category, years, months, sex, heightInche
   if (category.category === 'Healthy weight') {
     guidance = `A BMI of ${b} ${at} is in the <strong>healthy weight</strong> range for ${sexLabel} (the 5th to below the 85th percentile).`;
   } else if (category.category === 'Underweight') {
-    guidance = `A BMI of ${b} ${at} is <strong>below the 5th percentile</strong> for ${sexLabel}, which CDC classes as underweight. That can be normal for a child&rsquo;s growth pattern or a sign that needs attention; a pediatrician can tell which.`;
+    guidance = `A BMI of ${b} ${at} is <strong>below the 5th percentile</strong> for ${sexLabel}, which CDC classes as underweight.`;
   } else if (category.category === 'Overweight') {
-    guidance = `A BMI of ${b} ${at} is in the <strong>overweight</strong> range for ${sexLabel} (the 85th to below the 95th percentile). Children are still growing, so one reading says little on its own; a pediatrician can look at the growth trend.`;
+    guidance = `A BMI of ${b} ${at} is in the <strong>overweight</strong> range for ${sexLabel} (the 85th to below the 95th percentile).`;
   } else if (category.category === 'Severe obesity') {
     // Under 120% of the 95th percentile only CDC's BMI 35 rule makes it severe obesity, so the sentence names that rule;
     // same unrounded BMI and % of the 95th as categorizeChildBMI() (CMB-031).
     const by35 = bmi >= 35 && result && result.pctP95 < 120;
     guidance = (by35
       ? `A BMI of ${b} ${at} is <strong>35 or more</strong>, which CDC classes as severe obesity.`
-      : `A BMI of ${b} ${at} is at or above <strong>120% of the 95th percentile</strong> for ${sexLabel}, which CDC classes as severe obesity.`)
-      + ' Talk with your pediatrician, who can look at the growth trend and the whole child before deciding on any next step.';
+      : `A BMI of ${b} ${at} is at or above <strong>120% of the 95th percentile</strong> for ${sexLabel}, which CDC classes as severe obesity.`);
   } else {
-    guidance = `A BMI of ${b} ${at} is at or above the <strong>95th percentile</strong> for ${sexLabel}, which CDC classes as obesity. Talk with your pediatrician, who can look at the growth trend and the whole child before deciding on any next step.`;
+    guidance = `A BMI of ${b} ${at} is at or above the <strong>95th percentile</strong> for ${sexLabel}, which CDC classes as obesity.`;
   }
-  html += `<div class="er-section"><h2>What this means</h2><div class="er-summary"><p>${guidance}</p><p class="er-summary-note">This uses the CDC BMI-for-age growth charts, with CDC&rsquo;s 2022 extended charts above the 95th percentile. One reading is a screening result, not a diagnosis; pediatricians follow BMI-for-age across checkups.</p></div></div>`;
+  html += `<div class="er-section"><h2>What this means</h2><div class="er-summary"><p>${guidance}</p><p class="er-summary-note">This uses the CDC BMI-for-age growth charts, with CDC&rsquo;s 2022 extended charts above the 95th percentile. One reading is a screening result, not a diagnosis. CDC: &ldquo;Persons may consider seeking advice from their health care providers about their BMI&rdquo; (<a href="https://www.cdc.gov/bmi/child-teen-calculator/index.html" target="_blank" rel="noopener">Child and Teen BMI Calculator</a>).</p></div></div>`;
 
   // 2. Percentile categories
   const catRows = [['underweight', 'Underweight', 'Below the 5th percentile'], ['normal', 'Healthy weight', '5th to below the 85th'], ['overweight', 'Overweight', '85th to below the 95th'], ['obese', 'Obesity', '95th and above'], ['obese-severe', 'Severe obesity', '120% of the 95th or more, or BMI 35+']];
