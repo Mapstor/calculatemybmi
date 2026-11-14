@@ -3098,6 +3098,14 @@
    "sig": "call or text #, the Suicide and Crisis Lifeline, or chat at #lifeline.org; in a life-threatening emergency, call #",
    "classes": "D",
    "why": "the 988 Lifeline number, as NIMH gives it (registry nimh-eating-disorders, CMB-049)"
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "sig": "Pick two or three short-term goals at a time, such as water instead of sugary drinks, a #-minute evening walk or a vegetable with supper.",
+   "classes": "C",
+   "row": "cdc-losing-weight",
+   "exact": true,
+   "why": "CDC's short-term goal examples, step 3 of its Steps for Losing Weight (CMB-050)"
   }
  ]
 }

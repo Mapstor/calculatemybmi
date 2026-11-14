@@ -4,13 +4,13 @@
  "viewport": "390x844",
  "pages_audited": 24,
  "pages_skipped": [],
- "numbers": 4727,
+ "numbers": 4783,
  "totals": {
   "A": 47,
   "B": 1638,
-  "C": 2225,
-  "D": 612,
-  "X": 205,
+  "C": 2276,
+  "D": 624,
+  "X": 198,
   "U": 0
  },
  "mismatches": 0,
@@ -19,16 +19,16 @@
  "c_not_in_row_in_page_csv": 0,
  "c_not_in_row_also_in_other_row": 0,
  "c_status": {
-  "row": 1106,
-  "row-notes": 189,
+  "row": 1131,
+  "row-notes": 215,
   "not-in-row": 28,
   "row-dataset": 902
  },
  "checks_run": 1128,
  "check_errors": [],
  "unclassified": [],
- "manual_entries": 241,
- "manual_entries_used": 237,
+ "manual_entries": 242,
+ "manual_entries_used": 238,
  "worst10": [
   {
    "page": "/kids-bmi-calculator/",
@@ -3812,18 +3812,36 @@
   },
   {
    "page": "/blog/how-to-lower-bmi/",
-   "jsonld_mirrors": 4,
+   "jsonld_mirrors": 16,
    "mismatches": [],
    "c_no_row": [],
    "c_not_in_row": [],
-   "names_differ": [
-    "\"healthy BMI\" = calculator.js \"Healthy weight\""
-   ],
+   "names_differ": [],
    "d": [
+    {
+     "number": "four",
+     "why": "number word (count in prose)",
+     "sentence": "Below: how much weight one BMI point is at your height, what the official guidance says on each of those four, and CDC’s five steps for getting started."
+    },
+    {
+     "number": "five",
+     "why": "number word (count in prose)",
+     "sentence": "Below: how much weight one BMI point is at your height, what the official guidance says on each of those four, and CDC’s five steps for getting started."
+    },
     {
      "number": "half",
      "why": "number word (count in prose)",
      "sentence": "The 3,500 kcal rule overstates long-term loss: Hall and colleagues’ model gives about 1 pound of eventual weight change for every 10 kcal a day of change in intake, half of it in about a year (Hall 2011)"
+    },
+    {
+     "number": "Five",
+     "why": "number word (count in prose)",
+     "sentence": "CDC’s Five Steps"
+    },
+    {
+     "number": "four",
+     "why": "number word (count in prose)",
+     "sentence": "The ideal weight calculator shows what four published formulas give for your height."
     },
     {
      "number": "half",
@@ -3836,24 +3854,49 @@
      "sentence": "Their rule of thumb for an average overweight adult is about 1 pound of eventual weight change for every 10 kcal a day of change in intake, with half of it reached in about a year and 95% in about three years."
     },
     {
+     "number": "2",
+     "why": "name or label with a number",
+     "sentence": "Physical activity also helps improve sleep quality, it says, and reduce high blood pressure, the risk of heart disease, stroke, type 2 diabetes, several forms of cancer, osteoporosis and falls, arthritis pain, and symptoms of depression and anxiety (CDC)."
+    },
+    {
+     "number": "Five",
+     "why": "number word (count in prose)",
+     "sentence": "CDC’s Five Steps for Losing Weight"
+    },
+    {
+     "number": "five",
+     "why": "number word (count in prose)",
+     "sentence": "If you want to lose weight, CDC says making a specific plan can help, and it sets out five steps for getting started (CDC):"
+    },
+    {
+     "number": "two",
+     "why": "number word (count in prose)",
+     "sentence": "CDC’s advice is two or three short-term goals at a time, each specific and realistic, with a reward along the way (CDC):"
+    },
+    {
+     "number": "three",
+     "why": "number word (count in prose)",
+     "sentence": "CDC’s advice is two or three short-term goals at a time, each specific and realistic, with a reward along the way (CDC):"
+    },
+    {
+     "number": "three",
+     "why": "number word (count in prose)",
+     "sentence": "Alongside weight and BMI, NIH and CDC give three more things to watch:"
+    },
+    {
      "number": "half",
      "why": "number word (count in prose)",
-     "sentence": "Follow the plate method: Fill half your plate with vegetables, one quarter with lean protein, one quarter with whole grains"
+     "sentence": "In Hall and colleagues’ model, half of the eventual change from a new intake comes in about a year and 95% in about three years (Hall 2011)."
     },
     {
-     "number": "hundreds",
+     "number": "three",
      "why": "number word (count in prose)",
-     "sentence": "Sugar-sweetened beverages: Sodas, juice, sweetened coffee drinks add hundreds of liquid calories"
-    },
-    {
-     "number": "two",
-     "why": "number word (count in prose)",
-     "sentence": "Try: \"I will weigh myself every Monday for the next two months and walk after dinner on weekdays.\""
+     "sentence": "In Hall and colleagues’ model, half of the eventual change from a new intake comes in about a year and 95% in about three years (Hall 2011)."
     },
     {
      "number": "two",
      "why": "number word (count in prose)",
-     "sentence": "Your BMI is 30 or more, or 25 to 29.9 (or your waist is high) with two or more risk factors: the adults NIH’s 1998 guidelines say should try to lose weight (NHLBI, 1998)"
+     "sentence": "A BMI of 30 or more: NIH’s 1998 guidelines say these adults should try to lose weight, and so should adults at 25 to 29.9 (or with a high waist) who have two or more risk factors (NHLBI, 1998)"
     },
     {
      "number": "1",
@@ -3889,32 +3932,52 @@
      "number": "1",
      "why": "name or label with a number",
      "sentence": "40 (Class 3 obesity) | 34.9 (Class 1 obesity) | 32 lbs (14 kg)"
+    },
+    {
+     "number": "half",
+     "why": "number word (count in prose)",
+     "sentence": "Partly because a smaller body burns less: as weight falls, so does the energy the body uses, so the same intake brings slower loss, with half of the eventual change in about a year (Hall 2011)."
+    },
+    {
+     "number": "two",
+     "why": "number word (count in prose)",
+     "sentence": "Daily or weekly: weight-loss trials found no significant difference between the two (Madigan et al., 2015)."
+    },
+    {
+     "number": "five",
+     "why": "number word (count in prose)",
+     "sentence": "How much weight one BMI point is at your height, CDC’s 1 to 2 pounds a week and five steps, and what the federal eating and activity guidance says."
     }
    ],
    "checks_ok": 49,
    "page_errors": [],
    "score": 0,
    "totals": {
-    "C": 36,
-    "D": 14,
+    "D": 26,
+    "C": 87,
     "B": 68,
-    "X": 10
+    "X": 3
    },
    "c_rows": {
-    "row": 33,
-    "row-notes": 3
+    "row": 58,
+    "row-notes": 29
    },
    "c_row_domains": {
-    "cdc-losing-weight": 4,
-    "hall-2011-energy-imbalance": 14,
-    "nhlbi-1998-obesity-guidelines": 7,
+    "cdc-losing-weight": 13,
+    "hall-2011-energy-imbalance": 15,
+    "madigan-2015-self-weighing": 5,
+    "nhlbi-1998-obesity-guidelines": 15,
+    "cdc-rethink-your-drink": 3,
     "medlineplus-alcohol-calories": 1,
-    "odphp-physical-activity-guidelines": 3,
+    "odphp-physical-activity-guidelines": 5,
+    "cdc-physical-activity-weight": 18,
     "hollis-2008-food-records": 4,
-    "cappuccio-2008-sleep-obesity": 3
+    "cappuccio-2008-sleep-obesity": 3,
+    "cdc-adult-bmi-categories": 1,
+    "orsama-2014-weight-rhythms": 4
    },
    "excluded": {
-    "list numbering (numbered badge)": 10
+    "list numbering (numbered badge)": 3
    }
   },
   {
@@ -74749,6 +74812,26 @@
   {
    "page": "/blog/how-to-lower-bmi/",
    "region": "main",
+   "sentence": "Below: how much weight one BMI point is at your height, what the official guidance says on each of those four, and CDC’s five steps for getting started.",
+   "number": "four",
+   "value": 4,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "How to Lower BMI: Evidence-Based Strategies for Healthy Weight Loss"
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "Below: how much weight one BMI point is at your height, what the official guidance says on each of those four, and CDC’s five steps for getting started.",
+   "number": "five",
+   "value": 5,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "How to Lower BMI: Evidence-Based Strategies for Healthy Weight Loss"
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
    "sentence": "Lose weight gradually: CDC notes that people who lose about 1 to 2 pounds a week are more likely to keep the weight off (CDC)",
    "number": "1",
    "value": 1.0,
@@ -74870,7 +74953,61 @@
   {
    "page": "/blog/how-to-lower-bmi/",
    "region": "main",
-   "sentence": "Target BMI range: 18.5-24.9 for most adults (see our healthy BMI guide)",
+   "sentence": "Even modest loss helps: if you are not at a healthy weight, CDC says even modest weight loss can help improve blood pressure, cholesterol and blood sugar levels; 5% of 200 pounds is 10 pounds (CDC)",
+   "number": "5",
+   "value": 5.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "How to Lower BMI: Evidence-Based Strategies for Healthy Weight Loss",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-losing-weight",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "Even modest loss helps: if you are not at a healthy weight, CDC says even modest weight loss can help improve blood pressure, cholesterol and blood sugar levels; 5% of 200 pounds is 10 pounds (CDC)",
+   "number": "200",
+   "value": 200.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "How to Lower BMI: Evidence-Based Strategies for Healthy Weight Loss",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-losing-weight",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "Even modest loss helps: if you are not at a healthy weight, CDC says even modest weight loss can help improve blood pressure, cholesterol and blood sugar levels; 5% of 200 pounds is 10 pounds (CDC)",
+   "number": "10",
+   "value": 10.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "How to Lower BMI: Evidence-Based Strategies for Healthy Weight Loss",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-losing-weight",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "Healthy weight: a BMI of 18.5 to 24.9 for adults (CDC; see our healthy BMI guide)",
    "number": "18.5",
    "value": 18.5,
    "class": "B",
@@ -74879,26 +75016,40 @@
    "check": {
     "status": "ok",
     "kind": "category",
-    "page": "18.5-24.9 (healthy BMI)",
+    "page": "18.5 to 24.9 (Healthy weight)",
     "computed": "Healthy weight in calculator.js",
-    "label": "category cut-off (getBMICategory)",
-    "name_differs": "\"healthy BMI\" = calculator.js \"Healthy weight\""
+    "label": "category cut-off (getBMICategory)"
    },
    "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
     "http://localhost:8765/blog/healthy-bmi-range/"
    ]
   },
   {
    "page": "/blog/how-to-lower-bmi/",
    "region": "main",
-   "sentence": "Target BMI range: 18.5-24.9 for most adults (see our healthy BMI guide)",
+   "sentence": "Healthy weight: a BMI of 18.5 to 24.9 for adults (CDC; see our healthy BMI guide)",
    "number": "24.9",
    "value": 24.9,
    "class": "B",
    "why": "category cut-off (other bound)",
    "heading": "How to Lower BMI: Evidence-Based Strategies for Healthy Weight Loss",
    "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
     "http://localhost:8765/blog/healthy-bmi-range/"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "CDC’s Five Steps",
+   "number": "Five",
+   "value": 5,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "How to Lower BMI: Evidence-Based Strategies for Healthy Weight Loss",
+   "links": [
+    "http://localhost:8765/blog/how-to-lower-bmi/#behavior-modification"
    ]
   },
   {
@@ -74922,6 +75073,19 @@
   {
    "page": "/blog/how-to-lower-bmi/",
    "region": "main",
+   "sentence": "The ideal weight calculator shows what four published formulas give for your height.",
+   "number": "four",
+   "value": 4,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "How Much Weight Do You Need to Lose?",
+   "links": [
+    "http://localhost:8765/ideal-weight/"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
    "sentence": "The 3,500 kcal rule — and why it overstates long-term loss",
    "number": "3,500",
    "value": 3500.0,
@@ -74931,7 +75095,7 @@
    "row": {
     "status": "row",
     "domain": "hall-2011-energy-imbalance",
-    "how": "name"
+    "how": "pages_served"
    }
   },
   {
@@ -75015,7 +75179,7 @@
    "heading": "The 3,500 kcal rule — and why it overstates long-term loss",
    "row": {
     "status": "row",
-    "domain": "hall-2011-energy-imbalance",
+    "domain": "madigan-2015-self-weighing",
     "how": "pages_served"
    }
   },
@@ -75055,7 +75219,7 @@
    "heading": "The 3,500 kcal rule — and why it overstates long-term loss",
    "row": {
     "status": "row",
-    "domain": "hall-2011-energy-imbalance",
+    "domain": "madigan-2015-self-weighing",
     "how": "pages_served"
    }
   },
@@ -75072,72 +75236,66 @@
   {
    "page": "/blog/how-to-lower-bmi/",
    "region": "main",
-   "sentence": "Follow the plate method: Fill half your plate with vegetables, one quarter with lean protein, one quarter with whole grains",
-   "number": "half",
-   "value": 0.5,
-   "class": "D",
-   "why": "number word (count in prose)",
-   "heading": "Portion Control Strategies"
+   "sentence": "Drinks: water instead of sugary drinks, the leading source of added sugars in the American diet; a 12-ounce regular soda has about 155 calories and 10 teaspoons of sugar (CDC)",
+   "number": "12",
+   "value": 12.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Swaps CDC Suggests",
+   "row": {
+    "status": "row",
+    "domain": "cdc-rethink-your-drink",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/rethink-your-drink/index.html"
+   ]
   },
   {
    "page": "/blog/how-to-lower-bmi/",
    "region": "main",
-   "sentence": "1",
-   "number": "1",
-   "value": 1.0,
-   "class": "X",
-   "why": "list numbering (numbered badge)",
-   "heading": "Foods to Emphasize"
+   "sentence": "Drinks: water instead of sugary drinks, the leading source of added sugars in the American diet; a 12-ounce regular soda has about 155 calories and 10 teaspoons of sugar (CDC)",
+   "number": "155",
+   "value": 155.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Swaps CDC Suggests",
+   "row": {
+    "status": "row",
+    "domain": "cdc-rethink-your-drink",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/rethink-your-drink/index.html"
+   ]
   },
   {
    "page": "/blog/how-to-lower-bmi/",
    "region": "main",
-   "sentence": "2",
-   "number": "2",
-   "value": 2.0,
-   "class": "X",
-   "why": "list numbering (numbered badge)",
-   "heading": "Non-Starchy Vegetables"
+   "sentence": "Drinks: water instead of sugary drinks, the leading source of added sugars in the American diet; a 12-ounce regular soda has about 155 calories and 10 teaspoons of sugar (CDC)",
+   "number": "10",
+   "value": 10.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Swaps CDC Suggests",
+   "row": {
+    "status": "row",
+    "domain": "cdc-rethink-your-drink",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/rethink-your-drink/index.html"
+   ]
   },
   {
    "page": "/blog/how-to-lower-bmi/",
    "region": "main",
-   "sentence": "3",
-   "number": "3",
-   "value": 3.0,
-   "class": "X",
-   "why": "list numbering (numbered badge)",
-   "heading": "Lean Proteins"
-  },
-  {
-   "page": "/blog/how-to-lower-bmi/",
-   "region": "main",
-   "sentence": "4",
-   "number": "4",
-   "value": 4.0,
-   "class": "X",
-   "why": "list numbering (numbered badge)",
-   "heading": "Whole Grains"
-  },
-  {
-   "page": "/blog/how-to-lower-bmi/",
-   "region": "main",
-   "sentence": "Sugar-sweetened beverages: Sodas, juice, sweetened coffee drinks add hundreds of liquid calories",
-   "number": "hundreds",
-   "value": 100,
-   "class": "D",
-   "why": "number word (count in prose)",
-   "heading": "Foods to Limit"
-  },
-  {
-   "page": "/blog/how-to-lower-bmi/",
-   "region": "main",
-   "sentence": "Alcohol: about 7 calories per gram (MedlinePlus)",
+   "sentence": "Alcohol: it counts too, at about 7 calories per gram (MedlinePlus)",
    "number": "7",
    "value": 7.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Foods to Limit",
+   "heading": "Swaps CDC Suggests",
    "row": {
     "status": "row",
     "domain": "medlineplus-alcohol-calories",
@@ -75204,12 +75362,117 @@
   {
    "page": "/blog/how-to-lower-bmi/",
    "region": "main",
+   "sentence": "Calories Used in 30 Minutes",
+   "number": "30",
+   "value": 30.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "How Much Activity the Guidelines Call For",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "pages_served"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "The figures are for a 154-pound (70 kg) person; people who weigh more use more, and people who weigh less use fewer (CDC).",
+   "number": "154",
+   "value": 154.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Calories Used in 30 Minutes",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/physical-activity/index.html"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "The figures are for a 154-pound (70 kg) person; people who weigh more use more, and people who weigh less use fewer (CDC).",
+   "number": "70",
+   "value": 70.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Calories Used in 30 Minutes",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/physical-activity/index.html"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "Source: CDC, Physical Activity and Your Weight and Health, adapted from the Dietary Guidelines for Americans 2005.",
+   "number": "2005",
+   "value": 2005.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Calories Used in 30 Minutes",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/physical-activity/index.html"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "Physical activity also helps improve sleep quality, it says, and reduce high blood pressure, the risk of heart disease, stroke, type 2 diabetes, several forms of cancer, osteoporosis and falls, arthritis pain, and symptoms of depression and anxiety (CDC).",
+   "number": "2",
+   "value": 2.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "What Regular Activity Does",
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/physical-activity/index.html"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "CDC’s Five Steps for Losing Weight",
+   "number": "Five",
+   "value": 5,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "What Regular Activity Does"
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "If you want to lose weight, CDC says making a specific plan can help, and it sets out five steps for getting started (CDC):",
+   "number": "five",
+   "value": 5,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "CDC’s Five Steps for Losing Weight",
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
    "sentence": "In a 20-week group program for 1,685 adults, who lost 5.8 kg on average, the food records people kept and their physical activity accounted for most of the differences in how much they lost (Hollis et al., 2008).",
    "number": "20",
    "value": 20.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Keep a Food Journal",
+   "heading": "Track Where You Are",
    "row": {
     "status": "row",
     "domain": "hollis-2008-food-records",
@@ -75227,7 +75490,7 @@
    "value": 1685.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Keep a Food Journal",
+   "heading": "Track Where You Are",
    "row": {
     "status": "row",
     "domain": "hollis-2008-food-records",
@@ -75245,7 +75508,7 @@
    "value": 5.8,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Keep a Food Journal",
+   "heading": "Track Where You Are",
    "row": {
     "status": "row",
     "domain": "hollis-2008-food-records",
@@ -75263,7 +75526,7 @@
    "value": 2008.0,
    "class": "C",
    "why": "year",
-   "heading": "Keep a Food Journal",
+   "heading": "Track Where You Are",
    "row": {
     "status": "row",
     "domain": "hollis-2008-food-records",
@@ -75272,6 +75535,51 @@
    "links": [
     "https://doi.org/10.1016/j.amepre.2008.04.013"
    ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "Pick two or three short-term goals at a time, such as water instead of sugary drinks, a 15-minute evening walk or a vegetable with supper.",
+   "number": "two",
+   "value": 2,
+   "class": "C",
+   "why": "CDC's short-term goal examples, step 3 of its Steps for Losing Weight (CMB-050) (manual.json)",
+   "heading": "Set Specific Goals",
+   "row": {
+    "status": "row",
+    "domain": "cdc-losing-weight",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "Pick two or three short-term goals at a time, such as water instead of sugary drinks, a 15-minute evening walk or a vegetable with supper.",
+   "number": "three",
+   "value": 3,
+   "class": "C",
+   "why": "CDC's short-term goal examples, step 3 of its Steps for Losing Weight (CMB-050) (manual.json)",
+   "heading": "Set Specific Goals",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-losing-weight",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "Pick two or three short-term goals at a time, such as water instead of sugary drinks, a 15-minute evening walk or a vegetable with supper.",
+   "number": "15",
+   "value": 15.0,
+   "class": "C",
+   "why": "CDC's short-term goal examples, step 3 of its Steps for Losing Weight (CMB-050) (manual.json)",
+   "heading": "Set Specific Goals",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-losing-weight",
+    "how": "manual.json"
+   }
   },
   {
    "page": "/blog/how-to-lower-bmi/",
@@ -75327,6 +75635,60 @@
   {
    "page": "/blog/how-to-lower-bmi/",
    "region": "main",
+   "sentence": "If you’re tired because you’re not getting enough sleep, CDC suggests regular bed and wake times, no caffeine in the afternoon and evening, and turning off electronic devices at least 30 minutes before bedtime (CDC).",
+   "number": "30",
+   "value": 30.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "The Sleep-Weight Connection",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-losing-weight",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "CDC warns that unrealistic goals, such as losing 20 pounds in 2 weeks, can leave you feeling defeated and frustrated (CDC).",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Setting Realistic Goals",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-losing-weight",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "CDC warns that unrealistic goals, such as losing 20 pounds in 2 weeks, can leave you feeling defeated and frustrated (CDC).",
+   "number": "2",
+   "value": 2.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Setting Realistic Goals",
+   "row": {
+    "status": "row",
+    "domain": "cdc-losing-weight",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
    "sentence": "CDC notes that people who lose about 1 to 2 pounds a week are more likely to keep the weight off (CDC).",
    "number": "1",
    "value": 1.0,
@@ -75363,12 +75725,68 @@
   {
    "page": "/blog/how-to-lower-bmi/",
    "region": "main",
-   "sentence": "Try: \"I will weigh myself every Monday for the next two months and walk after dinner on weekdays.\"",
+   "sentence": "CDC’s advice is two or three short-term goals at a time, each specific and realistic, with a reward along the way (CDC):",
    "number": "two",
    "value": 2,
    "class": "D",
    "why": "number word (count in prose)",
-   "heading": "SMART Goal Setting"
+   "heading": "What Makes a Goal Specific",
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "CDC’s advice is two or three short-term goals at a time, each specific and realistic, with a reward along the way (CDC):",
+   "number": "three",
+   "value": 3,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "What Makes a Goal Specific",
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "Specific, and potentially more realistic: “I will walk 15 minutes, 3 days a week for the first week.”",
+   "number": "15",
+   "value": 15.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "What Makes a Goal Specific",
+   "row": {
+    "status": "row",
+    "domain": "odphp-physical-activity-guidelines",
+    "how": "pages_served"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "Specific, and potentially more realistic: “I will walk 15 minutes, 3 days a week for the first week.”",
+   "number": "3",
+   "value": 3.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "What Makes a Goal Specific",
+   "row": {
+    "status": "row",
+    "domain": "cdc-adult-bmi-categories",
+    "how": "pages_served"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "Alongside weight and BMI, NIH and CDC give three more things to watch:",
+   "number": "three",
+   "value": 3,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Tracking Progress Beyond the Scale"
   },
   {
    "page": "/blog/how-to-lower-bmi/",
@@ -75378,134 +75796,17 @@
    "value": 1.0,
    "class": "X",
    "why": "list numbering (numbered badge)",
-   "heading": "Metrics to Track"
+   "heading": "Tracking Progress Beyond the Scale"
   },
   {
    "page": "/blog/how-to-lower-bmi/",
    "region": "main",
-   "sentence": "2",
-   "number": "2",
-   "value": 2.0,
-   "class": "X",
-   "why": "list numbering (numbered badge)",
-   "heading": "Body Measurements"
-  },
-  {
-   "page": "/blog/how-to-lower-bmi/",
-   "region": "main",
-   "sentence": "3",
-   "number": "3",
-   "value": 3.0,
-   "class": "X",
-   "why": "list numbering (numbered badge)",
-   "heading": "How Clothes Fit"
-  },
-  {
-   "page": "/blog/how-to-lower-bmi/",
-   "region": "main",
-   "sentence": "4",
-   "number": "4",
-   "value": 4.0,
-   "class": "X",
-   "why": "list numbering (numbered badge)",
-   "heading": "Energy Levels"
-  },
-  {
-   "page": "/blog/how-to-lower-bmi/",
-   "region": "main",
-   "sentence": "5",
-   "number": "5",
-   "value": 5.0,
-   "class": "X",
-   "why": "list numbering (numbered badge)",
-   "heading": "Fitness Performance"
-  },
-  {
-   "page": "/blog/how-to-lower-bmi/",
-   "region": "main",
-   "sentence": "6",
-   "number": "6",
-   "value": 6.0,
-   "class": "X",
-   "why": "list numbering (numbered badge)",
-   "heading": "Sleep Quality"
-  },
-  {
-   "page": "/blog/how-to-lower-bmi/",
-   "region": "main",
-   "sentence": "Your BMI is 30 or more, or 25 to 29.9 (or your waist is high) with two or more risk factors: the adults NIH’s 1998 guidelines say should try to lose weight (NHLBI, 1998)",
-   "number": "30",
-   "value": 30.0,
-   "class": "C",
-   "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Consult a Healthcare Provider If:",
-   "row": {
-    "status": "row-notes",
-    "domain": "nhlbi-1998-obesity-guidelines",
-    "how": "link"
-   },
-   "links": [
-    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
-   ]
-  },
-  {
-   "page": "/blog/how-to-lower-bmi/",
-   "region": "main",
-   "sentence": "Your BMI is 30 or more, or 25 to 29.9 (or your waist is high) with two or more risk factors: the adults NIH’s 1998 guidelines say should try to lose weight (NHLBI, 1998)",
-   "number": "25",
-   "value": 25.0,
-   "class": "C",
-   "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Consult a Healthcare Provider If:",
-   "row": {
-    "status": "row-notes",
-    "domain": "nhlbi-1998-obesity-guidelines",
-    "how": "link"
-   },
-   "links": [
-    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
-   ]
-  },
-  {
-   "page": "/blog/how-to-lower-bmi/",
-   "region": "main",
-   "sentence": "Your BMI is 30 or more, or 25 to 29.9 (or your waist is high) with two or more risk factors: the adults NIH’s 1998 guidelines say should try to lose weight (NHLBI, 1998)",
-   "number": "29.9",
-   "value": 29.9,
-   "class": "C",
-   "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Consult a Healthcare Provider If:",
-   "row": {
-    "status": "row-notes",
-    "domain": "nhlbi-1998-obesity-guidelines",
-    "how": "link"
-   },
-   "links": [
-    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
-   ]
-  },
-  {
-   "page": "/blog/how-to-lower-bmi/",
-   "region": "main",
-   "sentence": "Your BMI is 30 or more, or 25 to 29.9 (or your waist is high) with two or more risk factors: the adults NIH’s 1998 guidelines say should try to lose weight (NHLBI, 1998)",
-   "number": "two",
-   "value": 2,
-   "class": "D",
-   "why": "number word (count in prose)",
-   "heading": "Consult a Healthcare Provider If:",
-   "links": [
-    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
-   ]
-  },
-  {
-   "page": "/blog/how-to-lower-bmi/",
-   "region": "main",
-   "sentence": "Your BMI is 30 or more, or 25 to 29.9 (or your waist is high) with two or more risk factors: the adults NIH’s 1998 guidelines say should try to lose weight (NHLBI, 1998)",
+   "sentence": "NIH’s 1998 guidelines mark higher risk above 40 in (102 cm) for men and 35 in (88 cm) for women, used with BMI (NHLBI, 1998).",
    "number": "1998",
    "value": 1998.0,
    "class": "C",
    "why": "year",
-   "heading": "Consult a Healthcare Provider If:",
+   "heading": "Waist Size",
    "row": {
     "status": "row",
     "domain": "nhlbi-1998-obesity-guidelines",
@@ -75518,12 +75819,323 @@
   {
    "page": "/blog/how-to-lower-bmi/",
    "region": "main",
-   "sentence": "Your BMI is 30 or more, or 25 to 29.9 (or your waist is high) with two or more risk factors: the adults NIH’s 1998 guidelines say should try to lose weight (NHLBI, 1998)",
+   "sentence": "NIH’s 1998 guidelines mark higher risk above 40 in (102 cm) for men and 35 in (88 cm) for women, used with BMI (NHLBI, 1998).",
+   "number": "40",
+   "value": 40.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Waist Size",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "NIH’s 1998 guidelines mark higher risk above 40 in (102 cm) for men and 35 in (88 cm) for women, used with BMI (NHLBI, 1998).",
+   "number": "102",
+   "value": 102.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Waist Size",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "NIH’s 1998 guidelines mark higher risk above 40 in (102 cm) for men and 35 in (88 cm) for women, used with BMI (NHLBI, 1998).",
+   "number": "35",
+   "value": 35.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Waist Size",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "NIH’s 1998 guidelines mark higher risk above 40 in (102 cm) for men and 35 in (88 cm) for women, used with BMI (NHLBI, 1998).",
+   "number": "88",
+   "value": 88.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Waist Size",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "NIH’s 1998 guidelines mark higher risk above 40 in (102 cm) for men and 35 in (88 cm) for women, used with BMI (NHLBI, 1998).",
    "number": "1998",
    "value": 1998.0,
    "class": "C",
    "why": "year",
-   "heading": "Consult a Healthcare Provider If:",
+   "heading": "Waist Size",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "2",
+   "number": "2",
+   "value": 2.0,
+   "class": "X",
+   "why": "list numbering (numbered badge)",
+   "heading": "Waist Size"
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "3",
+   "number": "3",
+   "value": 3.0,
+   "class": "X",
+   "why": "list numbering (numbered badge)",
+   "heading": "Health Markers"
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "In Hall and colleagues’ model, half of the eventual change from a new intake comes in about a year and 95% in about three years (Hall 2011).",
+   "number": "half",
+   "value": 0.5,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "When Weight Loss Plateaus",
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/21872751/"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "In Hall and colleagues’ model, half of the eventual change from a new intake comes in about a year and 95% in about three years (Hall 2011).",
+   "number": "95",
+   "value": 95.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "When Weight Loss Plateaus",
+   "row": {
+    "status": "row",
+    "domain": "hall-2011-energy-imbalance",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/21872751/"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "In Hall and colleagues’ model, half of the eventual change from a new intake comes in about a year and 95% in about three years (Hall 2011).",
+   "number": "three",
+   "value": 3,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "When Weight Loss Plateaus",
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/21872751/"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "In Hall and colleagues’ model, half of the eventual change from a new intake comes in about a year and 95% in about three years (Hall 2011).",
+   "number": "2011",
+   "value": 2011.0,
+   "class": "C",
+   "why": "year",
+   "heading": "When Weight Loss Plateaus",
+   "row": {
+    "status": "row",
+    "domain": "hall-2011-energy-imbalance",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/21872751/"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "Lower energy needs: a smaller body burns less, so the deficit you started with shrinks (Hall 2011)",
+   "number": "2011",
+   "value": 2011.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Why Plateaus Happen",
+   "row": {
+    "status": "row",
+    "domain": "hall-2011-energy-imbalance",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/21872751/"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "Weekly swings: in 80 adults weighed daily, weight ran highest on Sunday and Monday and fell through the week; the researchers advise reading weekend-to-weekday swings as normal, not as weight gain (Orsama et al., 2014)",
+   "number": "80",
+   "value": 80.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Why Plateaus Happen",
+   "row": {
+    "status": "row",
+    "domain": "orsama-2014-weight-rhythms",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5644907/"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "Weekly swings: in 80 adults weighed daily, weight ran highest on Sunday and Monday and fell through the week; the researchers advise reading weekend-to-weekday swings as normal, not as weight gain (Orsama et al., 2014)",
+   "number": "2014",
+   "value": 2014.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Why Plateaus Happen",
+   "row": {
+    "status": "row",
+    "domain": "orsama-2014-weight-rhythms",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5644907/"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "A BMI of 30 or more: NIH’s 1998 guidelines say these adults should try to lose weight, and so should adults at 25 to 29.9 (or with a high waist) who have two or more risk factors (NHLBI, 1998)",
+   "number": "30",
+   "value": 30.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "When to Seek Medical Help",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "A BMI of 30 or more: NIH’s 1998 guidelines say these adults should try to lose weight, and so should adults at 25 to 29.9 (or with a high waist) who have two or more risk factors (NHLBI, 1998)",
+   "number": "1998",
+   "value": 1998.0,
+   "class": "C",
+   "why": "year",
+   "heading": "When to Seek Medical Help",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "A BMI of 30 or more: NIH’s 1998 guidelines say these adults should try to lose weight, and so should adults at 25 to 29.9 (or with a high waist) who have two or more risk factors (NHLBI, 1998)",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "When to Seek Medical Help",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "A BMI of 30 or more: NIH’s 1998 guidelines say these adults should try to lose weight, and so should adults at 25 to 29.9 (or with a high waist) who have two or more risk factors (NHLBI, 1998)",
+   "number": "29.9",
+   "value": 29.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "When to Seek Medical Help",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "A BMI of 30 or more: NIH’s 1998 guidelines say these adults should try to lose weight, and so should adults at 25 to 29.9 (or with a high waist) who have two or more risk factors (NHLBI, 1998)",
+   "number": "two",
+   "value": 2,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "When to Seek Medical Help",
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "main",
+   "sentence": "A BMI of 30 or more: NIH’s 1998 guidelines say these adults should try to lose weight, and so should adults at 25 to 29.9 (or with a high waist) who have two or more risk factors (NHLBI, 1998)",
+   "number": "1998",
+   "value": 1998.0,
+   "class": "C",
+   "why": "year",
+   "heading": "When to Seek Medical Help",
    "row": {
     "status": "row",
     "domain": "nhlbi-1998-obesity-guidelines",
@@ -76278,6 +76890,156 @@
   {
    "page": "/blog/how-to-lower-bmi/",
    "region": "table",
+   "sentence": "Walking (3.5 mph) | Moderate | 140",
+   "number": "3.5",
+   "value": 3.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Calories Used in 30 Minutes",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "table",
+   "sentence": "Walking (3.5 mph) | Moderate | 140",
+   "number": "140",
+   "value": 140.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Calories Used in 30 Minutes",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "table",
+   "sentence": "Bicycling (under 10 mph) | Moderate | 145",
+   "number": "10",
+   "value": 10.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Calories Used in 30 Minutes",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "table",
+   "sentence": "Bicycling (under 10 mph) | Moderate | 145",
+   "number": "145",
+   "value": 145.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Calories Used in 30 Minutes",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "table",
+   "sentence": "Weight lifting (general light workout) | Moderate | 110",
+   "number": "110",
+   "value": 110.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Calories Used in 30 Minutes",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "table",
+   "sentence": "Walking (4.5 mph) | Vigorous | 230",
+   "number": "4.5",
+   "value": 4.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Calories Used in 30 Minutes",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "table",
+   "sentence": "Walking (4.5 mph) | Vigorous | 230",
+   "number": "230",
+   "value": 230.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Calories Used in 30 Minutes",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "table",
+   "sentence": "Swimming (slow freestyle laps) | Vigorous | 255",
+   "number": "255",
+   "value": 255.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Calories Used in 30 Minutes",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "table",
+   "sentence": "Running or jogging (5 mph) | Vigorous | 295",
+   "number": "5",
+   "value": 5.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Calories Used in 30 Minutes",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "table",
+   "sentence": "Running or jogging (5 mph) | Vigorous | 295",
+   "number": "295",
+   "value": 295.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Calories Used in 30 Minutes",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "table",
    "sentence": "Starting BMI | Target BMI | Weight to Lose (5'6\" person)",
    "number": "5",
    "value": 5.0,
@@ -76626,7 +77388,7 @@
    "heading": "FAQ: How quickly can I lower my BMI safely?",
    "row": {
     "status": "row",
-    "domain": "hall-2011-energy-imbalance",
+    "domain": "madigan-2015-self-weighing",
     "how": "pages_served"
    }
   },
@@ -76648,7 +77410,7 @@
   {
    "page": "/blog/how-to-lower-bmi/",
    "region": "faq-a",
-   "sentence": "The traditional 3,500 kcal per pound of fat rule is a useful short-term approximation but overestimates long-term loss: dynamic-energy-balance models (Hall 2011, implemented in the NIH Body Weight Planner) show that as body mass declines, so does resting energy expenditure, and the same intake produces less loss over months.",
+   "sentence": "The traditional rule of 3,500 kcal per pound of fat overstates long-term loss: as weight falls, so does the energy the body burns, so the same intake brings less loss over the months (Hall 2011).",
    "number": "3,500",
    "value": 3500.0,
    "class": "C",
@@ -76666,7 +77428,7 @@
   {
    "page": "/blog/how-to-lower-bmi/",
    "region": "faq-a",
-   "sentence": "The traditional 3,500 kcal per pound of fat rule is a useful short-term approximation but overestimates long-term loss: dynamic-energy-balance models (Hall 2011, implemented in the NIH Body Weight Planner) show that as body mass declines, so does resting energy expenditure, and the same intake produces less loss over months.",
+   "sentence": "The traditional rule of 3,500 kcal per pound of fat overstates long-term loss: as weight falls, so does the energy the body burns, so the same intake brings less loss over the months (Hall 2011).",
    "number": "2011",
    "value": 2011.0,
    "class": "C",
@@ -76683,6 +77445,212 @@
   },
   {
    "page": "/blog/how-to-lower-bmi/",
+   "region": "faq-a",
+   "sentence": "Partly because a smaller body burns less: as weight falls, so does the energy the body uses, so the same intake brings slower loss, with half of the eventual change in about a year (Hall 2011).",
+   "number": "half",
+   "value": 0.5,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "FAQ: Why has my weight loss stalled even though I'm still dieting?",
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/21872751/"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "faq-a",
+   "sentence": "Partly because a smaller body burns less: as weight falls, so does the energy the body uses, so the same intake brings slower loss, with half of the eventual change in about a year (Hall 2011).",
+   "number": "2011",
+   "value": 2011.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: Why has my weight loss stalled even though I'm still dieting?",
+   "row": {
+    "status": "row",
+    "domain": "hall-2011-energy-imbalance",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/21872751/"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "faq-a",
+   "sentence": "Weight also swings through the week, highest on Sunday and Monday (Orsama et al., 2014).",
+   "number": "2014",
+   "value": 2014.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: Why has my weight loss stalled even though I'm still dieting?",
+   "row": {
+    "status": "row",
+    "domain": "orsama-2014-weight-rhythms",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5644907/"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "faq-a",
+   "sentence": "It uses calories, so it adds to a deficit: in CDC’s table, 30 minutes of general light weight lifting uses about 110 calories for a 154-pound person, against 140 for walking at 3.5 mph (CDC).",
+   "number": "30",
+   "value": 30.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Can strength training help lower BMI?",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/physical-activity/index.html"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "faq-a",
+   "sentence": "It uses calories, so it adds to a deficit: in CDC’s table, 30 minutes of general light weight lifting uses about 110 calories for a 154-pound person, against 140 for walking at 3.5 mph (CDC).",
+   "number": "110",
+   "value": 110.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Can strength training help lower BMI?",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/physical-activity/index.html"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "faq-a",
+   "sentence": "It uses calories, so it adds to a deficit: in CDC’s table, 30 minutes of general light weight lifting uses about 110 calories for a 154-pound person, against 140 for walking at 3.5 mph (CDC).",
+   "number": "154",
+   "value": 154.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Can strength training help lower BMI?",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/physical-activity/index.html"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "faq-a",
+   "sentence": "It uses calories, so it adds to a deficit: in CDC’s table, 30 minutes of general light weight lifting uses about 110 calories for a 154-pound person, against 140 for walking at 3.5 mph (CDC).",
+   "number": "140",
+   "value": 140.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Can strength training help lower BMI?",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/physical-activity/index.html"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "faq-a",
+   "sentence": "It uses calories, so it adds to a deficit: in CDC’s table, 30 minutes of general light weight lifting uses about 110 calories for a 154-pound person, against 140 for walking at 3.5 mph (CDC).",
+   "number": "3.5",
+   "value": 3.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Can strength training help lower BMI?",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/physical-activity/index.html"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "faq-a",
+   "sentence": "The Physical Activity Guidelines ask adults for muscle-strengthening activity, like lifting weights or doing push-ups, on at least 2 days a week, on top of aerobic activity (Physical Activity Guidelines).",
+   "number": "2",
+   "value": 2.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Can strength training help lower BMI?",
+   "row": {
+    "status": "row",
+    "domain": "odphp-physical-activity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "faq-a",
+   "sentence": "Daily or weekly: weight-loss trials found no significant difference between the two (Madigan et al., 2015).",
+   "number": "two",
+   "value": 2,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "FAQ: How often should I weigh myself when trying to lower BMI?",
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4546162/"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "faq-a",
+   "sentence": "Daily or weekly: weight-loss trials found no significant difference between the two (Madigan et al., 2015).",
+   "number": "2015",
+   "value": 2015.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: How often should I weigh myself when trying to lower BMI?",
+   "row": {
+    "status": "row",
+    "domain": "madigan-2015-self-weighing",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4546162/"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "faq-a",
+   "sentence": "Weight tends to be highest on Sunday and Monday and to fall through the week (Orsama et al., 2014), so compare the same weekday each week.",
+   "number": "2014",
+   "value": 2014.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: How often should I weigh myself when trying to lower BMI?",
+   "row": {
+    "status": "row",
+    "domain": "orsama-2014-weight-rhythms",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5644907/"
+   ]
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
    "region": "jsonld",
    "sentence": "CDC notes that people who lose about 1 to 2 pounds a week are more likely to keep the weight off than people who lose weight quicker.",
    "number": "1",
@@ -76693,7 +77661,7 @@
    "mirror_of": "the visible FAQ answer (same text)",
    "row": {
     "status": "row",
-    "domain": "hall-2011-energy-imbalance",
+    "domain": "madigan-2015-self-weighing",
     "how": "pages_served"
    }
   },
@@ -76716,7 +77684,7 @@
   {
    "page": "/blog/how-to-lower-bmi/",
    "region": "jsonld",
-   "sentence": "The traditional 3,500 kcal per pound of fat rule is a useful short-term approximation but overestimates long-term loss: dynamic-energy-balance models (Hall 2011, implemented in the NIH Body Weight Planner) show that as body mass declines, so does resting energy expenditure, and the same intake produces less loss over months.",
+   "sentence": "The traditional rule of 3,500 kcal per pound of fat overstates long-term loss: as weight falls, so does the energy the body burns, so the same intake brings less loss over the months (Hall 2011).",
    "number": "3,500",
    "value": 3500.0,
    "class": "C",
@@ -76732,7 +77700,7 @@
   {
    "page": "/blog/how-to-lower-bmi/",
    "region": "jsonld",
-   "sentence": "The traditional 3,500 kcal per pound of fat rule is a useful short-term approximation but overestimates long-term loss: dynamic-energy-balance models (Hall 2011, implemented in the NIH Body Weight Planner) show that as body mass declines, so does resting energy expenditure, and the same intake produces less loss over months.",
+   "sentence": "The traditional rule of 3,500 kcal per pound of fat overstates long-term loss: as weight falls, so does the energy the body burns, so the same intake brings less loss over the months (Hall 2011).",
    "number": "2011",
    "value": 2011.0,
    "class": "C",
@@ -76744,6 +77712,228 @@
     "domain": "hall-2011-energy-imbalance",
     "how": "link"
    }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "jsonld",
+   "sentence": "Partly because a smaller body burns less: as weight falls, so does the energy the body uses, so the same intake brings slower loss, with half of the eventual change in about a year (Hall 2011).",
+   "number": "half",
+   "value": 0.5,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "FAQPage JSON-LD: Why has my weight loss stalled even though I'm still dieting?",
+   "mirror_of": "the visible FAQ answer (same text)"
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "jsonld",
+   "sentence": "Partly because a smaller body burns less: as weight falls, so does the energy the body uses, so the same intake brings slower loss, with half of the eventual change in about a year (Hall 2011).",
+   "number": "2011",
+   "value": 2011.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: Why has my weight loss stalled even though I'm still dieting?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "hall-2011-energy-imbalance",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "jsonld",
+   "sentence": "Weight also swings through the week, highest on Sunday and Monday (Orsama et al., 2014).",
+   "number": "2014",
+   "value": 2014.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: Why has my weight loss stalled even though I'm still dieting?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "orsama-2014-weight-rhythms",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "jsonld",
+   "sentence": "It uses calories, so it adds to a deficit: in CDC’s table, 30 minutes of general light weight lifting uses about 110 calories for a 154-pound person, against 140 for walking at 3.5 mph (CDC).",
+   "number": "30",
+   "value": 30.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can strength training help lower BMI?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "jsonld",
+   "sentence": "It uses calories, so it adds to a deficit: in CDC’s table, 30 minutes of general light weight lifting uses about 110 calories for a 154-pound person, against 140 for walking at 3.5 mph (CDC).",
+   "number": "110",
+   "value": 110.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can strength training help lower BMI?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "jsonld",
+   "sentence": "It uses calories, so it adds to a deficit: in CDC’s table, 30 minutes of general light weight lifting uses about 110 calories for a 154-pound person, against 140 for walking at 3.5 mph (CDC).",
+   "number": "154",
+   "value": 154.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can strength training help lower BMI?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "jsonld",
+   "sentence": "It uses calories, so it adds to a deficit: in CDC’s table, 30 minutes of general light weight lifting uses about 110 calories for a 154-pound person, against 140 for walking at 3.5 mph (CDC).",
+   "number": "140",
+   "value": 140.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can strength training help lower BMI?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "jsonld",
+   "sentence": "It uses calories, so it adds to a deficit: in CDC’s table, 30 minutes of general light weight lifting uses about 110 calories for a 154-pound person, against 140 for walking at 3.5 mph (CDC).",
+   "number": "3.5",
+   "value": 3.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can strength training help lower BMI?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "jsonld",
+   "sentence": "The Physical Activity Guidelines ask adults for muscle-strengthening activity, like lifting weights or doing push-ups, on at least 2 days a week, on top of aerobic activity (Physical Activity Guidelines).",
+   "number": "2",
+   "value": 2.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can strength training help lower BMI?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "odphp-physical-activity-guidelines",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "jsonld",
+   "sentence": "Daily or weekly: weight-loss trials found no significant difference between the two (Madigan et al., 2015).",
+   "number": "two",
+   "value": 2,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "FAQPage JSON-LD: How often should I weigh myself when trying to lower BMI?",
+   "mirror_of": "the visible FAQ answer (same text)"
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "jsonld",
+   "sentence": "Daily or weekly: weight-loss trials found no significant difference between the two (Madigan et al., 2015).",
+   "number": "2015",
+   "value": 2015.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: How often should I weigh myself when trying to lower BMI?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "madigan-2015-self-weighing",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "jsonld",
+   "sentence": "Weight tends to be highest on Sunday and Monday and to fall through the week (Orsama et al., 2014), so compare the same weekday each week.",
+   "number": "2014",
+   "value": 2014.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: How often should I weigh myself when trying to lower BMI?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "orsama-2014-weight-rhythms",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "meta",
+   "sentence": "How much weight one BMI point is at your height, CDC’s 1 to 2 pounds a week and five steps, and what the federal eating and activity guidance says.",
+   "number": "1",
+   "value": 1.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "meta",
+   "row": {
+    "status": "row",
+    "domain": "madigan-2015-self-weighing",
+    "how": "pages_served"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "meta",
+   "sentence": "How much weight one BMI point is at your height, CDC’s 1 to 2 pounds a week and five steps, and what the federal eating and activity guidance says.",
+   "number": "2",
+   "value": 2.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "meta",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "pages_served"
+   }
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "region": "meta",
+   "sentence": "How much weight one BMI point is at your height, CDC’s 1 to 2 pounds a week and five steps, and what the federal eating and activity guidance says.",
+   "number": "five",
+   "value": 5,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "meta"
   },
   {
    "page": "/blog/bmi-tracking-guide/",
