@@ -18,7 +18,7 @@ S sourcing: every number traces to a verified source (D-10).
              skips; it checks every printed value against the stats file built from the registry's primary data.
   audit      the other pages in research/stage1-audit/audit.py's list pass at 0 calculator or arithmetic
              mismatches, 0 outside facts with no registry row, 0 not in their row and 0 unclassified numbers.
-  A page neither covers is "not measured" (/men-bmi-calculator/: its rank test covers the rank line only).
+  A page neither covers is "not measured".
 P prose: portfolio-qa prose-score.mjs, countable anti-slop tells per 1,000 words of body prose; pass at 2.0 or
   fewer (the site-pipeline Stage 2 target). The score is a floor: it can't hear rhythm or forced triads. Legal
   pages are scored too (prose-score leaves them out of its own totals). Under 30 words: not measured.
@@ -71,6 +71,7 @@ PAGE_TESTS = {
     '/ideal-weight/': ('research/ideal-weight-build/iw_test_playwright.py', 'research/ideal-weight-build/iw_stats.json'),
     '/kids-bmi-calculator/': ('research/kids-build/kids_test_playwright.py', 'research/kids-build/kids_stats.json'),
     '/age-bmi-calculator/': ('research/age-calc-build/abc_test_playwright.py', 'research/age-calc-build/abc_stats.json'),
+    '/men-bmi-calculator/': ('research/men-pilot/men_test_playwright.py', 'research/men-pilot/men_stats.json'),
 }
 # Pages a generator owns (it reproduces the page byte for byte): fix the generator, never the page.
 GENERATORS = {
