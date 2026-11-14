@@ -70,12 +70,14 @@ PAGE_TESTS = {
     '/calculators/': ('research/cmb-027/hub_examples_playwright.py', None),
     '/ideal-weight/': ('research/ideal-weight-build/iw_test_playwright.py', 'research/ideal-weight-build/iw_stats.json'),
     '/kids-bmi-calculator/': ('research/kids-build/kids_test_playwright.py', 'research/kids-build/kids_stats.json'),
+    '/age-bmi-calculator/': ('research/age-calc-build/abc_test_playwright.py', 'research/age-calc-build/abc_stats.json'),
 }
 # Pages a generator owns (it reproduces the page byte for byte): fix the generator, never the page.
 GENERATORS = {
     '/new-bmi-calculator/': 'research/new-bmi-build/gen_nb.py',
     '/ideal-weight/': 'research/ideal-weight-build/gen_iw.py',
     '/kids-bmi-calculator/': 'research/kids-build/gen_kids.py',
+    '/age-bmi-calculator/': 'research/age-calc-build/gen_abc.py',
 }
 
 OVERFLOW_JS = """() => document.documentElement.scrollWidth - window.innerWidth"""

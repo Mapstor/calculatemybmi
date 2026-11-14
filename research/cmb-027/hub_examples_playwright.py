@@ -19,7 +19,8 @@ At a 390 x 844 viewport it:
        /women-bmi-calculator/  BMI and category; "within the healthy range"; lowest and highest
                                healthy weight
        /men-bmi-calculator/    BMI and category; the waist line in inches
-       /age-bmi-calculator/    BMI; the Winter 2014 band (BMI 23-33, adults 65+, the year twice) and
+       /age-bmi-calculator/    BMI; the Winter 2014 finding (higher below 23, rising at about 33, adults 65 and over, the
+                               year twice; CMB-045 wording) and
                                that the BMI falls inside it (since CMB-036 the example names the band's
                                ends as the points where the risk of death was higher and began to
                                rise, and says the BMI lies between the two); also that the same height and weight
@@ -241,10 +242,13 @@ def ex_age(ex, pg):
         return
     bmi = bmi_and_category(ex, pg, 'age', lead=r'standard BMI of')
     res = text_of(pg, '#age-results')
-    band = re.search(r'across BMI (\d+)-(\d+) in adults (\d+)\+ \(Winter (\d{4})\)', res)
-    if not band:
-        check(ex, 'Winter 2014 band printed', 'printed', 'not printed', False)
+    # CMB-045: the result gives Winter et al. 2014 in the DEVLOG §4 wording; band = (low, high, age group, year)
+    w = re.search(r'aged (\d+) and over, compared with a BMI of \d+ to [\d.]+, the risk of death was higher below (\d+) and '
+                  r'began to rise at about (\d+) \(Winter et al\., (\d{4})\)', res)
+    if not w:
+        check(ex, 'Winter 2014 finding printed', 'printed', 'not printed', False)
         return
+    band = (None, w[2], w[3], w[1], w[4])
     m = ex.find(r'adults (\d+)(?:\+| and over)', 'band age group')
     if m:
         ex.cover(m, 1)
