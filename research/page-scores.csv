@@ -20,7 +20,7 @@ page,template,s,s_value,p,p_value,d,d_value,date
 /blog/bmi-categories/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0.3/1k (1 tells, 3146 words: em-dash 1)",pass,"detector 390: 0, 1280: 0",2026-11-14
 /blog/bmi-chart-explained/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0.7/1k (2 tells, 2846 words: sales 1, about-the-page 1)",pass,"detector 390: 0, 1280: 0",2026-11-14
 /blog/bmi-and-health-risks/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 2578 words)",pass,"detector 390: 0, 1280: 0",2026-11-14
-/blog/underweight-bmi-risks/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0.5/1k (1 tells, 2097 words: about-the-page 1)",pass,"detector 390: 0, 1280: 0",2026-11-14
+/blog/underweight-bmi-risks/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0.6/1k (1 tells, 1783 words: about-the-page 1)",pass,"detector 390: 0, 1280: 0",2026-11-14
 /blog/bmi-limitations/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"1.4/1k (3 tells, 2120 words: ai-word 1, transition-opener 1, about-the-page 1)",pass,"detector 390: 0, 1280: 0",2026-11-14
 /blog/bmi-and-metabolism/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0.4/1k (1 tells, 2294 words: ai-word 1)",pass,"detector 390: 0, 1280: 0",2026-11-14
 /blog/body-fat-vs-bmi/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0.9/1k (1 tells, 1120 words: ai-word 1)",pass,"detector 390: 0, 1280: 0",2026-11-14

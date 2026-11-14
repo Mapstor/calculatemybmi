@@ -32,7 +32,7 @@ blog/bmi-history,blog,article,informational,,Primary historical sources (Quetele
 blog/bmi-categories,blog,article,informational,,CDC adult categories; WHO classification,T2,live,
 blog/bmi-chart-explained,blog,article,informational,,Quetelet formula,T3,built,Candidate to merge into bmi-chart (data-gated)
 blog/bmi-and-health-risks,blog,article,informational,,Flegal 2013 JAMA; WHO; NIDDK (verify each),T2,live,
-blog/underweight-bmi-risks,blog,article,informational,,WHO; Flegal 2013 (verify),T3,live,
+blog/underweight-bmi-risks,blog,article,informational,,gbmc-2016-bmi-mortality,T3,live,"CMB-049: claims pass; every claim sourced or cut, sources in the registry rows that list this page; title and H1 kept (D-28)."
 blog/bmi-limitations,blog,article,informational,,Okorodudu 2010 Int J Obes and other primaries (to verify),T2,live,
 blog/bmi-and-metabolism,blog,article,informational,,Mifflin-St Jeor 1990; Harris-Benedict (primary citations),T3,live,
 blog/body-fat-vs-bmi,blog,article,informational,,Primary validation studies (to verify),T1,live,"Only page with Google visibility (AI-feature citations, zero clicks)"

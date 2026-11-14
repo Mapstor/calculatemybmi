@@ -1,15 +1,15 @@
 {
  "generated_by": "research/stage1-audit/audit.py",
- "base": "http://localhost:8000",
+ "base": "http://localhost:8765",
  "viewport": "390x844",
  "pages_audited": 24,
  "pages_skipped": [],
- "numbers": 4626,
+ "numbers": 4727,
  "totals": {
   "A": 47,
-  "B": 1633,
-  "C": 2152,
-  "D": 589,
+  "B": 1638,
+  "C": 2225,
+  "D": 612,
   "X": 205,
   "U": 0
  },
@@ -19,16 +19,16 @@
  "c_not_in_row_in_page_csv": 0,
  "c_not_in_row_also_in_other_row": 0,
  "c_status": {
-  "row": 1048,
-  "row-notes": 174,
+  "row": 1106,
+  "row-notes": 189,
   "not-in-row": 28,
   "row-dataset": 902
  },
- "checks_run": 1127,
+ "checks_run": 1128,
  "check_errors": [],
  "unclassified": [],
- "manual_entries": 228,
- "manual_entries_used": 224,
+ "manual_entries": 241,
+ "manual_entries_used": 237,
  "worst10": [
   {
    "page": "/kids-bmi-calculator/",
@@ -3149,17 +3149,22 @@
   },
   {
    "page": "/blog/underweight-bmi-risks/",
-   "jsonld_mirrors": 0,
+   "jsonld_mirrors": 21,
    "mismatches": [],
    "c_no_row": [],
    "c_not_in_row": [],
    "names_differ": [
-    "\"underweight\" here is Underweight in calculator.js",
+    "\"thinness\" here is Underweight in calculator.js",
     "\"Underweight\" here is Underweight in calculator.js",
     "\"underweight\" here is Underweight in calculator.js",
     "\"underweight\" here is Underweight in calculator.js"
    ],
    "d": [
+    {
+     "number": "three",
+     "why": "number word (count in prose)",
+     "sentence": "Grades: WHO grades adult thinness in three steps: 17.0–18.4 (the calculator’s Underweight), 16.0–16.9 (moderate thinness) and below 16.0 (severe thinness) (WHO)."
+    },
     {
      "number": "17.3",
      "why": "the scale's marker at the page's own example (50 kg at 1.70 m, BMI 17.3, checked as B in its sentence; CMB-033) (manual.json)",
@@ -3193,67 +3198,177 @@
     {
      "number": "three",
      "why": "number word (count in prose)",
-     "sentence": "The World Health Organization further divides underweight into three severity categories based on BMI ranges."
+     "sentence": "The World Health Organization grades adult thinness in three steps by BMI (WHO, 1995); WHO calls the first grade mild thinness:"
+    },
+    {
+     "number": "four",
+     "why": "number word (count in prose)",
+     "sentence": "The ideal weight calculator shows what four published formulas give for your height."
+    },
+    {
+     "number": "15.0",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+     "sentence": "BMI 15.0–18.4"
+    },
+    {
+     "number": "18.4",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+     "sentence": "BMI 15.0–18.4"
+    },
+    {
+     "number": "18.5",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+     "sentence": "BMI 18.5–19.9"
+    },
+    {
+     "number": "19.9",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+     "sentence": "BMI 18.5–19.9"
+    },
+    {
+     "number": "20.0",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+     "sentence": "BMI 20.0–22.4"
+    },
+    {
+     "number": "22.4",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+     "sentence": "BMI 20.0–22.4"
+    },
+    {
+     "number": "22.5",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+     "sentence": "BMI 22.5–24.9"
+    },
+    {
+     "number": "24.9",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+     "sentence": "BMI 22.5–24.9"
+    },
+    {
+     "number": "25.0",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+     "sentence": "BMI 25.0–27.4"
+    },
+    {
+     "number": "27.4",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+     "sentence": "BMI 25.0–27.4"
+    },
+    {
+     "number": "27.5",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+     "sentence": "BMI 27.5–29.9"
+    },
+    {
+     "number": "29.9",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+     "sentence": "BMI 27.5–29.9"
+    },
+    {
+     "number": "30.0",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+     "sentence": "BMI 30.0–34.9"
+    },
+    {
+     "number": "34.9",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+     "sentence": "BMI 30.0–34.9"
+    },
+    {
+     "number": "35.0",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+     "sentence": "BMI 35.0–39.9"
+    },
+    {
+     "number": "39.9",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+     "sentence": "BMI 35.0–39.9"
+    },
+    {
+     "number": "40.0",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+     "sentence": "BMI 40.0–59.9"
+    },
+    {
+     "number": "59.9",
+     "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+     "sentence": "BMI 40.0–59.9"
+    },
+    {
+     "number": "two",
+     "why": "number word (count in prose)",
+     "sentence": "CDC’s survey team names two broad causes: “Poor nutrition and underlying health conditions can result in underweight among youth and adults” (NCHS)."
     },
     {
      "number": "1",
-     "why": "name or label with a number",
-     "sentence": "Diabetes (Type 1): Uncontrolled diabetes can cause significant weight loss"
-    },
-    {
-     "number": "1",
-     "why": "phone number or hours",
-     "sentence": "National Alliance for Eating Disorders helpline: 1-866-662-1235 (Monday–Friday, US) — allianceforeatingdisorders.com"
+     "why": "the helpline's number and hours (Alliance for Eating Disorders; registry alliance-eating-disorders-helpline, CMB-049) (manual.json)",
+     "sentence": "Support: the Alliance for Eating Disorders runs a free helpline staffed by licensed therapists, 1-866-662-1235, Monday to Friday, 9:00 am to 7:00 pm Eastern (allianceforeatingdisorders.com)."
     },
     {
      "number": "866",
-     "why": "phone number or hours",
-     "sentence": "National Alliance for Eating Disorders helpline: 1-866-662-1235 (Monday–Friday, US) — allianceforeatingdisorders.com"
+     "why": "the helpline's number and hours (Alliance for Eating Disorders; registry alliance-eating-disorders-helpline, CMB-049) (manual.json)",
+     "sentence": "Support: the Alliance for Eating Disorders runs a free helpline staffed by licensed therapists, 1-866-662-1235, Monday to Friday, 9:00 am to 7:00 pm Eastern (allianceforeatingdisorders.com)."
     },
     {
      "number": "662",
-     "why": "phone number or hours",
-     "sentence": "National Alliance for Eating Disorders helpline: 1-866-662-1235 (Monday–Friday, US) — allianceforeatingdisorders.com"
+     "why": "the helpline's number and hours (Alliance for Eating Disorders; registry alliance-eating-disorders-helpline, CMB-049) (manual.json)",
+     "sentence": "Support: the Alliance for Eating Disorders runs a free helpline staffed by licensed therapists, 1-866-662-1235, Monday to Friday, 9:00 am to 7:00 pm Eastern (allianceforeatingdisorders.com)."
     },
     {
      "number": "1235",
-     "why": "phone number or hours",
-     "sentence": "National Alliance for Eating Disorders helpline: 1-866-662-1235 (Monday–Friday, US) — allianceforeatingdisorders.com"
+     "why": "the helpline's number and hours (Alliance for Eating Disorders; registry alliance-eating-disorders-helpline, CMB-049) (manual.json)",
+     "sentence": "Support: the Alliance for Eating Disorders runs a free helpline staffed by licensed therapists, 1-866-662-1235, Monday to Friday, 9:00 am to 7:00 pm Eastern (allianceforeatingdisorders.com)."
     },
     {
-     "number": "1",
-     "why": "phone number or hours",
-     "sentence": "SAMHSA National Helpline (general mental-health / substance-use): 1-800-662-4357, 24/7"
+     "number": "9",
+     "why": "the helpline's number and hours (Alliance for Eating Disorders; registry alliance-eating-disorders-helpline, CMB-049) (manual.json)",
+     "sentence": "Support: the Alliance for Eating Disorders runs a free helpline staffed by licensed therapists, 1-866-662-1235, Monday to Friday, 9:00 am to 7:00 pm Eastern (allianceforeatingdisorders.com)."
     },
     {
-     "number": "800",
-     "why": "phone number or hours",
-     "sentence": "SAMHSA National Helpline (general mental-health / substance-use): 1-800-662-4357, 24/7"
-    },
-    {
-     "number": "662",
-     "why": "phone number or hours",
-     "sentence": "SAMHSA National Helpline (general mental-health / substance-use): 1-800-662-4357, 24/7"
-    },
-    {
-     "number": "4357",
-     "why": "phone number or hours",
-     "sentence": "SAMHSA National Helpline (general mental-health / substance-use): 1-800-662-4357, 24/7"
-    },
-    {
-     "number": "24",
-     "why": "phone number or hours",
-     "sentence": "SAMHSA National Helpline (general mental-health / substance-use): 1-800-662-4357, 24/7"
+     "number": "00",
+     "why": "the helpline's number and hours (Alliance for Eating Disorders; registry alliance-eating-disorders-helpline, CMB-049) (manual.json)",
+     "sentence": "Support: the Alliance for Eating Disorders runs a free helpline staffed by licensed therapists, 1-866-662-1235, Monday to Friday, 9:00 am to 7:00 pm Eastern (allianceforeatingdisorders.com)."
     },
     {
      "number": "7",
-     "why": "phone number or hours",
-     "sentence": "SAMHSA National Helpline (general mental-health / substance-use): 1-800-662-4357, 24/7"
+     "why": "the helpline's number and hours (Alliance for Eating Disorders; registry alliance-eating-disorders-helpline, CMB-049) (manual.json)",
+     "sentence": "Support: the Alliance for Eating Disorders runs a free helpline staffed by licensed therapists, 1-866-662-1235, Monday to Friday, 9:00 am to 7:00 pm Eastern (allianceforeatingdisorders.com)."
+    },
+    {
+     "number": "00",
+     "why": "the helpline's number and hours (Alliance for Eating Disorders; registry alliance-eating-disorders-helpline, CMB-049) (manual.json)",
+     "sentence": "Support: the Alliance for Eating Disorders runs a free helpline staffed by licensed therapists, 1-866-662-1235, Monday to Friday, 9:00 am to 7:00 pm Eastern (allianceforeatingdisorders.com)."
+    },
+    {
+     "number": "988",
+     "why": "the 988 Lifeline number, as NIMH gives it (registry nimh-eating-disorders, CMB-049) (manual.json)",
+     "sentence": "If you or someone you know is struggling or thinking about suicide, call or text 988, the Suicide and Crisis Lifeline, or chat at 988lifeline.org; in a life-threatening emergency, call 911 (NIMH)."
+    },
+    {
+     "number": "911",
+     "why": "the 988 Lifeline number, as NIMH gives it (registry nimh-eating-disorders, CMB-049) (manual.json)",
+     "sentence": "If you or someone you know is struggling or thinking about suicide, call or text 988, the Suicide and Crisis Lifeline, or chat at 988lifeline.org; in a life-threatening emergency, call 911 (NIMH)."
+    },
+    {
+     "number": "three",
+     "why": "number word (count in prose)",
+     "sentence": "MedlinePlus advises contacting a provider in three situations (MedlinePlus):"
+    },
+    {
+     "number": "four",
+     "why": "number word (count in prose)",
+     "sentence": "We don’t give weight-gain targets or meal plans of our own; the ideal weight calculator shows what four published formulas give for your height."
     },
     {
      "number": "three",
      "why": "number word (count in prose)",
      "sentence": "This is further divided into three grades: underweight (17.0–18.4), moderate thinness (16.0–16.9), and severe thinness (below 16.0)."
+    },
+    {
+     "number": "1",
+     "why": "name or label with a number",
+     "sentence": "For the risk of death, more than overweight and about as much as class 1 obesity."
     },
     {
      "number": "three",
@@ -3261,16 +3376,27 @@
      "sentence": "This is further divided into three grades: underweight (17.0–18.4), moderate thinness (16.0–16.9), and severe thinness (below 16.0)."
     }
    ],
-   "checks_ok": 56,
+   "checks_ok": 57,
    "page_errors": [],
    "score": 0,
    "totals": {
-    "B": 83,
-    "A": 3,
-    "D": 20
+    "B": 88,
+    "C": 73,
+    "D": 43,
+    "A": 3
    },
-   "c_rows": {},
-   "c_row_domains": {},
+   "c_rows": {
+    "row": 58,
+    "row-notes": 15
+   },
+   "c_row_domains": {
+    "nhanes-underweight": 4,
+    "gbmc-2016-bmi-mortality": 47,
+    "medlineplus-unintentional-weight-loss": 8,
+    "who-trs-854": 1,
+    "winter-2014-bmi-mortality-65": 7,
+    "cdc-pregnancy-weight-gain": 6
+   },
    "excluded": {}
   },
   {
@@ -4211,8 +4337,8 @@
    "why": "list numbering",
    "heading": "Why it exists",
    "links": [
-    "http://localhost:8000/blog/",
-    "http://localhost:8000/blog/what-is-bmi/"
+    "http://localhost:8765/blog/",
+    "http://localhost:8765/blog/what-is-bmi/"
    ]
   },
   {
@@ -4225,8 +4351,8 @@
    "why": "list numbering",
    "heading": "Why it exists",
    "links": [
-    "http://localhost:8000/blog/",
-    "http://localhost:8000/blog/what-is-bmi/"
+    "http://localhost:8765/blog/",
+    "http://localhost:8765/blog/what-is-bmi/"
    ]
   },
   {
@@ -4239,8 +4365,8 @@
    "why": "list numbering",
    "heading": "Why it exists",
    "links": [
-    "http://localhost:8000/blog/",
-    "http://localhost:8000/blog/what-is-bmi/"
+    "http://localhost:8765/blog/",
+    "http://localhost:8765/blog/what-is-bmi/"
    ]
   },
   {
@@ -4253,7 +4379,7 @@
    "why": "name or label with a number",
    "heading": "Health inputs stay local",
    "links": [
-    "http://localhost:8000/privacy/"
+    "http://localhost:8765/privacy/"
    ]
   },
   {
@@ -4801,7 +4927,7 @@
    "links": [
     "https://pubmed.ncbi.nlm.nih.gov/10981254/",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4503941/",
-    "http://localhost:8000/ideal-weight/"
+    "http://localhost:8765/ideal-weight/"
    ]
   },
   {
@@ -4821,7 +4947,7 @@
    "links": [
     "https://pubmed.ncbi.nlm.nih.gov/10981254/",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4503941/",
-    "http://localhost:8000/ideal-weight/"
+    "http://localhost:8765/ideal-weight/"
    ]
   },
   {
@@ -4841,7 +4967,7 @@
    "links": [
     "https://pubmed.ncbi.nlm.nih.gov/10981254/",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4503941/",
-    "http://localhost:8000/ideal-weight/"
+    "http://localhost:8765/ideal-weight/"
    ]
   },
   {
@@ -4861,7 +4987,7 @@
    "links": [
     "https://pubmed.ncbi.nlm.nih.gov/10981254/",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4503941/",
-    "http://localhost:8000/ideal-weight/"
+    "http://localhost:8765/ideal-weight/"
    ]
   },
   {
@@ -4881,7 +5007,7 @@
    "links": [
     "https://pubmed.ncbi.nlm.nih.gov/10981254/",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4503941/",
-    "http://localhost:8000/ideal-weight/"
+    "http://localhost:8765/ideal-weight/"
    ]
   },
   {
@@ -4901,7 +5027,7 @@
    "links": [
     "https://pubmed.ncbi.nlm.nih.gov/10981254/",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4503941/",
-    "http://localhost:8000/ideal-weight/"
+    "http://localhost:8765/ideal-weight/"
    ]
   },
   {
@@ -4932,7 +5058,7 @@
    "why": "name or label with a number",
    "heading": "Client-side processing",
    "links": [
-    "http://localhost:8000/privacy/"
+    "http://localhost:8765/privacy/"
    ]
   },
   {
@@ -5020,7 +5146,7 @@
    "why": "number word (count in prose)",
    "heading": "What we do collect",
    "links": [
-    "http://localhost:8000/privacy/"
+    "http://localhost:8765/privacy/"
    ]
   },
   {
@@ -5063,7 +5189,7 @@
     "how": "name"
    },
    "links": [
-    "http://localhost:8000/about/#author-bio"
+    "http://localhost:8765/about/#author-bio"
    ]
   },
   {
@@ -5970,7 +6096,7 @@
     "label": "calculateKids accepts 24 to 239 months (2 to 19 years 11 months)"
    },
    "links": [
-    "http://localhost:8000/kids-bmi-calculator/"
+    "http://localhost:8765/kids-bmi-calculator/"
    ]
   },
   {
@@ -5983,7 +6109,7 @@
    "why": "the calculator's age range (other end)",
    "heading": "2. Description of Service",
    "links": [
-    "http://localhost:8000/kids-bmi-calculator/"
+    "http://localhost:8765/kids-bmi-calculator/"
    ]
   },
   {
@@ -6001,7 +6127,7 @@
     "how": "manual.json"
    },
    "links": [
-    "http://localhost:8000/new-bmi-calculator/"
+    "http://localhost:8765/new-bmi-calculator/"
    ]
   },
   {
@@ -6248,7 +6374,7 @@
     "label": "category cut-off (getBMICategory)"
    },
    "links": [
-    "http://localhost:8000/blog/healthy-bmi-range/"
+    "http://localhost:8765/blog/healthy-bmi-range/"
    ]
   },
   {
@@ -6261,7 +6387,7 @@
    "why": "category cut-off (other bound)",
    "heading": "Start here",
    "links": [
-    "http://localhost:8000/blog/healthy-bmi-range/"
+    "http://localhost:8765/blog/healthy-bmi-range/"
    ]
   },
   {
@@ -6279,7 +6405,7 @@
     "how": "manual.json"
    },
    "links": [
-    "http://localhost:8000/blog/bmi-by-age/"
+    "http://localhost:8765/blog/bmi-by-age/"
    ]
   },
   {
@@ -6300,7 +6426,7 @@
     "label": "the 703 in calculateBMI"
    },
    "links": [
-    "http://localhost:8000/blog/bmi-formula/"
+    "http://localhost:8765/blog/bmi-formula/"
    ]
   },
   {
@@ -6320,7 +6446,7 @@
     "label": "category cut-off (getBMICategory)"
    },
    "links": [
-    "http://localhost:8000/blog/bmi-categories/"
+    "http://localhost:8765/blog/bmi-categories/"
    ]
   },
   {
@@ -6341,7 +6467,7 @@
     "name_differs": "\"class III obesity\" = calculator.js \"Class 3 obesity\""
    },
    "links": [
-    "http://localhost:8000/blog/bmi-categories/"
+    "http://localhost:8765/blog/bmi-categories/"
    ]
   },
   {
@@ -6354,7 +6480,7 @@
    "why": "a guide's height range (a link label) (manual.json)",
    "heading": "Foundations",
    "links": [
-    "http://localhost:8000/blog/bmi-chart-women/"
+    "http://localhost:8765/blog/bmi-chart-women/"
    ]
   },
   {
@@ -6367,7 +6493,7 @@
    "why": "a guide's height range (a link label) (manual.json)",
    "heading": "Foundations",
    "links": [
-    "http://localhost:8000/blog/bmi-chart-women/"
+    "http://localhost:8765/blog/bmi-chart-women/"
    ]
   },
   {
@@ -6380,7 +6506,7 @@
    "why": "a guide's height range (a link label) (manual.json)",
    "heading": "Foundations",
    "links": [
-    "http://localhost:8000/blog/bmi-chart-women/"
+    "http://localhost:8765/blog/bmi-chart-women/"
    ]
   },
   {
@@ -6393,7 +6519,7 @@
    "why": "a guide's height range (a link label) (manual.json)",
    "heading": "Foundations",
    "links": [
-    "http://localhost:8000/blog/bmi-chart-women/"
+    "http://localhost:8765/blog/bmi-chart-women/"
    ]
   },
   {
@@ -6406,7 +6532,7 @@
    "why": "a guide's height range (a link label) (manual.json)",
    "heading": "Foundations",
    "links": [
-    "http://localhost:8000/blog/bmi-chart-men/"
+    "http://localhost:8765/blog/bmi-chart-men/"
    ]
   },
   {
@@ -6419,7 +6545,7 @@
    "why": "a guide's height range (a link label) (manual.json)",
    "heading": "Foundations",
    "links": [
-    "http://localhost:8000/blog/bmi-chart-men/"
+    "http://localhost:8765/blog/bmi-chart-men/"
    ]
   },
   {
@@ -6432,7 +6558,7 @@
    "why": "a guide's height range (a link label) (manual.json)",
    "heading": "Foundations",
    "links": [
-    "http://localhost:8000/blog/bmi-chart-men/"
+    "http://localhost:8765/blog/bmi-chart-men/"
    ]
   },
   {
@@ -6445,7 +6571,7 @@
    "why": "a guide's height range (a link label) (manual.json)",
    "heading": "Foundations",
    "links": [
-    "http://localhost:8000/blog/bmi-chart-men/"
+    "http://localhost:8765/blog/bmi-chart-men/"
    ]
   },
   {
@@ -6463,7 +6589,7 @@
     "how": "manual.json"
    },
    "links": [
-    "http://localhost:8000/blog/bmi-history/"
+    "http://localhost:8765/blog/bmi-history/"
    ]
   },
   {
@@ -6481,7 +6607,7 @@
     "how": "manual.json"
    },
    "links": [
-    "http://localhost:8000/blog/bmi-history/"
+    "http://localhost:8765/blog/bmi-history/"
    ]
   },
   {
@@ -6501,7 +6627,7 @@
     "label": "category cut-off (getBMICategory)"
    },
    "links": [
-    "http://localhost:8000/blog/underweight-bmi-risks/"
+    "http://localhost:8765/blog/underweight-bmi-risks/"
    ]
   },
   {
@@ -6514,7 +6640,7 @@
    "why": "number word (count in prose)",
    "heading": "Beyond BMI",
    "links": [
-    "http://localhost:8000/blog/bmi-limitations/"
+    "http://localhost:8765/blog/bmi-limitations/"
    ]
   },
   {
@@ -6527,7 +6653,7 @@
    "why": "number word (count in prose)",
    "heading": "Beyond BMI",
    "links": [
-    "http://localhost:8000/blog/body-fat-vs-bmi/"
+    "http://localhost:8765/blog/body-fat-vs-bmi/"
    ]
   },
   {
@@ -6545,7 +6671,7 @@
     "how": "manual.json"
    },
    "links": [
-    "http://localhost:8000/blog/how-to-measure-body-fat/"
+    "http://localhost:8765/blog/how-to-measure-body-fat/"
    ]
   },
   {
@@ -6563,7 +6689,7 @@
     "how": "manual.json"
    },
    "links": [
-    "http://localhost:8000/blog/waist-to-height-ratio/"
+    "http://localhost:8765/blog/waist-to-height-ratio/"
    ]
   },
   {
@@ -6581,7 +6707,7 @@
     "how": "manual.json"
    },
    "links": [
-    "http://localhost:8000/men-bmi-calculator/"
+    "http://localhost:8765/men-bmi-calculator/"
    ]
   },
   {
@@ -6599,7 +6725,7 @@
     "how": "manual.json"
    },
    "links": [
-    "http://localhost:8000/men-bmi-calculator/"
+    "http://localhost:8765/men-bmi-calculator/"
    ]
   },
   {
@@ -6619,7 +6745,7 @@
     "label": "calculateKids accepts 24 to 239 months (2 to 19 years 11 months)"
    },
    "links": [
-    "http://localhost:8000/kids-bmi-calculator/"
+    "http://localhost:8765/kids-bmi-calculator/"
    ]
   },
   {
@@ -6632,7 +6758,7 @@
    "why": "the calculator's age range (other end)",
    "heading": "Related calculators",
    "links": [
-    "http://localhost:8000/kids-bmi-calculator/"
+    "http://localhost:8765/kids-bmi-calculator/"
    ]
   },
   {
@@ -6645,7 +6771,7 @@
    "why": "number word (count in prose)",
    "heading": "Related calculators",
    "links": [
-    "http://localhost:8000/ideal-weight/"
+    "http://localhost:8765/ideal-weight/"
    ]
   },
   {
@@ -6663,7 +6789,7 @@
     "how": "name"
    },
    "links": [
-    "http://localhost:8000/new-bmi-calculator/"
+    "http://localhost:8765/new-bmi-calculator/"
    ]
   },
   {
@@ -15360,7 +15486,7 @@
     "sample_note": "Chat verified (2026-11-11); page last reviewed 2024-09-02. \"BMI percentiles and z-scores up to the 95th percentile (z-score 1.645) are the same as those in the 2000 CDC BMI-for-age growth charts\"; the extended charts add percentiles \"above the 95th percentile up to the 99.99th percentile (z-scores up to 5)\". Rows by sex (1 = male, 2 = female) and month of age: \"Age is listed at the half month poin"
    },
    "links": [
-    "http://localhost:8000/"
+    "http://localhost:8765/"
    ]
   },
   {
@@ -16378,7 +16504,7 @@
    "why": "number word (count in prose)",
    "heading": "Lean Body Mass Calculator",
    "links": [
-    "http://localhost:8000/"
+    "http://localhost:8765/"
    ]
   },
   {
@@ -19886,7 +20012,7 @@
    "why": "a count of states (manual.json)",
    "heading": "Obesity Rate by US State",
    "links": [
-    "http://localhost:8000/obesity-rate-by-state/#ranking"
+    "http://localhost:8765/obesity-rate-by-state/#ranking"
    ]
   },
   {
@@ -19904,7 +20030,7 @@
     "how": "data_source"
    },
    "links": [
-    "http://localhost:8000/obesity-rate-by-state/#trend"
+    "http://localhost:8765/obesity-rate-by-state/#trend"
    ]
   },
   {
@@ -19922,7 +20048,7 @@
     "how": "manual.json"
    },
    "links": [
-    "http://localhost:8000/obesity-rate-by-state/#measured"
+    "http://localhost:8765/obesity-rate-by-state/#measured"
    ]
   },
   {
@@ -19940,7 +20066,7 @@
     "how": "data_source"
    },
    "links": [
-    "http://localhost:8000/obesity-rate-by-state/#gaps"
+    "http://localhost:8765/obesity-rate-by-state/#gaps"
    ]
   },
   {
@@ -22429,7 +22555,7 @@
     "how": "manual.json"
    },
    "links": [
-    "http://localhost:8000/us-obesity-statistics/"
+    "http://localhost:8765/us-obesity-statistics/"
    ]
   },
   {
@@ -23706,8 +23832,8 @@
     "how": "data_source"
    },
    "links": [
-    "http://localhost:8000/obesity-rate-by-state/obesity-by-state-cdc-brfss-2011-2025.csv",
-    "http://localhost:8000/obesity-rate-by-state/obesity-by-state-and-age-cdc-brfss-2025.csv"
+    "http://localhost:8765/obesity-rate-by-state/obesity-by-state-cdc-brfss-2011-2025.csv",
+    "http://localhost:8765/obesity-rate-by-state/obesity-by-state-and-age-cdc-brfss-2025.csv"
    ]
   },
   {
@@ -23725,8 +23851,8 @@
     "how": "data_source"
    },
    "links": [
-    "http://localhost:8000/obesity-rate-by-state/obesity-by-state-cdc-brfss-2011-2025.csv",
-    "http://localhost:8000/obesity-rate-by-state/obesity-by-state-and-age-cdc-brfss-2025.csv"
+    "http://localhost:8765/obesity-rate-by-state/obesity-by-state-cdc-brfss-2011-2025.csv",
+    "http://localhost:8765/obesity-rate-by-state/obesity-by-state-and-age-cdc-brfss-2025.csv"
    ]
   },
   {
@@ -23744,8 +23870,8 @@
     "how": "data_source"
    },
    "links": [
-    "http://localhost:8000/obesity-rate-by-state/obesity-by-state-cdc-brfss-2011-2025.csv",
-    "http://localhost:8000/obesity-rate-by-state/obesity-by-state-and-age-cdc-brfss-2025.csv"
+    "http://localhost:8765/obesity-rate-by-state/obesity-by-state-cdc-brfss-2011-2025.csv",
+    "http://localhost:8765/obesity-rate-by-state/obesity-by-state-and-age-cdc-brfss-2025.csv"
    ]
   },
   {
@@ -23803,7 +23929,7 @@
     "how": "manual.json"
    },
    "links": [
-    "http://localhost:8000/us-obesity-statistics/"
+    "http://localhost:8765/us-obesity-statistics/"
    ]
   },
   {
@@ -34833,7 +34959,7 @@
    "why": "another page's years (a cross-link) (manual.json)",
    "heading": "Childhood obesity by state",
    "links": [
-    "http://localhost:8000/obesity-rate-by-state/"
+    "http://localhost:8765/obesity-rate-by-state/"
    ]
   },
   {
@@ -34846,7 +34972,7 @@
    "why": "another page's years (a cross-link) (manual.json)",
    "heading": "Childhood obesity by state",
    "links": [
-    "http://localhost:8000/obesity-rate-by-state/"
+    "http://localhost:8765/obesity-rate-by-state/"
    ]
   },
   {
@@ -35693,7 +35819,7 @@
    "why": "another page's years (a link label) (manual.json)",
    "heading": "Related",
    "links": [
-    "http://localhost:8000/obesity-rate-by-state/"
+    "http://localhost:8765/obesity-rate-by-state/"
    ]
   },
   {
@@ -35706,7 +35832,7 @@
    "why": "another page's years (a link label) (manual.json)",
    "heading": "Related",
    "links": [
-    "http://localhost:8000/obesity-rate-by-state/"
+    "http://localhost:8765/obesity-rate-by-state/"
    ]
   },
   {
@@ -40485,7 +40611,7 @@
     "label": "the 703 in calculateBMI"
    },
    "links": [
-    "http://localhost:8000/blog/bmi-formula/"
+    "http://localhost:8765/blog/bmi-formula/"
    ]
   },
   {
@@ -40749,8 +40875,8 @@
     "how": "pages_served"
    },
    "links": [
-    "http://localhost:8000/average-weight/",
-    "http://localhost:8000/us-obesity-statistics/"
+    "http://localhost:8765/average-weight/",
+    "http://localhost:8765/us-obesity-statistics/"
    ]
   },
   {
@@ -40977,7 +41103,7 @@
    },
    "links": [
     "https://doi.org/10.1093/ndt/gfm517",
-    "http://localhost:8000/blog/bmi-history/"
+    "http://localhost:8765/blog/bmi-history/"
    ]
   },
   {
@@ -40996,7 +41122,7 @@
    },
    "links": [
     "https://doi.org/10.1093/ndt/gfm517",
-    "http://localhost:8000/blog/bmi-history/"
+    "http://localhost:8765/blog/bmi-history/"
    ]
   },
   {
@@ -41015,7 +41141,7 @@
    },
    "links": [
     "https://pubmed.ncbi.nlm.nih.gov/2043597/",
-    "http://localhost:8000/blog/how-to-measure-body-fat/"
+    "http://localhost:8765/blog/how-to-measure-body-fat/"
    ]
   },
   {
@@ -41034,7 +41160,7 @@
    },
    "links": [
     "https://pubmed.ncbi.nlm.nih.gov/2043597/",
-    "http://localhost:8000/blog/how-to-measure-body-fat/"
+    "http://localhost:8765/blog/how-to-measure-body-fat/"
    ]
   },
   {
@@ -41047,8 +41173,8 @@
    "why": "number word (count in prose)",
    "heading": "BMI and body fat",
    "links": [
-    "http://localhost:8000/body-fat-calculator/",
-    "http://localhost:8000/body-fat-percentage-chart/"
+    "http://localhost:8765/body-fat-calculator/",
+    "http://localhost:8765/body-fat-percentage-chart/"
    ]
   },
   {
@@ -47518,7 +47644,7 @@
     "how": "name"
    },
    "links": [
-    "http://localhost:8000/blog/bmi-history/#ancel-keys"
+    "http://localhost:8765/blog/bmi-history/#ancel-keys"
    ]
   },
   {
@@ -47536,7 +47662,7 @@
     "how": "manual.json"
    },
    "links": [
-    "http://localhost:8000/blog/bmi-history/#nih-adoption"
+    "http://localhost:8765/blog/bmi-history/#nih-adoption"
    ]
   },
   {
@@ -49275,7 +49401,7 @@
     "label": "category cut-off (getBMICategory)"
    },
    "links": [
-    "http://localhost:8000/blog/bmi-categories/"
+    "http://localhost:8765/blog/bmi-categories/"
    ]
   },
   {
@@ -49296,7 +49422,7 @@
     "name_differs": "\"class III obesity\" = calculator.js \"Class 3 obesity\""
    },
    "links": [
-    "http://localhost:8000/blog/bmi-categories/"
+    "http://localhost:8765/blog/bmi-categories/"
    ]
   },
   {
@@ -49556,7 +49682,7 @@
     "how": "pages_served"
    },
    "links": [
-    "http://localhost:8000/body-fat-percentage-chart/"
+    "http://localhost:8765/body-fat-percentage-chart/"
    ]
   },
   {
@@ -49574,7 +49700,7 @@
     "how": "pages_served"
    },
    "links": [
-    "http://localhost:8000/body-fat-percentage-chart/"
+    "http://localhost:8765/body-fat-percentage-chart/"
    ]
   },
   {
@@ -49592,7 +49718,7 @@
     "how": "pages_served"
    },
    "links": [
-    "http://localhost:8000/body-fat-percentage-chart/"
+    "http://localhost:8765/body-fat-percentage-chart/"
    ]
   },
   {
@@ -49610,7 +49736,7 @@
     "how": "pages_served"
    },
    "links": [
-    "http://localhost:8000/body-fat-percentage-chart/"
+    "http://localhost:8765/body-fat-percentage-chart/"
    ]
   },
   {
@@ -49630,7 +49756,7 @@
     "label": "category cut-off (getBMICategory)"
    },
    "links": [
-    "http://localhost:8000/body-fat-percentage-chart/"
+    "http://localhost:8765/body-fat-percentage-chart/"
    ]
   },
   {
@@ -49643,7 +49769,7 @@
    "why": "category cut-off (other bound)",
    "heading": "Sex Differences Ignored",
    "links": [
-    "http://localhost:8000/body-fat-percentage-chart/"
+    "http://localhost:8765/body-fat-percentage-chart/"
    ]
   },
   {
@@ -49661,7 +49787,7 @@
     "how": "pages_served"
    },
    "links": [
-    "http://localhost:8000/body-fat-percentage-chart/"
+    "http://localhost:8765/body-fat-percentage-chart/"
    ]
   },
   {
@@ -49679,7 +49805,7 @@
     "how": "pages_served"
    },
    "links": [
-    "http://localhost:8000/body-fat-percentage-chart/"
+    "http://localhost:8765/body-fat-percentage-chart/"
    ]
   },
   {
@@ -51872,7 +51998,7 @@
    "why": "count in prose",
    "heading": "Category 6: Obese Class I (BMI 30.0–34.9)",
    "links": [
-    "http://localhost:8000/blog/bmi-and-health-risks/"
+    "http://localhost:8765/blog/bmi-and-health-risks/"
    ]
   },
   {
@@ -52346,7 +52472,7 @@
     "how": "paragraph link"
    },
    "links": [
-    "http://localhost:8000/us-obesity-statistics/"
+    "http://localhost:8765/us-obesity-statistics/"
    ]
   },
   {
@@ -63400,7 +63526,7 @@
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
-    "http://localhost:8000/age-bmi-calculator/"
+    "http://localhost:8765/age-bmi-calculator/"
    ]
   },
   {
@@ -63416,7 +63542,7 @@
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
-    "http://localhost:8000/age-bmi-calculator/"
+    "http://localhost:8765/age-bmi-calculator/"
    ]
   },
   {
@@ -63432,7 +63558,7 @@
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
-    "http://localhost:8000/age-bmi-calculator/"
+    "http://localhost:8765/age-bmi-calculator/"
    ]
   },
   {
@@ -63448,7 +63574,7 @@
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
-    "http://localhost:8000/age-bmi-calculator/"
+    "http://localhost:8765/age-bmi-calculator/"
    ]
   },
   {
@@ -63464,7 +63590,7 @@
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
-    "http://localhost:8000/age-bmi-calculator/"
+    "http://localhost:8765/age-bmi-calculator/"
    ]
   },
   {
@@ -63480,7 +63606,7 @@
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
     "https://pubmed.ncbi.nlm.nih.gov/24452240/",
-    "http://localhost:8000/age-bmi-calculator/"
+    "http://localhost:8765/age-bmi-calculator/"
    ]
   },
   {
@@ -63605,7 +63731,7 @@
    "why": "count in prose",
    "heading": "Obesity classes at a glance",
    "links": [
-    "http://localhost:8000/blog/bmi-categories/"
+    "http://localhost:8765/blog/bmi-categories/"
    ]
   },
   {
@@ -63665,7 +63791,7 @@
     "label": "category cut-off (getBMICategory)"
    },
    "links": [
-    "http://localhost:8000/blog/underweight-bmi-risks/"
+    "http://localhost:8765/blog/underweight-bmi-risks/"
    ]
   },
   {
@@ -64494,24 +64620,7 @@
   {
    "page": "/blog/underweight-bmi-risks/",
    "region": "main",
-   "sentence": "Underweight Definition: BMI below 18.5 kg/m² is classified as underweight by the WHO",
-   "number": "18.5",
-   "value": 18.5,
-   "class": "B",
-   "why": "category cut-off",
-   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
-   "check": {
-    "status": "ok",
-    "kind": "category",
-    "page": "18.5 (Underweight)",
-    "computed": "Severe thinness / Moderate thinness / Underweight in calculator.js",
-    "label": "category cut-off (getBMICategory)"
-   }
-  },
-  {
-   "page": "/blog/underweight-bmi-risks/",
-   "region": "main",
-   "sentence": "Severity Matters: A BMI below 18.5 is graded as underweight (17.0–18.4), moderate thinness (16.0–16.9), or severe thinness (below 16.0)",
+   "sentence": "Definition: a BMI below 18.5 is underweight for adults (CDC); about 1.6% of US adults aged 20 and over were underweight in August 2021–August 2023 (NCHS).",
    "number": "18.5",
    "value": 18.5,
    "class": "B",
@@ -64523,12 +64632,105 @@
     "page": "18.5 (underweight)",
     "computed": "Severe thinness / Moderate thinness / Underweight in calculator.js",
     "label": "category cut-off (getBMICategory)"
-   }
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://www.cdc.gov/nchs/data/hestat/hestat119.htm"
+   ]
   },
   {
    "page": "/blog/underweight-bmi-risks/",
    "region": "main",
-   "sentence": "Severity Matters: A BMI below 18.5 is graded as underweight (17.0–18.4), moderate thinness (16.0–16.9), or severe thinness (below 16.0)",
+   "sentence": "Definition: a BMI below 18.5 is underweight for adults (CDC); about 1.6% of US adults aged 20 and over were underweight in August 2021–August 2023 (NCHS).",
+   "number": "1.6",
+   "value": 1.6,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-underweight",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://www.cdc.gov/nchs/data/hestat/hestat119.htm"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Definition: a BMI below 18.5 is underweight for adults (CDC); about 1.6% of US adults aged 20 and over were underweight in August 2021–August 2023 (NCHS).",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-underweight",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://www.cdc.gov/nchs/data/hestat/hestat119.htm"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Definition: a BMI below 18.5 is underweight for adults (CDC); about 1.6% of US adults aged 20 and over were underweight in August 2021–August 2023 (NCHS).",
+   "number": "2021",
+   "value": 2021.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-underweight",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://www.cdc.gov/nchs/data/hestat/hestat119.htm"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Definition: a BMI below 18.5 is underweight for adults (CDC); about 1.6% of US adults aged 20 and over were underweight in August 2021–August 2023 (NCHS).",
+   "number": "2023",
+   "value": 2023.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-underweight",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://www.cdc.gov/nchs/data/hestat/hestat119.htm"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Grades: WHO grades adult thinness in three steps: 17.0–18.4 (the calculator’s Underweight), 16.0–16.9 (moderate thinness) and below 16.0 (severe thinness) (WHO).",
+   "number": "three",
+   "value": 3,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Grades: WHO grades adult thinness in three steps: 17.0–18.4 (the calculator’s Underweight), 16.0–16.9 (moderate thinness) and below 16.0 (severe thinness) (WHO).",
    "number": "17.0",
    "value": 17.0,
    "class": "B",
@@ -64537,26 +64739,32 @@
    "check": {
     "status": "ok",
     "kind": "category",
-    "page": "17.0-18.4 (underweight)",
+    "page": "17.0-18.4 (thinness)",
     "computed": "Underweight in calculator.js",
     "label": "category cut-off (getBMICategory)",
-    "name_differs": "\"underweight\" here is Underweight in calculator.js"
-   }
+    "name_differs": "\"thinness\" here is Underweight in calculator.js"
+   },
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546"
+   ]
   },
   {
    "page": "/blog/underweight-bmi-risks/",
    "region": "main",
-   "sentence": "Severity Matters: A BMI below 18.5 is graded as underweight (17.0–18.4), moderate thinness (16.0–16.9), or severe thinness (below 16.0)",
+   "sentence": "Grades: WHO grades adult thinness in three steps: 17.0–18.4 (the calculator’s Underweight), 16.0–16.9 (moderate thinness) and below 16.0 (severe thinness) (WHO).",
    "number": "18.4",
    "value": 18.4,
    "class": "B",
    "why": "category cut-off (other bound)",
-   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions"
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546"
+   ]
   },
   {
    "page": "/blog/underweight-bmi-risks/",
    "region": "main",
-   "sentence": "Severity Matters: A BMI below 18.5 is graded as underweight (17.0–18.4), moderate thinness (16.0–16.9), or severe thinness (below 16.0)",
+   "sentence": "Grades: WHO grades adult thinness in three steps: 17.0–18.4 (the calculator’s Underweight), 16.0–16.9 (moderate thinness) and below 16.0 (severe thinness) (WHO).",
    "number": "16.0",
    "value": 16.0,
    "class": "B",
@@ -64568,22 +64776,28 @@
     "page": "16.0-16.9 (moderate thinness)",
     "computed": "Moderate thinness in calculator.js",
     "label": "category cut-off (getBMICategory)"
-   }
+   },
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546"
+   ]
   },
   {
    "page": "/blog/underweight-bmi-risks/",
    "region": "main",
-   "sentence": "Severity Matters: A BMI below 18.5 is graded as underweight (17.0–18.4), moderate thinness (16.0–16.9), or severe thinness (below 16.0)",
+   "sentence": "Grades: WHO grades adult thinness in three steps: 17.0–18.4 (the calculator’s Underweight), 16.0–16.9 (moderate thinness) and below 16.0 (severe thinness) (WHO).",
    "number": "16.9",
    "value": 16.9,
    "class": "B",
    "why": "category cut-off (other bound)",
-   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions"
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546"
+   ]
   },
   {
    "page": "/blog/underweight-bmi-risks/",
    "region": "main",
-   "sentence": "Severity Matters: A BMI below 18.5 is graded as underweight (17.0–18.4), moderate thinness (16.0–16.9), or severe thinness (below 16.0)",
+   "sentence": "Grades: WHO grades adult thinness in three steps: 17.0–18.4 (the calculator’s Underweight), 16.0–16.9 (moderate thinness) and below 16.0 (severe thinness) (WHO).",
    "number": "16.0",
    "value": 16.0,
    "class": "B",
@@ -64595,7 +64809,224 @@
     "page": "16.0 (severe thinness)",
     "computed": "Severe thinness in calculator.js",
     "label": "category cut-off (getBMICategory)"
-   }
+   },
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Risk of death: in pooled data from 239 studies, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "239",
+   "value": 239.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Risk of death: in pooled data from 239 studies, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "15.0",
+   "value": 15.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Risk of death: in pooled data from 239 studies, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "18.4",
+   "value": 18.4,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Risk of death: in pooled data from 239 studies, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "1.51",
+   "value": 1.51,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Risk of death: in pooled data from 239 studies, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "22.5",
+   "value": 22.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Risk of death: in pooled data from 239 studies, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Risk of death: in pooled data from 239 studies, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "When to act: MedlinePlus advises seeing a provider if you lose more than 10 pounds (4.5 kg), or 5% of your usual weight, within 6 to 12 months without knowing why (MedlinePlus).",
+   "number": "10",
+   "value": 10.0,
+   "class": "B",
+   "why": "unit conversion (input)",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "links": [
+    "https://medlineplus.gov/ency/article/003107.htm"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "When to act: MedlinePlus advises seeing a provider if you lose more than 10 pounds (4.5 kg), or 5% of your usual weight, within 6 to 12 months without knowing why (MedlinePlus).",
+   "number": "4.5",
+   "value": 4.5,
+   "class": "B",
+   "why": "unit conversion",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "check": {
+    "status": "ok",
+    "kind": "value",
+    "page": "4.5",
+    "computed": "4.5",
+    "raw": 4.535929094356398,
+    "label": "kg from lb (lbsToKg)"
+   },
+   "links": [
+    "https://medlineplus.gov/ency/article/003107.htm"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "When to act: MedlinePlus advises seeing a provider if you lose more than 10 pounds (4.5 kg), or 5% of your usual weight, within 6 to 12 months without knowing why (MedlinePlus).",
+   "number": "5",
+   "value": 5.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "row": {
+    "status": "row",
+    "domain": "medlineplus-unintentional-weight-loss",
+    "how": "link"
+   },
+   "links": [
+    "https://medlineplus.gov/ency/article/003107.htm"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "When to act: MedlinePlus advises seeing a provider if you lose more than 10 pounds (4.5 kg), or 5% of your usual weight, within 6 to 12 months without knowing why (MedlinePlus).",
+   "number": "6",
+   "value": 6.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "row": {
+    "status": "row",
+    "domain": "medlineplus-unintentional-weight-loss",
+    "how": "link"
+   },
+   "links": [
+    "https://medlineplus.gov/ency/article/003107.htm"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "When to act: MedlinePlus advises seeing a provider if you lose more than 10 pounds (4.5 kg), or 5% of your usual weight, within 6 to 12 months without knowing why (MedlinePlus).",
+   "number": "12",
+   "value": 12.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "row": {
+    "status": "row",
+    "domain": "medlineplus-unintentional-weight-loss",
+    "how": "link"
+   },
+   "links": [
+    "https://medlineplus.gov/ency/article/003107.htm"
+   ]
   },
   {
    "page": "/blog/underweight-bmi-risks/",
@@ -65002,151 +65433,1118 @@
   {
    "page": "/blog/underweight-bmi-risks/",
    "region": "main",
-   "sentence": "The World Health Organization further divides underweight into three severity categories based on BMI ranges.",
+   "sentence": "The World Health Organization grades adult thinness in three steps by BMI (WHO, 1995); WHO calls the first grade mild thinness:",
    "number": "three",
    "value": 3,
    "class": "D",
    "why": "number word (count in prose)",
-   "heading": "Underweight Classifications: Severity Levels"
-  },
-  {
-   "page": "/blog/underweight-bmi-risks/",
-   "region": "main",
-   "sentence": "Diabetes (Type 1): Uncontrolled diabetes can cause significant weight loss",
-   "number": "1",
-   "value": 1.0,
-   "class": "D",
-   "why": "name or label with a number",
-   "heading": "Medical Conditions"
-  },
-  {
-   "page": "/blog/underweight-bmi-risks/",
-   "region": "main",
-   "sentence": "National Alliance for Eating Disorders helpline: 1-866-662-1235 (Monday–Friday, US) — allianceforeatingdisorders.com",
-   "number": "1",
-   "value": 1.0,
-   "class": "D",
-   "why": "phone number or hours",
-   "heading": "Eating Disorders",
+   "heading": "Underweight Classifications: Severity Levels",
    "links": [
-    "https://allianceforeatingdisorders.com/"
+    "https://www.who.int/publications/i/item/9241208546"
    ]
   },
   {
    "page": "/blog/underweight-bmi-risks/",
    "region": "main",
-   "sentence": "National Alliance for Eating Disorders helpline: 1-866-662-1235 (Monday–Friday, US) — allianceforeatingdisorders.com",
-   "number": "866",
-   "value": 866.0,
-   "class": "D",
-   "why": "phone number or hours",
-   "heading": "Eating Disorders",
+   "sentence": "The World Health Organization grades adult thinness in three steps by BMI (WHO, 1995); WHO calls the first grade mild thinness:",
+   "number": "1995",
+   "value": 1995.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Underweight Classifications: Severity Levels",
+   "row": {
+    "status": "row",
+    "domain": "who-trs-854",
+    "how": "link"
+   },
    "links": [
-    "https://allianceforeatingdisorders.com/"
+    "https://www.who.int/publications/i/item/9241208546"
    ]
   },
   {
    "page": "/blog/underweight-bmi-risks/",
    "region": "main",
-   "sentence": "National Alliance for Eating Disorders helpline: 1-866-662-1235 (Monday–Friday, US) — allianceforeatingdisorders.com",
-   "number": "662",
-   "value": 662.0,
+   "sentence": "The ideal weight calculator shows what four published formulas give for your height.",
+   "number": "four",
+   "value": 4,
    "class": "D",
-   "why": "phone number or hours",
-   "heading": "Eating Disorders",
+   "why": "number word (count in prose)",
+   "heading": "Example Weights by Height",
    "links": [
-    "https://allianceforeatingdisorders.com/"
+    "http://localhost:8765/ideal-weight/"
    ]
   },
   {
    "page": "/blog/underweight-bmi-risks/",
    "region": "main",
-   "sentence": "National Alliance for Eating Disorders helpline: 1-866-662-1235 (Monday–Friday, US) — allianceforeatingdisorders.com",
-   "number": "1235",
-   "value": 1235.0,
-   "class": "D",
-   "why": "phone number or hours",
-   "heading": "Eating Disorders",
+   "sentence": "The Global BMI Mortality Collaboration pooled 239 studies from 32 countries and, to limit the effect of smoking and existing illness, analysed never-smokers without chronic disease at the start.",
+   "number": "239",
+   "value": 239.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "The Global BMI Mortality Collaboration pooled 239 studies from 32 countries and, to limit the effect of smoking and existing illness, analysed never-smokers without chronic disease at the start.",
+   "number": "32",
+   "value": 32.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Against a BMI of 22.5 to 24.9, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death, close to the 1.45 of a BMI of 30.0 to 34.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "22.5",
+   "value": 22.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
    "links": [
-    "https://allianceforeatingdisorders.com/"
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
    ]
   },
   {
    "page": "/blog/underweight-bmi-risks/",
    "region": "main",
-   "sentence": "SAMHSA National Helpline (general mental-health / substance-use): 1-800-662-4357, 24/7",
-   "number": "1",
-   "value": 1.0,
-   "class": "D",
-   "why": "phone number or hours",
-   "heading": "Eating Disorders"
+   "sentence": "Against a BMI of 22.5 to 24.9, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death, close to the 1.45 of a BMI of 30.0 to 34.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
   },
   {
    "page": "/blog/underweight-bmi-risks/",
    "region": "main",
-   "sentence": "SAMHSA National Helpline (general mental-health / substance-use): 1-800-662-4357, 24/7",
-   "number": "800",
-   "value": 800.0,
-   "class": "D",
-   "why": "phone number or hours",
-   "heading": "Eating Disorders"
+   "sentence": "Against a BMI of 22.5 to 24.9, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death, close to the 1.45 of a BMI of 30.0 to 34.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "15.0",
+   "value": 15.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
   },
   {
    "page": "/blog/underweight-bmi-risks/",
    "region": "main",
-   "sentence": "SAMHSA National Helpline (general mental-health / substance-use): 1-800-662-4357, 24/7",
-   "number": "662",
-   "value": 662.0,
-   "class": "D",
-   "why": "phone number or hours",
-   "heading": "Eating Disorders"
+   "sentence": "Against a BMI of 22.5 to 24.9, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death, close to the 1.45 of a BMI of 30.0 to 34.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "18.4",
+   "value": 18.4,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
   },
   {
    "page": "/blog/underweight-bmi-risks/",
    "region": "main",
-   "sentence": "SAMHSA National Helpline (general mental-health / substance-use): 1-800-662-4357, 24/7",
-   "number": "4357",
-   "value": 4357.0,
-   "class": "D",
-   "why": "phone number or hours",
-   "heading": "Eating Disorders"
+   "sentence": "Against a BMI of 22.5 to 24.9, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death, close to the 1.45 of a BMI of 30.0 to 34.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "1.51",
+   "value": 1.51,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
   },
   {
    "page": "/blog/underweight-bmi-risks/",
    "region": "main",
-   "sentence": "SAMHSA National Helpline (general mental-health / substance-use): 1-800-662-4357, 24/7",
-   "number": "24",
-   "value": 24.0,
-   "class": "D",
-   "why": "phone number or hours",
-   "heading": "Eating Disorders"
+   "sentence": "Against a BMI of 22.5 to 24.9, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death, close to the 1.45 of a BMI of 30.0 to 34.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "1.45",
+   "value": 1.45,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
   },
   {
    "page": "/blog/underweight-bmi-risks/",
    "region": "main",
-   "sentence": "SAMHSA National Helpline (general mental-health / substance-use): 1-800-662-4357, 24/7",
-   "number": "7",
-   "value": 7.0,
-   "class": "D",
-   "why": "phone number or hours",
-   "heading": "Eating Disorders"
-  },
-  {
-   "page": "/blog/underweight-bmi-risks/",
-   "region": "main",
-   "sentence": "BMI Below 17",
-   "number": "17",
-   "value": 17.0,
+   "sentence": "Against a BMI of 22.5 to 24.9, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death, close to the 1.45 of a BMI of 30.0 to 34.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "30.0",
+   "value": 30.0,
    "class": "B",
    "why": "category cut-off",
-   "heading": "When to See a Doctor",
+   "heading": "Health Risks of Being Underweight",
    "check": {
     "status": "ok",
     "kind": "category",
-    "page": "17 (Moderate to severe thinness)",
-    "computed": "Severe thinness / Moderate thinness in calculator.js",
+    "page": "30.0 to 34.9 (no category named)",
+    "computed": "Class 1 obesity in calculator.js",
     "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Against a BMI of 22.5 to 24.9, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death, close to the 1.45 of a BMI of 30.0 to 34.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "34.9",
+   "value": 34.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "Health Risks of Being Underweight",
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Against a BMI of 22.5 to 24.9, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death, close to the 1.45 of a BMI of 30.0 to 34.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Risk of death by BMI (hazard ratio; 1.00 = BMI 22.5 to 24.9)",
+   "number": "1.00",
+   "value": 1.0,
+   "class": "C",
+   "why": "the GBMC chart's title: its reference band (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
    }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Risk of death by BMI (hazard ratio; 1.00 = BMI 22.5 to 24.9)",
+   "number": "22.5",
+   "value": 22.5,
+   "class": "C",
+   "why": "the GBMC chart's title: its reference band (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Risk of death by BMI (hazard ratio; 1.00 = BMI 22.5 to 24.9)",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "C",
+   "why": "the GBMC chart's title: its reference band (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "BMI 15.0–18.4",
+   "number": "15.0",
+   "value": 15.0,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "BMI 15.0–18.4",
+   "number": "18.4",
+   "value": 18.4,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "1.51",
+   "number": "1.51",
+   "value": 1.51,
+   "class": "C",
+   "why": "a hazard ratio in the GBMC bar chart (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "BMI 18.5–19.9",
+   "number": "18.5",
+   "value": 18.5,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "BMI 18.5–19.9",
+   "number": "19.9",
+   "value": 19.9,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "1.13",
+   "number": "1.13",
+   "value": 1.13,
+   "class": "C",
+   "why": "a hazard ratio in the GBMC bar chart (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "BMI 20.0–22.4",
+   "number": "20.0",
+   "value": 20.0,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "BMI 20.0–22.4",
+   "number": "22.4",
+   "value": 22.4,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "1.00",
+   "number": "1.00",
+   "value": 1.0,
+   "class": "C",
+   "why": "a hazard ratio in the GBMC bar chart (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "BMI 22.5–24.9",
+   "number": "22.5",
+   "value": 22.5,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "BMI 22.5–24.9",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "1.00",
+   "number": "1.00",
+   "value": 1.0,
+   "class": "C",
+   "why": "a hazard ratio in the GBMC bar chart (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "BMI 25.0–27.4",
+   "number": "25.0",
+   "value": 25.0,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "BMI 25.0–27.4",
+   "number": "27.4",
+   "value": 27.4,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "1.07",
+   "number": "1.07",
+   "value": 1.07,
+   "class": "C",
+   "why": "a hazard ratio in the GBMC bar chart (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "BMI 27.5–29.9",
+   "number": "27.5",
+   "value": 27.5,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "BMI 27.5–29.9",
+   "number": "29.9",
+   "value": 29.9,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "1.20",
+   "number": "1.20",
+   "value": 1.2,
+   "class": "C",
+   "why": "a hazard ratio in the GBMC bar chart (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "BMI 30.0–34.9",
+   "number": "30.0",
+   "value": 30.0,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "BMI 30.0–34.9",
+   "number": "34.9",
+   "value": 34.9,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "1.45",
+   "number": "1.45",
+   "value": 1.45,
+   "class": "C",
+   "why": "a hazard ratio in the GBMC bar chart (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "BMI 35.0–39.9",
+   "number": "35.0",
+   "value": 35.0,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "BMI 35.0–39.9",
+   "number": "39.9",
+   "value": 39.9,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "1.94",
+   "number": "1.94",
+   "value": 1.94,
+   "class": "C",
+   "why": "a hazard ratio in the GBMC bar chart (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "BMI 40.0–59.9",
+   "number": "40.0",
+   "value": 40.0,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "BMI 40.0–59.9",
+   "number": "59.9",
+   "value": 59.9,
+   "class": "D",
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "2.76",
+   "number": "2.76",
+   "value": 2.76,
+   "class": "C",
+   "why": "a hazard ratio in the GBMC bar chart (CMB-049) (manual.json)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Never-smokers without chronic disease at the start, 239 studies, 32 countries.",
+   "number": "239",
+   "value": 239.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Never-smokers without chronic disease at the start, 239 studies, 32 countries.",
+   "number": "32",
+   "value": 32.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Source: Global BMI Mortality Collaboration, The Lancet, 2016 (full text).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "For adults aged 65 and over, a meta-analysis of 197,940 people found that, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter et al., 2014).",
+   "number": "65",
+   "value": 65.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "winter-2014-bmi-mortality-65",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/24452240/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "For adults aged 65 and over, a meta-analysis of 197,940 people found that, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter et al., 2014).",
+   "number": "197,940",
+   "value": 197940.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "winter-2014-bmi-mortality-65",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/24452240/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "For adults aged 65 and over, a meta-analysis of 197,940 people found that, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter et al., 2014).",
+   "number": "23",
+   "value": 23.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "winter-2014-bmi-mortality-65",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/24452240/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "For adults aged 65 and over, a meta-analysis of 197,940 people found that, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter et al., 2014).",
+   "number": "23.9",
+   "value": 23.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "winter-2014-bmi-mortality-65",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/24452240/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "For adults aged 65 and over, a meta-analysis of 197,940 people found that, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter et al., 2014).",
+   "number": "23",
+   "value": 23.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "winter-2014-bmi-mortality-65",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/24452240/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "For adults aged 65 and over, a meta-analysis of 197,940 people found that, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter et al., 2014).",
+   "number": "33",
+   "value": 33.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "winter-2014-bmi-mortality-65",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/24452240/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "For adults aged 65 and over, a meta-analysis of 197,940 people found that, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter et al., 2014).",
+   "number": "2014",
+   "value": 2014.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Health Risks of Being Underweight",
+   "row": {
+    "status": "row",
+    "domain": "winter-2014-bmi-mortality-65",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/24452240/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "For a pregnancy with one baby, CDC lists a weight gain of 28 to 40 lb for women who were underweight before pregnancy, against 25 to 35 lb for a BMI of 18.5 to 24.9; the ranges are the Institute of Medicine’s (CDC).",
+   "number": "28",
+   "value": 28.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Fertility and Pregnancy",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "For a pregnancy with one baby, CDC lists a weight gain of 28 to 40 lb for women who were underweight before pregnancy, against 25 to 35 lb for a BMI of 18.5 to 24.9; the ranges are the Institute of Medicine’s (CDC).",
+   "number": "40",
+   "value": 40.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Fertility and Pregnancy",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "For a pregnancy with one baby, CDC lists a weight gain of 28 to 40 lb for women who were underweight before pregnancy, against 25 to 35 lb for a BMI of 18.5 to 24.9; the ranges are the Institute of Medicine’s (CDC).",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Fertility and Pregnancy",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "For a pregnancy with one baby, CDC lists a weight gain of 28 to 40 lb for women who were underweight before pregnancy, against 25 to 35 lb for a BMI of 18.5 to 24.9; the ranges are the Institute of Medicine’s (CDC).",
+   "number": "35",
+   "value": 35.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Fertility and Pregnancy",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "For a pregnancy with one baby, CDC lists a weight gain of 28 to 40 lb for women who were underweight before pregnancy, against 25 to 35 lb for a BMI of 18.5 to 24.9; the ranges are the Institute of Medicine’s (CDC).",
+   "number": "18.5",
+   "value": 18.5,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "Fertility and Pregnancy",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "18.5 to 24.9 (no category named)",
+    "computed": "Healthy weight in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "For a pregnancy with one baby, CDC lists a weight gain of 28 to 40 lb for women who were underweight before pregnancy, against 25 to 35 lb for a BMI of 18.5 to 24.9; the ranges are the Institute of Medicine’s (CDC).",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "Fertility and Pregnancy",
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "CDC’s survey team names two broad causes: “Poor nutrition and underlying health conditions can result in underweight among youth and adults” (NCHS).",
+   "number": "two",
+   "value": 2,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Causes of Being Underweight",
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat119.htm"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Support: the Alliance for Eating Disorders runs a free helpline staffed by licensed therapists, 1-866-662-1235, Monday to Friday, 9:00 am to 7:00 pm Eastern (allianceforeatingdisorders.com).",
+   "number": "1",
+   "value": 1.0,
+   "class": "D",
+   "why": "the helpline's number and hours (Alliance for Eating Disorders; registry alliance-eating-disorders-helpline, CMB-049) (manual.json)",
+   "heading": "Eating Disorders",
+   "links": [
+    "https://www.allianceforeatingdisorders.com/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Support: the Alliance for Eating Disorders runs a free helpline staffed by licensed therapists, 1-866-662-1235, Monday to Friday, 9:00 am to 7:00 pm Eastern (allianceforeatingdisorders.com).",
+   "number": "866",
+   "value": 866.0,
+   "class": "D",
+   "why": "the helpline's number and hours (Alliance for Eating Disorders; registry alliance-eating-disorders-helpline, CMB-049) (manual.json)",
+   "heading": "Eating Disorders",
+   "links": [
+    "https://www.allianceforeatingdisorders.com/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Support: the Alliance for Eating Disorders runs a free helpline staffed by licensed therapists, 1-866-662-1235, Monday to Friday, 9:00 am to 7:00 pm Eastern (allianceforeatingdisorders.com).",
+   "number": "662",
+   "value": 662.0,
+   "class": "D",
+   "why": "the helpline's number and hours (Alliance for Eating Disorders; registry alliance-eating-disorders-helpline, CMB-049) (manual.json)",
+   "heading": "Eating Disorders",
+   "links": [
+    "https://www.allianceforeatingdisorders.com/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Support: the Alliance for Eating Disorders runs a free helpline staffed by licensed therapists, 1-866-662-1235, Monday to Friday, 9:00 am to 7:00 pm Eastern (allianceforeatingdisorders.com).",
+   "number": "1235",
+   "value": 1235.0,
+   "class": "D",
+   "why": "the helpline's number and hours (Alliance for Eating Disorders; registry alliance-eating-disorders-helpline, CMB-049) (manual.json)",
+   "heading": "Eating Disorders",
+   "links": [
+    "https://www.allianceforeatingdisorders.com/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Support: the Alliance for Eating Disorders runs a free helpline staffed by licensed therapists, 1-866-662-1235, Monday to Friday, 9:00 am to 7:00 pm Eastern (allianceforeatingdisorders.com).",
+   "number": "9",
+   "value": 9.0,
+   "class": "D",
+   "why": "the helpline's number and hours (Alliance for Eating Disorders; registry alliance-eating-disorders-helpline, CMB-049) (manual.json)",
+   "heading": "Eating Disorders",
+   "links": [
+    "https://www.allianceforeatingdisorders.com/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Support: the Alliance for Eating Disorders runs a free helpline staffed by licensed therapists, 1-866-662-1235, Monday to Friday, 9:00 am to 7:00 pm Eastern (allianceforeatingdisorders.com).",
+   "number": "00",
+   "value": 0.0,
+   "class": "D",
+   "why": "the helpline's number and hours (Alliance for Eating Disorders; registry alliance-eating-disorders-helpline, CMB-049) (manual.json)",
+   "heading": "Eating Disorders",
+   "links": [
+    "https://www.allianceforeatingdisorders.com/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Support: the Alliance for Eating Disorders runs a free helpline staffed by licensed therapists, 1-866-662-1235, Monday to Friday, 9:00 am to 7:00 pm Eastern (allianceforeatingdisorders.com).",
+   "number": "7",
+   "value": 7.0,
+   "class": "D",
+   "why": "the helpline's number and hours (Alliance for Eating Disorders; registry alliance-eating-disorders-helpline, CMB-049) (manual.json)",
+   "heading": "Eating Disorders",
+   "links": [
+    "https://www.allianceforeatingdisorders.com/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "Support: the Alliance for Eating Disorders runs a free helpline staffed by licensed therapists, 1-866-662-1235, Monday to Friday, 9:00 am to 7:00 pm Eastern (allianceforeatingdisorders.com).",
+   "number": "00",
+   "value": 0.0,
+   "class": "D",
+   "why": "the helpline's number and hours (Alliance for Eating Disorders; registry alliance-eating-disorders-helpline, CMB-049) (manual.json)",
+   "heading": "Eating Disorders",
+   "links": [
+    "https://www.allianceforeatingdisorders.com/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "If you or someone you know is struggling or thinking about suicide, call or text 988, the Suicide and Crisis Lifeline, or chat at 988lifeline.org; in a life-threatening emergency, call 911 (NIMH).",
+   "number": "988",
+   "value": 988.0,
+   "class": "D",
+   "why": "the 988 Lifeline number, as NIMH gives it (registry nimh-eating-disorders, CMB-049) (manual.json)",
+   "heading": "Eating Disorders",
+   "links": [
+    "https://www.nimh.nih.gov/health/publications/eating-disorders"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "If you or someone you know is struggling or thinking about suicide, call or text 988, the Suicide and Crisis Lifeline, or chat at 988lifeline.org; in a life-threatening emergency, call 911 (NIMH).",
+   "number": "911",
+   "value": 911.0,
+   "class": "D",
+   "why": "the 988 Lifeline number, as NIMH gives it (registry nimh-eating-disorders, CMB-049) (manual.json)",
+   "heading": "Eating Disorders",
+   "links": [
+    "https://www.nimh.nih.gov/health/publications/eating-disorders"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "MedlinePlus advises contacting a provider in three situations (MedlinePlus):",
+   "number": "three",
+   "value": 3,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "When to See a Doctor",
+   "links": [
+    "https://medlineplus.gov/ency/article/003107.htm"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "You have lost more than 10 pounds (4.5 kg), or 5% of your usual weight, within 6 to 12 months and don’t know why.",
+   "number": "10",
+   "value": 10.0,
+   "class": "C",
+   "why": "MedlinePlus's criterion, in a list its paragraph links (CMB-049) (manual.json)",
+   "heading": "When to See a Doctor",
+   "row": {
+    "status": "row",
+    "domain": "medlineplus-unintentional-weight-loss",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "You have lost more than 10 pounds (4.5 kg), or 5% of your usual weight, within 6 to 12 months and don’t know why.",
+   "number": "4.5",
+   "value": 4.5,
+   "class": "C",
+   "why": "MedlinePlus's criterion, in a list its paragraph links (CMB-049) (manual.json)",
+   "heading": "When to See a Doctor",
+   "row": {
+    "status": "row",
+    "domain": "medlineplus-unintentional-weight-loss",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "You have lost more than 10 pounds (4.5 kg), or 5% of your usual weight, within 6 to 12 months and don’t know why.",
+   "number": "5",
+   "value": 5.0,
+   "class": "C",
+   "why": "MedlinePlus's criterion, in a list its paragraph links (CMB-049) (manual.json)",
+   "heading": "When to See a Doctor",
+   "row": {
+    "status": "row",
+    "domain": "medlineplus-unintentional-weight-loss",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "You have lost more than 10 pounds (4.5 kg), or 5% of your usual weight, within 6 to 12 months and don’t know why.",
+   "number": "6",
+   "value": 6.0,
+   "class": "C",
+   "why": "MedlinePlus's criterion, in a list its paragraph links (CMB-049) (manual.json)",
+   "heading": "When to See a Doctor",
+   "row": {
+    "status": "row",
+    "domain": "medlineplus-unintentional-weight-loss",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "You have lost more than 10 pounds (4.5 kg), or 5% of your usual weight, within 6 to 12 months and don’t know why.",
+   "number": "12",
+   "value": 12.0,
+   "class": "C",
+   "why": "MedlinePlus's criterion, in a list its paragraph links (CMB-049) (manual.json)",
+   "heading": "When to See a Doctor",
+   "row": {
+    "status": "row",
+    "domain": "medlineplus-unintentional-weight-loss",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "main",
+   "sentence": "We don’t give weight-gain targets or meal plans of our own; the ideal weight calculator shows what four published formulas give for your height.",
+   "number": "four",
+   "value": 4,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Getting Help",
+   "links": [
+    "http://localhost:8765/ideal-weight/"
+   ]
   },
   {
    "page": "/blog/underweight-bmi-risks/",
@@ -65767,23 +67165,6 @@
   },
   {
    "page": "/blog/underweight-bmi-risks/",
-   "region": "svg",
-   "sentence": "BMI < 18.5",
-   "number": "18.5",
-   "value": 18.5,
-   "class": "B",
-   "why": "category cut-off",
-   "heading": "Causes of Being Underweight",
-   "check": {
-    "status": "ok",
-    "kind": "category",
-    "page": "18.5 (Underweight)",
-    "computed": "Severe thinness / Moderate thinness / Underweight in calculator.js",
-    "label": "category cut-off (getBMICategory)"
-   }
-  },
-  {
-   "page": "/blog/underweight-bmi-risks/",
    "region": "faq-a",
    "sentence": "A BMI below 18.5 kg/m² is classified as underweight according to the World Health Organization and CDC.",
    "number": "18.5",
@@ -65880,6 +67261,373 @@
     "computed": "Severe thinness in calculator.js",
     "label": "category cut-off (getBMICategory)"
    }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "faq-a",
+   "sentence": "In pregnancy, CDC lists a weight gain of 28 to 40 lb for women underweight before pregnancy (CDC).",
+   "number": "28",
+   "value": 28.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Can being underweight affect fertility?",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "faq-a",
+   "sentence": "In pregnancy, CDC lists a weight gain of 28 to 40 lb for women underweight before pregnancy (CDC).",
+   "number": "40",
+   "value": 40.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Can being underweight affect fertility?",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "faq-a",
+   "sentence": "For the risk of death, more than overweight and about as much as class 1 obesity.",
+   "number": "1",
+   "value": 1.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "FAQ: Is being underweight as dangerous as being overweight?"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "faq-a",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "15.0",
+   "value": 15.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Is being underweight as dangerous as being overweight?",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "faq-a",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "18.4",
+   "value": 18.4,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Is being underweight as dangerous as being overweight?",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "faq-a",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "1.51",
+   "value": 1.51,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Is being underweight as dangerous as being overweight?",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "faq-a",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "22.5",
+   "value": 22.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Is being underweight as dangerous as being overweight?",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "faq-a",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Is being underweight as dangerous as being overweight?",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "faq-a",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "1.07",
+   "value": 1.07,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Is being underweight as dangerous as being overweight?",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "faq-a",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "25.0",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Is being underweight as dangerous as being overweight?",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "faq-a",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "27.4",
+   "value": 27.4,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Is being underweight as dangerous as being overweight?",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "faq-a",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "1.20",
+   "value": 1.2,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Is being underweight as dangerous as being overweight?",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "faq-a",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "27.5",
+   "value": 27.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Is being underweight as dangerous as being overweight?",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "faq-a",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "29.9",
+   "value": 29.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Is being underweight as dangerous as being overweight?",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "faq-a",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "1.45",
+   "value": 1.45,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Is being underweight as dangerous as being overweight?",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "faq-a",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "30.0",
+   "value": 30.0,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "FAQ: Is being underweight as dangerous as being overweight?",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "30.0 to 34.9 (no category named)",
+    "computed": "Class 1 obesity in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "faq-a",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "34.9",
+   "value": 34.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "FAQ: Is being underweight as dangerous as being overweight?",
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "faq-a",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "2.76",
+   "value": 2.76,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Is being underweight as dangerous as being overweight?",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "faq-a",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "40.0",
+   "value": 40.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Is being underweight as dangerous as being overweight?",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "faq-a",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "59.9",
+   "value": 59.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Is being underweight as dangerous as being overweight?",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "faq-a",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: Is being underweight as dangerous as being overweight?",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
   },
   {
    "page": "/blog/underweight-bmi-risks/",
@@ -65982,8 +67730,336 @@
   },
   {
    "page": "/blog/underweight-bmi-risks/",
+   "region": "jsonld",
+   "sentence": "In pregnancy, CDC lists a weight gain of 28 to 40 lb for women underweight before pregnancy (CDC).",
+   "number": "28",
+   "value": 28.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can being underweight affect fertility?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "jsonld",
+   "sentence": "In pregnancy, CDC lists a weight gain of 28 to 40 lb for women underweight before pregnancy (CDC).",
+   "number": "40",
+   "value": 40.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can being underweight affect fertility?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "jsonld",
+   "sentence": "For the risk of death, more than overweight and about as much as class 1 obesity.",
+   "number": "1",
+   "value": 1.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "FAQPage JSON-LD: Is being underweight as dangerous as being overweight?",
+   "mirror_of": "the visible FAQ answer (same text)"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "jsonld",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "15.0",
+   "value": 15.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Is being underweight as dangerous as being overweight?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "jsonld",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "18.4",
+   "value": 18.4,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Is being underweight as dangerous as being overweight?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "jsonld",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "1.51",
+   "value": 1.51,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Is being underweight as dangerous as being overweight?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "jsonld",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "22.5",
+   "value": 22.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Is being underweight as dangerous as being overweight?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "jsonld",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Is being underweight as dangerous as being overweight?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "jsonld",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "1.07",
+   "value": 1.07,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Is being underweight as dangerous as being overweight?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "jsonld",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "25.0",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Is being underweight as dangerous as being overweight?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "jsonld",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "27.4",
+   "value": 27.4,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Is being underweight as dangerous as being overweight?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "jsonld",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "1.20",
+   "value": 1.2,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Is being underweight as dangerous as being overweight?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "jsonld",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "27.5",
+   "value": 27.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Is being underweight as dangerous as being overweight?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "jsonld",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "29.9",
+   "value": 29.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Is being underweight as dangerous as being overweight?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "jsonld",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "1.45",
+   "value": 1.45,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Is being underweight as dangerous as being overweight?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "jsonld",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "30.0",
+   "value": 30.0,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "FAQPage JSON-LD: Is being underweight as dangerous as being overweight?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "30.0 to 34.9 (no category named)",
+    "computed": "Class 1 obesity in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "jsonld",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "34.9",
+   "value": 34.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "FAQPage JSON-LD: Is being underweight as dangerous as being overweight?",
+   "mirror_of": "the visible FAQ answer (same text)"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "jsonld",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "2.76",
+   "value": 2.76,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Is being underweight as dangerous as being overweight?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "jsonld",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "40.0",
+   "value": 40.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Is being underweight as dangerous as being overweight?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "jsonld",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "59.9",
+   "value": 59.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Is being underweight as dangerous as being overweight?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "region": "jsonld",
+   "sentence": "In never-smokers without chronic disease, a BMI of 15.0 to 18.4 carried 1.51 times the risk of death of a BMI of 22.5 to 24.9, against 1.07 at 25.0 to 27.4, 1.20 at 27.5 to 29.9, 1.45 at 30.0 to 34.9 and 2.76 at 40.0 to 59.9 (Global BMI Mortality Collaboration, 2016).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: Is being underweight as dangerous as being overweight?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
    "region": "meta",
-   "sentence": "Complete guide to underweight BMI (below 18.5): health risks including weakened immunity, osteoporosis, fertility issues.",
+   "sentence": "Underweight means a BMI below 18.5.",
    "number": "18.5",
    "value": 18.5,
    "class": "B",
@@ -65992,7 +68068,7 @@
    "check": {
     "status": "ok",
     "kind": "category",
-    "page": "18.5 (underweight)",
+    "page": "18.5 (Underweight)",
     "computed": "Severe thinness / Moderate thinness / Underweight in calculator.js",
     "label": "category cut-off (getBMICategory)"
    }
@@ -66035,7 +68111,7 @@
    "why": "list numbering",
    "heading": "BMI Limitations: 10 Critical Reasons Why BMI May Be Misleading You",
    "links": [
-    "http://localhost:8000/blog/bmi-limitations/#muscle-vs-fat"
+    "http://localhost:8765/blog/bmi-limitations/#muscle-vs-fat"
    ]
   },
   {
@@ -66048,7 +68124,7 @@
    "why": "list numbering",
    "heading": "BMI Limitations: 10 Critical Reasons Why BMI May Be Misleading You",
    "links": [
-    "http://localhost:8000/blog/bmi-limitations/#fat-distribution"
+    "http://localhost:8765/blog/bmi-limitations/#fat-distribution"
    ]
   },
   {
@@ -66061,7 +68137,7 @@
    "why": "list numbering",
    "heading": "BMI Limitations: 10 Critical Reasons Why BMI May Be Misleading You",
    "links": [
-    "http://localhost:8000/blog/bmi-limitations/#athletes"
+    "http://localhost:8765/blog/bmi-limitations/#athletes"
    ]
   },
   {
@@ -66074,7 +68150,7 @@
    "why": "list numbering",
    "heading": "BMI Limitations: 10 Critical Reasons Why BMI May Be Misleading You",
    "links": [
-    "http://localhost:8000/blog/bmi-limitations/#elderly"
+    "http://localhost:8765/blog/bmi-limitations/#elderly"
    ]
   },
   {
@@ -66087,7 +68163,7 @@
    "why": "list numbering",
    "heading": "BMI Limitations: 10 Critical Reasons Why BMI May Be Misleading You",
    "links": [
-    "http://localhost:8000/blog/bmi-limitations/#ethnic-variations"
+    "http://localhost:8765/blog/bmi-limitations/#ethnic-variations"
    ]
   },
   {
@@ -66100,7 +68176,7 @@
    "why": "list numbering",
    "heading": "BMI Limitations: 10 Critical Reasons Why BMI May Be Misleading You",
    "links": [
-    "http://localhost:8000/blog/bmi-limitations/#pregnancy"
+    "http://localhost:8765/blog/bmi-limitations/#pregnancy"
    ]
   },
   {
@@ -66113,7 +68189,7 @@
    "why": "list numbering",
    "heading": "BMI Limitations: 10 Critical Reasons Why BMI May Be Misleading You",
    "links": [
-    "http://localhost:8000/blog/bmi-limitations/#skinny-fat"
+    "http://localhost:8765/blog/bmi-limitations/#skinny-fat"
    ]
   },
   {
@@ -66126,7 +68202,7 @@
    "why": "list numbering",
    "heading": "BMI Limitations: 10 Critical Reasons Why BMI May Be Misleading You",
    "links": [
-    "http://localhost:8000/blog/bmi-limitations/#bone-density"
+    "http://localhost:8765/blog/bmi-limitations/#bone-density"
    ]
   },
   {
@@ -66139,7 +68215,7 @@
    "why": "list numbering",
    "heading": "BMI Limitations: 10 Critical Reasons Why BMI May Be Misleading You",
    "links": [
-    "http://localhost:8000/blog/bmi-limitations/#sex-differences"
+    "http://localhost:8765/blog/bmi-limitations/#sex-differences"
    ]
   },
   {
@@ -66152,7 +68228,7 @@
    "why": "list numbering",
    "heading": "BMI Limitations: 10 Critical Reasons Why BMI May Be Misleading You",
    "links": [
-    "http://localhost:8000/blog/bmi-limitations/#metabolic-health"
+    "http://localhost:8765/blog/bmi-limitations/#metabolic-health"
    ]
   },
   {
@@ -66217,7 +68293,7 @@
    },
    "links": [
     "https://doi.org/10.1093/ndt/gfm517",
-    "http://localhost:8000/blog/bmi-history/"
+    "http://localhost:8765/blog/bmi-history/"
    ]
   },
   {
@@ -66236,7 +68312,7 @@
    },
    "links": [
     "https://doi.org/10.1093/ndt/gfm517",
-    "http://localhost:8000/blog/bmi-history/"
+    "http://localhost:8765/blog/bmi-history/"
    ]
   },
   {
@@ -66249,7 +68325,7 @@
    "why": "number word (count in prose)",
    "heading": "What Is BMI and Why Was It Created?",
    "links": [
-    "http://localhost:8000/blog/bmi-formula/"
+    "http://localhost:8765/blog/bmi-formula/"
    ]
   },
   {
@@ -66395,7 +68471,7 @@
     "how": "link"
    },
    "links": [
-    "http://localhost:8000/blog/waist-to-height-ratio/",
+    "http://localhost:8765/blog/waist-to-height-ratio/",
     "https://pubmed.ncbi.nlm.nih.gov/22106927/"
    ]
   },
@@ -67354,7 +69430,7 @@
    },
    "links": [
     "https://pubmed.ncbi.nlm.nih.gov/2305711/",
-    "http://localhost:8000/lean-body-mass/"
+    "http://localhost:8765/lean-body-mass/"
    ]
   },
   {
@@ -69091,7 +71167,7 @@
    "why": "number word (count in prose)",
    "heading": "Body Fat Percentage Accuracy",
    "links": [
-    "http://localhost:8000/blog/how-to-measure-body-fat/"
+    "http://localhost:8765/blog/how-to-measure-body-fat/"
    ]
   },
   {
@@ -69922,7 +71998,7 @@
    "heading": "Better measures for athletes",
    "links": [
     "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214029",
-    "http://localhost:8000/blog/how-to-measure-body-fat/"
+    "http://localhost:8765/blog/how-to-measure-body-fat/"
    ]
   },
   {
@@ -69941,7 +72017,7 @@
    },
    "links": [
     "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214029",
-    "http://localhost:8000/blog/how-to-measure-body-fat/"
+    "http://localhost:8765/blog/how-to-measure-body-fat/"
    ]
   },
   {
@@ -69960,7 +72036,7 @@
    },
    "links": [
     "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214029",
-    "http://localhost:8000/blog/how-to-measure-body-fat/"
+    "http://localhost:8765/blog/how-to-measure-body-fat/"
    ]
   },
   {
@@ -69979,7 +72055,7 @@
    },
    "links": [
     "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214029",
-    "http://localhost:8000/blog/how-to-measure-body-fat/"
+    "http://localhost:8765/blog/how-to-measure-body-fat/"
    ]
   },
   {
@@ -69998,7 +72074,7 @@
    },
    "links": [
     "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214029",
-    "http://localhost:8000/blog/how-to-measure-body-fat/"
+    "http://localhost:8765/blog/how-to-measure-body-fat/"
    ]
   },
   {
@@ -70153,7 +72229,7 @@
     "how": "name"
    },
    "links": [
-    "http://localhost:8000/body-fat-percentage-chart/"
+    "http://localhost:8765/body-fat-percentage-chart/"
    ]
   },
   {
@@ -70171,7 +72247,7 @@
     "how": "name"
    },
    "links": [
-    "http://localhost:8000/body-fat-percentage-chart/"
+    "http://localhost:8765/body-fat-percentage-chart/"
    ]
   },
   {
@@ -71103,7 +73179,7 @@
     "how": "link"
    },
    "links": [
-    "http://localhost:8000/kids-bmi-calculator/",
+    "http://localhost:8765/kids-bmi-calculator/",
     "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
    ]
   },
@@ -72809,7 +74885,7 @@
     "name_differs": "\"healthy BMI\" = calculator.js \"Healthy weight\""
    },
    "links": [
-    "http://localhost:8000/blog/healthy-bmi-range/"
+    "http://localhost:8765/blog/healthy-bmi-range/"
    ]
   },
   {
@@ -72822,7 +74898,7 @@
    "why": "category cut-off (other bound)",
    "heading": "How to Lower BMI: Evidence-Based Strategies for Healthy Weight Loss",
    "links": [
-    "http://localhost:8000/blog/healthy-bmi-range/"
+    "http://localhost:8765/blog/healthy-bmi-range/"
    ]
   },
   {
@@ -75275,7 +77351,7 @@
     "name_differs": "\"Healthy BMI\" = calculator.js \"Healthy weight\""
    },
    "links": [
-    "http://localhost:8000/blog/healthy-bmi-range/"
+    "http://localhost:8765/blog/healthy-bmi-range/"
    ]
   },
   {
@@ -75288,7 +77364,7 @@
    "why": "category cut-off (other bound)",
    "heading": "What to Do When Progress Stalls",
    "links": [
-    "http://localhost:8000/blog/healthy-bmi-range/"
+    "http://localhost:8765/blog/healthy-bmi-range/"
    ]
   },
   {
@@ -75301,7 +77377,7 @@
    "why": "number word (count in prose)",
    "heading": "What to Do When Progress Stalls",
    "links": [
-    "http://localhost:8000/blog/body-fat-vs-bmi/"
+    "http://localhost:8765/blog/body-fat-vs-bmi/"
    ]
   },
   {
@@ -76151,7 +78227,7 @@
     "label": "calculateKids accepts 24 to 239 months (2 to 19 years 11 months)"
    },
    "links": [
-    "http://localhost:8000/kids-bmi-calculator/"
+    "http://localhost:8765/kids-bmi-calculator/"
    ]
   },
   {
@@ -76164,7 +78240,7 @@
    "why": "the calculator's age range (other end)",
    "heading": "BMI by Age: How the Healthy Range Applies Across Adult Life",
    "links": [
-    "http://localhost:8000/kids-bmi-calculator/"
+    "http://localhost:8765/kids-bmi-calculator/"
    ]
   },
   {
@@ -76539,7 +78615,7 @@
    "why": "another page's height range (a link label) (manual.json)",
    "heading": "Compact reference: chart pages by height",
    "links": [
-    "http://localhost:8000/blog/bmi-chart-women/"
+    "http://localhost:8765/blog/bmi-chart-women/"
    ]
   },
   {
@@ -76552,7 +78628,7 @@
    "why": "another page's height range (a link label) (manual.json)",
    "heading": "Compact reference: chart pages by height",
    "links": [
-    "http://localhost:8000/blog/bmi-chart-women/"
+    "http://localhost:8765/blog/bmi-chart-women/"
    ]
   },
   {
@@ -76565,7 +78641,7 @@
    "why": "another page's height range (a link label) (manual.json)",
    "heading": "Compact reference: chart pages by height",
    "links": [
-    "http://localhost:8000/blog/bmi-chart-women/"
+    "http://localhost:8765/blog/bmi-chart-women/"
    ]
   },
   {
@@ -76578,7 +78654,7 @@
    "why": "another page's height range (a link label) (manual.json)",
    "heading": "Compact reference: chart pages by height",
    "links": [
-    "http://localhost:8000/blog/bmi-chart-women/"
+    "http://localhost:8765/blog/bmi-chart-women/"
    ]
   },
   {
@@ -76591,7 +78667,7 @@
    "why": "another page's height range (a link label) (manual.json)",
    "heading": "Compact reference: chart pages by height",
    "links": [
-    "http://localhost:8000/blog/bmi-chart-men/"
+    "http://localhost:8765/blog/bmi-chart-men/"
    ]
   },
   {
@@ -76604,7 +78680,7 @@
    "why": "another page's height range (a link label) (manual.json)",
    "heading": "Compact reference: chart pages by height",
    "links": [
-    "http://localhost:8000/blog/bmi-chart-men/"
+    "http://localhost:8765/blog/bmi-chart-men/"
    ]
   },
   {
@@ -76617,7 +78693,7 @@
    "why": "another page's height range (a link label) (manual.json)",
    "heading": "Compact reference: chart pages by height",
    "links": [
-    "http://localhost:8000/blog/bmi-chart-men/"
+    "http://localhost:8765/blog/bmi-chart-men/"
    ]
   },
   {
@@ -76630,7 +78706,7 @@
    "why": "another page's height range (a link label) (manual.json)",
    "heading": "Compact reference: chart pages by height",
    "links": [
-    "http://localhost:8000/blog/bmi-chart-men/"
+    "http://localhost:8765/blog/bmi-chart-men/"
    ]
   },
   {
