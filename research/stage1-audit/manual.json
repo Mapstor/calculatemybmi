@@ -3106,6 +3106,104 @@
    "row": "cdc-losing-weight",
    "exact": true,
    "why": "CDC's short-term goal examples, step 3 of its Steps for Losing Weight (CMB-050)"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "sig": "BMI #-#",
+   "classes": "D",
+   "exact": true,
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-051)"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "sig": "Risk of death by BMI (hazard ratio; # = BMI # to #)",
+   "classes": "C",
+   "row": "gbmc-2016-bmi-mortality",
+   "exact": true,
+   "why": "the GBMC chart's title: its reference band (CMB-051)"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "sig": "#",
+   "classes": "C",
+   "row": "gbmc-2016-bmi-mortality",
+   "exact": true,
+   "value": 1.51,
+   "why": "a hazard ratio in the GBMC bar chart (CMB-051)"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "sig": "#",
+   "classes": "C",
+   "row": "gbmc-2016-bmi-mortality",
+   "exact": true,
+   "value": 1.13,
+   "why": "a hazard ratio in the GBMC bar chart (CMB-051)"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "sig": "#",
+   "classes": "C",
+   "row": "gbmc-2016-bmi-mortality",
+   "exact": true,
+   "value": 1.0,
+   "why": "a hazard ratio in the GBMC bar chart (CMB-051)"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "sig": "#",
+   "classes": "C",
+   "row": "gbmc-2016-bmi-mortality",
+   "exact": true,
+   "value": 1.07,
+   "why": "a hazard ratio in the GBMC bar chart (CMB-051)"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "sig": "#",
+   "classes": "C",
+   "row": "gbmc-2016-bmi-mortality",
+   "exact": true,
+   "value": 1.2,
+   "why": "a hazard ratio in the GBMC bar chart (CMB-051)"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "sig": "#",
+   "classes": "C",
+   "row": "gbmc-2016-bmi-mortality",
+   "exact": true,
+   "value": 1.45,
+   "why": "a hazard ratio in the GBMC bar chart (CMB-051)"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "sig": "#",
+   "classes": "C",
+   "row": "gbmc-2016-bmi-mortality",
+   "exact": true,
+   "value": 1.94,
+   "why": "a hazard ratio in the GBMC bar chart (CMB-051)"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "sig": "#",
+   "classes": "C",
+   "row": "gbmc-2016-bmi-mortality",
+   "exact": true,
+   "value": 2.76,
+   "why": "a hazard ratio in the GBMC bar chart (CMB-051)"
+  },
+  {
+   "page": "/blog/bmi-and-health-risks/",
+   "sig": "The risk of death across the BMI range, from # studies, and what NIH and NCI say about diabetes, heart disease, stroke, # cancers, sleep apnea and more.",
+   "classes": [
+    "C",
+    "D"
+   ],
+   "row": "gbmc-2016-bmi-mortality",
+   "exact": true,
+   "why": "the page description: the GBMC's 239 studies (C) and NCI's 13 cancers, a count in prose (D) (CMB-051)"
   }
  ]
 }
