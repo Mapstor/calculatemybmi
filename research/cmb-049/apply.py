@@ -64,7 +64,7 @@ GBMC = [('15.0–18.4', 1.51, 'underweight'), ('18.5–19.9', 1.13, 'normal'), (
 BARS = ''.join(
     f'<div class="chart-bar-h-item"><span class="chart-bar-h-label">BMI {r}</span><div class="chart-bar-h-track">'
     f'<div class="chart-bar-h-fill {c}" style="width:{hr / 2.76 * 100:.1f}%;"></div></div>'
-    f'<span class="chart-bar-h-value">{hr:.2f}{" (ref.)" if r == "22.5–24.9" else ""}</span></div>' for r, hr, c in GBMC)
+    f'<span class="chart-bar-h-value">{hr:.2f}</span></div>' for r, hr, c in GBMC)   # one value width, so one scale
 
 TAKEAWAYS = (
     '<div class="key-takeaways"> <div class="key-takeaways-title">Key Takeaways</div> <ul> '

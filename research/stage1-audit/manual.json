@@ -3009,15 +3009,6 @@
   },
   {
    "page": "/blog/underweight-bmi-risks/",
-   "sig": "# (ref.)",
-   "classes": "C",
-   "row": "gbmc-2016-bmi-mortality",
-   "exact": true,
-   "value": 1.0,
-   "why": "the GBMC chart's reference bar (CMB-049)"
-  },
-  {
-   "page": "/blog/underweight-bmi-risks/",
    "sig": "#",
    "classes": "C",
    "row": "gbmc-2016-bmi-mortality",

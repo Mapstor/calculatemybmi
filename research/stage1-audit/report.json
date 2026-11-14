@@ -27,8 +27,8 @@
  "checks_run": 1128,
  "check_errors": [],
  "unclassified": [],
- "manual_entries": 242,
- "manual_entries_used": 238,
+ "manual_entries": 241,
+ "manual_entries_used": 237,
  "worst10": [
   {
    "page": "/kids-bmi-calculator/",
@@ -65836,11 +65836,11 @@
   {
    "page": "/blog/underweight-bmi-risks/",
    "region": "main",
-   "sentence": "1.00 (ref.)",
+   "sentence": "1.00",
    "number": "1.00",
    "value": 1.0,
    "class": "C",
-   "why": "the GBMC chart's reference bar (CMB-049) (manual.json)",
+   "why": "a hazard ratio in the GBMC bar chart (CMB-049) (manual.json)",
    "heading": "Health Risks of Being Underweight",
    "row": {
     "status": "row",

@@ -15,8 +15,6 @@ NEW = [
      'why': "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049)"},
     {'page': PAGE, 'sig': 'Risk of death by BMI (hazard ratio; # = BMI # to #)', 'classes': 'C', 'row': GBMC, 'exact': True,
      'why': "the GBMC chart's title: its reference band (CMB-049)"},
-    {'page': PAGE, 'sig': '# (ref.)', 'classes': 'C', 'row': GBMC, 'exact': True, 'value': 1.0,
-     'why': "the GBMC chart's reference bar (CMB-049)"},
 ] + [{'page': PAGE, 'sig': '#', 'classes': 'C', 'row': GBMC, 'exact': True, 'value': v,
       'why': "a hazard ratio in the GBMC bar chart (CMB-049)"} for v in (1.51, 1.13, 1.0, 1.07, 1.2, 1.45, 1.94, 2.76)] + [
     {'page': PAGE, 'sig': "You have lost more than # pounds (# kg), or #% of your usual weight, within # to # months and don't know "
