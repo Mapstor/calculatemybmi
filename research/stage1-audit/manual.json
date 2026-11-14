@@ -2991,6 +2991,122 @@
    "classes": "C",
    "row": "nhanes-adult-weight-trends",
    "why": "a related card: the NHANES series from 1960-1962 (CMB-044)"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "sig": "BMI #-#",
+   "classes": "D",
+   "exact": true,
+   "why": "bar labels: the Global BMI Mortality Collaboration's BMI bands, 15.0 to under 18.5 written 15.0–18.4 (CMB-049)"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "sig": "Risk of death by BMI (hazard ratio; # = BMI # to #)",
+   "classes": "C",
+   "row": "gbmc-2016-bmi-mortality",
+   "exact": true,
+   "why": "the GBMC chart's title: its reference band (CMB-049)"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "sig": "# (ref.)",
+   "classes": "C",
+   "row": "gbmc-2016-bmi-mortality",
+   "exact": true,
+   "value": 1.0,
+   "why": "the GBMC chart's reference bar (CMB-049)"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "sig": "#",
+   "classes": "C",
+   "row": "gbmc-2016-bmi-mortality",
+   "exact": true,
+   "value": 1.51,
+   "why": "a hazard ratio in the GBMC bar chart (CMB-049)"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "sig": "#",
+   "classes": "C",
+   "row": "gbmc-2016-bmi-mortality",
+   "exact": true,
+   "value": 1.13,
+   "why": "a hazard ratio in the GBMC bar chart (CMB-049)"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "sig": "#",
+   "classes": "C",
+   "row": "gbmc-2016-bmi-mortality",
+   "exact": true,
+   "value": 1.0,
+   "why": "a hazard ratio in the GBMC bar chart (CMB-049)"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "sig": "#",
+   "classes": "C",
+   "row": "gbmc-2016-bmi-mortality",
+   "exact": true,
+   "value": 1.07,
+   "why": "a hazard ratio in the GBMC bar chart (CMB-049)"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "sig": "#",
+   "classes": "C",
+   "row": "gbmc-2016-bmi-mortality",
+   "exact": true,
+   "value": 1.2,
+   "why": "a hazard ratio in the GBMC bar chart (CMB-049)"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "sig": "#",
+   "classes": "C",
+   "row": "gbmc-2016-bmi-mortality",
+   "exact": true,
+   "value": 1.45,
+   "why": "a hazard ratio in the GBMC bar chart (CMB-049)"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "sig": "#",
+   "classes": "C",
+   "row": "gbmc-2016-bmi-mortality",
+   "exact": true,
+   "value": 1.94,
+   "why": "a hazard ratio in the GBMC bar chart (CMB-049)"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "sig": "#",
+   "classes": "C",
+   "row": "gbmc-2016-bmi-mortality",
+   "exact": true,
+   "value": 2.76,
+   "why": "a hazard ratio in the GBMC bar chart (CMB-049)"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "sig": "You have lost more than # pounds (# kg), or #% of your usual weight, within # to # months and don't know why.",
+   "classes": "C",
+   "row": "medlineplus-unintentional-weight-loss",
+   "exact": true,
+   "why": "MedlinePlus's criterion, in a list its paragraph links (CMB-049)"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "sig": "#:# am to #:# pm Eastern",
+   "classes": "D",
+   "why": "the helpline's number and hours (Alliance for Eating Disorders; registry alliance-eating-disorders-helpline, CMB-049)"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "sig": "call or text #, the Suicide and Crisis Lifeline, or chat at #lifeline.org; in a life-threatening emergency, call #",
+   "classes": "D",
+   "why": "the 988 Lifeline number, as NIMH gives it (registry nimh-eating-disorders, CMB-049)"
   }
  ]
 }

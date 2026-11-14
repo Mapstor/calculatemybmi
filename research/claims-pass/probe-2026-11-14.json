@@ -867,13 +867,6 @@
   {
    "tag": "li",
    "trigger": "Causes",
-   "sentence": "Common Causes: High metabolism, eating disorders, chronic illness, medications, or inadequate nutrition",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "li",
-   "trigger": "Causes",
    "sentence": "Causes of Being Underweight",
    "sourced": false,
    "block_sourced": false
@@ -886,121 +879,9 @@
    "block_sourced": false
   },
   {
-   "tag": "p",
-   "trigger": "healthcare providers",
-   "sentence": "Understanding these classifications helps healthcare providers assess risk levels and determine appropriate interventions.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "recommendations",
-   "sentence": "Use our ideal weight calculator for personalized weight recommendations based on your height, age, and body frame.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "associated with",
-   "sentence": "Research consistently shows that very low BMI is associated with increased mortality and morbidity across multiple body systems.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "li",
-   "trigger": "effectiveness",
-   "sentence": "Reduced vaccine effectiveness: The immune response to vaccinations may be diminished",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "protection",
-   "sentence": "Reduced muscle mass means less protection for bones during falls and less stimulation for bone growth.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "li",
-   "trigger": "Higher risks",
-   "sentence": "Pregnancy complications: Higher risks of preterm birth and low birth weight babies",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "leads to",
-   "sentence": "These deficiencies create a cycle: poor nutrition leads to fatigue and reduced appetite, which further decreases food intake and worsens nutritional status.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "associated with",
-   "sentence": "Beyond the major risks discussed above, being underweight is associated with numerous other health issues:",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
    "tag": "h2",
    "trigger": "Causes",
    "sentence": "Causes of Being Underweight",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "cause",
-   "sentence": "Understanding why someone is underweight matters because the underlying cause is what a clinician needs to identify before anything else.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "Causes",
-   "sentence": "Causes range from lifestyle factors to serious medical conditions.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "figcaption",
-   "trigger": "causes",
-   "sentence": "Both sides — causes and consequences — are discussed in detail below with references to WHO, NIMH and other institutional sources.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "cause",
-   "sentence": "Several medical conditions can cause unintentional weight loss or make weight gain difficult:",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "li",
-   "trigger": "cause",
-   "sentence": "Diabetes (Type 1): Uncontrolled diabetes can cause significant weight loss",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "li",
-   "trigger": "cause",
-   "sentence": "Cancer: Many cancers cause cachexia (wasting syndrome) and appetite loss",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "li",
-   "trigger": "lead to",
-   "sentence": "Chronic infections: HIV, tuberculosis, and parasitic infections can lead to weight loss",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "li",
-   "trigger": "reduce appetite",
-   "sentence": "Medication side effects: Certain medications reduce appetite or increase metabolism",
    "sourced": false,
    "block_sourced": false
   },
@@ -1013,127 +894,8 @@
   },
   {
    "tag": "p",
-   "trigger": "consult",
-   "sentence": "It is important to consult a healthcare provider if you experience any of the following:",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "professional",
-   "sentence": "Moderate to severe thinness requires professional assessment to identify causes and prevent complications.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "linked to",
-   "sentence": "Missing or irregular periods (amenorrhea) may signal hormonal changes linked to low weight.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "doctor",
-   "sentence": "Your doctor may order blood tests, check thyroid function, screen for celiac disease, or refer you to a registered dietitian or specialist based on your symptoms.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "helps build",
-   "sentence": "Strength training helps build muscle mass, which weighs more than fat and improves overall health.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "improving",
-   "sentence": "For detailed guidance on reaching your target weight, see our guide to improving your BMI and ideal weight calculator guide .",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "contribute to",
-   "sentence": "Mental health conditions can contribute to being underweight, and being underweight can worsen mental health symptoms.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "li",
-   "trigger": "cause",
-   "sentence": "Depression: Can cause appetite loss, lack of motivation to prepare food, and changes in eating habits",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "li",
-   "trigger": "cause",
-   "sentence": "Low blood sugar from insufficient calories can cause irritability and mood swings",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "professionals",
-   "sentence": "A comprehensive approach involving mental health professionals, dietitians, and physicians produces the best outcomes.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "healthcare provider",
-   "sentence": "Healthy weight gain usually means eating nutrient-dense foods more often, choosing calorie-rich healthy options like nuts, avocados, whole grains and olive oil, including enough protein, adding strength training to build muscle, and addressing any underlying medical conditions with a healthcare provider, who can also help set individual targets.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "improves",
-   "sentence": "Reaching a healthy BMI often improves fertility outcomes.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "Research shows",
-   "sentence": "Research shows that being severely underweight carries mortality risks comparable to or even greater than severe obesity.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "associated with",
-   "sentence": "Both extremes of BMI are associated with increased health risks.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "causes",
-   "sentence": "Common causes include high natural metabolism, medical conditions (hyperthyroidism, celiac disease, diabetes, cancer, chronic infections), eating disorders (anorexia, bulimia), medication side effects, mental health conditions (depression, anxiety), substance use, genetic factors, and economic factors like food insecurity.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "can help",
-   "sentence": "A thorough medical evaluation can help identify the specific cause.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "consult",
-   "sentence": "If you are concerned about your weight, have experienced unintentional weight loss, or show signs of an eating disorder, please consult a qualified healthcare provider.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "professional",
-   "sentence": "Always seek professional medical guidance before making significant changes to your diet or exercise routine.",
+   "trigger": "See a",
+   "sentence": "For when to contact a provider, see When to See a Doctor .",
    "sourced": false,
    "block_sourced": false
   },
@@ -1141,13 +903,6 @@
    "tag": "h4",
    "trigger": "Improving",
    "sentence": "Improving Your BMI",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "Evidence",
-   "sentence": "Evidence-based strategies for reaching and maintaining a healthy weight.",
    "sourced": false,
    "block_sourced": false
   }
