@@ -840,8 +840,9 @@ SOURCES = [
     f'Deurenberg P, Weststrate JA, Seidell JC. {ext(U["deur"], "Body mass index as a measure of body fatness: age- and sex-specific prediction formulas")}. '
     'Br J Nutr 1991;65:105–14.',
     'Jackson AS, Pollock ML. Br J Nutr 1978;40:497–504; Jackson AS, Pollock ML, Ward A. Med Sci Sports Exerc 1980;12:175–81; '
-    f'Siri WE, 1956; as printed by {ext(U["topend"], "Topend Sports (Jackson-Pollock body density)")} and in '
-    f'{ext(U["jp"], "Serra AJ, et al. ConScientiae Saúde 2009;8(1):19–24")}.',
+    f'as printed by {ext(U["topend"], "Topend Sports (Jackson-Pollock body density)")} and in '
+    f'{ext(U["jp"], "Serra AJ, et al. ConScientiae Saúde 2009;8(1):19–24")}. Siri WE, 1961, as printed by '
+    f'{ext("https://www.topendsports.com/testing/siri-equation.htm", "Topend Sports (Siri equation)")} (CMB-046).',
     f'US Army. {ext(U["army23"], "Army Directive 2023-11")}, June 2023: the one-site tape test.',
     f'Burns RD, Fu Y, Constantino N. {ext(U["burns"], "Measurement agreement in percent body fat estimates among laboratory and field assessments in college students: Use of equivalence testing")}. '
     'PLOS ONE 2019;14(3):e0214029.',

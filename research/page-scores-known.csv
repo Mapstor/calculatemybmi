@@ -1,5 +1,3 @@
 page,score,item
 /men-bmi-calculator/,S,Gallagher 2000 body-fat ranges not yet checked against the paper's own table (§5 Gallagher)
 /women-bmi-calculator/,S,Gallagher 2000 body-fat ranges not yet checked against the paper's own table (§5 Gallagher)
-/body-fat-calculator/,S,"""Siri WE, 1956"" cited next to Topend's Jackson-Pollock page, which prints only the density equations (§5)"
-/kids-bmi-calculator/,S,"the results' ""Talk with your pediatrician"" lines name no source that says when (§5)"
