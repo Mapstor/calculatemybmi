@@ -229,15 +229,23 @@ function calculateByAge() {
   const panel = document.getElementById('panel-age');
   const heightInches = getHeightInches(panel);
   const weightLbs = getWeightPounds(panel);
-  const age = parseInt(panel.querySelector('.age-input')?.value) || 30;
+  const age = parseInt(panel.querySelector('.age-input')?.value, 10);
+  const note = document.getElementById('age-note');
+  // CDC's adult categories start at 20; under 20 a BMI is read as a percentile for age and sex (CMB-045)
+  if (!isNaN(age) && age < 20) {
+    document.getElementById('age-results')?.classList.remove('visible');
+    if (note) {
+      note.innerHTML = 'CDC&rsquo;s adult categories start at 20. For ages 2 to 19, BMI is read as a percentile for age and sex: use the <a href="/kids-bmi-calculator/">BMI calculator for children and teens</a>, which takes the age in years and months.';
+      note.hidden = false;
+    }
+    return;
+  }
+  if (note) note.hidden = true;
   const bmi = calculateBMI(weightLbs, heightInches);
   if (bmi <= 0) return;
-  let adjustedRange;
-  if (age < 65) adjustedRange = '18.5–24.9 (WHO adult range)';
-  else adjustedRange = '18.5–24.9 (WHO adult range) · lowest mortality observed across BMI 23–33 in adults 65+ (Winter 2014); observational, not a target';
   const category = getBMICategory(bmi);
   const healthyRange = getHealthyWeightRange(heightInches);
-  displayBMIResults('age', bmi, category, healthyRange, heightInches, weightLbs, { adjustedRange, age });
+  displayBMIResults('age', bmi, category, healthyRange, heightInches, weightLbs, { age: isNaN(age) ? 0 : age });
 }
 
 function calculateKids() {
@@ -513,7 +521,7 @@ function genSummary(bmi, category, weightLbs, healthyRange, extra) {
   }
   let note = '';
   if (extra && extra.age >= 65) {
-    note = `<p class="er-summary-note">WHO cut-offs still apply at 65 and over. A meta-analysis of 197,940 adults aged 65 and older found the lowest all-cause mortality across BMI 23 to 33 (<a href="https://pubmed.ncbi.nlm.nih.gov/24452240/" target="_blank" rel="noopener">Winter et al., 2014</a>); it is an observational finding, not a target, and your doctor can say what applies to you.</p>`;
+    note = `<p class="er-summary-note">CDC&rsquo;s adult categories are the same at 65 and over. In a meta-analysis of 197,940 adults aged 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (<a href="https://pubmed.ncbi.nlm.nih.gov/24452240/" target="_blank" rel="noopener">Winter et al., 2014</a>): an association, not a healthy range or a target.</p>`;
   }
   return `<div class="er-summary"><p>${text}</p>${note}</div>`;
 }
@@ -587,10 +595,10 @@ function displayBMIResults(type, bmi, category, healthyRange, heightInches, weig
     </div>`;
   }
 
-  // 8. Age: the adult range does not change with age (WHO publishes no age-adjusted cut-offs)
+  // 8. Age: CDC's adult categories are the same at every age from 20 (calculateByAge() sends ages under 20 to the
+  //    children's calculator, CMB-045)
   if (extra.age) {
-    let ageText = `At ${extra.age}, the healthy BMI range is 18.5 to 24.9, the same as at every adult age. WHO does not publish age-adjusted BMI cut-offs.`;
-    if (extra.age < 20) ageText += ` Under 20, CDC reads BMI against growth charts for age and sex; the <a href="/kids-bmi-calculator/">BMI calculator for children and teens</a> gives that percentile.`;
+    const ageText = `At ${extra.age}, the healthy BMI range is 18.5 to 24.9: CDC uses the same adult categories at every age from 20.`;
     html += `<div class="er-section"><h2>BMI and your age</h2><p class="er-note">${ageText}</p></div>`;
   }
 

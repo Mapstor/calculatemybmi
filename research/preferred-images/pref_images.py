@@ -55,8 +55,12 @@ Pages and pictures (the data are the pages' own):
                      row from 24.5 to 239.5) by BMI 12 to 36, CDC's five BMI-for-age bands in the page figure's category
                      tints with white gaps at their edges: the 5th, 85th and 95th percentiles and 120% of the 95th or a BMI
                      of 35, whichever is lower (research/kids-build/kids_stats.json), centered.
+  age-bmi-calculator  the /age-bmi-calculator/ figure (CMB-045): for each decade from the 20s to 80 and over, US women's
+                     and US men's BMI one above the other (the 10th-90th percentile line, the middle half, the median;
+                     research/age-calc-build/abc_stats.json) in the series colours (women #be185d, men #4338ca) over CDC's
+                     healthy range, BMI 16.5 to 44.5, centered.
 Renders each SVG in Chromium at its exact size, checks there is no <text> and the size, and stores a palette PNG.
-usage: pref_images.py REPO_ROOT [NAME ...]   (NAMEs: draw only those pages; CMB-030 drew kids-bmi-calculator)"""
+usage: pref_images.py REPO_ROOT [NAME ...]   (NAMEs: draw only those pages; CMB-045 drew age-bmi-calculator)"""
 import sys, os, io, json
 from playwright.sync_api import sync_playwright
 from PIL import Image
@@ -448,11 +452,35 @@ def kids_bmi(w, h):
     return frame(w, h, ''.join(out))
 
 
+def age_calc(w, h):
+    """The age calculator's figure: US women's and men's BMI by decade (10th-90th line, middle half, median) over the healthy range."""
+    DEC = json.load(open(os.path.join(ROOT, 'research/age-calc-build/abc_stats.json')))['decades']
+    ages = ('20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80+')
+    assert f"{DEC['women']['20-29']['p50']:.1f}" == '25.5' and f"{DEC['men']['80+']['p50']:.1f}" == '27.2'
+    mx, my = w * 0.07, h * 0.08
+    x0, x1 = mx, w - mx
+    xs = lambda b: x0 + (b - 16.5) * (x1 - x0) / 28.0               # BMI 16.5-44.5: the rows and the band, centered
+    pitch = (h - 2 * my) / len(ages)
+    bh = pitch * 0.24
+    out = [f'<rect x="{xs(18.5):.1f}" y="{my - pitch * 0.1:.1f}" width="{xs(25) - xs(18.5):.1f}" height="{h - 2 * my + pitch * 0.2:.1f}" '
+           f'rx="{pitch * 0.1:.1f}" fill="#bbf7d0"/>']
+    for i, d in enumerate(ages):
+        for j, (sex, line, fill) in enumerate((('women', '#be185d', '#f9a8d4'), ('men', '#4338ca', '#c7d2fe'))):
+            v = DEC[sex][d]; yc = my + (i + 0.3 + j * 0.4) * pitch
+            out.append(f'<line x1="{xs(v["p10"]):.1f}" y1="{yc:.1f}" x2="{xs(v["p90"]):.1f}" y2="{yc:.1f}" stroke="{line}" '
+                       f'stroke-width="{max(3, pitch * 0.05):.1f}" stroke-linecap="round"/>')
+            out.append(f'<rect x="{xs(v["p25"]):.1f}" y="{yc - bh / 2:.1f}" width="{xs(v["p75"]) - xs(v["p25"]):.1f}" height="{bh:.1f}" '
+                       f'rx="{bh * 0.2:.1f}" fill="{fill}"/>')
+            out.append(f'<rect x="{xs(v["p50"]) - max(3, pitch * 0.035):.1f}" y="{yc - bh * 0.7:.1f}" width="{2 * max(3, pitch * 0.035):.1f}" '
+                       f'height="{bh * 1.4:.1f}" rx="2" fill="#111827"/>')
+    return frame(w, h, ''.join(out))
+
+
 PAGES = {'bmi-chart': bmi_chart, 'bmi-calculator': waffle, 'healthy-bmi-range': risk_bars, 'bmi-chart-women': women_bars,
          'body-fat-percentage-chart': body_fat, 'women-bmi-calculator': women_calc, 'bmi-chart-men': men_chart,
          'average-weight': avg_weight, 'body-fat-calculator': bf_calc, 'how-to-measure-body-fat': htm,
          'us-obesity-statistics': obs_trend, 'new-bmi-calculator': new_bmi, 'ideal-weight': ideal_weight,
-         'kids-bmi-calculator': kids_bmi}
+         'kids-bmi-calculator': kids_bmi, 'age-bmi-calculator': age_calc}
 
 if __name__ == '__main__':
     os.makedirs(OUT, exist_ok=True)

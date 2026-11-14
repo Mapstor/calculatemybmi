@@ -29,7 +29,8 @@ PREFERRED = {'/': 'bmi-calculator', '/blog/healthy-bmi-range/': 'healthy-bmi-ran
              '/us-obesity-statistics/': 'us-obesity-statistics',
              '/new-bmi-calculator/': 'new-bmi-calculator',
              '/ideal-weight/': 'ideal-weight',
-             '/kids-bmi-calculator/': 'kids-bmi-calculator'}
+             '/kids-bmi-calculator/': 'kids-bmi-calculator',
+             '/age-bmi-calculator/': 'age-bmi-calculator'}
 SIZES = {'1x1': (1200, 1200), '4x3': (1200, 900), '16x9': (1200, 675)}
 
 

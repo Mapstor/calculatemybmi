@@ -1,8 +1,5 @@
 page,score,item
 /men-bmi-calculator/,S,Gallagher 2000 body-fat ranges not yet checked against the paper's own table (§5 Gallagher)
 /women-bmi-calculator/,S,Gallagher 2000 body-fat ranges not yet checked against the paper's own table (§5 Gallagher)
-/age-bmi-calculator/,S,"""65+ (Winter 2014) 23–33 (observed plateau)"" reads as an age-specific range; the OG image draws a mortality curve with no data behind it (§5)"
-/age-bmi-calculator/,S,Winter 2014 paraphrased as lowest mortality across BMI 23–33 (§5 Winter)
-/age-bmi-calculator/,S,Gallagher 2000 body-fat ranges not yet checked against the paper's own table (§5 Gallagher)
 /body-fat-calculator/,S,"""Siri WE, 1956"" cited next to Topend's Jackson-Pollock page, which prints only the density equations (§5)"
 /kids-bmi-calculator/,S,"the results' ""Talk with your pediatrician"" lines name no source that says when (§5)"

@@ -37,13 +37,17 @@ for(const [p,btn,pan] of [['women-bmi-calculator/index.html','calc-women-btn','p
 // CMB-005: one tap opens an FAQ answer (two click bindings used to cancel out)
 for(const p of ['index.html','women-bmi-calculator/index.html','men-bmi-calculator/index.html','age-bmi-calculator/index.html','kids-bmi-calculator/index.html','new-bmi-calculator/index.html','ideal-weight/index.html','lean-body-mass/index.html','calculators/index.html','blog/bmi-and-health-risks/index.html','blog/bmi-limitations/index.html','blog/waist-to-height-ratio/index.html','blog/how-to-lower-bmi/index.html','blog/bmi-and-metabolism/index.html','blog/underweight-bmi-risks/index.html']){
  const {dom}=load(p);const d=dom.window.document,q=d.querySelector('.faq-question');q.click();t('FAQ opens on '+p,d.querySelectorAll('.faq-item.open').length===1);q.click();t('FAQ closes on '+p,d.querySelectorAll('.faq-item.open').length===0);}
-// CMB-005: age 65+ result shows a real middle dot (not the text "&middot;") and keeps the adult range
+// CMB-045 (was CMB-005): at 70 the result keeps CDC's adult range and gives Winter et al. 2014 in the DEVLOG §4 wording,
+// no entity text; at 15 the calculator gives no adult result and sends the reader to the children's calculator
 {const {dom}=load('age-bmi-calculator/index.html');const d=dom.window.document;const P=d.getElementById('panel-age');const q=s=>P.querySelector(s);
  q('.height-ft').value='5';q('.height-in').value='9';q('.weight-lbs').value='180';q('.age-input').value='70';d.getElementById('calc-age-btn').click();
- const tile=d.getElementById('age-adjusted-range').textContent;t('age 70 tile has no entity text',!/&[a-z]+;/.test(tile),tile);
- t('age 70 tile keeps the adult range',/^18\.5–24\.9 \(WHO adult range\) \u00b7 lowest mortality observed across BMI 23–33/.test(tile),tile);
- t('age 70 summary explains the 65+ finding',/WHO cut-offs still apply at 65 and over/.test(d.body.textContent));
- t('age 70 says WHO has no age-adjusted cut-offs',/At 70, the healthy BMI range is 18\.5 to 24\.9/.test(d.body.textContent));}
+ const res=d.getElementById('age-results').textContent;t('age 70 result has no entity text',!/&[a-z]+;/.test(res));
+ t('age 70 summary gives the Winter finding in the §4 wording',/compared with a BMI of 23 to 23\.9, the risk of death was higher below 23 and began to rise at about 33 \(Winter et al\., 2014\)/.test(res));
+ t('age 70: no plateau or lowest-mortality wording',!/plateau|lowest (all-cause )?mortality|23–33|WHO adult range/.test(res));
+ t('age 70 keeps the adult range',/At 70, the healthy BMI range is 18\.5 to 24\.9/.test(res));
+ q('.age-input').value='15';d.getElementById('calc-age-btn').click();
+ t('age 15: no adult result',!d.getElementById('age-results').classList.contains('visible'));
+ const note=d.getElementById('age-note');t('age 15: note points to the children\'s calculator',!note.hidden&&!!note.querySelector('a[href="/kids-bmi-calculator/"]'),note.textContent);}
 // CMB-011: metric BMI is kg/m2 as entered (145 cm / 84 kg and 159 cm / 101 kg are 40.0, class III; 703 gave 39.9)
 {const {dom,errs}=load('index.html');const d=dom.window.document,P=d.getElementById('panel-standard');P.querySelector('.unit-btn[data-unit="metric"]').click();
  for(const [cm,kg] of [['145','84'],['159','101']]){P.querySelector('.height-cm').value=cm;P.querySelector('.weight-kg').value=kg;d.getElementById('calc-standard-btn').click();

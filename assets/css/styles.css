@@ -764,6 +764,9 @@ button.cta-button { border: 0; cursor: pointer; }
    their inline styles, which say the same. */
 .calc-panel [hidden] { display: none; }
 .weight-range-box p { margin: 0; font-size: 0.9375rem; }
+/* CMB-045 — /age-bmi-calculator/: an age under 20 gets this line under Calculate instead of an adult result (a tinted
+   panel, no border, as a box inside a card). */
+.calc-note { margin: 1rem 0 0; padding: 0.875rem 1rem; background: var(--gray-50); border-radius: var(--radius-lg); font-size: 0.9375rem; color: var(--gray-700); }
 
 /* CMB-028 — /ideal-weight/ (DESIGN.md "Ideal weight page (CMB-028)"): a by-height table with six number columns (height,
    four formulas, a range) keeps 4 px beside the text in its cells below 400 px. */
