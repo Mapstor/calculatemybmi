@@ -589,7 +589,7 @@ sec_eth = (
 
 sec_beyond = (
     '<section id="beyond" class="content-section flow"><h2>What a healthy BMI can’t tell you</h2>'
-    '<p>CDC calls BMI “a quick, safe, and reliable screening measure” but notes that it “does not directly measure body fat” '
+    '<p>CDC calls BMI “a quick, low-cost, and reliable screening measure” but notes that it “does not directly measure body fat” '
     f'and “does not distinguish between fat, muscle, and bone mass” ({ext(U["cdc_about"], "CDC")}). For one person, CDC says '
     'BMI “should be considered with other factors”. Three checks fill the gaps:</p><ul>'
     '<li><strong>Waist.</strong> Waist size reflects fat around the abdomen, which US guidelines treat as an independent '

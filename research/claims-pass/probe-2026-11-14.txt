@@ -1,36 +1,3 @@
- 32  /blog/how-to-lower-bmi/
-       <li> (Recommendations) Exercise Recommendations
-       <h4> (Professional) Set a Target With a Professional
-       <p> (clinician) A safe calorie target for weight loss depends on your health and is best set with a clinician or registered dietitian.
-       <li> (cause) Refined carbohydrates: White bread, pasta, and pastries cause blood sugar spikes and crashes
-       <h2> (Recommendations) Exercise Recommendations for Lowering BMI
-       <p> (improving) Both types of exercise play important roles in lowering BMI and improving health:
-       <li> (Improves) Improves heart health
-       <li> (improves) Reduces stress and improves mood
-       <li> (Lowers blood) Lowers blood pressure
-       <li> (boosts) Builds muscle and boosts metabolism
-       <li> (Improves) Improves body composition
-       <p> (improve) Behavioral interventions significantly improve long-term weight management outcomes.
-       <p> (lead to) Recognize situations that lead to overeating: stress, boredom, social settings, certain times of day.
-       <p> (dietitian) Consider joining a support group or working with a registered dietitian.
-       <li> (reduces insulin) Metabolism: Poor sleep reduces insulin sensitivity and affects how your body processes nutrients
-       <p> (promotes) Chronic stress elevates cortisol, a hormone that promotes fat storage, particularly around the abdomen, and increases appetite.
-       <p> (Effective) Effective stress management techniques include:
-       <p> (helps maintain) Setting achievable goals helps maintain motivation and creates sustainable change.
-       <p> (improvements) Tracking multiple indicators gives a more complete picture of your health improvements.
-       <p> (Improved) Improved nutrition and exercise typically boost daily energy and reduce fatigue.
-       <p> (improve) Blood pressure, blood sugar, cholesterol levels often improve with weight loss.
-       <li> (cause) Water retention: Hormonal fluctuations, sodium intake, and exercise can cause temporary water weight
-       <p> (professional) While most people can lower their BMI through lifestyle changes, some situations require professional medical guidance.
-       <h3> (Consult) Consult a Healthcare Provider If:
-       <p> (healthcare provider) Those are decisions a qualified healthcare provider makes with you.
-       <p> (professional) This information is intended for educational purposes only and should not replace professional medical advice.
-       <p> (consult) Before starting any weight loss program, especially if you have existing health conditions or take medications, consult with your healthcare provider.
-       <p> (recommendations) These strategies are general recommendations and may need to be modified based on your individual health needs.
-       <p> (boosts) Exercise helps preserve muscle mass during weight loss, boosts metabolism, improves mood and energy, and is important for maintaining weight loss long-term.
-       <p> (improve) While you might not see immediate BMI drops (since muscle is denser than fat), you'll improve your body composition, which is often more important for health.
-       <p> (causes) If weighing causes stress or obsessive behaviors, reduce frequency or focus on other metrics like how clothes fit.
-       <p> (effectively) How to monitor your BMI progress effectively and understand what the numbers mean.
  30  /blog/bmi-and-health-risks/
        <p> (associated with) Body Mass Index (BMI) is a screening tool for identifying potential health risks associated with weight.
        <li> (cause) J-curve relationship: both very low and very high BMI carry elevated all-cause mortality; the WHO healthy range (18.5–24.9) is the standard reference for lowest observed risk in most adult populations.
@@ -230,6 +197,9 @@
   2  /blog/bmi-for-athletes/
        <li> (studies show) What the studies show
        <h2> (studies show) What the studies show
+  2  /blog/how-to-lower-bmi/
+       <li> (Recommendations) Exercise Recommendations
+       <h2> (Recommendations) Exercise Recommendations for Lowering BMI
   2  /blog/bmi-by-age/
        <p> (evidence) This guide explains what the category bodies actually publish, shows how obesity prevalence varies by age in the US, and covers the observational evidence for adults aged 65 and over.
        <p> (higher risk) A meta-analysis of adults aged 65 and over found a higher risk of death below a BMI of 23, but the published categories themselves don’t shift.
@@ -237,4 +207,4 @@
        <li> (lead to) Muscle mass tends to fall with age, so the same BMI can mean more body fat; the American Diabetes Association notes that this may lead to obesity being missed in older adults.
   1  /kids-bmi-calculator/
        <p> (shown to) BMI is CDC’s formula (US units × 703, or kg/m²), shown to 0.1.
-213 hits on 26 of 40 pages
+183 hits on 26 of 40 pages

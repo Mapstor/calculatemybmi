@@ -409,7 +409,7 @@ sec_hand = (
 
 sec_mis = (
     '<section id="misleading" class="content-section flow"><h2>When BMI misleads</h2>'
-    f'<p>CDC calls BMI “a quick, safe, and reliable screening measure” and adds that it “does not distinguish between fat, '
+    f'<p>CDC calls BMI “a quick, low-cost, and reliable screening measure” and adds that it “does not distinguish between fat, '
     f'muscle, and bone mass” ({ext(U["cdc_about"], "CDC")}). Four common cases:</p>'
     '<ul>'
     '<li><strong>Muscle.</strong> A muscular person can have a BMI over 25 with little body fat. The '
