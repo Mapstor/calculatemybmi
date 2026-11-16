@@ -70518,7 +70518,7 @@
    "value": 18.5,
    "class": "B",
    "why": "category cut-off",
-   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & When to Get Help",
    "check": {
     "status": "ok",
     "kind": "category",
@@ -70539,7 +70539,7 @@
    "value": 1.6,
    "class": "C",
    "why": "statistic (percent)",
-   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & When to Get Help",
    "row": {
     "status": "row",
     "domain": "nhanes-underweight",
@@ -70558,7 +70558,7 @@
    "value": 20.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & When to Get Help",
    "row": {
     "status": "row",
     "domain": "nhanes-underweight",
@@ -70577,7 +70577,7 @@
    "value": 2021.0,
    "class": "C",
    "why": "year",
-   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & When to Get Help",
    "row": {
     "status": "row",
     "domain": "nhanes-underweight",
@@ -70596,7 +70596,7 @@
    "value": 2023.0,
    "class": "C",
    "why": "year",
-   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & When to Get Help",
    "row": {
     "status": "row",
     "domain": "nhanes-underweight",
@@ -70615,7 +70615,7 @@
    "value": 3,
    "class": "D",
    "why": "number word (count in prose)",
-   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & When to Get Help",
    "links": [
     "https://www.who.int/publications/i/item/9241208546"
    ]
@@ -70628,7 +70628,7 @@
    "value": 17.0,
    "class": "B",
    "why": "category cut-off",
-   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & When to Get Help",
    "check": {
     "status": "ok",
     "kind": "category",
@@ -70649,7 +70649,7 @@
    "value": 18.4,
    "class": "B",
    "why": "category cut-off (other bound)",
-   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & When to Get Help",
    "links": [
     "https://www.who.int/publications/i/item/9241208546"
    ]
@@ -70662,7 +70662,7 @@
    "value": 16.0,
    "class": "B",
    "why": "category cut-off",
-   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & When to Get Help",
    "check": {
     "status": "ok",
     "kind": "category",
@@ -70682,7 +70682,7 @@
    "value": 16.9,
    "class": "B",
    "why": "category cut-off (other bound)",
-   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & When to Get Help",
    "links": [
     "https://www.who.int/publications/i/item/9241208546"
    ]
@@ -70695,7 +70695,7 @@
    "value": 16.0,
    "class": "B",
    "why": "category cut-off",
-   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & When to Get Help",
    "check": {
     "status": "ok",
     "kind": "category",
@@ -70715,7 +70715,7 @@
    "value": 239.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & When to Get Help",
    "row": {
     "status": "row-notes",
     "domain": "gbmc-2016-bmi-mortality",
@@ -70733,7 +70733,7 @@
    "value": 15.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & When to Get Help",
    "row": {
     "status": "row",
     "domain": "gbmc-2016-bmi-mortality",
@@ -70751,7 +70751,7 @@
    "value": 18.4,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & When to Get Help",
    "row": {
     "status": "row-notes",
     "domain": "gbmc-2016-bmi-mortality",
@@ -70769,7 +70769,7 @@
    "value": 1.51,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & When to Get Help",
    "row": {
     "status": "row",
     "domain": "gbmc-2016-bmi-mortality",
@@ -70787,7 +70787,7 @@
    "value": 22.5,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & When to Get Help",
    "row": {
     "status": "row",
     "domain": "gbmc-2016-bmi-mortality",
@@ -70805,7 +70805,7 @@
    "value": 24.9,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & When to Get Help",
    "row": {
     "status": "row-notes",
     "domain": "gbmc-2016-bmi-mortality",
@@ -70823,7 +70823,7 @@
    "value": 2016.0,
    "class": "C",
    "why": "year",
-   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & When to Get Help",
    "row": {
     "status": "row",
     "domain": "gbmc-2016-bmi-mortality",
@@ -70841,7 +70841,7 @@
    "value": 10.0,
    "class": "B",
    "why": "unit conversion (input)",
-   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & When to Get Help",
    "links": [
     "https://medlineplus.gov/ency/article/003107.htm"
    ]
@@ -70854,7 +70854,7 @@
    "value": 4.5,
    "class": "B",
    "why": "unit conversion",
-   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & When to Get Help",
    "check": {
     "status": "ok",
     "kind": "value",
@@ -70875,7 +70875,7 @@
    "value": 5.0,
    "class": "C",
    "why": "statistic (percent)",
-   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & When to Get Help",
    "row": {
     "status": "row",
     "domain": "medlineplus-unintentional-weight-loss",
@@ -70893,7 +70893,7 @@
    "value": 6.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & When to Get Help",
    "row": {
     "status": "row",
     "domain": "medlineplus-unintentional-weight-loss",
@@ -70911,7 +70911,7 @@
    "value": 12.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & Solutions",
+   "heading": "Underweight BMI Risks: Complete Guide to Health Concerns, Causes & When to Get Help",
    "row": {
     "status": "row",
     "domain": "medlineplus-unintentional-weight-loss",
