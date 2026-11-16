@@ -456,57 +456,7 @@
    "block_sourced": false
   }
  ],
- "/blog/bmi-tracking-guide/": [
-  {
-   "tag": "p",
-   "trigger": "effective",
-   "sentence": "However, effective monitoring requires more than stepping on a scale occasionally.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "evidence",
-   "sentence": "Whether you are working toward a healthier weight or maintaining your current BMI, these evidence-based strategies will help you track progress accurately and avoid common pitfalls.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "li",
-   "trigger": "healthcare providers",
-   "sentence": "Medical documentation: A weight history provides valuable data for healthcare providers",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "causes",
-   "sentence": "Understanding what causes daily fluctuations helps you interpret your data correctly and avoid unnecessary stress.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "effectively",
-   "sentence": "Here is how to choose and use tracking tools effectively:",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "li",
-   "trigger": "effective",
-   "sentence": "Paper log: Low-tech but effective; keeps tracking simple and private",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "h2",
-   "trigger": "Effective",
-   "sentence": "Setting Effective Milestone Goals",
-   "sourced": false,
-   "block_sourced": false
-  }
- ],
+ "/blog/bmi-tracking-guide/": [],
  "/blog/bmi-chart-women/": [],
  "/blog/bmi-chart-men/": [],
  "/blog/bmi-by-age/": [

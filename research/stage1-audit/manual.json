@@ -1757,13 +1757,6 @@
   },
   {
    "page": "/blog/bmi-tracking-guide/",
-   "sig": "#% Loss",
-   "classes": "D",
-   "why": "a label (an example's loss step)",
-   "exact": true
-  },
-  {
-   "page": "/blog/bmi-tracking-guide/",
    "sig": "#",
    "classes": "D",
    "why": "axis tick (an illustrative chart)",

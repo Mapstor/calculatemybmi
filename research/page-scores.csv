@@ -27,7 +27,7 @@ page,template,s,s_value,p,p_value,d,d_value,date
 /blog/bmi-for-athletes/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"1.2/1k (1 tells, 857 words: vague-authority 1)",pass,"detector 390: 0, 1280: 0",2026-11-14
 /blog/waist-to-height-ratio/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 1955 words)",pass,"detector 390: 0, 390 results: 0, 1280: 0, 1280 results: 0",2026-11-16
 /blog/how-to-lower-bmi/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0.4/1k (1 tells, 2725 words: about-the-page 1)",pass,"detector 390: 0, 1280: 0",2026-11-14
-/blog/bmi-tracking-guide/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 1437 words)",pass,"detector 390: 0, 1280: 0",2026-11-14
+/blog/bmi-tracking-guide/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 1241 words)",pass,"detector 390: 0, 1280: 0",2026-11-16
 /blog/bmi-chart-women/,,pass,"page test 604 checks, 0 failures",pass,"0/1k (0 tells, 2903 words)",pass,"detector 390: 0, 1280: 0",2026-11-14
 /blog/bmi-chart-men/,,pass,"page test 921 checks, 0 failures",pass,"0/1k (0 tells, 3433 words)",pass,"detector 390: 0, 1280: 0",2026-11-14
 /blog/bmi-by-age/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 635 words)",pass,"detector 390: 0, 1280: 0",2026-11-14
