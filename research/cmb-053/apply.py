@@ -15,9 +15,11 @@ noninvasive next to direct measures of body fat; fat, muscle and bone; read with
 GBMC 2016 and NCI on risk, WHO 2000 for the classification, the body fat calculator (the site has nine calculators; the
 page listed eight) and the seven sources linked from the most pages (counted 2026-11-16, /about/ left out). Title, H1
 and URL kept; the bio's facts kept. Meta descriptions, the AboutPage description, the FAQPage JSON-LD (all seven visible
-answers), dateModified and lastmod follow. The same Person description on four other pages (blog/bmi-for-athletes,
-blog/what-is-bmi, obesity-rate-by-state, childhood-obesity-statistics) waits for each page's own batch, so their lastmod
-moves with a real edit. Layout: the suite grid (two columns, 632 px inside the 680 px section) now holds nine cards, so
+answers), dateModified and lastmod follow. JSON-LD on /about/ and the four pages that carry the same Person and
+Organization nodes (blog/bmi-for-athletes, blog/what-is-bmi, obesity-rate-by-state, childhood-obesity-statistics): the
+Person description loses "evidence-based", and #organization is named "CalculateMyBMI" as on / (legalName stays Moving
+Data Systems d.o.o.), which settles DEVLOG's open question on the node's name; those four pages' visible text is
+unchanged, so only their lastmod moves (DEVLOG §4 date rules). Layout: the suite grid (two columns, 632 px inside the 680 px section) now holds nine cards, so
 the ninth spans the row instead of standing alone (CSS in the page's own style block; one column on phones is unchanged). Files are checked by SHA-256 first; every marker must occur once.
 usage: python3 research/cmb-053/apply.py [--check]   Run order from main: registry.py, apply.py."""
 import datetime
@@ -33,8 +35,15 @@ REPO = Path(__file__).resolve().parents[2]
 TODAY = os.environ.get('CMB_TODAY') or datetime.date.today().isoformat()
 CHECK = '--check' in sys.argv
 PG, SM = 'about/index.html', 'sitemap.xml'
+OTHERS = {'blog/bmi-for-athletes/index.html': '060552d7a9f030c859143781849ae4757b8fdf8dc5f3a732fcbbea56ef0ee624',
+          'blog/what-is-bmi/index.html': '58aed1c2442ab250c809cc6ece99d8cca488421eca08f9528f2a95a7aa1b9d61',
+          'obesity-rate-by-state/index.html': 'bfb651ce7273f58ddeda0071266ea62de92678cc6af7a11bae49d8afb5d44f54',
+          'childhood-obesity-statistics/index.html': '7b879a515709f4228ffc891037875474b48ab5484ec30f91bafe66a9a9375f9b'}
 BASE = {PG: '033b9a5f8c8b22c38816bb2626a8c9e43c206d62317b368cf33d3b589edb568b',
-        SM: 'c4f955b093d2fd929c19f2fb630115cfee325611281a1e9b1261af9ccc691e53'}
+        SM: 'c4f955b093d2fd929c19f2fb630115cfee325611281a1e9b1261af9ccc691e53', **OTHERS}
+ORG = re.compile(r'("@id": "https://calculatemybmi\.net/#organization",\s*"name": )"Moving Data Systems d\.o\.o\."')
+PERSON = ('Builds evidence-based BMI and body composition calculators.',
+          'Builds BMI and body composition calculators on published formulas.')
 EXT = 'target="_blank" rel="noopener"'
 U = {
     'cdc_about': 'https://www.cdc.gov/bmi/about/index.html',
@@ -182,10 +191,6 @@ EDITS = [
      'operated by Moving Data Systems d.o.o."',
      '"description": "Marko Visic, MPharm, builds BMI and body composition calculators, each on a cited formula. '
      'CalculateMyBMI.net is operated by Moving Data Systems d.o.o."'),
-    ('"description": "Pharmacist by training (MPharm) with a BSc in Physics, both from the University of Ljubljana. Builds '
-     'evidence-based BMI and body composition calculators."',
-     '"description": "Pharmacist by training (MPharm) with a BSc in Physics, both from the University of Ljubljana. Builds '
-     'BMI and body composition calculators on published formulas."'),
     ('border-radius: var(--radius-lg); }  .suite-card h3 {',
      'border-radius: var(--radius-lg); } .suite-card:last-child:nth-child(odd) { grid-column: 1 / -1; } .suite-card h3 {'),
     ('"dateModified": "2026-11-13"', f'"dateModified": "{TODAY}"'),
@@ -242,7 +247,15 @@ def one(src, old, new, what):
     return src.replace(old, new)
 
 
+def graph(src, what):
+    """The Person and Organization nodes /about/ shares with four other pages."""
+    assert len(ORG.findall(src)) == 1, f'{what}: #organization name'
+    src = ORG.sub(r'\1"CalculateMyBMI"', src)
+    return one(src, *PERSON, what)
+
+
 def page(src):
+    src = graph(src, PG)
     for old, new in EDITS + META:
         src = one(src, old, new, PG)
     for q, ans in FAQ.items():
@@ -261,16 +274,20 @@ def page(src):
 
 
 def main():
-    for rel in (PG, SM):
+    for rel in (PG, *OTHERS, SM):
         path = REPO / rel
         src = path.read_text(encoding='utf-8')
         got = hashlib.sha256(src.encode('utf-8')).hexdigest()
         assert got == BASE[rel], f'{rel}: not the file this batch was written against ({got[:12]})'
         if rel == PG:
             src = page(src)
+        elif rel in OTHERS:
+            src = graph(src, rel)
         else:
-            src = one(src, '<url><loc>https://calculatemybmi.net/about/</loc><lastmod>2026-11-13</lastmod>',
-                      f'<url><loc>https://calculatemybmi.net/about/</loc><lastmod>{TODAY}</lastmod>', SM)
+            for slug in ['about'] + [o[:-len('/index.html')] for o in OTHERS]:
+                pat = re.compile(r'(<url><loc>https://calculatemybmi\.net/' + re.escape(slug) + r'/</loc><lastmod>)[0-9-]+(</lastmod>)')
+                assert len(pat.findall(src)) == 1, f'{SM}: {slug}'
+                src = pat.sub(lambda m: m.group(1) + TODAY + m.group(2), src)
         if not CHECK:
             path.write_text(src, encoding='utf-8', newline='')
         print(f'{rel}: done{" (check only)" if CHECK else ""}')
