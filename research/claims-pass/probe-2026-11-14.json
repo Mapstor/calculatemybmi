@@ -581,71 +581,7 @@
    "block_sourced": false
   }
  ],
- "/blog/waist-to-height-ratio/": [
-  {
-   "tag": "li",
-   "trigger": "Improve",
-   "sentence": "How to Improve Your Ratio",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "effectiveness",
-   "sentence": "The effectiveness of WHtR stems from basic human physiology: where you store fat matters enormously for health, and waist circumference is the best simple proxy for the most dangerous fat deposits.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "effectiveness",
-   "sentence": "WHtR's effectiveness comes from its ability to estimate visceral fat - the deep abdominal fat that surrounds your liver, pancreas, and intestines.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "li",
-   "trigger": "cause",
-   "sentence": "Releases inflammatory chemicals: Visceral fat produces cytokines that cause chronic low-grade inflammation throughout the body",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "li",
-   "trigger": "Associated with",
-   "sentence": "Increases cardiovascular risk: Associated with elevated triglycerides, LDL cholesterol, and blood pressure",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "h2",
-   "trigger": "Improve",
-   "sentence": "How to Improve Your Waist-to-Height Ratio",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "improving",
-   "sentence": "For more detailed guidance on healthy weight management, see our guides on improving your BMI and how to lower your BMI .",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "li",
-   "trigger": "increased risk",
-   "sentence": "Elevated WHtR indicates increased risk but doesn't confirm disease.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "Evidence",
-   "sentence": "Evidence-based strategies for healthy weight management that also reduce WHtR.",
-   "sourced": false,
-   "block_sourced": false
-  }
- ],
+ "/blog/waist-to-height-ratio/": [],
  "/blog/how-to-lower-bmi/": [
   {
    "tag": "li",
