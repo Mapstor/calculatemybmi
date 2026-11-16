@@ -12,20 +12,6 @@
        <p> (effective) Any changes will be effective immediately upon posting the updated Terms on this page, with the "Last Updated" date revised accordingly.
        <p> (cause) Any cause of action or claim you may have arising out of or relating to these Terms or the Site must be commenced within one (1) year after the cause of action accrues.
        <p> (cause) Otherwise, such cause of action or claim is permanently barred.
- 13  /blog/bmi-categories/
-       <p> (associated with) A BMI below 16.0 indicates severe underweight, a condition associated with significant medical risk.
-       <p> (doctor) A doctor can look for the cause, which ranges from not eating enough to an underlying illness.
-       <p> (recommended) Medical consultation is recommended to identify and treat underlying causes, which may include gastrointestinal malabsorption, thyroid disorders, chronic infection, eating disorders, or inadequate caloric intake.
-       <h3> (Causes) Common Causes of Underweight (across all three grades)
-       <li> (reduce appetite) Depression and other mental-health conditions that reduce appetite or food intake
-       <p> (clinician) They are not personalised medical advice, and this site does not cover treatment options, medication choices, or surgical decisions — those belong with a qualified clinician.
-       <li> (recommended) 1995: The WHO recommended unified cutoffs of 25 (overweight) and 30 (obesity) regardless of sex.
-       <li> (clinician) Any downstream decisions belong with a clinician.
-       <p> (contribute to) Blood pressure, blood sugar, cholesterol, fitness level, diet quality, and sleep all contribute to your health status.
-       <p> (doctor) BMI is one of several markers a doctor looks at.
-       <h3> (Talk to Your) Talk to Your Doctor
-       <p> (healthcare provider) If your BMI category concerns you, discuss it with your healthcare provider.
-       <p> (associated with) Obesity (BMI 30+) indicates a level of excess weight that is almost always associated with significant excess body fat and clearly elevated health risks.
  13  /blog/bmi-limitations/
        <p> (evidence) Body Mass Index (BMI) has been the go-to health screening tool for decades, but mounting scientific evidence reveals significant flaws in this 200-year-old formula.
        <p> (professional) Due to their high muscle mass and low body fat, many professional athletes are technically "obese" according to BMI despite being in peak physical condition.
@@ -144,4 +130,4 @@
        <li> (lead to) Muscle mass tends to fall with age, so the same BMI can mean more body fat; the American Diabetes Association notes that this may lead to obesity being missed in older adults.
   1  /kids-bmi-calculator/
        <p> (shown to) BMI is CDC’s formula (US units × 703, or kg/m²), shown to 0.1.
-123 hits on 23 of 40 pages
+110 hits on 22 of 40 pages

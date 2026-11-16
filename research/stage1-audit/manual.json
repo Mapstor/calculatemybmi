@@ -1341,16 +1341,16 @@
   },
   {
    "page": "/blog/bmi-categories/",
-   "sig": "This is a wide range - a #-point span that encompasses a substantial weight difference at any given height.",
+   "sig": "That is a span of about # BMI points, a sizeable weight difference at any height.",
    "classes": "B",
-   "why": "the healthy range's width",
+   "why": "the healthy range's width (CMB-054: sentence reworded)",
    "checks": [
     {
      "target": 1,
      "kind": "num",
      "expr": "25 - 18.5",
      "label": "from 18.5 to under 25 (getBMICategory)",
-     "dec": 0
+     "dec": 1
     }
    ]
   },
@@ -1386,18 +1386,6 @@
   },
   {
    "page": "/blog/bmi-categories/",
-   "sig": "A person with a BMI of # is not meaningfully healthier than one at # - the categories represent points on a continuous spectrum.",
-   "classes": "D",
-   "why": "an illustration"
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "sig": "One-size-fits-all cutoffs: The same categories apply to a #-year-old woman and a #-year-old man, despite very different body compositions and health implications.",
-   "classes": "D",
-   "why": "example ages"
-  },
-  {
-   "page": "/blog/bmi-categories/",
    "sig": "Height | Low Normal (BMI #) | Mid Normal (BMI #) | High Normal (BMI #)",
    "classes": "B",
    "why": "the column headers: cut-offs and their midpoint",
@@ -1425,12 +1413,12 @@
   },
   {
    "page": "/blog/bmi-categories/",
-   "sig": "A #-year-old with a BMI of # is perfectly normal, but adult categories would classify them as severely underweight.",
+   "sig": "A #-year-old with a BMI of # is in CDC's healthy weight category, boys and girls alike, but adult categories would classify them as severely underweight.",
    "classes": [
     "B",
     "B"
    ],
-   "why": "the child category and the adult category of BMI 15.5",
+   "why": "the child category and the adult category of BMI 15.5 (CMB-054: sentence reworded)",
    "checks": [
     {
      "target": 2,
@@ -3233,6 +3221,38 @@
    ],
    "row": "trefethen-new-bmi",
    "why": "the year of Trefethen's proposal, in an answer that also links CDC (CMB-053)"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "sig": "the risk of death was lowest at a BMI of # to # and higher below and above it",
+   "classes": [
+    "C",
+    "C",
+    "C",
+    "-"
+   ],
+   "row": "gbmc-2016-bmi-mortality",
+   "why": "the GBMC's 239 studies and its lowest-risk band, 20.0 to 24.9 (minimal at 20.0-25.0), not a calculator category (CMB-054)"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "sig": "CDC calls a BMI from # to just under # healthy weight",
+   "classes": [
+    "C",
+    "C"
+   ],
+   "row": "cdc-adult-bmi-categories",
+   "why": "CDC's healthy weight, \"18.5 to less than 25\" (CMB-054)"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "sig": "CDC counts all of # to just under # as healthy weight",
+   "classes": [
+    "C",
+    "C"
+   ],
+   "row": "cdc-adult-bmi-categories",
+   "why": "CDC's healthy weight, \"18.5 to less than 25\" (CMB-054)"
   }
  ]
 }

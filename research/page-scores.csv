@@ -17,7 +17,7 @@ page,template,s,s_value,p,p_value,d,d_value,date
 /blog/bmi-formula/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 2232 words)",pass,"detector 390: 0, 1280: 0",2026-11-14
 /blog/bmi-history/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 2713 words)",pass,"detector 390: 0, 1280: 0",2026-11-14
 /blog/healthy-bmi-range/,,pass,"page test 214 checks, 0 failures",pass,"0/1k (0 tells, 3698 words)",pass,"detector 390: 0, 1280: 0",2026-11-14
-/blog/bmi-categories/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0.3/1k (1 tells, 3146 words: em-dash 1)",pass,"detector 390: 0, 1280: 0",2026-11-14
+/blog/bmi-categories/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 3007 words)",pass,"detector 390: 0, 1280: 0",2026-11-16
 /blog/bmi-chart-explained/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0.7/1k (2 tells, 2846 words: sales 1, about-the-page 1)",pass,"detector 390: 0, 1280: 0",2026-11-14
 /blog/bmi-and-health-risks/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 2493 words)",pass,"detector 390: 0, 1280: 0",2026-11-14
 /blog/underweight-bmi-risks/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0.6/1k (1 tells, 1783 words: about-the-page 1)",pass,"detector 390: 0, 1280: 0",2026-11-14
