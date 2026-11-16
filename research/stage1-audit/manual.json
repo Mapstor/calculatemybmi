@@ -2177,28 +2177,6 @@
   },
   {
    "page": "/lean-body-mass/",
-   "sig": "A #'#\" man weighing # lbs could be a fit athlete with #% body fat (LBM of # lbs) or a sedentary office worker at #% body fat (LBM of # lbs).",
-   "classes": "B",
-   "why": "lean mass from a body fat share",
-   "checks": [
-    {
-     "target": 5,
-     "kind": "num",
-     "expr": "$3 * (1 - $4 / 100)",
-     "label": "190 lb at 15% body fat",
-     "dec": 1
-    },
-    {
-     "target": 7,
-     "kind": "num",
-     "expr": "$3 * (1 - $6 / 100)",
-     "label": "190 lb at 30% body fat",
-     "dec": 0
-    }
-   ]
-  },
-  {
-   "page": "/lean-body-mass/",
    "sig": "For example, a #-pound man with #% body fat has an LBM of # pounds and # pounds of fat.",
    "classes": "B",
    "why": "lean mass and fat from a body fat share",
@@ -3217,6 +3195,129 @@
      "kind": "num",
      "expr": "20 - 0.1",
      "label": "just under Table 4's 20% (men 20-39, BMI 25)",
+     "dec": 1
+    }
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "sig": "Take two men, both #'#\" and # lbs, one at #% body fat (LBM of # lbs) and one at #% (LBM of # lbs).",
+   "classes": [
+    "-",
+    "D",
+    "D",
+    "D",
+    "D",
+    "B",
+    "D",
+    "B"
+   ],
+   "why": "two illustrative men (CMB-063; \"two\" is the first number); their lean mass is 190 lb less 15% and 30% body fat",
+   "checks": [
+    {
+     "target": 6,
+     "kind": "num",
+     "expr": "$4 * (1 - $5 / 100)",
+     "label": "190 lb at 15% body fat",
+     "dec": 1
+    },
+    {
+     "target": 8,
+     "kind": "num",
+     "expr": "$4 * (1 - $7 / 100)",
+     "label": "190 lb at 30% body fat",
+     "dec": 0
+    }
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "sig": "puts both at #, overweight.",
+   "classes": "B",
+   "why": "the BMI of 5 ft 10 in and 190 lb, and its category (CMB-063)",
+   "checks": [
+    {
+     "target": 1,
+     "kind": "num",
+     "expr": "703 * 190 / (70 * 70)",
+     "label": "BMI of 190 lb at 70 in",
+     "dec": 1
+    },
+    {
+     "target": 1,
+     "kind": "catname",
+     "expr": "__A.cat($1)",
+     "text": "overweight",
+     "label": "category of that BMI (getBMICategory)"
+    }
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "sig": "provisional ranges put #% body fat within the range that matches a healthy BMI (# to #%) and #% above the #% that matches a BMI of # (Gallagher et al., #).",
+   "classes": [
+    "-",
+    "-",
+    "D",
+    "-",
+    "B",
+    "D",
+    "-",
+    "B",
+    "-"
+   ],
+   "why": "Gallagher Table 4, men 20 to 39: 8% at BMI 18.5, 20% at 25, 25% at 30; 15 and 30 are the two men; 19.9 is just under 20; 30 is the obesity cut-off (CMB-063)",
+   "checks": [
+    {
+     "target": 5,
+     "kind": "num",
+     "expr": "20 - 0.1",
+     "label": "just under Table 4's 20% (men 20-39, BMI 25)",
+     "dec": 1
+    }
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "sig": "it gives both men # lbs of lean mass and #% body fat.",
+   "classes": "A",
+   "why": "the Boer estimate for both men, from the page's calculator (CMB-063)",
+   "checks": [
+    {
+     "target": 1,
+     "kind": "A",
+     "calc": "/lean-body-mass/",
+     "units": "us",
+     "inputs": {
+      "ft": 5,
+      "in": 10,
+      "lb": 190,
+      "sex": "male"
+     },
+     "claims": [
+      {
+       "tok": 1,
+       "read": "lbm_lb"
+      },
+      {
+       "tok": 2,
+       "read": "bf"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "sig": "A kilogram of muscle at rest uses about # times as much as a kilogram of fat.",
+   "classes": "B",
+   "why": "the ratio of the two rates in the sentence before, 13 and 4.5 kcal per kg a day (Wang et al., 2010) (CMB-063)",
+   "checks": [
+    {
+     "target": 1,
+     "kind": "num",
+     "expr": "13 / 4.5",
+     "label": "13 / 4.5",
      "dec": 1
     }
    ]

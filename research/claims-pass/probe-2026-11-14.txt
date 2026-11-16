@@ -12,14 +12,6 @@
        <p> (effective) Any changes will be effective immediately upon posting the updated Terms on this page, with the "Last Updated" date revised accordingly.
        <p> (cause) Any cause of action or claim you may have arising out of or relating to these Terms or the Site must be commenced within one (1) year after the cause of action accrues.
        <p> (cause) Otherwise, such cause of action or claim is permanently barred.
-  7  /lean-body-mass/
-       <p> (clinicians) Some clinicians express protein needs relative to lean mass rather than total weight.
-       <p> (clinician) How much you need depends on age, size, health and activity, so targets are best set with a clinician or registered dietitian.
-       <h2> (Improve) How to Improve Your Body Composition
-       <p> (clinician) How much you need depends on your age, size, health and activity, so individual targets are best set with a clinician or registered dietitian.
-       <p> (recommended) For precise measurements, clinical methods like DEXA scanning, hydrostatic weighing, or air displacement plethysmography are recommended.
-       <p> (improves) When people talk about "gaining lean mass," they usually mean increasing skeletal muscle, but technically LBM also increases if bone density improves or hydration levels change.
-       <p> (recommend) For further reading on body composition, lean body mass, and health assessment methods, we recommend these authoritative sources:
   6  /blog/underweight-bmi-risks/
        <li> (Causes) Causes of Being Underweight
        <li> (See a) When to See a Doctor
@@ -76,4 +68,4 @@
        <li> (lead to) Muscle mass tends to fall with age, so the same BMI can mean more body fat; the American Diabetes Association notes that this may lead to obesity being missed in older adults.
   1  /kids-bmi-calculator/
        <p> (shown to) BMI is CDC’s formula (US units × 703, or kg/m²), shown to 0.1.
-61 hits on 17 of 40 pages
+54 hits on 16 of 40 pages

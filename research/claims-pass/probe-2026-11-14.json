@@ -199,57 +199,7 @@
    "block_sourced": false
   }
  ],
- "/lean-body-mass/": [
-  {
-   "tag": "p",
-   "trigger": "clinicians",
-   "sentence": "Some clinicians express protein needs relative to lean mass rather than total weight.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "clinician",
-   "sentence": "How much you need depends on age, size, health and activity, so targets are best set with a clinician or registered dietitian.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "h2",
-   "trigger": "Improve",
-   "sentence": "How to Improve Your Body Composition",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "clinician",
-   "sentence": "How much you need depends on your age, size, health and activity, so individual targets are best set with a clinician or registered dietitian.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "recommended",
-   "sentence": "For precise measurements, clinical methods like DEXA scanning, hydrostatic weighing, or air displacement plethysmography are recommended.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "improves",
-   "sentence": "When people talk about \"gaining lean mass,\" they usually mean increasing skeletal muscle, but technically LBM also increases if bone density improves or hydration levels change.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "recommend",
-   "sentence": "For further reading on body composition, lean body mass, and health assessment methods, we recommend these authoritative sources:",
-   "sourced": false,
-   "block_sourced": false
-  }
- ],
+ "/lean-body-mass/": [],
  "/new-bmi-calculator/": [
   {
    "tag": "li",
