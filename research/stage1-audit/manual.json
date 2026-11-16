@@ -1652,21 +1652,6 @@
    ]
   },
   {
-   "page": "/blog/bmi-limitations/",
-   "sig": "Body Mass Index (BMI) has been the go-to health screening tool for decades, but mounting scientific evidence reveals significant flaws in this #-year-old formula.",
-   "classes": "B",
-   "why": "years since 1832, to the hundred",
-   "checks": [
-    {
-     "target": 1,
-     "kind": "num",
-     "expr": "2026 - 1832",
-     "label": "2026 minus 1832, rounded to the hundred",
-     "dec": -2
-    }
-   ]
-  },
-  {
    "page": "/blog/body-fat-vs-bmi/",
    "sig": "For example, a person weighing # kg who is # m tall would have a BMI of # (# / #²).",
    "classes": [
@@ -2415,20 +2400,6 @@
    "classes": "C",
    "row": "provencher-2018-nfl-combine",
    "why": "the athlete card of the figure, Provencher 2018 (CMB-036)"
-  },
-  {
-   "page": "/blog/bmi-limitations/",
-   "sig": "but #% obese by body fat (#)",
-   "classes": "C",
-   "row": "provencher-2018-nfl-combine",
-   "why": "the athlete card of the figure, Provencher 2018 (CMB-036)"
-  },
-  {
-   "page": "/blog/bmi-limitations/",
-   "sig": "overweight cutoff # (not #)",
-   "classes": "C",
-   "row": "ko-tang-2006-wpro-2000",
-   "why": "the ethnic-variation card: the 2000 Asia-Pacific proposal (WHO Western Pacific, IASO, IOTF), overweight from 23 instead of 25 (CMB-036)"
   },
   {
    "page": "/blog/",

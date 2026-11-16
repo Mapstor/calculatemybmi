@@ -4,13 +4,13 @@
  "viewport": "390x844",
  "pages_audited": 24,
  "pages_skipped": [],
- "numbers": 5098,
+ "numbers": 5233,
  "totals": {
   "A": 47,
-  "B": 1636,
-  "C": 2540,
-  "D": 687,
-  "X": 188,
+  "B": 1656,
+  "C": 2647,
+  "D": 693,
+  "X": 190,
   "U": 0
  },
  "mismatches": 0,
@@ -19,16 +19,16 @@
  "c_not_in_row_in_page_csv": 0,
  "c_not_in_row_also_in_other_row": 0,
  "c_status": {
-  "row": 1336,
-  "row-notes": 274,
+  "row": 1405,
+  "row-notes": 312,
   "not-in-row": 28,
   "row-dataset": 902
  },
- "checks_run": 1126,
+ "checks_run": 1137,
  "check_errors": [],
  "unclassified": [],
- "manual_entries": 257,
- "manual_entries_used": 253,
+ "manual_entries": 254,
+ "manual_entries_used": 251,
  "worst10": [
   {
    "page": "/kids-bmi-calculator/",
@@ -3663,7 +3663,7 @@
   },
   {
    "page": "/blog/bmi-limitations/",
-   "jsonld_mirrors": 5,
+   "jsonld_mirrors": 38,
    "mismatches": [],
    "c_no_row": [],
    "c_not_in_row": [],
@@ -3675,14 +3675,24 @@
      "sentence": "BMI Limitations: 10 Critical Reasons Why BMI May Be Misleading You"
     },
     {
+     "number": "ten",
+     "why": "number word (count in prose)",
+     "sentence": "Below: ten ways a BMI can mislead, what the sources say about each, and the measures that fill the gaps."
+    },
+    {
      "number": "Four",
      "why": "number word (count in prose)",
-     "sentence": "Four well-documented cases where BMI misleads — each is discussed in a numbered section below."
+     "sentence": "Four cases where BMI can mislead."
+    },
+    {
+     "number": "Three",
+     "why": "number word (count in prose)",
+     "sentence": "Three have numbered sections below; the height argument is on our New BMI calculator page."
     },
     {
      "number": "two",
      "why": "number word (count in prose)",
-     "sentence": "Today, it remains the most widely used metric because it requires only two measurements: height and weight."
+     "sentence": "It needs only two measurements: height and weight."
     },
     {
      "number": "2",
@@ -3692,40 +3702,66 @@
     {
      "number": "half",
      "why": "number word (count in prose)",
-     "sentence": "For a free, simple alternative, waist-to-height ratio (keeping your waist less than half your height) is recommended by many researchers."
+     "sentence": "Body fat varies widely at the same BMI: US women aged 20 to 59 with a BMI of 23.5 to 24.4 measured a median of 35.5% body fat on CDC’s DXA scans, and the middle half were between 33.0% and 38.2% (our calculation from CDC NHANES 2011–2018 DXA scans)."
+    },
+    {
+     "number": "four",
+     "why": "number word (count in prose)",
+     "sentence": "Our body fat calculator estimates yours four ways."
+    },
+    {
+     "number": "four",
+     "why": "number word (count in prose)",
+     "sentence": "At home, our body fat calculator shows how close four simpler methods come to CDC’s DXA scans."
+    },
+    {
+     "number": "half",
+     "why": "number word (count in prose)",
+     "sentence": "For the waist-to-height ratio, a review of 78 studies backed the message “keep your waist circumference to less than half your height” (Browning et al., 2010), and NICE treats 0.5 to 0.59 as increased and 0.6 or more as high for adults with a BMI under 35 (NICE guideline NG246)."
     },
     {
      "number": "10",
      "why": "count in prose",
      "sentence": "BMI Limitations: 10 Reasons BMI May Be Misleading | CalculateMyBMI"
+    },
+    {
+     "number": "Ten",
+     "why": "number word (count in prose)",
+     "sentence": "Ten ways BMI can mislead, from muscle and fat distribution to age, sex and ethnicity, with what CDC, NIH and the studies say, and the measures that fill the gaps."
     }
    ],
-   "checks_ok": 3,
+   "checks_ok": 14,
    "page_errors": [],
    "score": 0,
    "totals": {
-    "D": 6,
-    "B": 3,
-    "X": 24,
-    "C": 34
+    "D": 12,
+    "X": 26,
+    "C": 141,
+    "B": 23
    },
    "c_rows": {
-    "row": 32,
-    "row-notes": 2
+    "row": 101,
+    "row-notes": 40
    },
    "c_row_domains": {
-    "eknoyan-2008-quetelet": 4,
-    "nhlbi-1998-obesity-guidelines": 6,
+    "eknoyan-2008-quetelet": 5,
+    "nhanes-2011-2018-dxa": 36,
+    "nhlbi-1998-obesity-guidelines": 18,
     "ashwell-2012-whtr-meta-analysis": 1,
-    "volpi-2004-muscle-aging": 4,
+    "provencher-2018-nfl-combine": 9,
+    "volpi-2004-muscle-aging": 7,
     "winter-2014-bmi-mortality-65": 6,
-    "who-2004-asian-bmi": 4,
-    "provencher-2018-nfl-combine": 6,
+    "who-2004-asian-bmi": 6,
+    "nhanes-adult-weight-trends": 10,
+    "nice-ng246-ethnicity-thresholds": 9,
+    "cdc-pregnancy-weight-gain": 16,
+    "cdc-adult-bmi-categories": 3,
+    "gbmc-2016-bmi-mortality": 11,
     "trefethen-new-bmi": 1,
-    "ko-tang-2006-wpro-2000": 2
+    "browning-2010-whtr-review": 3
    },
    "excluded": {
-    "list numbering": 20,
+    "list numbering": 22,
     "list numbering (numbered badge)": 4
    }
   },
@@ -73927,20 +73963,12 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "main",
-   "sentence": "Body Mass Index (BMI) has been the go-to health screening tool for decades, but mounting scientific evidence reveals significant flaws in this 200-year-old formula.",
-   "number": "200",
-   "value": 200.0,
-   "class": "B",
-   "why": "years since 1832, to the hundred (manual.json)",
-   "heading": "BMI Limitations: 10 Critical Reasons Why BMI May Be Misleading You",
-   "check": {
-    "status": "ok",
-    "kind": "value",
-    "page": "200",
-    "computed": "200",
-    "raw": 194,
-    "label": "2026 minus 1832, rounded to the hundred"
-   }
+   "sentence": "Below: ten ways a BMI can mislead, what the sources say about each, and the measures that fill the gaps.",
+   "number": "ten",
+   "value": 10,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "BMI Limitations: 10 Critical Reasons Why BMI May Be Misleading You"
   },
   {
    "page": "/blog/bmi-limitations/",
@@ -74075,12 +74103,25 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "main",
-   "sentence": "Four well-documented cases where BMI misleads — each is discussed in a numbered section below.",
+   "sentence": "Four cases where BMI can mislead.",
    "number": "Four",
    "value": 4,
    "class": "D",
    "why": "number word (count in prose)",
    "heading": "BMI Limitations: 10 Critical Reasons Why BMI May Be Misleading You"
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "Three have numbered sections below; the height argument is on our New BMI calculator page.",
+   "number": "Three",
+   "value": 3,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "BMI Limitations: 10 Critical Reasons Why BMI May Be Misleading You",
+   "links": [
+    "http://localhost:8765/new-bmi-calculator/"
+   ]
   },
   {
    "page": "/blog/bmi-limitations/",
@@ -74104,6 +74145,24 @@
    "page": "/blog/bmi-limitations/",
    "region": "main",
    "sentence": "Body Mass Index began as the Quetelet index, described in 1832 by the Belgian mathematician, astronomer and statistician Adolphe Quetelet (Eknoyan, 2008).",
+   "number": "2008",
+   "value": 2008.0,
+   "class": "C",
+   "why": "year",
+   "heading": "What Is BMI and Why Was It Created?",
+   "row": {
+    "status": "row",
+    "domain": "eknoyan-2008-quetelet",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1093/ndt/gfm517"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "He was studying the “average man”, and in developing the index he had no interest in obesity (Eknoyan, 2008).",
    "number": "2008",
    "value": 2008.0,
    "class": "C",
@@ -74159,7 +74218,7 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "main",
-   "sentence": "Today, it remains the most widely used metric because it requires only two measurements: height and weight.",
+   "sentence": "It needs only two measurements: height and weight.",
    "number": "two",
    "value": 2,
    "class": "D",
@@ -74178,6 +74237,219 @@
    "class": "X",
    "why": "list numbering",
    "heading": "What Is BMI and Why Was It Created?"
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "The spread is wide even inside the healthy range: on CDC’s DXA scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the middle half of women measured 29.8% to 36.5% body fat and the middle half of men 18.6% to 25.0% (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Limitation #1: BMI Cannot Distinguish Muscle from Fat",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "The spread is wide even inside the healthy range: on CDC’s DXA scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the middle half of women measured 29.8% to 36.5% body fat and the middle half of men 18.6% to 25.0% (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "59",
+   "value": 59.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Limitation #1: BMI Cannot Distinguish Muscle from Fat",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "The spread is wide even inside the healthy range: on CDC’s DXA scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the middle half of women measured 29.8% to 36.5% body fat and the middle half of men 18.6% to 25.0% (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "18.5",
+   "value": 18.5,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "Limitation #1: BMI Cannot Distinguish Muscle from Fat",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "18.5 to 24.9 (no category named)",
+    "computed": "Healthy weight in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "The spread is wide even inside the healthy range: on CDC’s DXA scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the middle half of women measured 29.8% to 36.5% body fat and the middle half of men 18.6% to 25.0% (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "Limitation #1: BMI Cannot Distinguish Muscle from Fat",
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "The spread is wide even inside the healthy range: on CDC’s DXA scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the middle half of women measured 29.8% to 36.5% body fat and the middle half of men 18.6% to 25.0% (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "half",
+   "value": 0.5,
+   "class": "C",
+   "why": "statistic in words",
+   "heading": "Limitation #1: BMI Cannot Distinguish Muscle from Fat",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "The spread is wide even inside the healthy range: on CDC’s DXA scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the middle half of women measured 29.8% to 36.5% body fat and the middle half of men 18.6% to 25.0% (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "29.8",
+   "value": 29.8,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Limitation #1: BMI Cannot Distinguish Muscle from Fat",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "The spread is wide even inside the healthy range: on CDC’s DXA scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the middle half of women measured 29.8% to 36.5% body fat and the middle half of men 18.6% to 25.0% (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "36.5",
+   "value": 36.5,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Limitation #1: BMI Cannot Distinguish Muscle from Fat",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "The spread is wide even inside the healthy range: on CDC’s DXA scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the middle half of women measured 29.8% to 36.5% body fat and the middle half of men 18.6% to 25.0% (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "half",
+   "value": 0.5,
+   "class": "C",
+   "why": "statistic in words",
+   "heading": "Limitation #1: BMI Cannot Distinguish Muscle from Fat",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "The spread is wide even inside the healthy range: on CDC’s DXA scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the middle half of women measured 29.8% to 36.5% body fat and the middle half of men 18.6% to 25.0% (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "18.6",
+   "value": 18.6,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Limitation #1: BMI Cannot Distinguish Muscle from Fat",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "The spread is wide even inside the healthy range: on CDC’s DXA scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the middle half of women measured 29.8% to 36.5% body fat and the middle half of men 18.6% to 25.0% (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "25.0",
+   "value": 25.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Limitation #1: BMI Cannot Distinguish Muscle from Fat",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "The spread is wide even inside the healthy range: on CDC’s DXA scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the middle half of women measured 29.8% to 36.5% body fat and the middle half of men 18.6% to 25.0% (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "2011",
+   "value": 2011.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Limitation #1: BMI Cannot Distinguish Muscle from Fat",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "The spread is wide even inside the healthy range: on CDC’s DXA scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the middle half of women measured 29.8% to 36.5% body fat and the middle half of men 18.6% to 25.0% (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "2018",
+   "value": 2018.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Limitation #1: BMI Cannot Distinguish Muscle from Fat",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
   },
   {
    "page": "/blog/bmi-limitations/",
@@ -74329,6 +74601,80 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "main",
+   "sentence": "At the NFL Scouting Combine, 53.4% of prospects had a BMI of 30 or more, but only 8.9% had obesity by measured body fat (Provencher et al., 2018).",
+   "number": "53.4",
+   "value": 53.4,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Limitation #3: Inaccurate for Athletes and Bodybuilders",
+   "row": {
+    "status": "row",
+    "domain": "provencher-2018-nfl-combine",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1519/JSC.0000000000002449"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "At the NFL Scouting Combine, 53.4% of prospects had a BMI of 30 or more, but only 8.9% had obesity by measured body fat (Provencher et al., 2018).",
+   "number": "30",
+   "value": 30.0,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "Limitation #3: Inaccurate for Athletes and Bodybuilders",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "30 (no category named)",
+    "computed": "Class 1 obesity / Class 2 obesity / Class 3 obesity in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://doi.org/10.1519/JSC.0000000000002449"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "At the NFL Scouting Combine, 53.4% of prospects had a BMI of 30 or more, but only 8.9% had obesity by measured body fat (Provencher et al., 2018).",
+   "number": "8.9",
+   "value": 8.9,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Limitation #3: Inaccurate for Athletes and Bodybuilders",
+   "row": {
+    "status": "row",
+    "domain": "provencher-2018-nfl-combine",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1519/JSC.0000000000002449"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "At the NFL Scouting Combine, 53.4% of prospects had a BMI of 30 or more, but only 8.9% had obesity by measured body fat (Provencher et al., 2018).",
+   "number": "2018",
+   "value": 2018.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Limitation #3: Inaccurate for Athletes and Bodybuilders",
+   "row": {
+    "status": "row",
+    "domain": "provencher-2018-nfl-combine",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1519/JSC.0000000000002449"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
    "sentence": "Limitation #4: Problems with Elderly Populations",
    "number": "4",
    "value": 4.0,
@@ -74339,25 +74685,7 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "main",
-   "sentence": "After age 30, adults lose an estimated 3–8% of muscle mass per decade, a process called sarcopenia (Volpi et al., 2004).",
-   "number": "30",
-   "value": 30.0,
-   "class": "C",
-   "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Limitation #4: Problems with Elderly Populations",
-   "row": {
-    "status": "row",
-    "domain": "volpi-2004-muscle-aging",
-    "how": "link"
-   },
-   "links": [
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC2804956/"
-   ]
-  },
-  {
-   "page": "/blog/bmi-limitations/",
-   "region": "main",
-   "sentence": "After age 30, adults lose an estimated 3–8% of muscle mass per decade, a process called sarcopenia (Volpi et al., 2004).",
+   "sentence": "Muscle mass decreases by about 3–8% per decade after age 30, and faster after 60; the involuntary loss of muscle mass, strength and function is called sarcopenia (Volpi et al., 2004).",
    "number": "3",
    "value": 3.0,
    "class": "C",
@@ -74375,7 +74703,7 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "main",
-   "sentence": "After age 30, adults lose an estimated 3–8% of muscle mass per decade, a process called sarcopenia (Volpi et al., 2004).",
+   "sentence": "Muscle mass decreases by about 3–8% per decade after age 30, and faster after 60; the involuntary loss of muscle mass, strength and function is called sarcopenia (Volpi et al., 2004).",
    "number": "8",
    "value": 8.0,
    "class": "C",
@@ -74393,7 +74721,43 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "main",
-   "sentence": "After age 30, adults lose an estimated 3–8% of muscle mass per decade, a process called sarcopenia (Volpi et al., 2004).",
+   "sentence": "Muscle mass decreases by about 3–8% per decade after age 30, and faster after 60; the involuntary loss of muscle mass, strength and function is called sarcopenia (Volpi et al., 2004).",
+   "number": "30",
+   "value": 30.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Limitation #4: Problems with Elderly Populations",
+   "row": {
+    "status": "row",
+    "domain": "volpi-2004-muscle-aging",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC2804956/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "Muscle mass decreases by about 3–8% per decade after age 30, and faster after 60; the involuntary loss of muscle mass, strength and function is called sarcopenia (Volpi et al., 2004).",
+   "number": "60",
+   "value": 60.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Limitation #4: Problems with Elderly Populations",
+   "row": {
+    "status": "row",
+    "domain": "volpi-2004-muscle-aging",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC2804956/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "Muscle mass decreases by about 3–8% per decade after age 30, and faster after 60; the involuntary loss of muscle mass, strength and function is called sarcopenia (Volpi et al., 2004).",
    "number": "2004",
    "value": 2004.0,
    "class": "C",
@@ -74586,8 +74950,8 @@
    "heading": "Limitation #5: Ethnic Variations in Body Composition",
    "row": {
     "status": "row",
-    "domain": "who-2004-asian-bmi",
-    "how": "paragraph link"
+    "domain": "nhanes-adult-weight-trends",
+    "how": "pages_served"
    }
   },
   {
@@ -74602,8 +74966,62 @@
    "row": {
     "status": "row",
     "domain": "who-2004-asian-bmi",
-    "how": "paragraph link"
+    "how": "pages_served"
    }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "In the UK, NICE uses lower thresholds for adults with a South Asian, Chinese, other Asian, Middle Eastern, Black African or African-Caribbean background: overweight from 23 to 27.4 and obesity from 27.5 (NICE guideline NG246).",
+   "number": "23",
+   "value": 23.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Limitation #5: Ethnic Variations in Body Composition",
+   "row": {
+    "status": "row",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   },
+   "links": [
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "In the UK, NICE uses lower thresholds for adults with a South Asian, Chinese, other Asian, Middle Eastern, Black African or African-Caribbean background: overweight from 23 to 27.4 and obesity from 27.5 (NICE guideline NG246).",
+   "number": "27.4",
+   "value": 27.4,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Limitation #5: Ethnic Variations in Body Composition",
+   "row": {
+    "status": "row",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   },
+   "links": [
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "In the UK, NICE uses lower thresholds for adults with a South Asian, Chinese, other Asian, Middle Eastern, Black African or African-Caribbean background: overweight from 23 to 27.4 and obesity from 27.5 (NICE guideline NG246).",
+   "number": "27.5",
+   "value": 27.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Limitation #5: Ethnic Variations in Body Composition",
+   "row": {
+    "status": "row",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   },
+   "links": [
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
   },
   {
    "page": "/blog/bmi-limitations/",
@@ -74618,12 +75036,463 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "main",
+   "sentence": "CDC’s weight-gain ranges for pregnancy go by BMI before pregnancy: for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "28",
+   "value": 28.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Limitation #6: Not Appropriate During Pregnancy",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC’s weight-gain ranges for pregnancy go by BMI before pregnancy: for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "40",
+   "value": 40.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Limitation #6: Not Appropriate During Pregnancy",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC’s weight-gain ranges for pregnancy go by BMI before pregnancy: for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "18.5",
+   "value": 18.5,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "Limitation #6: Not Appropriate During Pregnancy",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "18.5 (no category named)",
+    "computed": "Severe thinness / Moderate thinness / Underweight in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC’s weight-gain ranges for pregnancy go by BMI before pregnancy: for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Limitation #6: Not Appropriate During Pregnancy",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC’s weight-gain ranges for pregnancy go by BMI before pregnancy: for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "35",
+   "value": 35.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Limitation #6: Not Appropriate During Pregnancy",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC’s weight-gain ranges for pregnancy go by BMI before pregnancy: for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "18.5",
+   "value": 18.5,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "Limitation #6: Not Appropriate During Pregnancy",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "18.5 to 24.9 (no category named)",
+    "computed": "Healthy weight in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC’s weight-gain ranges for pregnancy go by BMI before pregnancy: for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "Limitation #6: Not Appropriate During Pregnancy",
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC’s weight-gain ranges for pregnancy go by BMI before pregnancy: for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "15",
+   "value": 15.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Limitation #6: Not Appropriate During Pregnancy",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC’s weight-gain ranges for pregnancy go by BMI before pregnancy: for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Limitation #6: Not Appropriate During Pregnancy",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC’s weight-gain ranges for pregnancy go by BMI before pregnancy: for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "25.0",
+   "value": 25.0,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "Limitation #6: Not Appropriate During Pregnancy",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "25.0 to 29.9 (no category named)",
+    "computed": "Overweight in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC’s weight-gain ranges for pregnancy go by BMI before pregnancy: for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "29.9",
+   "value": 29.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "Limitation #6: Not Appropriate During Pregnancy",
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC’s weight-gain ranges for pregnancy go by BMI before pregnancy: for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "11",
+   "value": 11.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Limitation #6: Not Appropriate During Pregnancy",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC’s weight-gain ranges for pregnancy go by BMI before pregnancy: for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Limitation #6: Not Appropriate During Pregnancy",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC’s weight-gain ranges for pregnancy go by BMI before pregnancy: for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "30.0",
+   "value": 30.0,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "Limitation #6: Not Appropriate During Pregnancy",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "30.0 to 39.9 (no category named)",
+    "computed": "Class 1 obesity / Class 2 obesity in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC’s weight-gain ranges for pregnancy go by BMI before pregnancy: for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "39.9",
+   "value": 39.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "Limitation #6: Not Appropriate During Pregnancy",
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
    "sentence": "Limitation #7: Misses \"Skinny Fat\" Condition (Normal Weight Obesity)",
    "number": "7",
    "value": 7.0,
    "class": "X",
    "why": "list numbering",
    "heading": "Limitation #6: Not Appropriate During Pregnancy"
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "Body fat varies widely at the same BMI: US women aged 20 to 59 with a BMI of 23.5 to 24.4 measured a median of 35.5% body fat on CDC’s DXA scans, and the middle half were between 33.0% and 38.2% (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Limitation #7: Misses \"Skinny Fat\" Condition (Normal Weight Obesity)",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "Body fat varies widely at the same BMI: US women aged 20 to 59 with a BMI of 23.5 to 24.4 measured a median of 35.5% body fat on CDC’s DXA scans, and the middle half were between 33.0% and 38.2% (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "59",
+   "value": 59.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Limitation #7: Misses \"Skinny Fat\" Condition (Normal Weight Obesity)",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "Body fat varies widely at the same BMI: US women aged 20 to 59 with a BMI of 23.5 to 24.4 measured a median of 35.5% body fat on CDC’s DXA scans, and the middle half were between 33.0% and 38.2% (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "23.5",
+   "value": 23.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Limitation #7: Misses \"Skinny Fat\" Condition (Normal Weight Obesity)",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "Body fat varies widely at the same BMI: US women aged 20 to 59 with a BMI of 23.5 to 24.4 measured a median of 35.5% body fat on CDC’s DXA scans, and the middle half were between 33.0% and 38.2% (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "24.4",
+   "value": 24.4,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Limitation #7: Misses \"Skinny Fat\" Condition (Normal Weight Obesity)",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "Body fat varies widely at the same BMI: US women aged 20 to 59 with a BMI of 23.5 to 24.4 measured a median of 35.5% body fat on CDC’s DXA scans, and the middle half were between 33.0% and 38.2% (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "35.5",
+   "value": 35.5,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Limitation #7: Misses \"Skinny Fat\" Condition (Normal Weight Obesity)",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "Body fat varies widely at the same BMI: US women aged 20 to 59 with a BMI of 23.5 to 24.4 measured a median of 35.5% body fat on CDC’s DXA scans, and the middle half were between 33.0% and 38.2% (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "half",
+   "value": 0.5,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Limitation #7: Misses \"Skinny Fat\" Condition (Normal Weight Obesity)",
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "Body fat varies widely at the same BMI: US women aged 20 to 59 with a BMI of 23.5 to 24.4 measured a median of 35.5% body fat on CDC’s DXA scans, and the middle half were between 33.0% and 38.2% (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "33.0",
+   "value": 33.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Limitation #7: Misses \"Skinny Fat\" Condition (Normal Weight Obesity)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "Body fat varies widely at the same BMI: US women aged 20 to 59 with a BMI of 23.5 to 24.4 measured a median of 35.5% body fat on CDC’s DXA scans, and the middle half were between 33.0% and 38.2% (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "38.2",
+   "value": 38.2,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Limitation #7: Misses \"Skinny Fat\" Condition (Normal Weight Obesity)",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "Body fat varies widely at the same BMI: US women aged 20 to 59 with a BMI of 23.5 to 24.4 measured a median of 35.5% body fat on CDC’s DXA scans, and the middle half were between 33.0% and 38.2% (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "2011",
+   "value": 2011.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Limitation #7: Misses \"Skinny Fat\" Condition (Normal Weight Obesity)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "Body fat varies widely at the same BMI: US women aged 20 to 59 with a BMI of 23.5 to 24.4 measured a median of 35.5% body fat on CDC’s DXA scans, and the middle half were between 33.0% and 38.2% (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "2018",
+   "value": 2018.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Limitation #7: Misses \"Skinny Fat\" Condition (Normal Weight Obesity)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "Our body fat calculator estimates yours four ways.",
+   "number": "four",
+   "value": 4,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Limitation #7: Misses \"Skinny Fat\" Condition (Normal Weight Obesity)",
+   "links": [
+    "http://localhost:8765/body-fat-calculator/"
+   ]
   },
   {
    "page": "/blog/bmi-limitations/",
@@ -74638,12 +75507,175 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "main",
+   "sentence": "BMI counts bone along with fat and muscle (see Limitation #1), and bone differs between people: NIH contrasts slender, thin-boned women and men with larger-boned ones, who have more bone (NIAMS).",
+   "number": "1",
+   "value": 1.0,
+   "class": "X",
+   "why": "list numbering",
+   "heading": "Limitation #8: Bone Density Not Considered",
+   "links": [
+    "http://localhost:8765/blog/bmi-limitations/#muscle-vs-fat",
+    "https://www.niams.nih.gov/health-topics/osteoporosis"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
    "sentence": "Limitation #9: Sex Differences Not Accounted For",
    "number": "9",
    "value": 9.0,
    "class": "X",
    "why": "list numbering",
    "heading": "Limitation #8: Bone Density Not Considered"
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC uses the same adult categories “regardless of age, sex, or race” (CDC), but women carry more fat at the same BMI: on CDC’s DXA scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Limitation #9: Sex Differences Not Accounted For",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-adult-bmi-categories",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC uses the same adult categories “regardless of age, sex, or race” (CDC), but women carry more fat at the same BMI: on CDC’s DXA scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "59",
+   "value": 59.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Limitation #9: Sex Differences Not Accounted For",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC uses the same adult categories “regardless of age, sex, or race” (CDC), but women carry more fat at the same BMI: on CDC’s DXA scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "18.5",
+   "value": 18.5,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "Limitation #9: Sex Differences Not Accounted For",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "18.5 to 24.9 (no category named)",
+    "computed": "Healthy weight in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC uses the same adult categories “regardless of age, sex, or race” (CDC), but women carry more fat at the same BMI: on CDC’s DXA scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "Limitation #9: Sex Differences Not Accounted For",
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC uses the same adult categories “regardless of age, sex, or race” (CDC), but women carry more fat at the same BMI: on CDC’s DXA scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "33.4",
+   "value": 33.4,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Limitation #9: Sex Differences Not Accounted For",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC uses the same adult categories “regardless of age, sex, or race” (CDC), but women carry more fat at the same BMI: on CDC’s DXA scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "22.1",
+   "value": 22.1,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Limitation #9: Sex Differences Not Accounted For",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC uses the same adult categories “regardless of age, sex, or race” (CDC), but women carry more fat at the same BMI: on CDC’s DXA scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "2011",
+   "value": 2011.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Limitation #9: Sex Differences Not Accounted For",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC uses the same adult categories “regardless of age, sex, or race” (CDC), but women carry more fat at the same BMI: on CDC’s DXA scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "2018",
+   "value": 2018.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Limitation #9: Sex Differences Not Accounted For",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
   },
   {
    "page": "/blog/bmi-limitations/",
@@ -74658,12 +75690,232 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "main",
+   "sentence": "Sources: waist, NIH clinical guidelines, 1998 (NHLBI); waist-to-height ratio, NICE guideline NG246; relative fat mass, our calculation from CDC NHANES 2011–2018 DXA scans; the DXA quote, CDC’s documentation for those scans (CDC).",
+   "number": "1998",
+   "value": 1998.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Better Alternatives to BMI",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/",
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity",
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm",
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "Sources: waist, NIH clinical guidelines, 1998 (NHLBI); waist-to-height ratio, NICE guideline NG246; relative fat mass, our calculation from CDC NHANES 2011–2018 DXA scans; the DXA quote, CDC’s documentation for those scans (CDC).",
+   "number": "2011",
+   "value": 2011.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Better Alternatives to BMI",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/",
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity",
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm",
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "Sources: waist, NIH clinical guidelines, 1998 (NHLBI); waist-to-height ratio, NICE guideline NG246; relative fat mass, our calculation from CDC NHANES 2011–2018 DXA scans; the DXA quote, CDC’s documentation for those scans (CDC).",
+   "number": "2018",
+   "value": 2018.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Better Alternatives to BMI",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/",
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity",
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm",
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "At home, our body fat calculator shows how close four simpler methods come to CDC’s DXA scans.",
+   "number": "four",
+   "value": 4,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Body Composition Analysis",
+   "links": [
+    "http://localhost:8765/body-fat-calculator/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
    "sentence": "1",
    "number": "1",
    "value": 1.0,
    "class": "X",
    "why": "list numbering (numbered badge)",
    "heading": "When BMI Is Still Useful"
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC’s survey has tracked adult obesity by measured BMI since 1960–1962: among adults aged 20 to 74, from 13.4% then to 40.8% in 2021–2023 (NCHS).",
+   "number": "1960",
+   "value": 1960.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Population Studies",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC’s survey has tracked adult obesity by measured BMI since 1960–1962: among adults aged 20 to 74, from 13.4% then to 40.8% in 2021–2023 (NCHS).",
+   "number": "1962",
+   "value": 1962.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Population Studies",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC’s survey has tracked adult obesity by measured BMI since 1960–1962: among adults aged 20 to 74, from 13.4% then to 40.8% in 2021–2023 (NCHS).",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Population Studies",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC’s survey has tracked adult obesity by measured BMI since 1960–1962: among adults aged 20 to 74, from 13.4% then to 40.8% in 2021–2023 (NCHS).",
+   "number": "74",
+   "value": 74.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Population Studies",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC’s survey has tracked adult obesity by measured BMI since 1960–1962: among adults aged 20 to 74, from 13.4% then to 40.8% in 2021–2023 (NCHS).",
+   "number": "13.4",
+   "value": 13.4,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Population Studies",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC’s survey has tracked adult obesity by measured BMI since 1960–1962: among adults aged 20 to 74, from 13.4% then to 40.8% in 2021–2023 (NCHS).",
+   "number": "40.8",
+   "value": 40.8,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Population Studies",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC’s survey has tracked adult obesity by measured BMI since 1960–1962: among adults aged 20 to 74, from 13.4% then to 40.8% in 2021–2023 (NCHS).",
+   "number": "2021",
+   "value": 2021.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Population Studies",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "CDC’s survey has tracked adult obesity by measured BMI since 1960–1962: among adults aged 20 to 74, from 13.4% then to 40.8% in 2021–2023 (NCHS).",
+   "number": "2023",
+   "value": 2023.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Population Studies",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm"
+   ]
   },
   {
    "page": "/blog/bmi-limitations/",
@@ -74697,6 +75949,425 @@
   },
   {
    "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "In pooled data from 239 studies, the risk of death rose at both ends: a hazard ratio of 1.51 at a BMI of 15.0 to 18.4 and 2.76 at 40.0 to 59.9, against 22.5 to 24.9 (GBMC, 2016).",
+   "number": "239",
+   "value": 239.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Extreme Values",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "In pooled data from 239 studies, the risk of death rose at both ends: a hazard ratio of 1.51 at a BMI of 15.0 to 18.4 and 2.76 at 40.0 to 59.9, against 22.5 to 24.9 (GBMC, 2016).",
+   "number": "1.51",
+   "value": 1.51,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Extreme Values",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "In pooled data from 239 studies, the risk of death rose at both ends: a hazard ratio of 1.51 at a BMI of 15.0 to 18.4 and 2.76 at 40.0 to 59.9, against 22.5 to 24.9 (GBMC, 2016).",
+   "number": "15.0",
+   "value": 15.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Extreme Values",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "In pooled data from 239 studies, the risk of death rose at both ends: a hazard ratio of 1.51 at a BMI of 15.0 to 18.4 and 2.76 at 40.0 to 59.9, against 22.5 to 24.9 (GBMC, 2016).",
+   "number": "18.4",
+   "value": 18.4,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Extreme Values",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "In pooled data from 239 studies, the risk of death rose at both ends: a hazard ratio of 1.51 at a BMI of 15.0 to 18.4 and 2.76 at 40.0 to 59.9, against 22.5 to 24.9 (GBMC, 2016).",
+   "number": "2.76",
+   "value": 2.76,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Extreme Values",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "In pooled data from 239 studies, the risk of death rose at both ends: a hazard ratio of 1.51 at a BMI of 15.0 to 18.4 and 2.76 at 40.0 to 59.9, against 22.5 to 24.9 (GBMC, 2016).",
+   "number": "40.0",
+   "value": 40.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Extreme Values",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "In pooled data from 239 studies, the risk of death rose at both ends: a hazard ratio of 1.51 at a BMI of 15.0 to 18.4 and 2.76 at 40.0 to 59.9, against 22.5 to 24.9 (GBMC, 2016).",
+   "number": "59.9",
+   "value": 59.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Extreme Values",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "In pooled data from 239 studies, the risk of death rose at both ends: a hazard ratio of 1.51 at a BMI of 15.0 to 18.4 and 2.76 at 40.0 to 59.9, against 22.5 to 24.9 (GBMC, 2016).",
+   "number": "22.5",
+   "value": 22.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Extreme Values",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "In pooled data from 239 studies, the risk of death rose at both ends: a hazard ratio of 1.51 at a BMI of 15.0 to 18.4 and 2.76 at 40.0 to 59.9, against 22.5 to 24.9 (GBMC, 2016).",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Extreme Values",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "In pooled data from 239 studies, the risk of death rose at both ends: a hazard ratio of 1.51 at a BMI of 15.0 to 18.4 and 2.76 at 40.0 to 59.9, against 22.5 to 24.9 (GBMC, 2016).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Extreme Values",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "main",
+   "sentence": "Use our free BMI calculator as a starting point, then add a waist measurement (see Limitation #2).",
+   "number": "2",
+   "value": 2.0,
+   "class": "X",
+   "why": "list numbering",
+   "heading": "Extreme Values",
+   "links": [
+    "http://localhost:8765/",
+    "http://localhost:8765/blog/bmi-limitations/#fat-distribution"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "table",
+   "sentence": "Waist circumference Fat around the waist | More than 40 in (102 cm) for men or 35 in (88 cm) for women marks higher risk, at a BMI of 25 to 34.9 (NIH)",
+   "number": "40",
+   "value": 40.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Better Alternatives to BMI",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "table",
+   "sentence": "Waist circumference Fat around the waist | More than 40 in (102 cm) for men or 35 in (88 cm) for women marks higher risk, at a BMI of 25 to 34.9 (NIH)",
+   "number": "102",
+   "value": 102.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Better Alternatives to BMI",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "table",
+   "sentence": "Waist circumference Fat around the waist | More than 40 in (102 cm) for men or 35 in (88 cm) for women marks higher risk, at a BMI of 25 to 34.9 (NIH)",
+   "number": "35",
+   "value": 35.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Better Alternatives to BMI",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "table",
+   "sentence": "Waist circumference Fat around the waist | More than 40 in (102 cm) for men or 35 in (88 cm) for women marks higher risk, at a BMI of 25 to 34.9 (NIH)",
+   "number": "88",
+   "value": 88.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Better Alternatives to BMI",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "table",
+   "sentence": "Waist circumference Fat around the waist | More than 40 in (102 cm) for men or 35 in (88 cm) for women marks higher risk, at a BMI of 25 to 34.9 (NIH)",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Better Alternatives to BMI",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "table",
+   "sentence": "Waist circumference Fat around the waist | More than 40 in (102 cm) for men or 35 in (88 cm) for women marks higher risk, at a BMI of 25 to 34.9 (NIH)",
+   "number": "34.9",
+   "value": 34.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Better Alternatives to BMI",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "table",
+   "sentence": "Waist-to-height ratio Waist fat, scaled to height | For adults with a BMI under 35: 0.4 to 0.49 healthy, 0.5 to 0.59 increased, 0.6 or more high (NICE)",
+   "number": "35",
+   "value": 35.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Better Alternatives to BMI",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "table",
+   "sentence": "Waist-to-height ratio Waist fat, scaled to height | For adults with a BMI under 35: 0.4 to 0.49 healthy, 0.5 to 0.59 increased, 0.6 or more high (NICE)",
+   "number": "0.4",
+   "value": 0.4,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Better Alternatives to BMI",
+   "row": {
+    "status": "row-notes",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "table",
+   "sentence": "Waist-to-height ratio Waist fat, scaled to height | For adults with a BMI under 35: 0.4 to 0.49 healthy, 0.5 to 0.59 increased, 0.6 or more high (NICE)",
+   "number": "0.49",
+   "value": 0.49,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Better Alternatives to BMI",
+   "row": {
+    "status": "row-notes",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "table",
+   "sentence": "Waist-to-height ratio Waist fat, scaled to height | For adults with a BMI under 35: 0.4 to 0.49 healthy, 0.5 to 0.59 increased, 0.6 or more high (NICE)",
+   "number": "0.5",
+   "value": 0.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Better Alternatives to BMI",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "table",
+   "sentence": "Waist-to-height ratio Waist fat, scaled to height | For adults with a BMI under 35: 0.4 to 0.49 healthy, 0.5 to 0.59 increased, 0.6 or more high (NICE)",
+   "number": "0.59",
+   "value": 0.59,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Better Alternatives to BMI",
+   "row": {
+    "status": "row-notes",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "table",
+   "sentence": "Waist-to-height ratio Waist fat, scaled to height | For adults with a BMI under 35: 0.4 to 0.49 healthy, 0.5 to 0.59 increased, 0.6 or more high (NICE)",
+   "number": "0.6",
+   "value": 0.6,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Better Alternatives to BMI",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "table",
+   "sentence": "Relative fat mass Body fat %, from waist and height | Within 5 points of a DXA scan for 86% of men and 74% of women (our calculation)",
+   "number": "5",
+   "value": 5.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Better Alternatives to BMI",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "table",
+   "sentence": "Relative fat mass Body fat %, from waist and height | Within 5 points of a DXA scan for 86% of men and 74% of women (our calculation)",
+   "number": "86",
+   "value": 86.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Better Alternatives to BMI",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "table",
+   "sentence": "Relative fat mass Body fat %, from waist and height | Within 5 points of a DXA scan for 86% of men and 74% of women (our calculation)",
+   "number": "74",
+   "value": 74.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Better Alternatives to BMI",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
    "region": "svg",
    "sentence": "NFL prospects: 53.4% obese by BMI but 8.9% obese by body fat (2018)",
    "number": "53.4",
@@ -74743,7 +76414,67 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "svg",
-   "sentence": "Trefethen 2013 addresses this with a height^2.5 exponent.",
+   "sentence": "Muscle mass falls about 3–8% per decade after age 30,",
+   "number": "3",
+   "value": 3.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "BMI Limitations: 10 Critical Reasons Why BMI May Be Misleading You",
+   "row": {
+    "status": "row",
+    "domain": "cdc-adult-bmi-categories",
+    "how": "pages_served"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "svg",
+   "sentence": "Muscle mass falls about 3–8% per decade after age 30,",
+   "number": "8",
+   "value": 8.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "BMI Limitations: 10 Critical Reasons Why BMI May Be Misleading You",
+   "row": {
+    "status": "row",
+    "domain": "volpi-2004-muscle-aging",
+    "how": "pages_served"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "svg",
+   "sentence": "Muscle mass falls about 3–8% per decade after age 30,",
+   "number": "30",
+   "value": 30.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI Limitations: 10 Critical Reasons Why BMI May Be Misleading You",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "pages_served"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "svg",
+   "sentence": "and BMI cannot see it (Volpi et al., 2004; CDC).",
+   "number": "2004",
+   "value": 2004.0,
+   "class": "C",
+   "why": "year",
+   "heading": "BMI Limitations: 10 Critical Reasons Why BMI May Be Misleading You",
+   "row": {
+    "status": "row",
+    "domain": "volpi-2004-muscle-aging",
+    "how": "name"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "svg",
+   "sentence": "Trefethen (2013) argues the standard formula reads tall",
    "number": "2013",
    "value": 2013.0,
    "class": "C",
@@ -74758,7 +76489,7 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "svg",
-   "sentence": "Trefethen 2013 addresses this with a height^2.5 exponent.",
+   "sentence": "people too high, short people too low; he proposes height^2.5.",
    "number": "2.5",
    "value": 2.5,
    "class": "B",
@@ -74775,42 +76506,269 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "svg",
-   "sentence": "overweight cutoff 23 (not 25) for Asian populations.",
-   "number": "23",
-   "value": 23.0,
+   "sentence": "A 2004 WHO expert consultation found high risk below",
+   "number": "2004",
+   "value": 2004.0,
    "class": "C",
-   "why": "the ethnic-variation card: the 2000 Asia-Pacific proposal (WHO Western Pacific, IASO, IOTF), overweight from 23 instead of 25 (CMB-036) (manual.json)",
+   "why": "year",
    "heading": "BMI Limitations: 10 Critical Reasons Why BMI May Be Misleading You",
    "row": {
     "status": "row",
-    "domain": "ko-tang-2006-wpro-2000",
-    "how": "manual.json"
+    "domain": "who-2004-asian-bmi",
+    "how": "pages_served"
    }
   },
   {
    "page": "/blog/bmi-limitations/",
    "region": "svg",
-   "sentence": "overweight cutoff 23 (not 25) for Asian populations.",
+   "sentence": "BMI 25 in many Asian people; action points at 23 and 27.5.",
    "number": "25",
    "value": 25.0,
    "class": "C",
-   "why": "the ethnic-variation card: the 2000 Asia-Pacific proposal (WHO Western Pacific, IASO, IOTF), overweight from 23 instead of 25 (CMB-036) (manual.json)",
+   "why": "outside fact (statistic, threshold or study detail)",
    "heading": "BMI Limitations: 10 Critical Reasons Why BMI May Be Misleading You",
    "row": {
     "status": "row",
-    "domain": "ko-tang-2006-wpro-2000",
-    "how": "manual.json"
+    "domain": "who-2004-asian-bmi",
+    "how": "pages_served"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "svg",
+   "sentence": "BMI 25 in many Asian people; action points at 23 and 27.5.",
+   "number": "23",
+   "value": 23.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI Limitations: 10 Critical Reasons Why BMI May Be Misleading You",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "pages_served"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "svg",
+   "sentence": "BMI 25 in many Asian people; action points at 23 and 27.5.",
+   "number": "27.5",
+   "value": 27.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI Limitations: 10 Critical Reasons Why BMI May Be Misleading You",
+   "row": {
+    "status": "row",
+    "domain": "who-2004-asian-bmi",
+    "how": "pages_served"
    }
   },
   {
    "page": "/blog/bmi-limitations/",
    "region": "faq-a",
-   "sentence": "For a free, simple alternative, waist-to-height ratio (keeping your waist less than half your height) is recommended by many researchers.",
+   "sentence": "A waist measurement shows fat around the middle: NIH guidelines mark higher risk above 40 inches (102 cm) for men and 35 inches (88 cm) for women (NHLBI).",
+   "number": "40",
+   "value": 40.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: What is a better alternative to BMI?",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "A waist measurement shows fat around the middle: NIH guidelines mark higher risk above 40 inches (102 cm) for men and 35 inches (88 cm) for women (NHLBI).",
+   "number": "102",
+   "value": 102.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: What is a better alternative to BMI?",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "A waist measurement shows fat around the middle: NIH guidelines mark higher risk above 40 inches (102 cm) for men and 35 inches (88 cm) for women (NHLBI).",
+   "number": "35",
+   "value": 35.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: What is a better alternative to BMI?",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "A waist measurement shows fat around the middle: NIH guidelines mark higher risk above 40 inches (102 cm) for men and 35 inches (88 cm) for women (NHLBI).",
+   "number": "88",
+   "value": 88.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: What is a better alternative to BMI?",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "For the waist-to-height ratio, a review of 78 studies backed the message “keep your waist circumference to less than half your height” (Browning et al., 2010), and NICE treats 0.5 to 0.59 as increased and 0.6 or more as high for adults with a BMI under 35 (NICE guideline NG246).",
+   "number": "78",
+   "value": 78.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: What is a better alternative to BMI?",
+   "row": {
+    "status": "row",
+    "domain": "browning-2010-whtr-review",
+    "how": "link"
+   },
+   "links": [
+    "http://localhost:8765/blog/waist-to-height-ratio/",
+    "https://doi.org/10.1017/S0954422410000144",
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "For the waist-to-height ratio, a review of 78 studies backed the message “keep your waist circumference to less than half your height” (Browning et al., 2010), and NICE treats 0.5 to 0.59 as increased and 0.6 or more as high for adults with a BMI under 35 (NICE guideline NG246).",
    "number": "half",
    "value": 0.5,
    "class": "D",
    "why": "number word (count in prose)",
-   "heading": "FAQ: What is a better alternative to BMI?"
+   "heading": "FAQ: What is a better alternative to BMI?",
+   "links": [
+    "http://localhost:8765/blog/waist-to-height-ratio/",
+    "https://doi.org/10.1017/S0954422410000144",
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "For the waist-to-height ratio, a review of 78 studies backed the message “keep your waist circumference to less than half your height” (Browning et al., 2010), and NICE treats 0.5 to 0.59 as increased and 0.6 or more as high for adults with a BMI under 35 (NICE guideline NG246).",
+   "number": "2010",
+   "value": 2010.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: What is a better alternative to BMI?",
+   "row": {
+    "status": "row",
+    "domain": "browning-2010-whtr-review",
+    "how": "link"
+   },
+   "links": [
+    "http://localhost:8765/blog/waist-to-height-ratio/",
+    "https://doi.org/10.1017/S0954422410000144",
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "For the waist-to-height ratio, a review of 78 studies backed the message “keep your waist circumference to less than half your height” (Browning et al., 2010), and NICE treats 0.5 to 0.59 as increased and 0.6 or more as high for adults with a BMI under 35 (NICE guideline NG246).",
+   "number": "0.5",
+   "value": 0.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: What is a better alternative to BMI?",
+   "row": {
+    "status": "row",
+    "domain": "browning-2010-whtr-review",
+    "how": "link"
+   },
+   "links": [
+    "http://localhost:8765/blog/waist-to-height-ratio/",
+    "https://doi.org/10.1017/S0954422410000144",
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "For the waist-to-height ratio, a review of 78 studies backed the message “keep your waist circumference to less than half your height” (Browning et al., 2010), and NICE treats 0.5 to 0.59 as increased and 0.6 or more as high for adults with a BMI under 35 (NICE guideline NG246).",
+   "number": "0.59",
+   "value": 0.59,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: What is a better alternative to BMI?",
+   "row": {
+    "status": "row-notes",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   },
+   "links": [
+    "http://localhost:8765/blog/waist-to-height-ratio/",
+    "https://doi.org/10.1017/S0954422410000144",
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "For the waist-to-height ratio, a review of 78 studies backed the message “keep your waist circumference to less than half your height” (Browning et al., 2010), and NICE treats 0.5 to 0.59 as increased and 0.6 or more as high for adults with a BMI under 35 (NICE guideline NG246).",
+   "number": "0.6",
+   "value": 0.6,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: What is a better alternative to BMI?",
+   "row": {
+    "status": "row-notes",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   },
+   "links": [
+    "http://localhost:8765/blog/waist-to-height-ratio/",
+    "https://doi.org/10.1017/S0954422410000144",
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "For the waist-to-height ratio, a review of 78 studies backed the message “keep your waist circumference to less than half your height” (Browning et al., 2010), and NICE treats 0.5 to 0.59 as increased and 0.6 or more as high for adults with a BMI under 35 (NICE guideline NG246).",
+   "number": "35",
+   "value": 35.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: What is a better alternative to BMI?",
+   "row": {
+    "status": "row",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   },
+   "links": [
+    "http://localhost:8765/blog/waist-to-height-ratio/",
+    "https://doi.org/10.1017/S0954422410000144",
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
   },
   {
    "page": "/blog/bmi-limitations/",
@@ -74888,8 +76846,500 @@
   },
   {
    "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "No. CDC uses the same adult categories regardless of sex (CDC), but women carry more fat at the same BMI: on CDC’s DXA scans of adults aged 20 to 59 with a healthy BMI, the median body fat was 33.4% for women and 22.1% for men (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Does BMI account for differences between men and women?",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-adult-bmi-categories",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "No. CDC uses the same adult categories regardless of sex (CDC), but women carry more fat at the same BMI: on CDC’s DXA scans of adults aged 20 to 59 with a healthy BMI, the median body fat was 33.4% for women and 22.1% for men (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "59",
+   "value": 59.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Does BMI account for differences between men and women?",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "No. CDC uses the same adult categories regardless of sex (CDC), but women carry more fat at the same BMI: on CDC’s DXA scans of adults aged 20 to 59 with a healthy BMI, the median body fat was 33.4% for women and 22.1% for men (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "33.4",
+   "value": 33.4,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQ: Does BMI account for differences between men and women?",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "No. CDC uses the same adult categories regardless of sex (CDC), but women carry more fat at the same BMI: on CDC’s DXA scans of adults aged 20 to 59 with a healthy BMI, the median body fat was 33.4% for women and 22.1% for men (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "22.1",
+   "value": 22.1,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQ: Does BMI account for differences between men and women?",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "No. CDC uses the same adult categories regardless of sex (CDC), but women carry more fat at the same BMI: on CDC’s DXA scans of adults aged 20 to 59 with a healthy BMI, the median body fat was 33.4% for women and 22.1% for men (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "2011",
+   "value": 2011.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: Does BMI account for differences between men and women?",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "No. CDC uses the same adult categories regardless of sex (CDC), but women carry more fat at the same BMI: on CDC’s DXA scans of adults aged 20 to 59 with a healthy BMI, the median body fat was 33.4% for women and 22.1% for men (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "2018",
+   "value": 2018.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: Does BMI account for differences between men and women?",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "28",
+   "value": 28.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Can BMI be used during pregnancy?",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "40",
+   "value": 40.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Can BMI be used during pregnancy?",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "18.5",
+   "value": 18.5,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "FAQ: Can BMI be used during pregnancy?",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "18.5 (no category named)",
+    "computed": "Severe thinness / Moderate thinness / Underweight in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Can BMI be used during pregnancy?",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "35",
+   "value": 35.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Can BMI be used during pregnancy?",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "18.5",
+   "value": 18.5,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "FAQ: Can BMI be used during pregnancy?",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "18.5 to 24.9 (no category named)",
+    "computed": "Healthy weight in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "FAQ: Can BMI be used during pregnancy?",
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "15",
+   "value": 15.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Can BMI be used during pregnancy?",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Can BMI be used during pregnancy?",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "25.0",
+   "value": 25.0,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "FAQ: Can BMI be used during pregnancy?",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "25.0 to 29.9 (no category named)",
+    "computed": "Overweight in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "29.9",
+   "value": 29.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "FAQ: Can BMI be used during pregnancy?",
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "11",
+   "value": 11.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Can BMI be used during pregnancy?",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Can BMI be used during pregnancy?",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "30.0",
+   "value": 30.0,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "FAQ: Can BMI be used during pregnancy?",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "30.0 to 39.9 (no category named)",
+    "computed": "Class 1 obesity / Class 2 obesity in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "39.9",
+   "value": 39.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "FAQ: Can BMI be used during pregnancy?",
+   "links": [
+    "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "Children and teens are measured differently: because they are growing, CDC expresses their BMI as a percentile against others of the same sex and age, from age 2 through 19 (CDC); see our pediatric BMI calculator.",
+   "number": "2",
+   "value": 2.0,
+   "class": "B",
+   "why": "the calculator's age range",
+   "heading": "FAQ: Is BMI accurate for children and teenagers?",
+   "check": {
+    "status": "ok",
+    "kind": "value",
+    "page": "2",
+    "computed": "calculateKids has \"agemos < 24 || agemos >= 240\"",
+    "label": "calculateKids accepts 24 to 239 months (2 to 19 years 11 months)"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/child-teen-calculator/bmi-categories.html",
+    "http://localhost:8765/kids-bmi-calculator/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "faq-a",
+   "sentence": "Children and teens are measured differently: because they are growing, CDC expresses their BMI as a percentile against others of the same sex and age, from age 2 through 19 (CDC); see our pediatric BMI calculator.",
+   "number": "19",
+   "value": 19.0,
+   "class": "B",
+   "why": "the calculator's age range (other end)",
+   "heading": "FAQ: Is BMI accurate for children and teenagers?",
+   "links": [
+    "https://www.cdc.gov/bmi/child-teen-calculator/bmi-categories.html",
+    "http://localhost:8765/kids-bmi-calculator/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-limitations/",
    "region": "jsonld",
-   "sentence": "For a free, simple alternative, waist-to-height ratio (keeping your waist less than half your height) is recommended by many researchers.",
+   "sentence": "A waist measurement shows fat around the middle: NIH guidelines mark higher risk above 40 inches (102 cm) for men and 35 inches (88 cm) for women (NHLBI).",
+   "number": "40",
+   "value": 40.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: What is a better alternative to BMI?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "A waist measurement shows fat around the middle: NIH guidelines mark higher risk above 40 inches (102 cm) for men and 35 inches (88 cm) for women (NHLBI).",
+   "number": "102",
+   "value": 102.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: What is a better alternative to BMI?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "A waist measurement shows fat around the middle: NIH guidelines mark higher risk above 40 inches (102 cm) for men and 35 inches (88 cm) for women (NHLBI).",
+   "number": "35",
+   "value": 35.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: What is a better alternative to BMI?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "A waist measurement shows fat around the middle: NIH guidelines mark higher risk above 40 inches (102 cm) for men and 35 inches (88 cm) for women (NHLBI).",
+   "number": "88",
+   "value": 88.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: What is a better alternative to BMI?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "For the waist-to-height ratio, a review of 78 studies backed the message “keep your waist circumference to less than half your height” (Browning et al., 2010), and NICE treats 0.5 to 0.59 as increased and 0.6 or more as high for adults with a BMI under 35 (NICE guideline NG246).",
+   "number": "78",
+   "value": 78.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: What is a better alternative to BMI?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "browning-2010-whtr-review",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "For the waist-to-height ratio, a review of 78 studies backed the message “keep your waist circumference to less than half your height” (Browning et al., 2010), and NICE treats 0.5 to 0.59 as increased and 0.6 or more as high for adults with a BMI under 35 (NICE guideline NG246).",
    "number": "half",
    "value": 0.5,
    "class": "D",
@@ -74900,6 +77350,86 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "jsonld",
+   "sentence": "For the waist-to-height ratio, a review of 78 studies backed the message “keep your waist circumference to less than half your height” (Browning et al., 2010), and NICE treats 0.5 to 0.59 as increased and 0.6 or more as high for adults with a BMI under 35 (NICE guideline NG246).",
+   "number": "2010",
+   "value": 2010.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: What is a better alternative to BMI?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "browning-2010-whtr-review",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "For the waist-to-height ratio, a review of 78 studies backed the message “keep your waist circumference to less than half your height” (Browning et al., 2010), and NICE treats 0.5 to 0.59 as increased and 0.6 or more as high for adults with a BMI under 35 (NICE guideline NG246).",
+   "number": "0.5",
+   "value": 0.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: What is a better alternative to BMI?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "browning-2010-whtr-review",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "For the waist-to-height ratio, a review of 78 studies backed the message “keep your waist circumference to less than half your height” (Browning et al., 2010), and NICE treats 0.5 to 0.59 as increased and 0.6 or more as high for adults with a BMI under 35 (NICE guideline NG246).",
+   "number": "0.59",
+   "value": 0.59,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: What is a better alternative to BMI?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "For the waist-to-height ratio, a review of 78 studies backed the message “keep your waist circumference to less than half your height” (Browning et al., 2010), and NICE treats 0.5 to 0.59 as increased and 0.6 or more as high for adults with a BMI under 35 (NICE guideline NG246).",
+   "number": "0.6",
+   "value": 0.6,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: What is a better alternative to BMI?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "For the waist-to-height ratio, a review of 78 studies backed the message “keep your waist circumference to less than half your height” (Browning et al., 2010), and NICE treats 0.5 to 0.59 as increased and 0.6 or more as high for adults with a BMI under 35 (NICE guideline NG246).",
+   "number": "35",
+   "value": 35.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: What is a better alternative to BMI?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
    "sentence": "At the NFL Scouting Combine, 53.4% of prospects had a BMI of 30 or more, but only 8.9% had obesity by measured body fat (Provencher et al., 2018).",
    "number": "53.4",
    "value": 53.4,
@@ -74965,6 +77495,364 @@
   },
   {
    "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "No. CDC uses the same adult categories regardless of sex (CDC), but women carry more fat at the same BMI: on CDC’s DXA scans of adults aged 20 to 59 with a healthy BMI, the median body fat was 33.4% for women and 22.1% for men (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Does BMI account for differences between men and women?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-adult-bmi-categories",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "No. CDC uses the same adult categories regardless of sex (CDC), but women carry more fat at the same BMI: on CDC’s DXA scans of adults aged 20 to 59 with a healthy BMI, the median body fat was 33.4% for women and 22.1% for men (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "59",
+   "value": 59.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Does BMI account for differences between men and women?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "No. CDC uses the same adult categories regardless of sex (CDC), but women carry more fat at the same BMI: on CDC’s DXA scans of adults aged 20 to 59 with a healthy BMI, the median body fat was 33.4% for women and 22.1% for men (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "33.4",
+   "value": 33.4,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQPage JSON-LD: Does BMI account for differences between men and women?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "No. CDC uses the same adult categories regardless of sex (CDC), but women carry more fat at the same BMI: on CDC’s DXA scans of adults aged 20 to 59 with a healthy BMI, the median body fat was 33.4% for women and 22.1% for men (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "22.1",
+   "value": 22.1,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQPage JSON-LD: Does BMI account for differences between men and women?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "No. CDC uses the same adult categories regardless of sex (CDC), but women carry more fat at the same BMI: on CDC’s DXA scans of adults aged 20 to 59 with a healthy BMI, the median body fat was 33.4% for women and 22.1% for men (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "2011",
+   "value": 2011.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: Does BMI account for differences between men and women?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "No. CDC uses the same adult categories regardless of sex (CDC), but women carry more fat at the same BMI: on CDC’s DXA scans of adults aged 20 to 59 with a healthy BMI, the median body fat was 33.4% for women and 22.1% for men (our calculation from CDC NHANES 2011–2018 DXA scans).",
+   "number": "2018",
+   "value": 2018.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: Does BMI account for differences between men and women?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "28",
+   "value": 28.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can BMI be used during pregnancy?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "40",
+   "value": 40.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can BMI be used during pregnancy?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "18.5",
+   "value": 18.5,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "FAQPage JSON-LD: Can BMI be used during pregnancy?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "18.5 (no category named)",
+    "computed": "Severe thinness / Moderate thinness / Underweight in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can BMI be used during pregnancy?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "35",
+   "value": 35.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can BMI be used during pregnancy?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "18.5",
+   "value": 18.5,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "FAQPage JSON-LD: Can BMI be used during pregnancy?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "18.5 to 24.9 (no category named)",
+    "computed": "Healthy weight in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "FAQPage JSON-LD: Can BMI be used during pregnancy?",
+   "mirror_of": "the visible FAQ answer (same text)"
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "15",
+   "value": 15.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can BMI be used during pregnancy?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can BMI be used during pregnancy?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "25.0",
+   "value": 25.0,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "FAQPage JSON-LD: Can BMI be used during pregnancy?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "25.0 to 29.9 (no category named)",
+    "computed": "Overweight in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "29.9",
+   "value": 29.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "FAQPage JSON-LD: Can BMI be used during pregnancy?",
+   "mirror_of": "the visible FAQ answer (same text)"
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "11",
+   "value": 11.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can BMI be used during pregnancy?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can BMI be used during pregnancy?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "cdc-pregnancy-weight-gain",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "30.0",
+   "value": 30.0,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "FAQPage JSON-LD: Can BMI be used during pregnancy?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "30.0 to 39.9 (no category named)",
+    "computed": "Class 1 obesity / Class 2 obesity in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "Before pregnancy, yes: CDC’s weight-gain ranges for pregnancy go by it, for one baby, 28 to 40 lb below 18.5, 25 to 35 lb at 18.5 to 24.9, 15 to 25 lb at 25.0 to 29.9 and 11 to 20 lb at 30.0 to 39.9, from the Institute of Medicine (CDC).",
+   "number": "39.9",
+   "value": 39.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "FAQPage JSON-LD: Can BMI be used during pregnancy?",
+   "mirror_of": "the visible FAQ answer (same text)"
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "Children and teens are measured differently: because they are growing, CDC expresses their BMI as a percentile against others of the same sex and age, from age 2 through 19 (CDC); see our pediatric BMI calculator.",
+   "number": "2",
+   "value": 2.0,
+   "class": "B",
+   "why": "the calculator's age range",
+   "heading": "FAQPage JSON-LD: Is BMI accurate for children and teenagers?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "check": {
+    "status": "ok",
+    "kind": "value",
+    "page": "2",
+    "computed": "calculateKids has \"agemos < 24 || agemos >= 240\"",
+    "label": "calculateKids accepts 24 to 239 months (2 to 19 years 11 months)"
+   }
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "jsonld",
+   "sentence": "Children and teens are measured differently: because they are growing, CDC expresses their BMI as a percentile against others of the same sex and age, from age 2 through 19 (CDC); see our pediatric BMI calculator.",
+   "number": "19",
+   "value": 19.0,
+   "class": "B",
+   "why": "the calculator's age range (other end)",
+   "heading": "FAQPage JSON-LD: Is BMI accurate for children and teenagers?",
+   "mirror_of": "the visible FAQ answer (same text)"
+  },
+  {
+   "page": "/blog/bmi-limitations/",
    "region": "title",
    "sentence": "BMI Limitations: 10 Reasons BMI May Be Misleading | CalculateMyBMI",
    "number": "10",
@@ -74972,6 +77860,16 @@
    "class": "D",
    "why": "count in prose",
    "heading": "title"
+  },
+  {
+   "page": "/blog/bmi-limitations/",
+   "region": "meta",
+   "sentence": "Ten ways BMI can mislead, from muscle and fat distribution to age, sex and ethnicity, with what CDC, NIH and the studies say, and the measures that fill the gaps.",
+   "number": "Ten",
+   "value": 10,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "meta"
   },
   {
    "page": "/blog/bmi-and-metabolism/",
