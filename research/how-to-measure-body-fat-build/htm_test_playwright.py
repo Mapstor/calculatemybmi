@@ -336,7 +336,7 @@ with sync_playwright() as p:
         ok(pg.evaluate('h => !!document.getElementById(h.slice(1))', h_), f'anchor {h_} missing')
     outside = {h_ for h_ in pg.eval_on_selector_all('main a[href^="http"]', 'as => as.map(a => a.getAttribute("href"))')}
     ok(outside <= REG_URLS, f'outside links not in the registry: {sorted(outside - REG_URLS)}')
-    ok(len(outside) == 17, f'{len(outside)} outside links')
+    ok(len(outside) == 16, f'{len(outside)} outside links')   # CMB-057: the J Public Health Afr secondary went (Gallagher Table 4)
     ok(all(pg.evaluate('h => [...document.querySelectorAll(`main a[href="${h}"]`)].every(a => a.target === "_blank" && a.rel === "noopener")', h_) for h_ in outside), 'outside links open in a new tab')
     chips = pg.eval_on_selector_all('.toc-inline a', 'as => as.map(a => a.getAttribute("href"))')
     ok(chips == ['#steps', '#accuracy', '#scales', '#measuring', '#lab', '#meaning', '#faq', '#sources'], f'chips {chips}')
