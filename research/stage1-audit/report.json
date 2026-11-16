@@ -4,13 +4,13 @@
  "viewport": "390x844",
  "pages_audited": 24,
  "pages_skipped": [],
- "numbers": 4951,
+ "numbers": 5098,
  "totals": {
   "A": 47,
-  "B": 1625,
-  "C": 2424,
-  "D": 665,
-  "X": 190,
+  "B": 1636,
+  "C": 2540,
+  "D": 687,
+  "X": 188,
   "U": 0
  },
  "mismatches": 0,
@@ -19,16 +19,16 @@
  "c_not_in_row_in_page_csv": 0,
  "c_not_in_row_also_in_other_row": 0,
  "c_status": {
-  "row": 1251,
-  "row-notes": 243,
+  "row": 1336,
+  "row-notes": 274,
   "not-in-row": 28,
   "row-dataset": 902
  },
- "checks_run": 1121,
+ "checks_run": 1126,
  "check_errors": [],
  "unclassified": [],
- "manual_entries": 256,
- "manual_entries_used": 252,
+ "manual_entries": 257,
+ "manual_entries_used": 253,
  "worst10": [
   {
    "page": "/kids-bmi-calculator/",
@@ -2466,22 +2466,24 @@
   },
   {
    "page": "/blog/bmi-categories/",
-   "jsonld_mirrors": 33,
+   "jsonld_mirrors": 54,
    "mismatches": [],
    "c_no_row": [],
    "c_not_in_row": [],
    "names_differ": [
     "\"Normal\" = calculator.js \"Healthy weight\"",
     "\"Grade 3 Underweight\" = calculator.js \"Severe thinness\"",
-    "\"severe underweight\" = calculator.js \"Severe thinness\"",
     "\"Grade 2 Underweight\" = calculator.js \"Moderate thinness\"",
     "\"Grade 1 Underweight\" = calculator.js \"Underweight\"",
+    "\"mild thinness\" = calculator.js \"Underweight\"",
     "\"Normal Weight\" = calculator.js \"Healthy weight\"",
     "\"Pre-obese\" = calculator.js \"Overweight\"",
     "\"Obese Class I\" = calculator.js \"Class 1 obesity\"",
+    "\"obese class I\" = calculator.js \"Class 1 obesity\"",
     "\"Obese Class II\" = calculator.js \"Class 2 obesity\"",
+    "\"obese class II\" = calculator.js \"Class 2 obesity\"",
     "\"Obese Class III\" = calculator.js \"Class 3 obesity\"",
-    "\"normal\" = calculator.js \"Healthy weight\"",
+    "\"obese class III\" = calculator.js \"Class 3 obesity\"",
     "\"Mild Thinness\" = calculator.js \"Underweight\"",
     "\"Normal Weight\" = calculator.js \"Healthy weight\"",
     "\"Obese Class I\" = calculator.js \"Class 1 obesity\"",
@@ -2494,13 +2496,13 @@
     "\"Obese II\" = calculator.js \"Class 2 obesity\"",
     "\"Obese III\" = calculator.js \"Class 3 obesity\"",
     "\"normal\" = calculator.js \"Healthy weight\"",
-    "\"healthy range\" = calculator.js \"Healthy weight\""
+    "\"pre-obese\" = calculator.js \"Overweight\""
    ],
    "d": [
     {
      "number": "eight",
      "why": "number word (count in prose)",
-     "sentence": "The World Health Organization divides BMI into eight categories, from severe thinness to class III obesity."
+     "sentence": "The World Health Organization divides adult BMI into eight categories, from severe thinness to class III obesity."
     },
     {
      "number": "Eight",
@@ -2518,14 +2520,9 @@
      "sentence": "Geneva: WHO; 1995."
     },
     {
-     "number": "6",
-     "why": "count in prose",
-     "sentence": "The narrow ~6-unit \"normal\" band sits between two much wider adjacent regions."
-    },
-    {
-     "number": "two",
+     "number": "eight",
      "why": "number word (count in prose)",
-     "sentence": "The narrow ~6-unit \"normal\" band sits between two much wider adjacent regions."
+     "sentence": "The eight WHO adult categories, from severe thinness to obese class III."
     },
     {
      "number": "3",
@@ -2533,9 +2530,24 @@
      "sentence": "Category 1: Severe Thinness / Grade 3 Underweight (BMI Below 16.0)"
     },
     {
+     "number": "3",
+     "why": "name or label with a number",
+     "sentence": "WHO calls a BMI below 16.0 severe thinness: grade 3, the lowest of its three underweight grades (WHO, 1995)."
+    },
+    {
+     "number": "three",
+     "why": "number word (count in prose)",
+     "sentence": "WHO calls a BMI below 16.0 severe thinness: grade 3, the lowest of its three underweight grades (WHO, 1995)."
+    },
+    {
      "number": "2",
      "why": "name or label with a number",
      "sentence": "Category 2: Moderate Thinness / Grade 2 Underweight (BMI 16.0–16.9)"
+    },
+    {
+     "number": "2",
+     "why": "name or label with a number",
+     "sentence": "WHO calls a BMI of 16.0 to 16.9 moderate thinness, grade 2 (WHO, 1995)."
     },
     {
      "number": "1",
@@ -2543,9 +2555,14 @@
      "sentence": "Category 3: Mild Thinness / Grade 1 Underweight (BMI 17.0–18.4)"
     },
     {
-     "number": "three",
+     "number": "1",
+     "why": "name or label with a number",
+     "sentence": "WHO calls a BMI of 17.0 to 18.4 mild thinness, grade 1 (WHO, 1995)."
+    },
+    {
+     "number": "two",
      "why": "number word (count in prose)",
-     "sentence": "Common Causes of Underweight (across all three grades)"
+     "sentence": "CDC’s survey team names two broad causes: “Poor nutrition and underlying health conditions can result in underweight among youth and adults” (NCHS)."
     },
     {
      "number": "111",
@@ -2553,14 +2570,34 @@
      "sentence": "In 2021–2023, 31.7% of US adults were in this range (age-adjusted; NCHS Health E-Stat 111)."
     },
     {
-     "number": "2",
-     "why": "name or label with a number",
-     "sentence": "The US clinical guidelines on overweight and obesity link excess weight with higher risk of high blood pressure, high cholesterol, type 2 diabetes, coronary heart disease, stroke, gallbladder disease, osteoarthritis, sleep apnea and some cancers, with risk rising as BMI rises (NHLBI)."
-    },
-    {
      "number": "13",
      "why": "count in prose",
-     "sentence": "Obesity is also linked to at least 13 types of cancer (see our BMI and health risks page for the list and sources)."
+     "sentence": "NCI says that, compared with people at a healthy weight, those with overweight or obesity are at greater risk for many diseases, including diabetes, high blood pressure, cardiovascular disease, stroke and at least 13 types of cancer (NCI)."
+    },
+    {
+     "number": "Two",
+     "why": "number word (count in prose)",
+     "sentence": "Two large pooled analyses disagree about this range."
+    },
+    {
+     "number": "five",
+     "why": "number word (count in prose)",
+     "sentence": "In the other, of 239 studies, whose main results kept to never-smokers without known disease and left out the first five years of follow-up, the risk was higher: hazard ratios 1.07 at a BMI of 25.0 to 27.4 and 1.20 at 27.5 to 29.9, against 22.5 to 24.9 (GBMC, 2016)."
+    },
+    {
+     "number": "1",
+     "why": "name or label with a number",
+     "sentence": "WHO calls a BMI of 30.0 to 34.9 obese class I; CDC calls it class 1 obesity (CDC)."
+    },
+    {
+     "number": "2",
+     "why": "name or label with a number",
+     "sentence": "WHO calls a BMI of 35.0 to 39.9 obese class II; CDC calls it class 2 obesity (CDC)."
+    },
+    {
+     "number": "3",
+     "why": "name or label with a number",
+     "sentence": "WHO calls a BMI of 40.0 or more obese class III; CDC calls it class 3 obesity, NCHS reports it as severe obesity, and it is sometimes called morbid obesity."
     },
     {
      "number": "three",
@@ -2608,21 +2645,6 @@
      "sentence": "In 2004, a WHO expert consultation found that a substantial share of Asian people have a high risk of type 2 diabetes and cardiovascular disease at BMIs below 25."
     },
     {
-     "number": "24.9",
-     "why": "an illustration (manual.json)",
-     "sentence": "A person with a BMI of 24.9 is not meaningfully healthier than one at 25.1 — the categories represent points on a continuous spectrum."
-    },
-    {
-     "number": "25.1",
-     "why": "an illustration (manual.json)",
-     "sentence": "A person with a BMI of 24.9 is not meaningfully healthier than one at 25.1 — the categories represent points on a continuous spectrum."
-    },
-    {
-     "number": "two",
-     "why": "number word (count in prose)",
-     "sentence": "Many readers find themselves sitting near the boundary between two categories."
-    },
-    {
      "number": "18",
      "why": "a heading naming the band around the 18.5 cut-off (CMB-036) (manual.json)",
      "sentence": "BMI 18–19: near the underweight / normal boundary"
@@ -2653,49 +2675,69 @@
      "sentence": "BMI 29–31: near the overweight / obese boundary"
     },
     {
+     "number": "1",
+     "why": "name or label with a number",
+     "sentence": "30.0 is where class 1 obesity starts for CDC and obese class I for WHO (CDC; WHO, 2000)."
+    },
+    {
      "number": "2",
      "why": "name or label with a number",
      "sentence": "In a large trial of adults with overweight or obesity and type 2 diabetes, losing 5–10% of body weight was linked to improvements in blood sugar, blood pressure and cholesterol within a year (Wing et al., 2011)."
     },
     {
-     "number": "two",
-     "why": "number word (count in prose)",
-     "sentence": "BMI does not differentiate between the two."
+     "number": "854",
+     "why": "name or label with a number",
+     "sentence": "Technical Report Series 854, 1995."
     },
     {
-     "number": "20",
-     "why": "example ages (manual.json)",
-     "sentence": "One-size-fits-all cutoffs: The same categories apply to a 20-year-old woman and a 75-year-old man, despite very different body compositions and health implications."
-    },
-    {
-     "number": "75",
-     "why": "example ages (manual.json)",
-     "sentence": "One-size-fits-all cutoffs: The same categories apply to a 20-year-old woman and a 75-year-old man, despite very different body compositions and health implications."
-    },
-    {
-     "number": "2014",
+     "number": "1995",
      "why": "citation detail",
-     "sentence": "Am J Clin Nutr 2014;99(4):875–90."
+     "sentence": "Technical Report Series 854, 1995."
     },
     {
-     "number": "99",
+     "number": "894",
+     "why": "name or label with a number",
+     "sentence": "Technical Report Series 894, 2000."
+    },
+    {
+     "number": "2000",
      "why": "citation detail",
-     "sentence": "Am J Clin Nutr 2014;99(4):875–90."
+     "sentence": "Technical Report Series 894, 2000."
     },
     {
-     "number": "4",
-     "why": "legal or citation reference",
-     "sentence": "Am J Clin Nutr 2014;99(4):875–90."
-    },
-    {
-     "number": "875",
+     "number": "1998",
      "why": "citation detail",
-     "sentence": "Am J Clin Nutr 2014;99(4):875–90."
+     "sentence": "Clinical guidelines on the identification, evaluation, and treatment of overweight and obesity in adults, 1998."
     },
     {
-     "number": "90",
+     "number": "239",
      "why": "citation detail",
-     "sentence": "Am J Clin Nutr 2014;99(4):875–90."
+     "sentence": "Body-mass index and all-cause mortality: individual-participant-data meta-analysis of 239 prospective studies in four continents."
+    },
+    {
+     "number": "four",
+     "why": "citation detail",
+     "sentence": "Body-mass index and all-cause mortality: individual-participant-data meta-analysis of 239 prospective studies in four continents."
+    },
+    {
+     "number": "2016",
+     "why": "citation detail",
+     "sentence": "Lancet 2016;388:776–86."
+    },
+    {
+     "number": "388",
+     "why": "citation detail",
+     "sentence": "Lancet 2016;388:776–86."
+    },
+    {
+     "number": "776",
+     "why": "citation detail",
+     "sentence": "Lancet 2016;388:776–86."
+    },
+    {
+     "number": "86",
+     "why": "citation detail",
+     "sentence": "Lancet 2016;388:776–86."
     },
     {
      "number": "2013",
@@ -2728,41 +2770,114 @@
      "sentence": "JAMA 2013;309(1):71–82 (PMID 23280227)."
     },
     {
+     "number": "2014",
+     "why": "citation detail",
+     "sentence": "Am J Clin Nutr 2014;99(4):875–90."
+    },
+    {
+     "number": "99",
+     "why": "citation detail",
+     "sentence": "Am J Clin Nutr 2014;99(4):875–90."
+    },
+    {
+     "number": "4",
+     "why": "legal or citation reference",
+     "sentence": "Am J Clin Nutr 2014;99(4):875–90."
+    },
+    {
+     "number": "875",
+     "why": "citation detail",
+     "sentence": "Am J Clin Nutr 2014;99(4):875–90."
+    },
+    {
+     "number": "90",
+     "why": "citation detail",
+     "sentence": "Am J Clin Nutr 2014;99(4):875–90."
+    },
+    {
+     "number": "2004",
+     "why": "citation detail",
+     "sentence": "Lancet 2004;363:157–63."
+    },
+    {
+     "number": "363",
+     "why": "citation detail",
+     "sentence": "Lancet 2004;363:157–63."
+    },
+    {
+     "number": "157",
+     "why": "citation detail",
+     "sentence": "Lancet 2004;363:157–63."
+    },
+    {
+     "number": "63",
+     "why": "citation detail",
+     "sentence": "Lancet 2004;363:157–63."
+    },
+    {
+     "number": "111",
+     "why": "name or label with a number",
+     "sentence": "Health E-Stat 111 (overweight and obesity, 1960–2023) and Health E-Stat 119 (underweight)."
+    },
+    {
+     "number": "119",
+     "why": "name or label with a number",
+     "sentence": "Health E-Stat 111 (overweight and obesity, 1960–2023) and Health E-Stat 119 (underweight)."
+    },
+    {
+     "number": "two",
+     "why": "number word (count in prose)",
+     "sentence": "Across whole populations, the two pooled analyses on this page disagree about the overweight range: all-cause mortality was slightly lower than in the healthy range in one (Flegal et al., JAMA 2013) and higher in the other (GBMC, 2016)."
+    },
+    {
+     "number": "three",
+     "why": "number word (count in prose)",
+     "sentence": "Overweight is a BMI of 25.0 to 29.9 and obesity 30.0 or more, in three classes (CDC)."
+    },
+    {
+     "number": "2",
+     "why": "name or label with a number",
+     "sentence": "In a large trial of adults with overweight or obesity and type 2 diabetes, losing 5–10% of body weight was linked to improvements in blood sugar, blood pressure and cholesterol within a year (Wing et al., 2011)."
+    },
+    {
      "number": "2026",
      "why": "the current year (a title label)",
      "sentence": "BMI Categories: All Weight Classifications Explained (2026)"
     }
    ],
-   "checks_ok": 122,
+   "checks_ok": 127,
    "page_errors": [],
    "score": 0,
    "totals": {
-    "D": 47,
-    "B": 179,
-    "C": 63,
-    "X": 14
+    "D": 69,
+    "B": 190,
+    "C": 179,
+    "X": 12
    },
    "c_rows": {
-    "row": 57,
-    "row-notes": 6
+    "row-notes": 37,
+    "row": 142
    },
    "c_row_domains": {
-    "who-trs-854": 2,
-    "who-trs-894-obesity": 3,
-    "cdc-adult-bmi-categories": 1,
-    "nhanes-adult-weight-trends": 11,
-    "flegal-2013-jama-mortality": 12,
+    "gbmc-2016-bmi-mortality": 55,
+    "who-trs-854": 8,
+    "who-trs-894-obesity": 8,
+    "cdc-adult-bmi-categories": 7,
+    "medlineplus-unintentional-weight-loss": 3,
+    "nhanes-adult-weight-trends": 34,
+    "flegal-2013-jama-mortality": 14,
     "nhanes-adult-obesity-2021-2023": 3,
-    "who-2004-asian-bmi": 5,
-    "nhlbi-1998-obesity-guidelines": 9,
+    "who-2004-asian-bmi": 8,
+    "nice-ng246-ethnicity-thresholds": 6,
+    "nhlbi-1998-obesity-guidelines": 15,
     "wing-2011-look-ahead": 6,
     "provencher-2018-nfl-combine": 3,
-    "odphp-physical-activity-guidelines": 2,
+    "odphp-physical-activity-guidelines": 3,
     "winter-2014-bmi-mortality-65": 6
    },
    "excluded": {
     "list numbering": 8,
-    "list numbering (numbered badge)": 6
+    "list numbering (numbered badge)": 4
    }
   },
   {
@@ -51770,7 +51885,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "The World Health Organization divides BMI into eight categories, from severe thinness to class III obesity.",
+   "sentence": "The World Health Organization divides adult BMI into eight categories, from severe thinness to class III obesity.",
    "number": "eight",
    "value": 8,
    "class": "D",
@@ -51818,7 +51933,79 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "The World Health Organization set out the current classification in a 1995 expert report and added the obesity classes in a 2000 technical report; the CDC uses the same cut-offs for adults aged 20 and older:",
+   "sentence": "Risk at both ends: in pooled data from 239 studies, the risk of death was lowest at a BMI of 20.0 to 24.9 and higher below and above it (GBMC, 2016)",
+   "number": "239",
+   "value": 239.0,
+   "class": "C",
+   "why": "the GBMC's 239 studies and its lowest-risk band, 20.0 to 24.9 (minimal at 20.0-25.0), not a calculator category (CMB-054) (manual.json)",
+   "heading": "BMI Categories: All Weight Classifications Explained",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Risk at both ends: in pooled data from 239 studies, the risk of death was lowest at a BMI of 20.0 to 24.9 and higher below and above it (GBMC, 2016)",
+   "number": "20.0",
+   "value": 20.0,
+   "class": "C",
+   "why": "the GBMC's 239 studies and its lowest-risk band, 20.0 to 24.9 (minimal at 20.0-25.0), not a calculator category (CMB-054) (manual.json)",
+   "heading": "BMI Categories: All Weight Classifications Explained",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Risk at both ends: in pooled data from 239 studies, the risk of death was lowest at a BMI of 20.0 to 24.9 and higher below and above it (GBMC, 2016)",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "C",
+   "why": "the GBMC's 239 studies and its lowest-risk band, 20.0 to 24.9 (minimal at 20.0-25.0), not a calculator category (CMB-054) (manual.json)",
+   "heading": "BMI Categories: All Weight Classifications Explained",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Risk at both ends: in pooled data from 239 studies, the risk of death was lowest at a BMI of 20.0 to 24.9 and higher below and above it (GBMC, 2016)",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "BMI Categories: All Weight Classifications Explained",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "The World Health Organization graded adult thinness in a 1995 expert report and set out the obesity classes in a 2000 technical report; CDC uses the same cut-offs from 18.5 up for adults aged 20 and older, with a single underweight category below 18.5:",
    "number": "1995",
    "value": 1995.0,
    "class": "C",
@@ -51838,7 +52025,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "The World Health Organization set out the current classification in a 1995 expert report and added the obesity classes in a 2000 technical report; the CDC uses the same cut-offs for adults aged 20 and older:",
+   "sentence": "The World Health Organization graded adult thinness in a 1995 expert report and set out the obesity classes in a 2000 technical report; CDC uses the same cut-offs from 18.5 up for adults aged 20 and older, with a single underweight category below 18.5:",
    "number": "2000",
    "value": 2000.0,
    "class": "C",
@@ -51858,7 +52045,29 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "The World Health Organization set out the current classification in a 1995 expert report and added the obesity classes in a 2000 technical report; the CDC uses the same cut-offs for adults aged 20 and older:",
+   "sentence": "The World Health Organization graded adult thinness in a 1995 expert report and set out the obesity classes in a 2000 technical report; CDC uses the same cut-offs from 18.5 up for adults aged 20 and older, with a single underweight category below 18.5:",
+   "number": "18.5",
+   "value": 18.5,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "The Complete BMI Classification System",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "18.5",
+    "computed": "Underweight below, Healthy weight at it",
+    "label": "getBMICategory changes category at this value"
+   },
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546",
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/",
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "The World Health Organization graded adult thinness in a 1995 expert report and set out the obesity classes in a 2000 technical report; CDC uses the same cut-offs from 18.5 up for adults aged 20 and older, with a single underweight category below 18.5:",
    "number": "20",
    "value": 20.0,
    "class": "C",
@@ -51868,6 +52077,28 @@
     "status": "row-notes",
     "domain": "cdc-adult-bmi-categories",
     "how": "link"
+   },
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546",
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/",
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "The World Health Organization graded adult thinness in a 1995 expert report and set out the obesity classes in a 2000 technical report; CDC uses the same cut-offs from 18.5 up for adults aged 20 and older, with a single underweight category below 18.5:",
+   "number": "18.5",
+   "value": 18.5,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "The Complete BMI Classification System",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "18.5 (underweight)",
+    "computed": "Severe thinness / Moderate thinness / Underweight in calculator.js",
+    "label": "category cut-off (getBMICategory)"
    },
    "links": [
     "https://www.who.int/publications/i/item/9241208546",
@@ -51898,7 +52129,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "Note that children and teens (ages 2–19) use a completely different system based on age- and sex-specific percentiles, not these fixed cutoffs.",
+   "sentence": "Children and teens aged 2 through 19 are classed differently: because they are growing, CDC compares their BMI with others of the same sex and age, as BMI-for-age percentiles (CDC).",
    "number": "2",
    "value": 2.0,
    "class": "B",
@@ -51910,34 +52141,30 @@
     "page": "2",
     "computed": "calculateKids has \"agemos < 24 || agemos >= 240\"",
     "label": "calculateKids accepts 24 to 239 months (2 to 19 years 11 months)"
-   }
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/child-teen-calculator/bmi-categories.html"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "Note that children and teens (ages 2–19) use a completely different system based on age- and sex-specific percentiles, not these fixed cutoffs.",
+   "sentence": "Children and teens aged 2 through 19 are classed differently: because they are growing, CDC compares their BMI with others of the same sex and age, as BMI-for-age percentiles (CDC).",
    "number": "19",
    "value": 19.0,
    "class": "B",
    "why": "the calculator's age range (other end)",
-   "heading": "The Complete BMI Classification System"
+   "heading": "The Complete BMI Classification System",
+   "links": [
+    "https://www.cdc.gov/bmi/child-teen-calculator/bmi-categories.html"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "The narrow ~6-unit \"normal\" band sits between two much wider adjacent regions.",
-   "number": "6",
-   "value": 6.0,
-   "class": "D",
-   "why": "count in prose",
-   "heading": "The Complete BMI Classification System"
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "region": "main",
-   "sentence": "The narrow ~6-unit \"normal\" band sits between two much wider adjacent regions.",
-   "number": "two",
-   "value": 2,
+   "sentence": "The eight WHO adult categories, from severe thinness to obese class III.",
+   "number": "eight",
+   "value": 8,
    "class": "D",
    "why": "number word (count in prose)",
    "heading": "The Complete BMI Classification System"
@@ -51983,7 +52210,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "A BMI below 16.0 indicates severe underweight, a condition associated with significant medical risk.",
+   "sentence": "WHO calls a BMI below 16.0 severe thinness: grade 3, the lowest of its three underweight grades (WHO, 1995).",
    "number": "16.0",
    "value": 16.0,
    "class": "B",
@@ -51992,28 +52219,57 @@
    "check": {
     "status": "ok",
     "kind": "category",
-    "page": "16.0 (severe underweight)",
+    "page": "16.0 (severe thinness)",
     "computed": "Severe thinness in calculator.js",
-    "label": "category cut-off (getBMICategory)",
-    "name_differs": "\"severe underweight\" = calculator.js \"Severe thinness\""
-   }
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "WHO classes a BMI below 16 as severe thinness.",
-   "number": "16",
-   "value": 16.0,
-   "class": "B",
-   "why": "category cut-off",
+   "sentence": "WHO calls a BMI below 16.0 severe thinness: grade 3, the lowest of its three underweight grades (WHO, 1995).",
+   "number": "3",
+   "value": 3.0,
+   "class": "D",
+   "why": "name or label with a number",
    "heading": "Category 1: Severe Thinness / Grade 3 Underweight (BMI Below 16.0)",
-   "check": {
-    "status": "ok",
-    "kind": "category",
-    "page": "16 (severe thinness)",
-    "computed": "Severe thinness in calculator.js",
-    "label": "category cut-off (getBMICategory)"
-   }
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "WHO calls a BMI below 16.0 severe thinness: grade 3, the lowest of its three underweight grades (WHO, 1995).",
+   "number": "three",
+   "value": 3,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Category 1: Severe Thinness / Grade 3 Underweight (BMI Below 16.0)",
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "WHO calls a BMI below 16.0 severe thinness: grade 3, the lowest of its three underweight grades (WHO, 1995).",
+   "number": "1995",
+   "value": 1995.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Category 1: Severe Thinness / Grade 3 Underweight (BMI Below 16.0)",
+   "row": {
+    "status": "row",
+    "domain": "who-trs-854",
+    "how": "link"
+   },
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
@@ -52066,6 +52322,70 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
+   "sentence": "WHO calls a BMI of 16.0 to 16.9 moderate thinness, grade 2 (WHO, 1995).",
+   "number": "16.0",
+   "value": 16.0,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "Category 2: Moderate Thinness / Grade 2 Underweight (BMI 16.0–16.9)",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "16.0 to 16.9 (moderate thinness)",
+    "computed": "Moderate thinness in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "WHO calls a BMI of 16.0 to 16.9 moderate thinness, grade 2 (WHO, 1995).",
+   "number": "16.9",
+   "value": 16.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "Category 2: Moderate Thinness / Grade 2 Underweight (BMI 16.0–16.9)",
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "WHO calls a BMI of 16.0 to 16.9 moderate thinness, grade 2 (WHO, 1995).",
+   "number": "2",
+   "value": 2.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "Category 2: Moderate Thinness / Grade 2 Underweight (BMI 16.0–16.9)",
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "WHO calls a BMI of 16.0 to 16.9 moderate thinness, grade 2 (WHO, 1995).",
+   "number": "1995",
+   "value": 1995.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Category 2: Moderate Thinness / Grade 2 Underweight (BMI 16.0–16.9)",
+   "row": {
+    "status": "row",
+    "domain": "who-trs-854",
+    "how": "link"
+   },
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
    "sentence": "Category 3: Mild Thinness / Grade 1 Underweight (BMI 17.0–18.4)",
    "number": "3",
    "value": 3.0,
@@ -52114,12 +52434,312 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "Common Causes of Underweight (across all three grades)",
-   "number": "three",
-   "value": 3,
+   "sentence": "WHO calls a BMI of 17.0 to 18.4 mild thinness, grade 1 (WHO, 1995).",
+   "number": "17.0",
+   "value": 17.0,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "Category 3: Mild Thinness / Grade 1 Underweight (BMI 17.0–18.4)",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "17.0 to 18.4 (mild thinness)",
+    "computed": "Underweight in calculator.js",
+    "label": "category cut-off (getBMICategory)",
+    "name_differs": "\"mild thinness\" = calculator.js \"Underweight\""
+   },
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "WHO calls a BMI of 17.0 to 18.4 mild thinness, grade 1 (WHO, 1995).",
+   "number": "18.4",
+   "value": 18.4,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "Category 3: Mild Thinness / Grade 1 Underweight (BMI 17.0–18.4)",
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "WHO calls a BMI of 17.0 to 18.4 mild thinness, grade 1 (WHO, 1995).",
+   "number": "1",
+   "value": 1.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "Category 3: Mild Thinness / Grade 1 Underweight (BMI 17.0–18.4)",
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "WHO calls a BMI of 17.0 to 18.4 mild thinness, grade 1 (WHO, 1995).",
+   "number": "1995",
+   "value": 1995.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Category 3: Mild Thinness / Grade 1 Underweight (BMI 17.0–18.4)",
+   "row": {
+    "status": "row",
+    "domain": "who-trs-854",
+    "how": "link"
+   },
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "CDC does not split the grades: it puts every BMI below 18.5 in one category, underweight (CDC).",
+   "number": "18.5",
+   "value": 18.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Category 3: Mild Thinness / Grade 1 Underweight (BMI 17.0–18.4)",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-adult-bmi-categories",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "CDC’s survey team names two broad causes: “Poor nutrition and underlying health conditions can result in underweight among youth and adults” (NCHS).",
+   "number": "two",
+   "value": 2,
    "class": "D",
    "why": "number word (count in prose)",
-   "heading": "Category 3: Mild Thinness / Grade 1 Underweight (BMI 17.0–18.4)"
+   "heading": "Why Some Adults Are Underweight",
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat119.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Risk data come in wider bands than WHO’s grades: in pooled data from 239 studies, the risk of death at a BMI of 15.0 to 18.4 was higher than at 22.5 to 24.9 (hazard ratio 1.51; GBMC, 2016).",
+   "number": "239",
+   "value": 239.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Why Some Adults Are Underweight",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Risk data come in wider bands than WHO’s grades: in pooled data from 239 studies, the risk of death at a BMI of 15.0 to 18.4 was higher than at 22.5 to 24.9 (hazard ratio 1.51; GBMC, 2016).",
+   "number": "15.0",
+   "value": 15.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Why Some Adults Are Underweight",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Risk data come in wider bands than WHO’s grades: in pooled data from 239 studies, the risk of death at a BMI of 15.0 to 18.4 was higher than at 22.5 to 24.9 (hazard ratio 1.51; GBMC, 2016).",
+   "number": "18.4",
+   "value": 18.4,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Why Some Adults Are Underweight",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Risk data come in wider bands than WHO’s grades: in pooled data from 239 studies, the risk of death at a BMI of 15.0 to 18.4 was higher than at 22.5 to 24.9 (hazard ratio 1.51; GBMC, 2016).",
+   "number": "22.5",
+   "value": 22.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Why Some Adults Are Underweight",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Risk data come in wider bands than WHO’s grades: in pooled data from 239 studies, the risk of death at a BMI of 15.0 to 18.4 was higher than at 22.5 to 24.9 (hazard ratio 1.51; GBMC, 2016).",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Why Some Adults Are Underweight",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Risk data come in wider bands than WHO’s grades: in pooled data from 239 studies, the risk of death at a BMI of 15.0 to 18.4 was higher than at 22.5 to 24.9 (hazard ratio 1.51; GBMC, 2016).",
+   "number": "1.51",
+   "value": 1.51,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Why Some Adults Are Underweight",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Risk data come in wider bands than WHO’s grades: in pooled data from 239 studies, the risk of death at a BMI of 15.0 to 18.4 was higher than at 22.5 to 24.9 (hazard ratio 1.51; GBMC, 2016).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Why Some Adults Are Underweight",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "MedlinePlus advises seeing a provider if you lose more than 10 pounds (4.5 kg), or 5% of your usual weight, within 6 to 12 months without knowing why (MedlinePlus).",
+   "number": "10",
+   "value": 10.0,
+   "class": "B",
+   "why": "unit conversion (input)",
+   "heading": "Why Some Adults Are Underweight",
+   "links": [
+    "https://medlineplus.gov/ency/article/003107.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "MedlinePlus advises seeing a provider if you lose more than 10 pounds (4.5 kg), or 5% of your usual weight, within 6 to 12 months without knowing why (MedlinePlus).",
+   "number": "4.5",
+   "value": 4.5,
+   "class": "B",
+   "why": "unit conversion",
+   "heading": "Why Some Adults Are Underweight",
+   "check": {
+    "status": "ok",
+    "kind": "value",
+    "page": "4.5",
+    "computed": "4.5",
+    "raw": 4.535929094356398,
+    "label": "kg from lb (lbsToKg)"
+   },
+   "links": [
+    "https://medlineplus.gov/ency/article/003107.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "MedlinePlus advises seeing a provider if you lose more than 10 pounds (4.5 kg), or 5% of your usual weight, within 6 to 12 months without knowing why (MedlinePlus).",
+   "number": "5",
+   "value": 5.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Why Some Adults Are Underweight",
+   "row": {
+    "status": "row",
+    "domain": "medlineplus-unintentional-weight-loss",
+    "how": "link"
+   },
+   "links": [
+    "https://medlineplus.gov/ency/article/003107.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "MedlinePlus advises seeing a provider if you lose more than 10 pounds (4.5 kg), or 5% of your usual weight, within 6 to 12 months without knowing why (MedlinePlus).",
+   "number": "6",
+   "value": 6.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Why Some Adults Are Underweight",
+   "row": {
+    "status": "row",
+    "domain": "medlineplus-unintentional-weight-loss",
+    "how": "link"
+   },
+   "links": [
+    "https://medlineplus.gov/ency/article/003107.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "MedlinePlus advises seeing a provider if you lose more than 10 pounds (4.5 kg), or 5% of your usual weight, within 6 to 12 months without knowing why (MedlinePlus).",
+   "number": "12",
+   "value": 12.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Why Some Adults Are Underweight",
+   "row": {
+    "status": "row",
+    "domain": "medlineplus-unintentional-weight-loss",
+    "how": "link"
+   },
+   "links": [
+    "https://medlineplus.gov/ency/article/003107.htm"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
@@ -52129,7 +52749,7 @@
    "value": 4.0,
    "class": "X",
    "why": "list numbering",
-   "heading": "Common Causes of Underweight (across all three grades)"
+   "heading": "Why Some Adults Are Underweight"
   },
   {
    "page": "/blog/bmi-categories/",
@@ -52139,7 +52759,7 @@
    "value": 18.5,
    "class": "B",
    "why": "category cut-off",
-   "heading": "Common Causes of Underweight (across all three grades)",
+   "heading": "Why Some Adults Are Underweight",
    "check": {
     "status": "ok",
     "kind": "category",
@@ -52157,25 +52777,60 @@
    "value": 24.9,
    "class": "B",
    "why": "category cut-off (other bound)",
-   "heading": "Common Causes of Underweight (across all three grades)"
+   "heading": "Why Some Adults Are Underweight"
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "This is a wide range — a 7-point span that encompasses a substantial weight difference at any given height.",
-   "number": "7",
-   "value": 7.0,
+   "sentence": "CDC calls a BMI from 18.5 to just under 25 healthy weight (CDC).",
+   "number": "18.5",
+   "value": 18.5,
+   "class": "C",
+   "why": "CDC's healthy weight, \"18.5 to less than 25\" (CMB-054) (manual.json)",
+   "heading": "Category 4: Normal Weight (BMI 18.5–24.9)",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-adult-bmi-categories",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "CDC calls a BMI from 18.5 to just under 25 healthy weight (CDC).",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "CDC's healthy weight, \"18.5 to less than 25\" (CMB-054) (manual.json)",
+   "heading": "Category 4: Normal Weight (BMI 18.5–24.9)",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-adult-bmi-categories",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "That is a span of about 6.5 BMI points, a sizeable weight difference at any height.",
+   "number": "6.5",
+   "value": 6.5,
    "class": "B",
-   "why": "the healthy range's width (manual.json)",
+   "why": "the healthy range's width (CMB-054: sentence reworded) (manual.json)",
    "heading": "Category 4: Normal Weight (BMI 18.5–24.9)",
    "check": {
     "status": "ok",
     "kind": "value",
-    "page": "7",
-    "computed": "7",
+    "page": "6.5",
+    "computed": "6.5",
     "raw": 6.5,
-    "label": "from 18.5 to under 25 (getBMICategory)",
-    "note": "exact half (6.50): half up gives 7"
+    "label": "from 18.5 to under 25 (getBMICategory)"
    }
   },
   {
@@ -52217,29 +52872,164 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "The whole 18.5–24.9 range counts as healthy weight, for men and women alike.",
-   "number": "18.5",
-   "value": 18.5,
-   "class": "B",
-   "why": "category cut-off",
+   "sentence": "In the same pooled data from 239 studies, the lowest risk of death sat at a BMI of 20.0 to 24.9; at 18.5 to 19.9 it was a little higher (hazard ratio 1.13 against 22.5 to 24.9; GBMC, 2016).",
+   "number": "239",
+   "value": 239.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
    "heading": "Optimal BMI Within Normal Range",
-   "check": {
-    "status": "ok",
-    "kind": "category",
-    "page": "18.5-24.9 (healthy weight)",
-    "computed": "Healthy weight in calculator.js",
-    "label": "category cut-off (getBMICategory)"
-   }
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "The whole 18.5–24.9 range counts as healthy weight, for men and women alike.",
+   "sentence": "In the same pooled data from 239 studies, the lowest risk of death sat at a BMI of 20.0 to 24.9; at 18.5 to 19.9 it was a little higher (hazard ratio 1.13 against 22.5 to 24.9; GBMC, 2016).",
+   "number": "20.0",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Optimal BMI Within Normal Range",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the same pooled data from 239 studies, the lowest risk of death sat at a BMI of 20.0 to 24.9; at 18.5 to 19.9 it was a little higher (hazard ratio 1.13 against 22.5 to 24.9; GBMC, 2016).",
    "number": "24.9",
    "value": 24.9,
-   "class": "B",
-   "why": "category cut-off (other bound)",
-   "heading": "Optimal BMI Within Normal Range"
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Optimal BMI Within Normal Range",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the same pooled data from 239 studies, the lowest risk of death sat at a BMI of 20.0 to 24.9; at 18.5 to 19.9 it was a little higher (hazard ratio 1.13 against 22.5 to 24.9; GBMC, 2016).",
+   "number": "18.5",
+   "value": 18.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Optimal BMI Within Normal Range",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the same pooled data from 239 studies, the lowest risk of death sat at a BMI of 20.0 to 24.9; at 18.5 to 19.9 it was a little higher (hazard ratio 1.13 against 22.5 to 24.9; GBMC, 2016).",
+   "number": "19.9",
+   "value": 19.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Optimal BMI Within Normal Range",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the same pooled data from 239 studies, the lowest risk of death sat at a BMI of 20.0 to 24.9; at 18.5 to 19.9 it was a little higher (hazard ratio 1.13 against 22.5 to 24.9; GBMC, 2016).",
+   "number": "1.13",
+   "value": 1.13,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Optimal BMI Within Normal Range",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the same pooled data from 239 studies, the lowest risk of death sat at a BMI of 20.0 to 24.9; at 18.5 to 19.9 it was a little higher (hazard ratio 1.13 against 22.5 to 24.9; GBMC, 2016).",
+   "number": "22.5",
+   "value": 22.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Optimal BMI Within Normal Range",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the same pooled data from 239 studies, the lowest risk of death sat at a BMI of 20.0 to 24.9; at 18.5 to 19.9 it was a little higher (hazard ratio 1.13 against 22.5 to 24.9; GBMC, 2016).",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Optimal BMI Within Normal Range",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the same pooled data from 239 studies, the lowest risk of death sat at a BMI of 20.0 to 24.9; at 18.5 to 19.9 it was a little higher (hazard ratio 1.13 against 22.5 to 24.9; GBMC, 2016).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Optimal BMI Within Normal Range",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
@@ -52305,6 +53095,24 @@
    "class": "B",
    "why": "category cut-off (other bound)",
    "heading": "Category 5: Overweight / Pre-obese (BMI 25.0–29.9)"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "WHO’s name for it is pre-obese (WHO, 2000).",
+   "number": "2000",
+   "value": 2000.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Category 5: Overweight / Pre-obese (BMI 25.0–29.9)",
+   "row": {
+    "status": "row",
+    "domain": "who-trs-894-obesity",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
@@ -52376,20 +53184,30 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "The US clinical guidelines on overweight and obesity link excess weight with higher risk of high blood pressure, high cholesterol, type 2 diabetes, coronary heart disease, stroke, gallbladder disease, osteoarthritis, sleep apnea and some cancers, with risk rising as BMI rises (NHLBI).",
-   "number": "2",
-   "value": 2.0,
+   "sentence": "NCI says that, compared with people at a healthy weight, those with overweight or obesity are at greater risk for many diseases, including diabetes, high blood pressure, cardiovascular disease, stroke and at least 13 types of cancer (NCI).",
+   "number": "13",
+   "value": 13.0,
    "class": "D",
-   "why": "name or label with a number",
+   "why": "count in prose",
    "heading": "Category 5: Overweight / Pre-obese (BMI 25.0–29.9)",
    "links": [
-    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+    "https://www.cancer.gov/about-cancer/causes-prevention/risk/obesity/obesity-fact-sheet"
    ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "In a pooled analysis of 97 studies, all-cause mortality in the overweight range was slightly lower than in the healthy range (hazard ratio 0.94; Flegal et al., JAMA 2013); why is still argued over, and it is not a reason to aim for a higher BMI.",
+   "sentence": "Two large pooled analyses disagree about this range.",
+   "number": "Two",
+   "value": 2,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "The Overweight Debate"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In one, of 97 studies, all-cause mortality in the overweight range was slightly lower than in the healthy range (hazard ratio 0.94; Flegal et al., JAMA 2013).",
    "number": "97",
    "value": 97.0,
    "class": "C",
@@ -52407,7 +53225,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "In a pooled analysis of 97 studies, all-cause mortality in the overweight range was slightly lower than in the healthy range (hazard ratio 0.94; Flegal et al., JAMA 2013); why is still argued over, and it is not a reason to aim for a higher BMI.",
+   "sentence": "In one, of 97 studies, all-cause mortality in the overweight range was slightly lower than in the healthy range (hazard ratio 0.94; Flegal et al., JAMA 2013).",
    "number": "0.94",
    "value": 0.94,
    "class": "C",
@@ -52425,7 +53243,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "In a pooled analysis of 97 studies, all-cause mortality in the overweight range was slightly lower than in the healthy range (hazard ratio 0.94; Flegal et al., JAMA 2013); why is still argued over, and it is not a reason to aim for a higher BMI.",
+   "sentence": "In one, of 97 studies, all-cause mortality in the overweight range was slightly lower than in the healthy range (hazard ratio 0.94; Flegal et al., JAMA 2013).",
    "number": "2013",
    "value": 2013.0,
    "class": "C",
@@ -52438,6 +53256,199 @@
    },
    "links": [
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the other, of 239 studies, whose main results kept to never-smokers without known disease and left out the first five years of follow-up, the risk was higher: hazard ratios 1.07 at a BMI of 25.0 to 27.4 and 1.20 at 27.5 to 29.9, against 22.5 to 24.9 (GBMC, 2016).",
+   "number": "239",
+   "value": 239.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "The Overweight Debate",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the other, of 239 studies, whose main results kept to never-smokers without known disease and left out the first five years of follow-up, the risk was higher: hazard ratios 1.07 at a BMI of 25.0 to 27.4 and 1.20 at 27.5 to 29.9, against 22.5 to 24.9 (GBMC, 2016).",
+   "number": "five",
+   "value": 5,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "The Overweight Debate",
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the other, of 239 studies, whose main results kept to never-smokers without known disease and left out the first five years of follow-up, the risk was higher: hazard ratios 1.07 at a BMI of 25.0 to 27.4 and 1.20 at 27.5 to 29.9, against 22.5 to 24.9 (GBMC, 2016).",
+   "number": "1.07",
+   "value": 1.07,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "The Overweight Debate",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the other, of 239 studies, whose main results kept to never-smokers without known disease and left out the first five years of follow-up, the risk was higher: hazard ratios 1.07 at a BMI of 25.0 to 27.4 and 1.20 at 27.5 to 29.9, against 22.5 to 24.9 (GBMC, 2016).",
+   "number": "25.0",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "The Overweight Debate",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the other, of 239 studies, whose main results kept to never-smokers without known disease and left out the first five years of follow-up, the risk was higher: hazard ratios 1.07 at a BMI of 25.0 to 27.4 and 1.20 at 27.5 to 29.9, against 22.5 to 24.9 (GBMC, 2016).",
+   "number": "27.4",
+   "value": 27.4,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "The Overweight Debate",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the other, of 239 studies, whose main results kept to never-smokers without known disease and left out the first five years of follow-up, the risk was higher: hazard ratios 1.07 at a BMI of 25.0 to 27.4 and 1.20 at 27.5 to 29.9, against 22.5 to 24.9 (GBMC, 2016).",
+   "number": "1.20",
+   "value": 1.2,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "The Overweight Debate",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the other, of 239 studies, whose main results kept to never-smokers without known disease and left out the first five years of follow-up, the risk was higher: hazard ratios 1.07 at a BMI of 25.0 to 27.4 and 1.20 at 27.5 to 29.9, against 22.5 to 24.9 (GBMC, 2016).",
+   "number": "27.5",
+   "value": 27.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "The Overweight Debate",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the other, of 239 studies, whose main results kept to never-smokers without known disease and left out the first five years of follow-up, the risk was higher: hazard ratios 1.07 at a BMI of 25.0 to 27.4 and 1.20 at 27.5 to 29.9, against 22.5 to 24.9 (GBMC, 2016).",
+   "number": "29.9",
+   "value": 29.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "The Overweight Debate",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the other, of 239 studies, whose main results kept to never-smokers without known disease and left out the first five years of follow-up, the risk was higher: hazard ratios 1.07 at a BMI of 25.0 to 27.4 and 1.20 at 27.5 to 29.9, against 22.5 to 24.9 (GBMC, 2016).",
+   "number": "22.5",
+   "value": 22.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "The Overweight Debate",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the other, of 239 studies, whose main results kept to never-smokers without known disease and left out the first five years of follow-up, the risk was higher: hazard ratios 1.07 at a BMI of 25.0 to 27.4 and 1.20 at 27.5 to 29.9, against 22.5 to 24.9 (GBMC, 2016).",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "The Overweight Debate",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the other, of 239 studies, whose main results kept to never-smokers without known disease and left out the first five years of follow-up, the risk was higher: hazard ratios 1.07 at a BMI of 25.0 to 27.4 and 1.20 at 27.5 to 29.9, against 22.5 to 24.9 (GBMC, 2016).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "The Overweight Debate",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
    ]
   },
   {
@@ -52481,14 +53492,254 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "Obesity is also linked to at least 13 types of cancer (see our BMI and health risks page for the list and sources).",
-   "number": "13",
-   "value": 13.0,
-   "class": "D",
-   "why": "count in prose",
+   "sentence": "WHO calls a BMI of 30.0 to 34.9 obese class I; CDC calls it class 1 obesity (CDC).",
+   "number": "30.0",
+   "value": 30.0,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "Category 6: Obese Class I (BMI 30.0–34.9)",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "30.0 to 34.9 (obese class I)",
+    "computed": "Class 1 obesity in calculator.js",
+    "label": "category cut-off (getBMICategory)",
+    "name_differs": "\"obese class I\" = calculator.js \"Class 1 obesity\""
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "WHO calls a BMI of 30.0 to 34.9 obese class I; CDC calls it class 1 obesity (CDC).",
+   "number": "34.9",
+   "value": 34.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
    "heading": "Category 6: Obese Class I (BMI 30.0–34.9)",
    "links": [
-    "http://localhost:8765/blog/bmi-and-health-risks/"
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "WHO calls a BMI of 30.0 to 34.9 obese class I; CDC calls it class 1 obesity (CDC).",
+   "number": "1",
+   "value": 1.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "Category 6: Obese Class I (BMI 30.0–34.9)",
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the 239-study data, the risk of death at 30.0 to 34.9 was higher than at 22.5 to 24.9 (hazard ratio 1.45; GBMC, 2016); the 2013 analysis of 97 studies found no clear difference at this grade (hazard ratio 0.95; Flegal et al., JAMA 2013).",
+   "number": "239",
+   "value": 239.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Category 6: Obese Class I (BMI 30.0–34.9)",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the 239-study data, the risk of death at 30.0 to 34.9 was higher than at 22.5 to 24.9 (hazard ratio 1.45; GBMC, 2016); the 2013 analysis of 97 studies found no clear difference at this grade (hazard ratio 0.95; Flegal et al., JAMA 2013).",
+   "number": "30.0",
+   "value": 30.0,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "Category 6: Obese Class I (BMI 30.0–34.9)",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "30.0 to 34.9 (no category named)",
+    "computed": "Class 1 obesity in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the 239-study data, the risk of death at 30.0 to 34.9 was higher than at 22.5 to 24.9 (hazard ratio 1.45; GBMC, 2016); the 2013 analysis of 97 studies found no clear difference at this grade (hazard ratio 0.95; Flegal et al., JAMA 2013).",
+   "number": "34.9",
+   "value": 34.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "Category 6: Obese Class I (BMI 30.0–34.9)",
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the 239-study data, the risk of death at 30.0 to 34.9 was higher than at 22.5 to 24.9 (hazard ratio 1.45; GBMC, 2016); the 2013 analysis of 97 studies found no clear difference at this grade (hazard ratio 0.95; Flegal et al., JAMA 2013).",
+   "number": "22.5",
+   "value": 22.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Category 6: Obese Class I (BMI 30.0–34.9)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the 239-study data, the risk of death at 30.0 to 34.9 was higher than at 22.5 to 24.9 (hazard ratio 1.45; GBMC, 2016); the 2013 analysis of 97 studies found no clear difference at this grade (hazard ratio 0.95; Flegal et al., JAMA 2013).",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Category 6: Obese Class I (BMI 30.0–34.9)",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the 239-study data, the risk of death at 30.0 to 34.9 was higher than at 22.5 to 24.9 (hazard ratio 1.45; GBMC, 2016); the 2013 analysis of 97 studies found no clear difference at this grade (hazard ratio 0.95; Flegal et al., JAMA 2013).",
+   "number": "1.45",
+   "value": 1.45,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Category 6: Obese Class I (BMI 30.0–34.9)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the 239-study data, the risk of death at 30.0 to 34.9 was higher than at 22.5 to 24.9 (hazard ratio 1.45; GBMC, 2016); the 2013 analysis of 97 studies found no clear difference at this grade (hazard ratio 0.95; Flegal et al., JAMA 2013).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Category 6: Obese Class I (BMI 30.0–34.9)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the 239-study data, the risk of death at 30.0 to 34.9 was higher than at 22.5 to 24.9 (hazard ratio 1.45; GBMC, 2016); the 2013 analysis of 97 studies found no clear difference at this grade (hazard ratio 0.95; Flegal et al., JAMA 2013).",
+   "number": "2013",
+   "value": 2013.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Category 6: Obese Class I (BMI 30.0–34.9)",
+   "row": {
+    "status": "row",
+    "domain": "flegal-2013-jama-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the 239-study data, the risk of death at 30.0 to 34.9 was higher than at 22.5 to 24.9 (hazard ratio 1.45; GBMC, 2016); the 2013 analysis of 97 studies found no clear difference at this grade (hazard ratio 0.95; Flegal et al., JAMA 2013).",
+   "number": "97",
+   "value": 97.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Category 6: Obese Class I (BMI 30.0–34.9)",
+   "row": {
+    "status": "row",
+    "domain": "flegal-2013-jama-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the 239-study data, the risk of death at 30.0 to 34.9 was higher than at 22.5 to 24.9 (hazard ratio 1.45; GBMC, 2016); the 2013 analysis of 97 studies found no clear difference at this grade (hazard ratio 0.95; Flegal et al., JAMA 2013).",
+   "number": "0.95",
+   "value": 0.95,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Category 6: Obese Class I (BMI 30.0–34.9)",
+   "row": {
+    "status": "row",
+    "domain": "flegal-2013-jama-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the 239-study data, the risk of death at 30.0 to 34.9 was higher than at 22.5 to 24.9 (hazard ratio 1.45; GBMC, 2016); the 2013 analysis of 97 studies found no clear difference at this grade (hazard ratio 0.95; Flegal et al., JAMA 2013).",
+   "number": "2013",
+   "value": 2013.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Category 6: Obese Class I (BMI 30.0–34.9)",
+   "row": {
+    "status": "row",
+    "domain": "flegal-2013-jama-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/"
    ]
   },
   {
@@ -52528,6 +53779,158 @@
    "class": "B",
    "why": "category cut-off (other bound)",
    "heading": "Category 6: Obese Class I (BMI 30.0–34.9)"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "WHO calls a BMI of 35.0 to 39.9 obese class II; CDC calls it class 2 obesity (CDC).",
+   "number": "35.0",
+   "value": 35.0,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "Category 7: Obese Class II (BMI 35.0–39.9)",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "35.0 to 39.9 (obese class II)",
+    "computed": "Class 2 obesity in calculator.js",
+    "label": "category cut-off (getBMICategory)",
+    "name_differs": "\"obese class II\" = calculator.js \"Class 2 obesity\""
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "WHO calls a BMI of 35.0 to 39.9 obese class II; CDC calls it class 2 obesity (CDC).",
+   "number": "39.9",
+   "value": 39.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "Category 7: Obese Class II (BMI 35.0–39.9)",
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "WHO calls a BMI of 35.0 to 39.9 obese class II; CDC calls it class 2 obesity (CDC).",
+   "number": "2",
+   "value": 2.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "Category 7: Obese Class II (BMI 35.0–39.9)",
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "The risk of death at 35.0 to 39.9 was higher again (hazard ratio 1.94 against 22.5 to 24.9; GBMC, 2016).",
+   "number": "35.0",
+   "value": 35.0,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "Category 7: Obese Class II (BMI 35.0–39.9)",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "35.0 to 39.9 (no category named)",
+    "computed": "Class 2 obesity in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "The risk of death at 35.0 to 39.9 was higher again (hazard ratio 1.94 against 22.5 to 24.9; GBMC, 2016).",
+   "number": "39.9",
+   "value": 39.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "Category 7: Obese Class II (BMI 35.0–39.9)",
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "The risk of death at 35.0 to 39.9 was higher again (hazard ratio 1.94 against 22.5 to 24.9; GBMC, 2016).",
+   "number": "1.94",
+   "value": 1.94,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Category 7: Obese Class II (BMI 35.0–39.9)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "The risk of death at 35.0 to 39.9 was higher again (hazard ratio 1.94 against 22.5 to 24.9; GBMC, 2016).",
+   "number": "22.5",
+   "value": 22.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Category 7: Obese Class II (BMI 35.0–39.9)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "The risk of death at 35.0 to 39.9 was higher again (hazard ratio 1.94 against 22.5 to 24.9; GBMC, 2016).",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Category 7: Obese Class II (BMI 35.0–39.9)",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "The risk of death at 35.0 to 39.9 was higher again (hazard ratio 1.94 against 22.5 to 24.9; GBMC, 2016).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Category 7: Obese Class II (BMI 35.0–39.9)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
@@ -52648,6 +54051,214 @@
     "label": "category cut-off (getBMICategory)",
     "name_differs": "\"Obese Class III\" = calculator.js \"Class 3 obesity\""
    }
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "WHO calls a BMI of 40.0 or more obese class III; CDC calls it class 3 obesity, NCHS reports it as severe obesity, and it is sometimes called morbid obesity.",
+   "number": "40.0",
+   "value": 40.0,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "Category 8: Obese Class III (BMI 40.0 or Higher)",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "40.0 (obese class III)",
+    "computed": "Class 3 obesity in calculator.js",
+    "label": "category cut-off (getBMICategory)",
+    "name_differs": "\"obese class III\" = calculator.js \"Class 3 obesity\""
+   }
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "WHO calls a BMI of 40.0 or more obese class III; CDC calls it class 3 obesity, NCHS reports it as severe obesity, and it is sometimes called morbid obesity.",
+   "number": "3",
+   "value": 3.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "Category 8: Obese Class III (BMI 40.0 or Higher)"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In US adults in 2021–2023, 9.7% had severe obesity (age-adjusted; NCHS).",
+   "number": "2021",
+   "value": 2021.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Category 8: Obese Class III (BMI 40.0 or Higher)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In US adults in 2021–2023, 9.7% had severe obesity (age-adjusted; NCHS).",
+   "number": "2023",
+   "value": 2023.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Category 8: Obese Class III (BMI 40.0 or Higher)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In US adults in 2021–2023, 9.7% had severe obesity (age-adjusted; NCHS).",
+   "number": "9.7",
+   "value": 9.7,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Category 8: Obese Class III (BMI 40.0 or Higher)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "At a BMI of 40.0 to 59.9, the risk of death was the highest of any band in the 239-study data (hazard ratio 2.76 against 22.5 to 24.9; GBMC, 2016).",
+   "number": "40.0",
+   "value": 40.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Category 8: Obese Class III (BMI 40.0 or Higher)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "At a BMI of 40.0 to 59.9, the risk of death was the highest of any band in the 239-study data (hazard ratio 2.76 against 22.5 to 24.9; GBMC, 2016).",
+   "number": "59.9",
+   "value": 59.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Category 8: Obese Class III (BMI 40.0 or Higher)",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "At a BMI of 40.0 to 59.9, the risk of death was the highest of any band in the 239-study data (hazard ratio 2.76 against 22.5 to 24.9; GBMC, 2016).",
+   "number": "239",
+   "value": 239.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Category 8: Obese Class III (BMI 40.0 or Higher)",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "At a BMI of 40.0 to 59.9, the risk of death was the highest of any band in the 239-study data (hazard ratio 2.76 against 22.5 to 24.9; GBMC, 2016).",
+   "number": "2.76",
+   "value": 2.76,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Category 8: Obese Class III (BMI 40.0 or Higher)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "At a BMI of 40.0 to 59.9, the risk of death was the highest of any band in the 239-study data (hazard ratio 2.76 against 22.5 to 24.9; GBMC, 2016).",
+   "number": "22.5",
+   "value": 22.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Category 8: Obese Class III (BMI 40.0 or Higher)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "At a BMI of 40.0 to 59.9, the risk of death was the highest of any band in the 239-study data (hazard ratio 2.76 against 22.5 to 24.9; GBMC, 2016).",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Category 8: Obese Class III (BMI 40.0 or Higher)",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "At a BMI of 40.0 to 59.9, the risk of death was the highest of any band in the 239-study data (hazard ratio 2.76 against 22.5 to 24.9; GBMC, 2016).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Category 8: Obese Class III (BMI 40.0 or Higher)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
@@ -52959,7 +54570,7 @@
    "row": {
     "status": "row",
     "domain": "nhanes-adult-weight-trends",
-    "how": "paragraph link"
+    "how": "pages_served"
    },
    "links": [
     "http://localhost:8765/us-obesity-statistics/"
@@ -52968,19 +54579,206 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "Adults with obesity (BMI ≥ 30) together with those in the overweight range account for the majority of the U.S. Adult population.",
-   "number": "30",
-   "value": 30.0,
-   "class": "B",
-   "why": "category cut-off",
+   "sentence": "Together, overweight and obesity cover most US adults: 31.7% and 40.3% in 2021–2023 (age-adjusted).",
+   "number": "31.7",
+   "value": 31.7,
+   "class": "C",
+   "why": "statistic (percent)",
    "heading": "BMI Category Prevalence (U.S. Adults 20+)",
-   "check": {
-    "status": "ok",
-    "kind": "category",
-    "page": "30 (obesity)",
-    "computed": "Class 1 obesity / Class 2 obesity / Class 3 obesity in calculator.js",
-    "label": "category cut-off (getBMICategory)"
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
    }
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Together, overweight and obesity cover most US adults: 31.7% and 40.3% in 2021–2023 (age-adjusted).",
+   "number": "40.3",
+   "value": 40.3,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "BMI Category Prevalence (U.S. Adults 20+)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Together, overweight and obesity cover most US adults: 31.7% and 40.3% in 2021–2023 (age-adjusted).",
+   "number": "2021",
+   "value": 2021.0,
+   "class": "C",
+   "why": "year",
+   "heading": "BMI Category Prevalence (U.S. Adults 20+)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Together, overweight and obesity cover most US adults: 31.7% and 40.3% in 2021–2023 (age-adjusted).",
+   "number": "2023",
+   "value": 2023.0,
+   "class": "C",
+   "why": "year",
+   "heading": "BMI Category Prevalence (U.S. Adults 20+)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Among adults aged 20 to 74, obesity rose from 13.4% in 1960–1962 to 40.8% in 2021–2023 (NCHS).",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI Category Prevalence (U.S. Adults 20+)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Among adults aged 20 to 74, obesity rose from 13.4% in 1960–1962 to 40.8% in 2021–2023 (NCHS).",
+   "number": "74",
+   "value": 74.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI Category Prevalence (U.S. Adults 20+)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Among adults aged 20 to 74, obesity rose from 13.4% in 1960–1962 to 40.8% in 2021–2023 (NCHS).",
+   "number": "13.4",
+   "value": 13.4,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "BMI Category Prevalence (U.S. Adults 20+)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Among adults aged 20 to 74, obesity rose from 13.4% in 1960–1962 to 40.8% in 2021–2023 (NCHS).",
+   "number": "1960",
+   "value": 1960.0,
+   "class": "C",
+   "why": "year",
+   "heading": "BMI Category Prevalence (U.S. Adults 20+)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Among adults aged 20 to 74, obesity rose from 13.4% in 1960–1962 to 40.8% in 2021–2023 (NCHS).",
+   "number": "1962",
+   "value": 1962.0,
+   "class": "C",
+   "why": "year",
+   "heading": "BMI Category Prevalence (U.S. Adults 20+)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Among adults aged 20 to 74, obesity rose from 13.4% in 1960–1962 to 40.8% in 2021–2023 (NCHS).",
+   "number": "40.8",
+   "value": 40.8,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "BMI Category Prevalence (U.S. Adults 20+)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Among adults aged 20 to 74, obesity rose from 13.4% in 1960–1962 to 40.8% in 2021–2023 (NCHS).",
+   "number": "2021",
+   "value": 2021.0,
+   "class": "C",
+   "why": "year",
+   "heading": "BMI Category Prevalence (U.S. Adults 20+)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Among adults aged 20 to 74, obesity rose from 13.4% in 1960–1962 to 40.8% in 2021–2023 (NCHS).",
+   "number": "2023",
+   "value": 2023.0,
+   "class": "C",
+   "why": "year",
+   "heading": "BMI Category Prevalence (U.S. Adults 20+)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
@@ -53319,8 +55117,8 @@
    "heading": "Lower action points for Asian populations",
    "row": {
     "status": "row",
-    "domain": "who-2004-asian-bmi",
-    "how": "paragraph link"
+    "domain": "nhanes-adult-weight-trends",
+    "how": "pages_served"
    }
   },
   {
@@ -53335,8 +55133,62 @@
    "row": {
     "status": "row",
     "domain": "who-2004-asian-bmi",
-    "how": "paragraph link"
+    "how": "pages_served"
    }
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the UK, NICE uses lower thresholds for adults with a South Asian, Chinese, other Asian, Middle Eastern, Black African or African-Caribbean background: overweight from 23 to 27.4 and obesity from 27.5 (NICE guideline NG246).",
+   "number": "23",
+   "value": 23.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Lower action points for Asian populations",
+   "row": {
+    "status": "row",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   },
+   "links": [
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the UK, NICE uses lower thresholds for adults with a South Asian, Chinese, other Asian, Middle Eastern, Black African or African-Caribbean background: overweight from 23 to 27.4 and obesity from 27.5 (NICE guideline NG246).",
+   "number": "27.4",
+   "value": 27.4,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Lower action points for Asian populations",
+   "row": {
+    "status": "row",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   },
+   "links": [
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "In the UK, NICE uses lower thresholds for adults with a South Asian, Chinese, other Asian, Middle Eastern, Black African or African-Caribbean background: overweight from 23 to 27.4 and obesity from 27.5 (NICE guideline NG246).",
+   "number": "27.5",
+   "value": 27.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Lower action points for Asian populations",
+   "row": {
+    "status": "row",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   },
+   "links": [
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
@@ -53501,7 +55353,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "1995: The WHO recommended unified cutoffs of 25 (overweight) and 30 (obesity) regardless of sex.",
+   "sentence": "1995: WHO graded adult thinness by BMI: below 18.5, below 17 and below 16 (WHO, 1995).",
    "number": "1995",
    "value": 1995.0,
    "class": "C",
@@ -53510,13 +55362,109 @@
    "row": {
     "status": "row",
     "domain": "who-trs-854",
-    "how": "pages_served"
+    "how": "link"
+   },
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "1995: WHO graded adult thinness by BMI: below 18.5, below 17 and below 16 (WHO, 1995).",
+   "number": "18.5",
+   "value": 18.5,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "Why 25 and 30? The History Behind the Cutoffs",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "18.5 (thinness)",
+    "computed": "Severe thinness / Moderate thinness / Underweight in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "1995: WHO graded adult thinness by BMI: below 18.5, below 17 and below 16 (WHO, 1995).",
+   "number": "17",
+   "value": 17.0,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "Why 25 and 30? The History Behind the Cutoffs",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "17 (no category named)",
+    "computed": "Severe thinness / Moderate thinness in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "1995: WHO graded adult thinness by BMI: below 18.5, below 17 and below 16 (WHO, 1995).",
+   "number": "16",
+   "value": 16.0,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "Why 25 and 30? The History Behind the Cutoffs",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "16 (no category named)",
+    "computed": "Severe thinness in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "1995: WHO graded adult thinness by BMI: below 18.5, below 17 and below 16 (WHO, 1995).",
+   "number": "1995",
+   "value": 1995.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Why 25 and 30? The History Behind the Cutoffs",
+   "row": {
+    "status": "row",
+    "domain": "who-trs-854",
+    "how": "link"
+   },
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "1998: NIH’s clinical guidelines set overweight at a BMI of 25 to 29.9 and obesity at 30 or more.",
+   "number": "1998",
+   "value": 1998.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Why 25 and 30? The History Behind the Cutoffs",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "link"
    }
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "1995: The WHO recommended unified cutoffs of 25 (overweight) and 30 (obesity) regardless of sex.",
+   "sentence": "1998: NIH’s clinical guidelines set overweight at a BMI of 25 to 29.9 and obesity at 30 or more.",
    "number": "25",
    "value": 25.0,
    "class": "B",
@@ -53525,15 +55473,25 @@
    "check": {
     "status": "ok",
     "kind": "category",
-    "page": "25",
-    "computed": "Healthy weight below, Overweight at it",
-    "label": "getBMICategory changes category at this value"
+    "page": "25 to 29.9 (overweight)",
+    "computed": "Overweight in calculator.js",
+    "label": "category cut-off (getBMICategory)"
    }
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "1995: The WHO recommended unified cutoffs of 25 (overweight) and 30 (obesity) regardless of sex.",
+   "sentence": "1998: NIH’s clinical guidelines set overweight at a BMI of 25 to 29.9 and obesity at 30 or more.",
+   "number": "29.9",
+   "value": 29.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "Why 25 and 30? The History Behind the Cutoffs"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "1998: NIH’s clinical guidelines set overweight at a BMI of 25 to 29.9 and obesity at 30 or more.",
    "number": "30",
    "value": 30.0,
    "class": "B",
@@ -53542,24 +55500,9 @@
    "check": {
     "status": "ok",
     "kind": "category",
-    "page": "30",
-    "computed": "Overweight below, Class 1 obesity at it",
-    "label": "getBMICategory changes category at this value"
-   }
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "region": "main",
-   "sentence": "1998: The NIH aligned U.S. guidelines with the WHO cut-offs.",
-   "number": "1998",
-   "value": 1998.0,
-   "class": "C",
-   "why": "year",
-   "heading": "Why 25 and 30? The History Behind the Cutoffs",
-   "row": {
-    "status": "row",
-    "domain": "nhlbi-1998-obesity-guidelines",
-    "how": "link"
+    "page": "30 (obesity)",
+    "computed": "Class 1 obesity / Class 2 obesity / Class 3 obesity in calculator.js",
+    "label": "category cut-off (getBMICategory)"
    }
   },
   {
@@ -53603,7 +55546,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "2000: The WHO published Technical Report 894, which set out obesity classes I, II and III; the thinness grades come from its earlier report on anthropometry.",
+   "sentence": "2000: WHO’s report on obesity (Technical Report 894) set out obesity classes I, II and III and concluded that a coherent system based on BMI should be adopted internationally.",
    "number": "2000",
    "value": 2000.0,
    "class": "C",
@@ -53621,7 +55564,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "2000: The WHO published Technical Report 894, which set out obesity classes I, II and III; the thinness grades come from its earlier report on anthropometry.",
+   "sentence": "2000: WHO’s report on obesity (Technical Report 894) set out obesity classes I, II and III and concluded that a coherent system based on BMI should be adopted internationally.",
    "number": "894",
    "value": 894.0,
    "class": "C",
@@ -53639,27 +55582,25 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "These cut-offs have since been the reference point in a large body of BMI/mortality research, including long-running cohort studies and pooled analyses such as Flegal et al. (JAMA 2013).",
-   "number": "2013",
-   "value": 2013.0,
+   "sentence": "Risk does not jump at either cut-off: in the 239-study data, the risk of death rose band by band through 25 and 30 (GBMC, 2016).",
+   "number": "239",
+   "value": 239.0,
    "class": "C",
-   "why": "year",
+   "why": "outside fact (statistic, threshold or study detail)",
    "heading": "Why 25 and 30? The History Behind the Cutoffs",
    "row": {
-    "status": "row",
-    "domain": "flegal-2013-jama-mortality",
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
     "how": "link"
    },
    "links": [
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/"
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
    ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "The specific cut-off values (25 and 30) reflect points on a continuous risk curve rather than sharp biological thresholds.",
+   "sentence": "Risk does not jump at either cut-off: in the 239-study data, the risk of death rose band by band through 25 and 30 (GBMC, 2016).",
    "number": "25",
    "value": 25.0,
    "class": "B",
@@ -53671,12 +55612,15 @@
     "page": "25",
     "computed": "Healthy weight below, Overweight at it",
     "label": "getBMICategory changes category at this value"
-   }
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "The specific cut-off values (25 and 30) reflect points on a continuous risk curve rather than sharp biological thresholds.",
+   "sentence": "Risk does not jump at either cut-off: in the 239-study data, the risk of death rose band by band through 25 and 30 (GBMC, 2016).",
    "number": "30",
    "value": 30.0,
    "class": "B",
@@ -53688,71 +55632,28 @@
     "page": "30",
     "computed": "Overweight below, Class 1 obesity at it",
     "label": "getBMICategory changes category at this value"
-   }
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "The choice of 25 and 30 reflects points on the risk curve where health consequences become statistically more likely, but these are not sharp biological thresholds.",
-   "number": "25",
-   "value": 25.0,
-   "class": "B",
-   "why": "category cut-off",
+   "sentence": "Risk does not jump at either cut-off: in the 239-study data, the risk of death rose band by band through 25 and 30 (GBMC, 2016).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
    "heading": "Why 25 and 30? The History Behind the Cutoffs",
-   "check": {
-    "status": "ok",
-    "kind": "category",
-    "page": "25",
-    "computed": "Healthy weight below, Overweight at it",
-    "label": "getBMICategory changes category at this value"
-   }
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "region": "main",
-   "sentence": "The choice of 25 and 30 reflects points on the risk curve where health consequences become statistically more likely, but these are not sharp biological thresholds.",
-   "number": "30",
-   "value": 30.0,
-   "class": "B",
-   "why": "category cut-off",
-   "heading": "Why 25 and 30? The History Behind the Cutoffs",
-   "check": {
-    "status": "ok",
-    "kind": "category",
-    "page": "30",
-    "computed": "Overweight below, Class 1 obesity at it",
-    "label": "getBMICategory changes category at this value"
-   }
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "region": "main",
-   "sentence": "A person with a BMI of 24.9 is not meaningfully healthier than one at 25.1 — the categories represent points on a continuous spectrum.",
-   "number": "24.9",
-   "value": 24.9,
-   "class": "D",
-   "why": "an illustration (manual.json)",
-   "heading": "Why 25 and 30? The History Behind the Cutoffs"
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "region": "main",
-   "sentence": "A person with a BMI of 24.9 is not meaningfully healthier than one at 25.1 — the categories represent points on a continuous spectrum.",
-   "number": "25.1",
-   "value": 25.1,
-   "class": "D",
-   "why": "an illustration (manual.json)",
-   "heading": "Why 25 and 30? The History Behind the Cutoffs"
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "region": "main",
-   "sentence": "Many readers find themselves sitting near the boundary between two categories.",
-   "number": "two",
-   "value": 2,
-   "class": "D",
-   "why": "number word (count in prose)",
-   "heading": "Category Borderlines and What They Mean"
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
@@ -53777,6 +55678,65 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
+   "sentence": "Just below 18.5 is CDC’s underweight and WHO’s mild thinness; from 18.5 it is CDC’s healthy weight and WHO’s normal range (WHO, 1995; CDC).",
+   "number": "18.5",
+   "value": 18.5,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "BMI 18–19: near the underweight / normal boundary",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "18.5 (underweight)",
+    "computed": "Severe thinness / Moderate thinness / Underweight in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546",
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Just below 18.5 is CDC’s underweight and WHO’s mild thinness; from 18.5 it is CDC’s healthy weight and WHO’s normal range (WHO, 1995; CDC).",
+   "number": "18.5",
+   "value": 18.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI 18–19: near the underweight / normal boundary",
+   "row": {
+    "status": "row",
+    "domain": "who-trs-854",
+    "how": "link"
+   },
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546",
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Just below 18.5 is CDC’s underweight and WHO’s mild thinness; from 18.5 it is CDC’s healthy weight and WHO’s normal range (WHO, 1995; CDC).",
+   "number": "1995",
+   "value": 1995.0,
+   "class": "C",
+   "why": "year",
+   "heading": "BMI 18–19: near the underweight / normal boundary",
+   "row": {
+    "status": "row",
+    "domain": "who-trs-854",
+    "how": "link"
+   },
+   "links": [
+    "https://www.who.int/publications/i/item/9241208546",
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
    "sentence": "BMI 24–26: near the normal / overweight boundary",
    "number": "24",
    "value": 24.0,
@@ -53797,6 +55757,62 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
+   "sentence": "25.0 is where CDC’s overweight category and WHO’s pre-obese range start (CDC; WHO, 2000).",
+   "number": "25.0",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI 24–26: near the normal / overweight boundary",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-adult-bmi-categories",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "25.0 is where CDC’s overweight category and WHO’s pre-obese range start (CDC; WHO, 2000).",
+   "number": "2000",
+   "value": 2000.0,
+   "class": "C",
+   "why": "year",
+   "heading": "BMI 24–26: near the normal / overweight boundary",
+   "row": {
+    "status": "row",
+    "domain": "who-trs-894-obesity",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "From a BMI of 25, NIH guidelines add a waist measurement (see Measure Your Waist below).",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI 24–26: near the normal / overweight boundary",
+   "row": {
+    "status": "row",
+    "domain": "who-2004-asian-bmi",
+    "how": "pages_served"
+   },
+   "links": [
+    "http://localhost:8765/blog/bmi-categories/#measure-waist"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
    "sentence": "BMI 29–31: near the overweight / obese boundary",
    "number": "29",
    "value": 29.0,
@@ -53813,6 +55829,58 @@
    "class": "D",
    "why": "a heading naming the band around the 30 cut-off (CMB-036) (manual.json)",
    "heading": "BMI 24–26: near the normal / overweight boundary"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "30.0 is where class 1 obesity starts for CDC and obese class I for WHO (CDC; WHO, 2000).",
+   "number": "30.0",
+   "value": 30.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI 29–31: near the overweight / obese boundary",
+   "row": {
+    "status": "row",
+    "domain": "who-trs-894-obesity",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "30.0 is where class 1 obesity starts for CDC and obese class I for WHO (CDC; WHO, 2000).",
+   "number": "1",
+   "value": 1.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "BMI 29–31: near the overweight / obese boundary",
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "30.0 is where class 1 obesity starts for CDC and obese class I for WHO (CDC; WHO, 2000).",
+   "number": "2000",
+   "value": 2000.0,
+   "class": "C",
+   "why": "year",
+   "heading": "BMI 29–31: near the overweight / obese boundary",
+   "row": {
+    "status": "row",
+    "domain": "who-trs-894-obesity",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
@@ -53884,83 +55952,21 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "BMI does not differentiate between the two.",
-   "number": "two",
-   "value": 2,
-   "class": "D",
-   "why": "number word (count in prose)",
-   "heading": "Limitations of BMI Categories"
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "region": "main",
-   "sentence": "One-size-fits-all cutoffs: The same categories apply to a 20-year-old woman and a 75-year-old man, despite very different body compositions and health implications.",
+   "sentence": "One set of cut-offs: CDC applies the adult categories to everyone 20 and older regardless of age, sex or race (CDC), yet NCHS notes that at a given BMI, body fat may vary by sex, age, and race and Hispanic origin (NCHS).",
    "number": "20",
    "value": 20.0,
-   "class": "D",
-   "why": "example ages (manual.json)",
-   "heading": "Limitations of BMI Categories"
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "region": "main",
-   "sentence": "One-size-fits-all cutoffs: The same categories apply to a 20-year-old woman and a 75-year-old man, despite very different body compositions and health implications.",
-   "number": "75",
-   "value": 75.0,
-   "class": "D",
-   "why": "example ages (manual.json)",
-   "heading": "Limitations of BMI Categories"
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "region": "main",
-   "sentence": "Ethnic bias: For many Asian populations, risks rise at lower BMI values (WHO expert consultation, 2004).",
-   "number": "2004",
-   "value": 2004.0,
    "class": "C",
-   "why": "year",
+   "why": "outside fact (statistic, threshold or study detail)",
    "heading": "Limitations of BMI Categories",
    "row": {
     "status": "row",
-    "domain": "who-2004-asian-bmi",
-    "how": "publisher and year",
-    "strong": true
-   }
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "region": "main",
-   "sentence": "Arbitrary boundaries: The difference between BMI 24.9 (“normal”) and 25.0 (“overweight”) is clinically meaningless, yet the category labels carry social and psychological weight.",
-   "number": "24.9",
-   "value": 24.9,
-   "class": "B",
-   "why": "category of a BMI",
-   "heading": "Limitations of BMI Categories",
-   "check": {
-    "status": "ok",
-    "kind": "category",
-    "page": "24.9 (normal)",
-    "computed": "Healthy weight",
-    "label": "category of that BMI (getBMICategory)",
-    "name_differs": "\"normal\" = calculator.js \"Healthy weight\""
-   }
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "region": "main",
-   "sentence": "Arbitrary boundaries: The difference between BMI 24.9 (“normal”) and 25.0 (“overweight”) is clinically meaningless, yet the category labels carry social and psychological weight.",
-   "number": "25.0",
-   "value": 25.0,
-   "class": "B",
-   "why": "category cut-off",
-   "heading": "Limitations of BMI Categories",
-   "check": {
-    "status": "ok",
-    "kind": "category",
-    "page": "25.0",
-    "computed": "Healthy weight below, Overweight at it",
-    "label": "getBMICategory changes category at this value"
-   }
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
@@ -53985,6 +55991,114 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
+   "sentence": "NIH guidelines pair BMI with a waist measurement: more than 40 inches (102 cm) for men or 35 inches (88 cm) for women marks higher risk, at a BMI of 25 to 34.9 (NHLBI).",
+   "number": "40",
+   "value": 40.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Measure Your Waist",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "NIH guidelines pair BMI with a waist measurement: more than 40 inches (102 cm) for men or 35 inches (88 cm) for women marks higher risk, at a BMI of 25 to 34.9 (NHLBI).",
+   "number": "102",
+   "value": 102.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Measure Your Waist",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "NIH guidelines pair BMI with a waist measurement: more than 40 inches (102 cm) for men or 35 inches (88 cm) for women marks higher risk, at a BMI of 25 to 34.9 (NHLBI).",
+   "number": "35",
+   "value": 35.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Measure Your Waist",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "NIH guidelines pair BMI with a waist measurement: more than 40 inches (102 cm) for men or 35 inches (88 cm) for women marks higher risk, at a BMI of 25 to 34.9 (NHLBI).",
+   "number": "88",
+   "value": 88.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Measure Your Waist",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "NIH guidelines pair BMI with a waist measurement: more than 40 inches (102 cm) for men or 35 inches (88 cm) for women marks higher risk, at a BMI of 25 to 34.9 (NHLBI).",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Measure Your Waist",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "NIH guidelines pair BMI with a waist measurement: more than 40 inches (102 cm) for men or 35 inches (88 cm) for women marks higher risk, at a BMI of 25 to 34.9 (NHLBI).",
+   "number": "34.9",
+   "value": 34.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Measure Your Waist",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
    "sentence": "3",
    "number": "3",
    "value": 3.0,
@@ -54000,34 +56114,24 @@
    "value": 4.0,
    "class": "X",
    "why": "list numbering (numbered badge)",
-   "heading": "Consider Your Full Health Picture"
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "region": "main",
-   "sentence": "5",
-   "number": "5",
-   "value": 5.0,
-   "class": "X",
-   "why": "list numbering (numbered badge)",
    "heading": "Account for Age and Sex"
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "6",
-   "number": "6",
-   "value": 6.0,
-   "class": "X",
-   "why": "list numbering (numbered badge)",
-   "heading": "Focus on Direction, Not Position"
+   "sentence": "Technical Report Series 854, 1995.",
+   "number": "854",
+   "value": 854.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "Sources"
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "Am J Clin Nutr 2014;99(4):875–90.",
-   "number": "2014",
-   "value": 2014.0,
+   "sentence": "Technical Report Series 854, 1995.",
+   "number": "1995",
+   "value": 1995.0,
    "class": "D",
    "why": "citation detail",
    "heading": "Sources"
@@ -54035,9 +56139,19 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "Am J Clin Nutr 2014;99(4):875–90.",
-   "number": "99",
-   "value": 99.0,
+   "sentence": "Technical Report Series 894, 2000.",
+   "number": "894",
+   "value": 894.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "Sources"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Technical Report Series 894, 2000.",
+   "number": "2000",
+   "value": 2000.0,
    "class": "D",
    "why": "citation detail",
    "heading": "Sources"
@@ -54045,19 +56159,48 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "Am J Clin Nutr 2014;99(4):875–90.",
-   "number": "4",
-   "value": 4.0,
+   "sentence": "Clinical guidelines on the identification, evaluation, and treatment of overweight and obesity in adults, 1998.",
+   "number": "1998",
+   "value": 1998.0,
    "class": "D",
-   "why": "legal or citation reference",
-   "heading": "Sources"
+   "why": "citation detail",
+   "heading": "Sources",
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "Am J Clin Nutr 2014;99(4):875–90.",
-   "number": "875",
-   "value": 875.0,
+   "sentence": "Body-mass index and all-cause mortality: individual-participant-data meta-analysis of 239 prospective studies in four continents.",
+   "number": "239",
+   "value": 239.0,
+   "class": "D",
+   "why": "citation detail",
+   "heading": "Sources",
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Body-mass index and all-cause mortality: individual-participant-data meta-analysis of 239 prospective studies in four continents.",
+   "number": "four",
+   "value": 4,
+   "class": "D",
+   "why": "citation detail",
+   "heading": "Sources",
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Lancet 2016;388:776–86.",
+   "number": "2016",
+   "value": 2016.0,
    "class": "D",
    "why": "citation detail",
    "heading": "Sources"
@@ -54065,9 +56208,29 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "main",
-   "sentence": "Am J Clin Nutr 2014;99(4):875–90.",
-   "number": "90",
-   "value": 90.0,
+   "sentence": "Lancet 2016;388:776–86.",
+   "number": "388",
+   "value": 388.0,
+   "class": "D",
+   "why": "citation detail",
+   "heading": "Sources"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Lancet 2016;388:776–86.",
+   "number": "776",
+   "value": 776.0,
+   "class": "D",
+   "why": "citation detail",
+   "heading": "Sources"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Lancet 2016;388:776–86.",
+   "number": "86",
+   "value": 86.0,
    "class": "D",
    "why": "citation detail",
    "heading": "Sources"
@@ -54131,6 +56294,162 @@
    "class": "D",
    "why": "citation detail (PMID)",
    "heading": "Sources"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Am J Clin Nutr 2014;99(4):875–90.",
+   "number": "2014",
+   "value": 2014.0,
+   "class": "D",
+   "why": "citation detail",
+   "heading": "Sources"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Am J Clin Nutr 2014;99(4):875–90.",
+   "number": "99",
+   "value": 99.0,
+   "class": "D",
+   "why": "citation detail",
+   "heading": "Sources"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Am J Clin Nutr 2014;99(4):875–90.",
+   "number": "4",
+   "value": 4.0,
+   "class": "D",
+   "why": "legal or citation reference",
+   "heading": "Sources"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Am J Clin Nutr 2014;99(4):875–90.",
+   "number": "875",
+   "value": 875.0,
+   "class": "D",
+   "why": "citation detail",
+   "heading": "Sources"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Am J Clin Nutr 2014;99(4):875–90.",
+   "number": "90",
+   "value": 90.0,
+   "class": "D",
+   "why": "citation detail",
+   "heading": "Sources"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Lancet 2004;363:157–63.",
+   "number": "2004",
+   "value": 2004.0,
+   "class": "D",
+   "why": "citation detail",
+   "heading": "Sources"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Lancet 2004;363:157–63.",
+   "number": "363",
+   "value": 363.0,
+   "class": "D",
+   "why": "citation detail",
+   "heading": "Sources"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Lancet 2004;363:157–63.",
+   "number": "157",
+   "value": 157.0,
+   "class": "D",
+   "why": "citation detail",
+   "heading": "Sources"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Lancet 2004;363:157–63.",
+   "number": "63",
+   "value": 63.0,
+   "class": "D",
+   "why": "citation detail",
+   "heading": "Sources"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Health E-Stat 111 (overweight and obesity, 1960–2023) and Health E-Stat 119 (underweight).",
+   "number": "111",
+   "value": 111.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "Sources",
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm",
+    "https://www.cdc.gov/nchs/data/hestat/hestat119.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Health E-Stat 111 (overweight and obesity, 1960–2023) and Health E-Stat 119 (underweight).",
+   "number": "1960",
+   "value": 1960.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Sources",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm",
+    "https://www.cdc.gov/nchs/data/hestat/hestat119.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Health E-Stat 111 (overweight and obesity, 1960–2023) and Health E-Stat 119 (underweight).",
+   "number": "2023",
+   "value": 2023.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Sources",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm",
+    "https://www.cdc.gov/nchs/data/hestat/hestat119.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "main",
+   "sentence": "Health E-Stat 111 (overweight and obesity, 1960–2023) and Health E-Stat 119 (underweight).",
+   "number": "119",
+   "value": 119.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "Sources",
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm",
+    "https://www.cdc.gov/nchs/data/hestat/hestat119.htm"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
@@ -55696,7 +58015,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "The WHO categories (underweight below 18.5, normal 18.5–24.9, overweight 25–29.9, obese 30+) are used as the international standard.",
+   "sentence": "WHO’s categories are the international ones: underweight below 18.5, normal 18.5–24.9, pre-obese 25–29.9 and obese 30 or more (WHO, 2000).",
    "number": "18.5",
    "value": 18.5,
    "class": "B",
@@ -55708,12 +58027,15 @@
     "page": "18.5 (underweight)",
     "computed": "Severe thinness / Moderate thinness / Underweight in calculator.js",
     "label": "category cut-off (getBMICategory)"
-   }
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "The WHO categories (underweight below 18.5, normal 18.5–24.9, overweight 25–29.9, obese 30+) are used as the international standard.",
+   "sentence": "WHO’s categories are the international ones: underweight below 18.5, normal 18.5–24.9, pre-obese 25–29.9 and obese 30 or more (WHO, 2000).",
    "number": "18.5",
    "value": 18.5,
    "class": "B",
@@ -55726,22 +58048,28 @@
     "computed": "Healthy weight in calculator.js",
     "label": "category cut-off (getBMICategory)",
     "name_differs": "\"normal\" = calculator.js \"Healthy weight\""
-   }
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "The WHO categories (underweight below 18.5, normal 18.5–24.9, overweight 25–29.9, obese 30+) are used as the international standard.",
+   "sentence": "WHO’s categories are the international ones: underweight below 18.5, normal 18.5–24.9, pre-obese 25–29.9 and obese 30 or more (WHO, 2000).",
    "number": "24.9",
    "value": 24.9,
    "class": "B",
    "why": "category cut-off (other bound)",
-   "heading": "FAQ: Are BMI categories the same worldwide?"
+   "heading": "FAQ: Are BMI categories the same worldwide?",
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "The WHO categories (underweight below 18.5, normal 18.5–24.9, overweight 25–29.9, obese 30+) are used as the international standard.",
+   "sentence": "WHO’s categories are the international ones: underweight below 18.5, normal 18.5–24.9, pre-obese 25–29.9 and obese 30 or more (WHO, 2000).",
    "number": "25",
    "value": 25.0,
    "class": "B",
@@ -55750,25 +58078,32 @@
    "check": {
     "status": "ok",
     "kind": "category",
-    "page": "25-29.9 (overweight)",
+    "page": "25-29.9 (pre-obese)",
     "computed": "Overweight in calculator.js",
-    "label": "category cut-off (getBMICategory)"
-   }
+    "label": "category cut-off (getBMICategory)",
+    "name_differs": "\"pre-obese\" = calculator.js \"Overweight\""
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "The WHO categories (underweight below 18.5, normal 18.5–24.9, overweight 25–29.9, obese 30+) are used as the international standard.",
+   "sentence": "WHO’s categories are the international ones: underweight below 18.5, normal 18.5–24.9, pre-obese 25–29.9 and obese 30 or more (WHO, 2000).",
    "number": "29.9",
    "value": 29.9,
    "class": "B",
    "why": "category cut-off (other bound)",
-   "heading": "FAQ: Are BMI categories the same worldwide?"
+   "heading": "FAQ: Are BMI categories the same worldwide?",
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "The WHO categories (underweight below 18.5, normal 18.5–24.9, overweight 25–29.9, obese 30+) are used as the international standard.",
+   "sentence": "WHO’s categories are the international ones: underweight below 18.5, normal 18.5–24.9, pre-obese 25–29.9 and obese 30 or more (WHO, 2000).",
    "number": "30",
    "value": 30.0,
    "class": "B",
@@ -55780,13 +58115,212 @@
     "page": "30 (obese)",
     "computed": "Class 1 obesity / Class 2 obesity / Class 3 obesity in calculator.js",
     "label": "category cut-off (getBMICategory)"
-   }
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "Overweight (BMI 25–29.9) represents excess weight that may or may not be primarily fat.",
-   "number": "25",
+   "sentence": "WHO’s categories are the international ones: underweight below 18.5, normal 18.5–24.9, pre-obese 25–29.9 and obese 30 or more (WHO, 2000).",
+   "number": "2000",
+   "value": 2000.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: Are BMI categories the same worldwide?",
+   "row": {
+    "status": "row",
+    "domain": "who-trs-894-obesity",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "faq-a",
+   "sentence": "A 2004 WHO expert consultation kept them but added lower public-health action points for Asian populations, at 23 and 27.5 (WHO expert consultation, 2004).",
+   "number": "2004",
+   "value": 2004.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: Are BMI categories the same worldwide?",
+   "row": {
+    "status": "row",
+    "domain": "who-2004-asian-bmi",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/14726171/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "faq-a",
+   "sentence": "A 2004 WHO expert consultation kept them but added lower public-health action points for Asian populations, at 23 and 27.5 (WHO expert consultation, 2004).",
+   "number": "23",
+   "value": 23.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Are BMI categories the same worldwide?",
+   "row": {
+    "status": "row",
+    "domain": "who-2004-asian-bmi",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/14726171/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "faq-a",
+   "sentence": "A 2004 WHO expert consultation kept them but added lower public-health action points for Asian populations, at 23 and 27.5 (WHO expert consultation, 2004).",
+   "number": "27.5",
+   "value": 27.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Are BMI categories the same worldwide?",
+   "row": {
+    "status": "row",
+    "domain": "who-2004-asian-bmi",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/14726171/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "faq-a",
+   "sentence": "A 2004 WHO expert consultation kept them but added lower public-health action points for Asian populations, at 23 and 27.5 (WHO expert consultation, 2004).",
+   "number": "2004",
+   "value": 2004.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: Are BMI categories the same worldwide?",
+   "row": {
+    "status": "row",
+    "domain": "who-2004-asian-bmi",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/14726171/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "faq-a",
+   "sentence": "In the UK, NICE uses lower thresholds for adults with a South Asian, Chinese, other Asian, Middle Eastern, Black African or African-Caribbean background: overweight from 23 to 27.4 and obesity from 27.5 (NICE guideline NG246).",
+   "number": "23",
+   "value": 23.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Are BMI categories the same worldwide?",
+   "row": {
+    "status": "row",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   },
+   "links": [
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "faq-a",
+   "sentence": "In the UK, NICE uses lower thresholds for adults with a South Asian, Chinese, other Asian, Middle Eastern, Black African or African-Caribbean background: overweight from 23 to 27.4 and obesity from 27.5 (NICE guideline NG246).",
+   "number": "27.4",
+   "value": 27.4,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Are BMI categories the same worldwide?",
+   "row": {
+    "status": "row",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   },
+   "links": [
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "faq-a",
+   "sentence": "In the UK, NICE uses lower thresholds for adults with a South Asian, Chinese, other Asian, Middle Eastern, Black African or African-Caribbean background: overweight from 23 to 27.4 and obesity from 27.5 (NICE guideline NG246).",
+   "number": "27.5",
+   "value": 27.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Are BMI categories the same worldwide?",
+   "row": {
+    "status": "row",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   },
+   "links": [
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "faq-a",
+   "sentence": "Across whole populations, the two pooled analyses on this page disagree about the overweight range: all-cause mortality was slightly lower than in the healthy range in one (Flegal et al., JAMA 2013) and higher in the other (GBMC, 2016).",
+   "number": "two",
+   "value": 2,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "FAQ: Can you be healthy with an overweight BMI?",
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "faq-a",
+   "sentence": "Across whole populations, the two pooled analyses on this page disagree about the overweight range: all-cause mortality was slightly lower than in the healthy range in one (Flegal et al., JAMA 2013) and higher in the other (GBMC, 2016).",
+   "number": "2013",
+   "value": 2013.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: Can you be healthy with an overweight BMI?",
+   "row": {
+    "status": "row",
+    "domain": "flegal-2013-jama-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "faq-a",
+   "sentence": "Across whole populations, the two pooled analyses on this page disagree about the overweight range: all-cause mortality was slightly lower than in the healthy range in one (Flegal et al., JAMA 2013) and higher in the other (GBMC, 2016).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: Can you be healthy with an overweight BMI?",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "faq-a",
+   "sentence": "Overweight is a BMI of 25.0 to 29.9 and obesity 30.0 or more, in three classes (CDC).",
+   "number": "25.0",
    "value": 25.0,
    "class": "B",
    "why": "category cut-off",
@@ -55794,26 +58328,32 @@
    "check": {
     "status": "ok",
     "kind": "category",
-    "page": "25-29.9 (Overweight)",
+    "page": "25.0 to 29.9 (Overweight)",
     "computed": "Overweight in calculator.js",
     "label": "category cut-off (getBMICategory)"
-   }
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "Overweight (BMI 25–29.9) represents excess weight that may or may not be primarily fat.",
+   "sentence": "Overweight is a BMI of 25.0 to 29.9 and obesity 30.0 or more, in three classes (CDC).",
    "number": "29.9",
    "value": 29.9,
    "class": "B",
    "why": "category cut-off (other bound)",
-   "heading": "FAQ: What is the difference between overweight and obese?"
+   "heading": "FAQ: What is the difference between overweight and obese?",
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "Obesity (BMI 30+) indicates a level of excess weight that is almost always associated with significant excess body fat and clearly elevated health risks.",
-   "number": "30",
+   "sentence": "Overweight is a BMI of 25.0 to 29.9 and obesity 30.0 or more, in three classes (CDC).",
+   "number": "30.0",
    "value": 30.0,
    "class": "B",
    "why": "category cut-off",
@@ -55821,10 +58361,134 @@
    "check": {
     "status": "ok",
     "kind": "category",
-    "page": "30 (Obesity)",
+    "page": "30.0 (obesity)",
     "computed": "Class 1 obesity / Class 2 obesity / Class 3 obesity in calculator.js",
     "label": "category cut-off (getBMICategory)"
-   }
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "faq-a",
+   "sentence": "Overweight is a BMI of 25.0 to 29.9 and obesity 30.0 or more, in three classes (CDC).",
+   "number": "three",
+   "value": 3,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "FAQ: What is the difference between overweight and obese?",
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "faq-a",
+   "sentence": "In US adults in 2021–2023, 31.7% had overweight and 40.3% had obesity (age-adjusted; NCHS).",
+   "number": "2021",
+   "value": 2021.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: What is the difference between overweight and obese?",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "faq-a",
+   "sentence": "In US adults in 2021–2023, 31.7% had overweight and 40.3% had obesity (age-adjusted; NCHS).",
+   "number": "2023",
+   "value": 2023.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: What is the difference between overweight and obese?",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "faq-a",
+   "sentence": "In US adults in 2021–2023, 31.7% had overweight and 40.3% had obesity (age-adjusted; NCHS).",
+   "number": "31.7",
+   "value": 31.7,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQ: What is the difference between overweight and obese?",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "faq-a",
+   "sentence": "In US adults in 2021–2023, 31.7% had overweight and 40.3% had obesity (age-adjusted; NCHS).",
+   "number": "40.3",
+   "value": 40.3,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQ: What is the difference between overweight and obese?",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/data/hestat/hestat111.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "faq-a",
+   "sentence": "In pooled data from 239 studies, the risk of death was higher in each obesity class than in the overweight range (GBMC, 2016).",
+   "number": "239",
+   "value": 239.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: What is the difference between overweight and obese?",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "faq-a",
+   "sentence": "In pooled data from 239 studies, the risk of death was higher in each obesity class than in the overweight range (GBMC, 2016).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: What is the difference between overweight and obese?",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
@@ -55903,7 +58567,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "No. Children and teens (ages 2–19) should never be assessed using adult BMI categories.",
+   "sentence": "No. Because children and teens are growing, CDC expresses their BMI as a percentile against others of the same sex and age, from age 2 through 19 (CDC).",
    "number": "2",
    "value": 2.0,
    "class": "B",
@@ -55915,36 +58579,42 @@
     "page": "2",
     "computed": "calculateKids has \"agemos < 24 || agemos >= 240\"",
     "label": "calculateKids accepts 24 to 239 months (2 to 19 years 11 months)"
-   }
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/child-teen-calculator/bmi-categories.html"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "No. Children and teens (ages 2–19) should never be assessed using adult BMI categories.",
+   "sentence": "No. Because children and teens are growing, CDC expresses their BMI as a percentile against others of the same sex and age, from age 2 through 19 (CDC).",
    "number": "19",
    "value": 19.0,
    "class": "B",
    "why": "the calculator's age range (other end)",
-   "heading": "FAQ: Should children use adult BMI categories?"
+   "heading": "FAQ: Should children use adult BMI categories?",
+   "links": [
+    "https://www.cdc.gov/bmi/child-teen-calculator/bmi-categories.html"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "A 6-year-old with a BMI of 15.5 is perfectly normal, but adult categories would classify them as severely underweight.",
+   "sentence": "A 6-year-old with a BMI of 15.5 is in CDC’s healthy weight category, boys and girls alike, but adult categories would classify them as severely underweight.",
    "number": "6",
    "value": 6.0,
    "class": "B",
-   "why": "the child category and the adult category of BMI 15.5 (manual.json)",
+   "why": "the child category and the adult category of BMI 15.5 (CMB-054: sentence reworded) (manual.json)",
    "heading": "FAQ: Should children use adult BMI categories?"
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "A 6-year-old with a BMI of 15.5 is perfectly normal, but adult categories would classify them as severely underweight.",
+   "sentence": "A 6-year-old with a BMI of 15.5 is in CDC’s healthy weight category, boys and girls alike, but adult categories would classify them as severely underweight.",
    "number": "15.5",
    "value": 15.5,
    "class": "B",
-   "why": "the child category and the adult category of BMI 15.5 (manual.json)",
+   "why": "the child category and the adult category of BMI 15.5 (CMB-054: sentence reworded) (manual.json)",
    "heading": "FAQ: Should children use adult BMI categories?",
    "check": {
     "status": "ok",
@@ -55958,7 +58628,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "Evidence-based strategies include: a sustained, moderate calorie deficit, regular physical activity (the Physical Activity Guidelines for Americans recommend 150–300 minutes of moderate-intensity activity a week; HHS), prioritizing protein and fiber to maintain fullness, strength training to preserve muscle during weight loss, and seeking support from healthcare professionals.",
+   "sentence": "For activity, the Physical Activity Guidelines for Americans say adults need at least 150 to 300 minutes of moderate-intensity aerobic activity a week, plus muscle-strengthening activity on at least 2 days (HHS).",
    "number": "150",
    "value": 150.0,
    "class": "C",
@@ -55976,7 +58646,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "Evidence-based strategies include: a sustained, moderate calorie deficit, regular physical activity (the Physical Activity Guidelines for Americans recommend 150–300 minutes of moderate-intensity activity a week; HHS), prioritizing protein and fiber to maintain fullness, strength training to preserve muscle during weight loss, and seeking support from healthcare professionals.",
+   "sentence": "For activity, the Physical Activity Guidelines for Americans say adults need at least 150 to 300 minutes of moderate-intensity aerobic activity a week, plus muscle-strengthening activity on at least 2 days (HHS).",
    "number": "300",
    "value": 300.0,
    "class": "C",
@@ -55994,7 +58664,38 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "A 5–10% weight loss can produce meaningful health benefits (Wing et al., 2011) even if you do not reach the “normal” BMI range.",
+   "sentence": "For activity, the Physical Activity Guidelines for Americans say adults need at least 150 to 300 minutes of moderate-intensity aerobic activity a week, plus muscle-strengthening activity on at least 2 days (HHS).",
+   "number": "2",
+   "value": 2.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: How do I move to a healthier BMI category?",
+   "row": {
+    "status": "row",
+    "domain": "odphp-physical-activity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "faq-a",
+   "sentence": "In a large trial of adults with overweight or obesity and type 2 diabetes, losing 5–10% of body weight was linked to improvements in blood sugar, blood pressure and cholesterol within a year (Wing et al., 2011).",
+   "number": "2",
+   "value": 2.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "FAQ: How do I move to a healthier BMI category?",
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3120182/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "faq-a",
+   "sentence": "In a large trial of adults with overweight or obesity and type 2 diabetes, losing 5–10% of body weight was linked to improvements in blood sugar, blood pressure and cholesterol within a year (Wing et al., 2011).",
    "number": "5",
    "value": 5.0,
    "class": "C",
@@ -56012,7 +58713,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "A 5–10% weight loss can produce meaningful health benefits (Wing et al., 2011) even if you do not reach the “normal” BMI range.",
+   "sentence": "In a large trial of adults with overweight or obesity and type 2 diabetes, losing 5–10% of body weight was linked to improvements in blood sugar, blood pressure and cholesterol within a year (Wing et al., 2011).",
    "number": "10",
    "value": 10.0,
    "class": "C",
@@ -56030,7 +58731,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "A 5–10% weight loss can produce meaningful health benefits (Wing et al., 2011) even if you do not reach the “normal” BMI range.",
+   "sentence": "In a large trial of adults with overweight or obesity and type 2 diabetes, losing 5–10% of body weight was linked to improvements in blood sugar, blood pressure and cholesterol within a year (Wing et al., 2011).",
    "number": "2011",
    "value": 2011.0,
    "class": "C",
@@ -56048,94 +58749,115 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "Any BMI in the WHO healthy range of 18.5–24.9 is considered healthy for most adults.",
+   "sentence": "CDC counts all of 18.5 to just under 25 as healthy weight (CDC).",
    "number": "18.5",
    "value": 18.5,
-   "class": "B",
-   "why": "category cut-off",
+   "class": "C",
+   "why": "CDC's healthy weight, \"18.5 to less than 25\" (CMB-054) (manual.json)",
    "heading": "FAQ: What is the healthiest BMI to have?",
-   "check": {
-    "status": "ok",
-    "kind": "category",
-    "page": "18.5-24.9 (healthy range)",
-    "computed": "Healthy weight in calculator.js",
-    "label": "category cut-off (getBMICategory)",
-    "name_differs": "\"healthy range\" = calculator.js \"Healthy weight\""
-   }
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-adult-bmi-categories",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "Any BMI in the WHO healthy range of 18.5–24.9 is considered healthy for most adults.",
-   "number": "24.9",
-   "value": 24.9,
-   "class": "B",
-   "why": "category cut-off (other bound)",
-   "heading": "FAQ: What is the healthiest BMI to have?"
+   "sentence": "CDC counts all of 18.5 to just under 25 as healthy weight (CDC).",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "CDC's healthy weight, \"18.5 to less than 25\" (CMB-054) (manual.json)",
+   "heading": "FAQ: What is the healthiest BMI to have?",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-adult-bmi-categories",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "In a pooled analysis of 97 studies, overweight was linked to slightly lower all-cause mortality than the healthy range and BMI 35+ to higher (Flegal et al., JAMA 2013); in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
-   "number": "97",
-   "value": 97.0,
+   "sentence": "Within it, pooled data from 239 studies put the lowest risk of death at 20.0 to 24.9 (GBMC, 2016).",
+   "number": "239",
+   "value": 239.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: What is the healthiest BMI to have?",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "faq-a",
+   "sentence": "Within it, pooled data from 239 studies put the lowest risk of death at 20.0 to 24.9 (GBMC, 2016).",
+   "number": "20.0",
+   "value": 20.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
    "heading": "FAQ: What is the healthiest BMI to have?",
    "row": {
     "status": "row",
-    "domain": "flegal-2013-jama-mortality",
+    "domain": "gbmc-2016-bmi-mortality",
     "how": "link"
    },
    "links": [
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
-    "https://pubmed.ncbi.nlm.nih.gov/24452240/"
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
    ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "In a pooled analysis of 97 studies, overweight was linked to slightly lower all-cause mortality than the healthy range and BMI 35+ to higher (Flegal et al., JAMA 2013); in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
-   "number": "35",
-   "value": 35.0,
-   "class": "B",
-   "why": "category cut-off",
+   "sentence": "Within it, pooled data from 239 studies put the lowest risk of death at 20.0 to 24.9 (GBMC, 2016).",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
    "heading": "FAQ: What is the healthiest BMI to have?",
-   "check": {
-    "status": "ok",
-    "kind": "category",
-    "page": "35 (no category named)",
-    "computed": "Class 2 obesity / Class 3 obesity in calculator.js",
-    "label": "category cut-off (getBMICategory)"
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
    },
    "links": [
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
-    "https://pubmed.ncbi.nlm.nih.gov/24452240/"
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
    ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "In a pooled analysis of 97 studies, overweight was linked to slightly lower all-cause mortality than the healthy range and BMI 35+ to higher (Flegal et al., JAMA 2013); in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
-   "number": "2013",
-   "value": 2013.0,
+   "sentence": "Within it, pooled data from 239 studies put the lowest risk of death at 20.0 to 24.9 (GBMC, 2016).",
+   "number": "2016",
+   "value": 2016.0,
    "class": "C",
    "why": "year",
    "heading": "FAQ: What is the healthiest BMI to have?",
    "row": {
     "status": "row",
-    "domain": "flegal-2013-jama-mortality",
+    "domain": "gbmc-2016-bmi-mortality",
     "how": "link"
    },
    "links": [
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
-    "https://pubmed.ncbi.nlm.nih.gov/24452240/"
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
    ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "In a pooled analysis of 97 studies, overweight was linked to slightly lower all-cause mortality than the healthy range and BMI 35+ to higher (Flegal et al., JAMA 2013); in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
+   "sentence": "Older adults may differ: in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
    "number": "65",
    "value": 65.0,
    "class": "C",
@@ -56147,14 +58869,13 @@
     "how": "link"
    },
    "links": [
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
     "https://pubmed.ncbi.nlm.nih.gov/24452240/"
    ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "In a pooled analysis of 97 studies, overweight was linked to slightly lower all-cause mortality than the healthy range and BMI 35+ to higher (Flegal et al., JAMA 2013); in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
+   "sentence": "Older adults may differ: in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
    "number": "23",
    "value": 23.0,
    "class": "C",
@@ -56166,14 +58887,13 @@
     "how": "link"
    },
    "links": [
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
     "https://pubmed.ncbi.nlm.nih.gov/24452240/"
    ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "In a pooled analysis of 97 studies, overweight was linked to slightly lower all-cause mortality than the healthy range and BMI 35+ to higher (Flegal et al., JAMA 2013); in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
+   "sentence": "Older adults may differ: in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
    "number": "23.9",
    "value": 23.9,
    "class": "C",
@@ -56185,14 +58905,13 @@
     "how": "link"
    },
    "links": [
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
     "https://pubmed.ncbi.nlm.nih.gov/24452240/"
    ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "In a pooled analysis of 97 studies, overweight was linked to slightly lower all-cause mortality than the healthy range and BMI 35+ to higher (Flegal et al., JAMA 2013); in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
+   "sentence": "Older adults may differ: in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
    "number": "23",
    "value": 23.0,
    "class": "C",
@@ -56204,14 +58923,13 @@
     "how": "link"
    },
    "links": [
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
     "https://pubmed.ncbi.nlm.nih.gov/24452240/"
    ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "In a pooled analysis of 97 studies, overweight was linked to slightly lower all-cause mortality than the healthy range and BMI 35+ to higher (Flegal et al., JAMA 2013); in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
+   "sentence": "Older adults may differ: in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
    "number": "33",
    "value": 33.0,
    "class": "C",
@@ -56223,14 +58941,13 @@
     "how": "link"
    },
    "links": [
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
     "https://pubmed.ncbi.nlm.nih.gov/24452240/"
    ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "faq-a",
-   "sentence": "In a pooled analysis of 97 studies, overweight was linked to slightly lower all-cause mortality than the healthy range and BMI 35+ to higher (Flegal et al., JAMA 2013); in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
+   "sentence": "Older adults may differ: in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
    "number": "2014",
    "value": 2014.0,
    "class": "C",
@@ -56242,14 +58959,13 @@
     "how": "link"
    },
    "links": [
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855514/",
     "https://pubmed.ncbi.nlm.nih.gov/24452240/"
    ]
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "The WHO categories (underweight below 18.5, normal 18.5–24.9, overweight 25–29.9, obese 30+) are used as the international standard.",
+   "sentence": "WHO’s categories are the international ones: underweight below 18.5, normal 18.5–24.9, pre-obese 25–29.9 and obese 30 or more (WHO, 2000).",
    "number": "18.5",
    "value": 18.5,
    "class": "B",
@@ -56267,7 +58983,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "The WHO categories (underweight below 18.5, normal 18.5–24.9, overweight 25–29.9, obese 30+) are used as the international standard.",
+   "sentence": "WHO’s categories are the international ones: underweight below 18.5, normal 18.5–24.9, pre-obese 25–29.9 and obese 30 or more (WHO, 2000).",
    "number": "18.5",
    "value": 18.5,
    "class": "B",
@@ -56286,7 +59002,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "The WHO categories (underweight below 18.5, normal 18.5–24.9, overweight 25–29.9, obese 30+) are used as the international standard.",
+   "sentence": "WHO’s categories are the international ones: underweight below 18.5, normal 18.5–24.9, pre-obese 25–29.9 and obese 30 or more (WHO, 2000).",
    "number": "24.9",
    "value": 24.9,
    "class": "B",
@@ -56297,7 +59013,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "The WHO categories (underweight below 18.5, normal 18.5–24.9, overweight 25–29.9, obese 30+) are used as the international standard.",
+   "sentence": "WHO’s categories are the international ones: underweight below 18.5, normal 18.5–24.9, pre-obese 25–29.9 and obese 30 or more (WHO, 2000).",
    "number": "25",
    "value": 25.0,
    "class": "B",
@@ -56307,15 +59023,16 @@
    "check": {
     "status": "ok",
     "kind": "category",
-    "page": "25-29.9 (overweight)",
+    "page": "25-29.9 (pre-obese)",
     "computed": "Overweight in calculator.js",
-    "label": "category cut-off (getBMICategory)"
+    "label": "category cut-off (getBMICategory)",
+    "name_differs": "\"pre-obese\" = calculator.js \"Overweight\""
    }
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "The WHO categories (underweight below 18.5, normal 18.5–24.9, overweight 25–29.9, obese 30+) are used as the international standard.",
+   "sentence": "WHO’s categories are the international ones: underweight below 18.5, normal 18.5–24.9, pre-obese 25–29.9 and obese 30 or more (WHO, 2000).",
    "number": "29.9",
    "value": 29.9,
    "class": "B",
@@ -56326,7 +59043,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "The WHO categories (underweight below 18.5, normal 18.5–24.9, overweight 25–29.9, obese 30+) are used as the international standard.",
+   "sentence": "WHO’s categories are the international ones: underweight below 18.5, normal 18.5–24.9, pre-obese 25–29.9 and obese 30 or more (WHO, 2000).",
    "number": "30",
    "value": 30.0,
    "class": "B",
@@ -56344,8 +59061,179 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "Overweight (BMI 25–29.9) represents excess weight that may or may not be primarily fat.",
-   "number": "25",
+   "sentence": "WHO’s categories are the international ones: underweight below 18.5, normal 18.5–24.9, pre-obese 25–29.9 and obese 30 or more (WHO, 2000).",
+   "number": "2000",
+   "value": 2000.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: Are BMI categories the same worldwide?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "who-trs-894-obesity",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "jsonld",
+   "sentence": "A 2004 WHO expert consultation kept them but added lower public-health action points for Asian populations, at 23 and 27.5 (WHO expert consultation, 2004).",
+   "number": "2004",
+   "value": 2004.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: Are BMI categories the same worldwide?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "who-2004-asian-bmi",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "jsonld",
+   "sentence": "A 2004 WHO expert consultation kept them but added lower public-health action points for Asian populations, at 23 and 27.5 (WHO expert consultation, 2004).",
+   "number": "23",
+   "value": 23.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Are BMI categories the same worldwide?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "who-2004-asian-bmi",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "jsonld",
+   "sentence": "A 2004 WHO expert consultation kept them but added lower public-health action points for Asian populations, at 23 and 27.5 (WHO expert consultation, 2004).",
+   "number": "27.5",
+   "value": 27.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Are BMI categories the same worldwide?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "who-2004-asian-bmi",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "jsonld",
+   "sentence": "A 2004 WHO expert consultation kept them but added lower public-health action points for Asian populations, at 23 and 27.5 (WHO expert consultation, 2004).",
+   "number": "2004",
+   "value": 2004.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: Are BMI categories the same worldwide?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "who-2004-asian-bmi",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "jsonld",
+   "sentence": "In the UK, NICE uses lower thresholds for adults with a South Asian, Chinese, other Asian, Middle Eastern, Black African or African-Caribbean background: overweight from 23 to 27.4 and obesity from 27.5 (NICE guideline NG246).",
+   "number": "23",
+   "value": 23.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Are BMI categories the same worldwide?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "jsonld",
+   "sentence": "In the UK, NICE uses lower thresholds for adults with a South Asian, Chinese, other Asian, Middle Eastern, Black African or African-Caribbean background: overweight from 23 to 27.4 and obesity from 27.5 (NICE guideline NG246).",
+   "number": "27.4",
+   "value": 27.4,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Are BMI categories the same worldwide?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "jsonld",
+   "sentence": "In the UK, NICE uses lower thresholds for adults with a South Asian, Chinese, other Asian, Middle Eastern, Black African or African-Caribbean background: overweight from 23 to 27.4 and obesity from 27.5 (NICE guideline NG246).",
+   "number": "27.5",
+   "value": 27.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Are BMI categories the same worldwide?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "jsonld",
+   "sentence": "Across whole populations, the two pooled analyses on this page disagree about the overweight range: all-cause mortality was slightly lower than in the healthy range in one (Flegal et al., JAMA 2013) and higher in the other (GBMC, 2016).",
+   "number": "two",
+   "value": 2,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "FAQPage JSON-LD: Can you be healthy with an overweight BMI?",
+   "mirror_of": "the visible FAQ answer (same text)"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "jsonld",
+   "sentence": "Across whole populations, the two pooled analyses on this page disagree about the overweight range: all-cause mortality was slightly lower than in the healthy range in one (Flegal et al., JAMA 2013) and higher in the other (GBMC, 2016).",
+   "number": "2013",
+   "value": 2013.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: Can you be healthy with an overweight BMI?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "flegal-2013-jama-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "jsonld",
+   "sentence": "Across whole populations, the two pooled analyses on this page disagree about the overweight range: all-cause mortality was slightly lower than in the healthy range in one (Flegal et al., JAMA 2013) and higher in the other (GBMC, 2016).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: Can you be healthy with an overweight BMI?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "jsonld",
+   "sentence": "Overweight is a BMI of 25.0 to 29.9 and obesity 30.0 or more, in three classes (CDC).",
+   "number": "25.0",
    "value": 25.0,
    "class": "B",
    "why": "category cut-off",
@@ -56354,7 +59242,7 @@
    "check": {
     "status": "ok",
     "kind": "category",
-    "page": "25-29.9 (Overweight)",
+    "page": "25.0 to 29.9 (Overweight)",
     "computed": "Overweight in calculator.js",
     "label": "category cut-off (getBMICategory)"
    }
@@ -56362,7 +59250,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "Overweight (BMI 25–29.9) represents excess weight that may or may not be primarily fat.",
+   "sentence": "Overweight is a BMI of 25.0 to 29.9 and obesity 30.0 or more, in three classes (CDC).",
    "number": "29.9",
    "value": 29.9,
    "class": "B",
@@ -56373,8 +59261,8 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "Obesity (BMI 30+) indicates a level of excess weight that is almost always associated with significant excess body fat and clearly elevated health risks.",
-   "number": "30",
+   "sentence": "Overweight is a BMI of 25.0 to 29.9 and obesity 30.0 or more, in three classes (CDC).",
+   "number": "30.0",
    "value": 30.0,
    "class": "B",
    "why": "category cut-off",
@@ -56383,9 +59271,116 @@
    "check": {
     "status": "ok",
     "kind": "category",
-    "page": "30 (Obesity)",
+    "page": "30.0 (obesity)",
     "computed": "Class 1 obesity / Class 2 obesity / Class 3 obesity in calculator.js",
     "label": "category cut-off (getBMICategory)"
+   }
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "jsonld",
+   "sentence": "Overweight is a BMI of 25.0 to 29.9 and obesity 30.0 or more, in three classes (CDC).",
+   "number": "three",
+   "value": 3,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "FAQPage JSON-LD: What is the difference between overweight and obese?",
+   "mirror_of": "the visible FAQ answer (same text)"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "jsonld",
+   "sentence": "In US adults in 2021–2023, 31.7% had overweight and 40.3% had obesity (age-adjusted; NCHS).",
+   "number": "2021",
+   "value": 2021.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: What is the difference between overweight and obese?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "jsonld",
+   "sentence": "In US adults in 2021–2023, 31.7% had overweight and 40.3% had obesity (age-adjusted; NCHS).",
+   "number": "2023",
+   "value": 2023.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: What is the difference between overweight and obese?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "jsonld",
+   "sentence": "In US adults in 2021–2023, 31.7% had overweight and 40.3% had obesity (age-adjusted; NCHS).",
+   "number": "31.7",
+   "value": 31.7,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQPage JSON-LD: What is the difference between overweight and obese?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "jsonld",
+   "sentence": "In US adults in 2021–2023, 31.7% had overweight and 40.3% had obesity (age-adjusted; NCHS).",
+   "number": "40.3",
+   "value": 40.3,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQPage JSON-LD: What is the difference between overweight and obese?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "jsonld",
+   "sentence": "In pooled data from 239 studies, the risk of death was higher in each obesity class than in the overweight range (GBMC, 2016).",
+   "number": "239",
+   "value": 239.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: What is the difference between overweight and obese?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "jsonld",
+   "sentence": "In pooled data from 239 studies, the risk of death was higher in each obesity class than in the overweight range (GBMC, 2016).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: What is the difference between overweight and obese?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
    }
   },
   {
@@ -56457,7 +59452,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "No. Children and teens (ages 2–19) should never be assessed using adult BMI categories.",
+   "sentence": "No. Because children and teens are growing, CDC expresses their BMI as a percentile against others of the same sex and age, from age 2 through 19 (CDC).",
    "number": "2",
    "value": 2.0,
    "class": "B",
@@ -56475,7 +59470,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "No. Children and teens (ages 2–19) should never be assessed using adult BMI categories.",
+   "sentence": "No. Because children and teens are growing, CDC expresses their BMI as a percentile against others of the same sex and age, from age 2 through 19 (CDC).",
    "number": "19",
    "value": 19.0,
    "class": "B",
@@ -56486,22 +59481,22 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "A 6-year-old with a BMI of 15.5 is perfectly normal, but adult categories would classify them as severely underweight.",
+   "sentence": "A 6-year-old with a BMI of 15.5 is in CDC’s healthy weight category, boys and girls alike, but adult categories would classify them as severely underweight.",
    "number": "6",
    "value": 6.0,
    "class": "B",
-   "why": "the child category and the adult category of BMI 15.5 (manual.json)",
+   "why": "the child category and the adult category of BMI 15.5 (CMB-054: sentence reworded) (manual.json)",
    "heading": "FAQPage JSON-LD: Should children use adult BMI categories?",
    "mirror_of": "the visible FAQ answer (same text)"
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "A 6-year-old with a BMI of 15.5 is perfectly normal, but adult categories would classify them as severely underweight.",
+   "sentence": "A 6-year-old with a BMI of 15.5 is in CDC’s healthy weight category, boys and girls alike, but adult categories would classify them as severely underweight.",
    "number": "15.5",
    "value": 15.5,
    "class": "B",
-   "why": "the child category and the adult category of BMI 15.5 (manual.json)",
+   "why": "the child category and the adult category of BMI 15.5 (CMB-054: sentence reworded) (manual.json)",
    "heading": "FAQPage JSON-LD: Should children use adult BMI categories?",
    "mirror_of": "the visible FAQ answer (same text)",
    "check": {
@@ -56516,7 +59511,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "Evidence-based strategies include: a sustained, moderate calorie deficit, regular physical activity (the Physical Activity Guidelines for Americans recommend 150–300 minutes of moderate-intensity activity a week; HHS), prioritizing protein and fiber to maintain fullness, strength training to preserve muscle during weight loss, and seeking support from healthcare professionals.",
+   "sentence": "For activity, the Physical Activity Guidelines for Americans say adults need at least 150 to 300 minutes of moderate-intensity aerobic activity a week, plus muscle-strengthening activity on at least 2 days (HHS).",
    "number": "150",
    "value": 150.0,
    "class": "C",
@@ -56532,7 +59527,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "Evidence-based strategies include: a sustained, moderate calorie deficit, regular physical activity (the Physical Activity Guidelines for Americans recommend 150–300 minutes of moderate-intensity activity a week; HHS), prioritizing protein and fiber to maintain fullness, strength training to preserve muscle during weight loss, and seeking support from healthcare professionals.",
+   "sentence": "For activity, the Physical Activity Guidelines for Americans say adults need at least 150 to 300 minutes of moderate-intensity aerobic activity a week, plus muscle-strengthening activity on at least 2 days (HHS).",
    "number": "300",
    "value": 300.0,
    "class": "C",
@@ -56548,7 +59543,34 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "A 5–10% weight loss can produce meaningful health benefits (Wing et al., 2011) even if you do not reach the “normal” BMI range.",
+   "sentence": "For activity, the Physical Activity Guidelines for Americans say adults need at least 150 to 300 minutes of moderate-intensity aerobic activity a week, plus muscle-strengthening activity on at least 2 days (HHS).",
+   "number": "2",
+   "value": 2.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: How do I move to a healthier BMI category?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "odphp-physical-activity-guidelines",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "jsonld",
+   "sentence": "In a large trial of adults with overweight or obesity and type 2 diabetes, losing 5–10% of body weight was linked to improvements in blood sugar, blood pressure and cholesterol within a year (Wing et al., 2011).",
+   "number": "2",
+   "value": 2.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "FAQPage JSON-LD: How do I move to a healthier BMI category?",
+   "mirror_of": "the visible FAQ answer (same text)"
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "jsonld",
+   "sentence": "In a large trial of adults with overweight or obesity and type 2 diabetes, losing 5–10% of body weight was linked to improvements in blood sugar, blood pressure and cholesterol within a year (Wing et al., 2011).",
    "number": "5",
    "value": 5.0,
    "class": "C",
@@ -56564,7 +59586,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "A 5–10% weight loss can produce meaningful health benefits (Wing et al., 2011) even if you do not reach the “normal” BMI range.",
+   "sentence": "In a large trial of adults with overweight or obesity and type 2 diabetes, losing 5–10% of body weight was linked to improvements in blood sugar, blood pressure and cholesterol within a year (Wing et al., 2011).",
    "number": "10",
    "value": 10.0,
    "class": "C",
@@ -56580,7 +59602,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "A 5–10% weight loss can produce meaningful health benefits (Wing et al., 2011) even if you do not reach the “normal” BMI range.",
+   "sentence": "In a large trial of adults with overweight or obesity and type 2 diabetes, losing 5–10% of body weight was linked to improvements in blood sugar, blood pressure and cholesterol within a year (Wing et al., 2011).",
    "number": "2011",
    "value": 2011.0,
    "class": "C",
@@ -56596,87 +59618,103 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "Any BMI in the WHO healthy range of 18.5–24.9 is considered healthy for most adults.",
+   "sentence": "CDC counts all of 18.5 to just under 25 as healthy weight (CDC).",
    "number": "18.5",
    "value": 18.5,
-   "class": "B",
-   "why": "category cut-off",
+   "class": "C",
+   "why": "CDC's healthy weight, \"18.5 to less than 25\" (CMB-054) (manual.json)",
    "heading": "FAQPage JSON-LD: What is the healthiest BMI to have?",
    "mirror_of": "the visible FAQ answer (same text)",
-   "check": {
-    "status": "ok",
-    "kind": "category",
-    "page": "18.5-24.9 (healthy range)",
-    "computed": "Healthy weight in calculator.js",
-    "label": "category cut-off (getBMICategory)",
-    "name_differs": "\"healthy range\" = calculator.js \"Healthy weight\""
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-adult-bmi-categories",
+    "how": "manual.json"
    }
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "Any BMI in the WHO healthy range of 18.5–24.9 is considered healthy for most adults.",
-   "number": "24.9",
-   "value": 24.9,
-   "class": "B",
-   "why": "category cut-off (other bound)",
+   "sentence": "CDC counts all of 18.5 to just under 25 as healthy weight (CDC).",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "CDC's healthy weight, \"18.5 to less than 25\" (CMB-054) (manual.json)",
    "heading": "FAQPage JSON-LD: What is the healthiest BMI to have?",
-   "mirror_of": "the visible FAQ answer (same text)"
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-adult-bmi-categories",
+    "how": "manual.json"
+   }
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "In a pooled analysis of 97 studies, overweight was linked to slightly lower all-cause mortality than the healthy range and BMI 35+ to higher (Flegal et al., JAMA 2013); in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
-   "number": "97",
-   "value": 97.0,
+   "sentence": "Within it, pooled data from 239 studies put the lowest risk of death at 20.0 to 24.9 (GBMC, 2016).",
+   "number": "239",
+   "value": 239.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: What is the healthiest BMI to have?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-categories/",
+   "region": "jsonld",
+   "sentence": "Within it, pooled data from 239 studies put the lowest risk of death at 20.0 to 24.9 (GBMC, 2016).",
+   "number": "20.0",
+   "value": 20.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
    "heading": "FAQPage JSON-LD: What is the healthiest BMI to have?",
    "mirror_of": "the visible FAQ answer (same text)",
    "row": {
     "status": "row",
-    "domain": "flegal-2013-jama-mortality",
+    "domain": "gbmc-2016-bmi-mortality",
     "how": "link"
    }
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "In a pooled analysis of 97 studies, overweight was linked to slightly lower all-cause mortality than the healthy range and BMI 35+ to higher (Flegal et al., JAMA 2013); in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
-   "number": "35",
-   "value": 35.0,
-   "class": "B",
-   "why": "category cut-off",
+   "sentence": "Within it, pooled data from 239 studies put the lowest risk of death at 20.0 to 24.9 (GBMC, 2016).",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
    "heading": "FAQPage JSON-LD: What is the healthiest BMI to have?",
    "mirror_of": "the visible FAQ answer (same text)",
-   "check": {
-    "status": "ok",
-    "kind": "category",
-    "page": "35 (no category named)",
-    "computed": "Class 2 obesity / Class 3 obesity in calculator.js",
-    "label": "category cut-off (getBMICategory)"
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
    }
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "In a pooled analysis of 97 studies, overweight was linked to slightly lower all-cause mortality than the healthy range and BMI 35+ to higher (Flegal et al., JAMA 2013); in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
-   "number": "2013",
-   "value": 2013.0,
+   "sentence": "Within it, pooled data from 239 studies put the lowest risk of death at 20.0 to 24.9 (GBMC, 2016).",
+   "number": "2016",
+   "value": 2016.0,
    "class": "C",
    "why": "year",
    "heading": "FAQPage JSON-LD: What is the healthiest BMI to have?",
    "mirror_of": "the visible FAQ answer (same text)",
    "row": {
     "status": "row",
-    "domain": "flegal-2013-jama-mortality",
+    "domain": "gbmc-2016-bmi-mortality",
     "how": "link"
    }
   },
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "In a pooled analysis of 97 studies, overweight was linked to slightly lower all-cause mortality than the healthy range and BMI 35+ to higher (Flegal et al., JAMA 2013); in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
+   "sentence": "Older adults may differ: in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
    "number": "65",
    "value": 65.0,
    "class": "C",
@@ -56692,7 +59730,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "In a pooled analysis of 97 studies, overweight was linked to slightly lower all-cause mortality than the healthy range and BMI 35+ to higher (Flegal et al., JAMA 2013); in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
+   "sentence": "Older adults may differ: in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
    "number": "23",
    "value": 23.0,
    "class": "C",
@@ -56708,7 +59746,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "In a pooled analysis of 97 studies, overweight was linked to slightly lower all-cause mortality than the healthy range and BMI 35+ to higher (Flegal et al., JAMA 2013); in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
+   "sentence": "Older adults may differ: in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
    "number": "23.9",
    "value": 23.9,
    "class": "C",
@@ -56724,7 +59762,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "In a pooled analysis of 97 studies, overweight was linked to slightly lower all-cause mortality than the healthy range and BMI 35+ to higher (Flegal et al., JAMA 2013); in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
+   "sentence": "Older adults may differ: in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
    "number": "23",
    "value": 23.0,
    "class": "C",
@@ -56740,7 +59778,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "In a pooled analysis of 97 studies, overweight was linked to slightly lower all-cause mortality than the healthy range and BMI 35+ to higher (Flegal et al., JAMA 2013); in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
+   "sentence": "Older adults may differ: in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
    "number": "33",
    "value": 33.0,
    "class": "C",
@@ -56756,7 +59794,7 @@
   {
    "page": "/blog/bmi-categories/",
    "region": "jsonld",
-   "sentence": "In a pooled analysis of 97 studies, overweight was linked to slightly lower all-cause mortality than the healthy range and BMI 35+ to higher (Flegal et al., JAMA 2013); in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
+   "sentence": "Older adults may differ: in adults 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter 2014 meta-analysis).",
    "number": "2014",
    "value": 2014.0,
    "class": "C",
