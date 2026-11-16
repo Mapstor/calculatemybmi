@@ -12,7 +12,7 @@ page,template,s,s_value,p,p_value,d,d_value,date
 /ideal-weight/,research/ideal-weight-build/gen_iw.py; assets/js/calculator.js (results),pass,"page test 10,962 checks, 0 failures, 0 skipped",pass,"0/1k (0 tells, 1907 words)",pass,"detector 390: 0, 390 results: 0, 1280: 0, 1280 results: 0",2026-11-14
 /lean-body-mass/,assets/js/calculator.js (results),pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 2127 words)",pass,"detector 390: 0, 390 results: 0, 1280: 0, 1280 results: 0",2026-11-16
 /new-bmi-calculator/,research/new-bmi-build/gen_nb.py; assets/js/calculator.js (results),pass,"page test 3,374 checks, 0 failures, 0 skipped",pass,"0/1k (0 tells, 1782 words)",pass,"detector 390: 0, 390 results: 0, 1280: 0, 1280 results: 0",2026-11-14
-/blog/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 480 words)",pass,"detector 390: 0, 1280: 0",2026-11-14
+/blog/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 491 words)",pass,"detector 390: 0, 1280: 0",2026-11-16
 /blog/what-is-bmi/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 1055 words)",pass,"detector 390: 0, 1280: 0",2026-11-14
 /blog/bmi-formula/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 2232 words)",pass,"detector 390: 0, 1280: 0",2026-11-16
 /blog/bmi-history/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 2647 words)",pass,"detector 390: 0, 1280: 0",2026-11-16
@@ -20,7 +20,7 @@ page,template,s,s_value,p,p_value,d,d_value,date
 /blog/bmi-categories/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 3007 words)",pass,"detector 390: 0, 1280: 0",2026-11-16
 /blog/bmi-chart-explained/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0.7/1k (2 tells, 2910 words: sales 1, about-the-page 1)",pass,"detector 390: 0, 1280: 0",2026-11-16
 /blog/bmi-and-health-risks/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 2493 words)",pass,"detector 390: 0, 1280: 0",2026-11-14
-/blog/underweight-bmi-risks/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0.6/1k (1 tells, 1785 words: about-the-page 1)",pass,"detector 390: 0, 1280: 0",2026-11-16
+/blog/underweight-bmi-risks/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0.6/1k (1 tells, 1786 words: about-the-page 1)",pass,"detector 390: 0, 1280: 0",2026-11-16
 /blog/bmi-limitations/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 2039 words)",pass,"detector 390: 0, 1280: 0",2026-11-16
 /blog/bmi-and-metabolism/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 2325 words)",pass,"detector 390: 0, 1280: 0",2026-11-16
 /blog/body-fat-vs-bmi/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 1128 words)",pass,"detector 390: 0, 1280: 0",2026-11-16
@@ -30,7 +30,7 @@ page,template,s,s_value,p,p_value,d,d_value,date
 /blog/bmi-tracking-guide/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 1241 words)",pass,"detector 390: 0, 1280: 0",2026-11-16
 /blog/bmi-chart-women/,,pass,"page test 604 checks, 0 failures",pass,"0/1k (0 tells, 2903 words)",pass,"detector 390: 0, 1280: 0",2026-11-14
 /blog/bmi-chart-men/,,pass,"page test 921 checks, 0 failures",pass,"0/1k (0 tells, 3433 words)",pass,"detector 390: 0, 1280: 0",2026-11-14
-/blog/bmi-by-age/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 635 words)",pass,"detector 390: 0, 1280: 0",2026-11-14
+/blog/bmi-by-age/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 639 words)",pass,"detector 390: 0, 1280: 0",2026-11-16
 /bmi-chart/,,pass,"page test 1,086 checks, 0 failures",pass,"0/1k (0 tells, 3102 words)",pass,"detector 390: 0, 1280: 0",2026-11-14
 /us-obesity-statistics/,,pass,"page test 589 checks, 0 failures",pass,"0/1k (0 tells, 3487 words)",pass,"detector 390: 0, 390 results: 0, 1280: 0, 1280 results: 0",2026-11-14
 /obesity-rate-by-state/,,pass,"audit 0 mismatches, 0 no row, 0 not in row",pass,"0/1k (0 tells, 1681 words)",pass,"detector 390: 0, 1280: 0",2026-11-14

@@ -6,7 +6,11 @@ A sentence is a hit when it holds a trigger (TRIGGERS below) and neither it nor 
 <td>, <figcaption> or FAQ answer it sits in) carries a source mark: a link to an outside page, or a citation in
 brackets that names a source the registry holds (CDC, NIH, NHLBI, WHO, NCHS, NIDDK, ADA, an author with a year).
 --all lists every trigger sentence, sourced or not (the sourced ones marked), for a sentence-by-sentence read.
-The probe finds candidates; a person reads each one against the registry row it cites (D-10, §4)."""
+The probe finds candidates; a person reads each one against the registry row it cites (D-10, §4).
+CMB-064: hits that were read and kept (a heading or label over a sourced section, a quote its sentence attributes, a
+claim whose source sits in the paragraph before) are listed in reviewed.json with the reason; they print as [read] and
+are counted apart, as are the legal pages (OUT_OF_SCOPE). "to read" in the last line is what is left for the pass.
+A reviewed.json entry that no longer matches a hit is reported as stale (the sentence changed: read it again)."""
 import argparse
 import html
 import json
@@ -15,6 +19,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+REVIEWED = Path(__file__).resolve().parent / 'reviewed.json'
+OUT_OF_SCOPE = ('/terms/', '/privacy/', '/contact/')          # legal pages (DEVLOG §5 P1)
 TRIGGERS = [
     r'has been shown', r'\bshown to\b', r'\bproven\b', r'\bstudies (?:show|suggest|find|found|have)\b',
     r'\bresearch (?:shows|suggests|finds|found|has)\b', r'\bevidence\b', r'\blinked (?:to|with)\b', r'\bassociated with\b',
@@ -105,19 +111,41 @@ def main():
     ap.add_argument('--all', action='store_true')
     a = ap.parse_args()
     pages = a.pages.split(',') if a.pages else pages_from_sitemap()
+    reviewed = {}
+    if REVIEWED.exists():
+        for e in json.loads(REVIEWED.read_text(encoding='utf-8'))['entries']:
+            reviewed[(e['page'], e['sentence'])] = e['why']
     res, total = {}, 0
     for p in pages:
         h = probe(p, a.all)
+        for x in h:
+            if not a.all and (p, x['sentence']) in reviewed:
+                x['read'] = reviewed[(p, x['sentence'])]
         res[p] = h
         total += len(h)
+    n_read = sum(1 for h in res.values() for x in h if x.get('read'))
+    n_legal = sum(len(h) for p, h in res.items() if p in OUT_OF_SCOPE)
     for p, h in sorted(res.items(), key=lambda kv: -len(kv[1])):
         if not h:
             continue
-        print(f'{len(h):3d}  {p}')
+        r = sum(1 for x in h if x.get('read'))
+        note = ' (legal page, out of scope)' if p in OUT_OF_SCOPE else f' ({r} read and kept)' if r else ''
+        print(f'{len(h):3d}  {p}{note}')
         for x in h:
-            mark = '' if not a.all else ('[S] ' if x['sourced'] else '[B] ' if x['block_sourced'] else '[ ] ')
+            mark = ('[read] ' if x.get('read') else '') if not a.all else (
+                '[S] ' if x['sourced'] else '[B] ' if x['block_sourced'] else '[ ] ')
             print(f'       {mark}<{x["tag"]}> ({x["trigger"]}) {x["sentence"][:220]}')
     print(f'{total} hits on {sum(1 for h in res.values() if h)} of {len(pages)} pages')
+    if not a.all:
+        print(f'{n_read} read and kept (reviewed.json), {n_legal} on the legal pages (out of scope), '
+              f'{total - n_read - n_legal} to read')
+        if not a.pages:
+            seen = {(p, x['sentence']) for p, h in res.items() for x in h}
+            stale = [k for k in reviewed if k not in seen]
+            if stale:
+                print(f'reviewed.json: {len(stale)} entries match no hit (the sentence changed or went; read again):')
+                for p, st in stale:
+                    print(f'       {p}  {st[:160]}')
     if a.json:
         Path(a.json).write_text(json.dumps(res, indent=1, ensure_ascii=False), encoding='utf-8')
     return 0

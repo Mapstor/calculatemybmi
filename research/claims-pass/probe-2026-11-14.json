@@ -148,14 +148,16 @@
    "trigger": "evidence",
    "sentence": "The evidence behind each risk is in BMI and health risks ; for a BMI under 18.5, see underweight BMI risks .",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "a pointer to the two sourced risk guides; it claims nothing itself"
   },
   {
    "tag": "h3",
    "trigger": "health care provider",
    "sentence": "Talking with a health care provider",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "heading over CDC's own line from its Adult BMI Calculator page (cdc-adult-bmi-categories, §4)"
   }
  ],
  "/age-bmi-calculator/": [
@@ -164,7 +166,8 @@
    "trigger": "lead to",
    "sentence": "Muscle mass tends to fall with age, so the same BMI can mean more body fat; the American Diabetes Association notes that this may lead to obesity being missed in older adults.",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "the ADA Standards' line, named in the sentence: loss of muscle mass in older adults \"may lead to underdiagnosis of obesity\" (ada-2026-obesity-standards)"
   }
  ],
  "/kids-bmi-calculator/": [
@@ -173,7 +176,8 @@
    "trigger": "shown to",
    "sentence": "BMI is CDC’s formula (US units × 703, or kg/m²), shown to 0.1.",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "\"shown to\" is the display precision, not a study claim; the formula is CDC's (cdc-calculating-bmi)"
   }
  ],
  "/ideal-weight/": [
@@ -182,21 +186,24 @@
    "trigger": "Clinicians",
    "sentence": "Clinicians still use IBW equations “to calculate drug dosing, to estimate overweight and underweight statuses, and to calculate nutrient intakes,” Peterson and colleagues write.",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "a quote the sentence attributes to Peterson and colleagues (peterson-2016-ibw)"
   },
   {
    "tag": "p",
    "trigger": "associated with",
    "sentence": "Peterson and colleagues write that it “was originally defined as the weight associated with the greatest life expectancy at each height” and that “IBW equations are still being used by clinicians to calculate drug dosing, to estimate overweight and underweight statuses, and to calculate nutrient intakes.”",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "quotes the sentence attributes to Peterson and colleagues (peterson-2016-ibw)"
   },
   {
    "tag": "p",
    "trigger": "clinicians",
    "sentence": "Pai and Paloucek concluded that “any one of these equations may be used to estimate IBW.” Robinson and colleagues found that estimates “obtained by the widely used empirical method probably contain only minor errors.” Peterson and colleagues point out that the equations give a single weight, where most clinicians favor a range.",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "quotes the sentences attribute to Pai and Paloucek, Robinson and colleagues, and Peterson and colleagues (pai-paloucek-2000-ibw, robinson-1983-ibw, peterson-2016-ibw)"
   }
  ],
  "/lean-body-mass/": [],
@@ -206,58 +213,50 @@
    "trigger": "improvement",
    "sentence": "Trefethen says his formula is “not based on epidemiological studies” and may not be an improvement.",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "Trefethen's own words, quoted and attributed (trefethen-new-bmi)"
   },
   {
    "tag": "p",
    "trigger": "doctor",
    "sentence": "“I am an applied mathematician, not a doctor or an epidemiologist,” he writes, and the new formulas are “not based on epidemiological studies” and may not be an improvement.",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "Trefethen's own words, quoted and attributed (trefethen-new-bmi)"
   },
   {
    "tag": "p",
    "trigger": "doctor",
    "sentence": "He describes himself there as “an applied mathematician, not a doctor or an epidemiologist.”",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "Trefethen's own words, quoted and attributed (trefethen-new-bmi)"
   },
   {
    "tag": "p",
    "trigger": "improvement",
    "sentence": "He writes that his formulas are “not based on epidemiological studies” and may not be an improvement, and he points to a 2007 paper by Heymsfield and colleagues in the American Journal of Clinical Nutrition that supports the exponent 2.",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "Trefethen's own words and his pointer to Heymsfield et al. 2007 (trefethen-new-bmi)"
   }
  ],
  "/blog/": [
   {
    "tag": "p",
-   "trigger": "recommendations",
-   "sentence": "Everything on this site is informational — we do not provide medical treatment content, medication guidance, or surgical recommendations.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "clinician",
-   "sentence": "Those decisions belong with a qualified clinician.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
    "trigger": "research found",
    "sentence": "Why the adult cut-offs stay the same at every age, and what research found for adults over 65.",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "the hub card's summary of /blog/bmi-by-age/, which cites Winter et al. 2014 (winter-2014-bmi-mortality-65)"
   },
   {
    "tag": "p",
    "trigger": "see a",
    "sentence": "Calorie deficit, diet, activity, sleep, plateaus and when to see a doctor.",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "the hub card's summary of /blog/how-to-lower-bmi/, whose provider lines are CDC's and NIMH's own \"when\" (cdc-losing-weight, nimh-eating-disorders)"
   }
  ],
  "/blog/what-is-bmi/": [
@@ -266,14 +265,16 @@
    "trigger": "doctors",
    "sentence": "How doctors use BMI",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "heading over the 1998 US guidelines' three-part assessment: BMI, waist and risk factors (nhlbi-1998-obesity-guidelines)"
   },
   {
    "tag": "h2",
    "trigger": "doctors",
    "sentence": "How doctors use BMI",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "heading over the 1998 US guidelines' three-part assessment: BMI, waist and risk factors (nhlbi-1998-obesity-guidelines)"
   }
  ],
  "/blog/bmi-formula/": [],
@@ -283,14 +284,16 @@
    "trigger": "Expert",
    "sentence": "WHO Expert Committee.",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "an author name in the reference list (WHO TRS 854, who-trs-854)"
   },
   {
    "tag": "li",
    "trigger": "Expert",
    "sentence": "WHO Expert Consultation.",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "an author name in the reference list (who-2004-asian-bmi)"
   }
  ],
  "/blog/healthy-bmi-range/": [
@@ -299,28 +302,32 @@
    "trigger": "protective",
    "sentence": "Crude analyses that ignored smoking and existing disease gave exaggerated risks for underweight and inverted ones for overweight, so overweight looked protective.",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "GBMC 2016, linked in the paragraph before; worded as the paper puts it (gbmc-2016-bmi-mortality, CMB-064 note)"
   },
   {
    "tag": "p",
    "trigger": "lower risk",
    "sentence": "The authors could reproduce a 2013 review’s finding that overweight carried a lower risk of death in analyses with inadequate control for these biases, but not in the strict one.",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "GBMC 2016, linked in the paragraph before; worded as the paper puts it (gbmc-2016-bmi-mortality, CMB-064 note)"
   },
   {
    "tag": "figcaption",
    "trigger": "higher risk",
    "sentence": "Hazard ratio for death by BMI band among 3,951,455 never-smokers without chronic disease; 1.20 means a 20% higher risk than at 22.5 to 24.9.",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "the chart caption: GBMC 2016's hazard ratios and sample (gbmc-2016-bmi-mortality)"
   },
   {
    "tag": "p",
    "trigger": "cause",
    "sentence": "Per 5 BMI units above 25, the risk of death in never-smokers was 39% higher in Europe and in East Asia, 31% in Australia and New Zealand and 29% in North America; the authors write that “the associations of both overweight and obesity with higher all-cause mortality were broadly consistent in four continents”.",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "GBMC 2016's regional hazard ratios (1.39, 1.31, 1.29) and its own interpretation, quoted (gbmc-2016-bmi-mortality)"
   }
  ],
  "/blog/bmi-categories/": [],
@@ -332,42 +339,40 @@
    "trigger": "Causes",
    "sentence": "Causes of Being Underweight",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "heading (and its contents entry) over MedlinePlus's causes of unintentional weight loss (medlineplus-unintentional-weight-loss)"
   },
   {
    "tag": "li",
    "trigger": "See a",
    "sentence": "When to See a Doctor",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "heading (and its contents entry) over MedlinePlus's and NIMH's own \"when\" lines (medlineplus-unintentional-weight-loss, nimh-eating-disorders; §4)"
   },
   {
    "tag": "h2",
    "trigger": "Causes",
    "sentence": "Causes of Being Underweight",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "heading (and its contents entry) over MedlinePlus's causes of unintentional weight loss (medlineplus-unintentional-weight-loss)"
   },
   {
    "tag": "h2",
    "trigger": "See a",
    "sentence": "When to See a Doctor",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "heading (and its contents entry) over MedlinePlus's and NIMH's own \"when\" lines (medlineplus-unintentional-weight-loss, nimh-eating-disorders; §4)"
   },
   {
    "tag": "p",
    "trigger": "See a",
    "sentence": "For when to contact a provider, see When to See a Doctor .",
    "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "h4",
-   "trigger": "Improving",
-   "sentence": "Improving Your BMI",
-   "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "the disclaimer's pointer to that section"
   }
  ],
  "/blog/bmi-limitations/": [],
@@ -379,14 +384,16 @@
    "trigger": "studies show",
    "sentence": "What the studies show",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "heading (and its contents entry) over Provencher et al. 2018 and Lambert et al. 2012 (provencher-2018-nfl-combine, lambert-2012-football-dxa)"
   },
   {
    "tag": "h2",
    "trigger": "studies show",
    "sentence": "What the studies show",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "heading (and its contents entry) over Provencher et al. 2018 and Lambert et al. 2012 (provencher-2018-nfl-combine, lambert-2012-football-dxa)"
   }
  ],
  "/blog/waist-to-height-ratio/": [],
@@ -396,14 +403,16 @@
    "trigger": "Recommendations",
    "sentence": "Exercise Recommendations",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "heading (and its contents entry) over the Physical Activity Guidelines' own recommendations (odphp-physical-activity-guidelines)"
   },
   {
    "tag": "h2",
    "trigger": "Recommendations",
    "sentence": "Exercise Recommendations for Lowering BMI",
    "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "heading (and its contents entry) over the Physical Activity Guidelines' own recommendations (odphp-physical-activity-guidelines)"
   }
  ],
  "/blog/bmi-tracking-guide/": [],
@@ -415,14 +424,8 @@
    "trigger": "evidence",
    "sentence": "This guide explains what the category bodies actually publish, shows how obesity prevalence varies by age in the US, and covers the observational evidence for adults aged 65 and over.",
    "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "higher risk",
-   "sentence": "A meta-analysis of adults aged 65 and over found a higher risk of death below a BMI of 23, but the published categories themselves don’t shift.",
-   "sourced": false,
-   "block_sourced": false
+   "block_sourced": false,
+   "read": "the promise line; the 65-and-over evidence it promises is Winter et al. 2014, cited where it is given (winter-2014-bmi-mortality-65)"
   }
  ],
  "/bmi-chart/": [],

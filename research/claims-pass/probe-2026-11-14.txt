@@ -1,4 +1,4 @@
- 13  /terms/
+ 13  /terms/ (legal page, out of scope)
        <p> (Effective) Effective Date: January 28, 2026 | Last Updated: October 11, 2026
        <p> (professional) It is not intended to be a substitute for professional medical advice, diagnosis, or treatment .
        <p> (physician) Always seek the advice of your physician, qualified health provider, or other qualified medical professional with any questions you may have regarding a medical condition, your weight, your body composition, or your over
@@ -12,60 +12,57 @@
        <p> (effective) Any changes will be effective immediately upon posting the updated Terms on this page, with the "Last Updated" date revised accordingly.
        <p> (cause) Any cause of action or claim you may have arising out of or relating to these Terms or the Site must be commenced within one (1) year after the cause of action accrues.
        <p> (cause) Otherwise, such cause of action or claim is permanently barred.
-  6  /blog/underweight-bmi-risks/
-       <li> (Causes) Causes of Being Underweight
-       <li> (See a) When to See a Doctor
-       <h2> (Causes) Causes of Being Underweight
-       <h2> (See a) When to See a Doctor
-       <p> (See a) For when to contact a provider, see When to See a Doctor .
-       <h4> (Improving) Improving Your BMI
-  4  /privacy/
+  5  /blog/underweight-bmi-risks/ (5 read and kept)
+       [read] <li> (Causes) Causes of Being Underweight
+       [read] <li> (See a) When to See a Doctor
+       [read] <h2> (Causes) Causes of Being Underweight
+       [read] <h2> (See a) When to See a Doctor
+       [read] <p> (See a) For when to contact a provider, see When to See a Doctor .
+  4  /privacy/ (legal page, out of scope)
        <p> (Effective) Effective 28 January 2026 — Last updated 12 October 2026
        <p> (recommends) Google Analytics is set up the way Raptive recommends for Google Consent Mode v2:
        <p> (healthcare providers) The pediatric BMI calculator is a tool intended for use by parents, guardians, and healthcare providers — it processes inputs entirely client-side and does not transmit them to us.
        <p> (protection) If you are in the EEA and believe our processing infringes your rights, you have the right to lodge a complaint with your national data protection supervisory authority.
-  4  /new-bmi-calculator/
-       <li> (improvement) Trefethen says his formula is “not based on epidemiological studies” and may not be an improvement.
-       <p> (doctor) “I am an applied mathematician, not a doctor or an epidemiologist,” he writes, and the new formulas are “not based on epidemiological studies” and may not be an improvement.
-       <p> (doctor) He describes himself there as “an applied mathematician, not a doctor or an epidemiologist.”
-       <p> (improvement) He writes that his formulas are “not based on epidemiological studies” and may not be an improvement, and he points to a 2007 paper by Heymsfield and colleagues in the American Journal of Clinical Nutrition that supports
-  4  /blog/
-       <p> (recommendations) Everything on this site is informational — we do not provide medical treatment content, medication guidance, or surgical recommendations.
-       <p> (clinician) Those decisions belong with a qualified clinician.
-       <p> (research found) Why the adult cut-offs stay the same at every age, and what research found for adults over 65.
-       <p> (see a) Calorie deficit, diet, activity, sleep, plateaus and when to see a doctor.
-  4  /blog/healthy-bmi-range/
-       <p> (protective) Crude analyses that ignored smoking and existing disease gave exaggerated risks for underweight and inverted ones for overweight, so overweight looked protective.
-       <p> (lower risk) The authors could reproduce a 2013 review’s finding that overweight carried a lower risk of death in analyses with inadequate control for these biases, but not in the strict one.
-       <figcaption> (higher risk) Hazard ratio for death by BMI band among 3,951,455 never-smokers without chronic disease; 1.20 means a 20% higher risk than at 22.5 to 24.9.
-       <p> (cause) Per 5 BMI units above 25, the risk of death in never-smokers was 39% higher in Europe and in East Asia, 31% in Australia and New Zealand and 29% in North America; the authors write that “the associations of both overweig
-  3  /ideal-weight/
-       <p> (Clinicians) Clinicians still use IBW equations “to calculate drug dosing, to estimate overweight and underweight statuses, and to calculate nutrient intakes,” Peterson and colleagues write.
-       <p> (associated with) Peterson and colleagues write that it “was originally defined as the weight associated with the greatest life expectancy at each height” and that “IBW equations are still being used by clinicians to calculate drug dosing
-       <p> (clinicians) Pai and Paloucek concluded that “any one of these equations may be used to estimate IBW.” Robinson and colleagues found that estimates “obtained by the widely used empirical method probably contain only minor errors.” Pe
-  2  /contact/
+  4  /new-bmi-calculator/ (4 read and kept)
+       [read] <li> (improvement) Trefethen says his formula is “not based on epidemiological studies” and may not be an improvement.
+       [read] <p> (doctor) “I am an applied mathematician, not a doctor or an epidemiologist,” he writes, and the new formulas are “not based on epidemiological studies” and may not be an improvement.
+       [read] <p> (doctor) He describes himself there as “an applied mathematician, not a doctor or an epidemiologist.”
+       [read] <p> (improvement) He writes that his formulas are “not based on epidemiological studies” and may not be an improvement, and he points to a 2007 paper by Heymsfield and colleagues in the American Journal of Clinical Nutrition that supports
+  4  /blog/healthy-bmi-range/ (4 read and kept)
+       [read] <p> (protective) Crude analyses that ignored smoking and existing disease gave exaggerated risks for underweight and inverted ones for overweight, so overweight looked protective.
+       [read] <p> (lower risk) The authors could reproduce a 2013 review’s finding that overweight carried a lower risk of death in analyses with inadequate control for these biases, but not in the strict one.
+       [read] <figcaption> (higher risk) Hazard ratio for death by BMI band among 3,951,455 never-smokers without chronic disease; 1.20 means a 20% higher risk than at 22.5 to 24.9.
+       [read] <p> (cause) Per 5 BMI units above 25, the risk of death in never-smokers was 39% higher in Europe and in East Asia, 31% in Australia and New Zealand and 29% in North America; the authors write that “the associations of both overweig
+  3  /ideal-weight/ (3 read and kept)
+       [read] <p> (Clinicians) Clinicians still use IBW equations “to calculate drug dosing, to estimate overweight and underweight statuses, and to calculate nutrient intakes,” Peterson and colleagues write.
+       [read] <p> (associated with) Peterson and colleagues write that it “was originally defined as the weight associated with the greatest life expectancy at each height” and that “IBW equations are still being used by clinicians to calculate drug dosing
+       [read] <p> (clinicians) Pai and Paloucek concluded that “any one of these equations may be used to estimate IBW.” Robinson and colleagues found that estimates “obtained by the widely used empirical method probably contain only minor errors.” Pe
+  2  /contact/ (legal page, out of scope)
        <p> (physician) The site is written by a pharmacist (MPharm), not a physician.
        <p> (healthcare provider) If you have a concern about your weight, body composition, or health, speak to a qualified healthcare provider.
-  2  /men-bmi-calculator/
-       <p> (evidence) The evidence behind each risk is in BMI and health risks ; for a BMI under 18.5, see underweight BMI risks .
-       <h3> (health care provider) Talking with a health care provider
-  2  /blog/what-is-bmi/
-       <li> (doctors) How doctors use BMI
-       <h2> (doctors) How doctors use BMI
-  2  /blog/bmi-history/
-       <li> (Expert) WHO Expert Committee.
-       <li> (Expert) WHO Expert Consultation.
-  2  /blog/bmi-for-athletes/
-       <li> (studies show) What the studies show
-       <h2> (studies show) What the studies show
-  2  /blog/how-to-lower-bmi/
-       <li> (Recommendations) Exercise Recommendations
-       <h2> (Recommendations) Exercise Recommendations for Lowering BMI
-  2  /blog/bmi-by-age/
-       <p> (evidence) This guide explains what the category bodies actually publish, shows how obesity prevalence varies by age in the US, and covers the observational evidence for adults aged 65 and over.
-       <p> (higher risk) A meta-analysis of adults aged 65 and over found a higher risk of death below a BMI of 23, but the published categories themselves don’t shift.
-  1  /age-bmi-calculator/
-       <li> (lead to) Muscle mass tends to fall with age, so the same BMI can mean more body fat; the American Diabetes Association notes that this may lead to obesity being missed in older adults.
-  1  /kids-bmi-calculator/
-       <p> (shown to) BMI is CDC’s formula (US units × 703, or kg/m²), shown to 0.1.
-54 hits on 16 of 40 pages
+  2  /men-bmi-calculator/ (2 read and kept)
+       [read] <p> (evidence) The evidence behind each risk is in BMI and health risks ; for a BMI under 18.5, see underweight BMI risks .
+       [read] <h3> (health care provider) Talking with a health care provider
+  2  /blog/ (2 read and kept)
+       [read] <p> (research found) Why the adult cut-offs stay the same at every age, and what research found for adults over 65.
+       [read] <p> (see a) Calorie deficit, diet, activity, sleep, plateaus and when to see a doctor.
+  2  /blog/what-is-bmi/ (2 read and kept)
+       [read] <li> (doctors) How doctors use BMI
+       [read] <h2> (doctors) How doctors use BMI
+  2  /blog/bmi-history/ (2 read and kept)
+       [read] <li> (Expert) WHO Expert Committee.
+       [read] <li> (Expert) WHO Expert Consultation.
+  2  /blog/bmi-for-athletes/ (2 read and kept)
+       [read] <li> (studies show) What the studies show
+       [read] <h2> (studies show) What the studies show
+  2  /blog/how-to-lower-bmi/ (2 read and kept)
+       [read] <li> (Recommendations) Exercise Recommendations
+       [read] <h2> (Recommendations) Exercise Recommendations for Lowering BMI
+  1  /age-bmi-calculator/ (1 read and kept)
+       [read] <li> (lead to) Muscle mass tends to fall with age, so the same BMI can mean more body fat; the American Diabetes Association notes that this may lead to obesity being missed in older adults.
+  1  /kids-bmi-calculator/ (1 read and kept)
+       [read] <p> (shown to) BMI is CDC’s formula (US units × 703, or kg/m²), shown to 0.1.
+  1  /blog/bmi-by-age/ (1 read and kept)
+       [read] <p> (evidence) This guide explains what the category bodies actually publish, shows how obesity prevalence varies by age in the US, and covers the observational evidence for adults aged 65 and over.
+50 hits on 16 of 40 pages
+31 read and kept (reviewed.json), 19 on the legal pages (out of scope), 0 to read
