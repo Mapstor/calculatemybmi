@@ -76144,7 +76144,7 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "table",
-   "sentence": "Waist circumference | Fat around the waist | More than 40 in (102 cm) for men or 35 in (88 cm) for women marks higher risk, at a BMI of 25 to 34.9 (NIH)",
+   "sentence": "Waist circumference Fat around the waist | More than 40 in (102 cm) for men or 35 in (88 cm) for women marks higher risk, at a BMI of 25 to 34.9 (NIH)",
    "number": "40",
    "value": 40.0,
    "class": "C",
@@ -76159,7 +76159,7 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "table",
-   "sentence": "Waist circumference | Fat around the waist | More than 40 in (102 cm) for men or 35 in (88 cm) for women marks higher risk, at a BMI of 25 to 34.9 (NIH)",
+   "sentence": "Waist circumference Fat around the waist | More than 40 in (102 cm) for men or 35 in (88 cm) for women marks higher risk, at a BMI of 25 to 34.9 (NIH)",
    "number": "102",
    "value": 102.0,
    "class": "C",
@@ -76174,7 +76174,7 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "table",
-   "sentence": "Waist circumference | Fat around the waist | More than 40 in (102 cm) for men or 35 in (88 cm) for women marks higher risk, at a BMI of 25 to 34.9 (NIH)",
+   "sentence": "Waist circumference Fat around the waist | More than 40 in (102 cm) for men or 35 in (88 cm) for women marks higher risk, at a BMI of 25 to 34.9 (NIH)",
    "number": "35",
    "value": 35.0,
    "class": "C",
@@ -76189,7 +76189,7 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "table",
-   "sentence": "Waist circumference | Fat around the waist | More than 40 in (102 cm) for men or 35 in (88 cm) for women marks higher risk, at a BMI of 25 to 34.9 (NIH)",
+   "sentence": "Waist circumference Fat around the waist | More than 40 in (102 cm) for men or 35 in (88 cm) for women marks higher risk, at a BMI of 25 to 34.9 (NIH)",
    "number": "88",
    "value": 88.0,
    "class": "C",
@@ -76204,7 +76204,7 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "table",
-   "sentence": "Waist circumference | Fat around the waist | More than 40 in (102 cm) for men or 35 in (88 cm) for women marks higher risk, at a BMI of 25 to 34.9 (NIH)",
+   "sentence": "Waist circumference Fat around the waist | More than 40 in (102 cm) for men or 35 in (88 cm) for women marks higher risk, at a BMI of 25 to 34.9 (NIH)",
    "number": "25",
    "value": 25.0,
    "class": "C",
@@ -76219,7 +76219,7 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "table",
-   "sentence": "Waist circumference | Fat around the waist | More than 40 in (102 cm) for men or 35 in (88 cm) for women marks higher risk, at a BMI of 25 to 34.9 (NIH)",
+   "sentence": "Waist circumference Fat around the waist | More than 40 in (102 cm) for men or 35 in (88 cm) for women marks higher risk, at a BMI of 25 to 34.9 (NIH)",
    "number": "34.9",
    "value": 34.9,
    "class": "C",
@@ -76234,7 +76234,7 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "table",
-   "sentence": "Waist-to-height ratio | Waist fat, scaled to height | For adults with a BMI under 35: 0.4 to 0.49 healthy, 0.5 to 0.59 increased, 0.6 or more high (NICE)",
+   "sentence": "Waist-to-height ratio Waist fat, scaled to height | For adults with a BMI under 35: 0.4 to 0.49 healthy, 0.5 to 0.59 increased, 0.6 or more high (NICE)",
    "number": "35",
    "value": 35.0,
    "class": "C",
@@ -76249,7 +76249,7 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "table",
-   "sentence": "Waist-to-height ratio | Waist fat, scaled to height | For adults with a BMI under 35: 0.4 to 0.49 healthy, 0.5 to 0.59 increased, 0.6 or more high (NICE)",
+   "sentence": "Waist-to-height ratio Waist fat, scaled to height | For adults with a BMI under 35: 0.4 to 0.49 healthy, 0.5 to 0.59 increased, 0.6 or more high (NICE)",
    "number": "0.4",
    "value": 0.4,
    "class": "C",
@@ -76264,7 +76264,7 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "table",
-   "sentence": "Waist-to-height ratio | Waist fat, scaled to height | For adults with a BMI under 35: 0.4 to 0.49 healthy, 0.5 to 0.59 increased, 0.6 or more high (NICE)",
+   "sentence": "Waist-to-height ratio Waist fat, scaled to height | For adults with a BMI under 35: 0.4 to 0.49 healthy, 0.5 to 0.59 increased, 0.6 or more high (NICE)",
    "number": "0.49",
    "value": 0.49,
    "class": "C",
@@ -76279,7 +76279,7 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "table",
-   "sentence": "Waist-to-height ratio | Waist fat, scaled to height | For adults with a BMI under 35: 0.4 to 0.49 healthy, 0.5 to 0.59 increased, 0.6 or more high (NICE)",
+   "sentence": "Waist-to-height ratio Waist fat, scaled to height | For adults with a BMI under 35: 0.4 to 0.49 healthy, 0.5 to 0.59 increased, 0.6 or more high (NICE)",
    "number": "0.5",
    "value": 0.5,
    "class": "C",
@@ -76294,7 +76294,7 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "table",
-   "sentence": "Waist-to-height ratio | Waist fat, scaled to height | For adults with a BMI under 35: 0.4 to 0.49 healthy, 0.5 to 0.59 increased, 0.6 or more high (NICE)",
+   "sentence": "Waist-to-height ratio Waist fat, scaled to height | For adults with a BMI under 35: 0.4 to 0.49 healthy, 0.5 to 0.59 increased, 0.6 or more high (NICE)",
    "number": "0.59",
    "value": 0.59,
    "class": "C",
@@ -76309,7 +76309,7 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "table",
-   "sentence": "Waist-to-height ratio | Waist fat, scaled to height | For adults with a BMI under 35: 0.4 to 0.49 healthy, 0.5 to 0.59 increased, 0.6 or more high (NICE)",
+   "sentence": "Waist-to-height ratio Waist fat, scaled to height | For adults with a BMI under 35: 0.4 to 0.49 healthy, 0.5 to 0.59 increased, 0.6 or more high (NICE)",
    "number": "0.6",
    "value": 0.6,
    "class": "C",
@@ -76324,7 +76324,7 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "table",
-   "sentence": "Relative fat mass | Body fat %, from waist and height | Within 5 points of a DXA scan for 86% of men and 74% of women (our calculation)",
+   "sentence": "Relative fat mass Body fat %, from waist and height | Within 5 points of a DXA scan for 86% of men and 74% of women (our calculation)",
    "number": "5",
    "value": 5.0,
    "class": "C",
@@ -76339,7 +76339,7 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "table",
-   "sentence": "Relative fat mass | Body fat %, from waist and height | Within 5 points of a DXA scan for 86% of men and 74% of women (our calculation)",
+   "sentence": "Relative fat mass Body fat %, from waist and height | Within 5 points of a DXA scan for 86% of men and 74% of women (our calculation)",
    "number": "86",
    "value": 86.0,
    "class": "C",
@@ -76354,7 +76354,7 @@
   {
    "page": "/blog/bmi-limitations/",
    "region": "table",
-   "sentence": "Relative fat mass | Body fat %, from waist and height | Within 5 points of a DXA scan for 86% of men and 74% of women (our calculation)",
+   "sentence": "Relative fat mass Body fat %, from waist and height | Within 5 points of a DXA scan for 86% of men and 74% of women (our calculation)",
    "number": "74",
    "value": 74.0,
    "class": "C",

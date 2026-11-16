@@ -16,7 +16,8 @@ its older-adult tile claimed "more fat mass at the same weight", its Asian tile 
 section cites (it gave the 2000 Western Pacific proposal, row ko-tang-2006-wpro-2000), and its caption said each case has
 a numbered section (height has none). Title, H1 and URL kept (D-28);
 meta descriptions and the Article description follow; FAQPage JSON-LD rebuilt from the seven visible answers;
-dateModified and lastmod.
+dateModified and lastmod. The alternatives table has two columns (the measure and what it shows in one cell) so it fits
+a 390 px phone.
 usage: python3 research/cmb-055/apply.py [--check]   Run order from main: registry.py, apply.py, audit_manual.py."""
 import datetime
 import hashlib
@@ -276,14 +277,14 @@ BLOCKS = [
     ('<p>Given BMI\'s limitations, what should you use instead?',
      '<h3>Waist-to-Height Ratio: The Best Free Alternative</h3>',
      ('<p>Each of these adds something BMI can&rsquo;t show:</p> <div class="table-responsive"> <table '
-      'class="comparison-table"> <thead> <tr><th>Measure</th><th>What it shows</th><th>What the source says</th></tr> '
-      '</thead> <tbody> <tr> <td><strong>Waist circumference</strong></td> <td>Fat around the waist</td> <td>More than 40 '
-      'in (102 cm) for men or 35 in (88 cm) for women marks higher risk, at a BMI of 25 to 34.9 (NIH)</td> </tr> <tr> '
-      '<td><strong>Waist-to-height ratio</strong></td> <td>Waist fat, scaled to height</td> <td>For adults with a BMI under '
-      '35: 0.4 to 0.49 healthy, 0.5 to 0.59 increased, 0.6 or more high (NICE)</td> </tr> <tr> <td><strong>Relative fat '
-      'mass</strong></td> <td>Body fat %, from waist and height</td> <td>Within 5 points of a DXA scan for 86% of men and 74% '
-      'of women (our calculation)</td> </tr> <tr> <td><strong>DXA scan</strong></td> <td>Fat, lean and bone mass</td> '
-      '<td>&ldquo;The most widely accepted method of measuring body composition&rdquo; (CDC)</td> </tr> </tbody> </table> '
+      'class="comparison-table"> <thead> <tr><th>Measure</th><th>What the source says</th></tr> </thead> <tbody> <tr> '
+      '<td><strong>Waist circumference</strong><br>Fat around the waist</td> <td>More than 40 in (102 cm) for men or 35 in '
+      '(88 cm) for women marks higher risk, at a BMI of 25 to 34.9 (NIH)</td> </tr> <tr> <td><strong>Waist-to-height '
+      'ratio</strong><br>Waist fat, scaled to height</td> <td>For adults with a BMI under 35: 0.4 to 0.49 healthy, 0.5 to '
+      '0.59 increased, 0.6 or more high (NICE)</td> </tr> <tr> <td><strong>Relative fat mass</strong><br>Body fat %, from '
+      'waist and height</td> <td>Within 5 points of a DXA scan for 86% of men and 74% of women (our calculation)</td> </tr> '
+      '<tr> <td><strong>DXA scan</strong><br>Fat, lean and bone mass</td> <td>&ldquo;The most widely accepted method of '
+      'measuring body composition&rdquo; (CDC)</td> </tr> </tbody> </table> '
       '</div> <p class="source-note">Sources: waist, NIH clinical guidelines, 1998 ({nhlbi}); waist-to-height ratio, '
       '{nice}; relative fat mass, our calculation from {dxa}; the DXA quote, CDC&rsquo;s documentation for those scans '
       '({dxa_doc}).</p> ').format(**L, dxa_doc=a('dxa', 'CDC'))),
