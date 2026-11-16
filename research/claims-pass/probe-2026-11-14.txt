@@ -20,14 +20,6 @@
        <p> (recommended) For precise measurements, clinical methods like DEXA scanning, hydrostatic weighing, or air displacement plethysmography are recommended.
        <p> (improves) When people talk about "gaining lean mass," they usually mean increasing skeletal muscle, but technically LBM also increases if bone density improves or hydration levels change.
        <p> (recommend) For further reading on body composition, lean body mass, and health assessment methods, we recommend these authoritative sources:
-  7  /blog/body-fat-vs-bmi/
-       <li> (protection) Essential fat: Required for normal physiological function, including hormone regulation, vitamin absorption, and organ protection.
-       <li> (associated with) Excess storage fat, particularly visceral fat, is associated with health risks.
-       <p> (professionals) This is why many health professionals now recommend tracking body fat alongside or instead of BMI.
-       <p> (increased risks) People with normal weight obesity face increased risks for type 2 diabetes, cardiovascular disease, and metabolic syndrome - risks that wouldn't be detected by BMI alone.
-       <li> (Professional) Professional athletes (football players, wrestlers, rugby players)
-       <li> (healthcare providers) Widely understood by healthcare providers
-       <p> (effective) The most effective approach to health assessment uses multiple metrics together.
   7  /blog/bmi-tracking-guide/
        <p> (effective) However, effective monitoring requires more than stepping on a scale occasionally.
        <p> (evidence) Whether you are working toward a healthier weight or maintaining your current BMI, these evidence-based strategies will help you track progress accurately and avoid common pitfalls.
@@ -92,4 +84,4 @@
        <li> (lead to) Muscle mass tends to fall with age, so the same BMI can mean more body fat; the American Diabetes Association notes that this may lead to obesity being missed in older adults.
   1  /kids-bmi-calculator/
        <p> (shown to) BMI is CDC’s formula (US units × 703, or kg/m²), shown to 0.1.
-75 hits on 19 of 40 pages
+68 hits on 18 of 40 pages
