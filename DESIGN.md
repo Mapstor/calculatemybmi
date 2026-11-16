@@ -290,6 +290,8 @@ No sharp corners (0 radius) and no custom clip-paths. Borders are hairline (`1px
 - The ratio comes from the numbers as printed: height and waist to 0.1, the ratio cut (not rounded) to two decimals in whole-number arithmetic (tenths), so 0.50 always means a waist of at least half the height, as in the women's page waist check (CMB-017). The waist bounds are the smallest waist, to 0.1, that reaches each class.
 - The US / Metric switch converts to 0.1; switching back with nothing retyped restores the numbers as they were. Results on screen follow the switch.
 
+- The two-person bars on `/blog/body-fat-vs-bmi/` (`.chart-compare-row`) stack below 600 px, the label above its bars, and an empty mirror bar hides there, so a bar's label stays inside the bar (CMB-061).
+
 ### Category badges
 - Pill (`--radius-full`), category background with white text (BMI color lock applies).
 
