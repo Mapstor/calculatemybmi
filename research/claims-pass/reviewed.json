@@ -1,0 +1,141 @@
+{
+ "about": "CMB-064: claims-probe hits read against their registry rows and kept, with the reason. claims_probe.py marks them [read] and counts them apart. An entry matches one exact sentence on one page; when the sentence changes, the entry goes stale and the probe says so: read it again, then update or drop the entry. Add an entry only after reading the sentence against the row it names.",
+ "reviewed": "2026-11-16",
+ "entries": [
+  {
+   "page": "/men-bmi-calculator/",
+   "sentence": "The evidence behind each risk is in BMI and health risks ; for a BMI under 18.5, see underweight BMI risks .",
+   "why": "a pointer to the two sourced risk guides; it claims nothing itself"
+  },
+  {
+   "page": "/men-bmi-calculator/",
+   "sentence": "Talking with a health care provider",
+   "why": "heading over CDC's own line from its Adult BMI Calculator page (cdc-adult-bmi-categories, §4)"
+  },
+  {
+   "page": "/age-bmi-calculator/",
+   "sentence": "Muscle mass tends to fall with age, so the same BMI can mean more body fat; the American Diabetes Association notes that this may lead to obesity being missed in older adults.",
+   "why": "the ADA Standards' line, named in the sentence: loss of muscle mass in older adults \"may lead to underdiagnosis of obesity\" (ada-2026-obesity-standards)"
+  },
+  {
+   "page": "/kids-bmi-calculator/",
+   "sentence": "BMI is CDC’s formula (US units × 703, or kg/m²), shown to 0.1.",
+   "why": "\"shown to\" is the display precision, not a study claim; the formula is CDC's (cdc-calculating-bmi)"
+  },
+  {
+   "page": "/ideal-weight/",
+   "sentence": "Clinicians still use IBW equations “to calculate drug dosing, to estimate overweight and underweight statuses, and to calculate nutrient intakes,” Peterson and colleagues write.",
+   "why": "a quote the sentence attributes to Peterson and colleagues (peterson-2016-ibw)"
+  },
+  {
+   "page": "/ideal-weight/",
+   "sentence": "Peterson and colleagues write that it “was originally defined as the weight associated with the greatest life expectancy at each height” and that “IBW equations are still being used by clinicians to calculate drug dosing, to estimate overweight and underweight statuses, and to calculate nutrient intakes.”",
+   "why": "quotes the sentence attributes to Peterson and colleagues (peterson-2016-ibw)"
+  },
+  {
+   "page": "/ideal-weight/",
+   "sentence": "Pai and Paloucek concluded that “any one of these equations may be used to estimate IBW.” Robinson and colleagues found that estimates “obtained by the widely used empirical method probably contain only minor errors.” Peterson and colleagues point out that the equations give a single weight, where most clinicians favor a range.",
+   "why": "quotes the sentences attribute to Pai and Paloucek, Robinson and colleagues, and Peterson and colleagues (pai-paloucek-2000-ibw, robinson-1983-ibw, peterson-2016-ibw)"
+  },
+  {
+   "page": "/new-bmi-calculator/",
+   "sentence": "Trefethen says his formula is “not based on epidemiological studies” and may not be an improvement.",
+   "why": "Trefethen's own words, quoted and attributed (trefethen-new-bmi)"
+  },
+  {
+   "page": "/new-bmi-calculator/",
+   "sentence": "“I am an applied mathematician, not a doctor or an epidemiologist,” he writes, and the new formulas are “not based on epidemiological studies” and may not be an improvement.",
+   "why": "Trefethen's own words, quoted and attributed (trefethen-new-bmi)"
+  },
+  {
+   "page": "/new-bmi-calculator/",
+   "sentence": "He describes himself there as “an applied mathematician, not a doctor or an epidemiologist.”",
+   "why": "Trefethen's own words, quoted and attributed (trefethen-new-bmi)"
+  },
+  {
+   "page": "/new-bmi-calculator/",
+   "sentence": "He writes that his formulas are “not based on epidemiological studies” and may not be an improvement, and he points to a 2007 paper by Heymsfield and colleagues in the American Journal of Clinical Nutrition that supports the exponent 2.",
+   "why": "Trefethen's own words and his pointer to Heymsfield et al. 2007 (trefethen-new-bmi)"
+  },
+  {
+   "page": "/blog/",
+   "sentence": "Why the adult cut-offs stay the same at every age, and what research found for adults over 65.",
+   "why": "the hub card's summary of /blog/bmi-by-age/, which cites Winter et al. 2014 (winter-2014-bmi-mortality-65)"
+  },
+  {
+   "page": "/blog/",
+   "sentence": "Calorie deficit, diet, activity, sleep, plateaus and when to see a doctor.",
+   "why": "the hub card's summary of /blog/how-to-lower-bmi/, whose provider lines are CDC's and NIMH's own \"when\" (cdc-losing-weight, nimh-eating-disorders)"
+  },
+  {
+   "page": "/blog/what-is-bmi/",
+   "sentence": "How doctors use BMI",
+   "why": "heading over the 1998 US guidelines' three-part assessment: BMI, waist and risk factors (nhlbi-1998-obesity-guidelines)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "sentence": "WHO Expert Committee.",
+   "why": "an author name in the reference list (WHO TRS 854, who-trs-854)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "sentence": "WHO Expert Consultation.",
+   "why": "an author name in the reference list (who-2004-asian-bmi)"
+  },
+  {
+   "page": "/blog/healthy-bmi-range/",
+   "sentence": "Crude analyses that ignored smoking and existing disease gave exaggerated risks for underweight and inverted ones for overweight, so overweight looked protective.",
+   "why": "GBMC 2016, linked in the paragraph before; worded as the paper puts it (gbmc-2016-bmi-mortality, CMB-064 note)"
+  },
+  {
+   "page": "/blog/healthy-bmi-range/",
+   "sentence": "The authors could reproduce a 2013 review’s finding that overweight carried a lower risk of death in analyses with inadequate control for these biases, but not in the strict one.",
+   "why": "GBMC 2016, linked in the paragraph before; worded as the paper puts it (gbmc-2016-bmi-mortality, CMB-064 note)"
+  },
+  {
+   "page": "/blog/healthy-bmi-range/",
+   "sentence": "Hazard ratio for death by BMI band among 3,951,455 never-smokers without chronic disease; 1.20 means a 20% higher risk than at 22.5 to 24.9.",
+   "why": "the chart caption: GBMC 2016's hazard ratios and sample (gbmc-2016-bmi-mortality)"
+  },
+  {
+   "page": "/blog/healthy-bmi-range/",
+   "sentence": "Per 5 BMI units above 25, the risk of death in never-smokers was 39% higher in Europe and in East Asia, 31% in Australia and New Zealand and 29% in North America; the authors write that “the associations of both overweight and obesity with higher all-cause mortality were broadly consistent in four continents”.",
+   "why": "GBMC 2016's regional hazard ratios (1.39, 1.31, 1.29) and its own interpretation, quoted (gbmc-2016-bmi-mortality)"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "sentence": "Causes of Being Underweight",
+   "why": "heading (and its contents entry) over MedlinePlus's causes of unintentional weight loss (medlineplus-unintentional-weight-loss)"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "sentence": "When to See a Doctor",
+   "why": "heading (and its contents entry) over MedlinePlus's and NIMH's own \"when\" lines (medlineplus-unintentional-weight-loss, nimh-eating-disorders; §4)"
+  },
+  {
+   "page": "/blog/underweight-bmi-risks/",
+   "sentence": "For when to contact a provider, see When to See a Doctor .",
+   "why": "the disclaimer's pointer to that section"
+  },
+  {
+   "page": "/blog/bmi-for-athletes/",
+   "sentence": "What the studies show",
+   "why": "heading (and its contents entry) over Provencher et al. 2018 and Lambert et al. 2012 (provencher-2018-nfl-combine, lambert-2012-football-dxa)"
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "sentence": "Exercise Recommendations",
+   "why": "heading (and its contents entry) over the Physical Activity Guidelines' own recommendations (odphp-physical-activity-guidelines)"
+  },
+  {
+   "page": "/blog/how-to-lower-bmi/",
+   "sentence": "Exercise Recommendations for Lowering BMI",
+   "why": "heading (and its contents entry) over the Physical Activity Guidelines' own recommendations (odphp-physical-activity-guidelines)"
+  },
+  {
+   "page": "/blog/bmi-by-age/",
+   "sentence": "This guide explains what the category bodies actually publish, shows how obesity prevalence varies by age in the US, and covers the observational evidence for adults aged 65 and over.",
+   "why": "the promise line; the 65-and-over evidence it promises is Winter et al. 2014, cited where it is given (winter-2014-bmi-mortality-65)"
+  }
+ ]
+}

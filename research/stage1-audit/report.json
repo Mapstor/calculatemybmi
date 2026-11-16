@@ -4,11 +4,11 @@
  "viewport": "390x844",
  "pages_audited": 24,
  "pages_skipped": [],
- "numbers": 5418,
+ "numbers": 5419,
  "totals": {
   "A": 49,
   "B": 1666,
-  "C": 2808,
+  "C": 2809,
   "D": 710,
   "X": 185,
   "U": 0
@@ -19,8 +19,8 @@
  "c_not_in_row_in_page_csv": 0,
  "c_not_in_row_also_in_other_row": 0,
  "c_status": {
-  "row": 1506,
-  "row-notes": 372,
+  "row": 1505,
+  "row-notes": 374,
   "not-in-row": 28,
   "row-dataset": 902
  },
@@ -4814,18 +4814,18 @@
    "page_errors": [],
    "score": 0,
    "totals": {
-    "C": 50,
+    "C": 51,
     "B": 23,
     "D": 20
    },
    "c_rows": {
-    "row": 42,
-    "row-notes": 8
+    "row": 41,
+    "row-notes": 10
    },
    "c_row_domains": {
-    "nhanes-adult-obesity-2021-2023": 20,
-    "nhanes-adult-weight-trends": 12,
-    "winter-2014-bmi-mortality-65": 17,
+    "nhanes-adult-obesity-2021-2023": 24,
+    "nhanes-adult-weight-trends": 7,
+    "winter-2014-bmi-mortality-65": 19,
     "cdc-adult-bmi-categories": 1
    },
    "excluded": {}
@@ -84813,7 +84813,7 @@
    "row": {
     "status": "row",
     "domain": "provencher-2018-nfl-combine",
-    "how": "pages_served"
+    "how": "data_source"
    }
   },
   {
@@ -84845,7 +84845,7 @@
    "row": {
     "status": "row",
     "domain": "provencher-2018-nfl-combine",
-    "how": "pages_served"
+    "how": "data_source"
    }
   },
   {
@@ -85516,7 +85516,7 @@
    "row": {
     "status": "row",
     "domain": "provencher-2018-nfl-combine",
-    "how": "pages_served"
+    "how": "data_source"
    }
   },
   {
@@ -85548,7 +85548,7 @@
    "row": {
     "status": "row",
     "domain": "provencher-2018-nfl-combine",
-    "how": "pages_served"
+    "how": "data_source"
    }
   },
   {
@@ -93431,9 +93431,9 @@
    "why": "statistic (percent)",
    "heading": "How obesity prevalence varies by age (US, NHANES)",
    "row": {
-    "status": "row",
-    "domain": "nhanes-adult-weight-trends",
-    "how": "pages_served"
+    "status": "row-notes",
+    "domain": "nhanes-adult-obesity-2021-2023",
+    "how": "data_source"
    }
   },
   {
@@ -93447,8 +93447,8 @@
    "heading": "How obesity prevalence varies by age (US, NHANES)",
    "row": {
     "status": "row",
-    "domain": "nhanes-adult-weight-trends",
-    "how": "pages_served"
+    "domain": "nhanes-adult-obesity-2021-2023",
+    "how": "data_source"
    }
   },
   {
@@ -93461,9 +93461,9 @@
    "why": "statistic (percent)",
    "heading": "How obesity prevalence varies by age (US, NHANES)",
    "row": {
-    "status": "row",
-    "domain": "nhanes-adult-weight-trends",
-    "how": "pages_served"
+    "status": "row-notes",
+    "domain": "nhanes-adult-obesity-2021-2023",
+    "how": "data_source"
    }
   },
   {
@@ -93492,8 +93492,8 @@
    "heading": "How obesity prevalence varies by age (US, NHANES)",
    "row": {
     "status": "row",
-    "domain": "nhanes-adult-weight-trends",
-    "how": "pages_served"
+    "domain": "nhanes-adult-obesity-2021-2023",
+    "how": "data_source"
    }
   },
   {
@@ -93508,7 +93508,7 @@
    "row": {
     "status": "row",
     "domain": "nhanes-adult-obesity-2021-2023",
-    "how": "pages_served"
+    "how": "data_source"
    }
   },
   {
@@ -93523,7 +93523,7 @@
    "row": {
     "status": "row",
     "domain": "nhanes-adult-obesity-2021-2023",
-    "how": "pages_served"
+    "how": "data_source"
    }
   },
   {
@@ -94522,7 +94522,7 @@
   {
    "page": "/blog/bmi-by-age/",
    "region": "faq-a",
-   "sentence": "A meta-analysis of adults aged 65 and over found a higher risk of death below a BMI of 23, but the published categories themselves don’t shift.",
+   "sentence": "A meta-analysis of adults aged 65 and over found a higher risk of death below a BMI of 23 (Winter et al., 2014), but the published categories themselves don’t shift.",
    "number": "65",
    "value": 65.0,
    "class": "C",
@@ -94531,13 +94531,16 @@
    "row": {
     "status": "row",
     "domain": "winter-2014-bmi-mortality-65",
-    "how": "pages_served"
-   }
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/24452240/"
+   ]
   },
   {
    "page": "/blog/bmi-by-age/",
    "region": "faq-a",
-   "sentence": "A meta-analysis of adults aged 65 and over found a higher risk of death below a BMI of 23, but the published categories themselves don’t shift.",
+   "sentence": "A meta-analysis of adults aged 65 and over found a higher risk of death below a BMI of 23 (Winter et al., 2014), but the published categories themselves don’t shift.",
    "number": "23",
    "value": 23.0,
    "class": "C",
@@ -94545,9 +94548,30 @@
    "heading": "FAQ: Does the healthy BMI range change with age?",
    "row": {
     "status": "row",
-    "domain": "nhanes-adult-weight-trends",
-    "how": "pages_served"
-   }
+    "domain": "winter-2014-bmi-mortality-65",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/24452240/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-by-age/",
+   "region": "faq-a",
+   "sentence": "A meta-analysis of adults aged 65 and over found a higher risk of death below a BMI of 23 (Winter et al., 2014), but the published categories themselves don’t shift.",
+   "number": "2014",
+   "value": 2014.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: Does the healthy BMI range change with age?",
+   "row": {
+    "status": "row",
+    "domain": "winter-2014-bmi-mortality-65",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/24452240/"
+   ]
   },
   {
    "page": "/blog/bmi-by-age/",
