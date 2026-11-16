@@ -3,12 +3,12 @@
 
 ## §0 Resume here
 - Scores: S 40/40 | P 40/40 | D 40/40 | all three 40/40 (2026-11-14 to 2026-11-16)
-_last update: 2026-11-16 · CMB-058 WHTR-CALC_
-- Phase: the scores run (D-26) is complete: all three scores pass on 40 of 40 pages since CMB-057 checked Gallagher 2000 against the paper's own Table 4 (full run 2026-11-14; the changed pages re-run 2026-11-16). Now the claims pass (§5 P1): batches 1 to 9 (CMB-048 the calculators' own words, CMB-049 `/blog/underweight-bmi-risks/`, CMB-050 `/blog/how-to-lower-bmi/`, CMB-051 `/blog/bmi-and-health-risks/`, CMB-052 `/blog/bmi-and-metabolism/`, CMB-053 `/about/`, CMB-054 `/blog/bmi-categories/`, CMB-055 `/blog/bmi-limitations/`, CMB-056 `/blog/waist-to-height-ratio/`) live; CMB-057 (the two owner items: the D-28 title and H1, and Gallagher) live; CMB-058 (the waist-to-height ratio calculator) done on its branch.
-- Last confirmed: CMB-057 D28-GALLAGHER — live: PR #33 merged (merge commit 187a352, 16:37:02 UTC); Vercel Production for 187a352 completed 16:37:10 UTC (2026-11-16); live check (chat, Chrome, 2026-11-16): `/blog/underweight-bmi-risks/`, `/body-fat-percentage-chart/`, `/body-fat-calculator/`, `/blog/how-to-measure-body-fat/` and `sitemap.xml` on calculatemybmi.net hash the same as the merged repo (8ffdf5a4…, 55b3c4b0…, 4e332c35…, d525503d…, 3c6df32f…), the new H1 live; `date_truth.py` exit 0 (40/40) on main after the merge. CMB-056 live (b326ca6, PR #32). Earlier live checks: their §6 entries.
+_last update: 2026-11-16 · CMB-059 CLAIMS-10_
+- Phase: the scores run (D-26) is complete: all three scores pass on 40 of 40 pages since CMB-057 checked Gallagher 2000 against the paper's own Table 4 (full run 2026-11-14; the changed pages re-run 2026-11-16). Now the claims pass (§5 P1): batches 1 to 9 (CMB-048 the calculators' own words, CMB-049 `/blog/underweight-bmi-risks/`, CMB-050 `/blog/how-to-lower-bmi/`, CMB-051 `/blog/bmi-and-health-risks/`, CMB-052 `/blog/bmi-and-metabolism/`, CMB-053 `/about/`, CMB-054 `/blog/bmi-categories/`, CMB-055 `/blog/bmi-limitations/`, CMB-056 `/blog/waist-to-height-ratio/`) live, and CMB-057 (the two owner items: the D-28 title and H1, and Gallagher) and CMB-058 (the waist-to-height ratio calculator) live; batch 10 (CMB-059, `/blog/bmi-history/`) done on its branch.
+- Last confirmed: CMB-058 WHTR-CALC — live: PR #34 merged (merge commit bb62bb1, 16:59:25 UTC); Vercel Production for bb62bb1 completed 16:59:32 UTC (2026-11-16); live check (chat, Chrome, 2026-11-16): `/blog/waist-to-height-ratio/`, `assets/css/styles.css` and `sitemap.xml` on calculatemybmi.net hash the same as the merged repo (6acb3292…, 7c2fdf10…, 3c6df32f…), the new H1 live, the calculator run on the live page (5 ft 4 in, 32 in: 0.50, increased central adiposity; waist bounds 25.6, 32.0 and 38.4 in) with no overflow; `date_truth.py` exit 0 (40/40) on main after the merge. Layout verified live (R4). CMB-057 live (187a352, PR #33). Earlier live checks: their §6 entries.
 - Traffic (Search Console, read by chat 2026-11-06; read it again only after asking, D-28): 27 of 40 pages had impressions. None in 56 days, so the only pages whose title and H1 are free under D-28: `/average-weight/`, `/body-fat-calculator/`, `/body-fat-percentage-chart/`, `/us-obesity-statistics/`, `/blog/bmi-chart-men/`, `/obesity-rate-by-state/`, `/childhood-obesity-statistics/`, `/blog/bmi-by-age/`, `/blog/waist-to-height-ratio/`, `/blog/bmi-chart-explained/`, `/blog/bmi-history/`, `/blog/bmi-and-health-risks/`, `/blog/bmi-and-metabolism/`.
-- In flight (handed, NOT confirmed): CMB-058 WHTR-CALC — done on `claude/cmb-058`, PR #34, checked on the preview; chat merges by D-24 (merge commit), then confirms Production and the live pages, recorded in the next batch's DEVLOG step. Merged `claude/` branches stay on GitHub (Marko, 2026-11-13); at the run's finishing line chat lists the ones safe to delete.
-- Next action: claims pass batch 10 (§5 P1) down `research/claims-pass/probe-2026-11-14.txt` (88 hits; `/terms/` is out of scope): `/blog/bmi-history/` 8, then `/lean-body-mass/`, `/blog/bmi-chart-explained/`, `/blog/body-fat-vs-bmi/` and `/blog/bmi-tracking-guide/` 7 each.
+- In flight (handed, NOT confirmed): CMB-059 CLAIMS-10 — done on `claude/cmb-059`, PR #35, checked on the preview; chat merges by D-24 (merge commit), then confirms Production and the live pages, recorded in the next batch's DEVLOG step. Merged `claude/` branches stay on GitHub (Marko, 2026-11-13); at the run's finishing line chat lists the ones safe to delete.
+- Next action: claims pass batch 11 (§5 P1) down `research/claims-pass/probe-2026-11-14.txt` (82 hits after CMB-059; `/terms/`, `/privacy/` and `/contact/` are out of scope): `/lean-body-mass/`, `/blog/bmi-chart-explained/`, `/blog/body-fat-vs-bmi/` and `/blog/bmi-tracking-guide/` 7 each. Also seen (CMB-059): seven pages end with an unsourced provider line ("If you're concerned about your weight, consult a healthcare professional who can evaluate your individual situation ..."); the claims pass swaps it for CDC's own "when" page by page.
 - Waiting on owner: Search Console only after asking (Browser 1's Google account has no access to the property); after Google recrawls, the image-thumbnail report for the fifteen D-14 pages. Marko, 2026-11-13: no Request indexing for `/body-fat-percentage-chart/` and no chart-image licence for now (both stay as they are); merged `claude/` branches are kept, chat lists the safe-to-delete ones at the finishing line (Marko, 2026-11-14: delete them only then). Marko allows PubMed reads (2026-11-13): approve WebFetch's prompt when it asks. CDC's twelve 2011–2018 DXA files arrived 2026-11-13 and stay out of the repo (registry `nhanes-2011-2018-dxa` has the URL pattern).
 - Open questions: does any other site's chat request indexing on the same Google account?
 
@@ -858,6 +858,72 @@ _last update: 2026-11-16 · CMB-058 WHTR-CALC_
   - The tool test is not in `page_scores.py`'s PAGE_TESTS. S keeps scoring the page's printed numbers through the Stage 1 audit, and the tool test runs beside it (§4).
   - The 320 px table scroll is the same thing as the §5 P3 note on `calculator.js`'s tables.
   - The ratio in a result is the cut value. NICE's own Box 1 example rounds (38 ÷ 67 = 0.57); the calculator shows 0.56, both increased. The method line says why.
+
+### 2026-11-16 · CMB-059 CLAIMS-10 · chat · done
+- What: claims pass batch 10 (§5 P1) on `/blog/bmi-history/`, on `claude/cmb-059`. Probe hits on the page went from 8 to 2. The two left are WHO report names in the reference list. The history itself was already sourced (CMB-037, CMB-042); the lines around it now say what a registry row says, or were cut (D-10).
+  - Intro: "one of the most widely used health metrics in the world" is out. The intro now gives the 1832 index and the 1972 name (Eknoyan).
+  - Key takeaway: "Controversy: ... the global standard due to simplicity" is now "Why it stuck", Keys's own two reasons.
+  - Critiques intro: "growing criticism from researchers, clinicians, and public health advocates" is now CDC's "quick, low-cost, and reliable screening measure" that does not directly measure body fat.
+  - The six limitation cards:
+    - fat and muscle: CDC's "does not distinguish between fat, muscle, and bone mass", plus NICE 1.9.12 (high muscle mass);
+    - height: now Trefethen's argument, credited to him;
+    - age: CDC's "regardless of age", Gallagher Table 4 (20% body fat at 20 to 39 against 25% at 60 to 79 for men at a BMI of 25), and NICE 1.9.13 (aged 65 and over);
+    - sex: the CDC body-scan medians, as before;
+    - ethnicity: NICE's lower thresholds (23 and 27.5);
+    - "trace back to BMI's origin" is now CDC's line on individuals.
+  - "The 'Obesity Paradox'": the label had no source. The heading is now "BMI and Survival After 65", for what Winter et al. measured.
+  - Alternatives:
+    - out: "spurred development", "show promise", and the five-row table whose advantage and limitation columns had no source;
+    - in: a pointer to the limitations guide's sourced comparison and to the new waist-to-height ratio calculator.
+  - "The Future of Body Composition Metrics" is now "Where BMI Stands Now" (h2 and TOC).
+    - Out: the next-decade forecast, "Precision Medicine" and "unlikely to disappear soon".
+    - Home devices: now Burns 2019's hand-held impedance result (4.9 points off DXA in 437 students).
+    - "Will BMI Be Replaced?": answered with WHO's and CDC's adult definitions.
+  - FAQ:
+    - the medical-standard answer now has its four sources;
+    - "Why is BMI still used" is rewritten: Keys's reasons, CDC's two lines, and the NIH and NICE waist pairings;
+    - the Trefethen answer now has its link;
+    - the FAQPage JSON-LD is rebuilt from the six visible answers. It held four.
+  - Disclaimer: the provider line is now CDC's own "when" (§4).
+  - References: the 1995 entry is WHO's Expert Committee (TRS 854), not an "Expert Consultation".
+  - dateModified and lastmod updated.
+- Files:
+  - `research/cmb-059/`: `registry.py`, `apply.py` and `audit_manual.py`; run them in that order from main.
+  - `blog/bmi-history/index.html`
+  - `sitemap.xml`
+  - `research/data-sources.csv`: the page joins `pages_served` on `cdc-adult-bmi-categories`, `gallagher-2000-bf-ranges`, `body-fat-method-validation` and `cdc-losing-weight`. The NICE row gets 1.9.12 and 1.9.13, read in Chrome.
+  - `research/page-map.csv`: `data_source` is now `eknoyan-2008-quetelet`.
+  - `research/stage1-audit/manual.json`: the new heading's 65 (row `winter-2014-bmi-mortality-65`); the two cut sentences' entries dropped. Also `report.md` and `report.json`.
+  - `research/page-scores.csv`
+  - `research/claims-pass/probe-2026-11-14.json` and `.txt`
+- Verified:
+  - Claims probe: 88 to 82 hits site-wide; the page is at 2.
+  - Stage 1 audit:
+    - all 24 pages: 0 mismatches, 0 no row, 0 unclassified, 28 not in row (the kids page, as before);
+    - the page: 0, 0, 0, 0.
+  - Page scores: S, P (0 tells in 2,647 words) and D pass; all three stay at 40/40.
+  - Gates:
+    - `check_structure.py`: 40/40.
+    - `check_markup`: 0.
+    - integrity: clean.
+    - images: 0.
+    - `research/f1/verify.py`: clean.
+    - `check_sources.py`: 16 to 15.
+    - `check_ledger.py`: OK.
+  - Probes:
+    - UI: 4 dead_cta hits ("Calculate yours:" and a related-guide line), the same count as on main.
+    - Box and text: no hits.
+  - `date_truth.py`: exit 0, 40/40 on the branch.
+  - Preview, Chrome, 2026-11-16:
+    - The page and `sitemap.xml` hash the same as the branch (bf4ebe84…, af435cd8…).
+    - No overflow at 1280 or 390, no skipped heading levels, 6 FAQ items.
+    - A 390 screenshot of the limitation cards reads cleanly.
+  - Anti-slop on the new copy: 0 fixes.
+  - Unverified: touch and iPhone Safari (D-25).
+- Commit: e2b5ccf and this DEVLOG commit on `claude/cmb-059`, PR #35 (only the branch is pushed). Chat merges by D-24 next.
+- Notes:
+  - The CMB-058 live check is in §0.
+  - WebFetch's approval prompt went unanswered in this session, so every read was through Claude in Chrome or the registry.
 
 ## §7 History & archive
 - 2026-02 · Initial commit of BMI calculator site; GA4 + webmaster verification added (78f9434, 92b3baa).
