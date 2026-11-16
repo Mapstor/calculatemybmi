@@ -33,7 +33,7 @@ blog/bmi-categories,blog,article,informational,,cdc-adult-bmi-categories,T2,live
 blog/bmi-chart-explained,blog,article,informational,,Quetelet formula,T3,built,Candidate to merge into bmi-chart (data-gated)
 blog/bmi-and-health-risks,blog,article,informational,,niddk-health-risks,T2,live,"CMB-051: claims pass; every claim sourced or cut, sources in the registry rows that list this page."
 blog/underweight-bmi-risks,blog,article,informational,,gbmc-2016-bmi-mortality,T3,live,"CMB-049: claims pass; every claim sourced or cut, sources in the registry rows that list this page; title and H1 kept (D-28)."
-blog/bmi-limitations,blog,article,informational,,Okorodudu 2010 Int J Obes and other primaries (to verify),T2,live,
+blog/bmi-limitations,blog,article,informational,,cdc-about-bmi,T2,live,"CMB-055: claims pass; every claim sourced or cut, sources in the registry rows that list this page."
 blog/bmi-and-metabolism,blog,article,informational,,pontzer-2021-energy-expenditure,T3,live,"CMB-052: claims pass; every claim sourced or cut, sources in the registry rows that list this page."
 blog/body-fat-vs-bmi,blog,article,informational,,Primary validation studies (to verify),T1,live,"Only page with Google visibility (AI-feature citations, zero clicks)"
 blog/bmi-for-athletes,blog,article,informational,,Primary studies (to verify),T3,live,

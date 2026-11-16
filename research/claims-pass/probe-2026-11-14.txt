@@ -12,20 +12,6 @@
        <p> (effective) Any changes will be effective immediately upon posting the updated Terms on this page, with the "Last Updated" date revised accordingly.
        <p> (cause) Any cause of action or claim you may have arising out of or relating to these Terms or the Site must be commenced within one (1) year after the cause of action accrues.
        <p> (cause) Otherwise, such cause of action or claim is permanently barred.
- 13  /blog/bmi-limitations/
-       <p> (evidence) Body Mass Index (BMI) has been the go-to health screening tool for decades, but mounting scientific evidence reveals significant flaws in this 200-year-old formula.
-       <p> (professional) Due to their high muscle mass and low body fat, many professional athletes are technically "obese" according to BMI despite being in peak physical condition.
-       <p> (cause) Pre-pregnancy BMI is used to determine appropriate weight gain during pregnancy, but ongoing BMI calculations during pregnancy are meaningless and potentially harmful if they cause unnecessary anxiety.
-       <p> (can help) Our Lean Body Mass Calculator can help estimate your non-fat mass, including bones and muscle.
-       <p> (evidence) Here are evidence-based alternatives that provide more accurate health assessments:
-       <p> (effective) BMI is effective for tracking obesity trends in large populations where individual variations average out.
-       <p> (benefit) As a quick, free screening tool, BMI can identify individuals who may benefit from further assessment.
-       <p> (recommended) For a free, simple alternative, waist-to-height ratio (keeping your waist less than half your height) is recommended by many researchers.
-       <p> (recommended) Pre-pregnancy BMI helps determine appropriate weight gain ranges, but calculating BMI during pregnancy is not recommended as weight gain includes the baby, placenta, amniotic fluid, and increased blood volume - all healt
-       <p> (pediatrician) Growth charts and pediatrician assessment are essential.
-       <p> (healthcare provider) Individual health status depends on many factors that only a qualified healthcare provider can assess.
-       <p> (consult) Always consult with your doctor or registered dietitian before making health decisions based on any single metric.
-       <p> (professional) If you have concerns about your weight or health, please seek professional medical evaluation.
   9  /blog/waist-to-height-ratio/
        <li> (Improve) How to Improve Your Ratio
        <p> (effectiveness) The effectiveness of WHtR stems from basic human physiology: where you store fat matters enormously for health, and waist circumference is the best simple proxy for the most dangerous fat deposits.
@@ -130,4 +116,4 @@
        <li> (lead to) Muscle mass tends to fall with age, so the same BMI can mean more body fat; the American Diabetes Association notes that this may lead to obesity being missed in older adults.
   1  /kids-bmi-calculator/
        <p> (shown to) BMI is CDC’s formula (US units × 703, or kg/m²), shown to 0.1.
-110 hits on 22 of 40 pages
+97 hits on 21 of 40 pages
