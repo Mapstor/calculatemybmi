@@ -4,12 +4,12 @@
  "viewport": "390x844",
  "pages_audited": 24,
  "pages_skipped": [],
- "numbers": 5254,
+ "numbers": 5281,
  "totals": {
   "A": 47,
-  "B": 1656,
-  "C": 2665,
-  "D": 696,
+  "B": 1655,
+  "C": 2694,
+  "D": 695,
   "X": 190,
   "U": 0
  },
@@ -19,16 +19,16 @@
  "c_not_in_row_in_page_csv": 0,
  "c_not_in_row_also_in_other_row": 0,
  "c_status": {
-  "row": 1418,
-  "row-notes": 317,
+  "row": 1437,
+  "row-notes": 327,
   "not-in-row": 28,
   "row-dataset": 902
  },
- "checks_run": 1137,
+ "checks_run": 1136,
  "check_errors": [],
  "unclassified": [],
- "manual_entries": 255,
- "manual_entries_used": 252,
+ "manual_entries": 254,
+ "manual_entries_used": 251,
  "worst10": [
   {
    "page": "/kids-bmi-calculator/",
@@ -2111,7 +2111,7 @@
   },
   {
    "page": "/blog/bmi-history/",
-   "jsonld_mirrors": 8,
+   "jsonld_mirrors": 26,
    "mismatches": [],
    "c_no_row": [],
    "c_not_in_row": [],
@@ -2161,14 +2161,14 @@
      "sentence": "A WHO expert consultation kept the international cut-offs but found that the share of Asian people at high risk of type 2 diabetes and cardiovascular disease is substantial below the overweight cut-off of 25, and it named public health action points at a BMI of 23.0, 27.5, 32.5 and 37.5 (WHO Expert Consultation, 2004)."
     },
     {
-     "number": "30",
-     "why": "example ages (manual.json)",
-     "sentence": "The same BMI at age 30 and 70 has different implications, yet the formula and cutoffs remain unchanged."
+     "number": "4",
+     "why": "name or label with a number",
+     "sentence": "CDC’s adult categories apply regardless of age (CDC), but body fat at the same BMI rises with age: at a BMI of 25, Gallagher and colleagues predicted 20% body fat for African American and white men aged 20 to 39 and 25% at 60 to 79 (Gallagher et al., 2000, Table 4)."
     },
     {
-     "number": "70",
-     "why": "example ages (manual.json)",
-     "sentence": "The same BMI at age 30 and 70 has different implications, yet the formula and cutoffs remain unchanged."
+     "number": "two",
+     "why": "number word (count in prose)",
+     "sentence": "The alternatives come in two kinds: another formula from weight and height, and measures that look at the waist or at fat itself."
     },
     {
      "number": "1972",
@@ -2406,11 +2406,6 @@
      "sentence": "Int J Epidemiol. 2014;43(3):672–674."
     },
     {
-     "number": "two",
-     "why": "number word (count in prose)",
-     "sentence": "Waist-to-Hip Ratio | Fat distribution | Identifies \"apple\" vs \"pear\" shape | Requires two measurements"
-    },
-    {
      "number": "2026",
      "why": "the current year (the timeline's end) (manual.json)",
      "sentence": "2026"
@@ -2431,33 +2426,36 @@
      "sentence": "The Complete History of BMI: From Quetelet to Modern Medicine (1832-2026)"
     }
    ],
-   "checks_ok": 23,
+   "checks_ok": 22,
    "page_errors": [],
    "score": 0,
    "totals": {
-    "C": 131,
-    "D": 62,
-    "B": 29,
+    "C": 160,
+    "D": 61,
+    "B": 28,
     "X": 12
    },
    "c_rows": {
-    "row": 118,
-    "row-notes": 13
+    "row": 137,
+    "row-notes": 23
    },
    "c_row_domains": {
-    "eknoyan-2008-quetelet": 29,
-    "keys-1972-indices": 19,
-    "nhlbi-1998-obesity-guidelines": 26,
-    "nih-1985-consensus-obesity": 10,
+    "eknoyan-2008-quetelet": 34,
+    "keys-1972-indices": 20,
+    "nhlbi-1998-obesity-guidelines": 29,
+    "nih-1985-consensus-obesity": 11,
     "who-trs-854": 7,
-    "who-trs-894-obesity": 5,
-    "nuttall-2015-bmi-review": 8,
+    "who-trs-894-obesity": 6,
+    "nuttall-2015-bmi-review": 9,
     "wells-2014-bmi-commentary": 5,
     "who-2004-asian-bmi": 7,
+    "cdc-adult-bmi-categories": 4,
+    "gallagher-2000-bf-ranges": 4,
+    "nice-ng246-ethnicity-thresholds": 4,
     "nhanes-2011-2018-dxa": 5,
-    "winter-2014-bmi-mortality-65": 6,
+    "winter-2014-bmi-mortality-65": 9,
     "trefethen-new-bmi": 3,
-    "nice-ng246-ethnicity-thresholds": 1
+    "body-fat-method-validation": 3
    },
    "excluded": {
     "list numbering (numbered badge)": 6,
@@ -48271,20 +48269,56 @@
   {
    "page": "/blog/bmi-history/",
    "region": "main",
-   "sentence": "The Body Mass Index has a 200-year history, from a Belgian mathematician's statistical curiosity to one of the most widely used health metrics in the world.",
-   "number": "200",
-   "value": 200.0,
-   "class": "B",
-   "why": "years since 1832, to the hundred (CMB-042) (manual.json)",
+   "sentence": "The body mass index dates from 1832, when Adolphe Quetelet described it; Ancel Keys gave it its name in 1972 (Eknoyan, 2008).",
+   "number": "1832",
+   "value": 1832.0,
+   "class": "C",
+   "why": "year",
    "heading": "The Complete History of BMI: From Quetelet to Modern Medicine (1832-2026)",
-   "check": {
-    "status": "ok",
-    "kind": "value",
-    "page": "200",
-    "computed": "200",
-    "raw": 194,
-    "label": "2026 minus 1832, rounded to the hundred"
-   }
+   "row": {
+    "status": "row",
+    "domain": "eknoyan-2008-quetelet",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1093/ndt/gfm517"
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "main",
+   "sentence": "The body mass index dates from 1832, when Adolphe Quetelet described it; Ancel Keys gave it its name in 1972 (Eknoyan, 2008).",
+   "number": "1972",
+   "value": 1972.0,
+   "class": "C",
+   "why": "year",
+   "heading": "The Complete History of BMI: From Quetelet to Modern Medicine (1832-2026)",
+   "row": {
+    "status": "row",
+    "domain": "eknoyan-2008-quetelet",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1093/ndt/gfm517"
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "main",
+   "sentence": "The body mass index dates from 1832, when Adolphe Quetelet described it; Ancel Keys gave it its name in 1972 (Eknoyan, 2008).",
+   "number": "2008",
+   "value": 2008.0,
+   "class": "C",
+   "why": "year",
+   "heading": "The Complete History of BMI: From Quetelet to Modern Medicine (1832-2026)",
+   "row": {
+    "status": "row",
+    "domain": "eknoyan-2008-quetelet",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1093/ndt/gfm517"
+   ]
   },
   {
    "page": "/blog/bmi-history/",
@@ -48578,6 +48612,24 @@
    },
    "links": [
     "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "main",
+   "sentence": "Why it stuck: Keys and colleagues preferred it for the simple calculation and because it applies to all populations at all times (Keys et al., 1972)",
+   "number": "1972",
+   "value": 1972.0,
+   "class": "C",
+   "why": "year",
+   "heading": "The Complete History of BMI: From Quetelet to Modern Medicine (1832-2026)",
+   "row": {
+    "status": "row",
+    "domain": "keys-1972-indices",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1016/0021-9681(72)90027-6"
    ]
   },
   {
@@ -49133,7 +49185,7 @@
    "heading": "Metropolitan Life Insurance Tables",
    "row": {
     "status": "row",
-    "domain": "keys-1972-indices",
+    "domain": "eknoyan-2008-quetelet",
     "how": "name"
    }
   },
@@ -49238,7 +49290,7 @@
    "heading": "Ancel Keys and the Birth of \"Body Mass Index\" (1972)",
    "row": {
     "status": "row",
-    "domain": "keys-1972-indices",
+    "domain": "eknoyan-2008-quetelet",
     "how": "name"
    }
   },
@@ -50297,22 +50349,186 @@
   {
    "page": "/blog/bmi-history/",
    "region": "main",
-   "sentence": "The same BMI at age 30 and 70 has different implications, yet the formula and cutoffs remain unchanged.",
-   "number": "30",
-   "value": 30.0,
-   "class": "D",
-   "why": "example ages (manual.json)",
-   "heading": "Age Not Considered"
+   "sentence": "CDC’s adult categories apply regardless of age (CDC), but body fat at the same BMI rises with age: at a BMI of 25, Gallagher and colleagues predicted 20% body fat for African American and white men aged 20 to 39 and 25% at 60 to 79 (Gallagher et al., 2000, Table 4).",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Age Not Considered",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-adult-bmi-categories",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
   },
   {
    "page": "/blog/bmi-history/",
    "region": "main",
-   "sentence": "The same BMI at age 30 and 70 has different implications, yet the formula and cutoffs remain unchanged.",
-   "number": "70",
-   "value": 70.0,
+   "sentence": "CDC’s adult categories apply regardless of age (CDC), but body fat at the same BMI rises with age: at a BMI of 25, Gallagher and colleagues predicted 20% body fat for African American and white men aged 20 to 39 and 25% at 60 to 79 (Gallagher et al., 2000, Table 4).",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Age Not Considered",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-adult-bmi-categories",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "main",
+   "sentence": "CDC’s adult categories apply regardless of age (CDC), but body fat at the same BMI rises with age: at a BMI of 25, Gallagher and colleagues predicted 20% body fat for African American and white men aged 20 to 39 and 25% at 60 to 79 (Gallagher et al., 2000, Table 4).",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Age Not Considered",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-adult-bmi-categories",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "main",
+   "sentence": "CDC’s adult categories apply regardless of age (CDC), but body fat at the same BMI rises with age: at a BMI of 25, Gallagher and colleagues predicted 20% body fat for African American and white men aged 20 to 39 and 25% at 60 to 79 (Gallagher et al., 2000, Table 4).",
+   "number": "39",
+   "value": 39.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Age Not Considered",
+   "row": {
+    "status": "row-notes",
+    "domain": "gallagher-2000-bf-ranges",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "main",
+   "sentence": "CDC’s adult categories apply regardless of age (CDC), but body fat at the same BMI rises with age: at a BMI of 25, Gallagher and colleagues predicted 20% body fat for African American and white men aged 20 to 39 and 25% at 60 to 79 (Gallagher et al., 2000, Table 4).",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Age Not Considered",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-adult-bmi-categories",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "main",
+   "sentence": "CDC’s adult categories apply regardless of age (CDC), but body fat at the same BMI rises with age: at a BMI of 25, Gallagher and colleagues predicted 20% body fat for African American and white men aged 20 to 39 and 25% at 60 to 79 (Gallagher et al., 2000, Table 4).",
+   "number": "60",
+   "value": 60.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Age Not Considered",
+   "row": {
+    "status": "row-notes",
+    "domain": "gallagher-2000-bf-ranges",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "main",
+   "sentence": "CDC’s adult categories apply regardless of age (CDC), but body fat at the same BMI rises with age: at a BMI of 25, Gallagher and colleagues predicted 20% body fat for African American and white men aged 20 to 39 and 25% at 60 to 79 (Gallagher et al., 2000, Table 4).",
+   "number": "79",
+   "value": 79.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Age Not Considered",
+   "row": {
+    "status": "row-notes",
+    "domain": "gallagher-2000-bf-ranges",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "main",
+   "sentence": "CDC’s adult categories apply regardless of age (CDC), but body fat at the same BMI rises with age: at a BMI of 25, Gallagher and colleagues predicted 20% body fat for African American and white men aged 20 to 39 and 25% at 60 to 79 (Gallagher et al., 2000, Table 4).",
+   "number": "2000",
+   "value": 2000.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Age Not Considered",
+   "row": {
+    "status": "row",
+    "domain": "gallagher-2000-bf-ranges",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "main",
+   "sentence": "CDC’s adult categories apply regardless of age (CDC), but body fat at the same BMI rises with age: at a BMI of 25, Gallagher and colleagues predicted 20% body fat for African American and white men aged 20 to 39 and 25% at 60 to 79 (Gallagher et al., 2000, Table 4).",
+   "number": "4",
+   "value": 4.0,
    "class": "D",
-   "why": "example ages (manual.json)",
-   "heading": "Age Not Considered"
+   "why": "name or label with a number",
+   "heading": "Age Not Considered",
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "main",
+   "sentence": "NICE advises interpreting BMI with caution in people aged 65 and over (NICE NG246).",
+   "number": "65",
+   "value": 65.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Age Not Considered",
+   "row": {
+    "status": "row-notes",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   },
+   "links": [
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
   },
   {
    "page": "/blog/bmi-history/",
@@ -50478,12 +50694,63 @@
   {
    "page": "/blog/bmi-history/",
    "region": "main",
-   "sentence": "One pattern called the “obesity paradox” shows up in older adults: compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter et al., 2014).",
+   "sentence": "NICE uses lower thresholds for adults of South Asian, Chinese, other Asian, Middle Eastern, Black African or African-Caribbean family background, whose cardiometabolic risk occurs at a lower BMI: overweight from 23 and obesity from 27.5 (NICE NG246).",
    "number": "23",
    "value": 23.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "The \"Obesity Paradox\"",
+   "heading": "Ethnic Variation",
+   "row": {
+    "status": "row",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   },
+   "links": [
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "main",
+   "sentence": "NICE uses lower thresholds for adults of South Asian, Chinese, other Asian, Middle Eastern, Black African or African-Caribbean family background, whose cardiometabolic risk occurs at a lower BMI: overweight from 23 and obesity from 27.5 (NICE NG246).",
+   "number": "27.5",
+   "value": 27.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Ethnic Variation",
+   "row": {
+    "status": "row",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   },
+   "links": [
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "main",
+   "sentence": "BMI and Survival After 65",
+   "number": "65",
+   "value": 65.0,
+   "class": "C",
+   "why": "a heading: the meta-analysis of people aged 65 and over, Winter 2014 (CMB-059) (manual.json)",
+   "heading": "Ethnic Variation",
+   "row": {
+    "status": "row",
+    "domain": "winter-2014-bmi-mortality-65",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "main",
+   "sentence": "In a meta-analysis of 197,940 people aged 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise above 33 (Winter et al., 2014).",
+   "number": "197,940",
+   "value": 197940.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI and Survival After 65",
    "row": {
     "status": "row",
     "domain": "winter-2014-bmi-mortality-65",
@@ -50496,12 +50763,48 @@
   {
    "page": "/blog/bmi-history/",
    "region": "main",
-   "sentence": "One pattern called the “obesity paradox” shows up in older adults: compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter et al., 2014).",
+   "sentence": "In a meta-analysis of 197,940 people aged 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise above 33 (Winter et al., 2014).",
+   "number": "65",
+   "value": 65.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI and Survival After 65",
+   "row": {
+    "status": "row",
+    "domain": "winter-2014-bmi-mortality-65",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/24452240/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "main",
+   "sentence": "In a meta-analysis of 197,940 people aged 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise above 33 (Winter et al., 2014).",
+   "number": "23",
+   "value": 23.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI and Survival After 65",
+   "row": {
+    "status": "row",
+    "domain": "winter-2014-bmi-mortality-65",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/24452240/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "main",
+   "sentence": "In a meta-analysis of 197,940 people aged 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise above 33 (Winter et al., 2014).",
    "number": "23.9",
    "value": 23.9,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "The \"Obesity Paradox\"",
+   "heading": "BMI and Survival After 65",
    "row": {
     "status": "row",
     "domain": "winter-2014-bmi-mortality-65",
@@ -50514,12 +50817,12 @@
   {
    "page": "/blog/bmi-history/",
    "region": "main",
-   "sentence": "One pattern called the “obesity paradox” shows up in older adults: compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter et al., 2014).",
+   "sentence": "In a meta-analysis of 197,940 people aged 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise above 33 (Winter et al., 2014).",
    "number": "23",
    "value": 23.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "The \"Obesity Paradox\"",
+   "heading": "BMI and Survival After 65",
    "row": {
     "status": "row",
     "domain": "winter-2014-bmi-mortality-65",
@@ -50532,12 +50835,12 @@
   {
    "page": "/blog/bmi-history/",
    "region": "main",
-   "sentence": "One pattern called the “obesity paradox” shows up in older adults: compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter et al., 2014).",
+   "sentence": "In a meta-analysis of 197,940 people aged 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise above 33 (Winter et al., 2014).",
    "number": "33",
    "value": 33.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "The \"Obesity Paradox\"",
+   "heading": "BMI and Survival After 65",
    "row": {
     "status": "row",
     "domain": "winter-2014-bmi-mortality-65",
@@ -50550,12 +50853,12 @@
   {
    "page": "/blog/bmi-history/",
    "region": "main",
-   "sentence": "One pattern called the “obesity paradox” shows up in older adults: compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise at about 33 (Winter et al., 2014).",
+   "sentence": "In a meta-analysis of 197,940 people aged 65 and over, compared with a BMI of 23 to 23.9, the risk of death was higher below 23 and began to rise above 33 (Winter et al., 2014).",
    "number": "2014",
    "value": 2014.0,
    "class": "C",
    "why": "year",
-   "heading": "The \"Obesity Paradox\"",
+   "heading": "BMI and Survival After 65",
    "row": {
     "status": "row",
     "domain": "winter-2014-bmi-mortality-65",
@@ -50564,6 +50867,16 @@
    "links": [
     "https://pubmed.ncbi.nlm.nih.gov/24452240/"
    ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "main",
+   "sentence": "The alternatives come in two kinds: another formula from weight and height, and measures that look at the waist or at fat itself.",
+   "number": "two",
+   "value": 2,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Proposed Alternatives to BMI"
   },
   {
    "page": "/blog/bmi-history/",
@@ -50723,6 +51036,63 @@
    "links": [
     "https://www.ncbi.nlm.nih.gov/books/NBK2003/",
     "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "main",
+   "sentence": "In a study of 437 college students, a hand-held impedance device was 4.9 points off a DXA scan on average (Burns et al., 2019); our guide on how to measure body fat compares the methods.",
+   "number": "437",
+   "value": 437.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Home Body Fat Devices",
+   "row": {
+    "status": "row-notes",
+    "domain": "body-fat-method-validation",
+    "how": "link"
+   },
+   "links": [
+    "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214029",
+    "http://localhost:8765/blog/how-to-measure-body-fat/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "main",
+   "sentence": "In a study of 437 college students, a hand-held impedance device was 4.9 points off a DXA scan on average (Burns et al., 2019); our guide on how to measure body fat compares the methods.",
+   "number": "4.9",
+   "value": 4.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Home Body Fat Devices",
+   "row": {
+    "status": "row-notes",
+    "domain": "body-fat-method-validation",
+    "how": "link"
+   },
+   "links": [
+    "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214029",
+    "http://localhost:8765/blog/how-to-measure-body-fat/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "main",
+   "sentence": "In a study of 437 college students, a hand-held impedance device was 4.9 points off a DXA scan on average (Burns et al., 2019); our guide on how to measure body fat compares the methods.",
+   "number": "2019",
+   "value": 2019.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Home Body Fat Devices",
+   "row": {
+    "status": "row",
+    "domain": "body-fat-method-validation",
+    "how": "link"
+   },
+   "links": [
+    "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214029",
+    "http://localhost:8765/blog/how-to-measure-body-fat/"
    ]
   },
   {
@@ -51356,16 +51726,6 @@
   },
   {
    "page": "/blog/bmi-history/",
-   "region": "table",
-   "sentence": "Waist-to-Hip Ratio | Fat distribution | Identifies \"apple\" vs \"pear\" shape | Requires two measurements",
-   "number": "two",
-   "value": 2,
-   "class": "D",
-   "why": "number word (count in prose)",
-   "heading": "Other Alternative Metrics"
-  },
-  {
-   "page": "/blog/bmi-history/",
    "region": "svg",
    "sentence": "1832",
    "number": "1832",
@@ -51573,7 +51933,7 @@
   {
    "page": "/blog/bmi-history/",
    "region": "faq-a",
-   "sentence": "In 1985 an NIH consensus conference recommended wider use of BMI.",
+   "sentence": "In 1985 an NIH consensus conference recommended wider use of BMI (NIH, 1985).",
    "number": "1985",
    "value": 1985.0,
    "class": "C",
@@ -51582,14 +51942,34 @@
    "row": {
     "status": "row",
     "domain": "nih-1985-consensus-obesity",
-    "how": "publisher and year",
-    "strong": true
-   }
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/3840463/"
+   ]
   },
   {
    "page": "/blog/bmi-history/",
    "region": "faq-a",
-   "sentence": "NIH's 1998 guidelines then set overweight at a BMI of 25 to 29.9 and obesity at 30 or more.",
+   "sentence": "In 1985 an NIH consensus conference recommended wider use of BMI (NIH, 1985).",
+   "number": "1985",
+   "value": 1985.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: When did BMI become a medical standard?",
+   "row": {
+    "status": "row",
+    "domain": "nih-1985-consensus-obesity",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/3840463/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "faq-a",
+   "sentence": "NIH’s 1998 guidelines then set overweight at a BMI of 25 to 29.9 and obesity at 30 or more (NHLBI, 1998).",
    "number": "1998",
    "value": 1998.0,
    "class": "C",
@@ -51598,14 +51978,16 @@
    "row": {
     "status": "row",
     "domain": "nhlbi-1998-obesity-guidelines",
-    "how": "publisher and year",
-    "strong": true
-   }
+    "how": "link"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
   },
   {
    "page": "/blog/bmi-history/",
    "region": "faq-a",
-   "sentence": "NIH's 1998 guidelines then set overweight at a BMI of 25 to 29.9 and obesity at 30 or more.",
+   "sentence": "NIH’s 1998 guidelines then set overweight at a BMI of 25 to 29.9 and obesity at 30 or more (NHLBI, 1998).",
    "number": "25",
    "value": 25.0,
    "class": "B",
@@ -51617,22 +51999,28 @@
     "page": "25 to 29.9 (overweight)",
     "computed": "Overweight in calculator.js",
     "label": "category cut-off (getBMICategory)"
-   }
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
   },
   {
    "page": "/blog/bmi-history/",
    "region": "faq-a",
-   "sentence": "NIH's 1998 guidelines then set overweight at a BMI of 25 to 29.9 and obesity at 30 or more.",
+   "sentence": "NIH’s 1998 guidelines then set overweight at a BMI of 25 to 29.9 and obesity at 30 or more (NHLBI, 1998).",
    "number": "29.9",
    "value": 29.9,
    "class": "B",
    "why": "category cut-off (other bound)",
-   "heading": "FAQ: When did BMI become a medical standard?"
+   "heading": "FAQ: When did BMI become a medical standard?",
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
   },
   {
    "page": "/blog/bmi-history/",
    "region": "faq-a",
-   "sentence": "NIH's 1998 guidelines then set overweight at a BMI of 25 to 29.9 and obesity at 30 or more.",
+   "sentence": "NIH’s 1998 guidelines then set overweight at a BMI of 25 to 29.9 and obesity at 30 or more (NHLBI, 1998).",
    "number": "30",
    "value": 30.0,
    "class": "B",
@@ -51644,12 +52032,33 @@
     "page": "30 (obesity)",
     "computed": "Class 1 obesity / Class 2 obesity / Class 3 obesity in calculator.js",
     "label": "category cut-off (getBMICategory)"
-   }
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
   },
   {
    "page": "/blog/bmi-history/",
    "region": "faq-a",
-   "sentence": "WHO's 2000 report set the obesity classes used today.",
+   "sentence": "NIH’s 1998 guidelines then set overweight at a BMI of 25 to 29.9 and obesity at 30 or more (NHLBI, 1998).",
+   "number": "1998",
+   "value": 1998.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: When did BMI become a medical standard?",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "faq-a",
+   "sentence": "WHO’s 2000 report set the obesity classes used today (WHO, 2000).",
    "number": "2000",
    "value": 2000.0,
    "class": "C",
@@ -51658,14 +52067,34 @@
    "row": {
     "status": "row",
     "domain": "who-trs-894-obesity",
-    "how": "publisher and year",
-    "strong": true
-   }
+    "how": "link"
+   },
+   "links": [
+    "https://iris.who.int/handle/10665/42330"
+   ]
   },
   {
    "page": "/blog/bmi-history/",
    "region": "faq-a",
-   "sentence": "Earlier weight standards came from insurers, such as Metropolitan Life's 1959 tables of desirable weights.",
+   "sentence": "WHO’s 2000 report set the obesity classes used today (WHO, 2000).",
+   "number": "2000",
+   "value": 2000.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: When did BMI become a medical standard?",
+   "row": {
+    "status": "row",
+    "domain": "who-trs-894-obesity",
+    "how": "link"
+   },
+   "links": [
+    "https://iris.who.int/handle/10665/42330"
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "faq-a",
+   "sentence": "Earlier weight standards came from insurers, such as Metropolitan Life’s 1959 tables of desirable weights (Nuttall, 2015).",
    "number": "1959",
    "value": 1959.0,
    "class": "C",
@@ -51675,7 +52104,102 @@
     "status": "row",
     "domain": "nuttall-2015-bmi-review",
     "how": "manual.json"
-   }
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4890841/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "faq-a",
+   "sentence": "Earlier weight standards came from insurers, such as Metropolitan Life’s 1959 tables of desirable weights (Nuttall, 2015).",
+   "number": "2015",
+   "value": 2015.0,
+   "class": "C",
+   "why": "FAQ: MetLife's 1959 tables, Nuttall 2015 (CMB-042) (manual.json)",
+   "heading": "FAQ: When did BMI become a medical standard?",
+   "row": {
+    "status": "row",
+    "domain": "nuttall-2015-bmi-review",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4890841/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "faq-a",
+   "sentence": "Keys and colleagues preferred it in 1972 for the simple calculation and because, unlike percentage of average weight, it applies to all populations at all times (Keys et al., 1972).",
+   "number": "1972",
+   "value": 1972.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: Why is BMI still used despite its known limitations?",
+   "row": {
+    "status": "row",
+    "domain": "keys-1972-indices",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1016/0021-9681(72)90027-6"
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "faq-a",
+   "sentence": "Keys and colleagues preferred it in 1972 for the simple calculation and because, unlike percentage of average weight, it applies to all populations at all times (Keys et al., 1972).",
+   "number": "1972",
+   "value": 1972.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: Why is BMI still used despite its known limitations?",
+   "row": {
+    "status": "row",
+    "domain": "keys-1972-indices",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1016/0021-9681(72)90027-6"
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "faq-a",
+   "sentence": "Guidelines pair it with a waist measure: NIH’s 1998 guidelines with waist circumference, NICE with the waist-to-height ratio (NHLBI, 1998; NICE NG246).",
+   "number": "1998",
+   "value": 1998.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: Why is BMI still used despite its known limitations?",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/",
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "faq-a",
+   "sentence": "Guidelines pair it with a waist measure: NIH’s 1998 guidelines with waist circumference, NICE with the waist-to-height ratio (NHLBI, 1998; NICE NG246).",
+   "number": "1998",
+   "value": 1998.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: Why is BMI still used despite its known limitations?",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/",
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
   },
   {
    "page": "/blog/bmi-history/",
@@ -51752,6 +52276,79 @@
   {
    "page": "/blog/bmi-history/",
    "region": "jsonld",
+   "sentence": "Belgian mathematician, astronomer and statistician Adolphe Quetelet described the index in 1832, and it became known as the Quetelet index.",
+   "number": "1832",
+   "value": 1832.0,
+   "class": "C",
+   "why": "FAQ: the 1832 index, Eknoyan 2008 (CMB-042) (manual.json)",
+   "heading": "FAQPage JSON-LD: Who invented BMI and when?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "eknoyan-2008-quetelet",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "jsonld",
+   "sentence": "Ancel Keys and colleagues named it the body mass index in a 1972 paper in the Journal of Chronic Diseases, 140 years later.",
+   "number": "1972",
+   "value": 1972.0,
+   "class": "C",
+   "why": "FAQ: Keys 1972, and the gap from Quetelet's 1832 index (CMB-042) (manual.json)",
+   "heading": "FAQPage JSON-LD: Who invented BMI and when?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "keys-1972-indices",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "jsonld",
+   "sentence": "Ancel Keys and colleagues named it the body mass index in a 1972 paper in the Journal of Chronic Diseases, 140 years later.",
+   "number": "140",
+   "value": 140.0,
+   "class": "B",
+   "why": "FAQ: Keys 1972, and the gap from Quetelet's 1832 index (CMB-042) (manual.json)",
+   "heading": "FAQPage JSON-LD: Who invented BMI and when?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "check": {
+    "status": "ok",
+    "kind": "value",
+    "page": "140",
+    "computed": "140",
+    "raw": 140,
+    "label": "years from the 1832 index to the 1972 paper"
+   }
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "jsonld",
+   "sentence": "So the formula is nearly 200 years old and the name BMI just over 50.",
+   "number": "200",
+   "value": 200.0,
+   "class": "D",
+   "why": "rounded ages: 2026 - 1832 = 194 and 2026 - 1972 = 54 (CMB-042) (manual.json)",
+   "heading": "FAQPage JSON-LD: Who invented BMI and when?",
+   "mirror_of": "the visible FAQ answer (same text)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "jsonld",
+   "sentence": "So the formula is nearly 200 years old and the name BMI just over 50.",
+   "number": "50",
+   "value": 50.0,
+   "class": "D",
+   "why": "rounded ages: 2026 - 1832 = 194 and 2026 - 1972 = 54 (CMB-042) (manual.json)",
+   "heading": "FAQPage JSON-LD: Who invented BMI and when?",
+   "mirror_of": "the visible FAQ answer (same text)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "jsonld",
    "sentence": "In developing his index he had no interest in obesity; his concern was the characteristics of normal man and the distribution around the norm (Eknoyan, 2008).",
    "number": "2008",
    "value": 2008.0,
@@ -51768,7 +52365,7 @@
   {
    "page": "/blog/bmi-history/",
    "region": "jsonld",
-   "sentence": "In 1985 an NIH consensus conference recommended wider use of BMI.",
+   "sentence": "In 1985 an NIH consensus conference recommended wider use of BMI (NIH, 1985).",
    "number": "1985",
    "value": 1985.0,
    "class": "C",
@@ -51778,14 +52375,29 @@
    "row": {
     "status": "row",
     "domain": "nih-1985-consensus-obesity",
-    "how": "publisher and year",
-    "strong": true
+    "how": "link"
    }
   },
   {
    "page": "/blog/bmi-history/",
    "region": "jsonld",
-   "sentence": "NIH's 1998 guidelines then set overweight at a BMI of 25 to 29.9 and obesity at 30 or more.",
+   "sentence": "In 1985 an NIH consensus conference recommended wider use of BMI (NIH, 1985).",
+   "number": "1985",
+   "value": 1985.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: When did BMI become a medical standard?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nih-1985-consensus-obesity",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "jsonld",
+   "sentence": "NIH’s 1998 guidelines then set overweight at a BMI of 25 to 29.9 and obesity at 30 or more (NHLBI, 1998).",
    "number": "1998",
    "value": 1998.0,
    "class": "C",
@@ -51795,14 +52407,13 @@
    "row": {
     "status": "row",
     "domain": "nhlbi-1998-obesity-guidelines",
-    "how": "publisher and year",
-    "strong": true
+    "how": "link"
    }
   },
   {
    "page": "/blog/bmi-history/",
    "region": "jsonld",
-   "sentence": "NIH's 1998 guidelines then set overweight at a BMI of 25 to 29.9 and obesity at 30 or more.",
+   "sentence": "NIH’s 1998 guidelines then set overweight at a BMI of 25 to 29.9 and obesity at 30 or more (NHLBI, 1998).",
    "number": "25",
    "value": 25.0,
    "class": "B",
@@ -51820,7 +52431,7 @@
   {
    "page": "/blog/bmi-history/",
    "region": "jsonld",
-   "sentence": "NIH's 1998 guidelines then set overweight at a BMI of 25 to 29.9 and obesity at 30 or more.",
+   "sentence": "NIH’s 1998 guidelines then set overweight at a BMI of 25 to 29.9 and obesity at 30 or more (NHLBI, 1998).",
    "number": "29.9",
    "value": 29.9,
    "class": "B",
@@ -51831,7 +52442,7 @@
   {
    "page": "/blog/bmi-history/",
    "region": "jsonld",
-   "sentence": "NIH's 1998 guidelines then set overweight at a BMI of 25 to 29.9 and obesity at 30 or more.",
+   "sentence": "NIH’s 1998 guidelines then set overweight at a BMI of 25 to 29.9 and obesity at 30 or more (NHLBI, 1998).",
    "number": "30",
    "value": 30.0,
    "class": "B",
@@ -51849,7 +52460,23 @@
   {
    "page": "/blog/bmi-history/",
    "region": "jsonld",
-   "sentence": "WHO's 2000 report set the obesity classes used today.",
+   "sentence": "NIH’s 1998 guidelines then set overweight at a BMI of 25 to 29.9 and obesity at 30 or more (NHLBI, 1998).",
+   "number": "1998",
+   "value": 1998.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: When did BMI become a medical standard?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "jsonld",
+   "sentence": "WHO’s 2000 report set the obesity classes used today (WHO, 2000).",
    "number": "2000",
    "value": 2000.0,
    "class": "C",
@@ -51859,14 +52486,29 @@
    "row": {
     "status": "row",
     "domain": "who-trs-894-obesity",
-    "how": "publisher and year",
-    "strong": true
+    "how": "link"
    }
   },
   {
    "page": "/blog/bmi-history/",
    "region": "jsonld",
-   "sentence": "Earlier weight standards came from insurers, such as Metropolitan Life's 1959 tables of desirable weights.",
+   "sentence": "WHO’s 2000 report set the obesity classes used today (WHO, 2000).",
+   "number": "2000",
+   "value": 2000.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: When did BMI become a medical standard?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "who-trs-894-obesity",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "jsonld",
+   "sentence": "Earlier weight standards came from insurers, such as Metropolitan Life’s 1959 tables of desirable weights (Nuttall, 2015).",
    "number": "1959",
    "value": 1959.0,
    "class": "C",
@@ -51877,6 +52519,163 @@
     "status": "row",
     "domain": "nuttall-2015-bmi-review",
     "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "jsonld",
+   "sentence": "Earlier weight standards came from insurers, such as Metropolitan Life’s 1959 tables of desirable weights (Nuttall, 2015).",
+   "number": "2015",
+   "value": 2015.0,
+   "class": "C",
+   "why": "FAQ: MetLife's 1959 tables, Nuttall 2015 (CMB-042) (manual.json)",
+   "heading": "FAQPage JSON-LD: When did BMI become a medical standard?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nuttall-2015-bmi-review",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "jsonld",
+   "sentence": "Keys and colleagues preferred it in 1972 for the simple calculation and because, unlike percentage of average weight, it applies to all populations at all times (Keys et al., 1972).",
+   "number": "1972",
+   "value": 1972.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: Why is BMI still used despite its known limitations?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "keys-1972-indices",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "jsonld",
+   "sentence": "Keys and colleagues preferred it in 1972 for the simple calculation and because, unlike percentage of average weight, it applies to all populations at all times (Keys et al., 1972).",
+   "number": "1972",
+   "value": 1972.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: Why is BMI still used despite its known limitations?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "keys-1972-indices",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "jsonld",
+   "sentence": "Guidelines pair it with a waist measure: NIH’s 1998 guidelines with waist circumference, NICE with the waist-to-height ratio (NHLBI, 1998; NICE NG246).",
+   "number": "1998",
+   "value": 1998.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: Why is BMI still used despite its known limitations?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "jsonld",
+   "sentence": "Guidelines pair it with a waist measure: NIH’s 1998 guidelines with waist circumference, NICE with the waist-to-height ratio (NHLBI, 1998; NICE NG246).",
+   "number": "1998",
+   "value": 1998.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: Why is BMI still used despite its known limitations?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "jsonld",
+   "sentence": "In 2013, Oxford mathematician Nick Trefethen proposed a modified formula: New BMI = 1.3 × weight (kg) / height (m)^2.5.",
+   "number": "2013",
+   "value": 2013.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: What is Trefethen's \"New BMI\" and is it better?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "trefethen-new-bmi",
+    "how": "name"
+   }
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "jsonld",
+   "sentence": "In 2013, Oxford mathematician Nick Trefethen proposed a modified formula: New BMI = 1.3 × weight (kg) / height (m)^2.5.",
+   "number": "1.3",
+   "value": 1.3,
+   "class": "B",
+   "why": "formula constant",
+   "heading": "FAQPage JSON-LD: What is Trefethen's \"New BMI\" and is it better?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "check": {
+    "status": "ok",
+    "kind": "value",
+    "page": "1.3",
+    "computed": "calculateNewBMI has \"1.3 * weightKg / Math.pow(heightM, 2.5)\"",
+    "label": "New BMI in calculateNewBMI"
+   }
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "jsonld",
+   "sentence": "In 2013, Oxford mathematician Nick Trefethen proposed a modified formula: New BMI = 1.3 × weight (kg) / height (m)^2.5.",
+   "number": "2.5",
+   "value": 2.5,
+   "class": "B",
+   "why": "formula constant (same formula)",
+   "heading": "FAQPage JSON-LD: What is Trefethen's \"New BMI\" and is it better?",
+   "mirror_of": "the visible FAQ answer (same text)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "jsonld",
+   "sentence": "No. Quetelet was a mathematician, astronomer and statistician studying the average man, and in developing his index he had no interest in obesity (Eknoyan, 2008).",
+   "number": "2008",
+   "value": 2008.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: Did Quetelet know his formula would be used for health assessment?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "eknoyan-2008-quetelet",
+    "how": "name"
+   }
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "region": "jsonld",
+   "sentence": "Medical use came after World War II, when heart disease epidemiology took up the Quetelet index, which Keys named the body mass index in 1972.",
+   "number": "1972",
+   "value": 1972.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: Did Quetelet know his formula would be used for health assessment?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "keys-1972-indices",
+    "how": "name"
    }
   },
   {

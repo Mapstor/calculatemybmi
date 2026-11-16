@@ -1319,12 +1319,6 @@
   },
   {
    "page": "/blog/bmi-history/",
-   "sig": "The same BMI at age # and # has different implications, yet the formula and cutoffs remain unchanged.",
-   "classes": "D",
-   "why": "example ages"
-  },
-  {
-   "page": "/blog/bmi-history/",
    "sig": "#",
    "classes": "B",
    "why": "the overweight cut-off (a stat tile)",
@@ -2828,21 +2822,6 @@
    "why": "an info card: NICE NG246 (CMB-042)"
   },
   {
-   "page": "/blog/bmi-history/",
-   "sig": "The Body Mass Index has a #-year history, from a Belgian mathematician's statistical curiosity to one of the most widely used health metrics in the world.",
-   "classes": "B",
-   "why": "years since 1832, to the hundred (CMB-042)",
-   "checks": [
-    {
-     "target": 1,
-     "kind": "num",
-     "expr": "2026 - 1832",
-     "label": "2026 minus 1832, rounded to the hundred",
-     "dec": -2
-    }
-   ]
-  },
-  {
    "page": "/blog/waist-to-height-ratio/",
    "sig": "# - #",
    "classes": "C",
@@ -3231,6 +3210,13 @@
    "classes": "C",
    "row": "nice-ng246-ethnicity-thresholds",
    "why": "a heading naming NICE's 0.5 boundary for increased central adiposity (CMB-056)"
+  },
+  {
+   "page": "/blog/bmi-history/",
+   "sig": "BMI and Survival After #",
+   "classes": "C",
+   "row": "winter-2014-bmi-mortality-65",
+   "why": "a heading: the meta-analysis of people aged 65 and over, Winter 2014 (CMB-059)"
   }
  ]
 }
