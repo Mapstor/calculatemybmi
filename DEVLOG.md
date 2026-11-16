@@ -3,12 +3,12 @@
 
 ## §0 Resume here
 - Scores: S 40/40 | P 40/40 | D 40/40 | all three 40/40 (2026-11-14 to 2026-11-16)
-_last update: 2026-11-16 · CMB-060 CLAIMS-11_
-- Phase: the scores run (D-26) is complete: all three scores pass on 40 of 40 pages since CMB-057 checked Gallagher 2000 against the paper's own Table 4 (full run 2026-11-14; the changed pages re-run 2026-11-16). Now the claims pass (§5 P1): batches 1 to 10 (CMB-048 the calculators' own words, CMB-049 `/blog/underweight-bmi-risks/`, CMB-050 `/blog/how-to-lower-bmi/`, CMB-051 `/blog/bmi-and-health-risks/`, CMB-052 `/blog/bmi-and-metabolism/`, CMB-053 `/about/`, CMB-054 `/blog/bmi-categories/`, CMB-055 `/blog/bmi-limitations/`, CMB-056 `/blog/waist-to-height-ratio/`, CMB-059 `/blog/bmi-history/`) live, and CMB-057 (the two owner items: the D-28 title and H1, and Gallagher) and CMB-058 (the waist-to-height ratio calculator) live; batch 11 (CMB-060, `/blog/bmi-chart-explained/`) done on its branch.
-- Last confirmed: CMB-059 CLAIMS-10 — live: PR #35 merged (merge commit 0760915, 17:10:53 UTC); Vercel Production for 0760915 completed 17:11:01 UTC (2026-11-16); live check (chat, Chrome, 2026-11-16): `/blog/bmi-history/` and `sitemap.xml` on calculatemybmi.net hash the same as the merged repo (bf4ebe84…, af435cd8…), the h2 "Where BMI Stands Now" live, no overflow; `date_truth.py` exit 0 (40/40) on main after the merge. CMB-058 live (bb62bb1, PR #34; the calculator run on the live page). Earlier live checks: their §6 entries.
+_last update: 2026-11-16 · CMB-061 CLAIMS-12_
+- Phase: the scores run (D-26) is complete: all three scores pass on 40 of 40 pages since CMB-057 checked Gallagher 2000 against the paper's own Table 4 (full run 2026-11-14; the changed pages re-run 2026-11-16). Now the claims pass (§5 P1): batches 1 to 11 (CMB-048 the calculators' own words, CMB-049 `/blog/underweight-bmi-risks/`, CMB-050 `/blog/how-to-lower-bmi/`, CMB-051 `/blog/bmi-and-health-risks/`, CMB-052 `/blog/bmi-and-metabolism/`, CMB-053 `/about/`, CMB-054 `/blog/bmi-categories/`, CMB-055 `/blog/bmi-limitations/`, CMB-056 `/blog/waist-to-height-ratio/`, CMB-059 `/blog/bmi-history/`, CMB-060 `/blog/bmi-chart-explained/`) live, and CMB-057 (the two owner items: the D-28 title and H1, and Gallagher) and CMB-058 (the waist-to-height ratio calculator) live; batch 12 (CMB-061, `/blog/body-fat-vs-bmi/`) done on its branch.
+- Last confirmed: CMB-060 CLAIMS-11 — live: PR #36 merged (merge commit 70940b2, 17:20:29 UTC); Vercel Production for 70940b2 completed 17:20:37 UTC (2026-11-16); live check (chat, Chrome, 2026-11-16): `/blog/bmi-chart-explained/` and `sitemap.xml` on calculatemybmi.net hash the same as the merged repo (642cb456…, e38e094d…), the NICE line for Black African and African-Caribbean backgrounds live, no overflow; `date_truth.py` exit 0 (40/40) on main after the merge. CMB-059 live (0760915, PR #35). Earlier live checks: their §6 entries.
 - Traffic (Search Console, read by chat 2026-11-06; read it again only after asking, D-28): 27 of 40 pages had impressions. None in 56 days, so the only pages whose title and H1 are free under D-28: `/average-weight/`, `/body-fat-calculator/`, `/body-fat-percentage-chart/`, `/us-obesity-statistics/`, `/blog/bmi-chart-men/`, `/obesity-rate-by-state/`, `/childhood-obesity-statistics/`, `/blog/bmi-by-age/`, `/blog/waist-to-height-ratio/`, `/blog/bmi-chart-explained/`, `/blog/bmi-history/`, `/blog/bmi-and-health-risks/`, `/blog/bmi-and-metabolism/`.
-- In flight (handed, NOT confirmed): CMB-060 CLAIMS-11 — done on `claude/cmb-060`, PR #36, checked on the preview; chat merges by D-24 (merge commit), then confirms Production and the live pages, recorded in the next batch's DEVLOG step. Merged `claude/` branches stay on GitHub (Marko, 2026-11-13); at the run's finishing line chat lists the ones safe to delete.
-- Next action: claims pass batch 12 (§5 P1) down `research/claims-pass/probe-2026-11-14.txt` (75 hits after CMB-060; `/terms/`, `/privacy/` and `/contact/` are out of scope): `/lean-body-mass/`, `/blog/body-fat-vs-bmi/` and `/blog/bmi-tracking-guide/` 7 each (`/lean-body-mass/` needs its formula papers in the registry first: Boer 1984, James 1976, Hume 1966). Also seen (CMB-059): seven pages end with an unsourced provider line ("If you're concerned about your weight, consult a healthcare professional who can evaluate your individual situation ..."); the claims pass swaps it for CDC's own "when" page by page.
+- In flight (handed, NOT confirmed): CMB-061 CLAIMS-12 — done on `claude/cmb-061`, PR #37, checked on the preview; chat merges by D-24 (merge commit), then confirms Production and the live pages, recorded in the next batch's DEVLOG step. Merged `claude/` branches stay on GitHub (Marko, 2026-11-13); at the run's finishing line chat lists the ones safe to delete.
+- Next action: claims pass batch 13 (§5 P1) down `research/claims-pass/probe-2026-11-14.txt` (68 hits after CMB-061; `/terms/`, `/privacy/` and `/contact/` are out of scope): `/blog/bmi-tracking-guide/` 7, then `/lean-body-mass/` 7 (it needs its formula papers in the registry first: Boer 1984, James 1976, Hume 1966). Also seen (CMB-059): seven pages end with an unsourced provider line ("If you're concerned about your weight, consult a healthcare professional who can evaluate your individual situation ..."); the claims pass swaps it for CDC's own "when" page by page.
 - Waiting on owner: Search Console only after asking (Browser 1's Google account has no access to the property); after Google recrawls, the image-thumbnail report for the fifteen D-14 pages. Marko, 2026-11-13: no Request indexing for `/body-fat-percentage-chart/` and no chart-image licence for now (both stay as they are); merged `claude/` branches are kept, chat lists the safe-to-delete ones at the finishing line (Marko, 2026-11-14: delete them only then). Marko allows PubMed reads (2026-11-13): approve WebFetch's prompt when it asks. CDC's twelve 2011–2018 DXA files arrived 2026-11-13 and stay out of the repo (registry `nhanes-2011-2018-dxa` has the URL pattern).
 - Open questions: does any other site's chat request indexing on the same Google account?
 
@@ -982,6 +982,78 @@ _last update: 2026-11-16 · CMB-060 CLAIMS-11_
 - Commit: cf2a140 and this DEVLOG commit on `claude/cmb-060`, PR #36 (only the branch is pushed). Chat merges by D-24 next.
 - Notes:
   - The CMB-059 live check is in §0.
+
+### 2026-11-16 · CMB-061 CLAIMS-12 · chat · done
+- What: claims pass batch 12 (§5 P1) on `/blog/body-fat-vs-bmi/`, on `claude/cmb-061`. Probe hits on the page went from 7 to 0. Every line now says what a registry row says, or was cut (D-10, D-06).
+  - Errors fixed:
+    - The "30% of normal BMI individuals" tile had no source. `manual.json` had it as an illustration. It went, with the "Higher Risk" and "Often Missed" tiles and the normal-weight-obesity risk line ("type 2 diabetes, cardiovascular disease, and metabolic syndrome"), which no registry row backs.
+    - Scenario 3 called 30% body fat "excess fat" without saying whose. For women aged 20 to 39, 30% is inside the provisional healthy range. The two people are now men aged 20 to 39, rated on Gallagher Table 4 (15% healthy, 30% very high).
+    - "Men should aim for < 40 inches; women < 35 inches" was a target (D-06). It is now NIH's risk line, at a BMI of 25 to 34.9.
+  - Intro: "widely used due to its simplicity" and "crucial" are now CDC's two lines.
+  - The categories table has a source line (CDC; WHO 2000 for the classes).
+  - "What Is Body Fat Percentage?": out are "directly measures one of the key components that actually impacts health", the essential/storage fat list and "many health professionals now recommend". In are CDC, NIH's abdominal-fat line and NCI's visceral-fat line.
+  - Healthy ranges: Gallagher's provisional ranges, with Table 4's healthy range at 20 to 39 (women 21 to 32.9%, men 8 to 19.9%).
+  - Measuring:
+    - out: "(preferably in the morning, after using the bathroom)" and "personalized insights";
+    - in: a "Measuring Body Fat" h3 with CDC's own words on DXA.
+  - Scenario 2: "extremely common among" and its four-group list are now CDC plus Provencher 2018 (at the NFL Combine, BMI classed 53.4% of players as obese against 8.9% by body fat).
+  - Accuracy:
+    - both lists now keep only what CDC, NIH, Gallagher, Provencher and GBMC back, with a source line;
+    - "Widely understood by healthcare providers" is out;
+    - Burns 2019 backs the body fat methods.
+  - "Which Metric Is Better":
+    - out: "generally more informative", "works well for the general population", "the most accurate" and "the most comprehensive";
+    - in: CDC, NICE 1.9.13 (65 and over) and NIH.
+  - "Using Both": "The most effective approach" and the unsourced interpretation table are out; CDC backs the blood pressure and cholesterol line. The h2 drops ": A Comprehensive Approach".
+  - Layout: the two-person bars (`.chart-compare-row`, used on this page only) broke at 390 px; "15% Body Fat" wrapped out of its 24 px bar (seen in Chrome on the preview).
+    - Below 600 px the rows now stack, label first.
+    - An empty mirror bar hides there; the rows whose second bar carries text keep both.
+    - DESIGN.md records it.
+  - Title and H1 are unchanged: the page has Search Console impressions (D-28).
+  - dateModified and lastmod updated.
+- Files:
+  - `research/cmb-061/`: `registry.py`, `apply.py`, `audit_manual.py` and `css.py`; run them in that order from main.
+  - `blog/body-fat-vs-bmi/index.html`
+  - `sitemap.xml`
+  - `assets/css/styles.css`
+  - `DESIGN.md`
+  - `research/data-sources.csv`: the page joins `pages_served` on 9 rows.
+  - `research/page-map.csv`: `data_source` is now `gallagher-2000-bf-ranges`.
+  - `research/stage1-audit/manual.json`:
+    - 3 entries dropped: the changed sentence and caption, and the "30%" tile;
+    - 2 added: the scenario 3 caption's BMI 26 with a category check, and its sentence with a check that 19.9 = 20 − 0.1.
+  - `research/stage1-audit/report.md` and `report.json`
+  - `research/page-scores.csv`
+  - `research/claims-pass/probe-2026-11-14.json` and `.txt`
+- Verified:
+  - Claims probe: 75 to 68 hits site-wide; the page is at 0.
+  - Stage 1 audit:
+    - all 24 pages: 0 mismatches, 0 no row, 0 unclassified, 28 not in row (the kids page);
+    - the page: 0, 0, 0, 0 (9 A/B checks).
+  - Page scores: S, P (0 tells) and D pass on this page and on `/blog/bmi-formula/`, which shares `.chart-compare`; all three stay at 40/40.
+  - Gates:
+    - `check_structure.py`: 40/40.
+    - `check_markup`: 0.
+    - integrity: clean.
+    - images: 0.
+    - `research/f1/verify.py`: clean.
+    - `check_sources.py`: 14 to 13.
+    - `check_ledger.py`: OK.
+  - Probes:
+    - text, UI and box: no hits;
+    - two text-probe hits on new colon lines ("lean on:", "look at:") were reworded.
+  - Bars: at 390, 320 and 1280, every bar's text fits inside it; the empty mirror bars hide below 600 px.
+  - `date_truth.py`: exit 0, 40/40 on the branch.
+  - Preview, Chrome, 2026-11-16:
+    - The page, `sitemap.xml` and `styles.css` hash the same as the branch (497806e0…, facb20fc…, ac0b840c…).
+    - No overflow at 1280 or 390, no skipped heading levels.
+    - A 390 screenshot of scenarios 2 and 3 reads cleanly, the bars included.
+  - Anti-slop on the new copy: 2 fixes (the two colon lines).
+  - Unverified: touch and iPhone Safari (D-25).
+- Commit: 2cbc373, cc3c9c1 and this DEVLOG commit on `claude/cmb-061`, PR #37 (only the branch is pushed). Chat merges by D-24 next.
+- Notes:
+  - The CMB-060 live check is in §0.
+  - The CDC scan shares at a healthy BMI (49.1% of women and 60.6% of men in the provisional "high" range) were not used here as a prevalence of "normal weight obesity". The provisional ranges came from other scanners, so the share overstates it (the body fat chart page says so).
 
 ## §7 History & archive
 - 2026-02 · Initial commit of BMI calculator site; GA4 + webmaster verification added (78f9434, 92b3baa).
