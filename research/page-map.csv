@@ -30,7 +30,7 @@ blog/healthy-bmi-range,blog,article,informational,Share of US adults with a heal
 blog/bmi-formula,blog,article,informational,,Quetelet formula; Trefethen 2013,T2,live,
 blog/bmi-history,blog,article,informational,,eknoyan-2008-quetelet,T3,live,"CMB-059: claims pass; every claim sourced or cut, sources in the registry rows that list this page."
 blog/bmi-categories,blog,article,informational,,cdc-adult-bmi-categories,T2,live,"CMB-054: claims pass; every claim sourced or cut, sources in the registry rows that list this page."
-blog/bmi-chart-explained,blog,article,informational,,Quetelet formula,T3,built,Candidate to merge into bmi-chart (data-gated)
+blog/bmi-chart-explained,blog,article,informational,,cdc-adult-bmi-categories,T3,built,"Candidate to merge into bmi-chart (data-gated) CMB-060: claims pass; every claim sourced or cut, sources in the registry rows that list this page."
 blog/bmi-and-health-risks,blog,article,informational,,niddk-health-risks,T2,live,"CMB-051: claims pass; every claim sourced or cut, sources in the registry rows that list this page."
 blog/underweight-bmi-risks,blog,article,informational,,gbmc-2016-bmi-mortality,T3,live,"CMB-049: claims pass; every claim sourced or cut, sources in the registry rows that list this page; title and H1 kept (D-28)."
 blog/bmi-limitations,blog,article,informational,,cdc-about-bmi,T2,live,"CMB-055: claims pass; every claim sourced or cut, sources in the registry rows that list this page."

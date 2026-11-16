@@ -374,57 +374,7 @@
   }
  ],
  "/blog/bmi-categories/": [],
- "/blog/bmi-chart-explained/": [
-  {
-   "tag": "li",
-   "trigger": "causes",
-   "sentence": "Possible causes: Eating disorders, hyperthyroidism, digestive conditions, inadequate intake, high metabolic rate",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "li",
-   "trigger": "consult",
-   "sentence": "Action: If unintentional, consult a healthcare provider to rule out underlying conditions",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "associated with",
-   "sentence": "The green zone represents the healthy BMI range associated with the lowest health risks for most adults.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "li",
-   "trigger": "higher risk",
-   "sentence": "Subclasses: Class I (30-34.9), Class II (35-39.9), Class III (40+) with progressively higher risk",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "healthcare providers",
-   "sentence": "However, women naturally have more body fat than men at equivalent BMI values, which is why some healthcare providers recommend sex-specific interpretations.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "associated with",
-   "sentence": "This range is associated with the lowest risk of weight-related health problems for most adults.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "consult",
-   "sentence": "Always consult a qualified healthcare provider for personalized assessment, diagnosis, and treatment recommendations.",
-   "sourced": false,
-   "block_sourced": false
-  }
- ],
+ "/blog/bmi-chart-explained/": [],
  "/blog/bmi-and-health-risks/": [],
  "/blog/underweight-bmi-risks/": [
   {
