@@ -4,13 +4,13 @@
  "viewport": "390x844",
  "pages_audited": 24,
  "pages_skipped": [],
- "numbers": 5392,
+ "numbers": 5418,
  "totals": {
-  "A": 47,
-  "B": 1667,
-  "C": 2790,
-  "D": 702,
-  "X": 186,
+  "A": 49,
+  "B": 1666,
+  "C": 2808,
+  "D": 710,
+  "X": 185,
   "U": 0
  },
  "mismatches": 0,
@@ -19,16 +19,16 @@
  "c_not_in_row_in_page_csv": 0,
  "c_not_in_row_also_in_other_row": 0,
  "c_status": {
-  "row": 1495,
-  "row-notes": 365,
+  "row": 1506,
+  "row-notes": 372,
   "not-in-row": 28,
   "row-dataset": 902
  },
- "checks_run": 1143,
+ "checks_run": 1147,
  "check_errors": [],
  "unclassified": [],
- "manual_entries": 252,
- "manual_entries_used": 249,
+ "manual_entries": 256,
+ "manual_entries_used": 253,
  "worst10": [
   {
    "page": "/kids-bmi-calculator/",
@@ -1051,7 +1051,7 @@
   },
   {
    "page": "/lean-body-mass/",
-   "jsonld_mirrors": 10,
+   "jsonld_mirrors": 11,
    "mismatches": [],
    "c_no_row": [],
    "c_not_in_row": [],
@@ -1063,11 +1063,6 @@
      "sentence": "Unlike standard BMI, which only considers height and weight, lean body mass separates your weight into two meaningful components: fat mass and everything else."
     },
     {
-     "number": "two",
-     "why": "number word (count in prose)",
-     "sentence": "This distinction is critical because two people can weigh the same yet have vastly different health profiles."
-    },
-    {
      "number": "Two",
      "why": "number word (count in prose)",
      "sentence": "How the Two Boer Equations Differ"
@@ -1076,6 +1071,11 @@
      "number": "three",
      "why": "number word (count in prose)",
      "sentence": "The three equations can give noticeably different answers for the same person; the comparison table below shows how much."
+    },
+    {
+     "number": "five",
+     "why": "number word (count in prose)",
+     "sentence": "Boer’s, which this calculator uses, James’s and Hume’s are below, with what each gives for the same five people."
     },
     {
      "number": "three",
@@ -1150,12 +1150,47 @@
     {
      "number": "two",
      "why": "number word (count in prose)",
-     "sentence": "This is one reason two people of the same weight can have meaningfully different resting energy expenditure; body composition is part of the picture."
+     "sentence": "Take two men, both 5'10\" and 190 lbs, one at 15% body fat (LBM of 161.5 lbs) and one at 30% (LBM of 133 lbs)."
     },
     {
-     "number": "Two",
+     "number": "5",
+     "why": "two illustrative men (CMB-063; \"two\" is the first number); their lean mass is 190 lb less 15% and 30% body fat (manual.json)",
+     "sentence": "Take two men, both 5'10\" and 190 lbs, one at 15% body fat (LBM of 161.5 lbs) and one at 30% (LBM of 133 lbs)."
+    },
+    {
+     "number": "10",
+     "why": "two illustrative men (CMB-063; \"two\" is the first number); their lean mass is 190 lb less 15% and 30% body fat (manual.json)",
+     "sentence": "Take two men, both 5'10\" and 190 lbs, one at 15% body fat (LBM of 161.5 lbs) and one at 30% (LBM of 133 lbs)."
+    },
+    {
+     "number": "190",
+     "why": "two illustrative men (CMB-063; \"two\" is the first number); their lean mass is 190 lb less 15% and 30% body fat (manual.json)",
+     "sentence": "Take two men, both 5'10\" and 190 lbs, one at 15% body fat (LBM of 161.5 lbs) and one at 30% (LBM of 133 lbs)."
+    },
+    {
+     "number": "15",
+     "why": "two illustrative men (CMB-063; \"two\" is the first number); their lean mass is 190 lb less 15% and 30% body fat (manual.json)",
+     "sentence": "Take two men, both 5'10\" and 190 lbs, one at 15% body fat (LBM of 161.5 lbs) and one at 30% (LBM of 133 lbs)."
+    },
+    {
+     "number": "30",
+     "why": "two illustrative men (CMB-063; \"two\" is the first number); their lean mass is 190 lb less 15% and 30% body fat (manual.json)",
+     "sentence": "Take two men, both 5'10\" and 190 lbs, one at 15% body fat (LBM of 161.5 lbs) and one at 30% (LBM of 133 lbs)."
+    },
+    {
+     "number": "15",
+     "why": "Gallagher Table 4, men 20 to 39: 8% at BMI 18.5, 20% at 25, 25% at 30; 15 and 30 are the two men; 19.9 is just under 20; 30 is the obesity cut-off (CMB-063) (manual.json)",
+     "sentence": "If both are 20 to 39 years old, Gallagher and colleagues’ provisional ranges put 15% body fat within the range that matches a healthy BMI (8 to 19.9%) and 30% above the 25% that matches a BMI of 30 (Gallagher et al., 2000)."
+    },
+    {
+     "number": "30",
+     "why": "Gallagher Table 4, men 20 to 39: 8% at BMI 18.5, 20% at 25, 25% at 30; 15 and 30 are the two men; 19.9 is just under 20; 30 is the obesity cut-off (CMB-063) (manual.json)",
+     "sentence": "If both are 20 to 39 years old, Gallagher and colleagues’ provisional ranges put 15% body fat within the range that matches a healthy BMI (8 to 19.9%) and 30% above the 25% that matches a BMI of 30 (Gallagher et al., 2000)."
+    },
+    {
+     "number": "seven",
      "why": "number word (count in prose)",
-     "sentence": "Two people at the same height and weight can have dramatically different health profiles."
+     "sentence": "Cheaper methods read differently: in a study of 437 college students, seven-site skinfolds read 1.4 points of body fat below DXA on average and a hand-held impedance device 4.9 points below (Burns et al., 2019)."
     },
     {
      "number": "four",
@@ -1163,36 +1198,46 @@
      "sentence": "Ideal weight from four published formulas."
     },
     {
-     "number": "Two",
+     "number": "two",
      "why": "number word (count in prose)",
-     "sentence": "Two people can have the same BMI but very different body compositions -- one might be muscular with low body fat, while the other has high body fat and low muscle mass."
+     "sentence": "The Boer formula is a population-based estimate: it predicts lean body mass from height, weight and sex only, so two people who match on all three get the same result whatever their build."
+    },
+    {
+     "number": "three",
+     "why": "number word (count in prose)",
+     "sentence": "The Boer formula is a population-based estimate: it predicts lean body mass from height, weight and sex only, so two people who match on all three get the same result whatever their build."
     }
    ],
-   "checks_ok": 75,
+   "checks_ok": 79,
    "page_errors": [],
    "score": 0,
    "totals": {
-    "D": 22,
-    "C": 33,
-    "B": 99,
-    "A": 26,
-    "X": 5
+    "D": 30,
+    "C": 51,
+    "B": 98,
+    "A": 28,
+    "X": 4
    },
    "c_rows": {
-    "row": 33
+    "row": 44,
+    "row-notes": 7
    },
    "c_row_domains": {
     "caspersen-1985-fitness": 1,
     "boer-1984-lbm": 5,
-    "james-1976-lbm": 5,
+    "james-1976-lbm": 6,
     "hume-1966-lbm": 9,
+    "wang-2010-organ-metabolic-rates": 3,
+    "provencher-2018-nfl-combine": 5,
+    "gallagher-2000-bf-ranges": 5,
+    "body-fat-method-validation": 4,
     "odphp-physical-activity-guidelines": 3,
     "watson-2015-sleep-duration": 4,
     "winter-2014-bmi-mortality-65": 1,
     "volpi-2004-muscle-aging": 5
    },
    "excluded": {
-    "list numbering": 5
+    "list numbering": 4
    }
   },
   {
@@ -17208,16 +17253,6 @@
   {
    "page": "/lean-body-mass/",
    "region": "main",
-   "sentence": "This distinction is critical because two people can weigh the same yet have vastly different health profiles.",
-   "number": "two",
-   "value": 2,
-   "class": "D",
-   "why": "number word (count in prose)",
-   "heading": "Lean Body Mass Calculator"
-  },
-  {
-   "page": "/lean-body-mass/",
-   "region": "main",
    "sentence": "Body composition is one of the health-related components of physical fitness, alongside cardiorespiratory endurance, muscular strength, muscular endurance and flexibility (Caspersen et al., Public Health Reports 1985).",
    "number": "1985",
    "value": 1985.0,
@@ -18249,6 +18284,16 @@
   {
    "page": "/lean-body-mass/",
    "region": "main",
+   "sentence": "Boer’s, which this calculator uses, James’s and Hume’s are below, with what each gives for the same five people.",
+   "number": "five",
+   "value": 5,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Other LBM Formulas: A Comparison"
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
    "sentence": "Boer Formula (1984)",
    "number": "1984",
    "value": 1984.0,
@@ -18970,12 +19015,74 @@
   {
    "page": "/lean-body-mass/",
    "region": "main",
-   "sentence": "This is one reason two people of the same weight can have meaningfully different resting energy expenditure; body composition is part of the picture.",
-   "number": "two",
-   "value": 2,
-   "class": "D",
-   "why": "number word (count in prose)",
-   "heading": "1. Metabolic Rate and Calorie Burning"
+   "sentence": "At rest, skeletal muscle uses about 13 kcal per kilogram a day and fat tissue about 4.5, figures from Elia that Wang and colleagues found held across adulthood (Wang et al., 2010).",
+   "number": "13",
+   "value": 13.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "1. Metabolic Rate and Calorie Burning",
+   "row": {
+    "status": "row",
+    "domain": "wang-2010-organ-metabolic-rates",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/20962155/"
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
+   "sentence": "At rest, skeletal muscle uses about 13 kcal per kilogram a day and fat tissue about 4.5, figures from Elia that Wang and colleagues found held across adulthood (Wang et al., 2010).",
+   "number": "4.5",
+   "value": 4.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "1. Metabolic Rate and Calorie Burning",
+   "row": {
+    "status": "row",
+    "domain": "wang-2010-organ-metabolic-rates",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/20962155/"
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
+   "sentence": "At rest, skeletal muscle uses about 13 kcal per kilogram a day and fat tissue about 4.5, figures from Elia that Wang and colleagues found held across adulthood (Wang et al., 2010).",
+   "number": "2010",
+   "value": 2010.0,
+   "class": "C",
+   "why": "year",
+   "heading": "1. Metabolic Rate and Calorie Burning",
+   "row": {
+    "status": "row",
+    "domain": "wang-2010-organ-metabolic-rates",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/20962155/"
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
+   "sentence": "A kilogram of muscle at rest uses about 2.9 times as much as a kilogram of fat.",
+   "number": "2.9",
+   "value": 2.9,
+   "class": "B",
+   "why": "the ratio of the two rates in the sentence before, 13 and 4.5 kcal per kg a day (Wang et al., 2010) (CMB-063) (manual.json)",
+   "heading": "1. Metabolic Rate and Calorie Burning",
+   "check": {
+    "status": "ok",
+    "kind": "value",
+    "page": "2.9",
+    "computed": "2.9",
+    "raw": 2.888888888888889,
+    "label": "13 / 4.5"
+   }
   },
   {
    "page": "/lean-body-mass/",
@@ -18990,7 +19097,25 @@
   {
    "page": "/lean-body-mass/",
    "region": "main",
-   "sentence": "3. Athletic Performance",
+   "sentence": "Caruso and colleagues, for example, compared the Boer and James formulas for tailoring iodinated contrast injection to lean body weight in patients with obesity (Caruso et al., 2018).",
+   "number": "2018",
+   "value": 2018.0,
+   "class": "C",
+   "why": "year",
+   "heading": "2. Drug Dosing and Medical Applications",
+   "row": {
+    "status": "row",
+    "domain": "james-1976-lbm",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6110034/"
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
+   "sentence": "3. Muscular Athletes",
    "number": "3",
    "value": 3.0,
    "class": "X",
@@ -19000,82 +19125,162 @@
   {
    "page": "/lean-body-mass/",
    "region": "main",
-   "sentence": "4. Nutritional Needs and Protein Requirements",
+   "sentence": "At the NFL Scouting Combine from 2010 to 2016, BMI classed 53.4% of the athletes as obese, against 8.9% by measured body fat (Provencher et al., 2018).",
+   "number": "2010",
+   "value": 2010.0,
+   "class": "C",
+   "why": "year",
+   "heading": "3. Muscular Athletes",
+   "row": {
+    "status": "row",
+    "domain": "provencher-2018-nfl-combine",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1519/JSC.0000000000002449"
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
+   "sentence": "At the NFL Scouting Combine from 2010 to 2016, BMI classed 53.4% of the athletes as obese, against 8.9% by measured body fat (Provencher et al., 2018).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "3. Muscular Athletes",
+   "row": {
+    "status": "row",
+    "domain": "provencher-2018-nfl-combine",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1519/JSC.0000000000002449"
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
+   "sentence": "At the NFL Scouting Combine from 2010 to 2016, BMI classed 53.4% of the athletes as obese, against 8.9% by measured body fat (Provencher et al., 2018).",
+   "number": "53.4",
+   "value": 53.4,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "3. Muscular Athletes",
+   "row": {
+    "status": "row",
+    "domain": "provencher-2018-nfl-combine",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1519/JSC.0000000000002449"
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
+   "sentence": "At the NFL Scouting Combine from 2010 to 2016, BMI classed 53.4% of the athletes as obese, against 8.9% by measured body fat (Provencher et al., 2018).",
+   "number": "8.9",
+   "value": 8.9,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "3. Muscular Athletes",
+   "row": {
+    "status": "row",
+    "domain": "provencher-2018-nfl-combine",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1519/JSC.0000000000002449"
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
+   "sentence": "At the NFL Scouting Combine from 2010 to 2016, BMI classed 53.4% of the athletes as obese, against 8.9% by measured body fat (Provencher et al., 2018).",
+   "number": "2018",
+   "value": 2018.0,
+   "class": "C",
+   "why": "year",
+   "heading": "3. Muscular Athletes",
+   "row": {
+    "status": "row",
+    "domain": "provencher-2018-nfl-combine",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1519/JSC.0000000000002449"
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
+   "sentence": "4. Same BMI, Different Build",
    "number": "4",
    "value": 4.0,
    "class": "X",
    "why": "list numbering",
-   "heading": "3. Athletic Performance"
+   "heading": "3. Muscular Athletes"
   },
   {
    "page": "/lean-body-mass/",
    "region": "main",
-   "sentence": "5. Health Assessment Beyond Weight",
-   "number": "5",
-   "value": 5.0,
-   "class": "X",
-   "why": "list numbering",
-   "heading": "4. Nutritional Needs and Protein Requirements"
-  },
-  {
-   "page": "/lean-body-mass/",
-   "region": "main",
-   "sentence": "Two people at the same height and weight can have dramatically different health profiles.",
-   "number": "Two",
+   "sentence": "Take two men, both 5'10\" and 190 lbs, one at 15% body fat (LBM of 161.5 lbs) and one at 30% (LBM of 133 lbs).",
+   "number": "two",
    "value": 2,
    "class": "D",
    "why": "number word (count in prose)",
-   "heading": "5. Health Assessment Beyond Weight"
+   "heading": "4. Same BMI, Different Build"
   },
   {
    "page": "/lean-body-mass/",
    "region": "main",
-   "sentence": "A 5'10\" man weighing 190 lbs could be a fit athlete with 15% body fat (LBM of 161.5 lbs) or a sedentary office worker at 30% body fat (LBM of 133 lbs).",
+   "sentence": "Take two men, both 5'10\" and 190 lbs, one at 15% body fat (LBM of 161.5 lbs) and one at 30% (LBM of 133 lbs).",
    "number": "5",
    "value": 5.0,
-   "class": "B",
-   "why": "lean mass from a body fat share (manual.json)",
-   "heading": "5. Health Assessment Beyond Weight"
+   "class": "D",
+   "why": "two illustrative men (CMB-063; \"two\" is the first number); their lean mass is 190 lb less 15% and 30% body fat (manual.json)",
+   "heading": "4. Same BMI, Different Build"
   },
   {
    "page": "/lean-body-mass/",
    "region": "main",
-   "sentence": "A 5'10\" man weighing 190 lbs could be a fit athlete with 15% body fat (LBM of 161.5 lbs) or a sedentary office worker at 30% body fat (LBM of 133 lbs).",
+   "sentence": "Take two men, both 5'10\" and 190 lbs, one at 15% body fat (LBM of 161.5 lbs) and one at 30% (LBM of 133 lbs).",
    "number": "10",
    "value": 10.0,
-   "class": "B",
-   "why": "lean mass from a body fat share (manual.json)",
-   "heading": "5. Health Assessment Beyond Weight"
+   "class": "D",
+   "why": "two illustrative men (CMB-063; \"two\" is the first number); their lean mass is 190 lb less 15% and 30% body fat (manual.json)",
+   "heading": "4. Same BMI, Different Build"
   },
   {
    "page": "/lean-body-mass/",
    "region": "main",
-   "sentence": "A 5'10\" man weighing 190 lbs could be a fit athlete with 15% body fat (LBM of 161.5 lbs) or a sedentary office worker at 30% body fat (LBM of 133 lbs).",
+   "sentence": "Take two men, both 5'10\" and 190 lbs, one at 15% body fat (LBM of 161.5 lbs) and one at 30% (LBM of 133 lbs).",
    "number": "190",
    "value": 190.0,
-   "class": "B",
-   "why": "lean mass from a body fat share (manual.json)",
-   "heading": "5. Health Assessment Beyond Weight"
+   "class": "D",
+   "why": "two illustrative men (CMB-063; \"two\" is the first number); their lean mass is 190 lb less 15% and 30% body fat (manual.json)",
+   "heading": "4. Same BMI, Different Build"
   },
   {
    "page": "/lean-body-mass/",
    "region": "main",
-   "sentence": "A 5'10\" man weighing 190 lbs could be a fit athlete with 15% body fat (LBM of 161.5 lbs) or a sedentary office worker at 30% body fat (LBM of 133 lbs).",
+   "sentence": "Take two men, both 5'10\" and 190 lbs, one at 15% body fat (LBM of 161.5 lbs) and one at 30% (LBM of 133 lbs).",
    "number": "15",
    "value": 15.0,
-   "class": "B",
-   "why": "lean mass from a body fat share (manual.json)",
-   "heading": "5. Health Assessment Beyond Weight"
+   "class": "D",
+   "why": "two illustrative men (CMB-063; \"two\" is the first number); their lean mass is 190 lb less 15% and 30% body fat (manual.json)",
+   "heading": "4. Same BMI, Different Build"
   },
   {
    "page": "/lean-body-mass/",
    "region": "main",
-   "sentence": "A 5'10\" man weighing 190 lbs could be a fit athlete with 15% body fat (LBM of 161.5 lbs) or a sedentary office worker at 30% body fat (LBM of 133 lbs).",
+   "sentence": "Take two men, both 5'10\" and 190 lbs, one at 15% body fat (LBM of 161.5 lbs) and one at 30% (LBM of 133 lbs).",
    "number": "161.5",
    "value": 161.5,
    "class": "B",
-   "why": "lean mass from a body fat share (manual.json)",
-   "heading": "5. Health Assessment Beyond Weight",
+   "why": "two illustrative men (CMB-063; \"two\" is the first number); their lean mass is 190 lb less 15% and 30% body fat (manual.json)",
+   "heading": "4. Same BMI, Different Build",
    "check": {
     "status": "ok",
     "kind": "value",
@@ -19088,22 +19293,22 @@
   {
    "page": "/lean-body-mass/",
    "region": "main",
-   "sentence": "A 5'10\" man weighing 190 lbs could be a fit athlete with 15% body fat (LBM of 161.5 lbs) or a sedentary office worker at 30% body fat (LBM of 133 lbs).",
+   "sentence": "Take two men, both 5'10\" and 190 lbs, one at 15% body fat (LBM of 161.5 lbs) and one at 30% (LBM of 133 lbs).",
    "number": "30",
    "value": 30.0,
-   "class": "B",
-   "why": "lean mass from a body fat share (manual.json)",
-   "heading": "5. Health Assessment Beyond Weight"
+   "class": "D",
+   "why": "two illustrative men (CMB-063; \"two\" is the first number); their lean mass is 190 lb less 15% and 30% body fat (manual.json)",
+   "heading": "4. Same BMI, Different Build"
   },
   {
    "page": "/lean-body-mass/",
    "region": "main",
-   "sentence": "A 5'10\" man weighing 190 lbs could be a fit athlete with 15% body fat (LBM of 161.5 lbs) or a sedentary office worker at 30% body fat (LBM of 133 lbs).",
+   "sentence": "Take two men, both 5'10\" and 190 lbs, one at 15% body fat (LBM of 161.5 lbs) and one at 30% (LBM of 133 lbs).",
    "number": "133",
    "value": 133.0,
    "class": "B",
-   "why": "lean mass from a body fat share (manual.json)",
-   "heading": "5. Health Assessment Beyond Weight",
+   "why": "two illustrative men (CMB-063; \"two\" is the first number); their lean mass is 190 lb less 15% and 30% body fat (manual.json)",
+   "heading": "4. Same BMI, Different Build",
    "check": {
     "status": "ok",
     "kind": "value",
@@ -19112,6 +19317,302 @@
     "raw": 133,
     "label": "190 lb at 30% body fat"
    }
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
+   "sentence": "BMI puts both at 27.3, overweight.",
+   "number": "27.3",
+   "value": 27.3,
+   "class": "B",
+   "why": "the BMI of 5 ft 10 in and 190 lb, and its category (CMB-063) (manual.json)",
+   "heading": "4. Same BMI, Different Build",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "27.3 (overweight)",
+    "computed": "Overweight",
+    "label": "category of that BMI (getBMICategory)"
+   },
+   "links": [
+    "http://localhost:8765/blog/what-is-bmi/"
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
+   "sentence": "If both are 20 to 39 years old, Gallagher and colleagues’ provisional ranges put 15% body fat within the range that matches a healthy BMI (8 to 19.9%) and 30% above the 25% that matches a BMI of 30 (Gallagher et al., 2000).",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "4. Same BMI, Different Build",
+   "row": {
+    "status": "row-notes",
+    "domain": "gallagher-2000-bf-ranges",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
+   "sentence": "If both are 20 to 39 years old, Gallagher and colleagues’ provisional ranges put 15% body fat within the range that matches a healthy BMI (8 to 19.9%) and 30% above the 25% that matches a BMI of 30 (Gallagher et al., 2000).",
+   "number": "39",
+   "value": 39.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "4. Same BMI, Different Build",
+   "row": {
+    "status": "row-notes",
+    "domain": "gallagher-2000-bf-ranges",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
+   "sentence": "If both are 20 to 39 years old, Gallagher and colleagues’ provisional ranges put 15% body fat within the range that matches a healthy BMI (8 to 19.9%) and 30% above the 25% that matches a BMI of 30 (Gallagher et al., 2000).",
+   "number": "15",
+   "value": 15.0,
+   "class": "D",
+   "why": "Gallagher Table 4, men 20 to 39: 8% at BMI 18.5, 20% at 25, 25% at 30; 15 and 30 are the two men; 19.9 is just under 20; 30 is the obesity cut-off (CMB-063) (manual.json)",
+   "heading": "4. Same BMI, Different Build",
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
+   "sentence": "If both are 20 to 39 years old, Gallagher and colleagues’ provisional ranges put 15% body fat within the range that matches a healthy BMI (8 to 19.9%) and 30% above the 25% that matches a BMI of 30 (Gallagher et al., 2000).",
+   "number": "8",
+   "value": 8.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "4. Same BMI, Different Build",
+   "row": {
+    "status": "row-notes",
+    "domain": "gallagher-2000-bf-ranges",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
+   "sentence": "If both are 20 to 39 years old, Gallagher and colleagues’ provisional ranges put 15% body fat within the range that matches a healthy BMI (8 to 19.9%) and 30% above the 25% that matches a BMI of 30 (Gallagher et al., 2000).",
+   "number": "19.9",
+   "value": 19.9,
+   "class": "B",
+   "why": "Gallagher Table 4, men 20 to 39: 8% at BMI 18.5, 20% at 25, 25% at 30; 15 and 30 are the two men; 19.9 is just under 20; 30 is the obesity cut-off (CMB-063) (manual.json)",
+   "heading": "4. Same BMI, Different Build",
+   "check": {
+    "status": "ok",
+    "kind": "value",
+    "page": "19.9",
+    "computed": "19.9",
+    "raw": 19.9,
+    "label": "just under Table 4's 20% (men 20-39, BMI 25)"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
+   "sentence": "If both are 20 to 39 years old, Gallagher and colleagues’ provisional ranges put 15% body fat within the range that matches a healthy BMI (8 to 19.9%) and 30% above the 25% that matches a BMI of 30 (Gallagher et al., 2000).",
+   "number": "30",
+   "value": 30.0,
+   "class": "D",
+   "why": "Gallagher Table 4, men 20 to 39: 8% at BMI 18.5, 20% at 25, 25% at 30; 15 and 30 are the two men; 19.9 is just under 20; 30 is the obesity cut-off (CMB-063) (manual.json)",
+   "heading": "4. Same BMI, Different Build",
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
+   "sentence": "If both are 20 to 39 years old, Gallagher and colleagues’ provisional ranges put 15% body fat within the range that matches a healthy BMI (8 to 19.9%) and 30% above the 25% that matches a BMI of 30 (Gallagher et al., 2000).",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "4. Same BMI, Different Build",
+   "row": {
+    "status": "row-notes",
+    "domain": "gallagher-2000-bf-ranges",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
+   "sentence": "If both are 20 to 39 years old, Gallagher and colleagues’ provisional ranges put 15% body fat within the range that matches a healthy BMI (8 to 19.9%) and 30% above the 25% that matches a BMI of 30 (Gallagher et al., 2000).",
+   "number": "30",
+   "value": 30.0,
+   "class": "B",
+   "why": "Gallagher Table 4, men 20 to 39: 8% at BMI 18.5, 20% at 25, 25% at 30; 15 and 30 are the two men; 19.9 is just under 20; 30 is the obesity cut-off (CMB-063) (manual.json)",
+   "heading": "4. Same BMI, Different Build",
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
+   "sentence": "If both are 20 to 39 years old, Gallagher and colleagues’ provisional ranges put 15% body fat within the range that matches a healthy BMI (8 to 19.9%) and 30% above the 25% that matches a BMI of 30 (Gallagher et al., 2000).",
+   "number": "2000",
+   "value": 2000.0,
+   "class": "C",
+   "why": "year",
+   "heading": "4. Same BMI, Different Build",
+   "row": {
+    "status": "row",
+    "domain": "gallagher-2000-bf-ranges",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
+   "sentence": "The Boer formula can’t see that difference: from height, weight and sex alone, it gives both men 139.7 lbs of lean mass and 26.5% body fat.",
+   "number": "139.7",
+   "value": 139.7,
+   "class": "A",
+   "why": "the Boer estimate for both men, from the page's calculator (CMB-063) (manual.json)",
+   "heading": "4. Same BMI, Different Build",
+   "check": {
+    "status": "ok",
+    "kind": "calculator",
+    "page": "lean mass lbs 139.7; body fat % 26.5",
+    "computed": "lean mass lbs 139.7; body fat % 26.5",
+    "label": "typed into /lean-body-mass/ (us): ft=5, in=10, lb=190, sex=male",
+    "claims": [
+     {
+      "claim": "lean mass lbs",
+      "page": "139.7",
+      "printed": "139.7",
+      "ok": true
+     },
+     {
+      "claim": "body fat %",
+      "page": "26.5",
+      "printed": "26.5",
+      "ok": true
+     }
+    ]
+   }
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
+   "sentence": "The Boer formula can’t see that difference: from height, weight and sex alone, it gives both men 139.7 lbs of lean mass and 26.5% body fat.",
+   "number": "26.5",
+   "value": 26.5,
+   "class": "A",
+   "why": "the Boer estimate for both men, from the page's calculator (CMB-063) (manual.json)",
+   "heading": "4. Same BMI, Different Build"
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
+   "sentence": "Cheaper methods read differently: in a study of 437 college students, seven-site skinfolds read 1.4 points of body fat below DXA on average and a hand-held impedance device 4.9 points below (Burns et al., 2019).",
+   "number": "437",
+   "value": 437.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Methods to Measure Body Composition",
+   "row": {
+    "status": "row-notes",
+    "domain": "body-fat-method-validation",
+    "how": "link"
+   },
+   "links": [
+    "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214029"
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
+   "sentence": "Cheaper methods read differently: in a study of 437 college students, seven-site skinfolds read 1.4 points of body fat below DXA on average and a hand-held impedance device 4.9 points below (Burns et al., 2019).",
+   "number": "seven",
+   "value": 7,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Methods to Measure Body Composition",
+   "links": [
+    "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214029"
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
+   "sentence": "Cheaper methods read differently: in a study of 437 college students, seven-site skinfolds read 1.4 points of body fat below DXA on average and a hand-held impedance device 4.9 points below (Burns et al., 2019).",
+   "number": "1.4",
+   "value": 1.4,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Methods to Measure Body Composition",
+   "row": {
+    "status": "row-notes",
+    "domain": "body-fat-method-validation",
+    "how": "link"
+   },
+   "links": [
+    "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214029"
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
+   "sentence": "Cheaper methods read differently: in a study of 437 college students, seven-site skinfolds read 1.4 points of body fat below DXA on average and a hand-held impedance device 4.9 points below (Burns et al., 2019).",
+   "number": "4.9",
+   "value": 4.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Methods to Measure Body Composition",
+   "row": {
+    "status": "row-notes",
+    "domain": "body-fat-method-validation",
+    "how": "link"
+   },
+   "links": [
+    "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214029"
+   ]
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "main",
+   "sentence": "Cheaper methods read differently: in a study of 437 college students, seven-site skinfolds read 1.4 points of body fat below DXA on average and a hand-held impedance device 4.9 points below (Burns et al., 2019).",
+   "number": "2019",
+   "value": 2019.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Methods to Measure Body Composition",
+   "row": {
+    "status": "row",
+    "domain": "body-fat-method-validation",
+    "how": "link"
+   },
+   "links": [
+    "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214029"
+   ]
   },
   {
    "page": "/lean-body-mass/",
@@ -19811,12 +20312,22 @@
   {
    "page": "/lean-body-mass/",
    "region": "faq-a",
-   "sentence": "Two people can have the same BMI but very different body compositions -- one might be muscular with low body fat, while the other has high body fat and low muscle mass.",
-   "number": "Two",
+   "sentence": "The Boer formula is a population-based estimate: it predicts lean body mass from height, weight and sex only, so two people who match on all three get the same result whatever their build.",
+   "number": "two",
    "value": 2,
    "class": "D",
    "why": "number word (count in prose)",
-   "heading": "FAQ: Why is lean body mass more useful than BMI?"
+   "heading": "FAQ: How accurate is the Boer formula?"
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "faq-a",
+   "sentence": "The Boer formula is a population-based estimate: it predicts lean body mass from height, weight and sex only, so two people who match on all three get the same result whatever their build.",
+   "number": "three",
+   "value": 3,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "FAQ: How accurate is the Boer formula?"
   },
   {
    "page": "/lean-body-mass/",
@@ -19971,12 +20482,23 @@
   {
    "page": "/lean-body-mass/",
    "region": "jsonld",
-   "sentence": "Two people can have the same BMI but very different body compositions -- one might be muscular with low body fat, while the other has high body fat and low muscle mass.",
-   "number": "Two",
+   "sentence": "The Boer formula is a population-based estimate: it predicts lean body mass from height, weight and sex only, so two people who match on all three get the same result whatever their build.",
+   "number": "two",
    "value": 2,
    "class": "D",
    "why": "number word (count in prose)",
-   "heading": "FAQPage JSON-LD: Why is lean body mass more useful than BMI?",
+   "heading": "FAQPage JSON-LD: How accurate is the Boer formula?",
+   "mirror_of": "the visible FAQ answer (same text)"
+  },
+  {
+   "page": "/lean-body-mass/",
+   "region": "jsonld",
+   "sentence": "The Boer formula is a population-based estimate: it predicts lean body mass from height, weight and sex only, so two people who match on all three get the same result whatever their build.",
+   "number": "three",
+   "value": 3,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "FAQPage JSON-LD: How accurate is the Boer formula?",
    "mirror_of": "the visible FAQ answer (same text)"
   },
   {
