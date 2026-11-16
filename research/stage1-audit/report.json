@@ -4,13 +4,13 @@
  "viewport": "390x844",
  "pages_audited": 24,
  "pages_skipped": [],
- "numbers": 4890,
+ "numbers": 4940,
  "totals": {
   "A": 47,
   "B": 1625,
-  "C": 2371,
-  "D": 649,
-  "X": 198,
+  "C": 2417,
+  "D": 661,
+  "X": 190,
   "U": 0
  },
  "mismatches": 0,
@@ -19,16 +19,16 @@
  "c_not_in_row_in_page_csv": 0,
  "c_not_in_row_also_in_other_row": 0,
  "c_status": {
-  "row": 1208,
-  "row-notes": 233,
+  "row": 1246,
+  "row-notes": 241,
   "not-in-row": 28,
   "row-dataset": 902
  },
  "checks_run": 1121,
  "check_errors": [],
  "unclassified": [],
- "manual_entries": 253,
- "manual_entries_used": 249,
+ "manual_entries": 254,
+ "manual_entries_used": 250,
  "worst10": [
   {
    "page": "/kids-bmi-calculator/",
@@ -3592,12 +3592,17 @@
   },
   {
    "page": "/blog/bmi-and-metabolism/",
-   "jsonld_mirrors": 7,
+   "jsonld_mirrors": 22,
    "mismatches": [],
    "c_no_row": [],
    "c_not_in_row": [],
    "names_differ": [],
    "d": [
+    {
+     "number": "six",
+     "why": "number word (count in prose)",
+     "sentence": "Weight loss can lower energy use for years: six years after “The Biggest Loser”, 14 contestants burned 499 kcal a day less at rest than their body composition and age predicted (Fothergill et al., 2016)"
+    },
     {
      "number": "Two",
      "why": "number word (count in prose)",
@@ -3616,41 +3621,98 @@
     {
      "number": "three",
      "why": "number word (count in prose)",
+     "sentence": "A diagnosis needs at least three of five conditions: a large waist, high triglycerides, high blood pressure, high fasting blood glucose and low HDL cholesterol."
+    },
+    {
+     "number": "five",
+     "why": "number word (count in prose)",
+     "sentence": "A diagnosis needs at least three of five conditions: a large waist, high triglycerides, high blood pressure, high fasting blood glucose and low HDL cholesterol."
+    },
+    {
+     "number": "three",
+     "why": "number word (count in prose)",
      "sentence": "Definitions vary; a study of 3.5 million UK adults counted a BMI of 30 or more with none of three abnormalities: diabetes, hypertension and hyperlipidaemia (Caleyachetty et al., 2017)."
     },
     {
      "number": "three",
      "why": "number word (count in prose)",
      "sentence": "Over a mean 5.4 years, people in that study with obesity and none of the three had a higher risk of coronary heart disease (hazard ratio 1.49), cerebrovascular disease (1.07) and heart failure (1.96) than people of healthy weight with none (Caleyachetty et al., 2017)."
+    },
+    {
+     "number": "half",
+     "why": "number word (count in prose)",
+     "sentence": "As weight falls, so does the energy the body burns, so the same intake brings less loss over time; in Hall and colleagues’ model, half of the eventual change from a new intake comes in about a year (Hall 2011)."
+    },
+    {
+     "number": "six",
+     "why": "number word (count in prose)",
+     "sentence": "In 14 contestants from “The Biggest Loser”, who lost 58.3 kg on average in a 30-week competition, resting metabolic rate six years later was 704 kcal a day below where it started, and 499 kcal a day below what their body composition and age predicted, although they had regained 41.0 kg on average."
+    },
+    {
+     "number": "2011",
+     "why": "a year closing a reference in the sources box, a citation detail (CMB-052) (manual.json)",
+     "sentence": "2011."
+    },
+    {
+     "number": "2016",
+     "why": "a year closing a reference in the sources box, a citation detail (CMB-052) (manual.json)",
+     "sentence": "2016."
+    },
+    {
+     "number": "2004",
+     "why": "a year closing a reference in the sources box, a citation detail (CMB-052) (manual.json)",
+     "sentence": "2004."
+    },
+    {
+     "number": "2021",
+     "why": "a year closing a reference in the sources box, a citation detail (CMB-052) (manual.json)",
+     "sentence": "2021."
+    },
+    {
+     "number": "2017",
+     "why": "a year closing a reference in the sources box, a citation detail (CMB-052) (manual.json)",
+     "sentence": "2017."
+    },
+    {
+     "number": "2020",
+     "why": "a year closing a reference in the sources box, a citation detail (CMB-052) (manual.json)",
+     "sentence": "2020."
+    },
+    {
+     "number": "six",
+     "why": "number word (count in prose)",
+     "sentence": "In 14 “Biggest Loser” contestants, resting metabolic rate six years after the competition was still 499 kcal a day below what their body composition and age predicted (Fothergill et al., 2016)."
     }
    ],
    "checks_ok": 1,
    "page_errors": [],
    "score": 0,
    "totals": {
-    "C": 90,
-    "D": 5,
-    "B": 1,
-    "X": 8
+    "C": 136,
+    "D": 17,
+    "B": 1
    },
    "c_rows": {
-    "row": 81,
-    "row-notes": 9
+    "row": 119,
+    "row-notes": 17
    },
    "c_row_domains": {
-    "hirode-2020-metabolic-syndrome": 14,
-    "caleyachetty-2017-mho": 13,
-    "pontzer-2021-energy-expenditure": 8,
+    "pontzer-2021-energy-expenditure": 17,
+    "hirode-2020-metabolic-syndrome": 13,
+    "caleyachetty-2017-mho": 12,
+    "wang-2010-organ-metabolic-rates": 21,
+    "fothergill-2016-biggest-loser": 14,
     "mifflin-1990-ree": 15,
     "roza-shizgal-1984-harris-benedict": 10,
     "alberti-2009-metabolic-syndrome": 10,
-    "wang-2010-organ-metabolic-rates": 12,
+    "odphp-physical-activity-guidelines": 6,
     "volpi-2004-muscle-aging": 4,
-    "ata-thyroid-weight": 4
+    "ata-thyroid-weight": 6,
+    "hall-2011-energy-imbalance": 2,
+    "cdc-losing-weight": 2,
+    "cdc-physical-activity-weight": 4
    },
-   "excluded": {
-    "list numbering (numbered badge)": 8
-   }
+   "excluded": {}
   },
   {
    "page": "/blog/body-fat-vs-bmi/",
@@ -71634,6 +71696,42 @@
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "main",
+   "sentence": "Bigger bodies burn more, not less: total daily energy expenditure rises with fat-free mass (Pontzer et al., 2021).",
+   "number": "2021",
+   "value": 2021.0,
+   "class": "C",
+   "why": "year",
+   "heading": "BMI and Metabolism: The Complete Guide to Metabolic Health",
+   "row": {
+    "status": "row",
+    "domain": "pontzer-2021-energy-expenditure",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/34385400/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "Bigger bodies burn more: total daily energy expenditure rises with fat-free mass (Pontzer et al., Science 2021)",
+   "number": "2021",
+   "value": 2021.0,
+   "class": "C",
+   "why": "year",
+   "heading": "BMI and Metabolism: The Complete Guide to Metabolic Health",
+   "row": {
+    "status": "row",
+    "domain": "pontzer-2021-energy-expenditure",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/34385400/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
    "sentence": "Metabolic syndrome: 34.7% of US adults had it in 2011–2016 (Hirode & Wong, JAMA 2020)",
    "number": "34.7",
    "value": 34.7,
@@ -71737,6 +71835,127 @@
    },
    "links": [
     "https://doi.org/10.1016/j.jacc.2017.07.763"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "Muscle is metabolically active: at rest it uses about 13 kcal per kg a day, against 4.5 for fat (Wang et al., 2010)",
+   "number": "13",
+   "value": 13.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI and Metabolism: The Complete Guide to Metabolic Health",
+   "row": {
+    "status": "row",
+    "domain": "wang-2010-organ-metabolic-rates",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/20962155/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "Muscle is metabolically active: at rest it uses about 13 kcal per kg a day, against 4.5 for fat (Wang et al., 2010)",
+   "number": "4.5",
+   "value": 4.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI and Metabolism: The Complete Guide to Metabolic Health",
+   "row": {
+    "status": "row",
+    "domain": "wang-2010-organ-metabolic-rates",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/20962155/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "Muscle is metabolically active: at rest it uses about 13 kcal per kg a day, against 4.5 for fat (Wang et al., 2010)",
+   "number": "2010",
+   "value": 2010.0,
+   "class": "C",
+   "why": "year",
+   "heading": "BMI and Metabolism: The Complete Guide to Metabolic Health",
+   "row": {
+    "status": "row",
+    "domain": "wang-2010-organ-metabolic-rates",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/20962155/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "Weight loss can lower energy use for years: six years after “The Biggest Loser”, 14 contestants burned 499 kcal a day less at rest than their body composition and age predicted (Fothergill et al., 2016)",
+   "number": "six",
+   "value": 6,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "BMI and Metabolism: The Complete Guide to Metabolic Health",
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/27136388/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "Weight loss can lower energy use for years: six years after “The Biggest Loser”, 14 contestants burned 499 kcal a day less at rest than their body composition and age predicted (Fothergill et al., 2016)",
+   "number": "14",
+   "value": 14.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI and Metabolism: The Complete Guide to Metabolic Health",
+   "row": {
+    "status": "row",
+    "domain": "fothergill-2016-biggest-loser",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/27136388/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "Weight loss can lower energy use for years: six years after “The Biggest Loser”, 14 contestants burned 499 kcal a day less at rest than their body composition and age predicted (Fothergill et al., 2016)",
+   "number": "499",
+   "value": 499.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "BMI and Metabolism: The Complete Guide to Metabolic Health",
+   "row": {
+    "status": "row",
+    "domain": "fothergill-2016-biggest-loser",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/27136388/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "Weight loss can lower energy use for years: six years after “The Biggest Loser”, 14 contestants burned 499 kcal a day less at rest than their body composition and age predicted (Fothergill et al., 2016)",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "BMI and Metabolism: The Complete Guide to Metabolic Health",
+   "row": {
+    "status": "row",
+    "domain": "fothergill-2016-biggest-loser",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/27136388/"
    ]
   },
   {
@@ -71935,18 +72154,19 @@
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "main",
-   "sentence": "Larger bodies need more energy to maintain, so absolute energy expenditure rises with body size: the 2021 Science analysis found total expenditure increases with fat-free mass (Pontzer et al.).",
+   "sentence": "People with a higher BMI typically burn more energy in absolute terms, because total expenditure rises with fat-free mass (Pontzer et al., 2021).",
    "number": "2021",
    "value": 2021.0,
    "class": "C",
    "why": "year",
-   "heading": "BMR Calculation Formulas",
+   "heading": "How BMI Relates to Metabolic Rate",
    "row": {
     "status": "row",
     "domain": "pontzer-2021-energy-expenditure",
     "how": "link"
    },
    "links": [
+    "http://localhost:8765/blog/what-is-bmi/",
     "https://pubmed.ncbi.nlm.nih.gov/34385400/"
    ]
   },
@@ -72243,6 +72463,26 @@
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "main",
+   "sentence": "A diagnosis needs at least three of five conditions: a large waist, high triglycerides, high blood pressure, high fasting blood glucose and low HDL cholesterol.",
+   "number": "three",
+   "value": 3,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Metabolic Syndrome and BMI"
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "A diagnosis needs at least three of five conditions: a large waist, high triglycerides, high blood pressure, high fasting blood glucose and low HDL cholesterol.",
+   "number": "five",
+   "value": 5,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Metabolic Syndrome and BMI"
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
    "sentence": "Definitions vary; a study of 3.5 million UK adults counted a BMI of 30 or more with none of three abnormalities: diabetes, hypertension and hyperlipidaemia (Caleyachetty et al., 2017).",
    "number": "3.5 million",
    "value": 3500000.0,
@@ -72451,6 +72691,60 @@
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "main",
+   "sentence": "At rest, a kilogram of skeletal muscle uses about 13 kcal a day and a kilogram of fat about 4.5, in the organ-by-organ rates Wang and colleagues validated across adulthood (Wang et al., 2010).",
+   "number": "13",
+   "value": 13.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "How Muscle Mass Affects Metabolism",
+   "row": {
+    "status": "row",
+    "domain": "wang-2010-organ-metabolic-rates",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/20962155/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "At rest, a kilogram of skeletal muscle uses about 13 kcal a day and a kilogram of fat about 4.5, in the organ-by-organ rates Wang and colleagues validated across adulthood (Wang et al., 2010).",
+   "number": "4.5",
+   "value": 4.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "How Muscle Mass Affects Metabolism",
+   "row": {
+    "status": "row",
+    "domain": "wang-2010-organ-metabolic-rates",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/20962155/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "At rest, a kilogram of skeletal muscle uses about 13 kcal a day and a kilogram of fat about 4.5, in the organ-by-organ rates Wang and colleagues validated across adulthood (Wang et al., 2010).",
+   "number": "2010",
+   "value": 2010.0,
+   "class": "C",
+   "why": "year",
+   "heading": "How Muscle Mass Affects Metabolism",
+   "row": {
+    "status": "row",
+    "domain": "wang-2010-organ-metabolic-rates",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/20962155/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
    "sentence": "2.9x",
    "number": "2.9x",
    "value": 2.9,
@@ -72556,84 +72850,76 @@
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "main",
-   "sentence": "Sarcopenia: age-related muscle loss, estimated at about 3–8% of muscle mass per decade after age 30 (Volpi et al., 2004)",
-   "number": "3",
-   "value": 3.0,
+   "sentence": "The Physical Activity Guidelines ask adults for muscle-strengthening activity, like lifting weights or doing push-ups, at least 2 days each week (Physical Activity Guidelines), and CDC counts stronger bones and muscles among the benefits of regular activity (CDC).",
+   "number": "2",
+   "value": 2.0,
    "class": "C",
-   "why": "statistic (percent)",
-   "heading": "Why Metabolism Slows with Age",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Muscle-Strengthening Activity",
    "row": {
     "status": "row",
-    "domain": "volpi-2004-muscle-aging",
+    "domain": "odphp-physical-activity-guidelines",
     "how": "link"
    },
    "links": [
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC2804956/"
+    "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know",
+    "https://www.cdc.gov/healthy-weight-growth/physical-activity/index.html"
    ]
   },
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "main",
-   "sentence": "Sarcopenia: age-related muscle loss, estimated at about 3–8% of muscle mass per decade after age 30 (Volpi et al., 2004)",
+   "sentence": "Pontzer and colleagues measured daily energy expenditure from 8 days to 95 years of age in 29 countries.",
    "number": "8",
    "value": 8.0,
    "class": "C",
-   "why": "statistic (percent)",
-   "heading": "Why Metabolism Slows with Age",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Age-Related Metabolic Changes and BMI",
    "row": {
-    "status": "row",
-    "domain": "volpi-2004-muscle-aging",
+    "status": "row-notes",
+    "domain": "pontzer-2021-energy-expenditure",
     "how": "link"
-   },
-   "links": [
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC2804956/"
-   ]
+   }
   },
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "main",
-   "sentence": "Sarcopenia: age-related muscle loss, estimated at about 3–8% of muscle mass per decade after age 30 (Volpi et al., 2004)",
-   "number": "30",
-   "value": 30.0,
+   "sentence": "Pontzer and colleagues measured daily energy expenditure from 8 days to 95 years of age in 29 countries.",
+   "number": "95",
+   "value": 95.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Why Metabolism Slows with Age",
+   "heading": "Age-Related Metabolic Changes and BMI",
    "row": {
-    "status": "row",
-    "domain": "volpi-2004-muscle-aging",
+    "status": "row-notes",
+    "domain": "pontzer-2021-energy-expenditure",
     "how": "link"
-   },
-   "links": [
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC2804956/"
-   ]
+   }
   },
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "main",
-   "sentence": "Sarcopenia: age-related muscle loss, estimated at about 3–8% of muscle mass per decade after age 30 (Volpi et al., 2004)",
-   "number": "2004",
-   "value": 2004.0,
+   "sentence": "Pontzer and colleagues measured daily energy expenditure from 8 days to 95 years of age in 29 countries.",
+   "number": "29",
+   "value": 29.0,
    "class": "C",
-   "why": "year",
-   "heading": "Why Metabolism Slows with Age",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Age-Related Metabolic Changes and BMI",
    "row": {
-    "status": "row",
-    "domain": "volpi-2004-muscle-aging",
+    "status": "row-notes",
+    "domain": "pontzer-2021-energy-expenditure",
     "how": "link"
-   },
-   "links": [
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC2804956/"
-   ]
+   }
   },
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "main",
-   "sentence": "However, a 2021 study in Science (Pontzer et al.) challenged previous assumptions: energy expenditure adjusted for body size and composition remained stable from about age 20 to 60 and declined after that.",
-   "number": "2021",
-   "value": 2021.0,
+   "sentence": "Adjusted for fat-free mass, it climbed to about 50% above adult values around age 1, fell slowly to adult levels by about 20, held steady from 20 to 60, even in pregnancy, and declined after that (Pontzer et al., 2021).",
+   "number": "50",
+   "value": 50.0,
    "class": "C",
-   "why": "year",
-   "heading": "Why Metabolism Slows with Age",
+   "why": "statistic (percent)",
+   "heading": "Age-Related Metabolic Changes and BMI",
    "row": {
     "status": "row",
     "domain": "pontzer-2021-energy-expenditure",
@@ -72646,12 +72932,30 @@
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "main",
-   "sentence": "However, a 2021 study in Science (Pontzer et al.) challenged previous assumptions: energy expenditure adjusted for body size and composition remained stable from about age 20 to 60 and declined after that.",
+   "sentence": "Adjusted for fat-free mass, it climbed to about 50% above adult values around age 1, fell slowly to adult levels by about 20, held steady from 20 to 60, even in pregnancy, and declined after that (Pontzer et al., 2021).",
+   "number": "1",
+   "value": 1.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Age-Related Metabolic Changes and BMI",
+   "row": {
+    "status": "row",
+    "domain": "pontzer-2021-energy-expenditure",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/34385400/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "Adjusted for fat-free mass, it climbed to about 50% above adult values around age 1, fell slowly to adult levels by about 20, held steady from 20 to 60, even in pregnancy, and declined after that (Pontzer et al., 2021).",
    "number": "20",
    "value": 20.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Why Metabolism Slows with Age",
+   "heading": "Age-Related Metabolic Changes and BMI",
    "row": {
     "status": "row",
     "domain": "pontzer-2021-energy-expenditure",
@@ -72664,18 +72968,149 @@
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "main",
-   "sentence": "However, a 2021 study in Science (Pontzer et al.) challenged previous assumptions: energy expenditure adjusted for body size and composition remained stable from about age 20 to 60 and declined after that.",
-   "number": "60",
-   "value": 60.0,
+   "sentence": "Adjusted for fat-free mass, it climbed to about 50% above adult values around age 1, fell slowly to adult levels by about 20, held steady from 20 to 60, even in pregnancy, and declined after that (Pontzer et al., 2021).",
+   "number": "20",
+   "value": 20.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Why Metabolism Slows with Age",
+   "heading": "Age-Related Metabolic Changes and BMI",
    "row": {
     "status": "row",
     "domain": "pontzer-2021-energy-expenditure",
     "how": "link"
    },
    "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/34385400/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "Adjusted for fat-free mass, it climbed to about 50% above adult values around age 1, fell slowly to adult levels by about 20, held steady from 20 to 60, even in pregnancy, and declined after that (Pontzer et al., 2021).",
+   "number": "60",
+   "value": 60.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Age-Related Metabolic Changes and BMI",
+   "row": {
+    "status": "row",
+    "domain": "pontzer-2021-energy-expenditure",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/34385400/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "Adjusted for fat-free mass, it climbed to about 50% above adult values around age 1, fell slowly to adult levels by about 20, held steady from 20 to 60, even in pregnancy, and declined after that (Pontzer et al., 2021).",
+   "number": "2021",
+   "value": 2021.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Age-Related Metabolic Changes and BMI",
+   "row": {
+    "status": "row",
+    "domain": "pontzer-2021-energy-expenditure",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/34385400/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "Muscle mass falls by an estimated 3–8% per decade after age 30 (Volpi et al., 2004), and total daily expenditure rises and falls with fat-free mass (Pontzer et al., 2021).",
+   "number": "3",
+   "value": 3.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Why Energy Use Falls With Age",
+   "row": {
+    "status": "row",
+    "domain": "volpi-2004-muscle-aging",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC2804956/",
+    "https://pubmed.ncbi.nlm.nih.gov/34385400/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "Muscle mass falls by an estimated 3–8% per decade after age 30 (Volpi et al., 2004), and total daily expenditure rises and falls with fat-free mass (Pontzer et al., 2021).",
+   "number": "8",
+   "value": 8.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Why Energy Use Falls With Age",
+   "row": {
+    "status": "row",
+    "domain": "volpi-2004-muscle-aging",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC2804956/",
+    "https://pubmed.ncbi.nlm.nih.gov/34385400/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "Muscle mass falls by an estimated 3–8% per decade after age 30 (Volpi et al., 2004), and total daily expenditure rises and falls with fat-free mass (Pontzer et al., 2021).",
+   "number": "30",
+   "value": 30.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Why Energy Use Falls With Age",
+   "row": {
+    "status": "row",
+    "domain": "volpi-2004-muscle-aging",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC2804956/",
+    "https://pubmed.ncbi.nlm.nih.gov/34385400/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "Muscle mass falls by an estimated 3–8% per decade after age 30 (Volpi et al., 2004), and total daily expenditure rises and falls with fat-free mass (Pontzer et al., 2021).",
+   "number": "2004",
+   "value": 2004.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Why Energy Use Falls With Age",
+   "row": {
+    "status": "row",
+    "domain": "volpi-2004-muscle-aging",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC2804956/",
+    "https://pubmed.ncbi.nlm.nih.gov/34385400/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "Muscle mass falls by an estimated 3–8% per decade after age 30 (Volpi et al., 2004), and total daily expenditure rises and falls with fat-free mass (Pontzer et al., 2021).",
+   "number": "2021",
+   "value": 2021.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Why Energy Use Falls With Age",
+   "row": {
+    "status": "row",
+    "domain": "pontzer-2021-energy-expenditure",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC2804956/",
     "https://pubmed.ncbi.nlm.nih.gov/34385400/"
    ]
   },
@@ -72718,82 +73153,329 @@
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "main",
-   "sentence": "1",
+   "sentence": "As weight falls, so does the energy the body burns, so the same intake brings less loss over time; in Hall and colleagues’ model, half of the eventual change from a new intake comes in about a year (Hall 2011).",
+   "number": "half",
+   "value": 0.5,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "How Losing Weight Affects Metabolism",
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/21872751/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "As weight falls, so does the energy the body burns, so the same intake brings less loss over time; in Hall and colleagues’ model, half of the eventual change from a new intake comes in about a year (Hall 2011).",
+   "number": "2011",
+   "value": 2011.0,
+   "class": "C",
+   "why": "year",
+   "heading": "How Losing Weight Affects Metabolism",
+   "row": {
+    "status": "row",
+    "domain": "hall-2011-energy-imbalance",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/21872751/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "In 14 contestants from “The Biggest Loser”, who lost 58.3 kg on average in a 30-week competition, resting metabolic rate six years later was 704 kcal a day below where it started, and 499 kcal a day below what their body composition and age predicted, although they had regained 41.0 kg on average.",
+   "number": "14",
+   "value": 14.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Metabolic Adaptation",
+   "row": {
+    "status": "row",
+    "domain": "fothergill-2016-biggest-loser",
+    "how": "paragraph link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "In 14 contestants from “The Biggest Loser”, who lost 58.3 kg on average in a 30-week competition, resting metabolic rate six years later was 704 kcal a day below where it started, and 499 kcal a day below what their body composition and age predicted, although they had regained 41.0 kg on average.",
+   "number": "58.3",
+   "value": 58.3,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Metabolic Adaptation",
+   "row": {
+    "status": "row",
+    "domain": "fothergill-2016-biggest-loser",
+    "how": "paragraph link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "In 14 contestants from “The Biggest Loser”, who lost 58.3 kg on average in a 30-week competition, resting metabolic rate six years later was 704 kcal a day below where it started, and 499 kcal a day below what their body composition and age predicted, although they had regained 41.0 kg on average.",
+   "number": "30",
+   "value": 30.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Metabolic Adaptation",
+   "row": {
+    "status": "row-notes",
+    "domain": "fothergill-2016-biggest-loser",
+    "how": "paragraph link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "In 14 contestants from “The Biggest Loser”, who lost 58.3 kg on average in a 30-week competition, resting metabolic rate six years later was 704 kcal a day below where it started, and 499 kcal a day below what their body composition and age predicted, although they had regained 41.0 kg on average.",
+   "number": "six",
+   "value": 6,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Metabolic Adaptation"
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "In 14 contestants from “The Biggest Loser”, who lost 58.3 kg on average in a 30-week competition, resting metabolic rate six years later was 704 kcal a day below where it started, and 499 kcal a day below what their body composition and age predicted, although they had regained 41.0 kg on average.",
+   "number": "704",
+   "value": 704.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Metabolic Adaptation",
+   "row": {
+    "status": "row",
+    "domain": "fothergill-2016-biggest-loser",
+    "how": "paragraph link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "In 14 contestants from “The Biggest Loser”, who lost 58.3 kg on average in a 30-week competition, resting metabolic rate six years later was 704 kcal a day below where it started, and 499 kcal a day below what their body composition and age predicted, although they had regained 41.0 kg on average.",
+   "number": "499",
+   "value": 499.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Metabolic Adaptation",
+   "row": {
+    "status": "row",
+    "domain": "fothergill-2016-biggest-loser",
+    "how": "paragraph link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "In 14 contestants from “The Biggest Loser”, who lost 58.3 kg on average in a 30-week competition, resting metabolic rate six years later was 704 kcal a day below where it started, and 499 kcal a day below what their body composition and age predicted, although they had regained 41.0 kg on average.",
+   "number": "41.0",
+   "value": 41.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Metabolic Adaptation",
+   "row": {
+    "status": "row",
+    "domain": "fothergill-2016-biggest-loser",
+    "how": "paragraph link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "The authors call the adaptation persistent and likely a proportional but incomplete response to efforts to keep weight down (Fothergill et al., 2016).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Metabolic Adaptation",
+   "row": {
+    "status": "row",
+    "domain": "fothergill-2016-biggest-loser",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/27136388/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "Gradual loss: people who lose about 1 to 2 pounds a week are more likely to keep the weight off than people who lose weight quicker (CDC)",
    "number": "1",
    "value": 1.0,
-   "class": "X",
-   "why": "list numbering (numbered badge)",
-   "heading": "Metabolic Adaptation Explained"
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Keeping Weight Off",
+   "row": {
+    "status": "row",
+    "domain": "cdc-losing-weight",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html"
+   ]
   },
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "main",
-   "sentence": "2",
+   "sentence": "Gradual loss: people who lose about 1 to 2 pounds a week are more likely to keep the weight off than people who lose weight quicker (CDC)",
    "number": "2",
    "value": 2.0,
-   "class": "X",
-   "why": "list numbering (numbered badge)",
-   "heading": "Adaptive Thermogenesis"
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Keeping Weight Off",
+   "row": {
+    "status": "row",
+    "domain": "cdc-losing-weight",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html"
+   ]
   },
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "main",
-   "sentence": "3",
-   "number": "3",
-   "value": 3.0,
-   "class": "X",
-   "why": "list numbering (numbered badge)",
-   "heading": "Hormonal Changes"
+   "sentence": "At rest, muscle uses about 13 kcal per kg a day against 4.5 for fat (Wang et al., 2010), and the Physical Activity Guidelines ask for muscle-strengthening activity at least 2 days each week (Physical Activity Guidelines for Americans).",
+   "number": "13",
+   "value": 13.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Raising the Energy You Burn",
+   "row": {
+    "status": "row",
+    "domain": "wang-2010-organ-metabolic-rates",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/20962155/",
+    "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+   ]
   },
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "main",
-   "sentence": "1",
-   "number": "1",
-   "value": 1.0,
-   "class": "X",
-   "why": "list numbering (numbered badge)",
-   "heading": "Evidence-Based Metabolism Boosters"
+   "sentence": "At rest, muscle uses about 13 kcal per kg a day against 4.5 for fat (Wang et al., 2010), and the Physical Activity Guidelines ask for muscle-strengthening activity at least 2 days each week (Physical Activity Guidelines for Americans).",
+   "number": "4.5",
+   "value": 4.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Raising the Energy You Burn",
+   "row": {
+    "status": "row",
+    "domain": "wang-2010-organ-metabolic-rates",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/20962155/",
+    "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+   ]
   },
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "main",
-   "sentence": "2",
+   "sentence": "At rest, muscle uses about 13 kcal per kg a day against 4.5 for fat (Wang et al., 2010), and the Physical Activity Guidelines ask for muscle-strengthening activity at least 2 days each week (Physical Activity Guidelines for Americans).",
+   "number": "2010",
+   "value": 2010.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Raising the Energy You Burn",
+   "row": {
+    "status": "row",
+    "domain": "wang-2010-organ-metabolic-rates",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/20962155/",
+    "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "At rest, muscle uses about 13 kcal per kg a day against 4.5 for fat (Wang et al., 2010), and the Physical Activity Guidelines ask for muscle-strengthening activity at least 2 days each week (Physical Activity Guidelines for Americans).",
    "number": "2",
    "value": 2.0,
-   "class": "X",
-   "why": "list numbering (numbered badge)",
-   "heading": "Build and Maintain Muscle"
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Raising the Energy You Burn",
+   "row": {
+    "status": "row",
+    "domain": "odphp-physical-activity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/20962155/",
+    "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+   ]
   },
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "main",
-   "sentence": "3",
-   "number": "3",
-   "value": 3.0,
-   "class": "X",
-   "why": "list numbering (numbered badge)",
-   "heading": "Stay Physically Active"
+   "sentence": "Physical Activity Guidelines for Americans, 2nd edition.",
+   "number": "2nd",
+   "value": 2.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Healthy BMI Range",
+   "row": {
+    "status": "row",
+    "domain": "odphp-physical-activity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+   ]
   },
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "main",
-   "sentence": "4",
-   "number": "4",
-   "value": 4.0,
-   "class": "X",
-   "why": "list numbering (numbered badge)",
-   "heading": "Manage Stress"
+   "sentence": "2011.",
+   "number": "2011",
+   "value": 2011.0,
+   "class": "D",
+   "why": "a year closing a reference in the sources box, a citation detail (CMB-052) (manual.json)",
+   "heading": "Healthy BMI Range"
   },
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "main",
-   "sentence": "5",
-   "number": "5",
-   "value": 5.0,
-   "class": "X",
-   "why": "list numbering (numbered badge)",
-   "heading": "Consider HIIT"
+   "sentence": "Fothergill E, et al. Persistent metabolic adaptation 6 years after “The Biggest Loser” competition.",
+   "number": "6",
+   "value": 6.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Healthy BMI Range",
+   "row": {
+    "status": "row",
+    "domain": "fothergill-2016-biggest-loser",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/27136388/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "2016.",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "D",
+   "why": "a year closing a reference in the sources box, a citation detail (CMB-052) (manual.json)",
+   "heading": "Healthy BMI Range"
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "main",
+   "sentence": "2004.",
+   "number": "2004",
+   "value": 2004.0,
+   "class": "D",
+   "why": "a year closing a reference in the sources box, a citation detail (CMB-052) (manual.json)",
+   "heading": "Healthy BMI Range"
   },
   {
    "page": "/blog/bmi-and-metabolism/",
@@ -72801,14 +73483,9 @@
    "sentence": "2021.",
    "number": "2021",
    "value": 2021.0,
-   "class": "C",
-   "why": "year",
-   "heading": "Healthy BMI Range",
-   "row": {
-    "status": "row",
-    "domain": "pontzer-2021-energy-expenditure",
-    "how": "name"
-   }
+   "class": "D",
+   "why": "a year closing a reference in the sources box, a citation detail (CMB-052) (manual.json)",
+   "heading": "Healthy BMI Range"
   },
   {
    "page": "/blog/bmi-and-metabolism/",
@@ -72834,14 +73511,9 @@
    "sentence": "2017.",
    "number": "2017",
    "value": 2017.0,
-   "class": "C",
-   "why": "year",
-   "heading": "Healthy BMI Range",
-   "row": {
-    "status": "row",
-    "domain": "caleyachetty-2017-mho",
-    "how": "name"
-   }
+   "class": "D",
+   "why": "a year closing a reference in the sources box, a citation detail (CMB-052) (manual.json)",
+   "heading": "Healthy BMI Range"
   },
   {
    "page": "/blog/bmi-and-metabolism/",
@@ -72885,14 +73557,9 @@
    "sentence": "2020.",
    "number": "2020",
    "value": 2020.0,
-   "class": "C",
-   "why": "year",
-   "heading": "Healthy BMI Range",
-   "row": {
-    "status": "row",
-    "domain": "hirode-2020-metabolic-syndrome",
-    "how": "name"
-   }
+   "class": "D",
+   "why": "a year closing a reference in the sources box, a citation detail (CMB-052) (manual.json)",
+   "heading": "Healthy BMI Range"
   },
   {
    "page": "/blog/bmi-and-metabolism/",
@@ -73197,7 +73864,61 @@
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "faq-a",
-   "sentence": "Building muscle through resistance training helps: at rest, a pound of skeletal muscle uses about 6 calories a day versus about 2 for a pound of fat (13 vs 4.5 kcal per kg; Wang et al., Am J Clin Nutr 2010).",
+   "sentence": "No: bigger bodies burn more energy, and total daily expenditure rises with fat-free mass (Pontzer et al., 2021).",
+   "number": "2021",
+   "value": 2021.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: Does having a high BMI mean I have a slow metabolism?",
+   "row": {
+    "status": "row",
+    "domain": "pontzer-2021-energy-expenditure",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/34385400/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "faq-a",
+   "sentence": "An underactive thyroid may be behind about 5 to 10 pounds of weight gain for most patients, most of it salt and water (American Thyroid Association).",
+   "number": "5",
+   "value": 5.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Does having a high BMI mean I have a slow metabolism?",
+   "row": {
+    "status": "row",
+    "domain": "ata-thyroid-weight",
+    "how": "link"
+   },
+   "links": [
+    "https://www.thyroid.org/thyroid-and-weight/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "faq-a",
+   "sentence": "An underactive thyroid may be behind about 5 to 10 pounds of weight gain for most patients, most of it salt and water (American Thyroid Association).",
+   "number": "10",
+   "value": 10.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Does having a high BMI mean I have a slow metabolism?",
+   "row": {
+    "status": "row",
+    "domain": "ata-thyroid-weight",
+    "how": "link"
+   },
+   "links": [
+    "https://www.thyroid.org/thyroid-and-weight/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "faq-a",
+   "sentence": "At rest, muscle makes a small difference per pound: a pound of skeletal muscle uses about 6 calories a day against about 2 for a pound of fat (13 vs 4.5 kcal per kg; Wang et al., 2010).",
    "number": "6",
    "value": 6.0,
    "class": "C",
@@ -73206,13 +73927,16 @@
    "row": {
     "status": "row-notes",
     "domain": "wang-2010-organ-metabolic-rates",
-    "how": "name"
-   }
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/20962155/"
+   ]
   },
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "faq-a",
-   "sentence": "Building muscle through resistance training helps: at rest, a pound of skeletal muscle uses about 6 calories a day versus about 2 for a pound of fat (13 vs 4.5 kcal per kg; Wang et al., Am J Clin Nutr 2010).",
+   "sentence": "At rest, muscle makes a small difference per pound: a pound of skeletal muscle uses about 6 calories a day against about 2 for a pound of fat (13 vs 4.5 kcal per kg; Wang et al., 2010).",
    "number": "2",
    "value": 2.0,
    "class": "C",
@@ -73221,13 +73945,16 @@
    "row": {
     "status": "row-notes",
     "domain": "wang-2010-organ-metabolic-rates",
-    "how": "name"
-   }
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/20962155/"
+   ]
   },
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "faq-a",
-   "sentence": "Building muscle through resistance training helps: at rest, a pound of skeletal muscle uses about 6 calories a day versus about 2 for a pound of fat (13 vs 4.5 kcal per kg; Wang et al., Am J Clin Nutr 2010).",
+   "sentence": "At rest, muscle makes a small difference per pound: a pound of skeletal muscle uses about 6 calories a day against about 2 for a pound of fat (13 vs 4.5 kcal per kg; Wang et al., 2010).",
    "number": "13",
    "value": 13.0,
    "class": "C",
@@ -73236,13 +73963,16 @@
    "row": {
     "status": "row",
     "domain": "wang-2010-organ-metabolic-rates",
-    "how": "name"
-   }
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/20962155/"
+   ]
   },
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "faq-a",
-   "sentence": "Building muscle through resistance training helps: at rest, a pound of skeletal muscle uses about 6 calories a day versus about 2 for a pound of fat (13 vs 4.5 kcal per kg; Wang et al., Am J Clin Nutr 2010).",
+   "sentence": "At rest, muscle makes a small difference per pound: a pound of skeletal muscle uses about 6 calories a day against about 2 for a pound of fat (13 vs 4.5 kcal per kg; Wang et al., 2010).",
    "number": "4.5",
    "value": 4.5,
    "class": "C",
@@ -73251,13 +73981,16 @@
    "row": {
     "status": "row",
     "domain": "wang-2010-organ-metabolic-rates",
-    "how": "name"
-   }
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/20962155/"
+   ]
   },
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "faq-a",
-   "sentence": "Building muscle through resistance training helps: at rest, a pound of skeletal muscle uses about 6 calories a day versus about 2 for a pound of fat (13 vs 4.5 kcal per kg; Wang et al., Am J Clin Nutr 2010).",
+   "sentence": "At rest, muscle makes a small difference per pound: a pound of skeletal muscle uses about 6 calories a day against about 2 for a pound of fat (13 vs 4.5 kcal per kg; Wang et al., 2010).",
    "number": "2010",
    "value": 2010.0,
    "class": "C",
@@ -73266,8 +73999,229 @@
    "row": {
     "status": "row",
     "domain": "wang-2010-organ-metabolic-rates",
-    "how": "name"
-   }
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/20962155/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "faq-a",
+   "sentence": "Activity uses more: 30 minutes of walking at 3.5 mph uses about 140 calories for a 154-pound person (CDC), and the Physical Activity Guidelines ask adults for 150 to 300 minutes of moderate-intensity activity a week, plus muscle-strengthening activity at least 2 days a week (Physical Activity Guidelines).",
+   "number": "30",
+   "value": 30.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Can I significantly increase my metabolism?",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/physical-activity/index.html",
+    "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "faq-a",
+   "sentence": "Activity uses more: 30 minutes of walking at 3.5 mph uses about 140 calories for a 154-pound person (CDC), and the Physical Activity Guidelines ask adults for 150 to 300 minutes of moderate-intensity activity a week, plus muscle-strengthening activity at least 2 days a week (Physical Activity Guidelines).",
+   "number": "3.5",
+   "value": 3.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Can I significantly increase my metabolism?",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/physical-activity/index.html",
+    "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "faq-a",
+   "sentence": "Activity uses more: 30 minutes of walking at 3.5 mph uses about 140 calories for a 154-pound person (CDC), and the Physical Activity Guidelines ask adults for 150 to 300 minutes of moderate-intensity activity a week, plus muscle-strengthening activity at least 2 days a week (Physical Activity Guidelines).",
+   "number": "140",
+   "value": 140.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Can I significantly increase my metabolism?",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/physical-activity/index.html",
+    "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "faq-a",
+   "sentence": "Activity uses more: 30 minutes of walking at 3.5 mph uses about 140 calories for a 154-pound person (CDC), and the Physical Activity Guidelines ask adults for 150 to 300 minutes of moderate-intensity activity a week, plus muscle-strengthening activity at least 2 days a week (Physical Activity Guidelines).",
+   "number": "154",
+   "value": 154.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Can I significantly increase my metabolism?",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/physical-activity/index.html",
+    "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "faq-a",
+   "sentence": "Activity uses more: 30 minutes of walking at 3.5 mph uses about 140 calories for a 154-pound person (CDC), and the Physical Activity Guidelines ask adults for 150 to 300 minutes of moderate-intensity activity a week, plus muscle-strengthening activity at least 2 days a week (Physical Activity Guidelines).",
+   "number": "150",
+   "value": 150.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Can I significantly increase my metabolism?",
+   "row": {
+    "status": "row",
+    "domain": "odphp-physical-activity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/physical-activity/index.html",
+    "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "faq-a",
+   "sentence": "Activity uses more: 30 minutes of walking at 3.5 mph uses about 140 calories for a 154-pound person (CDC), and the Physical Activity Guidelines ask adults for 150 to 300 minutes of moderate-intensity activity a week, plus muscle-strengthening activity at least 2 days a week (Physical Activity Guidelines).",
+   "number": "300",
+   "value": 300.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Can I significantly increase my metabolism?",
+   "row": {
+    "status": "row",
+    "domain": "odphp-physical-activity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/physical-activity/index.html",
+    "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "faq-a",
+   "sentence": "Activity uses more: 30 minutes of walking at 3.5 mph uses about 140 calories for a 154-pound person (CDC), and the Physical Activity Guidelines ask adults for 150 to 300 minutes of moderate-intensity activity a week, plus muscle-strengthening activity at least 2 days a week (Physical Activity Guidelines).",
+   "number": "2",
+   "value": 2.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Can I significantly increase my metabolism?",
+   "row": {
+    "status": "row",
+    "domain": "odphp-physical-activity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/healthy-weight-growth/physical-activity/index.html",
+    "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "faq-a",
+   "sentence": "In 14 “Biggest Loser” contestants, resting metabolic rate six years after the competition was still 499 kcal a day below what their body composition and age predicted (Fothergill et al., 2016).",
+   "number": "14",
+   "value": 14.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Does losing weight permanently damage metabolism?",
+   "row": {
+    "status": "row",
+    "domain": "fothergill-2016-biggest-loser",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/27136388/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "faq-a",
+   "sentence": "In 14 “Biggest Loser” contestants, resting metabolic rate six years after the competition was still 499 kcal a day below what their body composition and age predicted (Fothergill et al., 2016).",
+   "number": "six",
+   "value": 6,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "FAQ: Does losing weight permanently damage metabolism?",
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/27136388/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "faq-a",
+   "sentence": "In 14 “Biggest Loser” contestants, resting metabolic rate six years after the competition was still 499 kcal a day below what their body composition and age predicted (Fothergill et al., 2016).",
+   "number": "499",
+   "value": 499.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Does losing weight permanently damage metabolism?",
+   "row": {
+    "status": "row",
+    "domain": "fothergill-2016-biggest-loser",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/27136388/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "faq-a",
+   "sentence": "In 14 “Biggest Loser” contestants, resting metabolic rate six years after the competition was still 499 kcal a day below what their body composition and age predicted (Fothergill et al., 2016).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: Does losing weight permanently damage metabolism?",
+   "row": {
+    "status": "row",
+    "domain": "fothergill-2016-biggest-loser",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/27136388/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "faq-a",
+   "sentence": "More generally, as weight falls the body burns less, so the same intake brings slower loss (Hall 2011).",
+   "number": "2011",
+   "value": 2011.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: Does losing weight permanently damage metabolism?",
+   "row": {
+    "status": "row",
+    "domain": "hall-2011-energy-imbalance",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/21872751/"
+   ]
   },
   {
    "page": "/blog/bmi-and-metabolism/",
@@ -73302,7 +74256,55 @@
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "jsonld",
-   "sentence": "Building muscle through resistance training helps: at rest, a pound of skeletal muscle uses about 6 calories a day versus about 2 for a pound of fat (13 vs 4.5 kcal per kg; Wang et al., Am J Clin Nutr 2010).",
+   "sentence": "No: bigger bodies burn more energy, and total daily expenditure rises with fat-free mass (Pontzer et al., 2021).",
+   "number": "2021",
+   "value": 2021.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: Does having a high BMI mean I have a slow metabolism?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "pontzer-2021-energy-expenditure",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "jsonld",
+   "sentence": "An underactive thyroid may be behind about 5 to 10 pounds of weight gain for most patients, most of it salt and water (American Thyroid Association).",
+   "number": "5",
+   "value": 5.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Does having a high BMI mean I have a slow metabolism?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "ata-thyroid-weight",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "jsonld",
+   "sentence": "An underactive thyroid may be behind about 5 to 10 pounds of weight gain for most patients, most of it salt and water (American Thyroid Association).",
+   "number": "10",
+   "value": 10.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Does having a high BMI mean I have a slow metabolism?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "ata-thyroid-weight",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "jsonld",
+   "sentence": "At rest, muscle makes a small difference per pound: a pound of skeletal muscle uses about 6 calories a day against about 2 for a pound of fat (13 vs 4.5 kcal per kg; Wang et al., 2010).",
    "number": "6",
    "value": 6.0,
    "class": "C",
@@ -73312,13 +74314,13 @@
    "row": {
     "status": "row-notes",
     "domain": "wang-2010-organ-metabolic-rates",
-    "how": "name"
+    "how": "link"
    }
   },
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "jsonld",
-   "sentence": "Building muscle through resistance training helps: at rest, a pound of skeletal muscle uses about 6 calories a day versus about 2 for a pound of fat (13 vs 4.5 kcal per kg; Wang et al., Am J Clin Nutr 2010).",
+   "sentence": "At rest, muscle makes a small difference per pound: a pound of skeletal muscle uses about 6 calories a day against about 2 for a pound of fat (13 vs 4.5 kcal per kg; Wang et al., 2010).",
    "number": "2",
    "value": 2.0,
    "class": "C",
@@ -73328,13 +74330,13 @@
    "row": {
     "status": "row-notes",
     "domain": "wang-2010-organ-metabolic-rates",
-    "how": "name"
+    "how": "link"
    }
   },
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "jsonld",
-   "sentence": "Building muscle through resistance training helps: at rest, a pound of skeletal muscle uses about 6 calories a day versus about 2 for a pound of fat (13 vs 4.5 kcal per kg; Wang et al., Am J Clin Nutr 2010).",
+   "sentence": "At rest, muscle makes a small difference per pound: a pound of skeletal muscle uses about 6 calories a day against about 2 for a pound of fat (13 vs 4.5 kcal per kg; Wang et al., 2010).",
    "number": "13",
    "value": 13.0,
    "class": "C",
@@ -73344,13 +74346,13 @@
    "row": {
     "status": "row",
     "domain": "wang-2010-organ-metabolic-rates",
-    "how": "name"
+    "how": "link"
    }
   },
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "jsonld",
-   "sentence": "Building muscle through resistance training helps: at rest, a pound of skeletal muscle uses about 6 calories a day versus about 2 for a pound of fat (13 vs 4.5 kcal per kg; Wang et al., Am J Clin Nutr 2010).",
+   "sentence": "At rest, muscle makes a small difference per pound: a pound of skeletal muscle uses about 6 calories a day against about 2 for a pound of fat (13 vs 4.5 kcal per kg; Wang et al., 2010).",
    "number": "4.5",
    "value": 4.5,
    "class": "C",
@@ -73360,13 +74362,13 @@
    "row": {
     "status": "row",
     "domain": "wang-2010-organ-metabolic-rates",
-    "how": "name"
+    "how": "link"
    }
   },
   {
    "page": "/blog/bmi-and-metabolism/",
    "region": "jsonld",
-   "sentence": "Building muscle through resistance training helps: at rest, a pound of skeletal muscle uses about 6 calories a day versus about 2 for a pound of fat (13 vs 4.5 kcal per kg; Wang et al., Am J Clin Nutr 2010).",
+   "sentence": "At rest, muscle makes a small difference per pound: a pound of skeletal muscle uses about 6 calories a day against about 2 for a pound of fat (13 vs 4.5 kcal per kg; Wang et al., 2010).",
    "number": "2010",
    "value": 2010.0,
    "class": "C",
@@ -73376,7 +74378,194 @@
    "row": {
     "status": "row",
     "domain": "wang-2010-organ-metabolic-rates",
-    "how": "name"
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "jsonld",
+   "sentence": "Activity uses more: 30 minutes of walking at 3.5 mph uses about 140 calories for a 154-pound person (CDC), and the Physical Activity Guidelines ask adults for 150 to 300 minutes of moderate-intensity activity a week, plus muscle-strengthening activity at least 2 days a week (Physical Activity Guidelines).",
+   "number": "30",
+   "value": 30.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can I significantly increase my metabolism?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "jsonld",
+   "sentence": "Activity uses more: 30 minutes of walking at 3.5 mph uses about 140 calories for a 154-pound person (CDC), and the Physical Activity Guidelines ask adults for 150 to 300 minutes of moderate-intensity activity a week, plus muscle-strengthening activity at least 2 days a week (Physical Activity Guidelines).",
+   "number": "3.5",
+   "value": 3.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can I significantly increase my metabolism?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "jsonld",
+   "sentence": "Activity uses more: 30 minutes of walking at 3.5 mph uses about 140 calories for a 154-pound person (CDC), and the Physical Activity Guidelines ask adults for 150 to 300 minutes of moderate-intensity activity a week, plus muscle-strengthening activity at least 2 days a week (Physical Activity Guidelines).",
+   "number": "140",
+   "value": 140.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can I significantly increase my metabolism?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "jsonld",
+   "sentence": "Activity uses more: 30 minutes of walking at 3.5 mph uses about 140 calories for a 154-pound person (CDC), and the Physical Activity Guidelines ask adults for 150 to 300 minutes of moderate-intensity activity a week, plus muscle-strengthening activity at least 2 days a week (Physical Activity Guidelines).",
+   "number": "154",
+   "value": 154.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can I significantly increase my metabolism?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-physical-activity-weight",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "jsonld",
+   "sentence": "Activity uses more: 30 minutes of walking at 3.5 mph uses about 140 calories for a 154-pound person (CDC), and the Physical Activity Guidelines ask adults for 150 to 300 minutes of moderate-intensity activity a week, plus muscle-strengthening activity at least 2 days a week (Physical Activity Guidelines).",
+   "number": "150",
+   "value": 150.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can I significantly increase my metabolism?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "odphp-physical-activity-guidelines",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "jsonld",
+   "sentence": "Activity uses more: 30 minutes of walking at 3.5 mph uses about 140 calories for a 154-pound person (CDC), and the Physical Activity Guidelines ask adults for 150 to 300 minutes of moderate-intensity activity a week, plus muscle-strengthening activity at least 2 days a week (Physical Activity Guidelines).",
+   "number": "300",
+   "value": 300.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can I significantly increase my metabolism?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "odphp-physical-activity-guidelines",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "jsonld",
+   "sentence": "Activity uses more: 30 minutes of walking at 3.5 mph uses about 140 calories for a 154-pound person (CDC), and the Physical Activity Guidelines ask adults for 150 to 300 minutes of moderate-intensity activity a week, plus muscle-strengthening activity at least 2 days a week (Physical Activity Guidelines).",
+   "number": "2",
+   "value": 2.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can I significantly increase my metabolism?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "odphp-physical-activity-guidelines",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "jsonld",
+   "sentence": "In 14 “Biggest Loser” contestants, resting metabolic rate six years after the competition was still 499 kcal a day below what their body composition and age predicted (Fothergill et al., 2016).",
+   "number": "14",
+   "value": 14.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Does losing weight permanently damage metabolism?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "fothergill-2016-biggest-loser",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "jsonld",
+   "sentence": "In 14 “Biggest Loser” contestants, resting metabolic rate six years after the competition was still 499 kcal a day below what their body composition and age predicted (Fothergill et al., 2016).",
+   "number": "six",
+   "value": 6,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "FAQPage JSON-LD: Does losing weight permanently damage metabolism?",
+   "mirror_of": "the visible FAQ answer (same text)"
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "jsonld",
+   "sentence": "In 14 “Biggest Loser” contestants, resting metabolic rate six years after the competition was still 499 kcal a day below what their body composition and age predicted (Fothergill et al., 2016).",
+   "number": "499",
+   "value": 499.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Does losing weight permanently damage metabolism?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "fothergill-2016-biggest-loser",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "jsonld",
+   "sentence": "In 14 “Biggest Loser” contestants, resting metabolic rate six years after the competition was still 499 kcal a day below what their body composition and age predicted (Fothergill et al., 2016).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: Does losing weight permanently damage metabolism?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "fothergill-2016-biggest-loser",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "region": "jsonld",
+   "sentence": "More generally, as weight falls the body burns less, so the same intake brings slower loss (Hall 2011).",
+   "number": "2011",
+   "value": 2011.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: Does losing weight permanently damage metabolism?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "hall-2011-energy-imbalance",
+    "how": "link"
    }
   },
   {

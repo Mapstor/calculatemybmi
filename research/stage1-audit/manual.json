@@ -3204,6 +3204,13 @@
    "row": "gbmc-2016-bmi-mortality",
    "exact": true,
    "why": "the page description: the GBMC's 239 studies (C) and NCI's 13 cancers, a count in prose (D) (CMB-051)"
+  },
+  {
+   "page": "/blog/bmi-and-metabolism/",
+   "sig": "#.",
+   "classes": "D",
+   "exact": true,
+   "why": "a year closing a reference in the sources box, a citation detail (CMB-052)"
   }
  ]
 }
