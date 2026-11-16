@@ -4,12 +4,12 @@
  "viewport": "390x844",
  "pages_audited": 24,
  "pages_skipped": [],
- "numbers": 4940,
+ "numbers": 4951,
  "totals": {
   "A": 47,
   "B": 1625,
-  "C": 2417,
-  "D": 661,
+  "C": 2424,
+  "D": 665,
   "X": 190,
   "U": 0
  },
@@ -19,16 +19,16 @@
  "c_not_in_row_in_page_csv": 0,
  "c_not_in_row_also_in_other_row": 0,
  "c_status": {
-  "row": 1246,
-  "row-notes": 241,
+  "row": 1251,
+  "row-notes": 243,
   "not-in-row": 28,
   "row-dataset": 902
  },
  "checks_run": 1121,
  "check_errors": [],
  "unclassified": [],
- "manual_entries": 254,
- "manual_entries_used": 250,
+ "manual_entries": 256,
+ "manual_entries_used": 252,
  "worst10": [
   {
    "page": "/kids-bmi-calculator/",
@@ -629,7 +629,7 @@
   },
   {
    "page": "/about/",
-   "jsonld_mirrors": 4,
+   "jsonld_mirrors": 5,
    "mismatches": [],
    "c_no_row": [],
    "c_not_in_row": [],
@@ -661,19 +661,29 @@
      "sentence": "Compare the results across all four."
     },
     {
+     "number": "four",
+     "why": "number word (count in prose)",
+     "sentence": "Estimates body fat percentage four ways: the Navy tape method, relative fat mass from waist and height, the Deurenberg formula and skinfold calipers, with how close each gets to a DXA scan."
+    },
+    {
+     "number": "seven",
+     "why": "number word (count in prose)",
+     "sentence": "These seven sources are linked from the most pages:"
+    },
+    {
      "number": "4",
      "why": "name or label with a number",
      "sentence": "What the site does collect (Google Analytics 4 cookies, advertising cookies set by Raptive and its partners, and standard HTTP server logs) is described in the privacy policy."
     },
     {
-     "number": "two",
-     "why": "number word (count in prose)",
-     "sentence": "Simple and accessible: It needs only two measurements, height and weight, which makes it practical in clinical settings, population studies, and self-tracking alike."
+     "number": "13",
+     "why": "count in prose",
+     "sentence": "NCI says people with overweight or obesity are at greater risk of diabetes, high blood pressure, cardiovascular disease, stroke and at least 13 types of cancer (NCI)."
     },
     {
-     "number": "2",
-     "why": "name or label with a number",
-     "sentence": "Extensively studied: Decades of epidemiological research have documented associations between BMI ranges and outcomes including cardiovascular disease, type 2 diabetes, and certain cancers."
+     "number": "three",
+     "why": "number word (count in prose)",
+     "sentence": "Read BMI as one piece of a larger picture: the lean body mass, body fat and ideal weight calculators add three more."
     },
     {
      "number": "4",
@@ -686,14 +696,24 @@
      "sentence": "Two things happen to data on the site: calculator inputs are processed in your browser and are not transmitted from your device, and analytics, advertising, and server-log processing runs as described in the privacy policy."
     },
     {
+     "number": "four",
+     "why": "number word (count in prose)",
+     "sentence": "The calculators implement published formulas: the standard BMI formula (weight in kilograms divided by height in metres squared), the CDC growth-chart percentile method for children, Nick Trefethen’s 2013 New BMI proposal, the Devine/Robinson/Miller/Hamwi ideal-weight equations, the Boer/James/Hume lean-body-mass equations and four body-fat methods."
+    },
+    {
      "number": "4",
      "why": "name or label with a number",
      "sentence": "Separately, the site does set Google Analytics 4 cookies (page-view counting), sets advertising cookies via Raptive and its partners for the ads shown on the Site, and produces standard HTTP server logs."
     },
     {
-     "number": "Nine",
+     "number": "nine",
      "why": "number word (count in prose)",
-     "sentence": "Nine calculators covering different population and use cases (women, men, by age, pediatric, New BMI, ideal weight, lean body mass), rather than one generic tool."
+     "sentence": "There are nine calculators for different people and uses (women, men, by age, pediatric, New BMI, ideal weight, lean body mass, body fat)."
+    },
+    {
+     "number": "nine",
+     "why": "number word (count in prose)",
+     "sentence": "Who builds CalculateMyBMI.net, the nine calculators and the sources behind them, how pages are sourced, and what happens to your data."
     }
    ],
    "checks_ok": 13,
@@ -701,21 +721,25 @@
    "score": 0,
    "totals": {
     "X": 5,
-    "D": 11,
-    "C": 21,
+    "D": 15,
+    "C": 28,
     "B": 22
    },
    "c_rows": {
-    "row": 21
+    "row": 26,
+    "row-notes": 2
    },
    "c_row_domains": {
     "winter-2014-bmi-mortality-65": 4,
     "trefethen-new-bmi": 5,
     "eknoyan-2008-quetelet": 2,
+    "who-trs-894-obesity": 1,
     "cdc-extended-bmi-data": 3,
     "pai-paloucek-2000-ibw": 4,
     "davidson-2015-hamwi-dbw": 2,
-    "flegal-2013-jama-mortality": 1
+    "nhanes-adult-obesity-2021-2023": 2,
+    "nhlbi-1998-obesity-guidelines": 1,
+    "gbmc-2016-bmi-mortality": 4
    },
    "excluded": {
     "address": 2,
@@ -4578,7 +4602,7 @@
   {
    "page": "/about/",
    "region": "main",
-   "sentence": "The site aims to (1) make BMI and body-composition screening tools freely accessible, (2) explain what BMI and related metrics actually mean through the guides section (starting with the what-is-BMI guide), and (3) help readers prepare more informed conversations with their own healthcare providers.",
+   "sentence": "The site aims to (1) make BMI and body-composition screening tools freely accessible, (2) explain what BMI and related metrics actually mean through the guides section (starting with the what-is-BMI guide), and (3) show the source behind every number.",
    "number": "1",
    "value": 1.0,
    "class": "X",
@@ -4592,7 +4616,7 @@
   {
    "page": "/about/",
    "region": "main",
-   "sentence": "The site aims to (1) make BMI and body-composition screening tools freely accessible, (2) explain what BMI and related metrics actually mean through the guides section (starting with the what-is-BMI guide), and (3) help readers prepare more informed conversations with their own healthcare providers.",
+   "sentence": "The site aims to (1) make BMI and body-composition screening tools freely accessible, (2) explain what BMI and related metrics actually mean through the guides section (starting with the what-is-BMI guide), and (3) show the source behind every number.",
    "number": "2",
    "value": 2.0,
    "class": "X",
@@ -4606,7 +4630,7 @@
   {
    "page": "/about/",
    "region": "main",
-   "sentence": "The site aims to (1) make BMI and body-composition screening tools freely accessible, (2) explain what BMI and related metrics actually mean through the guides section (starting with the what-is-BMI guide), and (3) help readers prepare more informed conversations with their own healthcare providers.",
+   "sentence": "The site aims to (1) make BMI and body-composition screening tools freely accessible, (2) explain what BMI and related metrics actually mean through the guides section (starting with the what-is-BMI guide), and (3) show the source behind every number.",
    "number": "3",
    "value": 3.0,
    "class": "X",
@@ -4735,6 +4759,16 @@
   {
    "page": "/about/",
    "region": "main",
+   "sentence": "Estimates body fat percentage four ways: the Navy tape method, relative fat mass from waist and height, the Deurenberg formula and skinfold calipers, with how close each gets to a DXA scan.",
+   "number": "four",
+   "value": 4,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Body Fat Calculator"
+  },
+  {
+   "page": "/about/",
+   "region": "main",
    "sentence": "Standard BMI Formula: BMI = weight (kg) / height (m)², the index Adolphe Quetelet described in 1832 (Eknoyan, 2008); WHO’s adult classification is built on it.",
    "number": "1832",
    "value": 1832.0,
@@ -4771,7 +4805,7 @@
   {
    "page": "/about/",
    "region": "main",
-   "sentence": "WHO BMI Classification: Underweight (<18.5), Normal (18.5–24.9), Overweight (25.0–29.9), Obese Class I (30.0–34.9), Obese Class II (35.0–39.9), and Obese Class III (≥40.0).",
+   "sentence": "WHO BMI Classification: Underweight (<18.5), Normal (18.5–24.9), Overweight (25.0–29.9), Obese Class I (30.0–34.9), Obese Class II (35.0–39.9), and Obese Class III (≥40.0) (WHO, 2000).",
    "number": "18.5",
    "value": 18.5,
    "class": "B",
@@ -4783,12 +4817,15 @@
     "page": "18.5 (Underweight)",
     "computed": "Severe thinness / Moderate thinness / Underweight in calculator.js",
     "label": "category cut-off (getBMICategory)"
-   }
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
   },
   {
    "page": "/about/",
    "region": "main",
-   "sentence": "WHO BMI Classification: Underweight (<18.5), Normal (18.5–24.9), Overweight (25.0–29.9), Obese Class I (30.0–34.9), Obese Class II (35.0–39.9), and Obese Class III (≥40.0).",
+   "sentence": "WHO BMI Classification: Underweight (<18.5), Normal (18.5–24.9), Overweight (25.0–29.9), Obese Class I (30.0–34.9), Obese Class II (35.0–39.9), and Obese Class III (≥40.0) (WHO, 2000).",
    "number": "18.5",
    "value": 18.5,
    "class": "B",
@@ -4801,22 +4838,28 @@
     "computed": "Healthy weight in calculator.js",
     "label": "category cut-off (getBMICategory)",
     "name_differs": "\"Normal\" = calculator.js \"Healthy weight\""
-   }
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
   },
   {
    "page": "/about/",
    "region": "main",
-   "sentence": "WHO BMI Classification: Underweight (<18.5), Normal (18.5–24.9), Overweight (25.0–29.9), Obese Class I (30.0–34.9), Obese Class II (35.0–39.9), and Obese Class III (≥40.0).",
+   "sentence": "WHO BMI Classification: Underweight (<18.5), Normal (18.5–24.9), Overweight (25.0–29.9), Obese Class I (30.0–34.9), Obese Class II (35.0–39.9), and Obese Class III (≥40.0) (WHO, 2000).",
    "number": "24.9",
    "value": 24.9,
    "class": "B",
    "why": "category cut-off (other bound)",
-   "heading": "Formulas and standards implemented"
+   "heading": "Formulas and standards implemented",
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
   },
   {
    "page": "/about/",
    "region": "main",
-   "sentence": "WHO BMI Classification: Underweight (<18.5), Normal (18.5–24.9), Overweight (25.0–29.9), Obese Class I (30.0–34.9), Obese Class II (35.0–39.9), and Obese Class III (≥40.0).",
+   "sentence": "WHO BMI Classification: Underweight (<18.5), Normal (18.5–24.9), Overweight (25.0–29.9), Obese Class I (30.0–34.9), Obese Class II (35.0–39.9), and Obese Class III (≥40.0) (WHO, 2000).",
    "number": "25.0",
    "value": 25.0,
    "class": "B",
@@ -4828,22 +4871,28 @@
     "page": "25.0-29.9 (Overweight)",
     "computed": "Overweight in calculator.js",
     "label": "category cut-off (getBMICategory)"
-   }
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
   },
   {
    "page": "/about/",
    "region": "main",
-   "sentence": "WHO BMI Classification: Underweight (<18.5), Normal (18.5–24.9), Overweight (25.0–29.9), Obese Class I (30.0–34.9), Obese Class II (35.0–39.9), and Obese Class III (≥40.0).",
+   "sentence": "WHO BMI Classification: Underweight (<18.5), Normal (18.5–24.9), Overweight (25.0–29.9), Obese Class I (30.0–34.9), Obese Class II (35.0–39.9), and Obese Class III (≥40.0) (WHO, 2000).",
    "number": "29.9",
    "value": 29.9,
    "class": "B",
    "why": "category cut-off (other bound)",
-   "heading": "Formulas and standards implemented"
+   "heading": "Formulas and standards implemented",
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
   },
   {
    "page": "/about/",
    "region": "main",
-   "sentence": "WHO BMI Classification: Underweight (<18.5), Normal (18.5–24.9), Overweight (25.0–29.9), Obese Class I (30.0–34.9), Obese Class II (35.0–39.9), and Obese Class III (≥40.0).",
+   "sentence": "WHO BMI Classification: Underweight (<18.5), Normal (18.5–24.9), Overweight (25.0–29.9), Obese Class I (30.0–34.9), Obese Class II (35.0–39.9), and Obese Class III (≥40.0) (WHO, 2000).",
    "number": "30.0",
    "value": 30.0,
    "class": "B",
@@ -4856,22 +4905,28 @@
     "computed": "Class 1 obesity in calculator.js",
     "label": "category cut-off (getBMICategory)",
     "name_differs": "\"Obese Class I\" = calculator.js \"Class 1 obesity\""
-   }
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
   },
   {
    "page": "/about/",
    "region": "main",
-   "sentence": "WHO BMI Classification: Underweight (<18.5), Normal (18.5–24.9), Overweight (25.0–29.9), Obese Class I (30.0–34.9), Obese Class II (35.0–39.9), and Obese Class III (≥40.0).",
+   "sentence": "WHO BMI Classification: Underweight (<18.5), Normal (18.5–24.9), Overweight (25.0–29.9), Obese Class I (30.0–34.9), Obese Class II (35.0–39.9), and Obese Class III (≥40.0) (WHO, 2000).",
    "number": "34.9",
    "value": 34.9,
    "class": "B",
    "why": "category cut-off (other bound)",
-   "heading": "Formulas and standards implemented"
+   "heading": "Formulas and standards implemented",
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
   },
   {
    "page": "/about/",
    "region": "main",
-   "sentence": "WHO BMI Classification: Underweight (<18.5), Normal (18.5–24.9), Overweight (25.0–29.9), Obese Class I (30.0–34.9), Obese Class II (35.0–39.9), and Obese Class III (≥40.0).",
+   "sentence": "WHO BMI Classification: Underweight (<18.5), Normal (18.5–24.9), Overweight (25.0–29.9), Obese Class I (30.0–34.9), Obese Class II (35.0–39.9), and Obese Class III (≥40.0) (WHO, 2000).",
    "number": "35.0",
    "value": 35.0,
    "class": "B",
@@ -4884,22 +4939,28 @@
     "computed": "Class 2 obesity in calculator.js",
     "label": "category cut-off (getBMICategory)",
     "name_differs": "\"Obese Class II\" = calculator.js \"Class 2 obesity\""
-   }
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
   },
   {
    "page": "/about/",
    "region": "main",
-   "sentence": "WHO BMI Classification: Underweight (<18.5), Normal (18.5–24.9), Overweight (25.0–29.9), Obese Class I (30.0–34.9), Obese Class II (35.0–39.9), and Obese Class III (≥40.0).",
+   "sentence": "WHO BMI Classification: Underweight (<18.5), Normal (18.5–24.9), Overweight (25.0–29.9), Obese Class I (30.0–34.9), Obese Class II (35.0–39.9), and Obese Class III (≥40.0) (WHO, 2000).",
    "number": "39.9",
    "value": 39.9,
    "class": "B",
    "why": "category cut-off (other bound)",
-   "heading": "Formulas and standards implemented"
+   "heading": "Formulas and standards implemented",
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
   },
   {
    "page": "/about/",
    "region": "main",
-   "sentence": "WHO BMI Classification: Underweight (<18.5), Normal (18.5–24.9), Overweight (25.0–29.9), Obese Class I (30.0–34.9), Obese Class II (35.0–39.9), and Obese Class III (≥40.0).",
+   "sentence": "WHO BMI Classification: Underweight (<18.5), Normal (18.5–24.9), Overweight (25.0–29.9), Obese Class I (30.0–34.9), Obese Class II (35.0–39.9), and Obese Class III (≥40.0) (WHO, 2000).",
    "number": "40.0",
    "value": 40.0,
    "class": "B",
@@ -4912,7 +4973,28 @@
     "computed": "Class 3 obesity in calculator.js",
     "label": "category cut-off (getBMICategory)",
     "name_differs": "\"Obese Class III\" = calculator.js \"Class 3 obesity\""
-   }
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
+  },
+  {
+   "page": "/about/",
+   "region": "main",
+   "sentence": "WHO BMI Classification: Underweight (<18.5), Normal (18.5–24.9), Overweight (25.0–29.9), Obese Class I (30.0–34.9), Obese Class II (35.0–39.9), and Obese Class III (≥40.0) (WHO, 2000).",
+   "number": "2000",
+   "value": 2000.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Formulas and standards implemented",
+   "row": {
+    "status": "row",
+    "domain": "who-trs-894-obesity",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
   },
   {
    "page": "/about/",
@@ -5281,12 +5363,22 @@
   {
    "page": "/about/",
    "region": "main",
+   "sentence": "These seven sources are linked from the most pages:",
+   "number": "seven",
+   "value": 7,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Sources cited most often"
+  },
+  {
+   "page": "/about/",
+   "region": "main",
    "sentence": "Winter 2014 meta-analysis (older adults)",
    "number": "2014",
    "value": 2014.0,
    "class": "C",
    "why": "year",
-   "heading": "Organisations referenced across the site",
+   "heading": "Sources cited most often",
    "row": {
     "status": "row",
     "domain": "winter-2014-bmi-mortality-65",
@@ -5294,6 +5386,60 @@
    },
    "links": [
     "https://pubmed.ncbi.nlm.nih.gov/24452240/"
+   ]
+  },
+  {
+   "page": "/about/",
+   "region": "main",
+   "sentence": "NCHS adult obesity data, 2021–2023",
+   "number": "2021",
+   "value": 2021.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Sources cited most often",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-obesity-2021-2023",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/products/databriefs/db508.htm"
+   ]
+  },
+  {
+   "page": "/about/",
+   "region": "main",
+   "sentence": "NCHS adult obesity data, 2021–2023",
+   "number": "2023",
+   "value": 2023.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Sources cited most often",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-obesity-2021-2023",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/nchs/products/databriefs/db508.htm"
+   ]
+  },
+  {
+   "page": "/about/",
+   "region": "main",
+   "sentence": "NIH clinical guidelines, 1998",
+   "number": "1998",
+   "value": 1998.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Sources cited most often",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
    ]
   },
   {
@@ -5312,22 +5458,7 @@
   {
    "page": "/about/",
    "region": "main",
-   "sentence": "Every quantitative claim on the site is either linked to an institutional source (WHO, CDC, NHLBI, NIH, ACOG) or a specific paper (Flegal 2013, Winter 2014, Trefethen 2013, and the ideal-weight and lean-body-mass equations by their original authors).",
-   "number": "2013",
-   "value": 2013.0,
-   "class": "C",
-   "why": "year",
-   "heading": "Sourcing",
-   "row": {
-    "status": "row",
-    "domain": "flegal-2013-jama-mortality",
-    "how": "name"
-   }
-  },
-  {
-   "page": "/about/",
-   "region": "main",
-   "sentence": "Every quantitative claim on the site is either linked to an institutional source (WHO, CDC, NHLBI, NIH, ACOG) or a specific paper (Flegal 2013, Winter 2014, Trefethen 2013, and the ideal-weight and lean-body-mass equations by their original authors).",
+   "sentence": "Every quantitative claim on the site is linked to an institutional source (CDC, NIH, WHO and others) or to a specific paper (for example Winter 2014, Trefethen 2013, and the ideal-weight, lean-body-mass and body-fat equations by their original authors).",
    "number": "2014",
    "value": 2014.0,
    "class": "C",
@@ -5342,7 +5473,7 @@
   {
    "page": "/about/",
    "region": "main",
-   "sentence": "Every quantitative claim on the site is either linked to an institutional source (WHO, CDC, NHLBI, NIH, ACOG) or a specific paper (Flegal 2013, Winter 2014, Trefethen 2013, and the ideal-weight and lean-body-mass equations by their original authors).",
+   "sentence": "Every quantitative claim on the site is linked to an institutional source (CDC, NIH, WHO and others) or to a specific paper (for example Winter 2014, Trefethen 2013, and the ideal-weight, lean-body-mass and body-fat equations by their original authors).",
    "number": "2013",
    "value": 2013.0,
    "class": "C",
@@ -5357,22 +5488,102 @@
   {
    "page": "/about/",
    "region": "main",
-   "sentence": "Simple and accessible: It needs only two measurements, height and weight, which makes it practical in clinical settings, population studies, and self-tracking alike.",
-   "number": "two",
-   "value": 2,
-   "class": "D",
-   "why": "number word (count in prose)",
-   "heading": "Why BMI matters"
+   "sentence": "Studied at scale: in pooled data from 239 studies, the risk of death was lowest at a BMI of 20.0 to 24.9 and higher above and below that range (GBMC, 2016).",
+   "number": "239",
+   "value": 239.0,
+   "class": "C",
+   "why": "the GBMC's 239 studies and its lowest-risk band, 20.0 to 24.9 (minimal at 20.0-25.0), not a calculator category (CMB-053) (manual.json)",
+   "heading": "Why BMI matters",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
   },
   {
    "page": "/about/",
    "region": "main",
-   "sentence": "Extensively studied: Decades of epidemiological research have documented associations between BMI ranges and outcomes including cardiovascular disease, type 2 diabetes, and certain cancers.",
-   "number": "2",
-   "value": 2.0,
+   "sentence": "Studied at scale: in pooled data from 239 studies, the risk of death was lowest at a BMI of 20.0 to 24.9 and higher above and below that range (GBMC, 2016).",
+   "number": "20.0",
+   "value": 20.0,
+   "class": "C",
+   "why": "the GBMC's 239 studies and its lowest-risk band, 20.0 to 24.9 (minimal at 20.0-25.0), not a calculator category (CMB-053) (manual.json)",
+   "heading": "Why BMI matters",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/about/",
+   "region": "main",
+   "sentence": "Studied at scale: in pooled data from 239 studies, the risk of death was lowest at a BMI of 20.0 to 24.9 and higher above and below that range (GBMC, 2016).",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "C",
+   "why": "the GBMC's 239 studies and its lowest-risk band, 20.0 to 24.9 (minimal at 20.0-25.0), not a calculator category (CMB-053) (manual.json)",
+   "heading": "Why BMI matters",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/about/",
+   "region": "main",
+   "sentence": "Studied at scale: in pooled data from 239 studies, the risk of death was lowest at a BMI of 20.0 to 24.9 and higher above and below that range (GBMC, 2016).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Why BMI matters",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/about/",
+   "region": "main",
+   "sentence": "NCI says people with overweight or obesity are at greater risk of diabetes, high blood pressure, cardiovascular disease, stroke and at least 13 types of cancer (NCI).",
+   "number": "13",
+   "value": 13.0,
    "class": "D",
-   "why": "name or label with a number",
-   "heading": "Why BMI matters"
+   "why": "count in prose",
+   "heading": "Why BMI matters",
+   "links": [
+    "https://www.cancer.gov/about-cancer/causes-prevention/risk/obesity/obesity-fact-sheet"
+   ]
+  },
+  {
+   "page": "/about/",
+   "region": "main",
+   "sentence": "Read BMI as one piece of a larger picture: the lean body mass, body fat and ideal weight calculators add three more.",
+   "number": "three",
+   "value": 3,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Why BMI matters",
+   "links": [
+    "http://localhost:8765/lean-body-mass/",
+    "http://localhost:8765/body-fat-calculator/",
+    "http://localhost:8765/ideal-weight/"
+   ]
   },
   {
    "page": "/about/",
@@ -5400,17 +5611,27 @@
   {
    "page": "/about/",
    "region": "faq-a",
-   "sentence": "The calculators implement the same formulas used in clinical practice: the standard BMI formula (weight in kilograms divided by height in metres squared), the CDC growth-chart percentile method for children, Nick Trefethen’s 2013 New BMI proposal, the Devine/Robinson/Miller/Hamwi ideal-weight equations, and the Boer/James/Hume lean-body-mass equations.",
+   "sentence": "The calculators implement published formulas: the standard BMI formula (weight in kilograms divided by height in metres squared), the CDC growth-chart percentile method for children, Nick Trefethen’s 2013 New BMI proposal, the Devine/Robinson/Miller/Hamwi ideal-weight equations, the Boer/James/Hume lean-body-mass equations and four body-fat methods.",
    "number": "2013",
    "value": 2013.0,
    "class": "C",
-   "why": "year",
+   "why": "the year of Trefethen's proposal, in an answer that also links CDC (CMB-053) (manual.json)",
    "heading": "FAQ: Is this BMI calculator accurate?",
    "row": {
     "status": "row",
     "domain": "trefethen-new-bmi",
-    "how": "name"
+    "how": "manual.json"
    }
+  },
+  {
+   "page": "/about/",
+   "region": "faq-a",
+   "sentence": "The calculators implement published formulas: the standard BMI formula (weight in kilograms divided by height in metres squared), the CDC growth-chart percentile method for children, Nick Trefethen’s 2013 New BMI proposal, the Devine/Robinson/Miller/Hamwi ideal-weight equations, the Boer/James/Hume lean-body-mass equations and four body-fat methods.",
+   "number": "four",
+   "value": 4,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "FAQ: Is this BMI calculator accurate?"
   },
   {
    "page": "/about/",
@@ -5425,7 +5646,7 @@
   {
    "page": "/about/",
    "region": "faq-a",
-   "sentence": "The site is built and maintained by Marko Visic, MPharm, and operated by Moving Data Systems d.o.o. The calculators implement formulas from peer-reviewed literature (Devine, Robinson, Miller, Hamwi for ideal weight; Boer, James, Hume for lean body mass; the Quetelet formula for BMI; Trefethen 2013 for New BMI) and reference institutional guidance from WHO, CDC, NHLBI, and other bodies.",
+   "sentence": "The site is built and maintained by Marko Visic, MPharm, and operated by Moving Data Systems d.o.o. The calculators implement published formulas (Devine, Robinson, Miller, Hamwi for ideal weight; Boer, James, Hume for lean body mass; the Navy, relative fat mass, Deurenberg and Jackson–Pollock equations for body fat; the Quetelet formula for BMI; Trefethen 2013 for New BMI) and cite institutional guidance from CDC, NIH, WHO and other bodies.",
    "number": "2013",
    "value": 2013.0,
    "class": "C",
@@ -5443,8 +5664,8 @@
   {
    "page": "/about/",
    "region": "faq-a",
-   "sentence": "Nine calculators covering different population and use cases (women, men, by age, pediatric, New BMI, ideal weight, lean body mass), rather than one generic tool.",
-   "number": "Nine",
+   "sentence": "There are nine calculators for different people and uses (women, men, by age, pediatric, New BMI, ideal weight, lean body mass, body fat).",
+   "number": "nine",
    "value": 9,
    "class": "D",
    "why": "number word (count in prose)",
@@ -5453,18 +5674,29 @@
   {
    "page": "/about/",
    "region": "jsonld",
-   "sentence": "The calculators implement the same formulas used in clinical practice: the standard BMI formula (weight in kilograms divided by height in metres squared), the CDC growth-chart percentile method for children, Nick Trefethen’s 2013 New BMI proposal, the Devine/Robinson/Miller/Hamwi ideal-weight equations, and the Boer/James/Hume lean-body-mass equations.",
+   "sentence": "The calculators implement published formulas: the standard BMI formula (weight in kilograms divided by height in metres squared), the CDC growth-chart percentile method for children, Nick Trefethen’s 2013 New BMI proposal, the Devine/Robinson/Miller/Hamwi ideal-weight equations, the Boer/James/Hume lean-body-mass equations and four body-fat methods.",
    "number": "2013",
    "value": 2013.0,
    "class": "C",
-   "why": "year",
+   "why": "the year of Trefethen's proposal, in an answer that also links CDC (CMB-053) (manual.json)",
    "heading": "FAQPage JSON-LD: Is this BMI calculator accurate?",
    "mirror_of": "the visible FAQ answer (same text)",
    "row": {
     "status": "row",
     "domain": "trefethen-new-bmi",
-    "how": "name"
+    "how": "manual.json"
    }
+  },
+  {
+   "page": "/about/",
+   "region": "jsonld",
+   "sentence": "The calculators implement published formulas: the standard BMI formula (weight in kilograms divided by height in metres squared), the CDC growth-chart percentile method for children, Nick Trefethen’s 2013 New BMI proposal, the Devine/Robinson/Miller/Hamwi ideal-weight equations, the Boer/James/Hume lean-body-mass equations and four body-fat methods.",
+   "number": "four",
+   "value": 4,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "FAQPage JSON-LD: Is this BMI calculator accurate?",
+   "mirror_of": "the visible FAQ answer (same text)"
   },
   {
    "page": "/about/",
@@ -5480,7 +5712,7 @@
   {
    "page": "/about/",
    "region": "jsonld",
-   "sentence": "The site is built and maintained by Marko Visic, MPharm, and operated by Moving Data Systems d.o.o. The calculators implement formulas from peer-reviewed literature (Devine, Robinson, Miller, Hamwi for ideal weight; Boer, James, Hume for lean body mass; the Quetelet formula for BMI; Trefethen 2013 for New BMI) and reference institutional guidance from WHO, CDC, NHLBI, and other bodies.",
+   "sentence": "The site is built and maintained by Marko Visic, MPharm, and operated by Moving Data Systems d.o.o. The calculators implement published formulas (Devine, Robinson, Miller, Hamwi for ideal weight; Boer, James, Hume for lean body mass; the Navy, relative fat mass, Deurenberg and Jackson–Pollock equations for body fat; the Quetelet formula for BMI; Trefethen 2013 for New BMI) and cite institutional guidance from CDC, NIH, WHO and other bodies.",
    "number": "2013",
    "value": 2013.0,
    "class": "C",
@@ -5496,13 +5728,23 @@
   {
    "page": "/about/",
    "region": "jsonld",
-   "sentence": "Nine calculators covering different population and use cases (women, men, by age, pediatric, New BMI, ideal weight, lean body mass), rather than one generic tool.",
-   "number": "Nine",
+   "sentence": "There are nine calculators for different people and uses (women, men, by age, pediatric, New BMI, ideal weight, lean body mass, body fat).",
+   "number": "nine",
    "value": 9,
    "class": "D",
    "why": "number word (count in prose)",
    "heading": "FAQPage JSON-LD: What makes your calculators different from others online?",
    "mirror_of": "the visible FAQ answer (same text)"
+  },
+  {
+   "page": "/about/",
+   "region": "meta",
+   "sentence": "Who builds CalculateMyBMI.net, the nine calculators and the sources behind them, how pages are sourced, and what happens to your data.",
+   "number": "nine",
+   "value": 9,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "meta"
   },
   {
    "page": "/privacy/",

@@ -3211,6 +3211,28 @@
    "classes": "D",
    "exact": true,
    "why": "a year closing a reference in the sources box, a citation detail (CMB-052)"
+  },
+  {
+   "page": "/about/",
+   "sig": "the risk of death was lowest at a BMI of # to #",
+   "classes": [
+    "C",
+    "C",
+    "C",
+    "-"
+   ],
+   "row": "gbmc-2016-bmi-mortality",
+   "why": "the GBMC's 239 studies and its lowest-risk band, 20.0 to 24.9 (minimal at 20.0-25.0), not a calculator category (CMB-053)"
+  },
+  {
+   "page": "/about/",
+   "sig": "Nick Trefethen's # New BMI proposal",
+   "classes": [
+    "C",
+    "-"
+   ],
+   "row": "trefethen-new-bmi",
+   "why": "the year of Trefethen's proposal, in an answer that also links CDC (CMB-053)"
   }
  ]
 }
