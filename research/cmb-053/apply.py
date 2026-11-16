@@ -17,7 +17,8 @@ page listed eight) and the seven sources linked from the most pages (counted 202
 and URL kept; the bio's facts kept. Meta descriptions, the AboutPage description, the FAQPage JSON-LD (all seven visible
 answers), dateModified and lastmod follow. The same Person description on four other pages (blog/bmi-for-athletes,
 blog/what-is-bmi, obesity-rate-by-state, childhood-obesity-statistics) waits for each page's own batch, so their lastmod
-moves with a real edit. Files are checked by SHA-256 first; every marker must occur once.
+moves with a real edit. Layout: the suite grid (two columns, 632 px inside the 680 px section) now holds nine cards, so
+the ninth spans the row instead of standing alone (CSS in the page's own style block; one column on phones is unchanged). Files are checked by SHA-256 first; every marker must occur once.
 usage: python3 research/cmb-053/apply.py [--check]   Run order from main: registry.py, apply.py."""
 import datetime
 import hashlib
@@ -185,6 +186,8 @@ EDITS = [
      'evidence-based BMI and body composition calculators."',
      '"description": "Pharmacist by training (MPharm) with a BSc in Physics, both from the University of Ljubljana. Builds '
      'BMI and body composition calculators on published formulas."'),
+    ('border-radius: var(--radius-lg); }  .suite-card h3 {',
+     'border-radius: var(--radius-lg); } .suite-card:last-child:nth-child(odd) { grid-column: 1 / -1; } .suite-card h3 {'),
     ('"dateModified": "2026-11-13"', f'"dateModified": "{TODAY}"'),
 ]
 
