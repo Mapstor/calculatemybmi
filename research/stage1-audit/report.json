@@ -82277,7 +82277,7 @@
    "value": 300000.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Waist-to-Height Ratio: The Simple Metric That Predicts Health Better Than BMI",
+   "heading": "Waist-to-Height Ratio Calculator and Healthy Ranges",
    "row": {
     "status": "row",
     "domain": "ashwell-2012-whtr-meta-analysis",
@@ -82296,7 +82296,7 @@
    "value": 2012.0,
    "class": "C",
    "why": "year",
-   "heading": "Waist-to-Height Ratio: The Simple Metric That Predicts Health Better Than BMI",
+   "heading": "Waist-to-Height Ratio Calculator and Healthy Ranges",
    "row": {
     "status": "row",
     "domain": "ashwell-2012-whtr-meta-analysis",
@@ -82315,7 +82315,7 @@
    "value": 0.5,
    "class": "D",
    "why": "number word (count in prose)",
-   "heading": "Waist-to-Height Ratio: The Simple Metric That Predicts Health Better Than BMI",
+   "heading": "Waist-to-Height Ratio Calculator and Healthy Ranges",
    "links": [
     "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
    ]
@@ -82328,7 +82328,7 @@
    "value": 0.4,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Waist-to-Height Ratio: The Simple Metric That Predicts Health Better Than BMI",
+   "heading": "Waist-to-Height Ratio Calculator and Healthy Ranges",
    "row": {
     "status": "row-notes",
     "domain": "nice-ng246-ethnicity-thresholds",
@@ -82346,7 +82346,7 @@
    "value": 0.49,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Waist-to-Height Ratio: The Simple Metric That Predicts Health Better Than BMI",
+   "heading": "Waist-to-Height Ratio Calculator and Healthy Ranges",
    "row": {
     "status": "row-notes",
     "domain": "nice-ng246-ethnicity-thresholds",
@@ -82364,7 +82364,7 @@
    "value": 0.5,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Waist-to-Height Ratio: The Simple Metric That Predicts Health Better Than BMI",
+   "heading": "Waist-to-Height Ratio Calculator and Healthy Ranges",
    "row": {
     "status": "row-notes",
     "domain": "nice-ng246-ethnicity-thresholds",
@@ -82382,7 +82382,7 @@
    "value": 300000.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Waist-to-Height Ratio: The Simple Metric That Predicts Health Better Than BMI",
+   "heading": "Waist-to-Height Ratio Calculator and Healthy Ranges",
    "row": {
     "status": "row",
     "domain": "ashwell-2012-whtr-meta-analysis",
@@ -82400,7 +82400,7 @@
    "value": 2012.0,
    "class": "C",
    "why": "year",
-   "heading": "Waist-to-Height Ratio: The Simple Metric That Predicts Health Better Than BMI",
+   "heading": "Waist-to-Height Ratio Calculator and Healthy Ranges",
    "row": {
     "status": "row",
     "domain": "ashwell-2012-whtr-meta-analysis",
@@ -82418,7 +82418,7 @@
    "value": 0.5,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Waist-to-Height Ratio: The Simple Metric That Predicts Health Better Than BMI",
+   "heading": "Waist-to-Height Ratio Calculator and Healthy Ranges",
    "row": {
     "status": "row-notes",
     "domain": "nice-ng246-ethnicity-thresholds",
@@ -82436,7 +82436,7 @@
    "value": 5.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Waist-to-Height Ratio: The Simple Metric That Predicts Health Better Than BMI",
+   "heading": "Waist-to-Height Ratio Calculator and Healthy Ranges",
    "row": {
     "status": "row-notes",
     "domain": "nice-ng246-ethnicity-thresholds",
@@ -82454,7 +82454,7 @@
    "value": 35.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Waist-to-Height Ratio: The Simple Metric That Predicts Health Better Than BMI",
+   "heading": "Waist-to-Height Ratio Calculator and Healthy Ranges",
    "row": {
     "status": "row",
     "domain": "nice-ng246-ethnicity-thresholds",
@@ -82473,7 +82473,7 @@
    "value": 0.5,
    "class": "C",
    "why": "a heading naming NICE's 0.5 boundary for increased central adiposity (CMB-056) (manual.json)",
-   "heading": "Waist-to-Height Ratio: The Simple Metric That Predicts Health Better Than BMI",
+   "heading": "Waist-to-Height Ratio Calculator and Healthy Ranges",
    "row": {
     "status": "row-notes",
     "domain": "nice-ng246-ethnicity-thresholds",
@@ -83611,7 +83611,7 @@
   {
    "page": "/blog/waist-to-height-ratio/",
    "region": "table",
-   "sentence": "Woman A | 64 in (5'4\") | 28 in | 28 ÷ 64 | 0.44 | Healthy",
+   "sentence": "Woman A | 64 in (5'4\") | 29 in | 29 ÷ 64 | 0.45 | Healthy",
    "number": "64",
    "value": 64.0,
    "class": "B",
@@ -83621,7 +83621,7 @@
   {
    "page": "/blog/waist-to-height-ratio/",
    "region": "table",
-   "sentence": "Woman A | 64 in (5'4\") | 28 in | 28 ÷ 64 | 0.44 | Healthy",
+   "sentence": "Woman A | 64 in (5'4\") | 29 in | 29 ÷ 64 | 0.45 | Healthy",
    "number": "5",
    "value": 5.0,
    "class": "B",
@@ -83631,7 +83631,7 @@
   {
    "page": "/blog/waist-to-height-ratio/",
    "region": "table",
-   "sentence": "Woman A | 64 in (5'4\") | 28 in | 28 ÷ 64 | 0.44 | Healthy",
+   "sentence": "Woman A | 64 in (5'4\") | 29 in | 29 ÷ 64 | 0.45 | Healthy",
    "number": "4",
    "value": 4.0,
    "class": "B",
@@ -83649,9 +83649,9 @@
   {
    "page": "/blog/waist-to-height-ratio/",
    "region": "table",
-   "sentence": "Woman A | 64 in (5'4\") | 28 in | 28 ÷ 64 | 0.44 | Healthy",
-   "number": "28",
-   "value": 28.0,
+   "sentence": "Woman A | 64 in (5'4\") | 29 in | 29 ÷ 64 | 0.45 | Healthy",
+   "number": "29",
+   "value": 29.0,
    "class": "B",
    "why": "input (height / waist)",
    "heading": "Example Calculations"
@@ -83659,9 +83659,9 @@
   {
    "page": "/blog/waist-to-height-ratio/",
    "region": "table",
-   "sentence": "Woman A | 64 in (5'4\") | 28 in | 28 ÷ 64 | 0.44 | Healthy",
-   "number": "28",
-   "value": 28.0,
+   "sentence": "Woman A | 64 in (5'4\") | 29 in | 29 ÷ 64 | 0.45 | Healthy",
+   "number": "29",
+   "value": 29.0,
    "class": "B",
    "why": "input (height / waist)",
    "heading": "Example Calculations"
@@ -83669,7 +83669,7 @@
   {
    "page": "/blog/waist-to-height-ratio/",
    "region": "table",
-   "sentence": "Woman A | 64 in (5'4\") | 28 in | 28 ÷ 64 | 0.44 | Healthy",
+   "sentence": "Woman A | 64 in (5'4\") | 29 in | 29 ÷ 64 | 0.45 | Healthy",
    "number": "64",
    "value": 64.0,
    "class": "B",
@@ -83679,18 +83679,18 @@
   {
    "page": "/blog/waist-to-height-ratio/",
    "region": "table",
-   "sentence": "Woman A | 64 in (5'4\") | 28 in | 28 ÷ 64 | 0.44 | Healthy",
-   "number": "0.44",
-   "value": 0.44,
+   "sentence": "Woman A | 64 in (5'4\") | 29 in | 29 ÷ 64 | 0.45 | Healthy",
+   "number": "0.45",
+   "value": 0.45,
    "class": "B",
    "why": "arithmetic",
    "heading": "Example Calculations",
    "check": {
     "status": "ok",
     "kind": "value",
-    "page": "0.44",
-    "computed": "0.44",
-    "raw": 0.4375,
+    "page": "0.45",
+    "computed": "0.45",
+    "raw": 0.453125,
     "label": "waist / height"
    }
   },
