@@ -4,12 +4,12 @@
  "viewport": "390x844",
  "pages_audited": 24,
  "pages_skipped": [],
- "numbers": 5281,
+ "numbers": 5350,
  "totals": {
   "A": 47,
-  "B": 1655,
-  "C": 2694,
-  "D": 695,
+  "B": 1666,
+  "C": 2747,
+  "D": 700,
   "X": 190,
   "U": 0
  },
@@ -19,12 +19,12 @@
  "c_not_in_row_in_page_csv": 0,
  "c_not_in_row_also_in_other_row": 0,
  "c_status": {
-  "row": 1437,
-  "row-notes": 327,
+  "row": 1472,
+  "row-notes": 345,
   "not-in-row": 28,
   "row-dataset": 902
  },
- "checks_run": 1136,
+ "checks_run": 1142,
  "check_errors": [],
  "unclassified": [],
  "manual_entries": 254,
@@ -2880,7 +2880,7 @@
   },
   {
    "page": "/blog/bmi-chart-explained/",
-   "jsonld_mirrors": 15,
+   "jsonld_mirrors": 27,
    "mismatches": [],
    "c_no_row": [],
    "c_not_in_row": [],
@@ -2892,9 +2892,6 @@
     "\"mild thinness\" = calculator.js \"Underweight\"",
     "\"normal\" = calculator.js \"Healthy weight\"",
     "\"Normal Weight\" = calculator.js \"Healthy weight\"",
-    "\"Class I\" = calculator.js \"Class 1 obesity\"",
-    "\"Class II\" = calculator.js \"Class 2 obesity\"",
-    "\"Class III\" = calculator.js \"Class 3 obesity\"",
     "\"Obesity class 1\" = calculator.js \"Class 1 obesity\"",
     "\"Obesity class 2\" = calculator.js \"Class 2 obesity\"",
     "\"Obesity class 3\" = calculator.js \"Class 3 obesity\"",
@@ -2909,6 +2906,11 @@
      "number": "two",
      "why": "number word (count in prose)",
      "sentence": "If your exact weight is not listed, use the nearest value or interpolate between two columns."
+    },
+    {
+     "number": "two",
+     "why": "number word (count in prose)",
+     "sentence": "The colours help in two ways:"
     },
     {
      "number": "three",
@@ -2939,6 +2941,11 @@
      "number": "508",
      "why": "name or label with a number",
      "sentence": "Obesity rates are similar: NCHS found no significant difference between men and women (Data Brief 508)."
+    },
+    {
+     "number": "4",
+     "why": "name or label with a number",
+     "sentence": "Body fat at the same BMI: rises with age; at a BMI of 25, Gallagher and colleagues predicted 20% body fat for African American and white men aged 20 to 39 and 25% at 60 to 79 (Gallagher et al., 2000, Table 4)."
     },
     {
      "number": "two",
@@ -2981,14 +2988,29 @@
      "sentence": "For example, if you are 5'7\" and the chart shows 5'6\" and 5'8\", your BMI will be between those two rows."
     },
     {
-     "number": "2",
-     "why": "name or label with a number",
-     "sentence": "Health implications: Moderately elevated risk for type 2 diabetes, heart disease, high blood pressure"
+     "number": "three",
+     "why": "number word (count in prose)",
+     "sentence": "A BMI of 30 or more is obesity, in three classes: 30 to 34.9, 35 to 39.9 and 40 or more (WHO, 2000)."
+    },
+    {
+     "number": "13",
+     "why": "count in prose",
+     "sentence": "People with obesity are at greater risk for diabetes, high blood pressure, cardiovascular disease, stroke and at least 13 types of cancer (NCI)."
     },
     {
      "number": "2",
      "why": "name or label with a number",
-     "sentence": "Health implications: Significantly elevated risk for type 2 diabetes, cardiovascular disease, certain cancers, sleep apnea, joint problems"
+     "sentence": "In the Look AHEAD trial of adults with overweight or obesity and type 2 diabetes, those who lost 5 to 10% of their weight in a year had greater odds of better blood sugar, blood pressure, HDL cholesterol and triglycerides (Wing et al., 2011)."
+    },
+    {
+     "number": "half",
+     "why": "number word (count in prose)",
+     "sentence": "People with a lot of fat around the waist: in CDC’s 2021–2023 survey, 50.2% of women and 42.9% of men with a healthy BMI had a waist of at least half their height (our calculation from CDC NHANES 2021–2023); the waist-to-height ratio calculator checks yours"
+    },
+    {
+     "number": "2",
+     "why": "name or label with a number",
+     "sentence": "Asian populations: a WHO expert consultation found the share of Asian people at high risk of type 2 diabetes and cardiovascular disease substantial below a BMI of 25, and named lower action points (Lancet, 2004)"
     },
     {
      "number": "1",
@@ -3051,28 +3073,35 @@
      "sentence": "Charts typically round BMI to whole numbers, while calculators show one or two decimal places."
     }
    ],
-   "checks_ok": 271,
+   "checks_ok": 277,
    "page_errors": [],
    "score": 0,
    "totals": {
-    "B": 375,
-    "C": 26,
-    "D": 29,
+    "B": 386,
+    "C": 79,
+    "D": 34,
     "X": 6
    },
    "c_rows": {
-    "row-notes": 3,
-    "row": 23
+    "row-notes": 21,
+    "row": 58
    },
    "c_row_domains": {
-    "cdc-adult-bmi-categories": 2,
+    "cdc-adult-bmi-categories": 3,
     "who-trs-854": 1,
-    "who-trs-894-obesity": 1,
-    "nhanes-adult-weight-trends": 7,
+    "who-trs-894-obesity": 4,
+    "nhanes-2011-2018-dxa": 8,
+    "nhanes-adult-weight-trends": 9,
+    "nhanes-adult-obesity-2021-2023": 2,
     "winter-2014-bmi-mortality-65": 7,
-    "gbmc-2016-bmi-mortality": 4,
+    "gallagher-2000-bf-ranges": 10,
+    "nice-ng246-ethnicity-thresholds": 5,
+    "medlineplus-unintentional-weight-loss": 3,
+    "gbmc-2016-bmi-mortality": 8,
+    "nhlbi-1998-obesity-guidelines": 8,
     "wing-2011-look-ahead": 3,
-    "who-2004-asian-bmi": 1
+    "nhanes-2021-2023-exam-files": 6,
+    "who-2004-asian-bmi": 2
    },
    "excluded": {
     "list numbering (numbered badge)": 6
@@ -61245,6 +61274,34 @@
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "main",
+   "sentence": "The colours help in two ways:",
+   "number": "two",
+   "value": 2,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Understanding Color-Coded BMI Charts"
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "CDC applies the categories to adults 20 and older regardless of age, sex or race (CDC).",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Understanding Color-Coded BMI Charts",
+   "row": {
+    "status": "row-notes",
+    "domain": "cdc-adult-bmi-categories",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
    "sentence": "The categories on BMI charts follow the WHO classification, set out in a 1995 WHO report; a 2000 WHO report named the three classes of obesity.",
    "number": "1995",
    "value": 1995.0,
@@ -61630,6 +61687,185 @@
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "main",
+   "sentence": "WHO’s 2000 report concluded that a coherent system of BMI classes should be adopted internationally (WHO, 2000), and CDC applies its categories regardless of sex (CDC).",
+   "number": "2000",
+   "value": 2000.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Why the Same Categories Apply to Both Sexes",
+   "row": {
+    "status": "row",
+    "domain": "who-trs-894-obesity",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/",
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "WHO’s 2000 report concluded that a coherent system of BMI classes should be adopted internationally (WHO, 2000), and CDC applies its categories regardless of sex (CDC).",
+   "number": "2000",
+   "value": 2000.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Why the Same Categories Apply to Both Sexes",
+   "row": {
+    "status": "row",
+    "domain": "who-trs-894-obesity",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/",
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Body fat differs at the same BMI: in CDC’s 2011–2018 body scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our body fat percentage chart uses the same scans).",
+   "number": "2011",
+   "value": 2011.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Why the Same Categories Apply to Both Sexes",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "pages_served"
+   },
+   "links": [
+    "http://localhost:8765/body-fat-percentage-chart/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Body fat differs at the same BMI: in CDC’s 2011–2018 body scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our body fat percentage chart uses the same scans).",
+   "number": "2018",
+   "value": 2018.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Why the Same Categories Apply to Both Sexes",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "pages_served"
+   },
+   "links": [
+    "http://localhost:8765/body-fat-percentage-chart/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Body fat differs at the same BMI: in CDC’s 2011–2018 body scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our body fat percentage chart uses the same scans).",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Why the Same Categories Apply to Both Sexes",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "pages_served"
+   },
+   "links": [
+    "http://localhost:8765/body-fat-percentage-chart/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Body fat differs at the same BMI: in CDC’s 2011–2018 body scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our body fat percentage chart uses the same scans).",
+   "number": "59",
+   "value": 59.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Why the Same Categories Apply to Both Sexes",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-obesity-2021-2023",
+    "how": "pages_served"
+   },
+   "links": [
+    "http://localhost:8765/body-fat-percentage-chart/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Body fat differs at the same BMI: in CDC’s 2011–2018 body scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our body fat percentage chart uses the same scans).",
+   "number": "18.5",
+   "value": 18.5,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "Why the Same Categories Apply to Both Sexes",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "18.5 to 24.9 (no category named)",
+    "computed": "Healthy weight in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "http://localhost:8765/body-fat-percentage-chart/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Body fat differs at the same BMI: in CDC’s 2011–2018 body scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our body fat percentage chart uses the same scans).",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "Why the Same Categories Apply to Both Sexes",
+   "links": [
+    "http://localhost:8765/body-fat-percentage-chart/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Body fat differs at the same BMI: in CDC’s 2011–2018 body scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our body fat percentage chart uses the same scans).",
+   "number": "33.4",
+   "value": 33.4,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Why the Same Categories Apply to Both Sexes",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "pages_served"
+   },
+   "links": [
+    "http://localhost:8765/body-fat-percentage-chart/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Body fat differs at the same BMI: in CDC’s 2011–2018 body scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our body fat percentage chart uses the same scans).",
+   "number": "22.1",
+   "value": 22.1,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Why the Same Categories Apply to Both Sexes",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "pages_served"
+   },
+   "links": [
+    "http://localhost:8765/body-fat-percentage-chart/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
    "sentence": "35.5%",
    "number": "35.5",
    "value": 35.5,
@@ -61873,6 +62109,199 @@
    },
    "links": [
     "https://pubmed.ncbi.nlm.nih.gov/24452240/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Body fat at the same BMI: rises with age; at a BMI of 25, Gallagher and colleagues predicted 20% body fat for African American and white men aged 20 to 39 and 25% at 60 to 79 (Gallagher et al., 2000, Table 4).",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Why age matters for BMI interpretation",
+   "row": {
+    "status": "row-notes",
+    "domain": "gallagher-2000-bf-ranges",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Body fat at the same BMI: rises with age; at a BMI of 25, Gallagher and colleagues predicted 20% body fat for African American and white men aged 20 to 39 and 25% at 60 to 79 (Gallagher et al., 2000, Table 4).",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Why age matters for BMI interpretation",
+   "row": {
+    "status": "row-notes",
+    "domain": "gallagher-2000-bf-ranges",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Body fat at the same BMI: rises with age; at a BMI of 25, Gallagher and colleagues predicted 20% body fat for African American and white men aged 20 to 39 and 25% at 60 to 79 (Gallagher et al., 2000, Table 4).",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Why age matters for BMI interpretation",
+   "row": {
+    "status": "row-notes",
+    "domain": "gallagher-2000-bf-ranges",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Body fat at the same BMI: rises with age; at a BMI of 25, Gallagher and colleagues predicted 20% body fat for African American and white men aged 20 to 39 and 25% at 60 to 79 (Gallagher et al., 2000, Table 4).",
+   "number": "39",
+   "value": 39.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Why age matters for BMI interpretation",
+   "row": {
+    "status": "row-notes",
+    "domain": "gallagher-2000-bf-ranges",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Body fat at the same BMI: rises with age; at a BMI of 25, Gallagher and colleagues predicted 20% body fat for African American and white men aged 20 to 39 and 25% at 60 to 79 (Gallagher et al., 2000, Table 4).",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Why age matters for BMI interpretation",
+   "row": {
+    "status": "row-notes",
+    "domain": "gallagher-2000-bf-ranges",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Body fat at the same BMI: rises with age; at a BMI of 25, Gallagher and colleagues predicted 20% body fat for African American and white men aged 20 to 39 and 25% at 60 to 79 (Gallagher et al., 2000, Table 4).",
+   "number": "60",
+   "value": 60.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Why age matters for BMI interpretation",
+   "row": {
+    "status": "row-notes",
+    "domain": "gallagher-2000-bf-ranges",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Body fat at the same BMI: rises with age; at a BMI of 25, Gallagher and colleagues predicted 20% body fat for African American and white men aged 20 to 39 and 25% at 60 to 79 (Gallagher et al., 2000, Table 4).",
+   "number": "79",
+   "value": 79.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Why age matters for BMI interpretation",
+   "row": {
+    "status": "row-notes",
+    "domain": "gallagher-2000-bf-ranges",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Body fat at the same BMI: rises with age; at a BMI of 25, Gallagher and colleagues predicted 20% body fat for African American and white men aged 20 to 39 and 25% at 60 to 79 (Gallagher et al., 2000, Table 4).",
+   "number": "2000",
+   "value": 2000.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Why age matters for BMI interpretation",
+   "row": {
+    "status": "row",
+    "domain": "gallagher-2000-bf-ranges",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Body fat at the same BMI: rises with age; at a BMI of 25, Gallagher and colleagues predicted 20% body fat for African American and white men aged 20 to 39 and 25% at 60 to 79 (Gallagher et al., 2000, Table 4).",
+   "number": "4",
+   "value": 4.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "Why age matters for BMI interpretation",
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Caution after 65: NICE advises interpreting BMI with caution in people aged 65 and over, taking into account other conditions and the possible protective effect of a slightly higher BMI when older (NICE NG246).",
+   "number": "65",
+   "value": 65.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Why age matters for BMI interpretation",
+   "row": {
+    "status": "row-notes",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   },
+   "links": [
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Caution after 65: NICE advises interpreting BMI with caution in people aged 65 and over, taking into account other conditions and the possible protective effect of a slightly higher BMI when older (NICE NG246).",
+   "number": "65",
+   "value": 65.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Why age matters for BMI interpretation",
+   "row": {
+    "status": "row-notes",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   },
+   "links": [
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
    ]
   },
   {
@@ -62175,7 +62604,7 @@
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "main",
-   "sentence": "If your chart intersection falls in the blue zone, your BMI is below 18.5, classified as underweight.",
+   "sentence": "A BMI below 18.5 is underweight (CDC).",
    "number": "18.5",
    "value": 18.5,
    "class": "B",
@@ -62184,10 +62613,101 @@
    "check": {
     "status": "ok",
     "kind": "category",
-    "page": "18.5 (no category named)",
+    "page": "18.5 (underweight)",
     "computed": "Severe thinness / Moderate thinness / Underweight in calculator.js",
     "label": "category cut-off (getBMICategory)"
-   }
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "If you are losing weight without trying, MedlinePlus advises contacting a provider after a loss of about 10 pounds (4.5 kg), or 5% of your normal weight, over 6 to 12 months or less without a known reason (MedlinePlus).",
+   "number": "10",
+   "value": 10.0,
+   "class": "B",
+   "why": "unit conversion (input)",
+   "heading": "Underweight Zone (Blue - BMI Under 18.5)",
+   "links": [
+    "https://medlineplus.gov/ency/article/003107.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "If you are losing weight without trying, MedlinePlus advises contacting a provider after a loss of about 10 pounds (4.5 kg), or 5% of your normal weight, over 6 to 12 months or less without a known reason (MedlinePlus).",
+   "number": "4.5",
+   "value": 4.5,
+   "class": "B",
+   "why": "unit conversion",
+   "heading": "Underweight Zone (Blue - BMI Under 18.5)",
+   "check": {
+    "status": "ok",
+    "kind": "value",
+    "page": "4.5",
+    "computed": "4.5",
+    "raw": 4.535929094356398,
+    "label": "kg from lb (lbsToKg)"
+   },
+   "links": [
+    "https://medlineplus.gov/ency/article/003107.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "If you are losing weight without trying, MedlinePlus advises contacting a provider after a loss of about 10 pounds (4.5 kg), or 5% of your normal weight, over 6 to 12 months or less without a known reason (MedlinePlus).",
+   "number": "5",
+   "value": 5.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Underweight Zone (Blue - BMI Under 18.5)",
+   "row": {
+    "status": "row",
+    "domain": "medlineplus-unintentional-weight-loss",
+    "how": "link"
+   },
+   "links": [
+    "https://medlineplus.gov/ency/article/003107.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "If you are losing weight without trying, MedlinePlus advises contacting a provider after a loss of about 10 pounds (4.5 kg), or 5% of your normal weight, over 6 to 12 months or less without a known reason (MedlinePlus).",
+   "number": "6",
+   "value": 6.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Underweight Zone (Blue - BMI Under 18.5)",
+   "row": {
+    "status": "row",
+    "domain": "medlineplus-unintentional-weight-loss",
+    "how": "link"
+   },
+   "links": [
+    "https://medlineplus.gov/ency/article/003107.htm"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "If you are losing weight without trying, MedlinePlus advises contacting a provider after a loss of about 10 pounds (4.5 kg), or 5% of your normal weight, over 6 to 12 months or less without a known reason (MedlinePlus).",
+   "number": "12",
+   "value": 12.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Underweight Zone (Blue - BMI Under 18.5)",
+   "row": {
+    "status": "row",
+    "domain": "medlineplus-unintentional-weight-loss",
+    "how": "link"
+   },
+   "links": [
+    "https://medlineplus.gov/ency/article/003107.htm"
+   ]
   },
   {
    "page": "/blog/bmi-chart-explained/",
@@ -62220,7 +62740,42 @@
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "main",
-   "sentence": "Lowest mortality: in a pooled analysis of 239 studies, all-cause mortality was lowest at a BMI of 20 to 25 (Global BMI Mortality Collaboration, 2016)",
+   "sentence": "CDC calls a BMI of 18.5 to 24.9 healthy weight (CDC); our healthy BMI range guide goes further.",
+   "number": "18.5",
+   "value": 18.5,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "Normal Weight Zone (Green - BMI 18.5-24.9)",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "18.5 to 24.9 (healthy weight)",
+    "computed": "Healthy weight in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "http://localhost:8765/blog/healthy-bmi-range/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "CDC calls a BMI of 18.5 to 24.9 healthy weight (CDC); our healthy BMI range guide goes further.",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "Normal Weight Zone (Green - BMI 18.5-24.9)",
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "http://localhost:8765/blog/healthy-bmi-range/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "In a pooled analysis of 239 studies, all-cause mortality was lowest at a BMI of 20 to 25 (Global BMI Mortality Collaboration, 2016).",
    "number": "239",
    "value": 239.0,
    "class": "C",
@@ -62238,7 +62793,7 @@
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "main",
-   "sentence": "Lowest mortality: in a pooled analysis of 239 studies, all-cause mortality was lowest at a BMI of 20 to 25 (Global BMI Mortality Collaboration, 2016)",
+   "sentence": "In a pooled analysis of 239 studies, all-cause mortality was lowest at a BMI of 20 to 25 (Global BMI Mortality Collaboration, 2016).",
    "number": "20",
    "value": 20.0,
    "class": "C",
@@ -62256,7 +62811,7 @@
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "main",
-   "sentence": "Lowest mortality: in a pooled analysis of 239 studies, all-cause mortality was lowest at a BMI of 20 to 25 (Global BMI Mortality Collaboration, 2016)",
+   "sentence": "In a pooled analysis of 239 studies, all-cause mortality was lowest at a BMI of 20 to 25 (Global BMI Mortality Collaboration, 2016).",
    "number": "25",
    "value": 25.0,
    "class": "C",
@@ -62274,7 +62829,7 @@
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "main",
-   "sentence": "Lowest mortality: in a pooled analysis of 239 studies, all-cause mortality was lowest at a BMI of 20 to 25 (Global BMI Mortality Collaboration, 2016)",
+   "sentence": "In a pooled analysis of 239 studies, all-cause mortality was lowest at a BMI of 20 to 25 (Global BMI Mortality Collaboration, 2016).",
    "number": "2016",
    "value": 2016.0,
    "class": "C",
@@ -62319,12 +62874,161 @@
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "main",
-   "sentence": "Health implications: Moderately elevated risk for type 2 diabetes, heart disease, high blood pressure",
-   "number": "2",
-   "value": 2.0,
-   "class": "D",
-   "why": "name or label with a number",
-   "heading": "Overweight Zone (Yellow/Orange - BMI 25-29.9)"
+   "sentence": "A BMI of 25 to 29.9 is overweight (CDC).",
+   "number": "25",
+   "value": 25.0,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "Overweight Zone (Yellow/Orange - BMI 25-29.9)",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "25 to 29.9 (overweight)",
+    "computed": "Overweight in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "A BMI of 25 to 29.9 is overweight (CDC).",
+   "number": "29.9",
+   "value": 29.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "Overweight Zone (Yellow/Orange - BMI 25-29.9)",
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "NIH reads the waist alongside BMI from 25 to 34.9: over 40 in (102 cm) for men or 35 in (88 cm) for women marks higher risk (NHLBI, 1998).",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Overweight Zone (Yellow/Orange - BMI 25-29.9)",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "NIH reads the waist alongside BMI from 25 to 34.9: over 40 in (102 cm) for men or 35 in (88 cm) for women marks higher risk (NHLBI, 1998).",
+   "number": "34.9",
+   "value": 34.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Overweight Zone (Yellow/Orange - BMI 25-29.9)",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "NIH reads the waist alongside BMI from 25 to 34.9: over 40 in (102 cm) for men or 35 in (88 cm) for women marks higher risk (NHLBI, 1998).",
+   "number": "40",
+   "value": 40.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Overweight Zone (Yellow/Orange - BMI 25-29.9)",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "NIH reads the waist alongside BMI from 25 to 34.9: over 40 in (102 cm) for men or 35 in (88 cm) for women marks higher risk (NHLBI, 1998).",
+   "number": "102",
+   "value": 102.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Overweight Zone (Yellow/Orange - BMI 25-29.9)",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "NIH reads the waist alongside BMI from 25 to 34.9: over 40 in (102 cm) for men or 35 in (88 cm) for women marks higher risk (NHLBI, 1998).",
+   "number": "35",
+   "value": 35.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Overweight Zone (Yellow/Orange - BMI 25-29.9)",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "NIH reads the waist alongside BMI from 25 to 34.9: over 40 in (102 cm) for men or 35 in (88 cm) for women marks higher risk (NHLBI, 1998).",
+   "number": "88",
+   "value": 88.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Overweight Zone (Yellow/Orange - BMI 25-29.9)",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "NIH reads the waist alongside BMI from 25 to 34.9: over 40 in (102 cm) for men or 35 in (88 cm) for women marks higher risk (NHLBI, 1998).",
+   "number": "1998",
+   "value": 1998.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Overweight Zone (Yellow/Orange - BMI 25-29.9)",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
   },
   {
    "page": "/blog/bmi-chart-explained/",
@@ -62346,17 +63050,7 @@
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "main",
-   "sentence": "Health implications: Significantly elevated risk for type 2 diabetes, cardiovascular disease, certain cancers, sleep apnea, joint problems",
-   "number": "2",
-   "value": 2.0,
-   "class": "D",
-   "why": "name or label with a number",
-   "heading": "Obese Zone (Red - BMI 30+)"
-  },
-  {
-   "page": "/blog/bmi-chart-explained/",
-   "region": "main",
-   "sentence": "Subclasses: Class I (30-34.9), Class II (35-39.9), Class III (40+) with progressively higher risk",
+   "sentence": "A BMI of 30 or more is obesity, in three classes: 30 to 34.9, 35 to 39.9 and 40 or more (WHO, 2000).",
    "number": "30",
    "value": 30.0,
    "class": "B",
@@ -62365,26 +63059,64 @@
    "check": {
     "status": "ok",
     "kind": "category",
-    "page": "30-34.9 (Class I)",
-    "computed": "Class 1 obesity in calculator.js",
-    "label": "category cut-off (getBMICategory)",
-    "name_differs": "\"Class I\" = calculator.js \"Class 1 obesity\""
-   }
+    "page": "30 (obesity)",
+    "computed": "Class 1 obesity / Class 2 obesity / Class 3 obesity in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
   },
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "main",
-   "sentence": "Subclasses: Class I (30-34.9), Class II (35-39.9), Class III (40+) with progressively higher risk",
+   "sentence": "A BMI of 30 or more is obesity, in three classes: 30 to 34.9, 35 to 39.9 and 40 or more (WHO, 2000).",
+   "number": "three",
+   "value": 3,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Obese Zone (Red - BMI 30+)",
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "A BMI of 30 or more is obesity, in three classes: 30 to 34.9, 35 to 39.9 and 40 or more (WHO, 2000).",
+   "number": "30",
+   "value": 30.0,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "Obese Zone (Red - BMI 30+)",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "30 to 34.9 (no category named)",
+    "computed": "Class 1 obesity in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "A BMI of 30 or more is obesity, in three classes: 30 to 34.9, 35 to 39.9 and 40 or more (WHO, 2000).",
    "number": "34.9",
    "value": 34.9,
    "class": "B",
    "why": "category cut-off (other bound)",
-   "heading": "Obese Zone (Red - BMI 30+)"
+   "heading": "Obese Zone (Red - BMI 30+)",
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
   },
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "main",
-   "sentence": "Subclasses: Class I (30-34.9), Class II (35-39.9), Class III (40+) with progressively higher risk",
+   "sentence": "A BMI of 30 or more is obesity, in three classes: 30 to 34.9, 35 to 39.9 and 40 or more (WHO, 2000).",
    "number": "35",
    "value": 35.0,
    "class": "B",
@@ -62393,26 +63125,31 @@
    "check": {
     "status": "ok",
     "kind": "category",
-    "page": "35-39.9 (Class II)",
+    "page": "35 to 39.9 (no category named)",
     "computed": "Class 2 obesity in calculator.js",
-    "label": "category cut-off (getBMICategory)",
-    "name_differs": "\"Class II\" = calculator.js \"Class 2 obesity\""
-   }
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
   },
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "main",
-   "sentence": "Subclasses: Class I (30-34.9), Class II (35-39.9), Class III (40+) with progressively higher risk",
+   "sentence": "A BMI of 30 or more is obesity, in three classes: 30 to 34.9, 35 to 39.9 and 40 or more (WHO, 2000).",
    "number": "39.9",
    "value": 39.9,
    "class": "B",
    "why": "category cut-off (other bound)",
-   "heading": "Obese Zone (Red - BMI 30+)"
+   "heading": "Obese Zone (Red - BMI 30+)",
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
   },
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "main",
-   "sentence": "Subclasses: Class I (30-34.9), Class II (35-39.9), Class III (40+) with progressively higher risk",
+   "sentence": "A BMI of 30 or more is obesity, in three classes: 30 to 34.9, 35 to 39.9 and 40 or more (WHO, 2000).",
    "number": "40",
    "value": 40.0,
    "class": "B",
@@ -62421,20 +63158,66 @@
    "check": {
     "status": "ok",
     "kind": "category",
-    "page": "40 (Class III)",
+    "page": "40 (no category named)",
     "computed": "Class 3 obesity in calculator.js",
-    "label": "category cut-off (getBMICategory)",
-    "name_differs": "\"Class III\" = calculator.js \"Class 3 obesity\""
-   }
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
   },
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "main",
-   "sentence": "Action: consult a healthcare provider; in a large trial, losing 5–10% of body weight was linked to significant improvements in cardiovascular risk factors (Wing et al., 2011)",
+   "sentence": "A BMI of 30 or more is obesity, in three classes: 30 to 34.9, 35 to 39.9 and 40 or more (WHO, 2000).",
+   "number": "2000",
+   "value": 2000.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Obese Zone (Red - BMI 30+)",
+   "row": {
+    "status": "row",
+    "domain": "who-trs-894-obesity",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "People with obesity are at greater risk for diabetes, high blood pressure, cardiovascular disease, stroke and at least 13 types of cancer (NCI).",
+   "number": "13",
+   "value": 13.0,
+   "class": "D",
+   "why": "count in prose",
+   "heading": "Obese Zone (Red - BMI 30+)",
+   "links": [
+    "https://www.cancer.gov/about-cancer/causes-prevention/risk/obesity/obesity-fact-sheet"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "In the Look AHEAD trial of adults with overweight or obesity and type 2 diabetes, those who lost 5 to 10% of their weight in a year had greater odds of better blood sugar, blood pressure, HDL cholesterol and triglycerides (Wing et al., 2011).",
+   "number": "2",
+   "value": 2.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "Obese Zone (Red - BMI 30+)",
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3120182/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "In the Look AHEAD trial of adults with overweight or obesity and type 2 diabetes, those who lost 5 to 10% of their weight in a year had greater odds of better blood sugar, blood pressure, HDL cholesterol and triglycerides (Wing et al., 2011).",
    "number": "5",
    "value": 5.0,
    "class": "C",
-   "why": "statistic (percent)",
+   "why": "outside fact (statistic, threshold or study detail)",
    "heading": "Obese Zone (Red - BMI 30+)",
    "row": {
     "status": "row",
@@ -62448,7 +63231,7 @@
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "main",
-   "sentence": "Action: consult a healthcare provider; in a large trial, losing 5–10% of body weight was linked to significant improvements in cardiovascular risk factors (Wing et al., 2011)",
+   "sentence": "In the Look AHEAD trial of adults with overweight or obesity and type 2 diabetes, those who lost 5 to 10% of their weight in a year had greater odds of better blood sugar, blood pressure, HDL cholesterol and triglycerides (Wing et al., 2011).",
    "number": "10",
    "value": 10.0,
    "class": "C",
@@ -62466,7 +63249,7 @@
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "main",
-   "sentence": "Action: consult a healthcare provider; in a large trial, losing 5–10% of body weight was linked to significant improvements in cardiovascular risk factors (Wing et al., 2011)",
+   "sentence": "In the Look AHEAD trial of adults with overweight or obesity and type 2 diabetes, those who lost 5 to 10% of their weight in a year had greater odds of better blood sugar, blood pressure, HDL cholesterol and triglycerides (Wing et al., 2011).",
    "number": "2011",
    "value": 2011.0,
    "class": "C",
@@ -62484,7 +63267,248 @@
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "main",
-   "sentence": "Asian populations: Health risks begin at lower BMI values; a WHO expert consultation identified lower BMI action points for Asian populations (Lancet, 2004)",
+   "sentence": "Sources: CDC, About BMI; CDC, adult categories; NIH reads the waist alongside BMI (NHLBI, 1998); Gallagher et al., 2000; lower thresholds for some family backgrounds (NICE NG246).",
+   "number": "1998",
+   "value": 1998.0,
+   "class": "C",
+   "why": "year",
+   "heading": "What BMI Charts Cannot Do",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/about/index.html",
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/",
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/",
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Sources: CDC, About BMI; CDC, adult categories; NIH reads the waist alongside BMI (NHLBI, 1998); Gallagher et al., 2000; lower thresholds for some family backgrounds (NICE NG246).",
+   "number": "2000",
+   "value": 2000.0,
+   "class": "C",
+   "why": "year",
+   "heading": "What BMI Charts Cannot Do",
+   "row": {
+    "status": "row",
+    "domain": "gallagher-2000-bf-ranges",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/about/index.html",
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/",
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/",
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Older adults: body fat at the same BMI rises with age (Gallagher et al., 2000), and NICE advises caution in reading BMI at 65 and over (NICE NG246)",
+   "number": "2000",
+   "value": 2000.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Who May Be Misclassified by BMI Charts",
+   "row": {
+    "status": "row",
+    "domain": "gallagher-2000-bf-ranges",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/",
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Older adults: body fat at the same BMI rises with age (Gallagher et al., 2000), and NICE advises caution in reading BMI at 65 and over (NICE NG246)",
+   "number": "65",
+   "value": 65.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Who May Be Misclassified by BMI Charts",
+   "row": {
+    "status": "row-notes",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/",
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "People with a lot of fat around the waist: in CDC’s 2021–2023 survey, 50.2% of women and 42.9% of men with a healthy BMI had a waist of at least half their height (our calculation from CDC NHANES 2021–2023); the waist-to-height ratio calculator checks yours",
+   "number": "2021",
+   "value": 2021.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Who May Be Misclassified by BMI Charts",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2021-2023-exam-files",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BMX_L.htm",
+    "http://localhost:8765/blog/waist-to-height-ratio/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "People with a lot of fat around the waist: in CDC’s 2021–2023 survey, 50.2% of women and 42.9% of men with a healthy BMI had a waist of at least half their height (our calculation from CDC NHANES 2021–2023); the waist-to-height ratio calculator checks yours",
+   "number": "2023",
+   "value": 2023.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Who May Be Misclassified by BMI Charts",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2021-2023-exam-files",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BMX_L.htm",
+    "http://localhost:8765/blog/waist-to-height-ratio/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "People with a lot of fat around the waist: in CDC’s 2021–2023 survey, 50.2% of women and 42.9% of men with a healthy BMI had a waist of at least half their height (our calculation from CDC NHANES 2021–2023); the waist-to-height ratio calculator checks yours",
+   "number": "50.2",
+   "value": 50.2,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Who May Be Misclassified by BMI Charts",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2021-2023-exam-files",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BMX_L.htm",
+    "http://localhost:8765/blog/waist-to-height-ratio/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "People with a lot of fat around the waist: in CDC’s 2021–2023 survey, 50.2% of women and 42.9% of men with a healthy BMI had a waist of at least half their height (our calculation from CDC NHANES 2021–2023); the waist-to-height ratio calculator checks yours",
+   "number": "42.9",
+   "value": 42.9,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Who May Be Misclassified by BMI Charts",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2021-2023-exam-files",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BMX_L.htm",
+    "http://localhost:8765/blog/waist-to-height-ratio/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "People with a lot of fat around the waist: in CDC’s 2021–2023 survey, 50.2% of women and 42.9% of men with a healthy BMI had a waist of at least half their height (our calculation from CDC NHANES 2021–2023); the waist-to-height ratio calculator checks yours",
+   "number": "half",
+   "value": 0.5,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Who May Be Misclassified by BMI Charts",
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BMX_L.htm",
+    "http://localhost:8765/blog/waist-to-height-ratio/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "People with a lot of fat around the waist: in CDC’s 2021–2023 survey, 50.2% of women and 42.9% of men with a healthy BMI had a waist of at least half their height (our calculation from CDC NHANES 2021–2023); the waist-to-height ratio calculator checks yours",
+   "number": "2021",
+   "value": 2021.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Who May Be Misclassified by BMI Charts",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2021-2023-exam-files",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BMX_L.htm",
+    "http://localhost:8765/blog/waist-to-height-ratio/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "People with a lot of fat around the waist: in CDC’s 2021–2023 survey, 50.2% of women and 42.9% of men with a healthy BMI had a waist of at least half their height (our calculation from CDC NHANES 2021–2023); the waist-to-height ratio calculator checks yours",
+   "number": "2023",
+   "value": 2023.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Who May Be Misclassified by BMI Charts",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2021-2023-exam-files",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BMX_L.htm",
+    "http://localhost:8765/blog/waist-to-height-ratio/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Asian populations: a WHO expert consultation found the share of Asian people at high risk of type 2 diabetes and cardiovascular disease substantial below a BMI of 25, and named lower action points (Lancet, 2004)",
+   "number": "2",
+   "value": 2.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "Who May Be Misclassified by BMI Charts",
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/14726171/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Asian populations: a WHO expert consultation found the share of Asian people at high risk of type 2 diabetes and cardiovascular disease substantial below a BMI of 25, and named lower action points (Lancet, 2004)",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Who May Be Misclassified by BMI Charts",
+   "row": {
+    "status": "row",
+    "domain": "who-2004-asian-bmi",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/14726171/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Asian populations: a WHO expert consultation found the share of Asian people at high risk of type 2 diabetes and cardiovascular disease substantial below a BMI of 25, and named lower action points (Lancet, 2004)",
    "number": "2004",
    "value": 2004.0,
    "class": "C",
@@ -62497,6 +63521,42 @@
    },
    "links": [
     "https://pubmed.ncbi.nlm.nih.gov/14726171/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Black African or African-Caribbean family background: NICE uses lower thresholds, overweight from 23 and obesity from 27.5, as for South Asian, Chinese, other Asian and Middle Eastern backgrounds (NICE NG246)",
+   "number": "23",
+   "value": 23.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Who May Be Misclassified by BMI Charts",
+   "row": {
+    "status": "row",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   },
+   "links": [
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "main",
+   "sentence": "Black African or African-Caribbean family background: NICE uses lower thresholds, overweight from 23 and obesity from 27.5, as for South Asian, Chinese, other Asian and Middle Eastern backgrounds (NICE NG246)",
+   "number": "27.5",
+   "value": 27.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Who May Be Misclassified by BMI Charts",
+   "row": {
+    "status": "row",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   },
+   "links": [
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
    ]
   },
   {
@@ -67286,7 +68346,7 @@
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "faq-a",
-   "sentence": "Standard BMI charts use the same categories for both sexes (underweight below 18.5, normal 18.5-24.9, overweight 25-29.9, obese 30+).",
+   "sentence": "Standard BMI charts use the same categories for both sexes (underweight below 18.5, normal 18.5-24.9, overweight 25-29.9, obese 30+), as CDC does (CDC).",
    "number": "18.5",
    "value": 18.5,
    "class": "B",
@@ -67298,12 +68358,15 @@
     "page": "18.5 (underweight)",
     "computed": "Severe thinness / Moderate thinness / Underweight in calculator.js",
     "label": "category cut-off (getBMICategory)"
-   }
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
   },
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "faq-a",
-   "sentence": "Standard BMI charts use the same categories for both sexes (underweight below 18.5, normal 18.5-24.9, overweight 25-29.9, obese 30+).",
+   "sentence": "Standard BMI charts use the same categories for both sexes (underweight below 18.5, normal 18.5-24.9, overweight 25-29.9, obese 30+), as CDC does (CDC).",
    "number": "18.5",
    "value": 18.5,
    "class": "B",
@@ -67316,22 +68379,28 @@
     "computed": "Healthy weight in calculator.js",
     "label": "category cut-off (getBMICategory)",
     "name_differs": "\"normal\" = calculator.js \"Healthy weight\""
-   }
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
   },
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "faq-a",
-   "sentence": "Standard BMI charts use the same categories for both sexes (underweight below 18.5, normal 18.5-24.9, overweight 25-29.9, obese 30+).",
+   "sentence": "Standard BMI charts use the same categories for both sexes (underweight below 18.5, normal 18.5-24.9, overweight 25-29.9, obese 30+), as CDC does (CDC).",
    "number": "24.9",
    "value": 24.9,
    "class": "B",
    "why": "category cut-off (other bound)",
-   "heading": "FAQ: Are BMI charts different for men and women?"
+   "heading": "FAQ: Are BMI charts different for men and women?",
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
   },
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "faq-a",
-   "sentence": "Standard BMI charts use the same categories for both sexes (underweight below 18.5, normal 18.5-24.9, overweight 25-29.9, obese 30+).",
+   "sentence": "Standard BMI charts use the same categories for both sexes (underweight below 18.5, normal 18.5-24.9, overweight 25-29.9, obese 30+), as CDC does (CDC).",
    "number": "25",
    "value": 25.0,
    "class": "B",
@@ -67343,22 +68412,28 @@
     "page": "25-29.9 (overweight)",
     "computed": "Overweight in calculator.js",
     "label": "category cut-off (getBMICategory)"
-   }
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
   },
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "faq-a",
-   "sentence": "Standard BMI charts use the same categories for both sexes (underweight below 18.5, normal 18.5-24.9, overweight 25-29.9, obese 30+).",
+   "sentence": "Standard BMI charts use the same categories for both sexes (underweight below 18.5, normal 18.5-24.9, overweight 25-29.9, obese 30+), as CDC does (CDC).",
    "number": "29.9",
    "value": 29.9,
    "class": "B",
    "why": "category cut-off (other bound)",
-   "heading": "FAQ: Are BMI charts different for men and women?"
+   "heading": "FAQ: Are BMI charts different for men and women?",
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
   },
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "faq-a",
-   "sentence": "Standard BMI charts use the same categories for both sexes (underweight below 18.5, normal 18.5-24.9, overweight 25-29.9, obese 30+).",
+   "sentence": "Standard BMI charts use the same categories for both sexes (underweight below 18.5, normal 18.5-24.9, overweight 25-29.9, obese 30+), as CDC does (CDC).",
    "number": "30",
    "value": 30.0,
    "class": "B",
@@ -67370,7 +68445,151 @@
     "page": "30 (obese)",
     "computed": "Class 1 obesity / Class 2 obesity / Class 3 obesity in calculator.js",
     "label": "category cut-off (getBMICategory)"
-   }
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "faq-a",
+   "sentence": "Women carry more body fat than men at the same BMI: in CDC’s 2011–2018 body scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our body fat percentage chart uses the same scans).",
+   "number": "2011",
+   "value": 2011.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: Are BMI charts different for men and women?",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "pages_served"
+   },
+   "links": [
+    "http://localhost:8765/body-fat-percentage-chart/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "faq-a",
+   "sentence": "Women carry more body fat than men at the same BMI: in CDC’s 2011–2018 body scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our body fat percentage chart uses the same scans).",
+   "number": "2018",
+   "value": 2018.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: Are BMI charts different for men and women?",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "pages_served"
+   },
+   "links": [
+    "http://localhost:8765/body-fat-percentage-chart/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "faq-a",
+   "sentence": "Women carry more body fat than men at the same BMI: in CDC’s 2011–2018 body scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our body fat percentage chart uses the same scans).",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Are BMI charts different for men and women?",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "pages_served"
+   },
+   "links": [
+    "http://localhost:8765/body-fat-percentage-chart/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "faq-a",
+   "sentence": "Women carry more body fat than men at the same BMI: in CDC’s 2011–2018 body scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our body fat percentage chart uses the same scans).",
+   "number": "59",
+   "value": 59.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: Are BMI charts different for men and women?",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-obesity-2021-2023",
+    "how": "pages_served"
+   },
+   "links": [
+    "http://localhost:8765/body-fat-percentage-chart/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "faq-a",
+   "sentence": "Women carry more body fat than men at the same BMI: in CDC’s 2011–2018 body scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our body fat percentage chart uses the same scans).",
+   "number": "18.5",
+   "value": 18.5,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "FAQ: Are BMI charts different for men and women?",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "18.5 to 24.9 (no category named)",
+    "computed": "Healthy weight in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   },
+   "links": [
+    "http://localhost:8765/body-fat-percentage-chart/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "faq-a",
+   "sentence": "Women carry more body fat than men at the same BMI: in CDC’s 2011–2018 body scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our body fat percentage chart uses the same scans).",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "FAQ: Are BMI charts different for men and women?",
+   "links": [
+    "http://localhost:8765/body-fat-percentage-chart/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "faq-a",
+   "sentence": "Women carry more body fat than men at the same BMI: in CDC’s 2011–2018 body scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our body fat percentage chart uses the same scans).",
+   "number": "33.4",
+   "value": 33.4,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQ: Are BMI charts different for men and women?",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "pages_served"
+   },
+   "links": [
+    "http://localhost:8765/body-fat-percentage-chart/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "faq-a",
+   "sentence": "Women carry more body fat than men at the same BMI: in CDC’s 2011–2018 body scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our body fat percentage chart uses the same scans).",
+   "number": "22.1",
+   "value": 22.1,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQ: Are BMI charts different for men and women?",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "pages_served"
+   },
+   "links": [
+    "http://localhost:8765/body-fat-percentage-chart/"
+   ]
   },
   {
    "page": "/blog/bmi-chart-explained/",
@@ -67385,7 +68604,7 @@
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "faq-a",
-   "sentence": "The green or healthy zone on standard BMI charts covers BMI 18.5 to 24.9.",
+   "sentence": "The green or healthy zone on standard BMI charts covers BMI 18.5 to 24.9, which CDC calls healthy weight (CDC).",
    "number": "18.5",
    "value": 18.5,
    "class": "B",
@@ -67397,17 +68616,95 @@
     "page": "18.5 to 24.9 (no category named)",
     "computed": "Healthy weight in calculator.js",
     "label": "category cut-off (getBMICategory)"
-   }
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
   },
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "faq-a",
-   "sentence": "The green or healthy zone on standard BMI charts covers BMI 18.5 to 24.9.",
+   "sentence": "The green or healthy zone on standard BMI charts covers BMI 18.5 to 24.9, which CDC calls healthy weight (CDC).",
    "number": "24.9",
    "value": 24.9,
    "class": "B",
    "why": "category cut-off (other bound)",
-   "heading": "FAQ: What BMI range is highlighted as healthy on the chart?"
+   "heading": "FAQ: What BMI range is highlighted as healthy on the chart?",
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "faq-a",
+   "sentence": "In a pooled analysis of 239 studies, all-cause mortality was lowest at a BMI of 20 to 25 (Global BMI Mortality Collaboration, 2016).",
+   "number": "239",
+   "value": 239.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: What BMI range is highlighted as healthy on the chart?",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "faq-a",
+   "sentence": "In a pooled analysis of 239 studies, all-cause mortality was lowest at a BMI of 20 to 25 (Global BMI Mortality Collaboration, 2016).",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: What BMI range is highlighted as healthy on the chart?",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "faq-a",
+   "sentence": "In a pooled analysis of 239 studies, all-cause mortality was lowest at a BMI of 20 to 25 (Global BMI Mortality Collaboration, 2016).",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQ: What BMI range is highlighted as healthy on the chart?",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "faq-a",
+   "sentence": "In a pooled analysis of 239 studies, all-cause mortality was lowest at a BMI of 20 to 25 (Global BMI Mortality Collaboration, 2016).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQ: What BMI range is highlighted as healthy on the chart?",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
   },
   {
    "page": "/blog/bmi-chart-explained/",
@@ -67507,7 +68804,7 @@
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "jsonld",
-   "sentence": "Standard BMI charts use the same categories for both sexes (underweight below 18.5, normal 18.5-24.9, overweight 25-29.9, obese 30+).",
+   "sentence": "Standard BMI charts use the same categories for both sexes (underweight below 18.5, normal 18.5-24.9, overweight 25-29.9, obese 30+), as CDC does (CDC).",
    "number": "18.5",
    "value": 18.5,
    "class": "B",
@@ -67525,7 +68822,7 @@
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "jsonld",
-   "sentence": "Standard BMI charts use the same categories for both sexes (underweight below 18.5, normal 18.5-24.9, overweight 25-29.9, obese 30+).",
+   "sentence": "Standard BMI charts use the same categories for both sexes (underweight below 18.5, normal 18.5-24.9, overweight 25-29.9, obese 30+), as CDC does (CDC).",
    "number": "18.5",
    "value": 18.5,
    "class": "B",
@@ -67544,7 +68841,7 @@
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "jsonld",
-   "sentence": "Standard BMI charts use the same categories for both sexes (underweight below 18.5, normal 18.5-24.9, overweight 25-29.9, obese 30+).",
+   "sentence": "Standard BMI charts use the same categories for both sexes (underweight below 18.5, normal 18.5-24.9, overweight 25-29.9, obese 30+), as CDC does (CDC).",
    "number": "24.9",
    "value": 24.9,
    "class": "B",
@@ -67555,7 +68852,7 @@
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "jsonld",
-   "sentence": "Standard BMI charts use the same categories for both sexes (underweight below 18.5, normal 18.5-24.9, overweight 25-29.9, obese 30+).",
+   "sentence": "Standard BMI charts use the same categories for both sexes (underweight below 18.5, normal 18.5-24.9, overweight 25-29.9, obese 30+), as CDC does (CDC).",
    "number": "25",
    "value": 25.0,
    "class": "B",
@@ -67573,7 +68870,7 @@
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "jsonld",
-   "sentence": "Standard BMI charts use the same categories for both sexes (underweight below 18.5, normal 18.5-24.9, overweight 25-29.9, obese 30+).",
+   "sentence": "Standard BMI charts use the same categories for both sexes (underweight below 18.5, normal 18.5-24.9, overweight 25-29.9, obese 30+), as CDC does (CDC).",
    "number": "29.9",
    "value": 29.9,
    "class": "B",
@@ -67584,7 +68881,7 @@
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "jsonld",
-   "sentence": "Standard BMI charts use the same categories for both sexes (underweight below 18.5, normal 18.5-24.9, overweight 25-29.9, obese 30+).",
+   "sentence": "Standard BMI charts use the same categories for both sexes (underweight below 18.5, normal 18.5-24.9, overweight 25-29.9, obese 30+), as CDC does (CDC).",
    "number": "30",
    "value": 30.0,
    "class": "B",
@@ -67602,6 +68899,131 @@
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "jsonld",
+   "sentence": "Women carry more body fat than men at the same BMI: in CDC’s 2011–2018 body scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our body fat percentage chart uses the same scans).",
+   "number": "2011",
+   "value": 2011.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: Are BMI charts different for men and women?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "pages_served"
+   }
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "jsonld",
+   "sentence": "Women carry more body fat than men at the same BMI: in CDC’s 2011–2018 body scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our body fat percentage chart uses the same scans).",
+   "number": "2018",
+   "value": 2018.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: Are BMI charts different for men and women?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "pages_served"
+   }
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "jsonld",
+   "sentence": "Women carry more body fat than men at the same BMI: in CDC’s 2011–2018 body scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our body fat percentage chart uses the same scans).",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Are BMI charts different for men and women?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-weight-trends",
+    "how": "pages_served"
+   }
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "jsonld",
+   "sentence": "Women carry more body fat than men at the same BMI: in CDC’s 2011–2018 body scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our body fat percentage chart uses the same scans).",
+   "number": "59",
+   "value": 59.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Are BMI charts different for men and women?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-adult-obesity-2021-2023",
+    "how": "pages_served"
+   }
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "jsonld",
+   "sentence": "Women carry more body fat than men at the same BMI: in CDC’s 2011–2018 body scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our body fat percentage chart uses the same scans).",
+   "number": "18.5",
+   "value": 18.5,
+   "class": "B",
+   "why": "category cut-off",
+   "heading": "FAQPage JSON-LD: Are BMI charts different for men and women?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "check": {
+    "status": "ok",
+    "kind": "category",
+    "page": "18.5 to 24.9 (no category named)",
+    "computed": "Healthy weight in calculator.js",
+    "label": "category cut-off (getBMICategory)"
+   }
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "jsonld",
+   "sentence": "Women carry more body fat than men at the same BMI: in CDC’s 2011–2018 body scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our body fat percentage chart uses the same scans).",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "B",
+   "why": "category cut-off (other bound)",
+   "heading": "FAQPage JSON-LD: Are BMI charts different for men and women?",
+   "mirror_of": "the visible FAQ answer (same text)"
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "jsonld",
+   "sentence": "Women carry more body fat than men at the same BMI: in CDC’s 2011–2018 body scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our body fat percentage chart uses the same scans).",
+   "number": "33.4",
+   "value": 33.4,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQPage JSON-LD: Are BMI charts different for men and women?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "pages_served"
+   }
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "jsonld",
+   "sentence": "Women carry more body fat than men at the same BMI: in CDC’s 2011–2018 body scans of adults aged 20 to 59 with a BMI of 18.5 to 24.9, the median body fat was 33.4% for women and 22.1% for men (our body fat percentage chart uses the same scans).",
+   "number": "22.1",
+   "value": 22.1,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "FAQPage JSON-LD: Are BMI charts different for men and women?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "pages_served"
+   }
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "jsonld",
    "sentence": "Charts typically round BMI to whole numbers, while calculators show one or two decimal places.",
    "number": "two",
    "value": 2,
@@ -67613,7 +69035,7 @@
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "jsonld",
-   "sentence": "The green or healthy zone on standard BMI charts covers BMI 18.5 to 24.9.",
+   "sentence": "The green or healthy zone on standard BMI charts covers BMI 18.5 to 24.9, which CDC calls healthy weight (CDC).",
    "number": "18.5",
    "value": 18.5,
    "class": "B",
@@ -67631,13 +69053,77 @@
   {
    "page": "/blog/bmi-chart-explained/",
    "region": "jsonld",
-   "sentence": "The green or healthy zone on standard BMI charts covers BMI 18.5 to 24.9.",
+   "sentence": "The green or healthy zone on standard BMI charts covers BMI 18.5 to 24.9, which CDC calls healthy weight (CDC).",
    "number": "24.9",
    "value": 24.9,
    "class": "B",
    "why": "category cut-off (other bound)",
    "heading": "FAQPage JSON-LD: What BMI range is highlighted as healthy on the chart?",
    "mirror_of": "the visible FAQ answer (same text)"
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "jsonld",
+   "sentence": "In a pooled analysis of 239 studies, all-cause mortality was lowest at a BMI of 20 to 25 (Global BMI Mortality Collaboration, 2016).",
+   "number": "239",
+   "value": 239.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: What BMI range is highlighted as healthy on the chart?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row-notes",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "jsonld",
+   "sentence": "In a pooled analysis of 239 studies, all-cause mortality was lowest at a BMI of 20 to 25 (Global BMI Mortality Collaboration, 2016).",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: What BMI range is highlighted as healthy on the chart?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "jsonld",
+   "sentence": "In a pooled analysis of 239 studies, all-cause mortality was lowest at a BMI of 20 to 25 (Global BMI Mortality Collaboration, 2016).",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: What BMI range is highlighted as healthy on the chart?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
+  },
+  {
+   "page": "/blog/bmi-chart-explained/",
+   "region": "jsonld",
+   "sentence": "In a pooled analysis of 239 studies, all-cause mortality was lowest at a BMI of 20 to 25 (Global BMI Mortality Collaboration, 2016).",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "FAQPage JSON-LD: What BMI range is highlighted as healthy on the chart?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "link"
+   }
   },
   {
    "page": "/blog/bmi-and-health-risks/",
