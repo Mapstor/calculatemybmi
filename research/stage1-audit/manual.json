@@ -3224,6 +3224,13 @@
    ],
    "row": "cdc-adult-bmi-categories",
    "why": "CDC's healthy weight, \"18.5 to less than 25\" (CMB-054)"
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "sig": "If Your Ratio Is # or More",
+   "classes": "C",
+   "row": "nice-ng246-ethnicity-thresholds",
+   "why": "a heading naming NICE's 0.5 boundary for increased central adiposity (CMB-056)"
   }
  ]
 }

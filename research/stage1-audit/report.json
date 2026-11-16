@@ -4,12 +4,12 @@
  "viewport": "390x844",
  "pages_audited": 24,
  "pages_skipped": [],
- "numbers": 5233,
+ "numbers": 5254,
  "totals": {
   "A": 47,
   "B": 1656,
-  "C": 2647,
-  "D": 693,
+  "C": 2665,
+  "D": 696,
   "X": 190,
   "U": 0
  },
@@ -19,16 +19,16 @@
  "c_not_in_row_in_page_csv": 0,
  "c_not_in_row_also_in_other_row": 0,
  "c_status": {
-  "row": 1405,
-  "row-notes": 312,
+  "row": 1418,
+  "row-notes": 317,
   "not-in-row": 28,
   "row-dataset": 902
  },
  "checks_run": 1137,
  "check_errors": [],
  "unclassified": [],
- "manual_entries": 254,
- "manual_entries_used": 251,
+ "manual_entries": 255,
+ "manual_entries_used": 252,
  "worst10": [
   {
    "page": "/kids-bmi-calculator/",
@@ -4082,7 +4082,7 @@
   },
   {
    "page": "/blog/waist-to-height-ratio/",
-   "jsonld_mirrors": 24,
+   "jsonld_mirrors": 30,
    "mismatches": [],
    "c_no_row": [],
    "c_not_in_row": [],
@@ -4112,6 +4112,21 @@
      "number": "2012",
      "why": "citation detail",
      "sentence": "Ashwell M, et al., Obesity Reviews (2012)"
+    },
+    {
+     "number": "two",
+     "why": "number word (count in prose)",
+     "sentence": "A tape measure can’t tell the two apart."
+    },
+    {
+     "number": "half",
+     "why": "number word (count in prose)",
+     "sentence": "A healthy BMI is no guarantee of a smaller waist: among US adults with a BMI of 18.5 to 24.9, 50.2% of women and 42.9% of men have a waist at least half their height (our calculation from CDC NHANES 2021–2023)."
+    },
+    {
+     "number": "half",
+     "why": "number word (count in prose)",
+     "sentence": "Most US adults with an overweight BMI are over the line: 95.5% of women and 93.7% of men have a waist at least half their height (our calculation from CDC NHANES 2021–2023)."
     },
     {
      "number": "half",
@@ -4148,22 +4163,23 @@
    "page_errors": [],
    "score": 0,
    "totals": {
-    "D": 11,
-    "C": 62,
+    "C": 80,
+    "D": 14,
     "X": 7,
     "B": 63
    },
    "c_rows": {
-    "row-notes": 30,
-    "row": 32
+    "row": 45,
+    "row-notes": 35
    },
    "c_row_domains": {
-    "nice-ng246-ethnicity-thresholds": 35,
-    "ashwell-2012-whtr-meta-analysis": 7,
-    "browning-2010-whtr-review": 10,
+    "ashwell-2012-whtr-meta-analysis": 10,
+    "nice-ng246-ethnicity-thresholds": 40,
+    "browning-2010-whtr-review": 9,
+    "nhanes-2021-2023-exam-files": 13,
     "cdc-losing-weight": 2,
-    "odphp-physical-activity-guidelines": 4,
-    "who-2008-waist-hip-ratio": 4
+    "odphp-physical-activity-guidelines": 3,
+    "who-2008-waist-hip-ratio": 3
    },
    "excluded": {
     "list numbering (numbered badge)": 4,
@@ -82256,6 +82272,44 @@
   {
    "page": "/blog/waist-to-height-ratio/",
    "region": "main",
+   "sentence": "In a meta-analysis of more than 300,000 adults it beat BMI and waist circumference at detecting cardiometabolic risk factors (Ashwell et al., 2012), and it shows what BMI leaves out: where fat sits.",
+   "number": "300,000",
+   "value": 300000.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Waist-to-Height Ratio: The Simple Metric That Predicts Health Better Than BMI",
+   "row": {
+    "status": "row",
+    "domain": "ashwell-2012-whtr-meta-analysis",
+    "how": "link"
+   },
+   "links": [
+    "http://localhost:8765/",
+    "https://pubmed.ncbi.nlm.nih.gov/22106927/"
+   ]
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "main",
+   "sentence": "In a meta-analysis of more than 300,000 adults it beat BMI and waist circumference at detecting cardiometabolic risk factors (Ashwell et al., 2012), and it shows what BMI leaves out: where fat sits.",
+   "number": "2012",
+   "value": 2012.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Waist-to-Height Ratio: The Simple Metric That Predicts Health Better Than BMI",
+   "row": {
+    "status": "row",
+    "domain": "ashwell-2012-whtr-meta-analysis",
+    "how": "link"
+   },
+   "links": [
+    "http://localhost:8765/",
+    "https://pubmed.ncbi.nlm.nih.gov/22106927/"
+   ]
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "main",
    "sentence": "Keep your waist to less than half your height: NICE classes a ratio of 0.4 to 0.49 as healthy central adiposity and 0.5 or more as increased, for men and women (NICE NG246)",
    "number": "half",
    "value": 0.5,
@@ -82390,6 +82444,43 @@
    },
    "links": [
     "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "main",
+   "sentence": "NICE pairs the ratio with your BMI for adults with a BMI under 35 (NICE NG246)",
+   "number": "35",
+   "value": 35.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Waist-to-Height Ratio: The Simple Metric That Predicts Health Better Than BMI",
+   "row": {
+    "status": "row",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   },
+   "links": [
+    "http://localhost:8765/",
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "main",
+   "sentence": "If Your Ratio Is 0.5 or More",
+   "number": "0.5",
+   "value": 0.5,
+   "class": "C",
+   "why": "a heading naming NICE's 0.5 boundary for increased central adiposity (CMB-056) (manual.json)",
+   "heading": "Waist-to-Height Ratio: The Simple Metric That Predicts Health Better Than BMI",
+   "row": {
+    "status": "row-notes",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "manual.json"
+   },
+   "links": [
+    "http://localhost:8765/blog/waist-to-height-ratio/#how-to-improve"
    ]
   },
   {
@@ -82776,6 +82867,24 @@
   {
    "page": "/blog/waist-to-height-ratio/",
    "region": "main",
+   "sentence": "Beat BMI at detecting cardiometabolic risk factors in a meta-analysis (Ashwell et al., 2012)",
+   "number": "2012",
+   "value": 2012.0,
+   "class": "C",
+   "why": "year",
+   "heading": "WHtR Advantages",
+   "row": {
+    "status": "row",
+    "domain": "ashwell-2012-whtr-meta-analysis",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/22106927/"
+   ]
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "main",
    "sentence": "A 2012 systematic review and meta-analysis by Ashwell and colleagues in Obesity Reviews pooled 31 studies of more than 300,000 adults and reported “the superiority of WHtR over WC and BMI for detecting cardiometabolic risk factors in both sexes”.",
    "number": "2012",
    "value": 2012.0,
@@ -82979,12 +83088,143 @@
   {
    "page": "/blog/waist-to-height-ratio/",
    "region": "main",
+   "sentence": "A tape measure can’t tell the two apart.",
+   "number": "two",
+   "value": 2,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Understanding Visceral Fat"
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "main",
+   "sentence": "A healthy BMI is no guarantee of a smaller waist: among US adults with a BMI of 18.5 to 24.9, 50.2% of women and 42.9% of men have a waist at least half their height (our calculation from CDC NHANES 2021–2023).",
+   "number": "18.5",
+   "value": 18.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Understanding Visceral Fat",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2021-2023-exam-files",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BMX_L.htm"
+   ]
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "main",
+   "sentence": "A healthy BMI is no guarantee of a smaller waist: among US adults with a BMI of 18.5 to 24.9, 50.2% of women and 42.9% of men have a waist at least half their height (our calculation from CDC NHANES 2021–2023).",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Understanding Visceral Fat",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2021-2023-exam-files",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BMX_L.htm"
+   ]
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "main",
+   "sentence": "A healthy BMI is no guarantee of a smaller waist: among US adults with a BMI of 18.5 to 24.9, 50.2% of women and 42.9% of men have a waist at least half their height (our calculation from CDC NHANES 2021–2023).",
+   "number": "50.2",
+   "value": 50.2,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Understanding Visceral Fat",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2021-2023-exam-files",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BMX_L.htm"
+   ]
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "main",
+   "sentence": "A healthy BMI is no guarantee of a smaller waist: among US adults with a BMI of 18.5 to 24.9, 50.2% of women and 42.9% of men have a waist at least half their height (our calculation from CDC NHANES 2021–2023).",
+   "number": "42.9",
+   "value": 42.9,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Understanding Visceral Fat",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2021-2023-exam-files",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BMX_L.htm"
+   ]
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "main",
+   "sentence": "A healthy BMI is no guarantee of a smaller waist: among US adults with a BMI of 18.5 to 24.9, 50.2% of women and 42.9% of men have a waist at least half their height (our calculation from CDC NHANES 2021–2023).",
+   "number": "half",
+   "value": 0.5,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Understanding Visceral Fat",
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BMX_L.htm"
+   ]
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "main",
+   "sentence": "A healthy BMI is no guarantee of a smaller waist: among US adults with a BMI of 18.5 to 24.9, 50.2% of women and 42.9% of men have a waist at least half their height (our calculation from CDC NHANES 2021–2023).",
+   "number": "2021",
+   "value": 2021.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Understanding Visceral Fat",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2021-2023-exam-files",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BMX_L.htm"
+   ]
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "main",
+   "sentence": "A healthy BMI is no guarantee of a smaller waist: among US adults with a BMI of 18.5 to 24.9, 50.2% of women and 42.9% of men have a waist at least half their height (our calculation from CDC NHANES 2021–2023).",
+   "number": "2023",
+   "value": 2023.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Understanding Visceral Fat",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2021-2023-exam-files",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BMX_L.htm"
+   ]
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "main",
    "sentence": "The ratio doesn’t use weight, so a person with a BMI of 18.5 to 24.9 can still have a waist-to-height ratio of 0.5 or more, which NICE classes as increased central adiposity (NICE NG246).",
    "number": "18.5",
    "value": 18.5,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Why Visceral Fat Is Dangerous",
+   "heading": "Understanding Visceral Fat",
    "row": {
     "status": "row",
     "domain": "nice-ng246-ethnicity-thresholds",
@@ -83002,7 +83242,7 @@
    "value": 24.9,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Why Visceral Fat Is Dangerous",
+   "heading": "Understanding Visceral Fat",
    "row": {
     "status": "row",
     "domain": "nice-ng246-ethnicity-thresholds",
@@ -83020,7 +83260,7 @@
    "value": 0.5,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Why Visceral Fat Is Dangerous",
+   "heading": "Understanding Visceral Fat",
    "row": {
     "status": "row-notes",
     "domain": "nice-ng246-ethnicity-thresholds",
@@ -83028,6 +83268,91 @@
    },
    "links": [
     "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "main",
+   "sentence": "Most US adults with an overweight BMI are over the line: 95.5% of women and 93.7% of men have a waist at least half their height (our calculation from CDC NHANES 2021–2023).",
+   "number": "95.5",
+   "value": 95.5,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Women and men",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2021-2023-exam-files",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BMX_L.htm"
+   ]
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "main",
+   "sentence": "Most US adults with an overweight BMI are over the line: 95.5% of women and 93.7% of men have a waist at least half their height (our calculation from CDC NHANES 2021–2023).",
+   "number": "93.7",
+   "value": 93.7,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Women and men",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2021-2023-exam-files",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BMX_L.htm"
+   ]
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "main",
+   "sentence": "Most US adults with an overweight BMI are over the line: 95.5% of women and 93.7% of men have a waist at least half their height (our calculation from CDC NHANES 2021–2023).",
+   "number": "half",
+   "value": 0.5,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Women and men",
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BMX_L.htm"
+   ]
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "main",
+   "sentence": "Most US adults with an overweight BMI are over the line: 95.5% of women and 93.7% of men have a waist at least half their height (our calculation from CDC NHANES 2021–2023).",
+   "number": "2021",
+   "value": 2021.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Women and men",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2021-2023-exam-files",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BMX_L.htm"
+   ]
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "main",
+   "sentence": "Most US adults with an overweight BMI are over the line: 95.5% of women and 93.7% of men have a waist at least half their height (our calculation from CDC NHANES 2021–2023).",
+   "number": "2023",
+   "value": 2023.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Women and men",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2021-2023-exam-files",
+    "how": "link"
+   },
+   "links": [
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BMX_L.htm"
    ]
   },
   {
@@ -83098,12 +83423,27 @@
   {
    "page": "/blog/waist-to-height-ratio/",
    "region": "main",
+   "sentence": "If Your Ratio Is 0.5 or More",
+   "number": "0.5",
+   "value": 0.5,
+   "class": "C",
+   "why": "a heading naming NICE's 0.5 boundary for increased central adiposity (CMB-056) (manual.json)",
+   "heading": "Ethnic Considerations",
+   "row": {
+    "status": "row-notes",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "main",
    "sentence": "If your ratio is 0.5 or more, NICE suggests seeking advice and further assessment from a healthcare professional (NICE NG246).",
    "number": "0.5",
    "value": 0.5,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "How to Improve Your Waist-to-Height Ratio",
+   "heading": "If Your Ratio Is 0.5 or More",
    "row": {
     "status": "row-notes",
     "domain": "nice-ng246-ethnicity-thresholds",
@@ -83121,7 +83461,7 @@
    "value": 1.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "How to Improve Your Waist-to-Height Ratio",
+   "heading": "If Your Ratio Is 0.5 or More",
    "row": {
     "status": "row",
     "domain": "cdc-losing-weight",
@@ -83139,7 +83479,7 @@
    "value": 2.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "How to Improve Your Waist-to-Height Ratio",
+   "heading": "If Your Ratio Is 0.5 or More",
    "row": {
     "status": "row",
     "domain": "cdc-losing-weight",
@@ -83157,7 +83497,7 @@
    "value": 150.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "How to Improve Your Waist-to-Height Ratio",
+   "heading": "If Your Ratio Is 0.5 or More",
    "row": {
     "status": "row",
     "domain": "odphp-physical-activity-guidelines",
@@ -83175,7 +83515,7 @@
    "value": 300.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "How to Improve Your Waist-to-Height Ratio",
+   "heading": "If Your Ratio Is 0.5 or More",
    "row": {
     "status": "row",
     "domain": "odphp-physical-activity-guidelines",
@@ -83193,7 +83533,7 @@
    "value": 2.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "How to Improve Your Waist-to-Height Ratio",
+   "heading": "If Your Ratio Is 0.5 or More",
    "row": {
     "status": "row",
     "domain": "odphp-physical-activity-guidelines",
@@ -83201,6 +83541,43 @@
    },
    "links": [
     "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+   ]
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "main",
+   "sentence": "Not a diagnosis: NICE classes a ratio of 0.5 or more as increased central adiposity, a reason to seek further assessment, not a diagnosis (NICE NG246).",
+   "number": "0.5",
+   "value": 0.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Limitations of WHtR",
+   "row": {
+    "status": "row-notes",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   },
+   "links": [
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "main",
+   "sentence": "NICE uses the ratio as well as BMI for adults with a BMI under 35 (NICE NG246), and for individuals, CDC says BMI should be considered with other factors, such as blood pressure, cholesterol levels and a physical examination (CDC).",
+   "number": "35",
+   "value": 35.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Limitations of WHtR",
+   "row": {
+    "status": "row",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   },
+   "links": [
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity",
+    "https://www.cdc.gov/bmi/about/index.html"
    ]
   },
   {
@@ -83875,7 +84252,7 @@
    "heading": "How to Calculate Your Waist-to-Height Ratio",
    "row": {
     "status": "row",
-    "domain": "browning-2010-whtr-review",
+    "domain": "nhanes-2021-2023-exam-files",
     "how": "pages_served"
    }
   },
@@ -84257,7 +84634,7 @@
    "heading": "FAQ: How quickly can I improve my WHtR?",
    "row": {
     "status": "row",
-    "domain": "who-2008-waist-hip-ratio",
+    "domain": "nhanes-2021-2023-exam-files",
     "how": "pages_served"
    }
   },
@@ -84272,7 +84649,7 @@
    "heading": "FAQ: How quickly can I improve my WHtR?",
    "row": {
     "status": "row",
-    "domain": "odphp-physical-activity-guidelines",
+    "domain": "nhanes-2021-2023-exam-files",
     "how": "pages_served"
    }
   },
@@ -84611,6 +84988,97 @@
    "why": "number word (count in prose)",
    "heading": "FAQPage JSON-LD: What's the difference between waist-to-height and waist-to-hip ratio?",
    "mirror_of": "the visible FAQ answer (same text)"
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "jsonld",
+   "sentence": "The ratio doesn't use weight, so a BMI of 18.5 to 24.9 can come with a waist of half your height or more, a ratio NICE guideline NG246 classes as increased central adiposity.",
+   "number": "18.5",
+   "value": 18.5,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can I have a normal BMI but unhealthy WHtR?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "name"
+   }
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "jsonld",
+   "sentence": "The ratio doesn't use weight, so a BMI of 18.5 to 24.9 can come with a waist of half your height or more, a ratio NICE guideline NG246 classes as increased central adiposity.",
+   "number": "24.9",
+   "value": 24.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: Can I have a normal BMI but unhealthy WHtR?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "name"
+   }
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "jsonld",
+   "sentence": "The ratio doesn't use weight, so a BMI of 18.5 to 24.9 can come with a waist of half your height or more, a ratio NICE guideline NG246 classes as increased central adiposity.",
+   "number": "half",
+   "value": 0.5,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "FAQPage JSON-LD: Can I have a normal BMI but unhealthy WHtR?",
+   "mirror_of": "the visible FAQ answer (same text)"
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "jsonld",
+   "sentence": "That is why NICE pairs the ratio with BMI for adults with a BMI under 35.",
+   "number": "35",
+   "value": 35.0,
+   "class": "C",
+   "why": "FAQ: NICE NG246, adults with a BMI under 35 (CMB-042) (manual.json)",
+   "heading": "FAQPage JSON-LD: Can I have a normal BMI but unhealthy WHtR?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "manual.json"
+   }
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "jsonld",
+   "sentence": "CDC notes that people who lose about 1 to 2 pounds a week are more likely to keep the weight off, so aim for steady change rather than rapid weight loss.",
+   "number": "1",
+   "value": 1.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: How quickly can I improve my WHtR?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2021-2023-exam-files",
+    "how": "pages_served"
+   }
+  },
+  {
+   "page": "/blog/waist-to-height-ratio/",
+   "region": "jsonld",
+   "sentence": "CDC notes that people who lose about 1 to 2 pounds a week are more likely to keep the weight off, so aim for steady change rather than rapid weight loss.",
+   "number": "2",
+   "value": 2.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "FAQPage JSON-LD: How quickly can I improve my WHtR?",
+   "mirror_of": "the visible FAQ answer (same text)",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2021-2023-exam-files",
+    "how": "pages_served"
+   }
   },
   {
    "page": "/blog/how-to-lower-bmi/",

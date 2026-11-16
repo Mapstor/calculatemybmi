@@ -12,16 +12,6 @@
        <p> (effective) Any changes will be effective immediately upon posting the updated Terms on this page, with the "Last Updated" date revised accordingly.
        <p> (cause) Any cause of action or claim you may have arising out of or relating to these Terms or the Site must be commenced within one (1) year after the cause of action accrues.
        <p> (cause) Otherwise, such cause of action or claim is permanently barred.
-  9  /blog/waist-to-height-ratio/
-       <li> (Improve) How to Improve Your Ratio
-       <p> (effectiveness) The effectiveness of WHtR stems from basic human physiology: where you store fat matters enormously for health, and waist circumference is the best simple proxy for the most dangerous fat deposits.
-       <p> (effectiveness) WHtR's effectiveness comes from its ability to estimate visceral fat - the deep abdominal fat that surrounds your liver, pancreas, and intestines.
-       <li> (cause) Releases inflammatory chemicals: Visceral fat produces cytokines that cause chronic low-grade inflammation throughout the body
-       <li> (Associated with) Increases cardiovascular risk: Associated with elevated triglycerides, LDL cholesterol, and blood pressure
-       <h2> (Improve) How to Improve Your Waist-to-Height Ratio
-       <p> (improving) For more detailed guidance on healthy weight management, see our guides on improving your BMI and how to lower your BMI .
-       <li> (increased risk) Elevated WHtR indicates increased risk but doesn't confirm disease.
-       <p> (Evidence) Evidence-based strategies for healthy weight management that also reduce WHtR.
   8  /blog/bmi-history/
        <p> (clinicians) Despite its widespread adoption, BMI has faced growing criticism from researchers, clinicians, and public health advocates.
        <p> (lead to) The move toward personalized medicine may eventually lead to individually-calibrated health metrics that account for genetics, ethnicity, age, sex, and medical history.
@@ -116,4 +106,4 @@
        <li> (lead to) Muscle mass tends to fall with age, so the same BMI can mean more body fat; the American Diabetes Association notes that this may lead to obesity being missed in older adults.
   1  /kids-bmi-calculator/
        <p> (shown to) BMI is CDC’s formula (US units × 703, or kg/m²), shown to 0.1.
-97 hits on 21 of 40 pages
+88 hits on 20 of 40 pages
