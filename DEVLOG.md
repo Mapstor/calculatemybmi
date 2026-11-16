@@ -4,12 +4,12 @@
 ## §0 Resume here
 - Scores: S 38/40 | P 40/40 | D 40/40 | all three 38/40 (2026-11-14 to 2026-11-16)
 _last update: 2026-11-16 · CMB-054 CLAIMS-7_
-- Phase: the scores run (D-26) has gone as far as chat can take it: all three scores pass on 38 of 40 pages (full run 2026-11-14); the two S fails are Gallagher 2000 on the women's and men's pages (wait on the paper). Now the claims pass (§5 P1): batches 1 to 6 (CMB-048 the calculators' own words, CMB-049 `/blog/underweight-bmi-risks/`, CMB-050 `/blog/how-to-lower-bmi/`, CMB-051 `/blog/bmi-and-health-risks/`, CMB-052 `/blog/bmi-and-metabolism/`, CMB-053 `/about/`) live; batch 7 (CMB-054, `/blog/bmi-categories/`) done on its branch, its preview check not finished.
+- Phase: the scores run (D-26) has gone as far as chat can take it: all three scores pass on 38 of 40 pages (full run 2026-11-14); the two S fails are Gallagher 2000 on the women's and men's pages (wait on the paper). Now the claims pass (§5 P1): batches 1 to 6 (CMB-048 the calculators' own words, CMB-049 `/blog/underweight-bmi-risks/`, CMB-050 `/blog/how-to-lower-bmi/`, CMB-051 `/blog/bmi-and-health-risks/`, CMB-052 `/blog/bmi-and-metabolism/`, CMB-053 `/about/`) live; batch 7 (CMB-054, `/blog/bmi-categories/`) done on its branch.
 - Last confirmed: CMB-053 CLAIMS-6 — live: PR #29 merged (merge commit 2f17088, 12:39:27 UTC); Vercel Production for 2f17088 completed 12:39:34 UTC (2026-11-16); live check (chat, Chrome, 2026-11-16): `/about/`, `sitemap.xml` and the four pages with the shared JSON-LD on calculatemybmi.net hash the same as the merged repo (96e21da9…, 4ed35d84…, b14c5f10…, 8031841e…, a88a8e48…, 1885f04b…), nine cards with the ninth spanning its row, no overflow at desktop width; `date_truth.py` exit 0 (40/40) on main after the merge. CMB-052 live (784180c, PR #28). Earlier live checks: their §6 entries.
 - Traffic (Search Console, read by chat 2026-11-06; read it again only after asking, D-28): 27 of 40 pages had impressions. None in 56 days, so the only pages whose title and H1 are free under D-28: `/average-weight/`, `/body-fat-calculator/`, `/body-fat-percentage-chart/`, `/us-obesity-statistics/`, `/blog/bmi-chart-men/`, `/obesity-rate-by-state/`, `/childhood-obesity-statistics/`, `/blog/bmi-by-age/`, `/blog/waist-to-height-ratio/`, `/blog/bmi-chart-explained/`, `/blog/bmi-history/`, `/blog/bmi-and-health-risks/`, `/blog/bmi-and-metabolism/`.
-- In flight (handed, NOT confirmed): CMB-054 CLAIMS-7 — done on `claude/cmb-054`, PR #30, its Vercel preview built (2ce45d2). Chat's Chrome check on the preview did not finish (2026-11-16): JavaScript was refused on the new preview domain, then Chrome stopped answering. Still to do: the preview check at desktop and phone width, the merge by D-24 and the live check. Merged `claude/` branches stay on GitHub (Marko, 2026-11-13); at the run's finishing line chat lists the ones safe to delete.
-- Next action: finish CMB-054 (In flight). Then claims pass batch 8 (§5 P1) down `research/claims-pass/probe-2026-11-14.txt` (110 hits after CMB-054): `/blog/bmi-limitations/` 13 (`/terms/` is out of scope), then `/blog/waist-to-height-ratio/` 9 and `/blog/bmi-history/` 8.
-- Waiting on owner: Chrome, for CMB-054's preview check: allow Claude in Chrome on `calculatemybmi-git-claude-cmb-054-marko-visics-projects.vercel.app` if it asks, and check the computer is awake (2026-11-16). Search Console only after asking (Browser 1's Google account has no access to the property); after Google recrawls, the image-thumbnail report for the fifteen D-14 pages. Marko, 2026-11-13: no Request indexing for `/body-fat-percentage-chart/` and no chart-image licence for now (both stay as they are); merged `claude/` branches are kept, chat lists the safe-to-delete ones at the finishing line (Marko, 2026-11-14: delete them only then). D-28 ask: `/blog/underweight-bmi-risks/` keeps "Causes & Solutions" in its title and H1, but under D-01 the page now ends in sourced help lines, not treatment: OK to change "Solutions" to "When to Get Help"? Gallagher 2000 (Am J Clin Nutr 2000;72:694–701): its own table is behind OUP's Cloudflare bot check (not passed, 2026-11-14) and Europe PMC has the abstract only; a PDF Marko saves into the repo or attaches lets chat check the women's and men's pages' ranges against it. Marko allows PubMed reads (2026-11-13): approve WebFetch's prompt when it asks. CDC's twelve 2011–2018 DXA files arrived 2026-11-13 and stay out of the repo (registry `nhanes-2011-2018-dxa` has the URL pattern).
+- In flight (handed, NOT confirmed): CMB-054 CLAIMS-7 — done on `claude/cmb-054`, PR #30, checked on the preview; chat merges by D-24 (merge commit), then confirms Production and the live page, recorded in the next batch's DEVLOG step. Merged `claude/` branches stay on GitHub (Marko, 2026-11-13); at the run's finishing line chat lists the ones safe to delete.
+- Next action: claims pass batch 8 (§5 P1) down `research/claims-pass/probe-2026-11-14.txt` (110 hits after CMB-054): `/blog/bmi-limitations/` 13 (`/terms/` is out of scope), then `/blog/waist-to-height-ratio/` 9 and `/blog/bmi-history/` 8.
+- Waiting on owner: Search Console only after asking (Browser 1's Google account has no access to the property); after Google recrawls, the image-thumbnail report for the fifteen D-14 pages. Marko, 2026-11-13: no Request indexing for `/body-fat-percentage-chart/` and no chart-image licence for now (both stay as they are); merged `claude/` branches are kept, chat lists the safe-to-delete ones at the finishing line (Marko, 2026-11-14: delete them only then). D-28 ask: `/blog/underweight-bmi-risks/` keeps "Causes & Solutions" in its title and H1, but under D-01 the page now ends in sourced help lines, not treatment: OK to change "Solutions" to "When to Get Help"? Gallagher 2000 (Am J Clin Nutr 2000;72:694–701): its own table is behind OUP's Cloudflare bot check (not passed, 2026-11-14) and Europe PMC has the abstract only; a PDF Marko saves into the repo or attaches lets chat check the women's and men's pages' ranges against it. Marko allows PubMed reads (2026-11-13): approve WebFetch's prompt when it asks. CDC's twelve 2011–2018 DXA files arrived 2026-11-13 and stay out of the repo (registry `nhanes-2011-2018-dxa` has the URL pattern).
 - Open questions: does any other site's chat request indexing on the same Google account?
 
 ## §1 Site card
@@ -556,7 +556,7 @@ _last update: 2026-11-16 · CMB-054 CLAIMS-7_
 - Commit: ab48a81, 3fe260b, 622a9d6 and this DEVLOG commit on `claude/cmb-053`, PR #29 (only the branch is pushed). Chat merges by D-24 next.
 - Notes: the CMB-052 live check is in §0.
 
-### 2026-11-16 · CMB-054 CLAIMS-7 · chat · done, preview check not finished
+### 2026-11-16 · CMB-054 CLAIMS-7 · chat · done
 - What: claims pass batch 7 (§5 P1) on `/blog/bmi-categories/`: 13 candidates, now 0. Each category gives WHO's and CDC's own terms (D-10).
   - Risk per band, GBMC 2016, each against 22.5 to 24.9:
     - 15.0 to 18.4 (all three thinness grades): 1.51
@@ -601,12 +601,15 @@ _last update: 2026-11-16 · CMB-054 CLAIMS-7_
     - `check_ledger.py`: OK.
   - Text, UI, box and overflow probes (local, 390 and 1280): no hits.
   - `date_truth.py`: ok for the page.
-  - Preview: Vercel built 2ce45d2. A desktop screenshot of the page top rendered.
+  - Preview, Chrome, 2026-11-16 (JavaScript was refused on the new preview domain at first and Chrome stopped answering for a while; it then ran):
+    - The page and `sitemap.xml` hash the same as the branch (ae8ed3ac…, ede6fb2a…).
+    - At 1280, 390, 360 and 320: no overflow, headings in sequence, both new anchors present.
+    - Tips sit in 2 columns at 1280 and 1 on phones.
+    - The two tables fit except at 320, where they scroll inside their wrappers as before.
+    - Desktop and 390 screenshots of the underweight section and the tips read cleanly.
   - Anti-slop: 10 fixes. Top types: the same GBMC and CDC sentences repeated, a duplicated pointer, two merged tips, vague authority ("research suggests").
-  - Unverified:
-    - The preview check in Chrome (D-25): JavaScript was refused on the new preview domain, so there are no hashes and no 390 frame, and Chrome then stopped answering.
-    - Touch and iPhone Safari.
-- Commit: 2ce45d2 and this DEVLOG commit on `claude/cmb-054`, PR #30 (only the branch is pushed). Not merged: D-24 waits for the preview check.
+  - Unverified: touch and iPhone Safari (D-25).
+- Commit: 2ce45d2 and this DEVLOG commit on `claude/cmb-054`, PR #30 (only the branch is pushed). Chat merges by D-24 next.
 - Notes: the CMB-053 live check is in §0.
 
 ## §7 History & archive
