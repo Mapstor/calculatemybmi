@@ -1,17 +1,3 @@
- 13  /about/
-       <p> (evidence) Free, evidence-based BMI and body composition calculators.
-       <p> (healthcare providers) The site aims to (1) make BMI and body-composition screening tools freely accessible, (2) explain what BMI and related metrics actually mean through the guides section (starting with the what-is-BMI guide), and (3) help 
-       <p> (clinician) It is not a substitute for a clinician.
-       <h3> (Evidence) Evidence-Based
-       <p> (linked to) The following organisations are the ones most often linked to for classification standards, clinical thresholds, and background context:
-       <p> (clinician) Those belong with a qualified clinician.
-       <p> (professional) They are not a substitute for professional medical advice, diagnosis, or treatment.
-       <p> (Consult) Consult a qualified healthcare provider before making decisions about your health, diet, or exercise based on your BMI or any other metric.
-       <p> (healthcare provider) Consider it alongside a lean body mass estimate and an ideal weight target range, and take the results to your own healthcare provider for interpretation.
-       <p> (healthcare professional) BMI is a screening tool with known limitations: it does not distinguish muscle from fat mass, and results should be interpreted alongside guidance from a healthcare professional.
-       <p> (professional) They use the same formulas that appear in clinical practice, but the results are not a substitute for professional medical evaluation.
-       <p> (healthcare provider) BMI is one of many things a healthcare provider considers when assessing health.
-       <p> (doctor) Take your result to a doctor, nutritionist, or other qualified professional who can interpret it against your full medical history and any relevant labs.
  13  /terms/
        <p> (Effective) Effective Date: January 28, 2026 | Last Updated: October 11, 2026
        <p> (professional) It is not intended to be a substitute for professional medical advice, diagnosis, or treatment .
@@ -158,4 +144,4 @@
        <li> (lead to) Muscle mass tends to fall with age, so the same BMI can mean more body fat; the American Diabetes Association notes that this may lead to obesity being missed in older adults.
   1  /kids-bmi-calculator/
        <p> (shown to) BMI is CDC’s formula (US units × 703, or kg/m²), shown to 0.1.
-136 hits on 24 of 40 pages
+123 hits on 23 of 40 pages
