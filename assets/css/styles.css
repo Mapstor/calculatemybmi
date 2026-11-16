@@ -793,3 +793,12 @@ button.cta-button { border: 0; cursor: pointer; }
    two obesity data pages): 36em, under 80 characters a line at desktop width, as .container--guide. */
 .measure-36 p, .measure-36 li, .measure-36 figcaption { max-width: 36em; }
 .measure-36 .cmb-answer, .measure-36 .cmb-callout { max-width: calc(36em + 34px); }
+
+/* CMB-058 — /blog/waist-to-height-ratio/ (DESIGN.md "Waist-to-height ratio tool (CMB-058)"): the ratio and its class at
+   the body fat tools' sizes, and the measuring hint a step below the fields, the line under the table clear of its last rule, a class's dot kept beside its name, and a ratio range on one line. The US / metric rows hide with the hidden
+   attribute (.calc-panel [hidden], CMB-023). */
+.whtr .bmi-value { font-size: 3rem; }
+.whtr .bmi-category { font-size: 1.0625rem; line-height: 1.4; }
+.whtr .form-hint { margin: 0.5rem 0 0; }
+.whtr .er-table + .er-note { margin-top: 0.75rem; }
+.whtr .nw { white-space: nowrap; }

@@ -284,6 +284,12 @@ No sharp corners (0 radius) and no custom clip-paths. Borders are hairline (`1px
 - Category-coloured text uses the strong inks (`--normal-strong`, `--overweight-strong`, `--obese-strong`, `--underweight-strong`); the 500-level category colours are for fills. Secondary text on a tinted tile takes that tile's hue, never gray.
 - SVG body labels are 12 or larger in viewBox units; a label that no longer fits is moved, right-aligned or split, never shrunk.
 
+### Waist-to-height ratio tool (CMB-058)
+- `/blog/waist-to-height-ratio/` works out the ratio with the shared calculator parts and no page-level style, right under the intro: `.calculator-card.whtr` › `.calc-panel` › a US / Metric `.unit-toggle` › `.form-row.form-row--trio` (height ft, height in, waist in; two columns under 360 px) or `.form-row.form-row--pair` (height cm, waist cm) › a `.form-hint` with NICE's measuring point › `.calculate-btn`. The rows hide with the `hidden` attribute.
+- Results follow "Calculator results — answer first": a `.bmi-result-card` tinted by NICE's class (healthy `normal`, increased `overweight`, high `obese`, neutral under 0.4) with the ratio in a neutral `.bmi-value` (a ratio is not a BMI), then `.er-section`s with `h2` headings (the card sits under the H1): what the ratio means, in NICE's words, with a `.cat-dot`; the waist for each class at the height entered (an `.er-table`, the user's row `.er-active` with an `.er-you` pill, and half the height; ratio ranges and a class's dot with its name stay whole (`.whtr .nw`), so the table fits a 360 px phone and scrolls inside its section only at 320 px); and the method and source line.
+- The ratio comes from the numbers as printed: height and waist to 0.1, the ratio cut (not rounded) to two decimals in whole-number arithmetic (tenths), so 0.50 always means a waist of at least half the height, as in the women's page waist check (CMB-017). The waist bounds are the smallest waist, to 0.1, that reaches each class.
+- The US / Metric switch converts to 0.1; switching back with nothing retyped restores the numbers as they were. Results on screen follow the switch.
+
 ### Category badges
 - Pill (`--radius-full`), category background with white text (BMI color lock applies).
 
