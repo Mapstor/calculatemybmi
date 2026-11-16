@@ -4,12 +4,12 @@
  "viewport": "390x844",
  "pages_audited": 24,
  "pages_skipped": [],
- "numbers": 5350,
+ "numbers": 5389,
  "totals": {
   "A": 47,
-  "B": 1666,
-  "C": 2747,
-  "D": 700,
+  "B": 1667,
+  "C": 2782,
+  "D": 703,
   "X": 190,
   "U": 0
  },
@@ -19,16 +19,16 @@
  "c_not_in_row_in_page_csv": 0,
  "c_not_in_row_also_in_other_row": 0,
  "c_status": {
-  "row": 1472,
-  "row-notes": 345,
+  "row": 1490,
+  "row-notes": 362,
   "not-in-row": 28,
   "row-dataset": 902
  },
- "checks_run": 1142,
+ "checks_run": 1143,
  "check_errors": [],
  "unclassified": [],
- "manual_entries": 254,
- "manual_entries_used": 251,
+ "manual_entries": 253,
+ "manual_entries_used": 250,
  "worst10": [
   {
    "page": "/kids-bmi-calculator/",
@@ -3932,7 +3932,12 @@
     {
      "number": "two",
      "why": "number word (count in prose)",
-     "sentence": "Your body contains two types of fat:"
+     "sentence": "Body fat percentage does, and the two can disagree; our BMI limitations guide covers the rest."
+    },
+    {
+     "number": "4",
+     "why": "name or label with a number",
+     "sentence": "For African American and white adults aged 20 to 39, the healthy range they proposed is 21 to 32.9% for women and 8 to 19.9% for men (Table 4); our body fat percentage chart has every age."
     },
     {
      "number": "two",
@@ -3940,19 +3945,14 @@
      "sentence": "BMI measurement is straightforward and requires only two data points:"
     },
     {
-     "number": "30",
-     "why": "an illustration (two hypothetical people) (manual.json)",
-     "sentence": "30%"
-    },
-    {
-     "number": "2",
-     "why": "name or label with a number",
-     "sentence": "People with normal weight obesity face increased risks for type 2 diabetes, cardiovascular disease, and metabolic syndrome - risks that wouldn't be detected by BMI alone."
+     "number": "three",
+     "why": "number word (count in prose)",
+     "sentence": "BMI and body fat can disagree in three ways."
     },
     {
      "number": "Two",
      "why": "number word (count in prose)",
-     "sentence": "Two people with identical BMI can have vastly different health profiles based on their body composition:"
+     "sentence": "Two men aged 20 to 39 with the same BMI can sit in different body fat ranges:"
     },
     {
      "number": "15",
@@ -3975,34 +3975,54 @@
      "sentence": "Person B (BMI 26)"
     },
     {
-     "number": "seven",
-     "why": "number word (count in prose)",
-     "sentence": "For accuracy figures from a study that tested seven methods against DXA, see how to calculate body fat percentage."
+     "number": "15",
+     "why": "two hypothetical men (15% and 30%); 19.9 is just under the 20% where Gallagher's Table 4 puts BMI 25 for men aged 20 to 39 (CMB-061) (manual.json)",
+     "sentence": "On the provisional ranges for men aged 20 to 39, 15% body fat is healthy (8 to 19.9%) and 30% is very high (25% or more) (Gallagher et al., 2000)."
     },
     {
-     "number": "65",
-     "why": "an age group in a list of situations (CMB-037; was \"an age threshold with no source\") (manual.json)",
-     "sentence": "You're athletic or muscular, making specific body composition goals, older (65+), or want the most accurate individual health assessment."
+     "number": "30",
+     "why": "two hypothetical men (15% and 30%); 19.9 is just under the 20% where Gallagher's Table 4 puts BMI 25 for men aged 20 to 39 (CMB-061) (manual.json)",
+     "sentence": "On the provisional ranges for men aged 20 to 39, 15% body fat is healthy (8 to 19.9%) and 30% is very high (25% or more) (Gallagher et al., 2000)."
+    },
+    {
+     "number": "seven",
+     "why": "number word (count in prose)",
+     "sentence": "In a study of 437 college students that tested seven methods against DXA, seven-site skinfolds read 1.4 points below DXA on average and a hand-held impedance device was 4.9 points off (Burns et al., 2019); our guide to how to measure body fat has the rest."
+    },
+    {
+     "number": "seven",
+     "why": "number word (count in prose)",
+     "sentence": "In a study of 437 college students that tested seven methods against DXA, seven-site skinfolds read 1.4 points below DXA on average and a hand-held impedance device was 4.9 points off (Burns et al., 2019); our guide to how to measure body fat has the rest."
+    },
+    {
+     "number": "two",
+     "why": "number word (count in prose)",
+     "sentence": "When the two disagree, the scenarios above show why."
     }
    ],
-   "checks_ok": 8,
+   "checks_ok": 9,
    "page_errors": [],
    "score": 0,
    "totals": {
     "A": 5,
-    "D": 11,
-    "C": 5,
+    "D": 14,
+    "C": 40,
     "X": 3,
-    "B": 11
+    "B": 12
    },
    "c_rows": {
-    "row": 4,
-    "row-notes": 1
+    "row": 22,
+    "row-notes": 18
    },
    "c_row_domains": {
-    "gallagher-2000-bf-ranges": 2,
-    "nhlbi-1998-obesity-guidelines": 2,
-    "nice-ng246-ethnicity-thresholds": 1
+    "who-trs-894-obesity": 1,
+    "nhlbi-1998-obesity-guidelines": 12,
+    "gallagher-2000-bf-ranges": 9,
+    "gbmc-2016-bmi-mortality": 2,
+    "nhanes-2011-2018-dxa": 6,
+    "provencher-2018-nfl-combine": 4,
+    "body-fat-method-validation": 4,
+    "nice-ng246-ethnicity-thresholds": 2
    },
    "excluded": {
     "list numbering": 3
@@ -83154,17 +83174,58 @@
   {
    "page": "/blog/body-fat-vs-bmi/",
    "region": "main",
-   "sentence": "Your body contains two types of fat:",
+   "sentence": "Body fat percentage does, and the two can disagree; our BMI limitations guide covers the rest.",
    "number": "two",
    "value": 2,
    "class": "D",
    "why": "number word (count in prose)",
-   "heading": "What Is Body Fat Percentage?"
+   "heading": "Body Fat vs BMI: The Complete Guide to Understanding Both Metrics",
+   "links": [
+    "http://localhost:8765/blog/bmi-limitations/"
+   ]
   },
   {
    "page": "/blog/body-fat-vs-bmi/",
    "region": "main",
-   "sentence": "A widely cited 2000 study proposed provisional ranges by translating the healthy BMI range into predicted body fat for each age, sex and ethnic group (Gallagher et al., Am J Clin Nutr 2000).",
+   "sentence": "Categories: CDC; obesity classes I to III: WHO, 2000.",
+   "number": "2000",
+   "value": 2000.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Standard BMI Categories",
+   "row": {
+    "status": "row",
+    "domain": "who-trs-894-obesity",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "NIH calls excess abdominal fat an important, independent risk factor for disease (NHLBI, 1998), and NCI says visceral fat, around the organs, seems to carry more disease risk than overall or subcutaneous fat (NCI).",
+   "number": "1998",
+   "value": 1998.0,
+   "class": "C",
+   "why": "year",
+   "heading": "What Is Body Fat Percentage?",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/",
+    "https://www.cancer.gov/about-cancer/causes-prevention/risk/obesity/obesity-fact-sheet"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "Body fat had no accepted published ranges when, in 2000, Gallagher and colleagues proposed provisional ones by translating the healthy BMI range into predicted body fat by age, sex and ethnic group (Gallagher et al., Am J Clin Nutr 2000).",
    "number": "2000",
    "value": 2000.0,
    "class": "C",
@@ -83182,7 +83243,7 @@
   {
    "page": "/blog/body-fat-vs-bmi/",
    "region": "main",
-   "sentence": "A widely cited 2000 study proposed provisional ranges by translating the healthy BMI range into predicted body fat for each age, sex and ethnic group (Gallagher et al., Am J Clin Nutr 2000).",
+   "sentence": "Body fat had no accepted published ranges when, in 2000, Gallagher and colleagues proposed provisional ones by translating the healthy BMI range into predicted body fat by age, sex and ethnic group (Gallagher et al., Am J Clin Nutr 2000).",
    "number": "2000",
    "value": 2000.0,
    "class": "C",
@@ -83195,6 +83256,127 @@
    },
    "links": [
     "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "For African American and white adults aged 20 to 39, the healthy range they proposed is 21 to 32.9% for women and 8 to 19.9% for men (Table 4); our body fat percentage chart has every age.",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Healthy Ranges: BMI vs Body Fat Percentage",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "pages_served"
+   },
+   "links": [
+    "http://localhost:8765/body-fat-percentage-chart/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "For African American and white adults aged 20 to 39, the healthy range they proposed is 21 to 32.9% for women and 8 to 19.9% for men (Table 4); our body fat percentage chart has every age.",
+   "number": "39",
+   "value": 39.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Healthy Ranges: BMI vs Body Fat Percentage",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "pages_served"
+   },
+   "links": [
+    "http://localhost:8765/body-fat-percentage-chart/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "For African American and white adults aged 20 to 39, the healthy range they proposed is 21 to 32.9% for women and 8 to 19.9% for men (Table 4); our body fat percentage chart has every age.",
+   "number": "21",
+   "value": 21.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Healthy Ranges: BMI vs Body Fat Percentage",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "pages_served"
+   },
+   "links": [
+    "http://localhost:8765/body-fat-percentage-chart/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "For African American and white adults aged 20 to 39, the healthy range they proposed is 21 to 32.9% for women and 8 to 19.9% for men (Table 4); our body fat percentage chart has every age.",
+   "number": "32.9",
+   "value": 32.9,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Healthy Ranges: BMI vs Body Fat Percentage",
+   "row": {
+    "status": "row",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "pages_served"
+   },
+   "links": [
+    "http://localhost:8765/body-fat-percentage-chart/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "For African American and white adults aged 20 to 39, the healthy range they proposed is 21 to 32.9% for women and 8 to 19.9% for men (Table 4); our body fat percentage chart has every age.",
+   "number": "8",
+   "value": 8.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Healthy Ranges: BMI vs Body Fat Percentage",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "pages_served"
+   },
+   "links": [
+    "http://localhost:8765/body-fat-percentage-chart/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "For African American and white adults aged 20 to 39, the healthy range they proposed is 21 to 32.9% for women and 8 to 19.9% for men (Table 4); our body fat percentage chart has every age.",
+   "number": "19.9",
+   "value": 19.9,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Healthy Ranges: BMI vs Body Fat Percentage",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "pages_served"
+   },
+   "links": [
+    "http://localhost:8765/body-fat-percentage-chart/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "For African American and white adults aged 20 to 39, the healthy range they proposed is 21 to 32.9% for women and 8 to 19.9% for men (Table 4); our body fat percentage chart has every age.",
+   "number": "4",
+   "value": 4.0,
+   "class": "D",
+   "why": "name or label with a number",
+   "heading": "Healthy Ranges: BMI vs Body Fat Percentage",
+   "links": [
+    "http://localhost:8765/body-fat-percentage-chart/"
    ]
   },
   {
@@ -83210,32 +83392,22 @@
   {
    "page": "/blog/body-fat-vs-bmi/",
    "region": "main",
+   "sentence": "BMI and body fat can disagree in three ways.",
+   "number": "three",
+   "value": 3,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "When BMI and Body Fat Tell Different Stories"
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
    "sentence": "Scenario 1: Normal BMI, High Body Fat (\"Skinny Fat\")",
    "number": "1",
    "value": 1.0,
    "class": "X",
    "why": "list numbering",
    "heading": "When BMI and Body Fat Tell Different Stories"
-  },
-  {
-   "page": "/blog/body-fat-vs-bmi/",
-   "region": "main",
-   "sentence": "30%",
-   "number": "30",
-   "value": 30.0,
-   "class": "D",
-   "why": "an illustration (two hypothetical people) (manual.json)",
-   "heading": "Scenario 1: Normal BMI, High Body Fat (\"Skinny Fat\")"
-  },
-  {
-   "page": "/blog/body-fat-vs-bmi/",
-   "region": "main",
-   "sentence": "People with normal weight obesity face increased risks for type 2 diabetes, cardiovascular disease, and metabolic syndrome - risks that wouldn't be detected by BMI alone.",
-   "number": "2",
-   "value": 2.0,
-   "class": "D",
-   "why": "name or label with a number",
-   "heading": "Scenario 1: Normal BMI, High Body Fat (\"Skinny Fat\")"
   },
   {
    "page": "/blog/body-fat-vs-bmi/",
@@ -83250,6 +83422,60 @@
   {
    "page": "/blog/body-fat-vs-bmi/",
    "region": "main",
+   "sentence": "At the NFL Scouting Combine, BMI classed 53.4% of prospective players as obese, against 8.9% by measured body fat (Provencher et al., 2018).",
+   "number": "53.4",
+   "value": 53.4,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Scenario 2: High BMI, Low Body Fat (Muscular Individuals)",
+   "row": {
+    "status": "row",
+    "domain": "provencher-2018-nfl-combine",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1519/JSC.0000000000002449"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "At the NFL Scouting Combine, BMI classed 53.4% of prospective players as obese, against 8.9% by measured body fat (Provencher et al., 2018).",
+   "number": "8.9",
+   "value": 8.9,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Scenario 2: High BMI, Low Body Fat (Muscular Individuals)",
+   "row": {
+    "status": "row",
+    "domain": "provencher-2018-nfl-combine",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1519/JSC.0000000000002449"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "At the NFL Scouting Combine, BMI classed 53.4% of prospective players as obese, against 8.9% by measured body fat (Provencher et al., 2018).",
+   "number": "2018",
+   "value": 2018.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Scenario 2: High BMI, Low Body Fat (Muscular Individuals)",
+   "row": {
+    "status": "row",
+    "domain": "provencher-2018-nfl-combine",
+    "how": "link"
+   },
+   "links": [
+    "https://doi.org/10.1519/JSC.0000000000002449"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
    "sentence": "Scenario 3: Similar BMI, Very Different Health",
    "number": "3",
    "value": 3.0,
@@ -83260,12 +83486,42 @@
   {
    "page": "/blog/body-fat-vs-bmi/",
    "region": "main",
-   "sentence": "Two people with identical BMI can have vastly different health profiles based on their body composition:",
+   "sentence": "Two men aged 20 to 39 with the same BMI can sit in different body fat ranges:",
    "number": "Two",
    "value": 2,
    "class": "D",
    "why": "number word (count in prose)",
    "heading": "Scenario 3: Similar BMI, Very Different Health"
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "Two men aged 20 to 39 with the same BMI can sit in different body fat ranges:",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Scenario 3: Similar BMI, Very Different Health",
+   "row": {
+    "status": "row",
+    "domain": "gbmc-2016-bmi-mortality",
+    "how": "pages_served"
+   }
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "Two men aged 20 to 39 with the same BMI can sit in different body fat ranges:",
+   "number": "39",
+   "value": 39.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Scenario 3: Similar BMI, Very Different Health",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhanes-2011-2018-dxa",
+    "how": "pages_served"
+   }
   },
   {
    "page": "/blog/body-fat-vs-bmi/",
@@ -83310,11 +83566,11 @@
   {
    "page": "/blog/body-fat-vs-bmi/",
    "region": "main",
-   "sentence": "Both individuals have the same BMI (26 - \"overweight\"), but Person A has healthy body fat while Person B has excess fat.",
+   "sentence": "Both have a BMI of 26, overweight.",
    "number": "26",
    "value": 26.0,
    "class": "B",
-   "why": "the category of BMI 26 (manual.json)",
+   "why": "the category of BMI 26 (CMB-061) (manual.json)",
    "heading": "Scenario 3: Similar BMI, Very Different Health",
    "check": {
     "status": "ok",
@@ -83327,55 +83583,543 @@
   {
    "page": "/blog/body-fat-vs-bmi/",
    "region": "main",
-   "sentence": "For accuracy figures from a study that tested seven methods against DXA, see how to calculate body fat percentage.",
-   "number": "seven",
-   "value": 7,
-   "class": "D",
-   "why": "number word (count in prose)",
-   "heading": "Body Fat Percentage Accuracy",
+   "sentence": "On the provisional ranges for men aged 20 to 39, 15% body fat is healthy (8 to 19.9%) and 30% is very high (25% or more) (Gallagher et al., 2000).",
+   "number": "20",
+   "value": 20.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Scenario 3: Similar BMI, Very Different Health",
+   "row": {
+    "status": "row-notes",
+    "domain": "gallagher-2000-bf-ranges",
+    "how": "link"
+   },
    "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "On the provisional ranges for men aged 20 to 39, 15% body fat is healthy (8 to 19.9%) and 30% is very high (25% or more) (Gallagher et al., 2000).",
+   "number": "39",
+   "value": 39.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Scenario 3: Similar BMI, Very Different Health",
+   "row": {
+    "status": "row-notes",
+    "domain": "gallagher-2000-bf-ranges",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "On the provisional ranges for men aged 20 to 39, 15% body fat is healthy (8 to 19.9%) and 30% is very high (25% or more) (Gallagher et al., 2000).",
+   "number": "15",
+   "value": 15.0,
+   "class": "D",
+   "why": "two hypothetical men (15% and 30%); 19.9 is just under the 20% where Gallagher's Table 4 puts BMI 25 for men aged 20 to 39 (CMB-061) (manual.json)",
+   "heading": "Scenario 3: Similar BMI, Very Different Health",
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "On the provisional ranges for men aged 20 to 39, 15% body fat is healthy (8 to 19.9%) and 30% is very high (25% or more) (Gallagher et al., 2000).",
+   "number": "8",
+   "value": 8.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Scenario 3: Similar BMI, Very Different Health",
+   "row": {
+    "status": "row-notes",
+    "domain": "gallagher-2000-bf-ranges",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "On the provisional ranges for men aged 20 to 39, 15% body fat is healthy (8 to 19.9%) and 30% is very high (25% or more) (Gallagher et al., 2000).",
+   "number": "19.9",
+   "value": 19.9,
+   "class": "B",
+   "why": "two hypothetical men (15% and 30%); 19.9 is just under the 20% where Gallagher's Table 4 puts BMI 25 for men aged 20 to 39 (CMB-061) (manual.json)",
+   "heading": "Scenario 3: Similar BMI, Very Different Health",
+   "check": {
+    "status": "ok",
+    "kind": "value",
+    "page": "19.9",
+    "computed": "19.9",
+    "raw": 19.9,
+    "label": "just under Table 4's 20% (men 20-39, BMI 25)"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "On the provisional ranges for men aged 20 to 39, 15% body fat is healthy (8 to 19.9%) and 30% is very high (25% or more) (Gallagher et al., 2000).",
+   "number": "30",
+   "value": 30.0,
+   "class": "D",
+   "why": "two hypothetical men (15% and 30%); 19.9 is just under the 20% where Gallagher's Table 4 puts BMI 25 for men aged 20 to 39 (CMB-061) (manual.json)",
+   "heading": "Scenario 3: Similar BMI, Very Different Health",
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "On the provisional ranges for men aged 20 to 39, 15% body fat is healthy (8 to 19.9%) and 30% is very high (25% or more) (Gallagher et al., 2000).",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Scenario 3: Similar BMI, Very Different Health",
+   "row": {
+    "status": "row-notes",
+    "domain": "gallagher-2000-bf-ranges",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "On the provisional ranges for men aged 20 to 39, 15% body fat is healthy (8 to 19.9%) and 30% is very high (25% or more) (Gallagher et al., 2000).",
+   "number": "2000",
+   "value": 2000.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Scenario 3: Similar BMI, Very Different Health",
+   "row": {
+    "status": "row",
+    "domain": "gallagher-2000-bf-ranges",
+    "how": "link"
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "Sources: CDC, About BMI; CDC, adult categories; NIH reads the waist alongside BMI (NHLBI, 1998); Gallagher et al., 2000; Provencher et al., 2018; Global BMI Mortality Collaboration, 2016.",
+   "number": "1998",
+   "value": 1998.0,
+   "class": "C",
+   "why": "year",
+   "heading": "BMI Strengths",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/about/index.html",
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/",
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/",
+    "https://doi.org/10.1519/JSC.0000000000002449",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "Sources: CDC, About BMI; CDC, adult categories; NIH reads the waist alongside BMI (NHLBI, 1998); Gallagher et al., 2000; Provencher et al., 2018; Global BMI Mortality Collaboration, 2016.",
+   "number": "2000",
+   "value": 2000.0,
+   "class": "C",
+   "why": "year",
+   "heading": "BMI Strengths",
+   "row": {
+    "status": "row",
+    "domain": "gallagher-2000-bf-ranges",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/about/index.html",
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/",
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/",
+    "https://doi.org/10.1519/JSC.0000000000002449",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "Sources: CDC, About BMI; CDC, adult categories; NIH reads the waist alongside BMI (NHLBI, 1998); Gallagher et al., 2000; Provencher et al., 2018; Global BMI Mortality Collaboration, 2016.",
+   "number": "2018",
+   "value": 2018.0,
+   "class": "C",
+   "why": "year",
+   "heading": "BMI Strengths",
+   "row": {
+    "status": "row",
+    "domain": "provencher-2018-nfl-combine",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/about/index.html",
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/",
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/",
+    "https://doi.org/10.1519/JSC.0000000000002449",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "Sources: CDC, About BMI; CDC, adult categories; NIH reads the waist alongside BMI (NHLBI, 1998); Gallagher et al., 2000; Provencher et al., 2018; Global BMI Mortality Collaboration, 2016.",
+   "number": "2016",
+   "value": 2016.0,
+   "class": "C",
+   "why": "year",
+   "heading": "BMI Strengths",
+   "row": {
+    "status": "row",
+    "domain": "gallagher-2000-bf-ranges",
+    "how": "link"
+   },
+   "links": [
+    "https://www.cdc.gov/bmi/about/index.html",
+    "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/",
+    "https://pubmed.ncbi.nlm.nih.gov/10966886/",
+    "https://doi.org/10.1519/JSC.0000000000002449",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995441/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "In a study of 437 college students that tested seven methods against DXA, seven-site skinfolds read 1.4 points below DXA on average and a hand-held impedance device was 4.9 points off (Burns et al., 2019); our guide to how to measure body fat has the rest.",
+   "number": "437",
+   "value": 437.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Body Fat Percentage Accuracy",
+   "row": {
+    "status": "row-notes",
+    "domain": "body-fat-method-validation",
+    "how": "link"
+   },
+   "links": [
+    "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214029",
     "http://localhost:8765/blog/how-to-measure-body-fat/"
    ]
   },
   {
    "page": "/blog/body-fat-vs-bmi/",
    "region": "main",
-   "sentence": "You're athletic or muscular, making specific body composition goals, older (65+), or want the most accurate individual health assessment.",
-   "number": "65",
-   "value": 65.0,
+   "sentence": "In a study of 437 college students that tested seven methods against DXA, seven-site skinfolds read 1.4 points below DXA on average and a hand-held impedance device was 4.9 points off (Burns et al., 2019); our guide to how to measure body fat has the rest.",
+   "number": "seven",
+   "value": 7,
    "class": "D",
-   "why": "an age group in a list of situations (CMB-037; was \"an age threshold with no source\") (manual.json)",
-   "heading": "Use Body Fat % When:"
+   "why": "number word (count in prose)",
+   "heading": "Body Fat Percentage Accuracy",
+   "links": [
+    "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214029",
+    "http://localhost:8765/blog/how-to-measure-body-fat/"
+   ]
   },
   {
    "page": "/blog/body-fat-vs-bmi/",
    "region": "main",
-   "sentence": "Waist circumference: Men should aim for < 40 inches; women < 35 inches",
+   "sentence": "In a study of 437 college students that tested seven methods against DXA, seven-site skinfolds read 1.4 points below DXA on average and a hand-held impedance device was 4.9 points off (Burns et al., 2019); our guide to how to measure body fat has the rest.",
+   "number": "seven",
+   "value": 7,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Body Fat Percentage Accuracy",
+   "links": [
+    "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214029",
+    "http://localhost:8765/blog/how-to-measure-body-fat/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "In a study of 437 college students that tested seven methods against DXA, seven-site skinfolds read 1.4 points below DXA on average and a hand-held impedance device was 4.9 points off (Burns et al., 2019); our guide to how to measure body fat has the rest.",
+   "number": "1.4",
+   "value": 1.4,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Body Fat Percentage Accuracy",
+   "row": {
+    "status": "row-notes",
+    "domain": "body-fat-method-validation",
+    "how": "link"
+   },
+   "links": [
+    "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214029",
+    "http://localhost:8765/blog/how-to-measure-body-fat/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "In a study of 437 college students that tested seven methods against DXA, seven-site skinfolds read 1.4 points below DXA on average and a hand-held impedance device was 4.9 points off (Burns et al., 2019); our guide to how to measure body fat has the rest.",
+   "number": "4.9",
+   "value": 4.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Body Fat Percentage Accuracy",
+   "row": {
+    "status": "row-notes",
+    "domain": "body-fat-method-validation",
+    "how": "link"
+   },
+   "links": [
+    "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214029",
+    "http://localhost:8765/blog/how-to-measure-body-fat/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "In a study of 437 college students that tested seven methods against DXA, seven-site skinfolds read 1.4 points below DXA on average and a hand-held impedance device was 4.9 points off (Burns et al., 2019); our guide to how to measure body fat has the rest.",
+   "number": "2019",
+   "value": 2019.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Body Fat Percentage Accuracy",
+   "row": {
+    "status": "row",
+    "domain": "body-fat-method-validation",
+    "how": "link"
+   },
+   "links": [
+    "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214029",
+    "http://localhost:8765/blog/how-to-measure-body-fat/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "You’re very muscular, tracking body composition, or 65 or older, an age at which NICE advises caution in reading BMI (NICE NG246).",
+   "number": "65",
+   "value": 65.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Use Body Fat % When:",
+   "row": {
+    "status": "row-notes",
+    "domain": "nice-ng246-ethnicity-thresholds",
+    "how": "link"
+   },
+   "links": [
+    "https://www.nice.org.uk/guidance/ng246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "NIH also reads the waist alongside BMI from 25 to 34.9 (NHLBI, 1998).",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Use Both When:",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "NIH also reads the waist alongside BMI from 25 to 34.9 (NHLBI, 1998).",
+   "number": "34.9",
+   "value": 34.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Use Both When:",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "NIH also reads the waist alongside BMI from 25 to 34.9 (NHLBI, 1998).",
+   "number": "1998",
+   "value": 1998.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Use Both When:",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "link"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "When the two disagree, the scenarios above show why.",
+   "number": "two",
+   "value": 2,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Using Both Metrics Together"
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "Waist circumference: NIH marks higher risk above 40 in (102 cm) for men and 35 in (88 cm) for women, at a BMI of 25 to 34.9 (NHLBI, 1998)",
    "number": "40",
    "value": 40.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Using Both Metrics Together: A Comprehensive Approach",
+   "heading": "Using Both Metrics Together",
    "row": {
     "status": "row",
     "domain": "nhlbi-1998-obesity-guidelines",
     "how": "manual.json"
-   }
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
   },
   {
    "page": "/blog/body-fat-vs-bmi/",
    "region": "main",
-   "sentence": "Waist circumference: Men should aim for < 40 inches; women < 35 inches",
-   "number": "35",
-   "value": 35.0,
+   "sentence": "Waist circumference: NIH marks higher risk above 40 in (102 cm) for men and 35 in (88 cm) for women, at a BMI of 25 to 34.9 (NHLBI, 1998)",
+   "number": "102",
+   "value": 102.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Using Both Metrics Together: A Comprehensive Approach",
+   "heading": "Using Both Metrics Together",
    "row": {
     "status": "row",
     "domain": "nhlbi-1998-obesity-guidelines",
     "how": "manual.json"
-   }
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "Waist circumference: NIH marks higher risk above 40 in (102 cm) for men and 35 in (88 cm) for women, at a BMI of 25 to 34.9 (NHLBI, 1998)",
+   "number": "35",
+   "value": 35.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Using Both Metrics Together",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "Waist circumference: NIH marks higher risk above 40 in (102 cm) for men and 35 in (88 cm) for women, at a BMI of 25 to 34.9 (NHLBI, 1998)",
+   "number": "88",
+   "value": 88.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Using Both Metrics Together",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "Waist circumference: NIH marks higher risk above 40 in (102 cm) for men and 35 in (88 cm) for women, at a BMI of 25 to 34.9 (NHLBI, 1998)",
+   "number": "25",
+   "value": 25.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Using Both Metrics Together",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "Waist circumference: NIH marks higher risk above 40 in (102 cm) for men and 35 in (88 cm) for women, at a BMI of 25 to 34.9 (NHLBI, 1998)",
+   "number": "34.9",
+   "value": 34.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Using Both Metrics Together",
+   "row": {
+    "status": "row-notes",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "region": "main",
+   "sentence": "Waist circumference: NIH marks higher risk above 40 in (102 cm) for men and 35 in (88 cm) for women, at a BMI of 25 to 34.9 (NHLBI, 1998)",
+   "number": "1998",
+   "value": 1998.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Using Both Metrics Together",
+   "row": {
+    "status": "row",
+    "domain": "nhlbi-1998-obesity-guidelines",
+    "how": "manual.json"
+   },
+   "links": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK2003/"
+   ]
   },
   {
    "page": "/blog/body-fat-vs-bmi/",
@@ -83385,7 +84129,7 @@
    "value": 0.5,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "Using Both Metrics Together: A Comprehensive Approach",
+   "heading": "Using Both Metrics Together",
    "row": {
     "status": "row-notes",
     "domain": "nice-ng246-ethnicity-thresholds",

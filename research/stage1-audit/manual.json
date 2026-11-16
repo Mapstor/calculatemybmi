@@ -1681,27 +1681,6 @@
   },
   {
    "page": "/blog/body-fat-vs-bmi/",
-   "sig": "You're athletic or muscular, making specific body composition goals, older (#+), or want the most accurate individual health assessment.",
-   "classes": "D",
-   "why": "an age group in a list of situations (CMB-037; was \"an age threshold with no source\")"
-  },
-  {
-   "page": "/blog/body-fat-vs-bmi/",
-   "sig": "Both individuals have the same BMI (# - \"overweight\"), but Person A has healthy body fat while Person B has excess fat.",
-   "classes": "B",
-   "why": "the category of BMI 26",
-   "checks": [
-    {
-     "target": 1,
-     "kind": "catname",
-     "expr": "__A.cat($1)",
-     "text": "overweight",
-     "label": "category of that BMI (getBMICategory)"
-    }
-   ]
-  },
-  {
-   "page": "/blog/body-fat-vs-bmi/",
    "sig": "Person A (BMI #)",
    "classes": "D",
    "why": "an illustration (two hypothetical people)",
@@ -1720,14 +1699,6 @@
    "classes": "D",
    "why": "an illustration (two hypothetical people)",
    "exact": true
-  },
-  {
-   "page": "/blog/body-fat-vs-bmi/",
-   "sig": "#%",
-   "classes": "D",
-   "why": "an illustration (two hypothetical people)",
-   "exact": true,
-   "value": 30
   },
   {
    "page": "/blog/bmi-tracking-guide/",
@@ -3217,6 +3188,45 @@
    "classes": "C",
    "row": "winter-2014-bmi-mortality-65",
    "why": "a heading: the meta-analysis of people aged 65 and over, Winter 2014 (CMB-059)"
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "sig": "Both have a BMI of #, overweight.",
+   "classes": "B",
+   "why": "the category of BMI 26 (CMB-061)",
+   "checks": [
+    {
+     "target": 1,
+     "kind": "catname",
+     "expr": "__A.cat($1)",
+     "text": "overweight",
+     "label": "category of that BMI (getBMICategory)"
+    }
+   ]
+  },
+  {
+   "page": "/blog/body-fat-vs-bmi/",
+   "sig": "On the provisional ranges for men aged # to #, #% body fat is healthy (# to #%) and #% is very high (#% or more) (Gallagher et al., #).",
+   "classes": [
+    "-",
+    "-",
+    "D",
+    "-",
+    "B",
+    "D",
+    "-",
+    "-"
+   ],
+   "why": "two hypothetical men (15% and 30%); 19.9 is just under the 20% where Gallagher's Table 4 puts BMI 25 for men aged 20 to 39 (CMB-061)",
+   "checks": [
+    {
+     "target": 5,
+     "kind": "num",
+     "expr": "20 - 0.1",
+     "label": "just under Table 4's 20% (men 20-39, BMI 25)",
+     "dec": 1
+    }
+   ]
   }
  ]
 }

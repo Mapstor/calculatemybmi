@@ -802,3 +802,7 @@ button.cta-button { border: 0; cursor: pointer; }
 .whtr .form-hint { margin: 0.5rem 0 0; }
 .whtr .er-table + .er-note { margin-top: 0.75rem; }
 .whtr .nw { white-space: nowrap; }
+
+/* CMB-061 — /blog/body-fat-vs-bmi/ (DESIGN.md "Old guides (CMB-040)"): the two-person bars (.chart-compare-row) stack on
+   phones, the label above its bars, so "15% Body Fat" stays inside its bar; an empty mirror bar is decoration and hides. */
+@media (max-width: 600px) { .chart-compare-row { grid-template-columns: 1fr; gap: 0.5rem; } .chart-compare-label { order: -1; text-align: left; } .chart-compare-bar.right:empty { display: none; } }
