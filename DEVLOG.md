@@ -2,14 +2,14 @@
 > Handoff file. Read §0–§5 and the last 10 entries of §6 before any work. Rules: devlog skill (.claude/skills/devlog/SKILL.md).
 
 ## §0 Resume here
-- Scores: S 38/40 | P 40/40 | D 40/40 | all three 38/40 (2026-11-14 to 2026-11-16)
-_last update: 2026-11-16 · CMB-056 CLAIMS-9_
-- Phase: the scores run (D-26) has gone as far as chat can take it: all three scores pass on 38 of 40 pages (full run 2026-11-14); the two S fails are Gallagher 2000 on the women's and men's pages (wait on the paper). Now the claims pass (§5 P1): batches 1 to 8 (CMB-048 the calculators' own words, CMB-049 `/blog/underweight-bmi-risks/`, CMB-050 `/blog/how-to-lower-bmi/`, CMB-051 `/blog/bmi-and-health-risks/`, CMB-052 `/blog/bmi-and-metabolism/`, CMB-053 `/about/`, CMB-054 `/blog/bmi-categories/`, CMB-055 `/blog/bmi-limitations/`) live; batch 9 (CMB-056, `/blog/waist-to-height-ratio/`) done on its branch.
-- Last confirmed: CMB-055 CLAIMS-8 — live: PR #31 merged (merge commit 42fb1d1, 13:23:00 UTC); Vercel Production for 42fb1d1 completed 13:23:08 UTC (2026-11-16); live check (chat, Chrome, 2026-11-16): `/blog/bmi-limitations/` and `sitemap.xml` on calculatemybmi.net hash the same as the merged repo (ca67f084…, d705d470…), the two-column table live, no overflow at desktop width; `date_truth.py` exit 0 (40/40) on main after the merge. CMB-054 live (55deaa0, PR #30). Earlier live checks: their §6 entries.
+- Scores: S 40/40 | P 40/40 | D 40/40 | all three 40/40 (2026-11-14 to 2026-11-16)
+_last update: 2026-11-16 · CMB-057 D28-GALLAGHER_
+- Phase: the scores run (D-26) is complete: all three scores pass on 40 of 40 pages since CMB-057 checked Gallagher 2000 against the paper's own Table 4 (full run 2026-11-14; the changed pages re-run 2026-11-16). Now the claims pass (§5 P1): batches 1 to 9 (CMB-048 the calculators' own words, CMB-049 `/blog/underweight-bmi-risks/`, CMB-050 `/blog/how-to-lower-bmi/`, CMB-051 `/blog/bmi-and-health-risks/`, CMB-052 `/blog/bmi-and-metabolism/`, CMB-053 `/about/`, CMB-054 `/blog/bmi-categories/`, CMB-055 `/blog/bmi-limitations/`, CMB-056 `/blog/waist-to-height-ratio/`) live; CMB-057 (the two owner items: the D-28 title and H1, and Gallagher) done on its branch.
+- Last confirmed: CMB-056 CLAIMS-9 — live: PR #32 merged (merge commit b326ca6, 13:32:02 UTC); Vercel Production for b326ca6 completed 13:32:09 UTC (2026-11-16); live check (chat, Chrome, 2026-11-16): `/blog/waist-to-height-ratio/` and `sitemap.xml` on calculatemybmi.net hash the same as the merged repo (55424d2e…, 88d7ae96…); `date_truth.py` exit 0 (40/40) on main after the merge. CMB-055 live (42fb1d1, PR #31). Earlier live checks: their §6 entries.
 - Traffic (Search Console, read by chat 2026-11-06; read it again only after asking, D-28): 27 of 40 pages had impressions. None in 56 days, so the only pages whose title and H1 are free under D-28: `/average-weight/`, `/body-fat-calculator/`, `/body-fat-percentage-chart/`, `/us-obesity-statistics/`, `/blog/bmi-chart-men/`, `/obesity-rate-by-state/`, `/childhood-obesity-statistics/`, `/blog/bmi-by-age/`, `/blog/waist-to-height-ratio/`, `/blog/bmi-chart-explained/`, `/blog/bmi-history/`, `/blog/bmi-and-health-risks/`, `/blog/bmi-and-metabolism/`.
-- In flight (handed, NOT confirmed): CMB-056 CLAIMS-9 — done on `claude/cmb-056`, PR #32, checked on the preview; chat merges by D-24 (merge commit), then confirms Production and the live page, recorded in the next batch's DEVLOG step. Merged `claude/` branches stay on GitHub (Marko, 2026-11-13); at the run's finishing line chat lists the ones safe to delete.
-- Next action: claims pass batch 10 (§5 P1) down `research/claims-pass/probe-2026-11-14.txt` (88 hits after CMB-056; `/terms/` is out of scope): `/blog/bmi-history/` 8, then `/lean-body-mass/`, `/blog/bmi-chart-explained/`, `/blog/body-fat-vs-bmi/` and `/blog/bmi-tracking-guide/` 7 each.
-- Waiting on owner: Search Console only after asking (Browser 1's Google account has no access to the property); after Google recrawls, the image-thumbnail report for the fifteen D-14 pages. Marko, 2026-11-13: no Request indexing for `/body-fat-percentage-chart/` and no chart-image licence for now (both stay as they are); merged `claude/` branches are kept, chat lists the safe-to-delete ones at the finishing line (Marko, 2026-11-14: delete them only then). D-28 ask: `/blog/underweight-bmi-risks/` keeps "Causes & Solutions" in its title and H1, but under D-01 the page now ends in sourced help lines, not treatment: OK to change "Solutions" to "When to Get Help"? Gallagher 2000 (Am J Clin Nutr 2000;72:694–701): its own table is behind OUP's Cloudflare bot check (not passed, 2026-11-14) and Europe PMC has the abstract only; a PDF Marko saves into the repo or attaches lets chat check the women's and men's pages' ranges against it. Marko allows PubMed reads (2026-11-13): approve WebFetch's prompt when it asks. CDC's twelve 2011–2018 DXA files arrived 2026-11-13 and stay out of the repo (registry `nhanes-2011-2018-dxa` has the URL pattern).
+- In flight (handed, NOT confirmed): CMB-057 D28-GALLAGHER — done on `claude/cmb-057`, PR #33, checked on the preview; chat merges by D-24 (merge commit), then confirms Production and the live pages, recorded in the next batch's DEVLOG step. Merged `claude/` branches stay on GitHub (Marko, 2026-11-13); at the run's finishing line chat lists the ones safe to delete.
+- Next action: CMB-058, a waist-to-height ratio calculator on `/blog/waist-to-height-ratio/` (Marko, 2026-11-16: "do build that calculator"; the §5 P1 item: the title says "Calculator" and the page has none). Then claims pass batch 10 (§5 P1) down `research/claims-pass/probe-2026-11-14.txt` (88 hits; `/terms/` is out of scope): `/blog/bmi-history/` 8, then `/lean-body-mass/`, `/blog/bmi-chart-explained/`, `/blog/body-fat-vs-bmi/` and `/blog/bmi-tracking-guide/` 7 each.
+- Waiting on owner: Search Console only after asking (Browser 1's Google account has no access to the property); after Google recrawls, the image-thumbnail report for the fifteen D-14 pages. Marko, 2026-11-13: no Request indexing for `/body-fat-percentage-chart/` and no chart-image licence for now (both stay as they are); merged `claude/` branches are kept, chat lists the safe-to-delete ones at the finishing line (Marko, 2026-11-14: delete them only then). Marko allows PubMed reads (2026-11-13): approve WebFetch's prompt when it asks. CDC's twelve 2011–2018 DXA files arrived 2026-11-13 and stay out of the repo (registry `nhanes-2011-2018-dxa` has the URL pattern).
 - Open questions: does any other site's chat request indexing on the same Google account?
 
 ## §1 Site card
@@ -177,7 +177,6 @@ _last update: 2026-11-16 · CMB-056 CLAIMS-9_
   - 7 pages have no ledger volume (run a KWP check before their rebuild): `/blog/what-is-bmi/`, `/blog/bmi-history/`, `/blog/bmi-and-health-risks/`, `/blog/underweight-bmi-risks/`, `/blog/bmi-chart-explained/`, `/calculators/`, `/blog/`. The `/new-bmi-calculator/` CSV is back (KWP-2026-11-06 rows in the ledger, CMB-024). Demand: new bmi calculator 1,000 a month.
 - [P2] Old guides still carry unsourced or prescriptive lines the gate cannot judge: the claims pass (P1 above) takes them page by page (the underweight risk bars went in CMB-049, the health-risks dot matrix in CMB-051).
 - [P2] Preferred images and own OG images for the other 25 pages come with their D-14 rebuilds. Nine pages use the generic `og-image.png` logo card: `/about/`, `/blog/`, `/calculators/`, `/contact/`, `/privacy/`, `/terms/`, `/blog/bmi-by-age/`, `/blog/how-to-lower-bmi/`, `/blog/bmi-and-metabolism/` (CMB-042: its TDEE image drew overlapping arcs and a share no row holds). `research/cmb-042/og_images.py` redraws a phase-13 image from its page's figure (90 px band #0d5567, the figure fit to 1080 × 480, wordmark #94a3b8); check the other twelve against their pages when those pages change.
-- [P2] Gallagher 2000 provisional body-fat ranges (women's and men's pages): re-check against the paper's own table. Out of reach so far: PMC reCAPTCHA, ScienceDirect robots.txt and a Semantic Scholar error (CMB-016); OUP's Cloudflare bot check, not passed, and Europe PMC's abstract-only record (CMB-046). The figures ship via the `gallagher-2000-bf-ranges` registry tabulation (J Public Health Afr 2016, Table 1). Waits on the PDF (§0).
 - [P2] Data-sourcing check (`scripts/check_sources.py`, data-sourcing skill): 16 page-map rows fail on a free-text `data_source`: the planned pages `average-height`, `army-body-fat-calculator`, `navy-body-fat-calculator`, `ffmi-calculator`, `growth-chart-calculator`, `weight-loss-percentage-calculator`, `blog/visceral-fat`; `lean-body-mass`, `blog`; and seven old guides (`bmi-by-age`, `bmi-formula`, `bmi-history`, `bmi-chart-explained`, `body-fat-vs-bmi`, `bmi-for-athletes`, `bmi-tracking-guide`). Each gets its main registry domain in its claims-pass batch or rebuild (CMB-047 to CMB-056 did `men-bmi-calculator`, `calculators`, `blog/underweight-bmi-risks`, `blog/how-to-lower-bmi`, `blog/bmi-and-health-risks`, `blog/bmi-and-metabolism`, `blog/bmi-categories`, `blog/bmi-limitations` and `blog/waist-to-height-ratio`).
 - [P2] Impeccable design candidates (owner decides, project chat implements in `styles.css` sitewide — never per page): 12 px scale labels; amber callout headings `#854d0e` instead of `#ca8a04`.
 - [P3] Homepage `<title>` is 68 chars (truncated in SERP) — decide with Search Console's data (D-19; chat's 2026-11-06 readout in §0).
@@ -713,6 +712,69 @@ _last update: 2026-11-16 · CMB-056 CLAIMS-9_
 - Notes:
   - The CMB-055 live check is in §0.
   - Chrome refused JavaScript on the new preview domain again, then ran it once Marko was asked to allow it.
+
+### 2026-11-16 · CMB-057 D28-GALLAGHER · chat · done
+- What: the two open owner items from §0, on `claude/cmb-057`.
+  - D-28: `/blog/underweight-bmi-risks/` title, og and twitter titles, Article headline and H1 now end "Causes & When to Get Help" (was "Solutions"). Marko approved, 2026-11-16 ("ok fix this"). URL and body kept.
+  - Gallagher 2000: the AJCN full text (`https://ajcn.nutrition.org/article/S0002-9165(23)06760-6/fulltext`) opened in Claude in Chrome. Read: the abstract, Tables 3 to 5 and their captions.
+    - Table 3 is by ethnic group, Table 4 combines African Americans and whites (Equation 5), Table 5 is Asians.
+    - The site's cut-offs are Table 4's: all 18 cells match. No number changes.
+    - The abstract's own word for them is "provisional".
+    - The IJMS figures that had cast doubt (men 20–39 8.0–20.9%, women 60+ 25.0–37.9%) are Table 3's white column, not Table 4.
+  - Pages now cite the paper's Table 4, not the J Public Health Afr 2016 secondary; its link is gone.
+    - `/body-fat-percentage-chart/`: two source lines, one paragraph, the sources list and the JSON-LD citation.
+    - `/body-fat-calculator/`: the source line and the sources list.
+    - `/blog/how-to-measure-body-fat/`: the sources list.
+  - "The original study gives different values for each of its three ethnic groups" hid that the ranges shown are the study's own Table 4. The two table source lines now say: Table 4, for African American and white adults; Table 5 gives separate values for Asian adults, higher at ages 20 to 59.
+    - Asian values are higher in all 12 cells at 20 to 59, but not at 60 to 79: women 36 vs 36 at BMI 25 and 41 vs 42 at 30; men 24 vs 25 and 29 vs 30.
+  - Registry row `gallagher-2000-bf-ranges`:
+    - source, endpoint (AJCN full text), attribution, coverage (Tables 4 and 5), sample note, verified 2026-11-16;
+    - `blog/body-fat-vs-bmi` joins `pages_served` (it cites the paper).
+  - `research/page-scores-known.csv`: the two open S items go, so S is now 40/40.
+  - dateModified and lastmod are updated on all four pages.
+- Files:
+  - `research/cmb-057/`: `apply.py` (D-28), then `gallagher.py`; run them in that order from main.
+  - `blog/underweight-bmi-risks/index.html`
+  - `body-fat-percentage-chart/index.html`
+  - `body-fat-calculator/index.html`
+  - `blog/how-to-measure-body-fat/index.html`
+  - `sitemap.xml`
+  - `research/data-sources.csv`
+  - `research/page-scores-known.csv` and `research/page-scores.csv`
+  - `research/how-to-measure-body-fat-build/htm_test_playwright.py`: the expected outside-link count is now 16, not 17.
+- Verified:
+  - Page scores, the six affected pages re-run: S 40/40, P 40/40, D 40/40.
+  - Page tests:
+    - how to measure: 348 checks, 0 failures (it failed at 17 outside links until the count was updated);
+    - chart and calculator: pass.
+  - Gates:
+    - `check_structure.py`: 40/40.
+    - `check_markup`: 0 on the four pages.
+    - integrity: clean.
+    - images: 0.
+    - `research/f1/verify.py`: clean.
+    - `check_sources.py`: 16, unchanged.
+    - `check_ledger.py`: OK.
+  - Claims probe: 88 hits on 20 pages, unchanged.
+  - Stage 1 audit, the underweight page: 0/0/0. The three body fat pages are outside the audit's 24; their page tests score them.
+  - Probes:
+    - UI and text: only the how-to-measure page's known false hits (the product name "DietPack"; four instruction lines read as calls to action).
+    - Box: none.
+  - `date_truth.py`: exit 0, 40/40 on the branch.
+  - `residue_scan.py`: clean.
+  - Preview, Chrome, 2026-11-16:
+    - The four pages and `sitemap.xml` hash the same as the branch (8ffdf5a4…, 55b3c4b0…, 4e332c35…, d525503d…, 3c6df32f…).
+    - New title and H1 live on the preview.
+    - The new H1 wraps to the same line count as the old one at 1280, 390, 360 and 320 (3, 5, 5 and 6).
+    - No page-level overflow at 1280 or 390 on the four pages; the only wide elements are the TOC chips inside their scroller.
+    - The new source line sits inside the screen at both widths, and a 390 screenshot of the chart page's source line reads cleanly.
+  - Anti-slop on the new sentences: 0 fixes.
+  - Unverified: touch and iPhone Safari (D-25).
+- Commit: 065e8ed, fe7c14e and this DEVLOG commit on `claude/cmb-057`, PR #33 (only the branch is pushed). Chat merges by D-24 next.
+- Notes:
+  - The CMB-056 live check is in §0.
+  - The paper's DOI still lands on ScienceDirect's bot check, which was not attempted. The AJCN site served the full text, tables included.
+  - WebFetch's request for the AJCN page went unanswered, so the pages keep the PubMed link. Table 4 is named in the text.
 
 ## §7 History & archive
 - 2026-02 · Initial commit of BMI calculator site; GA4 + webmaster verification added (78f9434, 92b3baa).
