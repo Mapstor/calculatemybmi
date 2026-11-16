@@ -12,15 +12,6 @@
        <p> (effective) Any changes will be effective immediately upon posting the updated Terms on this page, with the "Last Updated" date revised accordingly.
        <p> (cause) Any cause of action or claim you may have arising out of or relating to these Terms or the Site must be commenced within one (1) year after the cause of action accrues.
        <p> (cause) Otherwise, such cause of action or claim is permanently barred.
-  8  /blog/bmi-history/
-       <p> (clinicians) Despite its widespread adoption, BMI has faced growing criticism from researchers, clinicians, and public health advocates.
-       <p> (lead to) The move toward personalized medicine may eventually lead to individually-calibrated health metrics that account for genetics, ethnicity, age, sex, and medical history.
-       <p> (recommended) In 1985 an NIH consensus conference recommended wider use of BMI.
-       <p> (recommends) The medical community increasingly recommends using BMI alongside other measures rather than replacing it entirely.
-       <p> (improvement) He argues that the standard BMI makes short people think they are thinner, and tall people fatter, than they are; he also writes that his formula is not based on epidemiological studies and may not be an improvement.
-       <p> (consult) Always consult a qualified healthcare provider for personalized health assessment and recommendations.
-       <li> (Expert) WHO Expert Consultation.
-       <li> (Expert) WHO Expert Consultation.
   7  /lean-body-mass/
        <p> (clinicians) Some clinicians express protein needs relative to lean mass rather than total weight.
        <p> (clinician) How much you need depends on age, size, health and activity, so targets are best set with a clinician or registered dietitian.
@@ -93,6 +84,9 @@
   2  /blog/what-is-bmi/
        <li> (doctors) How doctors use BMI
        <h2> (doctors) How doctors use BMI
+  2  /blog/bmi-history/
+       <li> (Expert) WHO Expert Committee.
+       <li> (Expert) WHO Expert Consultation.
   2  /blog/bmi-for-athletes/
        <li> (studies show) What the studies show
        <h2> (studies show) What the studies show
@@ -106,4 +100,4 @@
        <li> (lead to) Muscle mass tends to fall with age, so the same BMI can mean more body fat; the American Diabetes Association notes that this may lead to obesity being missed in older adults.
   1  /kids-bmi-calculator/
        <p> (shown to) BMI is CDC’s formula (US units × 703, or kg/m²), shown to 0.1.
-88 hits on 20 of 40 pages
+82 hits on 20 of 40 pages

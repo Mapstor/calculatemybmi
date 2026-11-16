@@ -329,51 +329,9 @@
  "/blog/bmi-formula/": [],
  "/blog/bmi-history/": [
   {
-   "tag": "p",
-   "trigger": "clinicians",
-   "sentence": "Despite its widespread adoption, BMI has faced growing criticism from researchers, clinicians, and public health advocates.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "lead to",
-   "sentence": "The move toward personalized medicine may eventually lead to individually-calibrated health metrics that account for genetics, ethnicity, age, sex, and medical history.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "recommended",
-   "sentence": "In 1985 an NIH consensus conference recommended wider use of BMI.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "recommends",
-   "sentence": "The medical community increasingly recommends using BMI alongside other measures rather than replacing it entirely.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "improvement",
-   "sentence": "He argues that the standard BMI makes short people think they are thinner, and tall people fatter, than they are; he also writes that his formula is not based on epidemiological studies and may not be an improvement.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
-   "tag": "p",
-   "trigger": "consult",
-   "sentence": "Always consult a qualified healthcare provider for personalized health assessment and recommendations.",
-   "sourced": false,
-   "block_sourced": false
-  },
-  {
    "tag": "li",
    "trigger": "Expert",
-   "sentence": "WHO Expert Consultation.",
+   "sentence": "WHO Expert Committee.",
    "sourced": false,
    "block_sourced": false
   },
