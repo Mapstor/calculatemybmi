@@ -4,13 +4,13 @@
  "viewport": "390x844",
  "pages_audited": 24,
  "pages_skipped": [],
- "numbers": 5389,
+ "numbers": 5392,
  "totals": {
   "A": 47,
   "B": 1667,
-  "C": 2782,
-  "D": 703,
-  "X": 190,
+  "C": 2790,
+  "D": 702,
+  "X": 186,
   "U": 0
  },
  "mismatches": 0,
@@ -19,16 +19,16 @@
  "c_not_in_row_in_page_csv": 0,
  "c_not_in_row_also_in_other_row": 0,
  "c_status": {
-  "row": 1490,
-  "row-notes": 362,
+  "row": 1495,
+  "row-notes": 365,
   "not-in-row": 28,
   "row-dataset": 902
  },
  "checks_run": 1143,
  "check_errors": [],
  "unclassified": [],
- "manual_entries": 253,
- "manual_entries_used": 250,
+ "manual_entries": 252,
+ "manual_entries_used": 249,
  "worst10": [
   {
    "page": "/kids-bmi-calculator/",
@@ -4479,19 +4479,14 @@
      "sentence": "178.4"
     },
     {
-     "number": "5",
-     "why": "a label (an example's loss step) (manual.json)",
-     "sentence": "5% Loss"
+     "number": "seven",
+     "why": "number word (count in prose)",
+     "sentence": "Body fat percentage measures what BMI can’t, but methods differ: in a study of 437 college students, seven-site skinfolds read 1.4 points below DXA on average and a hand-held impedance device was 4.9 points off (Burns et al., 2019)."
     },
     {
-     "number": "10",
-     "why": "a label (an example's loss step) (manual.json)",
-     "sentence": "10% Loss"
-    },
-    {
-     "number": "15",
-     "why": "a label (an example's loss step) (manual.json)",
-     "sentence": "15% Loss"
+     "number": "two",
+     "why": "number word (count in prose)",
+     "sentence": "Wing and colleagues measured two, 5% and 10% of body weight (Wing et al., 2011); the table below shows what each does to BMI."
     },
     {
      "number": "2",
@@ -4638,25 +4633,24 @@
    "page_errors": [],
    "score": 0,
    "totals": {
-    "C": 22,
-    "D": 44,
-    "X": 4,
+    "C": 30,
+    "D": 43,
     "B": 34
    },
    "c_rows": {
-    "row": 22
+    "row": 27,
+    "row-notes": 3
    },
    "c_row_domains": {
     "madigan-2015-self-weighing": 3,
-    "orsama-2014-weight-rhythms": 3,
+    "orsama-2014-weight-rhythms": 4,
     "nhlbi-1998-obesity-guidelines": 8,
     "who-2008-waist-hip-ratio": 4,
-    "wing-2011-look-ahead": 3,
+    "body-fat-method-validation": 4,
+    "wing-2011-look-ahead": 6,
     "niddk-body-weight-planner": 1
    },
-   "excluded": {
-    "list numbering (numbered badge)": 4
-   }
+   "excluded": {}
   },
   {
    "page": "/blog/bmi-by-age/",
@@ -91359,6 +91353,24 @@
   {
    "page": "/blog/bmi-tracking-guide/",
    "region": "main",
+   "sentence": "In Orsama and colleagues’ study, weight rose at weekends and fell on weekdays, and the authors call that variation normal rather than a sign of weight gain (Orsama et al., 2014).",
+   "number": "2014",
+   "value": 2014.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Understanding Normal Weight Fluctuations",
+   "row": {
+    "status": "row",
+    "domain": "orsama-2014-weight-rhythms",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5644907/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-tracking-guide/",
+   "region": "main",
    "sentence": "Week 1 Avg",
    "number": "1",
    "value": 1.0,
@@ -91671,72 +91683,159 @@
   {
    "page": "/blog/bmi-tracking-guide/",
    "region": "main",
-   "sentence": "1",
-   "number": "1",
-   "value": 1.0,
-   "class": "X",
-   "why": "list numbering (numbered badge)",
-   "heading": "Setting Effective Milestone Goals"
+   "sentence": "Body fat percentage measures what BMI can’t, but methods differ: in a study of 437 college students, seven-site skinfolds read 1.4 points below DXA on average and a hand-held impedance device was 4.9 points off (Burns et al., 2019).",
+   "number": "437",
+   "value": 437.0,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Body Fat Percentage",
+   "row": {
+    "status": "row-notes",
+    "domain": "body-fat-method-validation",
+    "how": "link"
+   },
+   "links": [
+    "http://localhost:8765/blog/body-fat-vs-bmi/",
+    "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214029"
+   ]
   },
   {
    "page": "/blog/bmi-tracking-guide/",
    "region": "main",
-   "sentence": "5% Loss",
+   "sentence": "Body fat percentage measures what BMI can’t, but methods differ: in a study of 437 college students, seven-site skinfolds read 1.4 points below DXA on average and a hand-held impedance device was 4.9 points off (Burns et al., 2019).",
+   "number": "seven",
+   "value": 7,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Body Fat Percentage",
+   "links": [
+    "http://localhost:8765/blog/body-fat-vs-bmi/",
+    "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214029"
+   ]
+  },
+  {
+   "page": "/blog/bmi-tracking-guide/",
+   "region": "main",
+   "sentence": "Body fat percentage measures what BMI can’t, but methods differ: in a study of 437 college students, seven-site skinfolds read 1.4 points below DXA on average and a hand-held impedance device was 4.9 points off (Burns et al., 2019).",
+   "number": "1.4",
+   "value": 1.4,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Body Fat Percentage",
+   "row": {
+    "status": "row-notes",
+    "domain": "body-fat-method-validation",
+    "how": "link"
+   },
+   "links": [
+    "http://localhost:8765/blog/body-fat-vs-bmi/",
+    "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214029"
+   ]
+  },
+  {
+   "page": "/blog/bmi-tracking-guide/",
+   "region": "main",
+   "sentence": "Body fat percentage measures what BMI can’t, but methods differ: in a study of 437 college students, seven-site skinfolds read 1.4 points below DXA on average and a hand-held impedance device was 4.9 points off (Burns et al., 2019).",
+   "number": "4.9",
+   "value": 4.9,
+   "class": "C",
+   "why": "outside fact (statistic, threshold or study detail)",
+   "heading": "Body Fat Percentage",
+   "row": {
+    "status": "row-notes",
+    "domain": "body-fat-method-validation",
+    "how": "link"
+   },
+   "links": [
+    "http://localhost:8765/blog/body-fat-vs-bmi/",
+    "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214029"
+   ]
+  },
+  {
+   "page": "/blog/bmi-tracking-guide/",
+   "region": "main",
+   "sentence": "Body fat percentage measures what BMI can’t, but methods differ: in a study of 437 college students, seven-site skinfolds read 1.4 points below DXA on average and a hand-held impedance device was 4.9 points off (Burns et al., 2019).",
+   "number": "2019",
+   "value": 2019.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Body Fat Percentage",
+   "row": {
+    "status": "row",
+    "domain": "body-fat-method-validation",
+    "how": "link"
+   },
+   "links": [
+    "http://localhost:8765/blog/body-fat-vs-bmi/",
+    "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214029"
+   ]
+  },
+  {
+   "page": "/blog/bmi-tracking-guide/",
+   "region": "main",
+   "sentence": "Wing and colleagues measured two, 5% and 10% of body weight (Wing et al., 2011); the table below shows what each does to BMI.",
+   "number": "two",
+   "value": 2,
+   "class": "D",
+   "why": "number word (count in prose)",
+   "heading": "Milestones",
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3120182/"
+   ]
+  },
+  {
+   "page": "/blog/bmi-tracking-guide/",
+   "region": "main",
+   "sentence": "Wing and colleagues measured two, 5% and 10% of body weight (Wing et al., 2011); the table below shows what each does to BMI.",
    "number": "5",
    "value": 5.0,
-   "class": "D",
-   "why": "a label (an example's loss step) (manual.json)",
-   "heading": "Setting Effective Milestone Goals"
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Milestones",
+   "row": {
+    "status": "row",
+    "domain": "wing-2011-look-ahead",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3120182/"
+   ]
   },
   {
    "page": "/blog/bmi-tracking-guide/",
    "region": "main",
-   "sentence": "2",
-   "number": "2",
-   "value": 2.0,
-   "class": "X",
-   "why": "list numbering (numbered badge)",
-   "heading": "Setting Effective Milestone Goals"
-  },
-  {
-   "page": "/blog/bmi-tracking-guide/",
-   "region": "main",
-   "sentence": "10% Loss",
+   "sentence": "Wing and colleagues measured two, 5% and 10% of body weight (Wing et al., 2011); the table below shows what each does to BMI.",
    "number": "10",
    "value": 10.0,
-   "class": "D",
-   "why": "a label (an example's loss step) (manual.json)",
-   "heading": "Setting Effective Milestone Goals"
+   "class": "C",
+   "why": "statistic (percent)",
+   "heading": "Milestones",
+   "row": {
+    "status": "row",
+    "domain": "wing-2011-look-ahead",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3120182/"
+   ]
   },
   {
    "page": "/blog/bmi-tracking-guide/",
    "region": "main",
-   "sentence": "3",
-   "number": "3",
-   "value": 3.0,
-   "class": "X",
-   "why": "list numbering (numbered badge)",
-   "heading": "Setting Effective Milestone Goals"
-  },
-  {
-   "page": "/blog/bmi-tracking-guide/",
-   "region": "main",
-   "sentence": "15% Loss",
-   "number": "15",
-   "value": 15.0,
-   "class": "D",
-   "why": "a label (an example's loss step) (manual.json)",
-   "heading": "Setting Effective Milestone Goals"
-  },
-  {
-   "page": "/blog/bmi-tracking-guide/",
-   "region": "main",
-   "sentence": "4",
-   "number": "4",
-   "value": 4.0,
-   "class": "X",
-   "why": "list numbering (numbered badge)",
-   "heading": "Setting Effective Milestone Goals"
+   "sentence": "Wing and colleagues measured two, 5% and 10% of body weight (Wing et al., 2011); the table below shows what each does to BMI.",
+   "number": "2011",
+   "value": 2011.0,
+   "class": "C",
+   "why": "year",
+   "heading": "Milestones",
+   "row": {
+    "status": "row",
+    "domain": "wing-2011-look-ahead",
+    "how": "link"
+   },
+   "links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3120182/"
+   ]
   },
   {
    "page": "/blog/bmi-tracking-guide/",

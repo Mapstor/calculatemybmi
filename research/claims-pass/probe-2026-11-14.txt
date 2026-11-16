@@ -20,14 +20,6 @@
        <p> (recommended) For precise measurements, clinical methods like DEXA scanning, hydrostatic weighing, or air displacement plethysmography are recommended.
        <p> (improves) When people talk about "gaining lean mass," they usually mean increasing skeletal muscle, but technically LBM also increases if bone density improves or hydration levels change.
        <p> (recommend) For further reading on body composition, lean body mass, and health assessment methods, we recommend these authoritative sources:
-  7  /blog/bmi-tracking-guide/
-       <p> (effective) However, effective monitoring requires more than stepping on a scale occasionally.
-       <p> (evidence) Whether you are working toward a healthier weight or maintaining your current BMI, these evidence-based strategies will help you track progress accurately and avoid common pitfalls.
-       <li> (healthcare providers) Medical documentation: A weight history provides valuable data for healthcare providers
-       <p> (causes) Understanding what causes daily fluctuations helps you interpret your data correctly and avoid unnecessary stress.
-       <p> (effectively) Here is how to choose and use tracking tools effectively:
-       <li> (effective) Paper log: Low-tech but effective; keeps tracking simple and private
-       <h2> (Effective) Setting Effective Milestone Goals
   6  /blog/underweight-bmi-risks/
        <li> (Causes) Causes of Being Underweight
        <li> (See a) When to See a Doctor
@@ -84,4 +76,4 @@
        <li> (lead to) Muscle mass tends to fall with age, so the same BMI can mean more body fat; the American Diabetes Association notes that this may lead to obesity being missed in older adults.
   1  /kids-bmi-calculator/
        <p> (shown to) BMI is CDC’s formula (US units × 703, or kg/m²), shown to 0.1.
-68 hits on 18 of 40 pages
+61 hits on 17 of 40 pages
