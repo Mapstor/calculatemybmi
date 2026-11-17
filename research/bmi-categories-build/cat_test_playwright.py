@@ -119,7 +119,8 @@ with sync_playwright() as p:
     ok([f[0] for f in figs] == ['fig-hero-t fig-hero-d', 'fig-asian-t fig-asian-d', 'fig-y98-t fig-y98-d'], f'figures {[f[0] for f in figs]}')
     if len(figs) == 3:
         hero = [t for t in figs[0][1] if t.endswith('%')]
-        ok(hero == [f"{C['all']['all_ages'][k]['pct']}%" for k in KEYS] + ['40.3%'], f'hero values {hero}')
+        ob = round(sum(C['all']['all_ages'][k]['pct'] for k in ('class_1', 'class_2', 'class_3')), 1)
+        ok(hero == [f"{C['all']['all_ages'][k]['pct']}%" for k in KEYS] + [f'Obesity, classes 1–3: {ob}%'], f'hero values {hero}')
         asian = [t for t in figs[1][1] if t.endswith('%')]
         ok(asian == [f"{AS[k]['pct']}%" for k in ('bmi_23_plus', 'bmi_25_plus', 'bmi_27_5_plus', 'bmi_30_plus')], f'asian values {asian}')
         y98 = [t for t in figs[2][1] if t.endswith('%')]

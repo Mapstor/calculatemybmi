@@ -154,68 +154,64 @@ NAMES = {'underweight': ('Underweight', 'BMI under 18.5'), 'healthy': ('Healthy 
          'overweight': ('Overweight', 'BMI 25–29.9'), 'class_1': ('Class 1 obesity', 'BMI 30–34.9'),
          'class_2': ('Class 2 obesity', 'BMI 35–39.9'), 'class_3': ('Class 3 obesity', 'BMI 40 or more')}
 
-# Hero: the six categories, each with its BMI range and the share of US adults in it; the obesity classes bracketed.
-VW, X0, RH, TOP = 680, 200, 46, 10
-BW = 330 / 35                                     # px per percentage point, axis to 35%
+# Hero: the six categories, each with its BMI range and the share of US adults in it; obesity's total under the rows.
+# 320-unit viewBox like the other guides' figures, so 13 px labels stay 13 px or more on a phone.
+VW, RH, TOP = 320, 44, 4
+BW = 200 / 35                                     # px per percentage point, axis to 35%
 hero = []
 for i, k in enumerate(KEYS):
     y = TOP + i * RH
     name, rng = NAMES[k]
-    hero.append(text('hero', 0, y + 18, name, 14, weight=600))
-    hero.append(text('hero', 0, y + 35, rng, 13, fill='#4b5563'))
+    hero.append(text('hero', 0, y + 14, name, 14, weight=600))
+    hero.append(text('hero', tw(name, 14, 600) + 8, y + 14, rng, 13, fill='#4b5563'))
     w = CS[k] * BW
-    hero.append(rect('hero', X0, y + 8, w, 26, COL[k]))
-    hero.append(text('hero', X0 + w + 8, y + 26, f'{CS[k]}%', 14, weight=600))
-yb0, yb1 = TOP + 3 * RH + 8, TOP + 5 * RH + 34
-hero.append(f'<path d="M598 {yb0} h8 V{yb1} h-8" fill="none" stroke="#991b1b" stroke-width="2"/>')
-SHAPES.append(('hero-bracket', 598, yb0, 606, yb1))
-ym = (yb0 + yb1) / 2
-hero.append(text('hero', 614, ym - 4, 'Obesity', 13, weight=600, fill='#991b1b'))
-hero.append(text('hero', 614, ym + 13, f'{OB}%', 13, weight=600, fill='#991b1b'))
-VH = TOP + 6 * RH + 6
+    hero.append(rect('hero', 0, y + 21, w, 16, COL[k]))
+    hero.append(text('hero', w + 6, y + 34, f'{CS[k]}%', 13, weight=600))
+hero.append(text('hero', 0, TOP + 6 * RH + 14, f'Obesity, classes 1–3: {OB}%', 14, weight=600, fill='#991b1b'))
+VH = TOP + 6 * RH + 22
 svg_hero = svg('hero', VW, VH, 'Six adult BMI categories and the share of US adults in each',
                f'Underweight under 18.5: {CS["underweight"]}%. Healthy weight 18.5 to 24.9: {CS["healthy"]}%. Overweight 25 to '
                f'29.9: {CS["overweight"]}%. Class 1 obesity 30 to 34.9: {CS["class_1"]}%. Class 2 obesity 35 to 39.9: '
                f'{CS["class_2"]}%. Class 3 obesity 40 or more: {CS["class_3"]}%. Obesity, all three classes: {OB}%. US adults '
                'aged 20 and over, 2021 to 2023.', ''.join(hero))
 
+
+def legend(fig, items):
+    out = []
+    for i, (lab, col) in enumerate(items):
+        out.append(rect(fig, 0, 4 + i * 20, 12, 12, col))
+        out.append(text(fig, 18, 14 + i * 20, lab, 13))
+    return out
+
+
 # 1998: share at or above the overweight line, old lines (27.8 men, 27.3 women) against today's 25.
-f98 = []
-LEG_Y = 16
-f98.append(rect('y98', 0, LEG_Y - 11, 14, 14, '#94a3b8'))
-f98.append(text('y98', 20, LEG_Y + 1, 'Old lines, before 1998 (27.8 men, 27.3 women)', 13))
-f98.append(rect('y98', 0, LEG_Y + 13, 14, 14, '#b45309'))
-f98.append(text('y98', 20, LEG_Y + 25, 'Today’s line, 25', 13))
-X98, BW98, R98 = 130, 420 / 80, 64
+f98 = legend('y98', (('Before 1998: 27.8 men, 27.3 women', '#94a3b8'), ('Since 1998: 25 for both', '#b45309')))
+BW98, R98, Y98 = 210 / 75, 66, 50
 for i, (g, lab) in enumerate((('all', 'All adults'), ('men', 'Men'), ('women', 'Women'))):
-    y = 58 + i * R98
-    f98.append(text('y98', 0, y + 26, lab, 14, weight=600))
+    y = Y98 + i * R98
+    f98.append(text('y98', 0, y + 14, lab, 14, weight=600))
     for j, (v, col) in enumerate(((OLD[g], '#94a3b8'), (AB25[g], '#b45309'))):
-        yy = y + 6 + j * 24
+        yy = y + 21 + j * 20
         w = v * BW98
-        f98.append(rect('y98', X98, yy, w, 20, col))
-        f98.append(text('y98', X98 + w + 8, yy + 15, f'{v}%', 13, weight=600))
-H98 = 58 + 3 * R98 + 2
+        f98.append(rect('y98', 0, yy, w, 16, col))
+        f98.append(text('y98', w + 6, yy + 13, f'{v}%', 13, weight=600))
+H98 = Y98 + 3 * R98 + 2
 svg_98 = svg('y98', VW, H98, 'US adults at or above the overweight line: before and since 1998',
              f'Share of US adults with a BMI at or above the overweight line. All adults: {OLD["all"]}% at the old lines, '
              f'{AB25["all"]}% at 25. Men: {OLD["men"]}% at 27.8, {AB25["men"]}% at 25. Women: {OLD["women"]}% at 27.3, '
              f'{AB25["women"]}% at 25. 2021 to 2023.', ''.join(f98))
 
 # Asian adults: the standard lines (25, 30) and WHO's lower action points (23, 27.5).
-fas = []
-XA, BWA, RA = 250, 300 / 70, 46
-ROWS_A = [('BMI 23 or more', 'lower line: WHO, NICE, CDC’s DPP', A23, '#b45309'),
-          ('BMI 25 or more', 'standard overweight line', A25, '#475569'),
-          ('BMI 27.5 or more', 'lower line: WHO, NICE', A275, '#b45309'),
-          ('BMI 30 or more', 'standard obesity line', A30, '#475569')]
-for i, (lab, sub, v, col) in enumerate(ROWS_A):
-    y = 10 + i * RA
-    fas.append(text('asian', 0, y + 18, lab, 14, weight=600))
-    fas.append(text('asian', 0, y + 35, sub, 13, fill='#4b5563'))
+fas = legend('asian', (('Lower line (WHO, 2004)', '#b45309'), ('Standard line', '#475569')))
+BWA, RA, YA = 220 / 70, 44, 48
+for i, (lab, v, col) in enumerate((('BMI 23 or more', A23, '#b45309'), ('BMI 25 or more', A25, '#475569'),
+                                   ('BMI 27.5 or more', A275, '#b45309'), ('BMI 30 or more', A30, '#475569'))):
+    y = YA + i * RA
+    fas.append(text('asian', 0, y + 14, lab, 14, weight=600))
     w = v * BWA
-    fas.append(rect('asian', XA, y + 8, w, 26, col))
-    fas.append(text('asian', XA + w + 8, y + 26, f'{v}%', 14, weight=600))
-HA = 10 + 4 * RA + 4
+    fas.append(rect('asian', 0, y + 21, w, 16, col))
+    fas.append(text('asian', w + 6, y + 34, f'{v}%', 13, weight=600))
+HA = YA + 4 * RA + 2
 svg_asian = svg('asian', VW, HA, 'Non-Hispanic Asian US adults at the standard and the lower BMI lines',
                 f'BMI 23 or more: {A23}%. BMI 25 or more: {A25}%. BMI 27.5 or more: {A275}%. BMI 30 or more: {A30}%. '
                 f'{AN} adults, 2021 to 2023.', ''.join(fas))
