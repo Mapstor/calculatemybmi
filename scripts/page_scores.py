@@ -65,6 +65,7 @@ PAGE_TESTS = {
     '/average-weight/': ('research/average-weight-build/aw_test_playwright.py', 'research/average-weight/avgw_results.json'),
     '/body-fat-calculator/': ('research/body-fat-calculator-build/bfcalc_test_playwright.py', 'research/body-fat-calculator-build/bfc_stats.json'),
     '/blog/how-to-measure-body-fat/': ('research/how-to-measure-body-fat-build/htm_test_playwright.py', 'research/how-to-measure-body-fat-build/htm_stats.json'),
+    '/blog/bmi-categories/': ('research/bmi-categories-build/cat_test_playwright.py', 'research/bmi-categories-build/cat_stats.json'),
     '/us-obesity-statistics/': ('research/us-obesity-statistics-build/obs_test_playwright.py', 'research/us-obesity-statistics-build/obs_sources.json'),
     '/new-bmi-calculator/': ('research/new-bmi-build/nb_test_playwright.py', 'research/new-bmi-build/nb_stats.json'),
     '/calculators/': ('research/cmb-027/hub_examples_playwright.py', None),
