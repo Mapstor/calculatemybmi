@@ -81,7 +81,7 @@ with sync_playwright() as p:
                                                     ['Grade 3, severe thinness', 'Under 16.0']], 'thinness grades')
     age = T.get('US adults in each BMI category by age group, 2021–2023', [])
     for row, k in zip(age, KEYS):
-        ok(row[1:] == [f"{C['all'][a][k]['pct']}%" for a in ('20-39', '40-59', '60+', 'all_ages')], f'age row {row} vs {k}')
+        ok(row[1:] == [f"{C['all'][a][k]['pct']}%" for a in ('20-39', '40-59', '60+')], f'age row {row} vs {k}')
     ok(len(age) == 6, f'{len(age)} age rows')
     kids = T.get('BMI categories for children and teens aged 2 to 19', [])
     ok([r[1] for r in kids] == ['Under the 5th', '5th to under the 85th', '85th to under the 95th', '95th or above',
@@ -147,6 +147,9 @@ with sync_playwright() as p:
     ok(art['headline'] == pg.inner_text('h1'), 'Article headline is not the H1')
     ok(not errs, f'JS errors {errs}')
 
+    pg.set_viewport_size({'width': 390, 'height': 900}); pg.goto(URL, wait_until='load'); pg.wait_for_timeout(150)
+    for cap, sw, cw in pg.evaluate("() => [...document.querySelectorAll('main .table-responsive')].map(w => [w.querySelector('caption').textContent, w.scrollWidth, w.clientWidth])"):
+        ok(sw <= cw + 1, f'390px: table scrolls sideways ({sw} > {cw}): {cap}')
     for w in (320, 360, 390, 1280):
         pg.set_viewport_size({'width': w, 'height': 900}); pg.goto(URL, wait_until='load'); pg.wait_for_timeout(150)
         sw = pg.evaluate('document.documentElement.scrollWidth')

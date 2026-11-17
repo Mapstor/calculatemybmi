@@ -338,8 +338,8 @@ sec_cat = (
     '</section>')
 
 st_rows = ''.join(
-    f'<tr><th scope="row">{ft}′{i}″ ({(ft * 12 + i) * 2.54:.1f} cm)</th>'
-    + ''.join(f'<td class="nowrap">≥{ST[(ft, i)][b][0]} lb (≥{ST[(ft, i)][b][1]} kg)</td>' for b in (3, 4, 5)) + '</tr>'
+    f'<tr><th scope="row">{ft}′{i}″<span class="unit-alt">({(ft * 12 + i) * 2.54:.1f} cm)</span></th>'
+    + ''.join(f'<td>≥{ST[(ft, i)][b][0]} lb<span class="unit-alt">(≥{ST[(ft, i)][b][1]} kg)</span></td>' for b in (3, 4, 5)) + '</tr>'
     for ft, i in H5)
 d = DF
 sec_ob = (
@@ -378,8 +378,8 @@ sec_uw = (
     'causes and when to get help.</p>'
     '</section>')
 
-AG = ('20-39', '40-59', '60+', A0)
-age_rows = ''.join(f'<tr><th scope="row">{cat_cell(CLS[k], NAMES[k][0])}</th>'
+AG = ('20-39', '40-59', '60+')                    # all adults: the first table
+age_rows = ''.join(f'<tr><th scope="row">{NAMES[k][0]}</th>'               # no dot: the table fits a 390 phone
                    + ''.join(f'<td class="num">{P("all", a, k)}%</td>' for a in AG) + '</tr>' for k in KEYS)
 sec_wm = (
     '<section id="women-men" class="content-section flow"><h2>The same lines for women, men and every adult age</h2>'
@@ -387,7 +387,7 @@ sec_wm = (
     'height cross each line at the same weight. What changes with age is how many adults sit in each category:</p>'
     '<div class="table-responsive"><table class="data-table"><caption>US adults in each BMI category by age group, '
     '2021–2023</caption><thead><tr><th scope="col">Category</th><th scope="col" class="num">20–39</th><th scope="col" '
-    'class="num">40–59</th><th scope="col" class="num">60+</th><th scope="col" class="num">All adults</th></tr></thead>'
+    'class="num">40–59</th><th scope="col" class="num">60+</th></tr></thead>'
     f'<tbody>{age_rows}</tbody></table></div>'
     f'<p class="source-note">Our calculation from CDC NHANES August 2021–August 2023 ({C["all"]["20-39"]["healthy"]["n"]:,}, '
     f'{C["all"]["40-59"]["healthy"]["n"]:,} and {C["all"]["60+"]["healthy"]["n"]:,} adults); obesity by age matches '
