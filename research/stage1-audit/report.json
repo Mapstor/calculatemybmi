@@ -4671,7 +4671,7 @@
     {
      "number": "2026",
      "why": "the current year (a title label)",
-     "sentence": "BMI Tracking Guide: How to Monitor Your Progress Effectively (2026)"
+     "sentence": "BMI Tracking Guide: How to Monitor Your Progress (2026)"
     }
    ],
    "checks_ok": 21,
@@ -88633,7 +88633,7 @@
    "value": 4,
    "class": "D",
    "why": "number word (count in prose)",
-   "heading": "How to Lower BMI: Evidence-Based Strategies for Healthy Weight Loss"
+   "heading": "How to Lower BMI: CDC’s Steps for Healthy Weight Loss"
   },
   {
    "page": "/blog/how-to-lower-bmi/",
@@ -88643,7 +88643,7 @@
    "value": 5,
    "class": "D",
    "why": "number word (count in prose)",
-   "heading": "How to Lower BMI: Evidence-Based Strategies for Healthy Weight Loss"
+   "heading": "How to Lower BMI: CDC’s Steps for Healthy Weight Loss"
   },
   {
    "page": "/blog/how-to-lower-bmi/",
@@ -88653,7 +88653,7 @@
    "value": 1.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "How to Lower BMI: Evidence-Based Strategies for Healthy Weight Loss",
+   "heading": "How to Lower BMI: CDC’s Steps for Healthy Weight Loss",
    "row": {
     "status": "row",
     "domain": "cdc-losing-weight",
@@ -88671,7 +88671,7 @@
    "value": 2.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "How to Lower BMI: Evidence-Based Strategies for Healthy Weight Loss",
+   "heading": "How to Lower BMI: CDC’s Steps for Healthy Weight Loss",
    "row": {
     "status": "row",
     "domain": "cdc-losing-weight",
@@ -88689,7 +88689,7 @@
    "value": 3500.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "How to Lower BMI: Evidence-Based Strategies for Healthy Weight Loss",
+   "heading": "How to Lower BMI: CDC’s Steps for Healthy Weight Loss",
    "row": {
     "status": "row",
     "domain": "hall-2011-energy-imbalance",
@@ -88707,7 +88707,7 @@
    "value": 1.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "How to Lower BMI: Evidence-Based Strategies for Healthy Weight Loss",
+   "heading": "How to Lower BMI: CDC’s Steps for Healthy Weight Loss",
    "row": {
     "status": "row",
     "domain": "hall-2011-energy-imbalance",
@@ -88725,7 +88725,7 @@
    "value": 10.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "How to Lower BMI: Evidence-Based Strategies for Healthy Weight Loss",
+   "heading": "How to Lower BMI: CDC’s Steps for Healthy Weight Loss",
    "row": {
     "status": "row",
     "domain": "hall-2011-energy-imbalance",
@@ -88743,7 +88743,7 @@
    "value": 0.5,
    "class": "D",
    "why": "number word (count in prose)",
-   "heading": "How to Lower BMI: Evidence-Based Strategies for Healthy Weight Loss",
+   "heading": "How to Lower BMI: CDC’s Steps for Healthy Weight Loss",
    "links": [
     "https://pubmed.ncbi.nlm.nih.gov/21872751/"
    ]
@@ -88756,7 +88756,7 @@
    "value": 2011.0,
    "class": "C",
    "why": "year",
-   "heading": "How to Lower BMI: Evidence-Based Strategies for Healthy Weight Loss",
+   "heading": "How to Lower BMI: CDC’s Steps for Healthy Weight Loss",
    "row": {
     "status": "row",
     "domain": "hall-2011-energy-imbalance",
@@ -88774,7 +88774,7 @@
    "value": 5.0,
    "class": "C",
    "why": "statistic (percent)",
-   "heading": "How to Lower BMI: Evidence-Based Strategies for Healthy Weight Loss",
+   "heading": "How to Lower BMI: CDC’s Steps for Healthy Weight Loss",
    "row": {
     "status": "row-notes",
     "domain": "cdc-losing-weight",
@@ -88792,7 +88792,7 @@
    "value": 200.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "How to Lower BMI: Evidence-Based Strategies for Healthy Weight Loss",
+   "heading": "How to Lower BMI: CDC’s Steps for Healthy Weight Loss",
    "row": {
     "status": "row-notes",
     "domain": "cdc-losing-weight",
@@ -88810,7 +88810,7 @@
    "value": 10.0,
    "class": "C",
    "why": "outside fact (statistic, threshold or study detail)",
-   "heading": "How to Lower BMI: Evidence-Based Strategies for Healthy Weight Loss",
+   "heading": "How to Lower BMI: CDC’s Steps for Healthy Weight Loss",
    "row": {
     "status": "row-notes",
     "domain": "cdc-losing-weight",
@@ -88828,7 +88828,7 @@
    "value": 18.5,
    "class": "B",
    "why": "category cut-off",
-   "heading": "How to Lower BMI: Evidence-Based Strategies for Healthy Weight Loss",
+   "heading": "How to Lower BMI: CDC’s Steps for Healthy Weight Loss",
    "check": {
     "status": "ok",
     "kind": "category",
@@ -88849,7 +88849,7 @@
    "value": 24.9,
    "class": "B",
    "why": "category cut-off (other bound)",
-   "heading": "How to Lower BMI: Evidence-Based Strategies for Healthy Weight Loss",
+   "heading": "How to Lower BMI: CDC’s Steps for Healthy Weight Loss",
    "links": [
     "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
     "http://localhost:8765/blog/healthy-bmi-range/"
@@ -88863,7 +88863,7 @@
    "value": 5,
    "class": "D",
    "why": "number word (count in prose)",
-   "heading": "How to Lower BMI: Evidence-Based Strategies for Healthy Weight Loss",
+   "heading": "How to Lower BMI: CDC’s Steps for Healthy Weight Loss",
    "links": [
     "http://localhost:8765/blog/how-to-lower-bmi/#behavior-modification"
    ]
@@ -91759,7 +91759,7 @@
    "value": 2015.0,
    "class": "C",
    "why": "year",
-   "heading": "BMI Tracking Guide: How to Monitor Your Progress Effectively",
+   "heading": "BMI Tracking Guide: How to Monitor Your Progress",
    "row": {
     "status": "row",
     "domain": "madigan-2015-self-weighing",
@@ -91777,7 +91777,7 @@
    "value": 2014.0,
    "class": "C",
    "why": "year",
-   "heading": "BMI Tracking Guide: How to Monitor Your Progress Effectively",
+   "heading": "BMI Tracking Guide: How to Monitor Your Progress",
    "row": {
     "status": "row",
     "domain": "orsama-2014-weight-rhythms",
@@ -93251,7 +93251,7 @@
   {
    "page": "/blog/bmi-tracking-guide/",
    "region": "title",
-   "sentence": "BMI Tracking Guide: How to Monitor Your Progress Effectively (2026)",
+   "sentence": "BMI Tracking Guide: How to Monitor Your Progress (2026)",
    "number": "2026",
    "value": 2026.0,
    "class": "D",
