@@ -1334,137 +1334,6 @@
    ]
   },
   {
-   "page": "/blog/bmi-categories/",
-   "sig": "That is a span of about # BMI points, a sizeable weight difference at any height.",
-   "classes": "B",
-   "why": "the healthy range's width (CMB-054: sentence reworded)",
-   "checks": [
-    {
-     "target": 1,
-     "kind": "num",
-     "expr": "25 - 18.5",
-     "label": "from 18.5 to under 25 (getBMICategory)",
-     "dec": 1
-    }
-   ]
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "sig": "As the table shows, the difference between low normal and high normal is about #-# lbs depending on height.",
-   "classes": "B",
-   "why": "the table's high-minus-low",
-   "checks": [
-    {
-     "target": 1,
-     "kind": "num",
-     "expr": "Math.min(...[60, 62, 64, 66, 68, 70, 72, 74].map(h => __A.maxLb(h, 18.5, 24.9) - __A.minLb(h, 18.5, 24.9)))",
-     "label": "smallest weightBounds max minus min, 5′0″ to 6′2″",
-     "dec": 0
-    },
-    {
-     "target": 2,
-     "kind": "num",
-     "expr": "Math.max(...[60, 62, 64, 66, 68, 70, 72, 74].map(h => __A.maxLb(h, 18.5, 24.9) - __A.minLb(h, 18.5, 24.9)))",
-     "label": "largest weightBounds max minus min, 5′0″ to 6′2″",
-     "dec": 0
-    }
-   ]
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "sig": "#",
-   "classes": "D",
-   "why": "axis tick (the scale's start, CMB-033)",
-   "exact": true,
-   "value": 15
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "sig": "Height | Low Normal (BMI #) | Mid Normal (BMI #) | High Normal (BMI #)",
-   "classes": "B",
-   "why": "the column headers: cut-offs and their midpoint",
-   "region": "table",
-   "checks": [
-    {
-     "target": 1,
-     "kind": "num",
-     "expr": "__A.cat($1) !== __A.cat($1 - 0.1) ? $1 : -1",
-     "label": "getBMICategory changes category at this value"
-    },
-    {
-     "target": 2,
-     "kind": "num",
-     "expr": "($1 + $3) / 2",
-     "label": "the midpoint of 18.5 and 24.9"
-    },
-    {
-     "target": 3,
-     "kind": "num",
-     "expr": "__A.cat($3) !== __A.cat($3 + 0.1) ? $3 : -1",
-     "label": "getBMICategory changes category just above this value"
-    }
-   ]
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "sig": "A #-year-old with a BMI of # is in CDC's healthy weight category, boys and girls alike, but adult categories would classify them as severely underweight.",
-   "classes": [
-    "B",
-    "B"
-   ],
-   "why": "the child category and the adult category of BMI 15.5 (CMB-054: sentence reworded)",
-   "checks": [
-    {
-     "target": 2,
-     "kind": "num",
-     "expr": "(__A.kidsCat($2, $1 * 12, 'male') === 'Healthy weight' && __A.kidsCat($2, $1 * 12, 'female') === 'Healthy weight' && __A.cat($2) === 'Severe thinness') ? $2 : -1",
-     "label": "categorizeChildBMI: healthy weight at 6 for boys and girls; getBMICategory: Severe thinness",
-     "dec": 1
-    }
-   ]
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "sig": "#%",
-   "classes": "C",
-   "why": "a headline prevalence tile",
-   "exact": true,
-   "value": 40.3,
-   "row": "nhanes-adult-weight-trends"
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "sig": "#%",
-   "classes": "C",
-   "why": "a headline prevalence tile",
-   "exact": true,
-   "value": 31.7,
-   "row": "nhanes-adult-weight-trends"
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "sig": "#%",
-   "classes": "C",
-   "why": "a headline prevalence tile",
-   "exact": true,
-   "value": 9.7,
-   "row": "nhanes-adult-weight-trends"
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "sig": "BMI Category Prevalence (U.S. Adults #+)",
-   "classes": "C",
-   "why": "the survey's age group",
-   "row": "nhanes-adult-weight-trends"
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "sig": "Headline prevalence figures for U.S. Adults from CDC NHANES August #-August #.",
-   "classes": "C",
-   "why": "the survey period",
-   "row": "nhanes-adult-weight-trends"
-  },
-  {
    "page": "/blog/bmi-chart-explained/",
    "sig": "The following chart shows BMI values for heights from #'#\" to #'#\" and weights from # to # pounds.",
    "classes": [
@@ -2234,14 +2103,6 @@
    "row": "cdc-child-bmi-categories"
   },
   {
-   "page": "/blog/bmi-categories/",
-   "sig": "#",
-   "classes": "D",
-   "why": "axis tick (the scale's end, CMB-033)",
-   "exact": true,
-   "value": 45
-  },
-  {
    "page": "/blog/underweight-bmi-risks/",
    "sig": "#",
    "classes": "D",
@@ -2256,24 +2117,6 @@
    "why": "the scale's marker at the page's own example (50 kg at 1.70 m, BMI 17.3, checked as B in its sentence; CMB-033)",
    "exact": true,
    "value": 17.3
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "sig": "BMI #-#: near the underweight / normal boundary",
-   "classes": "D",
-   "why": "a heading naming the band around the 18.5 cut-off (CMB-036)"
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "sig": "BMI #-#: near the normal / overweight boundary",
-   "classes": "D",
-   "why": "a heading naming the band around the 25 cut-off (CMB-036)"
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "sig": "BMI #-#: near the overweight / obese boundary",
-   "classes": "D",
-   "why": "a heading naming the band around the 30 cut-off (CMB-036)"
   },
   {
    "page": "/blog/bmi-chart-explained/",
@@ -3113,38 +2956,6 @@
    ],
    "row": "trefethen-new-bmi",
    "why": "the year of Trefethen's proposal, in an answer that also links CDC (CMB-053)"
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "sig": "the risk of death was lowest at a BMI of # to # and higher below and above it",
-   "classes": [
-    "C",
-    "C",
-    "C",
-    "-"
-   ],
-   "row": "gbmc-2016-bmi-mortality",
-   "why": "the GBMC's 239 studies and its lowest-risk band, 20.0 to 24.9 (minimal at 20.0-25.0), not a calculator category (CMB-054)"
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "sig": "CDC calls a BMI from # to just under # healthy weight",
-   "classes": [
-    "C",
-    "C"
-   ],
-   "row": "cdc-adult-bmi-categories",
-   "why": "CDC's healthy weight, \"18.5 to less than 25\" (CMB-054)"
-  },
-  {
-   "page": "/blog/bmi-categories/",
-   "sig": "CDC counts all of # to just under # as healthy weight",
-   "classes": [
-    "C",
-    "C"
-   ],
-   "row": "cdc-adult-bmi-categories",
-   "why": "CDC's healthy weight, \"18.5 to less than 25\" (CMB-054)"
   },
   {
    "page": "/blog/waist-to-height-ratio/",

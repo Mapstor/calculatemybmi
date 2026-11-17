@@ -102,7 +102,7 @@ VIEWPORT = {'width': 390, 'height': 844}
 PAGES = [
     '/about/', '/contact/', '/privacy/', '/terms/', '/blog/', '/kids-bmi-calculator/',
     '/lean-body-mass/', '/obesity-rate-by-state/', '/childhood-obesity-statistics/', '/blog/what-is-bmi/',
-    '/blog/bmi-formula/', '/blog/bmi-history/', '/blog/bmi-categories/', '/blog/bmi-chart-explained/',
+    '/blog/bmi-formula/', '/blog/bmi-history/', '/blog/bmi-chart-explained/',      # /blog/bmi-categories/: page test (CMB-067)
     '/blog/bmi-and-health-risks/', '/blog/underweight-bmi-risks/', '/blog/bmi-limitations/',
     '/blog/bmi-and-metabolism/', '/blog/body-fat-vs-bmi/', '/blog/bmi-for-athletes/',
     '/blog/waist-to-height-ratio/', '/blog/how-to-lower-bmi/', '/blog/bmi-tracking-guide/', '/blog/bmi-by-age/',
